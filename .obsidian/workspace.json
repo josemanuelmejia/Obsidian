@@ -1,0 +1,163 @@
+{
+  "main": {
+    "id": "ed708ac2f19d4a22",
+    "type": "split",
+    "children": [
+      {
+        "id": "df48f802a959afb5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3d425131e09601d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 notes/veltmeyerResistanceClassStruggle2019.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3095fbc5aa1285ac",
+    "type": "split",
+    "children": [
+      {
+        "id": "a90bc08e71677c95",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4156b5e5ac4c33be",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "11f193bbd8e05176",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c233338d4fcf103e",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "724d7ed597eef718",
+    "type": "split",
+    "children": [
+      {
+        "id": "4269438fa1aa817f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d11fe171adcbc229",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "01 notes/veltmeyerResistanceClassStruggle2019.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "082c5c0b73f3b020",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "01 notes/veltmeyerResistanceClassStruggle2019.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5c1da3ec98978ece",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "2a28041bf860f792",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "01 notes/veltmeyerResistanceClassStruggle2019.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false
+    }
+  },
+  "active": "3d425131e09601d5",
+  "lastOpenFiles": [
+    "03 writing/WSJ submission.md",
+    "03 writing/Writting sample.md",
+    "Untitled.md",
+    "01 notes/valcarcelTempestadAndes1975.md",
+    "01 notes/twineWhiteSideBlack2011.md",
+    "06 archives/MyChart(1).png",
+    "03 writing/Dictamen.md",
+    "06 archives/Gold, Silver and Platiniaum prices historical.png",
+    "06 archives/Copper and Tin prices historical.png",
+    "01 notes/20th China's Communist Party Congress.md"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "templater-obsidian:obsidian-history-vault-master/meta/templater/extract bibliography task from selection.md": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "R"
+    }
+  ],
+  "templater-obsidian:obsidian-history-vault-master/meta/templater/extract research note from selection.md": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Z"
+    }
+  ],
+  "vantage-obsidian:build-search": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Q"
+    }
+  ],
+  "obsidian-excel-to-markdown-table:excel-to-markdown-table": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "database": "Zotero",
+  "noteImportFolder": "01 notes",
+  "pdfExportImageDPI": 120,
+  "pdfExportImageFormat": "jpg",
+  "pdfExportImageQuality": 90,
+  "citeFormats": [
+    {
+      "name": "ASA",
+      "format": "formatted-citation",
+      "cslStyle": "american-sociological-association"
+    }
+  ],
+  "exportFormats": [
+    {
+      "name": "Import Research Notes",
+      "outputPathTemplate": "01 notes/{{citekey}}.md",
+      "imageOutputPathTemplate": "{{citekey}}/",
+      "imageBaseNameTemplate": "image",
+      "templatePath": "obsidian-history-vault-master/meta/zotero/research note.md",
+      "cslStyle": "american-sociological-association"
+    }
+  ],
+  "exeVersion": "1.0.15",
+  "shouldShowCiteSuggest": true,
+  "shouldConcat": true
+}
