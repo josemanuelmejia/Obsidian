@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 notes/arrighiAntisystemicMovements1989.md",
+                "file": "01 notes/luxemburgCompleteWorksRosa2015.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 notes/arrighiAntisystemicMovements1989.md",
+                "file": "01 notes/luxemburgCompleteWorksRosa2015.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 notes/arrighiAntisystemicMovements1989.md",
+                "file": "01 notes/luxemburgCompleteWorksRosa2015.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 notes/arrighiAntisystemicMovements1989.md"
+                "file": "01 notes/luxemburgCompleteWorksRosa2015.md"
               }
             }
           }
@@ -149,20 +149,24 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false
+      "markdown-importer:Open format converter": false,
+      "workspaces:Manage workspace layouts": false,
+      "random-note:Open random note": false,
+      "publish:Publish changes": false,
+      "audio-recorder:Start/stop recording": false
     }
   },
   "active": "3d425131e09601d5",
   "lastOpenFiles": [
+    "01 notes/luxemburgCompleteWorksRosa2015.md",
+    "01 notes/arrighiAntisystemicMovements1989.md",
+    "Recording 20230203213231.webm",
+    "07 diary/2022-04-02 SCMS 2022  global latin american cinema panel.md",
+    "06 archives/Sound Recordings, MOMA, NYC (archive note).md",
+    "05 tasks/enter references from screening cuba.md",
+    "01 notes/arrighiLongTwentiethCentury1994.md",
     "01 notes/veltmeyerResistanceClassStruggle2019.md",
     "03 writing/WSJ submission.md",
-    "03 writing/Writting sample.md",
-    "Untitled.md",
-    "01 notes/valcarcelTempestadAndes1975.md",
-    "01 notes/twineWhiteSideBlack2011.md",
-    "06 archives/MyChart(1).png",
-    "03 writing/Dictamen.md",
-    "06 archives/Gold, Silver and Platiniaum prices historical.png",
-    "06 archives/Copper and Tin prices historical.png"
+    "03 writing/Writting sample.md"
   ]
 }

@@ -23,5 +23,7 @@
   ],
   "exeVersion": "1.0.15",
   "shouldShowCiteSuggest": true,
-  "shouldConcat": true
+  "shouldConcat": true,
+  "openNoteAfterImport": true,
+  "pdfExportImageOCR": false
 }
