@@ -8,18 +8,39 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3d425131e09601d5",
+            "id": "1109fa6deb0b80a8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 notes/oconnorAccumulationCrisis1984.md",
+                "file": "02 analysis/Accumulation of mining capital.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "fafc0bcd45019a18",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "07 diary/2023-04-02.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3c12f9bcfec0735b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -48,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#analysis/capital/money-capit",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,8 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 notes/oconnorAccumulationCrisis1984.md",
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -102,7 +122,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 notes/oconnorAccumulationCrisis1984.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,17 +143,23 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "01 notes/oconnorAccumulationCrisis1984.md"
-              }
+              "state": {}
+            }
+          },
+          {
+            "id": "009e3573c75380d4",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -156,17 +181,17 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "3d425131e09601d5",
+  "active": "3c12f9bcfec0735b",
   "lastOpenFiles": [
-    "01 notes/luxemburgCompleteWorksRosa2015.md",
-    "01 notes/arrighiAntisystemicMovements1989.md",
-    "Recording 20230203213231.webm",
-    "07 diary/2022-04-02 SCMS 2022  global latin american cinema panel.md",
+    "Untitled.md",
+    "08 atlas.ti/Atlas.ti codebook.md",
+    "06 archives/Gold project La Arena (Huamachuco, Peru).md",
     "06 archives/Sound Recordings, MOMA, NYC (archive note).md",
-    "05 tasks/enter references from screening cuba.md",
-    "01 notes/arrighiLongTwentiethCentury1994.md",
-    "01 notes/veltmeyerResistanceClassStruggle2019.md",
-    "03 writing/WSJ submission.md",
-    "03 writing/Writting sample.md"
+    "07 diary/2022-04-02 SCMS 2022  global latin american cinema panel 1.md",
+    "07 diary/2023-04-02.md",
+    "02 analysis/Accumulation of mining capital.md",
+    "01 notes/marxCapitalCritiquePolitical1909a.md",
+    "03 writing/documents/Drafts/Applications/Personal History and Diversity Statement.md",
+    "01 notes/luxemburgCompleteWorksRosa2015.md"
   ]
 }
