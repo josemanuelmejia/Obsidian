@@ -8,19 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1109fa6deb0b80a8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 analysis/Accumulation of mining capital.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fafc0bcd45019a18",
+            "id": "ecee96dfc8900bf4",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,15 +20,43 @@
             }
           },
           {
-            "id": "3c12f9bcfec0735b",
+            "id": "93096138711af1a3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "07 diary/2023-06-02.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1721333bfafba097",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "07 diary/2023-07-02.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1109fa6deb0b80a8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 analysis/Accumulation of mining capital.md",
+                "mode": "preview",
+                "source": false
+              }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -106,6 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "02 analysis/Accumulation of mining capital.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,6 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "02 analysis/Accumulation of mining capital.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +161,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "02 analysis/Accumulation of mining capital.md"
+              }
             }
           },
           {
@@ -181,17 +201,17 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "3c12f9bcfec0735b",
+  "active": "1109fa6deb0b80a8",
   "lastOpenFiles": [
-    "Untitled.md",
-    "08 atlas.ti/Atlas.ti codebook.md",
-    "06 archives/Gold project La Arena (Huamachuco, Peru).md",
-    "06 archives/Sound Recordings, MOMA, NYC (archive note).md",
-    "07 diary/2022-04-02 SCMS 2022  global latin american cinema panel 1.md",
-    "07 diary/2023-04-02.md",
+    "07 diary/2023-06-02.md",
+    "07 diary/2023-07-02.md",
+    "03 writing/documents/Building/Profits, mining capital and gold accumulation. Ganancia, capital minero y acumulación de oro.md",
     "02 analysis/Accumulation of mining capital.md",
-    "01 notes/marxCapitalCritiquePolitical1909a.md",
-    "03 writing/documents/Drafts/Applications/Personal History and Diversity Statement.md",
-    "01 notes/luxemburgCompleteWorksRosa2015.md"
+    "02 analysis/Antisystemic effects on capital accumulation extended reproduction mechanism.md",
+    "01 notes/robinsonGlobalRevoltIts2022.md",
+    "02 analysis/The strategical centrality of anti-mining struggles.md",
+    "02 analysis/Revolutionary subject.md",
+    "02 analysis/Class struggle critical juncture. The current systemic crisis of global capitalism.md",
+    "02 analysis/Challenge imperialist domination.md"
   ]
 }
