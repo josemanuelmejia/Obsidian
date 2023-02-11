@@ -31,8 +31,27 @@ the "cholo group" as Quijano could state, is a vanguard in the indigenous reemer
 
 
 
-
-
-
 "La cuestión indígena arranca de nuestra economía. Tiene sus raíces en el régimen de propiedad de la tierra" (Mariátegui 1928, 35). 
 El tiempo de José Carlos Mariátegui fue el correspondiente a la implantación del capital monopólico estadounidense, Quijano reconoce este periodo como el de implantación imperialista.
+
+
+2023-02-10
+19:46
+#analysis  #analysis/struggles/class-struggle #subject/social-conflict 
+#project #analysis/struggles/class-struggle/Andes
+#analysis/struggles/class-struggle/Andes/Peru
+#analysis/struggles/class-struggle/Andes/Ecuador
+#analysis/struggles/class-struggle/Andes/Colombia
+#analysis/struggles/class-struggle/Andes/Bolivia 
+
+Q4: How do anti-mining struggles in the Andes evidence the resurgence of the indigenous peasantry as a revolutionary subject at the present crisis of US hegemony and systemic chaos of global capitalism?
+
+
+
+
+q4.1: ¿Qué expresaron las grandes movilizaciones de protesta en la región andina desarrolladas del 2019 al 2023?
+
+En este punto, la lucha de clases en los Andes se expresa no tanto por la consciencia del proletariado organizado sino por la de su campesinado, asimismo, en el retorno del indio no solo se encuentra la reivindicación del indio y la tierra sino que evoca al indio revolucionario. Seremos millones, advierte, y efectivamente son millones los que en los Andes han sentido contundentemente la verdadera expresión de las condiciones de dominación y explotación capitalista, la represión militarizada ejercida contra las masas movilizadas puso en evidencia al estado en todo su esplendor como garante de la dominación imperialista. La violencia estatal se ejerce sobre campesinos y estudiantes con brutalidad, les siguen en ese tratamiento todos los demás que se le oponen. La dominación imperialista no puede ser sino jerárquica con las burguesías domésticas, en ese sentido, las fracciones financiera, minera, petrolera y agroexportadora de las burguesías domésticas andinas, dependen de la magnitud del capital circulante en sus correspondientes industrias, dicha magnitud es ofrecida por grandes capitalistas a través de la inversión extranjera directa. El establecimiento de las inversiones de grandes capitalistas en industrias de la región andina está directamente asociado a la abundancia de sus recursos principalmente minerales y petroleros, desde el siglo XVI a la actualidad. Las burguesías mineras imperialistas fueron las primeras en establecerse en nuestra Abya Yala. Así, durante el cuarto ciclo de acumulación sistémica con hegemonía estadounidense iniciado en el siglo XX, la minería fue uno de los sectores donde la inversión de capital productivo minero estadounidense se ha concentrado. Particularmente en la minería de oro.
+
+La política de apertura de las instituciones financieras a la inversión extranjera directa en sectores estratégicos de la economía como la minería y los beneficios que estos acuerdos institucionales adquiridos mediante las organizaciones financieras internacionales 
+

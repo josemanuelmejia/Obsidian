@@ -49,9 +49,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 analysis/Accumulation of mining capital.md",
-                "mode": "preview",
+                "file": "01 notes/robinsonGlobalRevoltIts2022.md",
+                "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "1e41ea394445f635",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "06 archives/1er temario.png"
               }
             }
           }
@@ -85,7 +95,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#analysis/capital/money-capit",
+                "query": "tag:#analysis/struggles/class-struggle/Andes",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -122,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02 analysis/Accumulation of mining capital.md",
+                "file": "01 notes/robinsonGlobalRevoltIts2022.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +149,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02 analysis/Accumulation of mining capital.md",
+                "file": "01 notes/robinsonGlobalRevoltIts2022.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +172,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 analysis/Accumulation of mining capital.md"
+                "file": "01 notes/robinsonGlobalRevoltIts2022.md"
               }
             }
           },
@@ -203,15 +213,15 @@
   },
   "active": "1109fa6deb0b80a8",
   "lastOpenFiles": [
+    "obsidian-history-vault-master/meta/zotero/research note.md",
+    "01 notes/robinsonGlobalRevoltIts2022.md",
+    "01 notes/oconnorAccumulationCrisis1984.md",
+    "02 analysis/Revolutionary subject.md",
+    "02 analysis/Profits, mining capital and gold accumulation.md",
+    "06 archives/1er temario.png",
+    "07 diary/2023-04-02.md",
     "07 diary/2023-06-02.md",
     "07 diary/2023-07-02.md",
-    "03 writing/documents/Building/Profits, mining capital and gold accumulation. Ganancia, capital minero y acumulación de oro.md",
-    "02 analysis/Accumulation of mining capital.md",
-    "02 analysis/Antisystemic effects on capital accumulation extended reproduction mechanism.md",
-    "01 notes/robinsonGlobalRevoltIts2022.md",
-    "02 analysis/The strategical centrality of anti-mining struggles.md",
-    "02 analysis/Revolutionary subject.md",
-    "02 analysis/Class struggle critical juncture. The current systemic crisis of global capitalism.md",
-    "02 analysis/Challenge imperialist domination.md"
+    "06 archives/1er conv. 14FEB2021.png"
   ]
 }
