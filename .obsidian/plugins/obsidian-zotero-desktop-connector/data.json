@@ -7,7 +7,7 @@
   "citeFormats": [
     {
       "name": "ASA",
-      "format": "formatted-citation",
+      "format": "formatted-bibliography",
       "cslStyle": "american-sociological-association"
     }
   ],

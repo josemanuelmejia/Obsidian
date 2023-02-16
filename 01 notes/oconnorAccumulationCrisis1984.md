@@ -1,4 +1,4 @@
- ---
+---
 cssclass: research-note
 type: "book"
 author: "O'Connor, James"
@@ -41,7 +41,7 @@ Variable capital
 Inflation-free surplus value%%
 
 Individualist ideologies and their practices also led to a reduction in the mass of surplus value which capital was able to utilize in directly productive, and the state in indirectly productive ways. The result was high interest rates, inflation, increased fiscal crisis trends, upward spirals of credit, and/or growing unemployment —the manifestations of the modern underproduction crisis of capital — that is, a crisis in which capitalist accumulation became constrained by conditions of direct and indirect exploitation of labor an [(p. 15)](zotero://open-pdf/library/items/2XKRGTGF?page=15&annotation=KVSNZTGA) ^000002
-%%The underconsumption of the mass of commodities throw to the market by capitalist production, as the reaction of individuals to the reduction or stagnation of wages with high inflation of prices and cost of living conditions. These produces a reduction in the mass of surplus value and consequently in the profits resultant from the conversion of surplus value in money capital (MCM´) by the consumption of the commodities made by their productive capital investments.
+%% The underconsumption of the mass of commodities throw to the market by capitalist production, as the reaction of individuals to the reduction or stagnation of wages with high inflation of prices and cost of living conditions. These produces a reduction in the mass of surplus value and consequently in the profits resultant from the conversion of surplus value in money capital (MCM´) by the consumption of the commodities made by their productive capital investments.
 
 Productive capital
 Circulation MCM'
@@ -55,7 +55,14 @@ Preface 9 resource availability17 rather than by conditions of effective demand.
 “American individualism” is capital’s most powerful weapon of ideo­ logical domination of labor in the USA. Ideologies of individualism are stronger than racist and sexist ideologies because they are more deeply embedded in English, hence Anglo-American, economic, social, and politi­ cal life.1 [(p. 19)](zotero://open-pdf/library/items/2XKRGTGF?page=19&annotation=4A7M2EX7)
 %%American individualism
 Mass ideology
-United States%% %% end annotations %%
+United States%% 
+### Imported on 2023-02-15 9:50 am
+
+>[!quote|#ffd100] 
+>
+Individualist ideologies and their practices also led to a reduction in the mass of surplus value which capital was able to utilize in directly productive, and the state in indirectly productive ways. The result was high interest rates, inflation, increased fiscal crisis trends, upward spirals of credit, and/or growing unemployment —the manifestations of the modern underproduction crisis of capital — that is, a crisis in which capitalist accumulation became constrained by conditions of direct and indirect exploitation of labor and...resource availability17 rather than by conditions of effective demand. [(p. 15)](zotero://open-pdf/library/items/2XKRGTGF?page=15&annotation=highlight-p15x67y53)
+
+%%O'Connor definition of underproduction crisis of capital%% %% end annotations %%
 
 
-%% Import Date: 2022-10-17T15:43:39.853-04:00 %%
+%% Import Date: 2023-02-15T09:51:16.051-05:00 %%

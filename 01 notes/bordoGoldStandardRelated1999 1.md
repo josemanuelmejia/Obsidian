@@ -45,6 +45,7 @@ A uniform change in par value of all currencies (in terms of gold) required a ma
 In the case of countries prone to running large surpluses, the scarce currency clause (Article VII) could come into play. If the Fund's holdings of a currency were insufficient to satisfy the demand for it by other members, it could declare that currency scarce and then urge members to ration its use by discriminatory exchange controls. [(p. 37)](zotero://open-pdf/library/items/MXURFN6J?page=37&annotation=QEST32QI)
 %%This could be a reason considered by the US to dropped the Breton Woods. As the US monetary gold holdings reserves in 1973 was of 30 billion, superating the estimated total fund of 2.2 billion in monetary gold X TIMES, as the 25% of the 8.8 billion total fund estimated by Breton Woods in 1944.%%
 
+¡[[arrighiLongTwentiethCentury1994]] ^00002
 The Marshall Plan funneled approximately $13 billion in aid (grants and loans) to Western Europe between 1948 and 1952 (see Milward 1984; and Hoffman and Maier 1984).3 [(p. 43)](zotero://open-pdf/library/items/MXURFN6J?page=43&annotation=T9SJXYJK) %% end annotations %%
 
 

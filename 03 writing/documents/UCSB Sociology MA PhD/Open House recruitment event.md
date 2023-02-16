@@ -21,3 +21,5 @@ Kornberg, Dana. 2016. “The Structural Origins of Territorial Stigma: Water and
 Professor and Diversity Representative
 
 "Among the classes Professor Segura teaches are The Chicano Community, The Chicano Family, Chicanas in Contemporary Society, and Women and Work.  At the graduate level she teaches “Race, Class and Gender,” “Sociology of the Borderlands,” and “Chicana Feminisms"."
+
+7) Tristan Bridges

@@ -1,0 +1,24 @@
+{
+  "defaultVoice": "Microsoft Zira - English (United States)",
+  "pitch": 1,
+  "rate": 1,
+  "volume": 1,
+  "speakLinks": false,
+  "speakFrontmatter": false,
+  "speakSyntax": false,
+  "speakTitle": false,
+  "speakCodeblocks": false,
+  "speakEmoji": false,
+  "speakComments": false,
+  "languageVoices": [
+    {
+      "language": "en",
+      "voice": "Microsoft Zira - English (United States)"
+    },
+    {
+      "language": "es",
+      "voice": "Microsoft Sabina - Spanish (Mexico)"
+    }
+  ],
+  "stopPlaybackWhenNoteChanges": true
+}

@@ -12,5 +12,8 @@
   "obsidian-zotero-desktop-connector",
   "nldates-obsidian",
   "obsidian-jupyter",
-  "obsidian-plotly"
+  "obsidian-plotly",
+  "obsidian-tts",
+  "obsidian-mind-map",
+  "obsidian-pandoc-reference-list"
 ]

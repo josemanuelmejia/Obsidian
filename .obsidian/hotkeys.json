@@ -31,5 +31,8 @@
       ],
       "key": "T"
     }
-  ]
+  ],
+  "obsidian-tts:start-tts-playback": [],
+  "obsidian-tts:cancel-tts-playback": [],
+  "obsidian-tts:pause-tts-playback": []
 }
