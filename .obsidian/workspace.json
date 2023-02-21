@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "9e9d9934840fe844",
+        "id": "182bcb29ee4eb48f",
         "type": "tabs",
         "children": [
           {
-            "id": "4d36b19e03aa45cf",
+            "id": "4116c0414a6ef432",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "03 writing/documents/UCSB Sociology MA PhD/Open House for Admitted Students Sociology MA, PhD.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02 analysis/The strategical centrality of anti-mining struggles.md",
+                "file": "03 writing/documents/UCSB Sociology MA PhD/Open House for Admitted Students Sociology MA, PhD.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02 analysis/The strategical centrality of anti-mining struggles.md",
+                "file": "03 writing/documents/UCSB Sociology MA PhD/Open House for Admitted Students Sociology MA, PhD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 analysis/The strategical centrality of anti-mining struggles.md"
+                "file": "03 writing/documents/UCSB Sociology MA PhD/Open House for Admitted Students Sociology MA, PhD.md"
               }
             }
           },
@@ -141,8 +145,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -169,17 +172,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4156b5e5ac4c33be",
+  "active": "4116c0414a6ef432",
   "lastOpenFiles": [
-    "01 notes/luxemburgCompleteWorksRosa2015.md",
-    "01 notes/marxCapitalCritiquePolitical1909a.md",
-    "01 notes/oconnorAccumulationCrisis1984.md",
-    "01 notes/oktayDeterminantsGoldReserves2016.md",
-    "01 notes/robinsonGlobalRevoltIts2022.md",
-    "01 notes/twineWhiteSideBlack2011.md",
-    "01 notes/valcarcelTempestadAndes1975.md",
-    "01 notes/veltmeyerResistanceClassStruggle2019.md",
-    "01 notes/wallersteinNewRevoltsSystem2002.md",
-    "01 notes/xijinpingTranscriptsReportMade2022.md"
+    "03 writing/documents/UCSB Sociology MA PhD/Open House recruitment event.md",
+    "03 writing/Dictamen.md",
+    "03 writing/Writting sample.md",
+    "03 writing/WSJ submission.md",
+    "02 analysis/Accumulation of mining capital.md",
+    "02 analysis/Antisystemic effects on capital accumulation extended reproduction mechanism.md",
+    "02 analysis/Challenge imperialist domination.md",
+    "02 analysis/Class struggle critical juncture. The current systemic crisis of global capitalism.md",
+    "02 analysis/Profits, mining capital and gold accumulation.md",
+    "02 analysis/The definition of the situation of class struggle in the hegemony and overaccumulation current crisis of global capitalism.md"
   ]
 }
