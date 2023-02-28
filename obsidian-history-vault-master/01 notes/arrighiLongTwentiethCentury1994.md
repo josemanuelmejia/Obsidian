@@ -23,7 +23,7 @@ page-no:: 224
 
 ### Connections
 
-comment:: 
+comment:: comentado
 
 ### Note
 %% begin annotations %%

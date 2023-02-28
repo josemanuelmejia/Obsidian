@@ -20929,6 +20929,7 @@ var SET_NOTE_PREFIX = "notePrefix";
 var SET_NOTE_SUFFIX = "noteSuffix";
 var SET_OVERWRITE = "overwrite";
 var SET_HELPER_FILE = "helperFile";
+var SET_FORCE_ARRAY = "forceArray";
 var DEFAULT_SETTINGS = {
   [SET_JSON_FILE]: "rewards.json",
   [SET_TEMPLATE_FILE]: "rewards.md",
@@ -20939,7 +20940,8 @@ var DEFAULT_SETTINGS = {
   [SET_NOTE_PREFIX]: "",
   [SET_NOTE_SUFFIX]: "",
   [SET_OVERWRITE]: true,
-  [SET_HELPER_FILE]: ""
+  [SET_HELPER_FILE]: "",
+  [SET_FORCE_ARRAY]: true
 };
 function convertCsv(source) {
   var _a;
@@ -20961,16 +20963,22 @@ function objfield(srcobj, field) {
   return srcobj;
 }
 var JsonImport = class extends import_obsidian.Plugin {
+  startApp() {
+    const modal = new FileSelectionModal(this.app);
+    modal.setHandler(this, this.generateNotes);
+    modal.setDefaults(this.settings[SET_JSON_FILE], this.settings[SET_TEMPLATE_FILE], this.settings[SET_TOP_FIELD], this.settings[SET_JSON_NAME], this.settings[SET_NOTE_PREFIX], this.settings[SET_NOTE_SUFFIX], this.settings[SET_JSON_NAMEPATH], this.settings[SET_OVERWRITE], this.settings[SET_FOLDER_NAME], this.settings[SET_HELPER_FILE], this.settings[SET_FORCE_ARRAY]);
+    modal.open();
+  }
   onload() {
     return __async(this, null, function* () {
       yield this.loadSettings();
-      const ribbonIconEl = this.addRibbonIcon("magnifying-glass", "JSON/CSV Importer", (evt) => {
-        const modal = new FileSelectionModal(this.app);
-        modal.setHandler(this, this.generateNotes);
-        modal.setDefaults(this.settings[SET_JSON_FILE], this.settings[SET_TEMPLATE_FILE], this.settings[SET_TOP_FIELD], this.settings[SET_JSON_NAME], this.settings[SET_NOTE_PREFIX], this.settings[SET_NOTE_SUFFIX], this.settings[SET_JSON_NAMEPATH], this.settings[SET_OVERWRITE], this.settings[SET_FOLDER_NAME], this.settings[SET_HELPER_FILE]);
-        modal.open();
-      });
+      const ribbonIconEl = this.addRibbonIcon("magnifying-glass", "JSON/CSV Importer", (evt) => this.startApp());
       ribbonIconEl.addClass("json-import-ribbon-class");
+      this.addCommand({
+        id: "import-json",
+        name: "Import JSON/CSV file",
+        callback: () => this.startApp()
+      });
     });
   }
   onunload() {
@@ -21079,9 +21087,9 @@ var JsonImport = class extends import_obsidian.Plugin {
       this.knownpaths.add(path);
     });
   }
-  generateNotes(objdata, templatefile, keyfield, jsonnamefield, noteprefix, notesuffix, jsonnamepathfield, overwrite, topfolder, sourcefile, helperfile) {
+  generateNotes(objdata, templatefile, keyfield, jsonnamefield, noteprefix, notesuffix, jsonnamepathfield, overwrite, topfolder, sourcefile, helperfile, forcearray) {
     return __async(this, null, function* () {
-      console.log(`generateNotes('${templatefile}', '${keyfield}', '${jsonnamefield}', '${noteprefix}', '${notesuffix}', path='${jsonnamepathfield}', ovewrite='${overwrite}', '${topfolder}', '${sourcefile}', '${helperfile}' )`);
+      console.log(`generateNotes('${templatefile}', '${keyfield}', '${jsonnamefield}', '${noteprefix}', '${notesuffix}', path='${jsonnamepathfield}', ovewrite='${overwrite}', '${topfolder}', '${sourcefile}', '${helperfile}', ${forcearray} )`);
       this.knownpaths = new Set();
       this.namepath = jsonnamepathfield;
       const compileoptions = { noEscape: true };
@@ -21105,10 +21113,10 @@ var JsonImport = class extends import_obsidian.Plugin {
           new import_obsidian.Notice(`Key '${keyfield}' does not exist in the source file`);
           return;
         }
-        if (!Array.isArray(topobj))
-          topobj = [topobj];
       } else
-        topobj = Array.isArray(objdata) ? objdata : [objdata];
+        topobj = objdata;
+      if (!Array.isArray(topobj) && forcearray)
+        topobj = [topobj];
       this.settings[SET_TOP_FIELD] = keyfield;
       this.settings[SET_JSON_NAME] = jsonnamefield;
       this.settings[SET_FOLDER_NAME] = topfolder;
@@ -21116,8 +21124,11 @@ var JsonImport = class extends import_obsidian.Plugin {
       this.settings[SET_NOTE_SUFFIX] = notesuffix;
       this.settings[SET_JSON_NAMEPATH] = jsonnamepathfield;
       this.settings[SET_OVERWRITE] = overwrite;
+      this.settings[SET_FORCE_ARRAY] = forcearray;
       this.saveSettings();
-      for (let row of topobj.values()) {
+      let entries = Array.isArray(topobj) ? topobj.entries() : Object.entries(topobj);
+      for (const [index, row] of entries) {
+        row.SourceIndex = index;
         let notefile = objfield(row, jsonnamefield);
         if (typeof notefile === "number")
           notefile = notefile.toString();
@@ -21162,7 +21173,7 @@ var FileSelectionModal = class extends import_obsidian.Modal {
     this.caller = caller;
     this.handler = handler;
   }
-  setDefaults(jsonfile, templatefile, topfield, jsonname, noteprefix, notesuffix, jsonnamepath, overwrite, foldername, helperfile) {
+  setDefaults(jsonfile, templatefile, topfield, jsonname, noteprefix, notesuffix, jsonnamepath, overwrite, foldername, helperfile, forcearray) {
     this.default_jsonfile = jsonfile;
     this.default_templfile = templatefile;
     this.default_topfield = topfield;
@@ -21173,6 +21184,7 @@ var FileSelectionModal = class extends import_obsidian.Modal {
     this.default_foldername = foldername;
     this.default_overwrite = overwrite;
     this.default_helperfile = helperfile;
+    this.default_forcearray = forcearray;
   }
   onOpen() {
     const setting1 = new import_obsidian.Setting(this.contentEl).setName("Choose JSON/CSV File").setDesc("Choose JSON/CSV data file to import, or paste text into the text box");
@@ -21211,6 +21223,13 @@ var FileSelectionModal = class extends import_obsidian.Modal {
       }
     });
     keyField.value = this.default_topfield;
+    const setting3c = new import_obsidian.Setting(this.contentEl).setName("Each subfield is a separate note").setDesc("Select this option if 'Field containing the data' is a single object and a separate note should be created for each field of that object.");
+    const forceArrayField = setting3c.controlEl.createEl("input", {
+      attr: {
+        type: "checkbox"
+      }
+    });
+    forceArrayField.checked = !this.default_forcearray;
     const setting3 = new import_obsidian.Setting(this.contentEl).setName("Field to use as Note name").setDesc("Field in each row of the JSON/CSV data to be used for the note name");
     const inputNameField = setting3.controlEl.createEl("input", {
       attr: {
@@ -21279,7 +21298,7 @@ var FileSelectionModal = class extends import_obsidian.Modal {
           srctext = yield datafiles[i].text();
           let is_json = datafiles[i].name.endsWith(".json");
           let objdata = is_json ? JSON.parse(srctext) : convertCsv(srctext);
-          yield this.handler.call(this.caller, objdata, templatefiles[0], keyField.value, inputNameField.value, notePrefixField.value, noteSuffixField.value, inputNamePathField.checked, inputOverwriteField.checked, inputFolderName.value, datafiles[i].name, helperfile == null ? void 0 : helperfile[0]);
+          yield this.handler.call(this.caller, objdata, templatefiles[0], keyField.value, inputNameField.value, notePrefixField.value, noteSuffixField.value, inputNamePathField.checked, inputOverwriteField.checked, inputFolderName.value, datafiles[i].name, helperfile == null ? void 0 : helperfile[0], !forceArrayField.checked);
         }
       } else {
         let is_json = srctext.startsWith("{") && srctext.endsWith("}");

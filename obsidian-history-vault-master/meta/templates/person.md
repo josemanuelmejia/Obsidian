@@ -1,7 +1,7 @@
 #person
 #project
 
-country:: [[]]
+country:: [[Peru]]
 occupation:: [[]]
 
 ### Note

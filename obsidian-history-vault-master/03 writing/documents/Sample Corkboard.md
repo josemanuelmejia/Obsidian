@@ -7,17 +7,17 @@ kanban-plugin: basic
 
 ## Introduction
 
-- [ ] [[The first paragraph of your introduction]]
+- [x] [[The first paragraph of your introduction]]
 
 
 ## Part 1 - censorship of the cuban film festival
 
-- [ ] [[Reply to Professor Robinson (UC-SB)]]
+- [x] [[Reply to Professor Robinson (UC-SB)]]
 
 
 ## Part 2
 
-- [ ] [[UC-Santa Barbara]]
+- [x] [[UC-Santa Barbara email to William Robinson]]
 
 
 ## Conclusion

@@ -1,4 +1,4 @@
-keyword:: cuba
+keyword:: 
 
 author:: 
 recipient:: 
@@ -11,8 +11,10 @@ archive-location::
 note-title:: 
 start-date:: 
 end-date:: 
-comment:: 
-tags:: 
+comment::
+
+tags::  
+
 
 sortby:: start-date
 sortorder:: desc

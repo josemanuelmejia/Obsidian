@@ -1,4 +1,4 @@
-Tracing for Marx analysis of monetary-gold as a commodity I started to read *Volume III of Capital: capitalist production as a whole*, following some of the advertisements of Engels from his October 4th, 1894 preface and the *Practical Economics: Volume 3 of Marx's Capital* elaborated by Luxemburg. I didn't have a complete reading of Volume II nor Volume I, but I realized that the advancement of the categories of rate of surplus-value and rate of profit are properly from Volume 3 and that my basic knowledge of Marxist theory of capitalist production of surplus-value and the circuit of capital, are enough to understood it. Indeed, searching for references in the Volume III concerning literally "gold", I found a suggestive quote in the final Chapter VII Additional Remarks of Part I The conversion of surplus-value into profit and of the rate of surplus-value into the rate of profit:
+Tracing for Marx analysis of monetary-gold as a commodity I started to read *Volume III of Capital: capitalist production as a whole*, following some of the advertisements of Engels from his October 4th, 1894 preface, and the *Practical Economics: Volume 3 of Marx's Capital* elaborated by Luxemburg. I didn't have a complete reading of Volume II nor Volume I, but I realized that the advancement of the categories of rate of surplus-value and rate of profit are properly from Volume 3 and that my basic knowledge of Marxist theory of capitalist production of surplus-value and the circuit of capital, are enough to understood it. Indeed, searching for references in the Volume III concerning literally "gold", I found a suggestive quote in the final Chapter VII Additional Remarks of Part I The conversion of surplus-value into profit and of the rate of surplus-value into the rate of profit. 
 
 >"Take it, in accordance with the assumption on which this section is based, that the ***mass of profit appropriated*** in any particular sphere of production ***is equal to the sum of the surplus-values*** produced by the total capital invested in this sphere. Nevertheless the bourgeois will not consider his ***profit as identical with the surplus-value***, that is to say, with unpaid surplus-labor.
 
@@ -14,7 +14,6 @@ C=c+v+s ; k=c+v
 
 
 Supuesto 1. 
-
 
 The magnitude of the exchange value of mining commodities by which their surplus value was realized in increased money-capital at the final stage of capital circulation (M-C-M'), not only reflects the appropriation of non-paid wage labor in the capitalist production, but had an exponential increment in the circulation of capital or more precisely in their commercialization at the capitalists financial centers. One of the two other causes than the rate of surplus-value to explain the rate of profit is the increment in the value of "that commodity which is money-commodity". The other is the new methods of accumulation, including original accumulation, invented by the capitalists. 
 
@@ -38,7 +37,7 @@ En cualquier otro caso, esto es para cualquier otro movimiento de circulación d
 
 Prefacio de Engels al tercer libro de *Capital: capitalist production as a whole* de Karl Marx.
 
-%%Cita Insertar%%
+
 
 > Engels escribe el Capítulo IV por completo, completando a su vez el tercero con ayuda de Samuel Moore para terminar su parte matemática. Y no publica un capítulo de El Capital titulado por Marx como "The Confusion" que incluía extractos de reportes parlamentarios de las crisis de 1848 y 1857, con declaraciones de veintitrés capitalistas y economistas sobre dinero y capital (money capital), exportaciones de oro, sobre especulación, etc., que seguían comentarios sobre una confusión revelada entre qué es dinero (money) y qué es capital en el mercado financiero de manera satírica, burlándose críticamente de dicha confusión. Esta "compilación comentada" es omitida por la edición de Engels por considerar que no podía componerla. Entre el Capítulo XXXI y el Capítulo XXXII del manuscrito del tercer libro de *Capital: capitalist production as a whole* de Karl Marx editado por Frederick Engels, se omitió ese orden de publicación del manuscrito original. La edición de Engels pasa directamente al Capítulo XXXII: Money Capital and Actual Capital. Después del cual inserta del Capítulo XXXIII al XXXV que es su contribución de Engels haber ensamblado con el material compilado y comentado por Marx dejando de lado algunos extractos de esa parte del manuscrito denominado por el propio Marx como "The Confusion" por tautológicos y otros en los cuales el manuscrito original no detalla.
 

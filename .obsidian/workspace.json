@@ -4,22 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "182bcb29ee4eb48f",
+        "id": "26cd4cfa554a72a6",
         "type": "tabs",
         "children": [
           {
-            "id": "4116c0414a6ef432",
+            "id": "733ad91da83a7a14",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 writing/documents/UCSB Sociology MA PhD/Open House for Admitted Students Sociology MA, PhD.md",
+                "file": "obsidian-history-vault-master/02 analysis/The strategical centrality of anti-mining struggles.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a8fd970e587f173b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-history-vault-master/01 notes/robinsonGlobalRevoltIts2022.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "364162cd36549d70",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-history-vault-master/01 notes/arrighiLongTwentiethCentury1994.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "17e126032e026e77",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-history-vault-master/readme.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -69,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 344
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -85,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03 writing/documents/UCSB Sociology MA PhD/Open House for Admitted Students Sociology MA, PhD.md",
+                "file": "obsidian-history-vault-master/readme.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03 writing/documents/UCSB Sociology MA PhD/Open House for Admitted Students Sociology MA, PhD.md",
+                "file": "obsidian-history-vault-master/readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03 writing/documents/UCSB Sociology MA PhD/Open House for Admitted Students Sociology MA, PhD.md"
+                "file": "obsidian-history-vault-master/readme.md"
               }
             }
           },
@@ -145,7 +182,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -154,7 +192,6 @@
   "left-ribbon": {
     "hiddenItems": {
       "templater-obsidian:Templater": false,
-      "obsidian-import-json:JSON/CSV Importer": false,
       "markdown-table-editor:Open Markdown Table Editor": false,
       "vantage-obsidian:Vantage - Advanced search builder": false,
       "switcher:Open quick switcher": false,
@@ -169,20 +206,50 @@
       "publish:Publish changes": false,
       "audio-recorder:Start/stop recording": false,
       "obsidian-tts:Text to Speech": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-import-json:JSON/CSV Importer": false
     }
   },
-  "active": "4116c0414a6ef432",
+  "active": "17e126032e026e77",
   "lastOpenFiles": [
-    "03 writing/documents/UCSB Sociology MA PhD/Open House recruitment event.md",
-    "03 writing/Dictamen.md",
-    "03 writing/Writting sample.md",
-    "03 writing/WSJ submission.md",
-    "02 analysis/Accumulation of mining capital.md",
-    "02 analysis/Antisystemic effects on capital accumulation extended reproduction mechanism.md",
-    "02 analysis/Challenge imperialist domination.md",
-    "02 analysis/Class struggle critical juncture. The current systemic crisis of global capitalism.md",
-    "02 analysis/Profits, mining capital and gold accumulation.md",
-    "02 analysis/The definition of the situation of class struggle in the hegemony and overaccumulation current crisis of global capitalism.md"
+    "Lima.md",
+    "Peru.md",
+    "README.md",
+    "United States (place note).md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Yağmur Ali Coşkun/Yağmur Ali Coşkun.md",
+    "obsidian-history-vault-master/meta/templates/analysis.md",
+    "obsidian-history-vault-master/meta/templates/annotated bibliography.md",
+    "obsidian-history-vault-master/meta/templates/city.md",
+    "obsidian-history-vault-master/meta/templates/country.md",
+    "obsidian-history-vault-master/meta/templates/task.md",
+    "obsidian-history-vault-master/meta/templates/place.md",
+    "obsidian-history-vault-master/meta/templates/diary.md",
+    "obsidian-history-vault-master/meta/templates/event.md",
+    "obsidian-history-vault-master/meta/templates/person.md",
+    "obsidian-history-vault-master/meta/templates/institution.md",
+    "obsidian-history-vault-master/meta/dataview/all tasks.md",
+    "obsidian-history-vault-master/meta/dataview/twenty latest notes.md",
+    "obsidian-history-vault-master/meta/dataview/notes as a timeline.md",
+    "obsidian-history-vault-master/meta/dataview/Search Research Notes.md",
+    "obsidian-history-vault-master/01 notes/robinsonGlobalRevoltIts2022.md",
+    "obsidian-history-vault-master/01 notes/arrighiLongTwentiethCentury1994.md",
+    "obsidian-history-vault-master/01 notes/bordoGoldStandardRelated1999 1.md",
+    "obsidian-history-vault-master/02 analysis/The strategical centrality of anti-mining struggles.md",
+    "obsidian-history-vault-master/01 notes/marxCapitalCritiquePolitical1909a.md",
+    "obsidian-history-vault-master/10 conversations/14FEB2023/Conversación 14FEB2023.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/William Robinson/Interview to William Robinson.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Yağmur Ali Coşkun",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Mehmet Gürsan Şenalp",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/John Foran",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/David Feldman",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson",
+    "obsidian-history-vault-master/06 archives/Gold, Silver and Platiniaum prices historical.png",
+    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Personal History and Diversity Statement.pdf",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/William Robinson",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Fall 2023 UCSB Sociology MA courses",
+    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Statement of Purpose.pdf",
+    "obsidian-history-vault-master/06 archives/MyChart(1).png",
+    "obsidian-history-vault-master/06 archives/Copper and Tin prices historical.png"
   ]
 }

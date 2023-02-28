@@ -34,5 +34,32 @@
   ],
   "obsidian-tts:start-tts-playback": [],
   "obsidian-tts:cancel-tts-playback": [],
-  "obsidian-tts:pause-tts-playback": []
+  "obsidian-tts:pause-tts-playback": [],
+  "audio-recorder:start": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "R"
+    }
+  ],
+  "audio-recorder:stop": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "S"
+    }
+  ],
+  "editor:toggle-source": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "L"
+    }
+  ]
 }

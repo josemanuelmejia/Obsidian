@@ -41,7 +41,7 @@ if (current.keyword || current.author || current.recipient || current.title || c
     }
 
     const pages = await Promise.all(
-        dv.pages('"01 notes"')
+        dv.pages('"obsidian-history-vault-master"')
         .where(passes)
         .sort(p => p[current.sortby], current.sortorder)
         .map(page => new Promise(async (resolve, reject) => {
@@ -81,8 +81,7 @@ if (current.keyword || current.author || current.recipient || current.title || c
                 p.pageno,
                 p.archive,
                 p.archivelocation,
-                p.comment
-            ])
+                p.comment            ])
     );
 } else {
     dv.paragraph("   Enter search terms into one or more fields to find research notes.");

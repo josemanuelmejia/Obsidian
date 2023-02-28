@@ -23,6 +23,7 @@ Robinson, William I., y Salvador Rangel. 2022c. «The Global Revolt and Its Disc
 start-date:: 2022-08-11
 end-date::
 page-no:: 2
+author:: William Robinson
 
 ### Connections
 

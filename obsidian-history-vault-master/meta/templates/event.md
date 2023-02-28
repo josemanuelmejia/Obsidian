@@ -3,7 +3,7 @@
 
 start-date:: 
 end-date:: 
-city:: [[]]
-country:: [[]]
+city:: [[Lima]]
+country:: [[Peru]]
 
 ### Note
