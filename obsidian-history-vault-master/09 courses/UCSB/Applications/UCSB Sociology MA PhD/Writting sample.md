@@ -1,4 +1,4 @@
-%%Q01: Are the current anti-mining struggles of the Andes anti-systemic? 
+Q01: Are the current anti-mining struggles of the Andes anti-systemic? 
 Q02: Which effects do anti-mining struggles have over the productive capital of the transnational capitalist class in the current systemic crisis?
 Q03: How do anti-mining struggles impact over the dynamic of capital accumulation in the current systemic crisis?%%
 

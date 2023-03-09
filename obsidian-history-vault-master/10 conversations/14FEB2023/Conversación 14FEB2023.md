@@ -23,3 +23,5 @@ Figura 3. Reservas totales en oro (current US$)
 Fig. 4. Reservas totales and reservas totales en oro (current US$), 1960-2021
 
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="https://chart-studio.plotly.com/~TioJason/10/?share_key=xnCymNuN0HfYI1Ej2EBl8V#/"></iframe>
+
+<iframe width="560" height="315" src="https://drive.google.com/file/d/1bgvdnFTkdgi9Qamzs24hRwCSNumG6_VB/view?usp=share_link" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

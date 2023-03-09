@@ -1,0 +1,2 @@
+
+I'm curious about how could I access to the unpublished chapter of Book 3 of Marx's Capital entitled by him as "The Confusion". This notebook of Marx wasn't published by Engels for considering it tautological, but it included excerpts of the British parliamentary reports of the crisis of 1848 and 1857, with statements about money-capital, gold exports and speculation made by twenty three capitalists and economists.
