@@ -1,7 +1,7 @@
 {
   "accentColor": "#08f730",
-  "baseFontSize": 18,
-  "cssTheme": "",
+  "baseFontSize": 30,
+  "cssTheme": "Terminal",
   "theme": "obsidian",
   "textFontFamily": "Source Code Pro",
   "interfaceFontFamily": "Source Code Pro",

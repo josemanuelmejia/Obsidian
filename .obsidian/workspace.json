@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "60bf83a8e399c50d",
+        "id": "ab84cabfe7043e3e",
         "type": "tabs",
         "children": [
           {
-            "id": "c951da1422e64158",
+            "id": "cb02b60de18bd49a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/02 analysis/Intro.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "50396f21f204843d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Luchas campesinas contra la minería imperialista.md",
+                "file": "obsidian-history-vault-master/meta/templates/task.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Luchas campesinas contra la minería imperialista.md",
+                "file": "obsidian-history-vault-master/meta/templates/task.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Luchas campesinas contra la minería imperialista.md",
+                "file": "obsidian-history-vault-master/meta/templates/task.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Luchas campesinas contra la minería imperialista.md"
+                "file": "obsidian-history-vault-master/meta/templates/task.md"
               }
             }
           },
@@ -185,10 +172,20 @@
       "obsidian-import-json:JSON/CSV Importer": false
     }
   },
-  "active": "50396f21f204843d",
+  "active": "cb02b60de18bd49a",
   "lastOpenFiles": [
+    "obsidian-history-vault-master/meta/templates/annotated bibliography.md",
+    "obsidian-history-vault-master/10 conversations/14FEB2023/SCA.pdf",
+    "obsidian-history-vault-master/07 diary/2023-03-10.md",
+    "obsidian-history-vault-master/07 diary/2023-15-02.md",
     "obsidian-history-vault-master/02 analysis/Intro.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Luchas campesinas contra la minería imperialista.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Tesis UASB.md",
+    "Recording 20230310114317.webm",
+    "Recording 20230310113957.webm",
+    "Recording 20230310113928.webm",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/~$chas campesinas contra la minería imperialista.docx",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Luchas campesinas contra la minería imperialista.docx",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.md",
     "obsidian-history-vault-master/02 analysis/Profits, mining capital and gold accumulation. Ganancia, capital minero y acumulación de oro.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido",
@@ -212,16 +209,7 @@
     "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Cartas de recomendación University California - Santa Bárbara.md",
     "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Open House recruitment event.md",
     "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Personal History and Diversity Statement.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Personal History and Diversity Statement.pdf",
-    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Resume or Curriculum Vitae.pdf",
     "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Statement of Purpose.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Statement of Purpose.pdf",
-    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Writting sample.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Writing Sample.pdf",
-    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/The first paragraph of your introduction.md",
-    "obsidian-history-vault-master/08 atlas.ti/Atlas.ti codebook.md",
-    "obsidian-history-vault-master/10 conversations/06MAR2023/Pablo_Quintanilla_06MAR2023.mp4",
-    "obsidian-history-vault-master/10 conversations/10FEB2023",
     "obsidian-history-vault-master/06 archives/Gold, Silver and Platiniaum prices historical.png",
     "obsidian-history-vault-master/06 archives/MyChart(1).png",
     "obsidian-history-vault-master/06 archives/Copper and Tin prices historical.png"
