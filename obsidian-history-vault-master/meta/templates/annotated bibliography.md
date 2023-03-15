@@ -38,8 +38,4 @@ ASA::
 %%Insights produces by the reading%%
 
 
-## References
-
-1. 
-
 ## Tags

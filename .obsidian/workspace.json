@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/meta/templates/task.md",
+                "file": "obsidian-history-vault-master/meta/templates/annotated bibliography.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "03f49348810e4b67",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f770de8a44c7ced9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Luchas campesinas contra la minería imperialista.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/meta/templates/task.md",
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/meta/templates/task.md",
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-history-vault-master/meta/templates/task.md"
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.md"
               }
             }
           },
@@ -172,44 +197,44 @@
       "obsidian-import-json:JSON/CSV Importer": false
     }
   },
-  "active": "cb02b60de18bd49a",
+  "active": "03f49348810e4b67",
   "lastOpenFiles": [
-    "obsidian-history-vault-master/meta/templates/annotated bibliography.md",
-    "obsidian-history-vault-master/10 conversations/14FEB2023/SCA.pdf",
-    "obsidian-history-vault-master/07 diary/2023-03-10.md",
-    "obsidian-history-vault-master/07 diary/2023-15-02.md",
-    "obsidian-history-vault-master/02 analysis/Intro.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Luchas campesinas contra la minería imperialista.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Tesis UASB.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Luchas campesinas contra la minería imperialista.md",
+    "obsidian-history-vault-master/meta/templates/annotated bibliography.md",
+    "34.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Open House for Admitted Students Sociology MA, PhD.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Cartas de recomendación University California - Santa Bárbara.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/William Robinson/Interview to William Robinson.md",
+    "obsidian-history-vault-master/10 conversations/14FEB2023/Conversación 14FEB2023.md",
+    "obsidian-history-vault-master/02 analysis/Revolutionary subject.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/~$chas campesinas contra la minería imperialista.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Open House recruitment event.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Personal History and Diversity Statement.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Personal History and Diversity Statement.pdf",
+    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Resume or Curriculum Vitae.pdf",
+    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Statement of Purpose.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/The first paragraph of your introduction.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Writing Sample.pdf",
+    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Writting sample.md",
+    "Untitled.md",
+    "obsidian-history-vault-master/02 analysis/The strategical centrality of anti-mining struggles.md",
+    "obsidian-history-vault-master/02 analysis/The definition of the situation of class struggle in the hegemony and overaccumulation current crisis of global capitalism.md",
+    "obsidian-history-vault-master/02 analysis/Profits, mining capital and gold accumulation. Ganancia, capital minero y acumulación de oro.md",
+    "obsidian-history-vault-master/02 analysis/Profits, mining capital and gold accumulation.md",
+    "obsidian-history-vault-master/02 analysis/Intro.md",
+    "obsidian-history-vault-master/02 analysis/Class struggle critical juncture. The current systemic crisis of global capitalism.md",
+    "obsidian-history-vault-master/02 analysis/Challenge imperialist domination.md",
+    "obsidian-history-vault-master/02 analysis/Antisystemic effects on capital accumulation extended reproduction mechanism.md",
+    "obsidian-history-vault-master/02 analysis/annotated bibliography/The Global Revolt and Its Discontents.md",
+    "Reading.md",
+    "obsidian-history-vault-master/10 conversations/14FEB2023/SCA.pdf",
     "Recording 20230310114317.webm",
     "Recording 20230310113957.webm",
     "Recording 20230310113928.webm",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/~$chas campesinas contra la minería imperialista.docx",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Luchas campesinas contra la minería imperialista.docx",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.md",
-    "obsidian-history-vault-master/02 analysis/Profits, mining capital and gold accumulation. Ganancia, capital minero y acumulación de oro.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido",
-    "obsidian-history-vault-master/10 conversations/10FEB2023/Conversación 10FEB2023.md",
-    "obsidian-history-vault-master/meta/dataview/all tasks.md",
-    "obsidian-history-vault-master/meta/dataview/notes as a timeline.md",
-    "France Winddance Twine.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Fall 2023 UCSB Sociology MA courses/Fall 2023 UCSB Sociology MA courses.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/France Winddance Twine/France Winddance Twine.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/France Winddance Twine",
-    "obsidian-history-vault-master/10 conversations/07MAR2023/Conversación 07MAR2023.md",
-    "obsidian-history-vault-master/10 conversations/14FEB2023/Conversación 14FEB2023.md",
-    "obsidian-history-vault-master/10 conversations/14FEB2023/Hegemonic transition.pdf",
-    "obsidian-history-vault-master/10 conversations/07MAR2023",
-    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Open House for Admitted Students Sociology MA, PhD.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Yağmur Ali Coşkun/Yağmur Ali Coşkun.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Mehmet Gürsan Şenalp/Mehmet Gürsan Şenalp.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Kevin Anderson.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/David Feldman/David Feldman.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/Hoai-An Nguyen.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Cartas de recomendación University California - Santa Bárbara.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Open House recruitment event.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Personal History and Diversity Statement.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Statement of Purpose.md",
     "obsidian-history-vault-master/06 archives/Gold, Silver and Platiniaum prices historical.png",
     "obsidian-history-vault-master/06 archives/MyChart(1).png",
     "obsidian-history-vault-master/06 archives/Copper and Tin prices historical.png"
