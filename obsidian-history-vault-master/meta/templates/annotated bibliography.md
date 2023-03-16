@@ -26,7 +26,7 @@ ASA::
 %%Beside the main argument and precisions about the method%%
 
 ## Debates, theories, concepts, or assumptions in the paper
-%%Concerns about the embeddedness of the articles in conceptual bodies, theoretical
+%%Concerns about the embeddedness of the articles in conceptual bodies, theoretical%%
 
 ## Authors' Questions
 
@@ -36,6 +36,5 @@ ASA::
 
 ## My questions and comments
 %%Insights produces by the reading%%
-
 
 ## Tags
