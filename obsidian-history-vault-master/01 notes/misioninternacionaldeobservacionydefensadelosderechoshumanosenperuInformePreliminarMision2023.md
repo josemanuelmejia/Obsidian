@@ -25,7 +25,7 @@ comment::
 
 ### Note
 %% begin annotations %%
-### Imported on 2023-03-22 12:24 pm
+### Imported on 2023-03-22 12:35 pm
 
 >[!quote|#ffd100] 
 >
@@ -101,9 +101,12 @@ Que se respete la voluntad electoral del pueblo, expresada a través del voto y 
 
 >[!quote|#ffd100] 
 >
-Desde el 7 de diciembre de 2022 se han realizado en el país movilizaciones populares en Lima, así como en las regiones del sur andino: Ayacucho, Puno, Cusco, Apurímac, Arequipa y en el norte del departamento La Libertad. La respuesta estatal ha sido la represión de las manifestaciones con fuerza letal teniendo a la fecha un saldo de 62 muertos, más de 900 heridos, cerca de 1.800 encausados y criminalizados por ejercer la protesta social; y docenas de detenciones arbitrarias, donde sobresale la ausencia en muchas ocasiones de fiscales y/o abogados(as) defensores(as), [(p. 11)](zotero://open-pdf/library/items/5I257APH?page=11&annotation=highlight-p11x35y500)
+Desde el 7 de diciembre de 2022 se han realizado en el país movilizaciones populares en Lima, así como en las regiones del sur andino: Ayacucho, Puno, Cusco, Apurímac, Arequipa y en el norte del departamento La Libertad. La respuesta estatal ha sido la represión de las manifestaciones con fuerza letal teniendo a la fecha un saldo de 62 muertos, más de 900 heridos, cerca de 1.800 encausados y criminalizados por ejercer la protesta social; y docenas de detenciones arbitrarias, donde sobresale la ausencia en muchas ocasiones de fiscales y/o abogados(as) defensores(as), [(p. 11)](zotero://open-pdf/library/items/5I257APH?page=11&annotation=highlight-p11x35y500)  
+^62-asesinatos
+^1800-procesados %%62 asesinatos, 900 heridos, 1800 procesados%% ^900-heridos 
 
-%%62 muertos, 900 heridos, 1800 procesados%%
+
+
 
 >[!quote|#ffd100] 
 >
@@ -118,4 +121,4 @@ De fondo existen actos de racismo contra las comunidades y pueblos indígenas, l
 %%Racismo sistemtico y difundido en la represin%% %% end annotations %%
 
 
-%% Import Date: 2023-03-22T12:24:44.129-04:00 %%
+%% Import Date: 2023-03-22T12:36:09.781-04:00 %%

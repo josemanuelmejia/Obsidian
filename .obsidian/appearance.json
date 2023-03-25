@@ -1,11 +1,11 @@
 {
   "accentColor": "#08f730",
-  "baseFontSize": 12,
-  "cssTheme": "Terminal",
-  "theme": "obsidian",
-  "textFontFamily": "Source Code Pro",
-  "interfaceFontFamily": "Source Code Pro",
-  "monospaceFontFamily": "Source Code Pro",
+  "baseFontSize": 21,
+  "cssTheme": "Big & Bold",
+  "theme": "moonstone",
+  "textFontFamily": "Times New Roman,Source Code Pro",
+  "interfaceFontFamily": "Source Code Pro,Times New Roman",
+  "monospaceFontFamily": "Source Code Pro,Times New Roman",
   "baseFontSizeAction": true,
   "nativeMenus": true,
   "translucency": false
