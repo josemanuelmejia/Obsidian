@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"f03a5cd1686e70e6","x":-117,"y":-167,"width":217,"height":54,"type":"text","text":"Lucha de clases"},
+		{"id":"e71a8d3ccc78415d","x":-513,"y":-167,"width":269,"height":54,"type":"text","text":"Cambio de escala"},
+		{"id":"ea89b3d2428b5636","x":-460,"y":-300,"width":250,"height":50,"type":"text","text":"Polarización"},
+		{"id":"4663f30c29f356bd","x":-620,"y":-40,"width":410,"height":60,"type":"text","text":"Constitución de nuevos desafiadores"}
+	],
+	"edges":[
+		{"id":"977829d5629cd295","fromNode":"4663f30c29f356bd","fromSide":"right","toNode":"f03a5cd1686e70e6","toSide":"bottom"},
+		{"id":"15aed1786be89df4","fromNode":"e71a8d3ccc78415d","fromSide":"right","toNode":"f03a5cd1686e70e6","toSide":"left"},
+		{"id":"e7941ff08a8734bc","fromNode":"ea89b3d2428b5636","fromSide":"right","toNode":"f03a5cd1686e70e6","toSide":"top"}
+	]
+}

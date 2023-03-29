@@ -11,11 +11,9 @@
             "id": "4422a9621c254f77",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Esquema.md",
-                "mode": "source",
-                "source": false
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Informe preliminar Misión a Perú, mar 2023.pdf"
               }
             }
           },
@@ -23,15 +21,31 @@
             "id": "7abd8858a373486a",
             "type": "leaf",
             "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Estallido.canvas",
+                "viewState": {
+                  "x": 119.73749999999987,
+                  "y": -115.08750000000003,
+                  "zoom": 0
+                }
+              }
+            }
+          },
+          {
+            "id": "e380c94f989c3601",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.md",
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Esquema.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -98,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Esquema.md",
+                "file": "Estallido.canvas",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Esquema.md",
+                "file": "Estallido.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Esquema.md"
+                "file": "Estallido.canvas"
               }
             }
           },
@@ -187,10 +201,13 @@
       "obsidian-import-json:JSON/CSV Importer": false
     }
   },
-  "active": "4422a9621c254f77",
+  "active": "7abd8858a373486a",
   "lastOpenFiles": [
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Esquema.md",
+    "Estallido.canvas",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Informe preliminar Misión a Perú, mar 2023.pdf",
+    "Recording 20230328192612.webm",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/William Robinson/William Robinson.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/La importancia internacional del estallido en los Andes.md",
     "obsidian-history-vault-master/meta/templates/writing template.md",
@@ -211,7 +228,6 @@
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Informe final Peru.pdf",
     "Reading.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Tesis UASB.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Informe preliminar Misión a Perú, mar 2023.pdf",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Luchas campesinas contra la minería imperialista.md",
     "obsidian-history-vault-master/03 writing/documents/Index.md",
     "obsidian-history-vault-master/01 notes/internationalmonetaryfund.fiscalaffairsdept.PeruTechnicalAssistance2022.md",
@@ -220,13 +236,11 @@
     "obsidian-history-vault",
     "obsidian-history-vault-master/meta/templates/annotated bibliography.md",
     "obsidian-history-vault-master/02 analysis/Antisystemic effects on capital accumulation extended reproduction mechanism.md",
-    "obsidian-history-vault-master/meta/templates/analysis.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/~$chas campesinas contra la minería imperialista.docx",
     "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Personal History and Diversity Statement.pdf",
     "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Resume or Curriculum Vitae.pdf",
     "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Writing Sample.pdf",
     "obsidian-history-vault-master/10 conversations/14FEB2023/SCA.pdf",
-    "Recording 20230310114317.webm",
     "obsidian-history-vault-master/06 archives/Gold, Silver and Platiniaum prices historical.png",
     "obsidian-history-vault-master/06 archives/MyChart(1).png",
     "obsidian-history-vault-master/06 archives/Copper and Tin prices historical.png"
