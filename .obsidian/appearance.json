@@ -1,9 +1,9 @@
 {
   "accentColor": "#08f730",
-  "baseFontSize": 22,
-  "cssTheme": "Big & Bold",
-  "theme": "moonstone",
-  "textFontFamily": "Times New Roman,Source Code Pro",
+  "baseFontSize": 30,
+  "cssTheme": "Terminal",
+  "theme": "obsidian",
+  "textFontFamily": "Source Code Pro,Times New Roman",
   "interfaceFontFamily": "Source Code Pro,Times New Roman",
   "monospaceFontFamily": "Source Code Pro,Times New Roman",
   "baseFontSizeAction": true,

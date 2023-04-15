@@ -1,0 +1,172 @@
+TCC: Transnational capitalist class
+Q1: How do Andean anti-mining struggles impact over the accumulation circuit of the TCC during the first quart of the XXI century?
+
+Argument: Anti-mining struggles have an anti-systemic effect on the TCC's circuit of extended capital accumulation because they block the expansion of the mining extractive frontier, and obstruct the production and circulation of mining commodities.
+1) by resisting the expansion of the extractive mining frontier, anti-mining struggles challenge the  urgent TCC's necessity to initiate another systemic cycle of accumulation.
+2) by obstructing the production and circulation of mining commodities, the capital accumulation circuit of the TCC can't accomplish the conversion of their productive capital into augmented money-capital. If the mineral commodities weren't sold in the international market the TCC's capital invested in mining extraction can't return incremented.
+3) by blocking the expansion of mining frontier and obstructing mining commodities production and circulation, antimining struggles should impact in the production of high-technology commodities in the CIT industry as another high-profitable sector monopolized by the TCC.
+4) the technological innovation of means of production that initiated globally after 1970's demanded a volume of mining commodities for which the gold volumes traded in the world market after their commodification 
+
+
+How you'll go to prove that argument?
+
+
+**Intro: 1pp. 
+
+%%Do it last.%%
+
+
+%%Tell what you are arguing%%
+
+
+%%No questions in the introduction.%%
+
+
+%%Start the introduction with a hook%%
+
+
+%%Show why my topic matters.%%
+
+
+%%Provide a base statement.%%
+
+
+%%What kind of evidence you use?%%
+
+
+%%Provide a road or path to read the article (sections)%%
+
+
+**Background and literature review: 2pp.**
+%%Which background the readers need to know to make sense about my topic of research.%%
+%%What they really need to know to read the paper, and not everything about the topic. Short and concise.%%
+
+*Mining in the circuit of capital accumulation SUBHEADING*
+
+Some of the current sociologists situated between mining in the Andes and capital accumulation, from which I think maybe Martín Arboleda (2020) is one of their most advanced exponents, are conscious or will be prone to agree about the centrality of the indigenous peasants struggles against the capitalist production of mineral commodities, but they apparently didn't cross yet the extractivist assumption. Indeed the Marxist perspective didn't being yet used completely as a effective instrument of critical theory over the relation between mining struggles and capitalism, but it is a recognized necessity formed by a gap in the literature as Veltmeyer (2015, 2019), Dietz and Engels (2017) and Lust (2019) should agree.
+
+The conceptual set relation embedded in mining extractivist capital accumulation results weirdly tautological and also extremely precise conceptually speaking (Ye et al. 2020; Ragin 2008), but it is constraining theory development to study the causal relation between mining and capital accumulation. Which must need to be object of a completely critical research that could specify concretely how mining and antimining struggles impact over the reproduction of capital accumulation, beyond not only the extractivist definitional relation mining-capitalism but also opening their causal processes as it's veins.  
+
+Are the veins of capital circulation in which mining is a high profitable industry for the investments of the TCC's productive capital. Veins where we can found the blood of the indigenous peoples, of the indigenous peasantry and of their miners sons and grandsons, as a post-colonial condition (Sammadar 2018) of mining and antimining class struggle in the Andes of South America.
+Those circulation systems of veins are in formal subsummption, the veins of the indigenous and water beings with their presence and bodies are oppressed by the capitalist world-system necessities of mineral commodities to engross the veins of capital reproduction since the XVI century.
+
+The contribution I expect to do for the development of theory about the relations between mining struggles and capital accumulation, states that antimining struggles obstruct the circuit of capital extended accumulation, delaying the production and obstructing the circulation of their productive capital by impeding the realization of minerals in commodity form into money-capital augmented.
+Since the XVI century, the circuit repeated incessantly making a huge and deep cut in the veins of the Pacha Mama, overflowed of indigenous blood, over which mining tailings are thrown, destroying the mountains, polluting and concentrating water, filtering cianuro and mercury in the soil, assassinating miners and indigenous peasants, so the most advanced transnational corporations could produce highly profitable mining commodities.
+
+
+
+
+
+
+
+
+
+
+![[Gold, Silver and Platiniaum prices historical.png]]
+
+
+![[Copper and Tin prices historical.png]]
+
+*International Mining bourgeoisie and TCC*
+
+Since the beginnings of the 20th century, the mining industry in the Andes was under the almost exclusive control of the imperialist U.S. bourgeoise. Mining was one of the industries which capitalism develop most specially in the Andes, where since 1895 monopolistic capital initiated their implantation in large scale mining, oil production and exportation agriculture. The mining bourgeoisie is one of the central nodes of the transnational capitalist class (TCC) and the hegemonic fraction of the imperialist rule coalition in Peru (Mariátegui 1928, 21; Quijano 1988, 116–21).
+
+Andean mining: colonial and imperialist mining
+
+Challengers in mining contention: indigenous-peasantry-miners XX century; indigenous-peasantry XXI century
+
+Effective opposition to mining: antimining campaigns in Peru and the Andes
+
+%%Emphasize the theory needs for development in your case and topic of research.%%
+Andean antimining struggles as a set of cases of mining struggles. Peru, Ecuador, Colombia and Chile
+
+%%The opposition you state in this section emphasize the empty space in academic literature, and how your research fill it as a contribution for theory development.%%
+
+
+
+Imperialism condition. Post-colonial condition.
+
+
+
+, and where traditionally the productive capital of the transnational capitalist class is deposited. If mining is an industry sector where the TCC capital concentrates, mining struggles always were in a challenging position to the capital accumulation circuit of reproduction. As José Carlos Mariátegui envisioned at the beginnings of the twentieth century, the indigenous-peasantry-miner with whom he participates directly in their organization in mining workers union of the Cerro de Pasco Corporation (CPC)
+
+
+
+
+
+the which the capitalist will accumulate plus-capital and increment the scale of their productive capital invested again in mining production. 
+Conseguir: S&P/TSX Global Mining Index (USD)
+
+%%It's not only about how different or particular is your work, but also about how your research fills a gap in theory, that is the contribution.%%
+
+FILL the GAP
+
+
+
+**Body: 2pp. each section
+%%Prove the argument. Show why you are making that argument.%%
+
+%%Argument: %%
+
+Anti-mining struggles have an anti-systemic effect on the TCC's circuit of extended capital accumulation because they block the expansion of the mining extractive frontier, and obstruct the production and circulation of mining commodities. 
+
+***Blocking the expansion of the mining extractive frontier***
+
+By resisting the expansion of the extractive mining frontier, anti-mining struggles challenge the material expansion of concrete fractions of the international mining bourgeoisie. One particular case is China's gold mining corporations, which although the expansion of their national and international mining frontier since the first years of the XXI century it's production couldn't reach the volume of accumulation of U.S. total reserves in monetary gold (Figure 2). A long twentieth century of imperialism over gold mining countries apparently hold a current U.S. high advantage in monetary gold holdings, which imply a non-actually completed transition to China as a new hegemonic state of global capitalism. 
+
+The main constrain of China to increment it's total reserves in monetary gold is the imperialist domination of the U.S. in the most gold mining countries. China's gold mining national and transnational operations should be reduced in comparison with their mining operations in copper and other mineral commodities, and highly reduced in comparison with U.S. gold mining transnational operations. So, imperialist mining is a serious category of interpretation for Latin America and other world regions in which countries and peoples are oppressed and exploited by a core foreign mining bourgeoisie for which the national state apparatus and bourgeoisie are it's domestic guardians. The military domination of imperialist mining, isn't only hold by the repressive apparatus of the domestic states from which the TCC produce and extract gold, it mainly repose on the threat of a military occupation of the territories in which gold mining would be guaranteed by the hegemonic capitalist state. The exclusivity of gold mining accumulation guaranteed by imperialist domination is a global condition which could be in the core of the limits of a global hegemony transition for which the interstate military competition for mobile capital anticipate the configuration of a new regime of accumulation.
+
+%%Prove the argument%%
+
+The total reserves of the United States in 2021 are 4.79 times the volume of total reserves of China for the same year (Fig.1). Although the U.S. total gold reserves for the same last year 2021 was of 475.95 billion, China only accumulated 114 billion (0.114 trillion) in monetary gold holdings from their total reserves valued in 3.43 trillion (Fig.2). In August 15th, 1971 President Nixon dropped from the Bretton Woods International Monetary System, the volume of monetary gold holdings in U.S. total reserves incremented exponentially from 12.7 billion to an historical maximum of 494 billion in 2020.
+
+Figure 1. Total reserves includes gold (U.S. dollars), 1960-2021 
+<iframe frameBorder='no' src="https://databank.worldbank.org/embed/Total-reserves-(includes-gold-current-US$)-1/id/a186c431?ti=y&ds=y&dd=n&tb=n&sh=y&dw=y&pr=n&inf=y&zm=y&md=y&navigator=n&theme=darkGrey&bdrClr=rgb(68,68,68)&bdrStyle=solid&bdrWidth=0px&title=Arial;14px;true;false;rgb(68,68,68);justify&desc=Arial;9px;false;false;rgb(68,68,68);justify&exptypes=Excel,CSV,TabbedTxt" width= "900"  height="800"></iframe>
+
+Figure 2. Total reserves in monetary gold holdings (current US$)
+<iframe frameBorder='no' src="https://databank.worldbank.org/embed/Total-reserves-in-monetary-gold-holdings-(currents-US$)/id/90eeb6dd?ti=y&ds=y&dd=n&tb=n&sh=y&dw=y&pr=n&inf=y&zm=y&md=y&navigator=n&theme=darkGrey&bdrClr=rgb(68,68,68)&bdrStyle=solid&bdrWidth=0px&title=Arial;14px;true;false;rgb(68,68,68);justify&desc=Arial;9px;false;false;rgb(68,68,68);justify&exptypes=Excel,CSV,TabbedTxt" width= "900"  height="800"></iframe>The massive gold shortage driven by gold exchange standard was recognized already at 1922. And consequently motivates since then a stockpiling of monetary gold in key reserve centers in London and New York:
+
+"The gold exchange standard began de facto in 1925 after Britain returned to the gold standard at the prewar parity, followed in the next two years by most countries. The case for "gold  economy" was made at the Genoa conference in 1922. The world could  *avoid a massive gold shortage*, produced in large part by wartime inflation, by two measures: first, by nations adopting a gold bullion standard and demonetizing gold as a national currency; second, by using foreign exchange (primarily pounds and dollars) as international reserves and stockpiling monetary gold in the key reserve centers of London and New York. [...] The massive gold shortage driven by gold exchange standard was recognized already at 1922. And consequently motivates since then a stockpiling of monetary gold in key reserve centers in London and New York." (Bordo 1999, 422-423).
+
+The total reserves exponential raise of the G7 countries from 1990 to 2014, had been explained significantly by the variables: GDP, population, imports of goods and services, net FDI liabilities, financial openness index and private capital flows. Oktay et al. (2016) regressions with those variables explains approximately 65% of variations in total reserves of G7 countries. But the monetary gold holdings volume of their total reserves only was explained related to the variables GDP and exports of goods and services. The raising dynamic of monetary gold accumulation in total reserves is definitely a demand factor which increase the gold mining extractive frontier, but the force behind is the grow of the financial capital -which is also the growing of the "economy"-, and the monetary capital needs of the richest economies with high GDP and imports of goods and service. An important part of the TCC financial capital, separated of the productive capital, is accumulated purely in total reserves, and an vital part of it is accumulated in monetary gold holdings stockpiles. As Figure 2 evidence, the total gold reserves bring us a puzzle snapshot of the dynamics of capital accumulation, ¿are the inverted positions of China and the U.S. in total reserves and total gold reserves dimensions related to the systemic cycles of accumulation material expansion and financial expansion phases.
+
+"Precautionary motive forces central banks to accumulate reserves but mercantilist approach is another reason which holds sizable portion of the literature. *Reserves are mostly seen as a buffer stock or a hedge to the crisis’ effects.* Besides, gold has a power to stabilize economies. Secondly our results indicate that  
+*both increase GDP current USD and exports of goods and services affect an increase in gold reserves while population, net FDI liabilities, and current account balance have negative effects on it.* These findings are consistent with the previous literature. There is *strong relationship between gold reserves and state power.* *That’s why gold is accepted as a safe haven and strategic asset by the countries during the financial crises.*" "The findings show USA has the most fixed effect value of the total reserves where Canada has the least. We predict that high economic growth and rising exports and services of G-7 are *more likely to lead to an increase in their gold reserves which are affecting 64% of net global wealth.*" (Oktay et al. 2016, 16).
+
+Since the institutions of the regime of accumulation that will rule the fifth systemic cycle of accumulation didn't exist yet, and the volume of total gold reserves of the U.S. are increasingly superior beside the China total gold reserve. The 3.31 trillion US$ of total reserves minus gold of China respect to their 112 billion US$ in monetary gold holdings total reserves, should be useful to state that the financial expansion phase initiated at the final years of the 20th century is still operating increasingly since the 2000s as the increasing total gold reserves dynamic of accumulation since 1971 evidence, with a clear holded predominance of U.S. (Figure 2).
+
+"*The stages, and the long centuries that encompass them, overlap because, **as a rule**, the agency and structures of accumulation typical of each stage have risen to pre-eminence in the capitalist world-economy during the (CM') phase of financial expansion of the preceding stage. From this point of view, the fourth (US) systemic cycle of accumulation is no exception. The process through which the governmental and business institutions typical of this cycle and stage were created was part and parcel of the process through which the governmental and business institutions of the preceding (British) cycle and stage were superseded - a supersession which began during the Great Depression of 1873-96 and the concomitant financial expansion of the British regime of capital accumulation*" (Arrighi 1994, 214).
+
+The volume of monetary gold accumulation of the U.S., evidence an incomplete capital flight from U.S. to China, as a consequence of the initiation of a fifth systemic cycle of accumulation "with Chinese characteristics" and an hegemonic transition in global capitalism from the West to the East. As this processes should be operating actually, their complete materialization isn't concrete yet, but could be reached soon as China would need a new regime of accumulation which imply a change in the gold standard equivalence institutions in a situation in which their gold reserves are too low to stablish other international regime of accumulation based on any gold standard international currency which obvious the conversion fact that U.S. gold reserves are highly superior beside the total gold reserves of China.
+
+Maybe when the total gold reserves of China reach a volume enough powerful to renegotiate the financial terms of international exchange stablishing a particular gold standard currency equivalence for their convenience as the new hegemonic capitalist state. Or when another international financial system completely separated from any gold standards depleted the dollar as the post-Breton Woods currency adjusted to monetary gold reserves.
+
+The other possibility of the gold reserves and capital accumulation puzzle, beside the state competition for mobile capital, is that the final stage of the forth systemic cycle of accumulation is already realized in the currency form of monetary financial capital with their loaded flight to China, evidenced in the volume of their total reserves in US$. But the monetary gold form of financial capital is still increasingly hold in the U.S. total reserves. The reaction of China to this accumulation dynamic rule of capitalism was to enforce the extractive mining frontier extension, not only to increase their gold reserves, but to mine other precious minerals as a high profitable branch of the computing and information technology industry, in which the TCC have their most capital invested.
+
+***Obstructing the circulation of the TCC's productive capital
+
+By obstructing the production and circulation of mining commodities, the capital accumulation circuit of the TCC can't accomplish the conversion of their productive capital into augmented money-capital. If the mineral commodities weren't sold in the international market the TCC's capital invested in mining extraction can't return incremented.
+
+
+
+
+
+%%Prove the argument%%
+
+
+
+
+
+
+**Conclusions: 1pp.
+%%Restate the argument already proved.%%
+
+
+**Discussion: 1pp.
+%%Show how your argument about the studied cases could be meaningful for other cases of the same phenomenon, and for the development of theory. How do my empirical evidence of the cases studied develops theory.%%
+
+Insert the mention to the indigenous subjectivity behind mining struggles in the Andes, as a prospective branch of my research for further analysis about the identity configuration of a revolutionary subjectivity among the indigenous peasantry built across centuries around mining. Reassume Valcárcel and Mariátegui indigenous perspective about the revolutionary postcolonial condition of the indigenous peasantry. Specially among the young generations, and their conjunction with the cholo group. 
+
+
+
+

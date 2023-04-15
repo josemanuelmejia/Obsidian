@@ -59,7 +59,7 @@ The global revolt has been underway for some years now. In the months prior to t
 
 >[!quote|#ffe97f] 
 >
-After the initial worldwide wave in the years immediately following, the protests ebbed and flowed but did not die down, with a fresh wave breaking out in 2017. [(p. 2)](zotero://open-pdf/library/items/QTDDIP4X?page=2&annotation=highlight-p2x225y224)
+After the initial worldwide wave in the years immediately following, the protests ebbed and flowed but did not die down, with a fresh wave breaking out in 2017. [(p. 2)](zotero://open-pdf/library/items/QTDDIP4X?page=2&annotation=highlight-p2x225y224) ^1
 
 %%Robinson and Rangel states that the peak of social struggles of 2019 is the one of the contentious mobilization initiated in 1968. The crisis of hegemony and the crisis of overaccumulation of global capitalism coincide with the 1970 incessant arose of gold reserves and price.%%
 

@@ -1,0 +1,1 @@
+https://elcomercio.pe/resizer/VQbATQHa3-FhdU4wu3mpenpzoKE=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/I6XBTDGCYJAGRLRQJZABZPJUN4.jpg)
