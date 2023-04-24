@@ -1,15 +1,16 @@
 {
 	"nodes":[
-		{"type":"text","text":"visiones de futuro del agua","id":"2b27474930686ce5","x":-467,"y":141,"width":257,"height":59},
+		{"type":"text","text":"visiones de futuro del agua","id":"2b27474930686ce5","x":-800,"y":141,"width":590,"height":59},
 		{"type":"text","text":"CONAIE: Ley del agua","id":"9566ce946be811bb","x":220,"y":640,"width":250,"height":60},
-		{"type":"text","text":"organizaciones de desarrollo transnacionales","id":"42a8bd26ceb232ea","x":-361,"y":460,"width":250,"height":60},
-		{"type":"text","text":"escasez y seguridad hídrica","id":"fcef014da1b7a9d2","x":-540,"y":310,"width":237,"height":60},
-		{"type":"text","text":"temporalidades","id":"3d48890eebe797be","x":-460,"y":-40,"width":250,"height":60},
+		{"type":"text","text":"organizaciones de desarrollo transnacionales","id":"42a8bd26ceb232ea","x":-361,"y":520,"width":321,"height":150},
+		{"type":"text","text":"escasez y seguridad hídrica","id":"fcef014da1b7a9d2","x":-640,"y":310,"width":337,"height":150},
+		{"type":"text","text":"temporalidades","id":"3d48890eebe797be","x":-460,"y":-40,"width":300,"height":50},
 		{"type":"text","text":"binarios","id":"592cd09f30f3ef92","x":-467,"y":-120,"width":250,"height":60},
 		{"type":"text","text":"discursos","id":"e0817a4cc591bf9a","x":-467,"y":-200,"width":250,"height":60},
-		{"type":"text","text":"anticipacion","id":"3877dc8277426188","x":-56,"y":140,"width":151,"height":60},
-		{"type":"text","text":"crea condiciones de futuro en la región andina","id":"1785bf97f3feb99c","x":-105,"y":300,"width":250,"height":70},
-		{"type":"text","text":"campesinado","id":"5a4308d10cd37b5c","x":95,"y":460,"width":250,"height":60}
+		{"type":"text","text":"anticipacion","id":"3877dc8277426188","x":-56,"y":80,"width":336,"height":120},
+		{"type":"text","text":"crea condiciones de futuro en la región andina","id":"1785bf97f3feb99c","x":-105,"y":300,"width":450,"height":140},
+		{"type":"text","text":"campesinado","id":"5a4308d10cd37b5c","x":560,"y":520,"width":250,"height":60},
+		{"id":"04054522da6a8f49","x":-1174,"y":-461,"width":494,"height":401,"type":"text","text":"Conflicto por el agua\nEl conflicto por el agua involucra un conjunto y secuencia de eventos de lucha en los cuales el agua se encuentra en el corazón de las reivindicaciones, demandas o intereses enfrentados. Ya sea en forma de recurso natural, valor, mercancía, cuerpo vivo, naturaleza, sujeto, espíritu, infraestructura, o capital administrable, los conflictos por el agua enfrentan poblaciones, organizaciones sociales y políticas, estados, organismos internacionales, empresas privadas, públicas y transnacionales. "}
 	],
 	"edges":[
 		{"id":"6f1b1263dde7c4d7","fromNode":"2b27474930686ce5","fromSide":"right","toNode":"3877dc8277426188","toSide":"left"},

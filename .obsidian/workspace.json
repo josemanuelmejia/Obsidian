@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4b830842a40317a8",
+        "id": "aacfe228c482bc5d",
         "type": "tabs",
         "children": [
           {
-            "id": "6e24c07370b6a454",
+            "id": "f0fd20df1446b172",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,16 +20,19 @@
             }
           },
           {
-            "id": "6ee3c3bba7923b4d",
+            "id": "c3835ed61b1b94a3",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Comunicado FFAA.jpg"
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Título del ensayo.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -59,9 +62,9 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": true,
-                "explainSearch": false,
-                "collapseAll": false,
+                "matchingCase": false,
+                "explainSearch": true,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
@@ -79,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 568.5
+    "width": 200
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -95,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/French Strikes and Popular Mobilizations Continue.md",
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Título del ensayo.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/French Strikes and Popular Mobilizations Continue.md",
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Título del ensayo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/French Strikes and Popular Mobilizations Continue.md"
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Título del ensayo.md"
               }
             }
           },
@@ -181,53 +184,54 @@
       "audio-recorder:Start/stop recording": false,
       "obsidian-tts:Text to Speech": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-import-json:JSON/CSV Importer": false
+      "obsidian-import-json:JSON/CSV Importer": false,
+      "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "4156b5e5ac4c33be",
+  "active": "c3835ed61b1b94a3",
   "lastOpenFiles": [
+    "Informe Final. Violación de Derechos Humanos en Perú Diciembre 2022 a Febrero 2023.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Título del ensayo.md",
+    "obsidian-history-vault-master/06 archives/Lenin 1905rd Father Gapon.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/French Strikes and Popular Mobilizations Continue.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~WRL0935.tmp",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~WRD0919.tmp",
+    "obsidian-history-vault-master/01 notes/leninIzquierdismoEnfermedadInfantil1978.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~$onunciamiento_09Octubre2019.docx",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~WRL3718.tmp",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~WRD3702.tmp",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Pronunciamiento_09Octubre2019.docx",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido en los Andes. 8pp..md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~$tulo del ensayo.docx",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Título del ensayo.docx",
+    "obsidian-history-vault-master/01 notes/leninWhatSenseCan1934b.md",
+    "obsidian-history-vault-master/01 notes/leninRevolutionaryDays1962.md",
+    "obsidian-history-vault-master/01 notes/leninLeftWingCommunismInfantile1940.md",
+    "Mayra.canvas",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Comunicado FFAA.jpg",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Fuerzas Armadas y Policía Nacional anuncian que no acatan golpe de Estado de Pedro Castillo.md",
+    "obsidian-history-vault-master/06 archives/Comunicado FFAA.md",
+    "obsidian-history-vault-master/06 archives/Lenin 1905rd What Is Happening in Russia.md",
+    "obsidian-history-vault-master/06 archives/Lenin Revolutionary Days.md",
+    "obsidian-history-vault-master/06 archives/Gold project La Arena (Huamachuco, Peru).md",
+    "obsidian-history-vault-master/06 archives/Copper and Tin prices historical.png",
+    "obsidian-history-vault-master/06 archives/Speech Delivered at a Congress Of Leather Industry Workers October 2, 1920.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Informe preliminar Misión a Perú, mar 2023.pdf",
+    "obsidian-history-vault-master/08 atlas.ti/Atlas.ti codebook.md",
+    "obsidian-history-vault-master/07 diary/2023-10-03.md",
+    "1.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",
+    "34.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/William Robinson/William Robinson.md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Accumulation of mining capital.md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q4. Mining struggles escalation effects/Q4.1. La forma de articulación de las vanguardias campesinas de las luchas contra la minería durante el estallido en los Andes es indicativa del desarrollo de la lucha de clases en el conflicto político/Q4.1. La forma de articulación de las vanguardias campesinas.md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q4. Mining struggles escalation effects/Q4. Mining struggles escalation effects in the formation of the revolutionary subject.md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q3. Mining struggles international significance in class struggle/The definition of the situation of class struggle.md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q3. Mining struggles international significance in class struggle/Q3. Mining struggles international significance in class struggle.md",
-    "obsidian-history-vault-master/02 analysis/annotated bibliography/a1. Marx at the Margins.md",
-    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Profits, mining capital and gold accumulation.md",
-    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Profits, mining capital and gold accumulation..md",
-    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/El proceso de acumulación minero.md",
-    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Q1. Mining struggles antisystemic effects on capital accumulation.md",
-    "obsidian-history-vault-master/01 notes/robinsonGlobalRevoltIts2022.md",
-    "obsidian-history-vault-master/01 notes/mejiaCambioEscalaContienda2021.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Título del ensayo.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Informe preliminar Misión a Perú, mar 2023.pdf",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Esquema.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Comunicado FFAA.jpg",
-    "obsidian-history-vault-master/01 notes/internationalmonetaryfund.fiscalaffairsdept.PeruTechnicalAssistance2022.md",
-    "obsidian-history-vault-master/01 notes/foranTakingPowerOrigins2005.md",
-    "obsidian-history-vault-master/01 notes/ccpcentralcommitteeAuthorizedReleaseProposal2020.md",
-    "obsidian-history-vault-master/01 notes/bordoGoldStandardRelated1999 1.md",
-    "obsidian-history-vault-master/01 notes/arrighiAntisystemicMovements1989.md",
-    "obsidian-history-vault-master/01 notes/2. lucia shown in the US two years after cuban film festival (primary source).md",
-    "obsidian-history-vault-master/01 notes/20th China's Communist Party Congress.md",
-    "obsidian-history-vault-master/01 notes/xijinpingTranscriptsReportMade2022.md",
-    "obsidian-history-vault-master/01 notes/leninLeftWingCommunismInfantile1940.md",
-    "obsidian-history-vault-master/06 archives/Sound Recordings, MOMA, NYC (archive note).md",
     "Informe Final. Violacion de Derechos Humanos en Peru 2022 2023.webm",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Informe Final Violación de los Derechos Humanos en Perú Dic2022-Feb2023.pdf",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Informe final Peru.pdf",
-    "Recording 20230331151124.webm",
-    "Mayra.canvas",
-    "Recording 20230331113159.webm",
-    "obsidian-history-vault-master/02 analysis/questions and arguments/Q4. Mining struggles escalation effects/Q4.1. La forma de articulación de las vanguardias campesinas de las luchas contra la minería durante el estallido en los Andes es indicativa del desarrollo de la lucha de clases en el conflicto político",
-    "obsidian-history-vault-master/02 analysis/questions and arguments/Q4. Mining struggles escalation effects",
-    "obsidian-history-vault-master/02 analysis/questions and arguments/Q3. Mining struggles international significance in class struggle",
-    "obsidian-history-vault-master/02 analysis/questions and arguments/Q2. Mining struggles challenge imperialist domination",
     "Estallido.canvas",
     "obsidian-history-vault-master/06 archives/Gold, Silver and Platiniaum prices historical.png",
-    "obsidian-history-vault-master/06 archives/MyChart(1).png",
-    "obsidian-history-vault-master/06 archives/Copper and Tin prices historical.png"
+    "obsidian-history-vault-master/06 archives/MyChart(1).png"
   ]
 }

@@ -16,5 +16,7 @@
   "obsidian-tts",
   "obsidian-mind-map",
   "obsidian-pandoc-reference-list",
-  "obsidian-pandoc"
+  "obsidian-pandoc",
+  "obsidian-wordnet-plugin",
+  "language-translator"
 ]
