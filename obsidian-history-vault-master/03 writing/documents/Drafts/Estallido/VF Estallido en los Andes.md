@@ -1,4 +1,4 @@
-Estallido en los Andes
+ Estallido en los Andes
 
 # La fundación de la patria por el verdadero Perú. Pueblo, lucha y nueva consciencia en el proceso de construcción de poder popular en los Andes
 

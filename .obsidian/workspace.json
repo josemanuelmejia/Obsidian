@@ -11,14 +11,11 @@
             "id": "383efb81732429cf",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",
-                "viewState": {
-                  "x": 442.0662461102143,
-                  "y": -679.4176054668993,
-                  "zoom": -0.1107035989853605
-                }
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/VF Estallido en los Andes.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -88,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/VF Estallido en los Andes.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/VF Estallido en los Andes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas"
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/VF Estallido en los Andes.md"
               }
             }
           },
@@ -178,6 +175,7 @@
   },
   "active": "383efb81732429cf",
   "lastOpenFiles": [
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~WRL0268.tmp",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~WRD0253.tmp",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~WRL0852.tmp",
@@ -189,7 +187,6 @@
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~WRD1200.tmp",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~WRL0553.tmp",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~WRD0545.tmp",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~WRL2375.tmp",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Título del ensayo.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/VF Estallido en los Andes.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Comunicado FFAA.jpg",
@@ -210,7 +207,6 @@
     "obsidian-history-vault-master/01 notes/robinsonGlobalRevoltIts2022.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido en los Andes.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",
     "obsidian-history-vault-master/01 notes/leninIzquierdismoEnfermedadInfantil1978.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/French Strikes and Popular Mobilizations Continue.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido en los Andes. 8pp..md",
