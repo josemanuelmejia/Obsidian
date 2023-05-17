@@ -4,73 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "5305f68c890e6bdc",
+        "id": "12b42f71cef9c996",
         "type": "tabs",
-        "dimension": 44.8605577689243,
         "children": [
           {
-            "id": "07561d3d20e7dc34",
+            "id": "7910da8c9c3c32c8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_25022023.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6d5c894b6931e4d6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Revision Strategies - Excelsior OWL.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "37af5fa20d088029",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_04052023.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "c3d5ec0504e24b1e",
-        "type": "tabs",
-        "dimension": 55.1394422310757,
-        "children": [
-          {
-            "id": "97d3ed82e83ce0b4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e29eda87d4df8aad",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-history-vault-master/07 diary/08MAY23.md",
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Tesis UASB.md",
                 "mode": "source",
                 "source": false
               }
@@ -142,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Tesis UASB.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Tesis UASB.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md"
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Tesis UASB.md"
               }
             }
           },
@@ -231,12 +174,16 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "97d3ed82e83ce0b4",
+  "active": "7910da8c9c3c32c8",
   "lastOpenFiles": [
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Luchas campesinas contra la minería imperialista.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Tesis UASB.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Intro.md",
+    "obsidian-history-vault-master/03 writing/documents/Index.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_25022023.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
     "obsidian-history-vault-master/07 diary/08MAY23.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_04052023.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_25022023.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~WRL0252.tmp",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~WRD0240.tmp",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~$jia - 2023 - Estallido en los Andes_01052023.docx",
@@ -248,8 +195,6 @@
     "obsidian-history-vault-master/06 archives/JWSR_RV1_03_23_2023.pdf",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/~$jia-2023-Antisystemic Effects of Antimining struggles in the Andes_25022023.docx",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_JWSR_25022023_DOCX.docx",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Luchas campesinas contra la minería imperialista.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Tesis UASB.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Título del ensayo.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/VF Estallido en los Andes.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/RV_Estallido en los Andes.md",
@@ -270,8 +215,6 @@
     "obsidian-history-vault-master/06 archives/Lenin Revolutionary Days.md",
     "obsidian-history-vault-master/01 notes/robinsonGlobalRevoltIts2022.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido en los Andes.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.md",
-    "obsidian-history-vault-master/01 notes/leninIzquierdismoEnfermedadInfantil1978.md",
     "obsidian-history-vault-master/06 archives/Copper and Tin prices historical.png",
     "Estallido.canvas",
     "obsidian-history-vault-master/06 archives/Gold, Silver and Platiniaum prices historical.png",
