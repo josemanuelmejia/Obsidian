@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c9e6b9340ffd80e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Tesis UASB.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8c5e6866b1d3d492",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "La adicción.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Tesis UASB.md",
+                "file": "La adicción.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Tesis UASB.md",
+                "file": "La adicción.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Tesis UASB.md"
+                "file": "La adicción.md"
               }
             }
           },
@@ -174,10 +199,11 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "7910da8c9c3c32c8",
+  "active": "8c5e6866b1d3d492",
   "lastOpenFiles": [
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Luchas campesinas contra la minería imperialista.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Tesis UASB.md",
+    "La adicción.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Luchas campesinas contra la minería imperialista.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Intro.md",
     "obsidian-history-vault-master/03 writing/documents/Index.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_25022023.md",
@@ -214,7 +240,6 @@
     "obsidian-history-vault-master/06 archives/Lenin 1905rd What Is Happening in Russia.md",
     "obsidian-history-vault-master/06 archives/Lenin Revolutionary Days.md",
     "obsidian-history-vault-master/01 notes/robinsonGlobalRevoltIts2022.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido en los Andes.md",
     "obsidian-history-vault-master/06 archives/Copper and Tin prices historical.png",
     "Estallido.canvas",
     "obsidian-history-vault-master/06 archives/Gold, Silver and Platiniaum prices historical.png",
