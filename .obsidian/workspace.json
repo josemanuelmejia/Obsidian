@@ -4,47 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "12b42f71cef9c996",
+        "id": "711d41571d3f5d5d",
         "type": "tabs",
         "children": [
           {
-            "id": "7910da8c9c3c32c8",
+            "id": "2e05b51ffef668e1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Tesis UASB.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c9e6b9340ffd80e4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Tesis UASB.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8c5e6866b1d3d492",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "La adicción.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "La adicción.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "La adicción.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "La adicción.md"
-              }
+              "state": {}
             }
           },
           {
@@ -199,17 +166,23 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "8c5e6866b1d3d492",
+  "active": "2e05b51ffef668e1",
   "lastOpenFiles": [
+    "obsidian-history-vault-master/05 tasks/Indexación de la Revista de la Sociedad Peruana de Derecho Internacional (RSPDI).md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Tesis UASB.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Resume or Curriculum Vitae.pdf",
+    "Hoja de vida (resumen).md",
+    "JOSÉ MANUEL MEJÍA V..md",
+    "obsidian-history-vault-master/meta/templates/writing template.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Revision Strategies - Excelsior OWL.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_04052023.md",
     "La adicción.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Luchas campesinas contra la minería imperialista.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Intro.md",
     "obsidian-history-vault-master/03 writing/documents/Index.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_25022023.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
     "obsidian-history-vault-master/07 diary/08MAY23.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_04052023.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~WRL0252.tmp",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~WRD0240.tmp",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~$jia - 2023 - Estallido en los Andes_01052023.docx",
@@ -217,10 +190,8 @@
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~WRL0001.tmp",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~WRD0000.tmp",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido en los Andes_FINAL.docx",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Revision Strategies - Excelsior OWL.md",
     "obsidian-history-vault-master/06 archives/JWSR_RV1_03_23_2023.pdf",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/~$jia-2023-Antisystemic Effects of Antimining struggles in the Andes_25022023.docx",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_JWSR_25022023_DOCX.docx",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Título del ensayo.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/VF Estallido en los Andes.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/RV_Estallido en los Andes.md",
@@ -235,11 +206,6 @@
     "Informe Final. Violación de Derechos Humanos en Perú Diciembre 2022 a Febrero 2023.md",
     "Mayra.canvas",
     "README.md",
-    "The strategical centrality of anti-mining struggles.md",
-    "Untitled 1.md",
-    "obsidian-history-vault-master/06 archives/Lenin 1905rd What Is Happening in Russia.md",
-    "obsidian-history-vault-master/06 archives/Lenin Revolutionary Days.md",
-    "obsidian-history-vault-master/01 notes/robinsonGlobalRevoltIts2022.md",
     "obsidian-history-vault-master/06 archives/Copper and Tin prices historical.png",
     "Estallido.canvas",
     "obsidian-history-vault-master/06 archives/Gold, Silver and Platiniaum prices historical.png",
