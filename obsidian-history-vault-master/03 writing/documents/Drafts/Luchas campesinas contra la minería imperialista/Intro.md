@@ -1,45 +1,22 @@
 # Introducción 28022023
 
-La pregunta de investigación que orienta esta tesis es: ¿cuál es el efecto de las luchas campesinas contra la minería sobre la acumulación capitalista y la dominación imperialista? En ese sentido, el objetivo de esta investigación consiste en evidenciar la importancia estratégica del conflicto minero para el desarrollo de la lucha de clases, en tanto desafía la operación de un enclave central para la dinámica de acumulación capitalista y socava directamente la dominación imperialista en los países mineros andinos como el Perú.
+La pregunta de investigación que orienta esta tesis es: ¿cuál es el efecto de las luchas campesinas antimineras sobre la acumulación capitalista y la dominación imperialista en los Andes? 
 
-La lucha contra la minería en Cajamarca es contra la minera de oro estadounidense más grande del mundo. Las ganancias de la acumulación capitalista minera de oro no solo se incrementan por medio del mecanismo de reproducción del capital (D-M-D’), el aumento del precio del oro es un mecanismo de acumulación adicional al mecanismo de circulación. Con el mecanismo de circulación, una porción de la ganancia acumulada se convierte en capital productivo con la finalidad de producir mercancías que los capitalistas venden para acumular más ganancia. No toda esta ganancia se reinvierte como capital productivo, una porción de ella la gasta la burguesía y la otra parte de ese dinero sólo puede usarse para producir más ganancias si reingresa al circuito de acumulación dado por la producción de mercancías para obtener mayores ganancias.
+Así como el conflicto minero proletario ha sido una de las vetas más importantes de interpretación para los estudios andinos peruanos durante el siglo XX, la escalada del conflicto antiminero campesino viene siendo cada vez más un campo estratégico para el marxismo indigenista latinoamericano. Tanto porque avanza en el sentido opuesto al neoextractivismo de la fracción izquierda del sistema representativo burgués, como porque en las luchas campesinas antimineras se expresa la negatividad absoluta determinada de la reproducción social frente a la reproducción del capitalismo global.
 
-¿Cómo funciona la acumulación capitalista minera de oro? La única mercancía que es mercancía y dinero a la vez, es el oro. Como anota Karl Marx:
+Si bien la negatividad del proceso de expansión de la frontera extractiva minera frente al proceso de reproducción social del campesinado ha sido imaginada como una contradicción a resolverse por medio de las mejores instituciones de gobernabilidad ambiental, en los hechos es por medio del despojo militarizado de la tierra y el agua que los campesinos desaparecen, forzados a migrar, a vender sus tierras, a salir de las zonas de intervención minera donde se concreta la guerra abierta que desarrolla el capitalismo contra la economía natural de vida. La implantación de enclaves capitalistas en los Andes, donde la subsunción formal predomina todavía, es convertida en subsunción real donde la minería destruye las condiciones materiales de posibilidad para el desarrollo de alternativas de vida.
 
->[!quote|#f9cc5a] 
->"se dice que un cambio en la magnitud de un cierto capital no tiene influencia sobre la proporción de ganancia a capital, y así, sobre la tasa de ganancia, sobre la suposición de que la masa de capital, sobre la cual se calculan las ganancias, crece simultáneamente con la masa de ganancias, y viceversa. Esto es cierto sólo en dos casos. En primer lugar, es cierto, suponiendo que todas las demás circunstancias, especialmente la tasa de plusvalía, permanezcan invariables, si hay un cambio en el valor de esa mercancía que es dinero-mercancía" (p. 164).
+Asimismo, la relación entre las luchas políticas principalmente campesinas y una de las industrias estratégicas del desarrollo del capitalismo en los Andes, para la propia sociedad burguesa y particularmente para sus tecnócratas, ha sido interpretada como un golpe al "crecimiento económico". Esta tesis no podría intentar convencer a este grupo de opinión sino que más bien evidencia cuáles son los efectos de las luchas antimineras sobre la reproducción capitalista en general y sobre la dominación imperialista en los Andes, en específico. Es decir, se toma en serio los efectos de las luchas campesinas contra la minería, sobre los mecanismos de reproducción del capital minero y de dominación imperialista en los Andes.
 
+En ese sentido, el objetivo de esta investigación consiste en evidenciar la importancia estratégica del conflicto minero para el desarrollo de la lucha de clases, en tanto desafía la operación de un enclave central para la dinámica de acumulación capitalista y socava directamente la dominación imperialista en los países andinos como el Perú.
 
-
-
-
-
-
-
-
-
-
-2
 La lucha antiminera en Cajamarca es una lucha contra el proceso de circulación del capital productivo de la burguesía minera imperialista, como fracción de la clase capitalista transnacional.
 
-Newmont Mining Corporation, MMG y Southern Peru Copper Corporation son corporaciones de la burguesía minera imperialista (dos estadounidenses, la segunda de China)
+Las ganancias de la acumulación capitalista minera de oro no solo se incrementan por medio del mecanismo de reproducción del capital (D-M-D’), el aumento del precio del oro es un mecanismo de acumulación adicional al mecanismo de circulación. 
 
-El Prefacio de Friedrich Engels del 4 de octubre de 1894 al Tercer Libro de _El capital: la producción capitalista como un todo_ de Karl Marx señala que él tuvo que terminar de elaborar el Capítulo IV del mismo completando a su vez el tercero con ayuda de Samuel Moore para terminar su parte matemática. La edición de Engels no publica un capítulo de _El Capital_ titulado por Marx como "La Confusión" que incluía extractos de reportes parlamentarios de las crisis de 1848 y 1857, con declaraciones de veintitrés capitalistas y economistas sobre capital dinerario (money-capital), exportaciones de oro, sobre especulación, etc., que seguían comentarios sobre una confusión revelada entre qué es dinero y qué es capital en el mercado financiero de manera satírica, burlándose críticamente de dicha confusión. Esta "compilación comentada" es omitida por la edición de Engels por considerar que no podía componerla. Entre el Capítulo XXXI y el Capítulo XXXII del manuscrito del tercer libro, se omitió ese orden de publicación del manuscrito original. La edición de Engels pasa directamente al Capítulo XXXII: Capital dinerario y capital real. Después del cual inserta el Capítulo XXXIII al XXXV que es contribución de Engels haber ensamblado con el material compilado y comentado por Marx dejando de lado algunos extractos de esa parte del manuscrito denominado por el propio Marx como "The Confusion" por tautológicos y otros en los cuales el manuscrito original no detalla. (Marx [1894]1976, 6-8).
+Con el mecanismo de circulación, una porción de la ganancia acumulada se convierte en capital productivo con la finalidad de producir mercancías que los capitalistas venden para acumular más ganancia. No toda esta ganancia se reinvierte como capital productivo, una porción de ella la gasta la burguesía y la otra parte de ese dinero sólo puede usarse para producir más ganancias si reingresa al circuito de acumulación dado por la producción de mercancías para obtener mayores ganancias.
 
-### El análisis del dinero-oro como mercancía por Karl Marx
-
->[!quote|#f9cc5a] 
->“Suponiendo, tal como se ha hecho en esta sección, que la masa de ganancia apropiada en cada esfera particular de la producción es igual a la suma del plusvalor generado por el capital global invertido en esa esfera, entonces el burgués no concebirá a la ganancia como idéntica al plusvalor, es decir al plustrabajo impago” (Marx [1894]1976, 6-8).
-
-p=suma(s)
-
-C=c+v+s; k=c+v  
-
-C=k+s ; s=C-k
-
-en es anunciado El Prefacio de Friedrich Engels del 4 de octubre de 1894, y *Economía práctica: Volumen 3 de El Capital de Marx* elaborado por Luxemburg.
-
-La minería está en el centro del desarrollo capitalista no solo en América del Sur o la Región Andina sino a escala del sistema-mundo. La minería no solo estuvo en el corazón de la acumulación originaria, sino que hoy se encuentra en el centro del quinto ciclo sistémico de acumulación. Las luchas campesinas contra la minería desafían el circuito de reproducción del capital al obstruir la producción y comercialización de las mercancías minerales, impidiendo su realización en forma de ganancias en el comercio exterior. Como una de las industrias capitalistas más rentables, en la minería se concentra el capital productivo de la clase capitalista transnacional, que es la fracción líder del capitalismo global. La burguesía minera internacional, fracción dominante de la clase capitalista transnacional en los Andes, expande la frontera extractiva como respuesta al estancamiento que resulta de la crisis avanzada de sobreacumulación utilizando la dominación imperialista en los Andes de América del Sur para dirigir la violencia estatal contra el campesinado, como la clase antagonista emergente que desafía el despojo y la destrucción minera de la tierra y el agua como valores vitales para su reproducción social.
+La minería está en el centro del desarrollo capitalista no solo en América del Sur o la Región Andina sino a escala del sistema-mundo. La minería no solo estuvo en el corazón de la acumulación originaria, sino que hoy se encuentra en el centro del quinto ciclo sistémico de acumulación. Las luchas campesinas contra la minería desafían el circuito de reproducción del capital al obstruir la producción y comercialización de las mercancías minerales, impidiendo su realización en forma de ganancias en el comercio exterior. Como una de las industrias capitalistas más rentables, en la minería se concentra el capital productivo de la clase capitalista transnacional, que es la fracción líder del capitalismo global. La burguesía minera internacional, fracción dominante de la clase capitalista transnacional en los Andes, expande la frontera extractiva como respuesta al estancamiento que resulta de la crisis avanzada de sobreacumulación utilizando la dominación imperialista en los Andes de América del Sur para dirigir la violencia estatal contra el campesinado, como la clase antagonista que desafía el despojo y la destrucción minera de la tierra y el agua como valores vitales para su reproducción social.
 
 En este contexto global, el campesinado indígena de los Andes lidera la lucha de clases contra la clase capitalista transnacional que puja por ejecutar su quinto ciclo sistémico de acumulación, bloqueando su circuito de reproducción capitalista. En efecto, las luchas anti-mineras ejecutadas por el campesinado indígena en los Andes tienen efectos antisistémicos a escala global al obstruir la conversión del capital productivo invertido por la burguesía minera internacional en mayores ganancias, en medio de una crisis avanzada de sobreacumulación.
 
@@ -108,7 +85,46 @@ A partir de los noventas, con los cambios institucionales del denominado Consens
 Este proceso de expansión de la frontera extractiva minera opera mediante la acumulación extractiva de capital, “la apropiación de un valor que se produce y procede sin asegurar las condiciones que permitan la continuación de tal apropiación de valor” (Ye et al. 2020, 5). Así, el capital extractivo no solo no se hace responsable de asegurar las condiciones para la reproducción de los valores de los que extrae capital, sino que además destruye otros valores involucrados en su producción, como el agua, la tierra y al campesinado que depende de aquellos, hasta agotarlos y luego moverse a otro territorio donde continuará operando. En ese sentido, la expansión de la frontera extractiva en los Andes ha ido progresivamente destruyendo no solo la tierra y el agua sino también al campesinado indígena.
 
 El conflicto minero es un conflicto directo, frontal, frente al poder político de la burguesía minera imperialista. Primero, desarrollado por el proletariado minero sindicalizado durante todo el siglo XX (capítulo 2), y luego por el campesinado indígena de las zonas intervenidas por la gran minería durante el periodo neoliberal entrando al siglo XXI (capítulo 3). El cuarto capítulo exhibe la dinámica del conflicto anti-minero en Cajamarca, que comprende como picos de movilización a las campañas anti-mineras contra la exploración del Cerro Quilish y contra el Proyecto Minero Conga. Como se muestra en la Figura 1, el territorio intervenido por Minera Yanacocha desde 1992 en Cajamarca excede por mucho el tamaño de su ciudad capital. La magnitud de la intervención extractiva de Minera Yanacocha en Cajamarca hasta el momento, se hubiera ampliado hasta involucrar el vaciado de 12 lagunas de las provincias de San Marcos, San Pablo, Bambamarca, Celendín y Cajamarca, si no se hubiera suspendido el Proyecto Minero Conga.
-  
+
+%%
+
+
+
+
+¿Cómo funciona la acumulación capitalista minera de oro? La única mercancía que es mercancía y dinero a la vez, es el oro. Como anota Karl Marx:
+
+>[!quote|#f9cc5a] 
+>"se dice que un cambio en la magnitud de un cierto capital no tiene influencia sobre la proporción de ganancia a capital, y así, sobre la tasa de ganancia, sobre la suposición de que la masa de capital, sobre la cual se calculan las ganancias, crece simultáneamente con la masa de ganancias, y viceversa. Esto es cierto sólo en dos casos. En primer lugar, es cierto, suponiendo que todas las demás circunstancias, especialmente la tasa de plusvalía, permanezcan invariables, si hay un cambio en el valor de esa mercancía que es dinero-mercancía" (p. 164).
+
+
+
+
+
+
+
+
+
+
+
+2
+La lucha antiminera en Cajamarca es una lucha contra el proceso de circulación del capital productivo de la burguesía minera imperialista, como fracción de la clase capitalista transnacional.
+
+Newmont Mining Corporation, MMG y Southern Peru Copper Corporation son corporaciones de la burguesía minera imperialista (dos estadounidenses, la segunda de China)
+
+El Prefacio de Friedrich Engels del 4 de octubre de 1894 al Tercer Libro de _El capital: la producción capitalista como un todo_ de Karl Marx señala que él tuvo que terminar de elaborar el Capítulo IV del mismo completando a su vez el tercero con ayuda de Samuel Moore para terminar su parte matemática. La edición de Engels no publica un capítulo de _El Capital_ titulado por Marx como "La Confusión" que incluía extractos de reportes parlamentarios de las crisis de 1848 y 1857, con declaraciones de veintitrés capitalistas y economistas sobre capital dinerario (money-capital), exportaciones de oro, sobre especulación, etc., que seguían comentarios sobre una confusión revelada entre qué es dinero y qué es capital en el mercado financiero de manera satírica, burlándose críticamente de dicha confusión. Esta "compilación comentada" es omitida por la edición de Engels por considerar que no podía componerla. Entre el Capítulo XXXI y el Capítulo XXXII del manuscrito del tercer libro, se omitió ese orden de publicación del manuscrito original. La edición de Engels pasa directamente al Capítulo XXXII: Capital dinerario y capital real. Después del cual inserta el Capítulo XXXIII al XXXV que es contribución de Engels haber ensamblado con el material compilado y comentado por Marx dejando de lado algunos extractos de esa parte del manuscrito denominado por el propio Marx como "The Confusion" por tautológicos y otros en los cuales el manuscrito original no detalla. (Marx [1894]1976, 6-8).
+
+### El análisis del dinero-oro como mercancía por Karl Marx
+
+>[!quote|#f9cc5a] 
+>“Suponiendo, tal como se ha hecho en esta sección, que la masa de ganancia apropiada en cada esfera particular de la producción es igual a la suma del plusvalor generado por el capital global invertido en esa esfera, entonces el burgués no concebirá a la ganancia como idéntica al plusvalor, es decir al plustrabajo impago” (Marx [1894]1976, 6-8).
+
+p=suma(s)
+
+C=c+v+s; k=c+v  
+
+C=k+s ; s=C-k
+
+en es anunciado El Prefacio de Friedrich Engels del 4 de octubre de 1894, y *Economía práctica: Volumen 3 de El Capital de Marx* elaborado por Luxemburg.%%
 
 ---
 

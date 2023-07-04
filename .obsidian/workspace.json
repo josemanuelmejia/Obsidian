@@ -8,14 +8,43 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2e05b51ffef668e1",
+            "id": "7da176a0dd9b5fb1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Luchas campesinas contra la minería imperialista.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "023ad7ed7ace2241",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Propuesta de esquema general del Plan de Trabajo Anual de Indexación de la RSPDI.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "07e85485a1063e9e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-history-vault-master/05 tasks/Indexación de la Revista de la Sociedad Peruana de Derecho Internacional (RSPDI).md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Propuesta de esquema general del Plan de Trabajo Anual de Indexación de la RSPDI.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Propuesta de esquema general del Plan de Trabajo Anual de Indexación de la RSPDI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +149,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Propuesta de esquema general del Plan de Trabajo Anual de Indexación de la RSPDI.md"
+              }
             }
           },
           {
@@ -166,20 +199,30 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "2e05b51ffef668e1",
+  "active": "023ad7ed7ace2241",
   "lastOpenFiles": [
     "obsidian-history-vault-master/05 tasks/Indexación de la Revista de la Sociedad Peruana de Derecho Internacional (RSPDI).md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Tesis UASB.md",
+    "Propuesta de esquema general del Plan de Trabajo Anual de Indexación de la RSPDI.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Luchas campesinas contra la minería imperialista.md",
+    "obsidian-history-vault-master/06 archives/Arrighi - 1994 - The long twentieth century money, power, and the .pdf",
+    "obsidian-history-vault-master/01 notes/arrighiLongTwentiethCentury1994.md",
+    "Chaos and governance.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Revision Strategies - Excelsior OWL.md",
+    "The strategical centrality of anti-mining struggles.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_04052023.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Intro.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/French Strikes and Popular Mobilizations Continue.md",
+    "obsidian-history-vault-master/06 archives/Comunicado FFAA.md",
+    "obsidian-history-vault-master/06 archives/Copper and Tin prices historical.png",
+    "obsidian-history-vault-master/06 archives/1er temario.png",
+    "obsidian-history-vault-master/06 archives/1er conv. 14FEB2021.png",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Tesis UASB.md",
     "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Resume or Curriculum Vitae.pdf",
     "Hoja de vida (resumen).md",
     "JOSÉ MANUEL MEJÍA V..md",
     "obsidian-history-vault-master/meta/templates/writing template.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Revision Strategies - Excelsior OWL.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_04052023.md",
     "La adicción.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Luchas campesinas contra la minería imperialista.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Intro.md",
     "obsidian-history-vault-master/03 writing/documents/Index.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_25022023.md",
     "obsidian-history-vault-master/07 diary/08MAY23.md",
@@ -191,7 +234,6 @@
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~WRD0000.tmp",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido en los Andes_FINAL.docx",
     "obsidian-history-vault-master/06 archives/JWSR_RV1_03_23_2023.pdf",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/~$jia-2023-Antisystemic Effects of Antimining struggles in the Andes_25022023.docx",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Título del ensayo.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/VF Estallido en los Andes.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/RV_Estallido en los Andes.md",
@@ -200,13 +242,7 @@
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Comunicado FFAA.jpg",
     "obsidian-history-vault-master/06 archives/Lenin 1905rd The Plan of the St. Petersburg Battle.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/William Robinson/UC-Santa Barbara email to William Robinson.md",
-    "obsidian-history-vault-master/01 notes/leninRevolutionaryDays1962.md",
-    "obsidian-history-vault-master/08 atlas.ti/Atlas.ti codebook.md",
-    "34.md",
-    "Informe Final. Violación de Derechos Humanos en Perú Diciembre 2022 a Febrero 2023.md",
     "Mayra.canvas",
-    "README.md",
-    "obsidian-history-vault-master/06 archives/Copper and Tin prices historical.png",
     "Estallido.canvas",
     "obsidian-history-vault-master/06 archives/Gold, Silver and Platiniaum prices historical.png",
     "obsidian-history-vault-master/06 archives/MyChart(1).png"
