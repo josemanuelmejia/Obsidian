@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "220d40eb8a083625",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Hoja de vida (resumen).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "97f3e17b47b6d32f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Propuesta para la elaboración del Plan de Trabajo Anual de Indexación de la RSPDI.md",
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 236.5
+    "width": 200
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Propuesta para la elaboración del Plan de Trabajo Anual de Indexación de la RSPDI.md",
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Propuesta para la elaboración del Plan de Trabajo Anual de Indexación de la RSPDI.md",
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Propuesta para la elaboración del Plan de Trabajo Anual de Indexación de la RSPDI.md"
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md"
               }
             }
           },
@@ -189,27 +176,27 @@
   },
   "active": "97f3e17b47b6d32f",
   "lastOpenFiles": [
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_04052023.md",
     "Hoja de vida (resumen).md",
-    "Observaciones.md",
-    "Propuesta para la elaboración del Plan de Trabajo Anual de Indexación de la RSPDI.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Tesis UASB.md",
+    "JOSÉ MANUEL MEJÍA V..md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Luchas campesinas contra la minería imperialista.md",
+    "Propuesta para la elaboración del Plan de Trabajo Anual de Indexación de la RSPDI.md",
+    "Observaciones.md",
     "obsidian-history-vault-master/05 tasks/Indexación de la Revista de la Sociedad Peruana de Derecho Internacional (RSPDI).md",
     "obsidian-history-vault-master/06 archives/Arrighi - 1994 - The long twentieth century money, power, and the .pdf",
     "obsidian-history-vault-master/01 notes/arrighiLongTwentiethCentury1994.md",
     "Chaos and governance.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Revision Strategies - Excelsior OWL.md",
     "The strategical centrality of anti-mining struggles.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_04052023.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Intro.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/French Strikes and Popular Mobilizations Continue.md",
     "obsidian-history-vault-master/06 archives/Comunicado FFAA.md",
     "obsidian-history-vault-master/06 archives/Copper and Tin prices historical.png",
     "obsidian-history-vault-master/06 archives/1er temario.png",
     "obsidian-history-vault-master/06 archives/1er conv. 14FEB2021.png",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Tesis UASB.md",
     "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Resume or Curriculum Vitae.pdf",
-    "JOSÉ MANUEL MEJÍA V..md",
     "obsidian-history-vault-master/meta/templates/writing template.md",
     "La adicción.md",
     "obsidian-history-vault-master/03 writing/documents/Index.md",
