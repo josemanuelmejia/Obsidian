@@ -44,6 +44,16 @@ Prefacio de Engels al tercer libro de *Capital: capitalist production as a whole
 Esto me redirige a los capítulos XXXIII al XXXV del Vol. III de *Capital: capitalist production as a whole* de Karl Marx.
 
 
+
+2023-09-27
+
+The revision of the theory of value in Marx's analysis of capitalism, beginning with the chapter over the commodities forms of value, was elaborated to frame his later work, particularly in Book 3, where some of the general assumptions made about the rises of raw material prices and the rate of profit will, apparently, found and exception in the commodity that is money capital and money commodity at the same time.
+
+The particular attention that later Marx puts into gold as a commodity and also as monetary capital in the elaboration of Book 3, judged by Engels in his preface, conduced Marx to madness. He also omitted a section titled by Marx as "The Confusion" in the edition and publication of Capital Book 3, where Marx worked about this relation.
+
+The Engels edition of Book 3 is substantively different particularly in his coauthored translation with Samuel Moore, in the section of Chapter VII Aditional Remarks of Part I The Convertion of Surplus Value into Profit and of the rate of surplus value into the rate of profit. In which its located a piece of the Economics Manuscripts of Marx of 1864-1865 recently translated to English in 2016 by Ben Fowkes and Fred Moseley.
+
+
 #analysis/capital/money-capital/monetary-gold 
 #analysis/capital #analysis/capital/money-capital #analysis/capital/money-capital/monetary-gold
 #analysis/capital/productive-capital

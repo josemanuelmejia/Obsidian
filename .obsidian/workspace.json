@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "9f6c89c78b8422fd",
+        "id": "1a6349112f13936d",
         "type": "tabs",
         "children": [
           {
-            "id": "97f3e17b47b6d32f",
+            "id": "53f6794de7935a12",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -38,7 +34,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "byCreatedTime"
               }
             }
           },
@@ -69,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 250.5
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md"
-              }
+              "state": {}
             }
           },
           {
@@ -144,8 +136,19 @@
               "type": "ReferenceListView",
               "state": {}
             }
+          },
+          {
+            "id": "6b675d9bfdf9b47e",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -171,55 +174,55 @@
       "obsidian-tts:Text to Speech": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-import-json:JSON/CSV Importer": false,
-      "obsidian-wordnet-plugin:WordNet Dictionary": false
+      "obsidian-wordnet-plugin:WordNet Dictionary": false,
+      "translate:Open translation view": false
     }
   },
-  "active": "97f3e17b47b6d32f",
+  "active": "53f6794de7935a12",
   "lastOpenFiles": [
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_04052023.md",
-    "Hoja de vida (resumen).md",
+    "1StephanieJShawWEBDuBoisa-1 1.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/1StephanieJShawWEBDuBoisa-1.pdf",
+    "Untitled.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/1StephanieJShawWEBDuBoisa-2.pdf",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Tesis UASB.md",
-    "JOSÉ MANUEL MEJÍA V..md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Luchas campesinas contra la minería imperialista.md",
-    "Propuesta para la elaboración del Plan de Trabajo Anual de Indexación de la RSPDI.md",
-    "Observaciones.md",
-    "obsidian-history-vault-master/05 tasks/Indexación de la Revista de la Sociedad Peruana de Derecho Internacional (RSPDI).md",
-    "obsidian-history-vault-master/06 archives/Arrighi - 1994 - The long twentieth century money, power, and the .pdf",
-    "obsidian-history-vault-master/01 notes/arrighiLongTwentiethCentury1994.md",
-    "Chaos and governance.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Revision Strategies - Excelsior OWL.md",
-    "The strategical centrality of anti-mining struggles.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Intro.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/French Strikes and Popular Mobilizations Continue.md",
-    "obsidian-history-vault-master/06 archives/Comunicado FFAA.md",
+    "1StephanieJShawWEBDuBoisa-1.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/SOC207A - Introduction to Sociology - Fall 2023.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/1StephanieJShawWEBDuBoisa-3.pdf",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/1StephanieJShawWEBDuBoisa.pdf",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Émile Durkheim, Karen Elise Fields (Transl.) - The Elementary Forms of Religious Life-Free Press (1995).pdf",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/~$C207A-Syll-F23.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Sarah Thebaud/Sociology 209A/A_Field_Guide_to_Grad_School_Uncovering_the_Hidden..._----_(Chapter_5._Staying_on_Track_in_Your_Program).pdf",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Sarah Thebaud/Sociology 209A/Sociology 290A Professional Development Seminar.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Sarah Thebaud/Sociology 209A/2023-24 Grad Student Handbook.pdf",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/RV_Estallido en los Andes.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~$tallido en los Andes_FINAL.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Sarah Thebaud/Sociology 209A/A_Field_Guide_to_Grad_School_Uncovering_the_Hidden..._----_(Introduction_).pdf",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Sarah Thebaud/Sarah Thebaud.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Lisa Hajjar/Lisa Hajjar.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Untitled.md",
+    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Accumulation of mining capital.md",
+    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Q1. Mining struggles antisystemic effects on capital accumulation.md",
+    "La adicción.md",
+    "RAEP - Translation of The Travesty of Anti-imperialism by William Robinson.md",
+    "Notes on Economic Manuscripts of Marx.md",
+    "UCSB Fall 2023 Profile.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Kevin Anderson.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_04052023.md",
+    "obsidian-history-vault-master/01 notes/quijanoIntroduccionMariategui1982.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Untitled.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Revision Strategies - Excelsior OWL.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_25022023.md",
+    "obsidian-history-vault-master/01 notes/leninIzquierdismoEnfermedadInfantil1978.md",
+    "obisidian-history-vault-master/01 notes/marxTransformationCommodityCapital2015.md",
+    "obisidian-history-vault-master/01 notes/Quijano - 1982 - Introducción a Mariátegui.md",
+    "obsidian-history-vault-master/06 archives/Gold, Silver and Platiniaum prices historical.png",
     "obsidian-history-vault-master/06 archives/Copper and Tin prices historical.png",
     "obsidian-history-vault-master/06 archives/1er temario.png",
     "obsidian-history-vault-master/06 archives/1er conv. 14FEB2021.png",
-    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Resume or Curriculum Vitae.pdf",
-    "obsidian-history-vault-master/meta/templates/writing template.md",
-    "La adicción.md",
-    "obsidian-history-vault-master/03 writing/documents/Index.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_25022023.md",
-    "obsidian-history-vault-master/07 diary/08MAY23.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~WRL0252.tmp",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~WRD0240.tmp",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~$jia - 2023 - Estallido en los Andes_01052023.docx",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~$tallido en los Andes_FINAL.docx",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~WRL0001.tmp",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/~WRD0000.tmp",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido en los Andes_FINAL.docx",
-    "obsidian-history-vault-master/06 archives/JWSR_RV1_03_23_2023.pdf",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Título del ensayo.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/VF Estallido en los Andes.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/RV_Estallido en los Andes.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",
-    "obsidian-history-vault-master/06 archives/Lenin 1905rd Father Gapon.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Comunicado FFAA.jpg",
-    "obsidian-history-vault-master/06 archives/Lenin 1905rd The Plan of the St. Petersburg Battle.md",
     "Mayra.canvas",
     "Estallido.canvas",
-    "obsidian-history-vault-master/06 archives/Gold, Silver and Platiniaum prices historical.png",
     "obsidian-history-vault-master/06 archives/MyChart(1).png"
   ]
 }

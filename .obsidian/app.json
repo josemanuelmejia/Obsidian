@@ -2,10 +2,7 @@
   "alwaysUpdateLinks": true,
   "showUnsupportedFiles": true,
   "spellcheck": true,
-  "spellcheckLanguages": [
-    "en-US",
-    "es-AR"
-  ],
+  "spellcheckLanguages": null,
   "useTab": false,
   "pdfExportSettings": {
     "includeName": true,

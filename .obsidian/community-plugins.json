@@ -18,5 +18,10 @@
   "obsidian-pandoc-reference-list",
   "obsidian-pandoc",
   "obsidian-wordnet-plugin",
-  "language-translator"
+  "language-translator",
+  "obsidian-footnotes",
+  "translate",
+  "tag-summary-plugin",
+  "text-extractor",
+  "obsidian-topic-linking"
 ]
