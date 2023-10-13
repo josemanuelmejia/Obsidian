@@ -8,11 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "53f6794de7935a12",
+            "id": "5a28b92781ea153e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Du Bois Intro.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Du Bois Intro.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Du Bois Intro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Du Bois Intro.md"
+              }
             }
           },
           {
@@ -178,10 +186,12 @@
       "translate:Open translation view": false
     }
   },
-  "active": "53f6794de7935a12",
+  "active": "5a28b92781ea153e",
   "lastOpenFiles": [
-    "1StephanieJShawWEBDuBoisa-1 1.md",
+    "obsidian-history-vault-master/06 archives/MARX present 1.docx",
+    "Du Bois Intro.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/1StephanieJShawWEBDuBoisa-1.pdf",
+    "1StephanieJShawWEBDuBoisa-1 1.md",
     "Untitled.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/1StephanieJShawWEBDuBoisa-2.pdf",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
@@ -214,7 +224,6 @@
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_25022023.md",
     "obsidian-history-vault-master/01 notes/leninIzquierdismoEnfermedadInfantil1978.md",
     "obisidian-history-vault-master/01 notes/marxTransformationCommodityCapital2015.md",
-    "obisidian-history-vault-master/01 notes/Quijano - 1982 - Introducción a Mariátegui.md",
     "obsidian-history-vault-master/06 archives/Gold, Silver and Platiniaum prices historical.png",
     "obsidian-history-vault-master/06 archives/Copper and Tin prices historical.png",
     "obsidian-history-vault-master/06 archives/1er temario.png",
