@@ -1,7 +1,18 @@
 "The wealth of societies in which the capitalist mode of production prevails appears as an immense collection of commodities..." (125). %%Comentario a Pie de pagina por traducción.%%
 
+"Der Reichtum der Gesellschaften, in welchen kapitalistiche Produktionsweise herrscht, erscheint als eine ,,ungeheure Waren..."
+
+
+
 What the wealth of capitalist societies is? 
-Starting with the distinction of the two forms of value: values for use (use-value) and values for exchange (exchange value), Marx is setting up the foundations of his analysis of the accumulation of capital precisely as the process that creates the wealth of capitalist societies, which is nothing more than profits. Everything, every raw nature must be converted in raw material for the production of use-values in exchange relations -which in the social formation that prevailed as capitalism is- embedded, instrumentally oriented to the production of profits by the monetary consumption of the commodities produced by the capitalists using particular mechanisms which distinguish capitalism from other modes of production and social formations. 
+Starting with the distinction of the two forms of value: values for use (use-value) and values for exchange (exchange value), Marx is setting up the foundations of his analysis of the accumulation of capital precisely as the process that creates the wealth of capitalist societies, which is nothing more than amassed human work for the creation of surplus value embodied in commodity-capital which in capitalist accumulation is converted in money-capital, the wealth of capitalist societies is an outcome of the reproduction of this process in which the surplus value contained in every commodity is accumulated as profits as a portion of the augmented money-capital which is sublimated from the process of material production.
+
+
+
+
+
+
+Everything, every raw nature must be converted in raw material for the production of use-values in exchange relations -which in the social formation that prevailed as capitalism is- embedded, instrumentally oriented to the production of profits by the monetary consumption of the commodities produced by the capitalists using particular mechanisms which distinguish capitalism from other modes of production and social formations. 
 
 The first chapter of Book 1 is dedicated by Marx to stablish at least three particularities of capitalism hided in the normalized functioning of its production and ideology. The first one -as I already was mentioning above-, is the reduction of every existing being in a raw material amassable for the process of production. This reduction of nature as a raw material is the sublimation of the other self-consciusness (external and independent) for the realization of the self-consciusness which claims it as a mean for satisfaction of necessities (imagined or not), in that manner not only reducing nature as a mean for, but also transforming itself (that self-consciousness) as sublimated from that independent and external object which it is serving from.
 It is a first violent abstraction, because the transformation of every nature being to the material qualities which are useful for the knowledge and enjoyment of other self-consciusness, is concrete, violent with the external and independent existence of those beings.
