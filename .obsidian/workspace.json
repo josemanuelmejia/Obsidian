@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "39213868d09c4938",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/On Arrighi (1994).md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/01 notes/arrighiLongTwentiethCentury1994.md",
+                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/On Arrighi (1994).md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/01 notes/arrighiLongTwentiethCentury1994.md",
+                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/On Arrighi (1994).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-history-vault-master/01 notes/arrighiLongTwentiethCentury1994.md"
+                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/On Arrighi (1994).md"
               }
             }
           },
@@ -184,8 +197,11 @@
       "translate:Open translation view": false
     }
   },
-  "active": "7d1995730a8c32b4",
+  "active": "39213868d09c4938",
   "lastOpenFiles": [
+    "Untitled 1.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/On Arrighi (1994).md",
+    "obsidian-history-vault-master/01 notes/arrighiLongTwentiethCentury1994.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/~WRL0485.tmp",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/~WRD0473.tmp",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/~$riátegui 7E (1928) Presentation.docx",
@@ -207,7 +223,6 @@
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Mariátegui 7E (1928).md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/~WRL1728.tmp",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/~WRD1720.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Mariátegui 7E (1928) Presentation.docx",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Untitled.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/First paper Marx Chapter 1. Sec 1-2..md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/First paper Marx Chapter 1. Sec 1-2. 1.md",
@@ -220,8 +235,6 @@
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Sarah Thebaud/Sociology 209A/Sociology 290A Professional Development Seminar.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/RV_Estallido en los Andes.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Sarah Thebaud/Sarah Thebaud.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Lisa Hajjar/Lisa Hajjar.md",
-    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Accumulation of mining capital.md",
     "obsidian-history-vault-master/06 archives/Gold, Silver and Platiniaum prices historical.png",
     "obsidian-history-vault-master/06 archives/Copper and Tin prices historical.png",
     "obsidian-history-vault-master/06 archives/1er temario.png",
