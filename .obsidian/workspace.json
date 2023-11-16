@@ -4,47 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "1a6349112f13936d",
+        "id": "b7a95b7e909c9aa8",
         "type": "tabs",
         "children": [
           {
-            "id": "7d1995730a8c32b4",
+            "id": "1960f758c2725290",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-history-vault-master/01 notes/arrighiLongTwentiethCentury1994.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "39213868d09c4938",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-history-vault-master/01 notes/arrighiLongTwentiethCentury1994.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "725653a19a609c95",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Arrighi 1994.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Arrighi 1994.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Arrighi 1994.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Arrighi 1994.md"
-              }
+              "state": {}
             }
           },
           {
@@ -209,11 +176,15 @@
       "translate:Open translation view": false
     }
   },
-  "active": "725653a19a609c95",
+  "active": "1960f758c2725290",
   "lastOpenFiles": [
-    "Arrighi - 1994 - The long twentieth century money, power, and the .pdf",
     "obsidian-history-vault-master/01 notes/arrighiLongTwentiethCentury1994.md",
+    "obsidian-history-vault-master/08 atlas.ti/Atlas.ti codebook.md",
+    "obsidian-history-vault-master/05 tasks/WSJ submission.md",
+    "obsidian-history-vault-master/02 analysis/questions and arguments/Q4. Mining struggles escalation effects/Q4. Mining struggles escalation effects in the formation of the revolutionary subject.md",
     "Arrighi 1994.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/~$63+blinded(1).docx",
+    "Arrighi - 1994 - The long twentieth century money, power, and the .pdf",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/On Arrighi (1994).md",
     "Untitled 1.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/~WRL0485.tmp",
@@ -235,8 +206,6 @@
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/David Feldman/David Feldman.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/David Feldman/Untitled.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Mariátegui 7E (1928).md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/~WRL1728.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/~WRD1720.tmp",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Untitled.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/First paper Marx Chapter 1. Sec 1-2..md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/First paper Marx Chapter 1. Sec 1-2. 1.md",
@@ -245,8 +214,6 @@
     "1StephanieJShawWEBDuBoisa-1 1.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
     "1StephanieJShawWEBDuBoisa-1.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/SOC207A - Introduction to Sociology - Fall 2023.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Sarah Thebaud/Sociology 209A/Sociology 290A Professional Development Seminar.md",
     "obsidian-history-vault-master/06 archives/Gold, Silver and Platiniaum prices historical.png",
     "obsidian-history-vault-master/06 archives/Copper and Tin prices historical.png",
     "obsidian-history-vault-master/06 archives/1er temario.png",
