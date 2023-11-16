@@ -11,8 +11,12 @@
             "id": "1960f758c2725290",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-history-vault-master/01 notes/arrighiLongTwentiethCentury1994.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "obsidian-history-vault-master/01 notes/arrighiLongTwentiethCentury1994.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "obsidian-history-vault-master/01 notes/arrighiLongTwentiethCentury1994.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "obsidian-history-vault-master/01 notes/arrighiLongTwentiethCentury1994.md"
+              }
             }
           },
           {
