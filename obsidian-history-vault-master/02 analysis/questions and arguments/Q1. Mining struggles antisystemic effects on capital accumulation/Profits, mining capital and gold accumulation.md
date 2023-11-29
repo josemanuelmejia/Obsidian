@@ -4,12 +4,14 @@ Tracing for Marx analysis of monetary-gold as a commodity I started to read *Vol
 
 ***p=sum(s)***
 
->The analyses of this part of the work demonstrate the erroneousness of the view (Rodbertus) according to which (...) a change in the magnitude of a certain capital is said to have no influence on the proportion of profit to capital, and thus on the rate of profit, on the assumption that the mass of capital, on which profits are calculated, grows simultaneously with the mass of profits, and vice versa. 
+
+
+>The analyses of this part of the work demonstrate the erroneousness of the view (Rodbertus) according to which (...) a change in the magnitude of a certain capital is said to have ***no influence*** on the proportion of profit to capital, and thus on the rate of profit, on the assumption that the mass of capital, on which profits are calculated, grows simultaneously with the mass of profits, and vice versa. 
 >This is true only in two cases. In the first place, it is true, assuming all other circumstances, especially the rate of surplus value, to remain unchanged, if there is a change in the value of that commodity which is money-commodity" (p. 164).
 
 The exposition of Marx in their written contribution to Vol. III of Capital: capitalist production as a whole, highlights how the repetition of the capitalist appropriation of unpaid labor on the form of surplus-value (s), accumulates in a mass of profits. The whole process of capitalist production and circulation of commodities (C), require periods of material expansion which imply an increment of the productive capital (k) in order to accumulate a large mass of profits (p).
 
-For a magnitude of exchange value of every commodity produced by the capitalists (C), the total amount of capital invested (k) is the sum of constant capital (c) and variable capital (v). Indeed, if the exchange value of every commodity is greater than the productive capital (k) or cost price, is because it's difference is caused by the surplus-value (s) which is non paid labor which nothing costs to the capitalist's. 
+For a magnitude of price of every commodity (C) produced by the capitalists, the total amount of capital invested (k) is the sum of constant capital (c) and variable capital (v). Indeed, if the price of every commodity is greater than the productive capital (k) or cost price, is because it's difference is caused by the surplus-value (s) which is non paid labor which nothing costs to the capitalist's. Which is the source of profit. 
 
 C=c+v+s ; k=c+v
 
@@ -19,8 +21,9 @@ C=k+s; C>k
  
 ***p=sum(s)***
 
+The magnitude of the price of mining commodities by which their surplus value was realized in increased money-capital at the final stage of capital circulation (M-C-M'), not only reflects the appropriation of non-paid wage labor in the capitalist production, but had an exponential increment in the volume of circulation of capital or more precisely in their commercialization at the capitalists financial centers. [...]
 
-The magnitude of the exchange value of mining commodities by which their surplus value was realized in increased money-capital at the final stage of capital circulation (M-C-M'), not only reflects the appropriation of non-paid wage labor in the capitalist production, but had an exponential increment in the circulation of capital or more precisely in their commercialization at the capitalists financial centers. One of the two other causes than the rate of surplus-value to explain the rate of profit is the increment in the value of "that commodity which is money-commodity". The other is the new methods of accumulation, including original accumulation, invented by the capitalists. 
+One of the two other causes than the rate of surplus-value to explain the rate of profit is the increment in the value of "that commodity which is money-commodity". The other is the methods of accumulation, including original accumulation, invented by the capitalists.
 
 Robinson and Rangel (2022) states that the peak of social struggles of 2019 is the one of the contentious mobilization initiated in 1968. In this sense, the duration of the crisis of hegemony and the crisis of overaccumulation of global capitalism coincide with the 1970 incessant arose of gold reserves and price.
 
@@ -28,7 +31,8 @@ Gold price
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="https://chart-studio.plotly.com/~TioJason/6/?share_key=zaExCAADwTsSMHgDi94iE6#plot"></iframe>
 
 Total reserves in monetary gold holdings (current US$)
-<iframe frameBorder='no' src="https://databank.worldbank.org/embed/Total-reserves-in-monetary-gold-holdings-(currents-US$)/id/90eeb6dd?ti=y&ds=y&dd=n&tb=n&sh=y&dw=y&pr=n&inf=y&zm=y&md=y&navigator=n&theme=darkGrey&bdrClr=rgb(68,68,68)&bdrStyle=solid&bdrWidth=0px&title=Arial;14px;true;false;rgb(68,68,68);justify&desc=Arial;9px;false;false;rgb(68,68,68);justify&exptypes=Excel,CSV,TabbedTxt" width= "900"  height="800"></iframe>
+<iframe frameBorder='no' src="https://databank.worldbank.org/embed/Total-reserves-in-monetary-gold-holdings-(currents-US$)/id/90eeb6dd?ti=y&ds=n&dd=y&tb=y&sh=y&dw=y&pr=y&inf=y&zm=y&md=y&navigator=n&theme=darkGrey&bdrClr=rgb(68,68,68)&bdrStyle=solid&bdrWidth=0px&title=Arial;14px;true;false;rgb(68,68,68);justify&exptypes=Excel,CSV,TabbedTxt" width= "900"  height="500"></iframe>
+
 Total reserves and total reserves in monetary gold (current US$), 1960-2021
 
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="https://chart-studio.plotly.com/~TioJason/10/?share_key=xnCymNuN0HfYI1Ej2EBl8V#/"></iframe>
