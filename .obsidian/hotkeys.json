@@ -78,5 +78,16 @@
       ],
       "key": "W"
     }
+  ],
+  "workspace:undo-close-pane": [],
+  "obsidian-translator:translate": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "T"
+    }
   ]
 }

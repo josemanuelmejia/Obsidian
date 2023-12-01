@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9b71fd4a4188649c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "UASB MA Latin American Studies Thesis.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4ea43aea088ba47f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "FLACSO MA Political Sociology Thesis.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/William Robinson/The feudality of the current global capitalism's material expansion  in the aftermath of the US long twentieth century.md",
+                "file": "UASB MA Latin American Studies Thesis.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/William Robinson/The feudality of the current global capitalism's material expansion  in the aftermath of the US long twentieth century.md",
+                "file": "UASB MA Latin American Studies Thesis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/William Robinson/The feudality of the current global capitalism's material expansion  in the aftermath of the US long twentieth century.md"
+                "file": "UASB MA Latin American Studies Thesis.md"
               }
             }
           },
@@ -181,11 +206,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-import-json:JSON/CSV Importer": false,
       "obsidian-wordnet-plugin:WordNet Dictionary": false,
-      "translate:Open translation view": false
+      "obsidian-translator:Translate": false
     }
   },
-  "active": "679d34305dc36568",
+  "active": "9b71fd4a4188649c",
   "lastOpenFiles": [
+    "FLACSO MA Political Sociology Thesis.md",
+    "UASB MA Latin American Studies Thesis.md",
+    "UASB MA Latin American Studies Thesis.docx",
+    "FLACSO MA Political Sociology Thesis.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/William Robinson/The feudality of the current global capitalism's material expansion  in the aftermath of the US long twentieth century.md",
     "obsidian-history-vault-master/07 diary/2023-06-02.md",
     "obsidian-history-vault-master/07 diary/2023-04-02.md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Accumulation of mining capital.md",
@@ -194,7 +224,6 @@
     "obsidian-history-vault-master/01 notes/marxCapitalCritiquePolitical1909a.md",
     "obsidian-history-vault-master/01 notes/arrighiLongTwentiethCentury1994.md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Profits, mining capital and gold accumulation.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/William Robinson/The feudality of the current global capitalism's material expansion  in the aftermath of the US long twentieth century.md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Profits, mining capital and gold accumulation..md",
     "Chaos and governance.md",
     "obsidian-history-vault-master/08 atlas.ti/Atlas.ti codebook.md",
@@ -216,12 +245,7 @@
     "obsidian-history-vault-master/01 notes/quijanoIntroduccionMariategui1982.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Vernon Shawn/Vernon Shawn.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Vernon Shawn/VShaw-SOC207A-FirstPaper.pdf",
-    "VShaw-SOC207A-FirstPaper.pdf",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Kevin Anderson.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Vernon Shawn",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/John Foran/John Foran.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/Hoai-An Nguyen.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/France Winddance Twine/France Winddance Twine.md",
     "obsidian-history-vault-master/06 archives/Gold, Silver and Platiniaum prices historical.png",
     "obsidian-history-vault-master/06 archives/Copper and Tin prices historical.png",
     "obsidian-history-vault-master/06 archives/1er temario.png",

@@ -1,0 +1,8 @@
+{
+  "apiKey": "",
+  "fromLanguage": "ES",
+  "toLanguage": "EN-GB",
+  "showStatusBar": true,
+  "useProAPI": false,
+  "formality": "prefer_more"
+}
