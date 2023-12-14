@@ -25,180 +25,144 @@ comment::
 
 ### Note
 %% begin annotations %%
-### Imported on 2023-12-02 11:59 pm
+### Imported on 2023-12-04 12:36 am
 
 >[!quote|#ffd100] 
 >
-T h e y are d e e m e d t o have an effect o n things because they serve t o remake i n d i v i d u a l s and groups morally. [(p. 444)](zotero://open-pdf/library/items/SCC8MNQ3?page=444&annotation=highlight-p444x40y342)
+N oa matter h o w greatly the actions they i n v o l v e m a y differ from one another, the various positive rites j u s t r e v i e w e d have one feature i n c o m m o n : T h e y are all c a r r i e d o u t w i t h confidence, j o y , and enthusiasm. [(p. 462)](zotero://open-pdf/library/items/SCC8MNQ3?page=462&annotation=highlight-p462x34y374)
 
-The hypothesis of Durkheim is that the physical efficacy of positive rites is an outcome of its power on consciousness.
-
->[!quote|#ffd100] 
->
-T h e i r sole purpose is o r seems t o be t o i n d u c e the r e b i r t h o f the t o t e m i c species. I n that case, is i t n o t surprising that t h e i r real f u n c t i o n s h o u l d be t o serve m o r a l ends? [(p. 444)](zotero://open-pdf/library/items/SCC8MNQ3?page=444&annotation=highlight-p444x41y252)
-
-The rebirth of totemic species is the purpose of the rite, as the reproduction of a false consciousness instrumental for the goals of coercive power.
+In contrast with the positive rites which were celebrated with feelings of joy, the negative piacular rites are characterized by sad celebrations.
 
 >[!quote|#ffd100] 
 >
-I t is true that t h e i r physical f u n c t i o n m a y v e r y w e l l have been exagger ated b y Spencer a n d G i l l e n , even i n the cases w h e r e i t is most clearly i n c o n - testable. I n the v i e w o f those authors, each clan celebrates its I n t i c h i u m a i n order t o p r o v i d e a useful f o o d s t u f f t o the o t h e r clans. T h e w h o l e c u l t sup posedly involves a k i n d o f e c o n o m i c c o o p e r a t i o n a m o n g different t o t e m i c groups, each supposedly w o r k i n g f o r all the rest. B [(p. 444)](zotero://open-pdf/library/items/SCC8MNQ3?page=444&annotation=highlight-p444x41y173)
+B u t there are sad ceremonies as w e l l , whose purpose is t o meet a calamity o r t o r e m e m b e r a n d m o u r n one. These rites take o n a distinctive f o r m that I w i l l characterize and e x p l a i n . Since t h e y re veal a n e w aspect o f religious life, i t is all the m o r e necessary t o e x a m i n e t h e m separately. I propose t o call ceremonies o f this type "piacular." T h e advantage o f the t e r m " p i a c u l u m " is that w h i l e suggesting the idea o f e x p i a t i o n , i t n e v e r t h e - less has a m u c h broader m e a n i n g . A n y m i s f o r t u n e , a n y t h i n g that is o m i n o u s , and a n y t h i n g that motivates feelings o f disquiet o r fear requires a p i a c u l u m [(p. 462)](zotero://open-pdf/library/items/SCC8MNQ3?page=462&annotation=highlight-p462x41y140)
 
-The physical function of this kind of positive rites, as Intichiuma, supposedly involves a kind of economic cooperation among different totemic groups. 
-
->[!quote|#ffd100] 
->
-I f , w h d e d o i n g t h e i r u t m o s t t o m u l t i p l y the animals o r plants o f the consecrated species, the m e m b e r s o f a t o t e m i c g r o u p seem t o be w o r k i n g f o r their f e l l o w m e n o f o t h e r totems, w e must refrain f r o m seeing this collabora tion as the fundamental p r i n c i p l e o f A r u n t a o r L o r i t j a t o t e m i s m . N e v e r have the black m e n themselves t o l d m e that the p o i n t o f t h e i r ceremonies was any such t h i n g . [(p. 444)](zotero://open-pdf/library/items/SCC8MNQ3?page=444&annotation=highlight-p444x42y83)
+Sad ceremonies constitutes a distinguishable set of rites of a piacular type.
 
 >[!quote|#ffd100] 
 >
-S t r e h l o w o b - serves, f u r t h e r m o r e , that this w a y o f i n t e r p r e t i n g the r i t e is c o n t r a d i c t e d b y the fact that the t o t e m i c animals o r plants are n o t all edible o r useful; some have n o use, and i n d e e d some are dangerous. T h u s the ceremonies that c o n - c e r n t h e m cannot have n u t r i t i o n a l ends i n v i e w . [(p. 445)](zotero://open-pdf/library/items/SCC8MNQ3?page=445&annotation=highlight-p445x65y525)
-
-"They are called knujilelama, not mbatjalkatium"
+and is therefore called piacular. 1 T h i s w o r d seems w e l l suited t o designating rites that are c o n d u c t e d u n d e r c o n d i t i o n s o f u n c e r t a i n t y o r sadness. [(p. 463)](zotero://open-pdf/library/items/SCC8MNQ3?page=463&annotation=highlight-p463x60y559)
 
 >[!quote|#ffd100] 
 >
-O u r a u t h o r concludes: " W h e n the natives are asked the decisive reason for these ceremonies, they reply u n a n i m o u s l y : I t is because the ancestors have so i n s t i t u t e d things. T h a t is w h y w e act i n this w a y and n o t some other." 2 B u t t o say that the r i t e is observed because i t comes from the ancestors is t o a c k n o w l e d g e that its a u t h o r i t y is o n e and the same as the a u t h o r i t y o f t r a d i t i o n , w h i c h is e m i n e n d y a social t h i n g . I t is celebrated t o keep faith w i t h the past and preserve the group's m o r a l * identity, n o t because o f the physical effects i t can b r i n g about. [(p. 445)](zotero://open-pdf/library/items/SCC8MNQ3?page=445&annotation=highlight-p445x65y422)
+T h e various rites used f o r m o u r n i n g m u s t be distinguished. Some c o n - sist o n l y o f p r o h i b i t i o n s : I t is f o r b i d d e n t o p r o n o u n c e the name o f the deceased 2 o r t o r e m a i n at the place w h e r e the death o c c u r r e d ; the relatives, especially the female ones, must abstain f r o m all c o m m u n i c a t i o n w i t h o u t - siders; 4 the o r d i n a r y occupations o f life are suspended, j u s t as they are d u r i n g feasts; 5 and so o n . Since all these practices b e l o n g t o the negative cult and are explained as rites o f that sort, t h e y need n o t c o n c e r n us here. [(p. 463)](zotero://open-pdf/library/items/SCC8MNQ3?page=463&annotation=highlight-p463x60y406)
 
-Durkheim cited Strehlow's interpretation on the power of consciousness over social behavior in the positives rites of Intichiuma. For him, the power of the rite is the recognition of the "authority" of the ancestors --as domination should be embodied if it is exercised, and socially--coercive- in the celebration of the rite, for Strehlow observations the purpose of this rite is not the physical effects (as the provision of a useful foodstock to other clans). Instead, it is oriented to the reestablishment of a collective consciousness.
-
->[!quote|#ffd100] 
->
-T h i s aspect o f the ceremonies is best observed a m o n g the W a r r a m u n g a . A m o n g this people, each clan is h e l d t o be descended from a single ancestor w h o , a l t h o u g h b o r n i n a definite place, spent his life o n earth traveling the c o u n t r y i n all directions. H e i t is w h o gave the l a n d its present f o r m d u r i n g those travels, they say, and he w h o made the m o u n t a i n s and the plains, the water holes and the streams, and so f o r t h . A t the same t i m e , a l o n g his route he sowed the seeds o f life that came f o r t h from his b o d y and, t h r o u g h successive reincarnations, became the present-day m e m b e r s o f the clan. [(p. 445)](zotero://open-pdf/library/items/SCC8MNQ3?page=445&annotation=highlight-p445x64y232)
-
-The representation of the "authority of the ancestors" as cited and stated by Durkheim is the main purpose of the Intichiuma rites in which the economic cooperation between clans occurred. The embodiment of this "authority" is a theoretical problem for Durkheim's theory because the other evident alternative is the recognition of rutinary stock share between different political communities. This recognition is avoided not only because is prone to trace and track the alternative of communism as an immanent and historically modular social formation, because of the utilitarian orientation of trade (extended reciprocity). This recognition is humanist and can't deal with the colonial bias of Durkheim. This recognition is avoided by Durkheim also because the stock share between different clans and totemic groups, imply the economic cooperation between different political communities, and diminish the scope of the mainstream explanation of state building, and state-capital centered processes as the main historical processes, uncritically. And I say, uncritically, because the mainstream social explanation of the historical formation of social reality puts all the eggs in the basket of conflict as a mechanism for the "development" of concrete social formations. This feature is shared by Marx and Weber, and it could be an euro-centric feature of social thought. But in the case of Marxism is comprehended and transformed for liberation. The diminish of the purpose of share of useful foodstock observed rutinary between different clans as an explanation of the celebration of Intichiuma, reduce the interpretation of social organization to an authority-power-centered phenomena, reproducing incessantly in theory, ideology and praxis.
+Some mournings were considered by Durkheim as distinguished only by prohibitions. And those could be categorized as negative rites.
 
 >[!quote|#ffd100] 
 >
+W h a t e v e r t h e i r v i o l e n c e , these displays are t i g h t l y c o n t r o l l e d b y e t i - quette. C u s t o m designates the individuals w h o m a k e b l o o d y gashes o n t h e m - selves; they must have specified k i n s h i p relations w i t h the deceased. I n the case Spencer and G i l l e n observed a m o n g the W a r r a m u n g a , those w h o slashed t h e i r thighs w e r e the m a t e r n a l grandfather, m a t e r n a l uncle, and wife's b r o t h e r o f the deceased [(p. 464)](zotero://open-pdf/library/items/SCC8MNQ3?page=464&annotation=highlight-p464x39y125)
 
-This "aspect of the ceremonies", said Durkheim, in reference to the representation of the authority of the ancestress, is linked to some features as the foreign origin of the ancestress, its capacity of mobility, also "his" capacity of intervention over the "territory" in different stages. But also, its reproduction by sowing "the seeds of life that came forth from his body", and of the embodiment and conservation of his authority for generations by reincarnation as mean of legitimation.
-
->[!quote|#ffd100] 
->
-purpose o f the W a r r a m u n g a ceremony, w h i c h corresponds exactly t o the I n - t i c h i u m a o f the A r u n t a , is t o depict and c o m m e m o r a t e the m y t h i c a l history o f the ancestor. [(p. 446)](zotero://open-pdf/library/items/SCC8MNQ3?page=446&annotation=highlight-p446x34y552)
-
-Durkheim restate his interpretation of the Intichiuma in the Warramunga case, as a rite oriented to the cyclical representation of the "traditional authority".
+The positive aspects of the piacular rites could imply violence, demostrated in self-sacrifice or self-torture.
 
 >[!quote|#ffd100] 
 >
-I t involves n e i t h e r sacrifice nor, w i t h o n l y a single except i o n , 4 m i m e t i c practices [(p. 446)](zotero://open-pdf/library/items/SCC8MNQ3?page=446&annotation=highlight-p446x34y539)
-
-What implications have for Durkheim hypothesis of the Intichiuma rationality as oriented to the representation of traditional authority, the single deviant case of the "white cockatoo" (fn. 4) in which the celebration implies mimetic practices. Mimetic practices can't be related to the representation of the authority of the ancestress? Or these mimetic practices could support the altruistic interpretation of the stock share occurring also during the Intichiuma as the reason for the celebration?
+E v e r y w h e r e , there is the same silence p u n c t u a t e d b y w a i l i n g , the same o b l i g a t i o n t o c u t the hair o r b e a r d 1 4 and cover the head w i t h pipe clay, ashes, o r even e x c r e m e n t ; everywhere, finally, there is the same frenzy o f beating, lacerating, and b u r n i n g oneself [(p. 466)](zotero://open-pdf/library/items/SCC8MNQ3?page=466&annotation=highlight-p466x45y527)
 
 >[!quote|#ffd100] 
 >
-T h e r i t e involves r e m e m b e r i n g the past and m a k i n g i t present, so t o speak, b y means o f a t r u e dramatic p e r f o r m a n c e [représentation]. T h i s t e r m is all the m o r e appropriate i n the present case, since the celebrant is b y n o means v i e w e d as an i n c a r n a t i o n o f the ancestor he represents. H e is an actor p l a y i n g a role. [(p. 446)](zotero://open-pdf/library/items/SCC8MNQ3?page=446&annotation=highlight-p446x34y487)
+b l o o d . T h e cries and moans c o n t i n u e t h r o u g h the n i g h t . " Sadness is n o t the o n l y feeling expressed d u r i n g these ceremonies. A k i n d o f anger is usually m i n g l e d w i t h i t . T h e relatives apparently need someh o w t o avenge the death suffered. T h e y are seen t h r o w i n g themselves u p o n and t r y i n g t o w o u n d each other. T h e attack is sometimes real and sometimes p r e t e n d e d . T h e r e are even cases i n w h i c h a k i n d o f d u e l i n g is organized. [(p. 467)](zotero://open-pdf/library/items/SCC8MNQ3?page=467&annotation=highlight-p467x61y449)
 
-The concept of representation is different than the concept of performance in the historical sociology of Tilly, as a role played dramatically in order to exercise power. Is dramatical because implies a double struggle between the will of power of the heroes and the will of power of gods, and also an struggle with other heroes (and its gods). This tension between agency and structure is also the framework of Maquiavello's virtue and fortune, and is embedded in the majority of conflict-centered social explanations.
-
->[!quote|#ffd100] 
->
-T h e m o v e m e n t that recurs m o s t frequently is a sort o f r h y t h m i c and v i o l e n t t r e m b l i n g o f the entire b o d y because, i n m y t h - ical times, the ancestor s h o o k h i m s e l f i n this w a y t o b r i n g o u t the seeds o f life w i t h i n h i m . T h e actors have t h e i r s k i n covered w i t h d o w n that comes o f f and flies away as a result o f this shaking. T h i s is a means o f d e p i c t i n g the flight o f the mystical seeds and t h e i r dispersion i n the air. [(p. 446)](zotero://open-pdf/library/items/SCC8MNQ3?page=446&annotation=highlight-p446x35y228)
-
-The performance of the representation is acted focused in the social reproduction aspect, by the spread of seeds.
+Mournings as Piacular rites can involve a kind of duelings. Not only sadness but anger appeared as the relatives of the death need someone to avenge with.
 
 >[!quote|#ffd100] 
 >
-W e recall that a m o n g the A r u n t a , the place w h e r e the c e r e m o n y occurs is r i t u a l l y d e t e r m i n e d . I t is the site o f the sacred rocks, trees, a n d water holes, a n d the faithful m u s t g o there t o celebrate the cult. A m o n g the W a r r a m u n g a , t h o u g h , the choice o f site is arbitrary and a matter o f convenience. T h e i r s is a c o n v e n t i o n a l stage. T h e actual place w h e r e the events that are the t h e m e o f the r i t e o c c u r r e d is represented b y drawings [(p. 446)](zotero://open-pdf/library/items/SCC8MNQ3?page=446&annotation=highlight-p446x35y150)
+O n e i n i t i a l fact remains constant: M o u r n i n g is n o t the spontaneous e x - pression o f i n d i v i d u a l e m o t i o n s . I f the relatives cry, l a m e n t , a n d beat t h e m - selves black and blue, the reason is n o t that they feel personally affected b y the death o f t h e i r k i n s m a n . I n particular cases, t o be sure, the sadness e x - pressed m a y h a p p e n t o be t r u l y f e l t . B u t generally there is n o relationship b e t w e e n the feelings felt a n d the actions d o n e b y those w h o take part i n the r i t e [(p. 470)](zotero://open-pdf/library/items/SCC8MNQ3?page=470&annotation=highlight-p470x42y242)
 
-The place of the Intichiuma rite is a variable social space, which also can be represented.
-
->[!quote|#ffd100] 
->
-E v e r y t h i n g takes place i n dramatic performances* that have n o purpose o t h e r t h a n t o make the clan's m y t h i c a l past present i n p e o - ple's m i n d s . [(p. 449)](zotero://open-pdf/library/items/SCC8MNQ3?page=449&annotation=highlight-p449x60y379)
+Durkheim stated that the individual emotions of sadness involved in mourning rites, are not displayed only by the truly left of the death, but because of the obligation imposed by the clan.
 
 >[!quote|#ffd100] 
 >
-T h r o u g h this rite, the g r o u p p e r i o d i c a l l y revitalizes the sense i t has o f itself and its u n i t y ; the nature o f the i n d i v i d u a l s as social beings is strengthened at the same t i m e . [(p. 449)](zotero://open-pdf/library/items/SCC8MNQ3?page=449&annotation=highlight-p449x60y262)
+M o u r n i n g is n o t the natural response o f a private sensibility h u r t b y a c r u e l loss. I t is an o b l i g a t i o n i m p o s e d b y the g r o u p . [(p. 470)](zotero://open-pdf/library/items/SCC8MNQ3?page=470&annotation=highlight-p470x43y177)
 
 >[!quote|#ffd100] 
 >
-T h e representative rites a n d the collective recreations are so close t o o n e another that people m o v e from one genre t o the o t h e r w i t h o u t any sense o f discontinuity. T h e trait o f the specifically religious ceremonies is that they must be p e r f o r m e d o n consecrated g r o u n d , from w h i c h w o m e n a n d the u n i n i t i a t e d are e x c l u d e d . I n others, this religious feature is s o m e w h a t o b - scured, a l t h o u g h n o t gone completely. T h e y o c c u r away from the c e r e m o - nial g r o u n d , w h i c h shows that t o some e x t e n t they are already secular; even so, the profane ( w o m e n and c h i l d r e n ) are n o t a d m i t t e d . H e n c e they straddle the b o u n d a r y b e t w e e n t w o domains. I n general, they relate t o m y t h i c a l p e r - sonages that d o n o t f i t neady i n t o the scheme o f t o t e m i c r e l i g i o n . T h e p e r - sonages are spirits, m o s t often e v i l ones, that are m o r e c o n n e c t e d w i t h the magicians t h a n w i t h the o r d i n a r y faithful, and sorts o f b o g e y m e n i n w h i c h m e n d o n o t believe w i t h t h e same degree o f seriousness and firm c o n v i c t i o n as t h e y accord t o p r o p e r l y t o t e m i c beings and t h i n g s [(p. 454)](zotero://open-pdf/library/items/SCC8MNQ3?page=454&annotation=highlight-p454x39y344)
-
-In the recognition of collective recreation aspects of positive cults, Durkheim found continuity of these recreations with the representative rites, but also a different attitude which separate groups by the seriousness and conviction of the real efficacy over the apparent efficacy.
+I t is a r i t u a l facade that must be adopted o u t o f respect for custom, b u t one that is largely i n d e p e n d e n t o f the i n d i v i d u a l s ' e m o t i o n a l states. M o r e o v e r , this o b l i g a t i o n is sanctioned b y m y t h i c o r social penalties. [(p. 471)](zotero://open-pdf/library/items/SCC8MNQ3?page=471&annotation=highlight-p471x62y550)
 
 >[!quote|#ffd100] 
 >
-T h i s i n h e r e n t i n d e t e r m i n a c y o f the t o t e m i c ceremonies was o n l y p o i n t e d t o b y Spencer a n d G i l l e n , and i n d e e d rather indirecdy, b u t i t has been c o n f i r m e d b y S t r e h l o w i n the m o s t e x p l i c i t terms. H e says, " W h e n the y o u n g novices are passed t h r o u g h the various i n i t i a t i o n celebrations, rites are p e r f o r m e d o n e after another f o r t h e m . Nevertheless, a l t h o u g h these rites r e - p r o d u c e those o f the c u l t proper, d o w n t o the m o s t characteristic details (Read: the rites that Spencer and Gillen term Intichiuma), t h e i r purpose is n o t t o m u l t i p l y the c o r r e s p o n d i n g t o t e m a n d make i t prosper." So the same cerem o n y is used i n b o t h cases; o n l y the name is changed. W h e n its purpose is strictly the r e p r o d u c t i o n o f the species, i t is called M b a t j a l k a t i u m a , and w h e n i t is a procedure o f i n i t i a t i o n i t is g i v e n the name I n t i c h i u m a . [(p. 458)](zotero://open-pdf/library/items/SCC8MNQ3?page=458&annotation=highlight-p458x40y360)
-
-Inherent indeterminacy of totemic ceremonies.
+T h e r i t e n o t o n l y demands that o n e t h i n k o f the deceased i n a m e l a n c h o l y w a y b u t that one beat, bruise, lacerate, a n d b u r n oneself. [(p. 472)](zotero://open-pdf/library/items/SCC8MNQ3?page=472&annotation=highlight-p472x41y548)
 
 >[!quote|#ffd100] 
 >
-As w e k n o w , since b l o o d is a sacred t h i n g , w o m e n m u s t n o t see i t flowing. Nevertheless, a quarrel m a y o n occasion break o u t i n t h e i r presence and e n d i n bloodshed. A r i t - ual i n f r a c t i o n is thereby c o m m i t t e d . A m o n g the A r u n t a , i n order t o atone for this lapse, the m a n w h o s e b l o o d has flowed first must " c o n d u c t a c e r e m o n y that refers either t o his father's o r his mother's t o t e m . " T h a t c e r e m o n y bears a special name, Alua uparilima, w h i c h means "erasing o f the b l o o d . " B u t , i n and o f itself, i t is n o different from those c o n d u c t e d d u r i n g i n i t i a t i o n o r at the I n t i c h i u m a s ; i t portrays an event o f the ancestors' history. T h u s i t can serve equally w e l l t o initiate, t o act u p o n the a n i m a l species, o r t o expiate a sacrilege. W e w i l l see b e l o w that a t o t e m i c c e r e m o n y can take the place o f a funeral r i t e . [(p. 459)](zotero://open-pdf/library/items/SCC8MNQ3?page=459&annotation=highlight-p459x62y384)
+. I f he cries and moans, i t is n o t o n l y t o express i n d i v i d u a l sadness b u t also t o f u l - f i l l a d u t y t o the f e e l i n g — a n o b l i g a t o r y feeling o f w h i c h the society a r o u n d h i m does n o t fad t o r e m i n d h i m o n occasion [(p. 473)](zotero://open-pdf/library/items/SCC8MNQ3?page=473&annotation=highlight-p473x59y148)
 
-While recognizing that some of the positive rites depending on the circumstances can have different uses or functions. Durkheim restates his hypothesis by which all these rites portrays an event of the ancestor's history. 
-
->[!quote|#ffd100] 
->
-T h i s a m b i g u i t y shows that the real f u n c t i o n o f a r i t e is n o t the specific, w e l l - d e f i n e d results i t seems i n t e n d e d t o reap and by w h i c h i t is usually characterized. Instead, its real f u n c t i o n is a general result, w h i c h can take different f o r m s i n different circumstances and yet r e m a i n a l - ways and e v e r y w h e r e the same. [(p. 460)](zotero://open-pdf/library/items/SCC8MNQ3?page=460&annotation=highlight-p460x38y526)
-
-The real function of the rites, beside the overlapping of behaviors during the rites, is to represent the authority of the ancestress.  And are positive rites because reinforce the positive virtues of the collective consciousness to reproduce over generations.
+The sadness feelings observed in mourning rites are also a fulfillment of a duty imposed by society.
 
 >[!quote|#ffd100] 
 >
-T h e same state o f m o r a l assurance w i l l cause the same r i t u a l m o v e m e n t s t o take o n e x p i a t o r y virtues. I n this way, the apparent efficacy w i l l seem t o change, even t h o u g h the real efficacy remains u n c h a n g i n g ; a n d the r i t e w i l l seem t o fulfill disparate f u n c - tions even t h o u g h i n fact i t has o n l y one, w h i c h is always the same. [(p. 460)](zotero://open-pdf/library/items/SCC8MNQ3?page=460&annotation=highlight-p460x39y305)
+W h e n the p a i n reaches such a p i t c h , i t becomes suffused w i t h a k i n d o f anger and exasperation. O n e feels the need to break o r destroy s o m e t h i n g . O n e attacks oneself o r others. O n e strikes, w o u n d s , o r b u r n s oneself, o r one attacks someone else, i n order t o strike, w o u n d , o r b u r n h i m . T h u s was established the m o u r n i n g c u s t o m o f g i v i n g oneself over t o veritable orgies o f t o r t u r e . I t seems t o m e probable that the vendetta and head h u n t i n g have n o o t h e r o r i g i n . I f every death is i m p u t e d t o some magical spell and i f , f o r that reason, i t is believed that the dead person must be avenged, the reason is a felt need t o f i n d a v i c t i m at all costs o n w h o m the collective s o r r o w a n d anger can be discharged. T h i s v i c t i m w i l l naturally be sought outside, for an outsider is a subject minoris resistentiae*'; since he is n o t p r o t e c t e d b y the f e l l o w - f e e l i n g that attaches t o a relative or a n e i g h b o r , n o t h i n g a b o u t h i m blocks and neutralizes the bad a n d destructive feelings aroused b y the death. Probably f o r the same reason, a w o m a n serves m o r e often t h a n a m a n as the passive object o f the m o s t c r u e l m o u r n i n g rites. Because she has l o w e r social significance, she is m o r e readily singled o u t t o f i l l the f u n c t i o n o f scapegoat. [(p. 474)](zotero://open-pdf/library/items/SCC8MNQ3?page=474&annotation=highlight-p474x40y369)
 
-The reduction of the interpretation of these  kind of rites (positive) to a real function which "is always the same": the reproduction of the collective consciousness by the representation of the authority of tradition, despite any other "apparent efficacy" (as physical efficacy), is what allows Durkheim to hold his category of social fact while the behavior of the groups are "explained" by the coercive power of the institutions over the reproduction of the collective consciousness. 
-
->[!quote|#ffd100] 
->
-E v e r y t h i n g brings us back, t h e n , t o the same idea. First and foremost, the rites are means b y w h i c h the social g r o u p reaffirms itself periodically. A n d perhaps, b e g i n n i n g there, w e can achieve a h y p o t h e t i c a l r e c o n s t r u c t i o n o f the m a n n e r i n w h i c h the first t o t e m i c cult must have b e e n b o r n . M e n w h o feel [(p. 460)](zotero://open-pdf/library/items/SCC8MNQ3?page=460&annotation=highlight-p460x40y71)
+Durkheim found a continuity of moments of sadness interrupted or punctuated by moments of violence, orgies of torture oriented to find a victim at all costs on whom the collective sorrow and anger were discharged.
 
 >[!quote|#ffd100] 
 >
-u n i t e d — i n part b y ties o f b l o o d b u t even m o r e b y c o m m o n interests and traditions—assemble and b e c o m e conscious o f t h e i r m o r a l unity. [(p. 461)](zotero://open-pdf/library/items/SCC8MNQ3?page=461&annotation=highlight-p461x60y562)
 
-The hypothesis of Durkheim about the reason for the celebration of these rites, is finally back to his imagination, in which he translate it to the pure abstract and ahistorical situation:
-
->[!quote|#ffd100] 
->
-T h u s u n d e r s t o o d , the m i m e t i c rites c o m e i n t o v i e w as the p r i m i t i v e f o r m o f the cult. Some w i l l find that this is t o a t t r i b u t e a rather large h i s t o r i - cal role t o practices that at first glance resemble childish games. B u t , as I have s h o w n , these naive and gauche gestures, these c r u d e modes o f representation, express and n u r t u r e a feeling o f p r i d e , confidence, and reverence that is e n - tirely comparable t o the feeling expressed b y the faithful o f the most idealist religions w h e n , gathered together, they p r o c l a i m themselves t o be the c h i l - dren o f the a l l - p o w e r f u l G o d . [(p. 461)](zotero://open-pdf/library/items/SCC8MNQ3?page=461&annotation=highlight-p461x60y368)
-
-The "power of travel" of Durkheim concepts presented in his interpretation of mimetic rites, his comparison with child's games and then to the feelings expressed in European church's, is unless difficult to support.
+The main selection of womans as victims of these mourning rites is explained by its outsider condition relative to the death, and its "lower social significance" for the clan structure.
 
 >[!quote|#ffd100] 
 >
-I n b o t h cases, this feeling stems from the same impressions o f security and respect that are aroused i n i n d i v i d u a l consciousnesses b y the great m o r a l force that dominates t h e m : the collective force. [(p. 461)](zotero://open-pdf/library/items/SCC8MNQ3?page=461&annotation=highlight-p461x60y342)
+I f the faithful impose privations o n themselves and u n d e r g o tortures, they d o so t o disarm the malevolence that they i m p u t e t o sacred beings t o w h o m they t h i n k they are subject. T o appease the hate o r anger o f those beings, the faithful anticipate t h e i r demands, s t r i k i n g t h e m - selves so as n o t t o be struck b y t h e m . I t seems, t h e n , that these practices c o u l d o n l y have been b o r n w h e n gods and spirits were conceived o f as m o r a l persons susceptible t o passions like those o f humans. [(p. 480)](zotero://open-pdf/library/items/SCC8MNQ3?page=480&annotation=highlight-p480x39y499)
 
-The assumptions that Durkheim made at this point are oriented to classification rather than understanding or explanation, by making all these efforts of interpretation he was making huge abstraction movements to put the "moral force" of the "collective consciousness" as the source of domination and authority over the "individuals". And in that manner his category of social facts could be completely "general" if not ahistorical, present everywhere, omnipotent.
-
->[!quote|#ffd100] 
->
-I f , a m o n g certain p e o - ples, the ideas "sacred," "soul," and " g o d s " can be explained sociologically, t h e n scientifically w e must presume that the same e x p l a n a t i o n is v a l i d i n p r i n c i p l e for all the peoples a m o n g w h o m the same ideas are f o u n d w i t h es sentially the same characteristics. A s s u m i n g that I a m n o t mistaken, t h e n , at least some o f m y conclusions can l e g i t i m a t e l y be generalized. T h e t i m e has c o m e t o d r a w these o u t . [(p. 488)](zotero://open-pdf/library/items/SCC8MNQ3?page=488&annotation=highlight-p488x40y101)
-
-The methodological generalization assumption of Durkheim is clearly primitive for sociology, the explanatory inferences that can be made from a single case to other cases of the same kind, cannot be done by implication because of the observed features in the studied case, the generalization of a theoretical assumption have to be evidenced and tested empirically in other cases of the same broad set of cases to readjust, confirm or reject the hypothesis built from a single case study.
+The death is a subject of evil, feared and faithfully anticipated, counteracted, by the rite of mourning.
 
 >[!quote|#ffd100] 
 >
-T h e believer w h o has c o m - m u n e d w i t h his g o d is n o t s i m p l y a m a n w h o sees n e w truths that the u n b e - liever k n o w s n o t ; he is a m a n w h o is stronger. * W i t h i n himself, he feels m o r e strength t o endure the trials o f existence o r t o overcome t h e m . H e is as t h o u g h lifted above the h u m a n miseries, because he is lifted above his h u m a n c o n d i - t i o n . H e believes he is delivered from e v i l — w h a t e v e r the f o r m i n w h i c h he conceives o f e v i l . T h e first article o f any faith is b e l i e f i n salvation by faith. [(p. 489)](zotero://open-pdf/library/items/SCC8MNQ3?page=489&annotation=highlight-p489x63y201)
+T h e w h o l e o f religious life gravitates a r o u n d t w o opposite poles, t h e n , t h e i r o p p o s i t i o n b e i n g the same as that b e t w e e n the p u r e and the i m p u r e , the saint a n d the sacrilegious p e r - son, the d i v i n e and the diabolical. B u t a l t h o u g h opposite t o one another, these t w o aspects o f religious life are at the same t i m e closely a k i n . First, b o t h have the same relation t o p r o - fane beings. T h e y must abstain f r o m all contact w i t h i m p u r e things and w i t h v e r y h o l y [saintes] things. T h e f o r m e r are n o less f o r b i d d e n t h a n the latter, and they, t o o , are taken o u t o f c i r c u l a t i o n , w h i c h is t o say that they are also sacred [sdrres]. [(p. 483)](zotero://open-pdf/library/items/SCC8MNQ3?page=483&annotation=highlight-p483x62y340)
 
-For Durkeim religious beliefs (representations) made a consciousness stronger.
-
->[!quote|#ffd100] 
->
-W e have seen that this r e a l i t y — [(p. 490)](zotero://open-pdf/library/items/SCC8MNQ3?page=490&annotation=highlight-p490x237y113)
+The prohibitions present in the piacular rites involved the separation between the divine and the diabolical. But these separation can shift meanings from those two poles as with dietary restrictions.
 
 >[!quote|#ffd100] 
 >
-w h i c h m y t h o l o g i e s have represented i n so m a n y different forms, b u t w h i c h is the objective, universal, and eternal cause o f those sui generis sensations o f w h i c h religious experience is made—is society. [(p. 491)](zotero://open-pdf/library/items/SCC8MNQ3?page=491&annotation=highlight-p491x62y551)
-
-Religion, we could say following Durkheim, is the collective sui generis representation of th experience of society as a social unity.
+A m o n g certain Semitic peoples, p o r k was f o r b i d d e n , b u t one d i d n o t always k n o w w i t h certainty i f i t was f o r b i d - d e n as an i m p u r e t h i n g o r as a h o l y [sainte] t h i n g . A n d the [(p. 483)](zotero://open-pdf/library/items/SCC8MNQ3?page=483&annotation=highlight-p483x62y224)
 
 >[!quote|#ffd100] 
 >
-T h i s is so because society cann o t make its influence felt unless i t is i n a c t i o n , a n d i t is i n action o n l y i f the individuals w h o c o m p r i s e i t are assembled and acting i n c o m m o n . I t is t h r o u g h c o m m o n a c t i o n that society becomes conscious o f and affirms itself; society is above all an active c o o p e r a t i o n . As I have s h o w n , even collective ideas and feelings are possible o n l y t h r o u g h the overt m o v e m e n t s that s y m - b o l i z e t h e m . 3 T h u s i t is a c t i o n that dominates religious life, for the v e r y reason that society is its source. [(p. 491)](zotero://open-pdf/library/items/SCC8MNQ3?page=491&annotation=highlight-p491x63y382)
+T h e r e is m o r e : A n i m p u r e t h i n g o r an e v i l p o w e r often becomes a h o l y t h i n g o r a tutelary p o w e r — a n d v i c e v e r s a — w i t h o u t c h a n g i n g i n nature, b u t [(p. 483)](zotero://open-pdf/library/items/SCC8MNQ3?page=483&annotation=highlight-p483x62y184)
 
-In this point, Durkeim recognized the limits of the power of consciousness by accepting that this power in only real in action, an can only be hold in the representation as actions which govern religious life and by that movement integrate the experience of society.
-
->[!quote|#ffd100] 
->
-I n short, t h e n , w e can say that nearly all the great social institutions were b o r n i n r e l i g i o n . For the p r i n c i p a l features o f collective life t o have b e g u n as n o n e o t h e r than various features o f religious life, i t is evident that religious life must necessari l y have b e e n the e m i n e n t f o r m and, as i t were, the e p i t o m e o f collective life. I f r e l i g i o n gave b i r t h t o all that is essential i n society, that is so because the idea o f society is the soul o f r e l i g i o n . [(p. 491)](zotero://open-pdf/library/items/SCC8MNQ3?page=491&annotation=highlight-p491x64y213)
+Is the context which govern the direction of the transformative power of piacular rites.
 
 >[!quote|#ffd100] 
 >
-U n d e r s t o o d i n this way, religious t e c h n i q u e seems t o be a k i n d o f mystical mechanics. B u t these physical operations are b u t the outer envelope i n w h i c h m e n t a l operations lie h i d d e n . I n the end, the p o i n t is n o t t o exert a k i n d o f physical constraint u p o n b l i n d and, m o r e t h a n that, i m a g i n a r y forces b u t t o reach, fortify, a n d discipline consciousnesses. T h e l o w e r r e l i - gions have sometimes b e e n called materialistic. T h a t t e r m is i n c o r r e c t . A l l religions, even the crudest, are i n a sense spiritualistic. T h e powers they b r i n g i n t o play are, above all, spiritual, a n d t h e i r p r i m a r y f u n c t i o n is t o act u p o n m o r a l life. I n this way, w e understand that w h a t was d o n e i n the name o f rel i g i o n cannot have been d o n e i n v a i n , f o r i t is necessarily the society o f m e n , i t is h u m a n i t y , that has reaped the fruits. [(p. 492)](zotero://open-pdf/library/items/SCC8MNQ3?page=492&annotation=highlight-p492x42y266)
+s i m p l y t h r o u g h a change i n external circumstances. [(p. 484)](zotero://open-pdf/library/items/SCC8MNQ3?page=484&annotation=highlight-p484x35y574)
 
-Durkheims negation of every materialistic orientation of "lower religions" stacks in this separation between the physical operation of a collective behavior and the mental operations of the executing beings. A disassociation which can be found completely reversed in Weber's rational social action frame. 
+>[!quote|#ffd100] 
+>
+W e have seen that the soul o f the dead person, at first a dreaded p r i n c i p l e , is transformed i n t o a p r o - tective genie w h e n the m o u r n i n g is over. [(p. 484)](zotero://open-pdf/library/items/SCC8MNQ3?page=484&annotation=highlight-p484x35y548)
+
+With the mourning of the body of the death, his soul is transformed from an evil spirit to a protective being.
+
+>[!quote|#ffd100] 
+>
+So the pure and the i m p u r e are n o t t w o separate genera b u t t w o varieties o f the same genus that includes all sacred things. T h e r e are t w o sorts o f sacred, l u c k y a n d u n l u c k y ; and n o t o n l y is there n o radical d i s c o n t i n u i t y b e - t w e e n the t w o opposite f o r m s , b u t the same object can pass from one t o the o t h e r w i t h o u t c h a n g i n g its nature. T h e i m p u r e is made f r o m the pure, and vice versa. T h e possibility o f such transformations constitutes the a m b i g u i t y o f the sacred. [(p. 485)](zotero://open-pdf/library/items/SCC8MNQ3?page=485&annotation=highlight-p485x62y498)
+
+The transformation of evil to divine things, and viceversa is mediated by context.
+
+>[!quote|#ffd100] 
+>
+W e have seen that the evil powers actually result from and symbolize these rites. W h e n society is g o i n g t h r o u g h events that sadden, distress, o r anger i t , i t pushes its m e m b e r s t o give witness t o t h e i r sadness, distress, o r anger t h r o u g h expressive actions. I t demands c r y i n g , l a m e n t i n g , and w o u n d - i n g oneself and others as a matter o f duty. I t does so because those collective demonstrations, as w e l l as the m o r a l c o m m u n i o n t h e y simultaneously bear witness t o and reinforce, restore t o the g r o u p the energy that the events [(p. 485)](zotero://open-pdf/library/items/SCC8MNQ3?page=485&annotation=highlight-p485x63y199)
+
+>[!quote|#ffd100] 
+>
+threatened t o take away, and thus enables i t t o recover its e q u i l i b r i u m . [(p. 486)](zotero://open-pdf/library/items/SCC8MNQ3?page=486&annotation=highlight-p486x38y577)
+
+>[!quote|#ffd100] 
+>
+Since they reflect the e m o t i o n a l state i n w h i c h the g r o u p finds itself, a change i n that state is sufficient t o make the forces themselves change d i r e c t i o n . W h e n the m o u r n i n g ends, the h o u s e h o l d o f the deceased has been calmed b y the m o u r n i n g itself; i t gathers n e w confidence; the individuals are relieved o f the painful pressure that was exerted u p o n t h e m ; they feel m o r e at ease. [(p. 486)](zotero://open-pdf/library/items/SCC8MNQ3?page=486&annotation=highlight-p486x38y330)
+
+The culmination of the piacular rites involve the relief of a painful pressure by its transformation effect.
+
+>[!quote|#ffd100] 
+>
+H o w e v e r c o m p l e x the o u t w a r d manifestations o f religious life m a y be, its i n n e r essence is simple, and one and the same. E v e r y w h e r e i t fulfills the same need a n d derives from the same state o f m i n d . I n all its f o r m s , its object is t o lift m a n above h i m s e l f and t o make h i m live a higher hfe than he w o u l d i f he obeyed o n l y his i n d i v i d u a l impulses. T h e beliefs express this hfe i n terms o f representations; the rites organize and regulate its f u n c t i o n i n g . [(p. 487)](zotero://open-pdf/library/items/SCC8MNQ3?page=487&annotation=highlight-p487x64y138)
+
+All religious belief are oriented to lift man above its human condition, to live a life higher than if he follow his individual impulses. In that manner, the representations of this beliefs manifested in rites and cults organize and regulates the social order.
+
+>[!quote|#ffd100] 
+>
+I n d e e d , they sense that the true f u n c t i o n o f r e l i g i o n is n o t t o make us t h i n k , e n r i c h o u r knowledge, or add representations o f a different sort and source t o those w e o w e t o science. Its true f u n c t i o n is t o make us act and t o help us live. T h e believer w h o has c o m - m u n e d w i t h his g o d is n o t s i m p l y a m a n w h o sees n e w truths that the u n b e - liever k n o w s n o t ; he is a m a n w h o is stronger. * W i t h i n himself, he feels m o r e strength t o endure the trials o f existence o r t o overcome t h e m . H e is as t h o u g h lifted above the h u m a n miseries, because he is lifted above his h u m a n c o n d i - t i o n . H e believes he is delivered from e v i l — w h a t e v e r the f o r m i n w h i c h he conceives o f e v i l . T h e first article o f any faith is b e l i e f i n salvation by faith. [(p. 489)](zotero://open-pdf/library/items/SCC8MNQ3?page=489&annotation=highlight-p489x63y201)
+
+For Durkheim, religious beliefs (representations) made a consciousness stronger.%% %% end annotations 
 
 
-%% Import Date: 2023-12-03T00:00:44.542-07:00 %%
+%% Import Date: 2023-12-04T00:36:57.551-07:00 %%

@@ -1,5 +1,5 @@
 {
-  "defaultVoice": "Microsoft Zira - English (United States)",
+  "defaultVoice": "Microsoft Sabina - Spanish (Mexico)",
   "pitch": 1,
   "rate": 1,
   "volume": 1,
@@ -12,8 +12,8 @@
   "speakComments": false,
   "languageVoices": [
     {
-      "language": "en",
-      "voice": "Microsoft Zira - English (United States)"
+      "language": "es",
+      "voice": "Microsoft Sabina - Spanish (Mexico)"
     }
   ],
   "stopPlaybackWhenNoteChanges": true
