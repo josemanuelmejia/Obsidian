@@ -22,7 +22,7 @@
   "tag-summary-plugin",
   "text-extractor",
   "obsidian-topic-linking",
-  "deepl",
   "language-translator",
-  "obsidian-translator"
+  "obsidian-translator",
+  "deepl"
 ]

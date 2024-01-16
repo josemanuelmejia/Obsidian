@@ -21,9 +21,12 @@
       "cslStyle": "american-sociological-association"
     }
   ],
+  "citeSuggestTemplate": "[[{{citekey}}]]",
+  "openNoteAfterImport": true,
+  "whichNotesToOpenAfterImport": "first-imported-note",
   "exeVersion": "1.0.15",
   "shouldShowCiteSuggest": true,
   "shouldConcat": true,
-  "openNoteAfterImport": true,
-  "pdfExportImageOCR": false
+  "pdfExportImageOCR": false,
+  "_exeInternalVersion": 1
 }

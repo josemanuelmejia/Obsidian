@@ -1,0 +1,2 @@
+ “Somos como la paja del páramo que se arranca y vuelve a crecer y de paja de páramo sembraremos el mundo”
+“We are like the straw of the moor that is plucked and grows again and with moor straw we will sow the world”
