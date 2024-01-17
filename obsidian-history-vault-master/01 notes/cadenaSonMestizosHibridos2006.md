@@ -41,7 +41,7 @@ which reveals subordinate alternatives for mestizo subject positions, including 
 >
 Al describir a los mestizos decía: Andan de preferencia con los blancos y no quieren saber nada de los indios a los cuales tratan en general con desprecio. El número de mestizos en Lima es menor que en el interior del país, donde existen poblaciones enteras habitadas únicamente por mestizos. Allí se autotitulan «blancos» y se enfrentan con aires de superioridad a los indios. No se les puede decir cumplido que sea mas de su agrado que preguntarles si son españoles, a lo cual contestan por lo general afirmativamente, aunque todas sus facciones revelan los inconfundibles rasgos típicos del indígena. El color de los mestizos es castaño claro, a veces tirando a oscuro (von Tschudi, 1966:117). [(p. 52)](zotero://open-pdf/library/items/VNN4TR3W?page=52&annotation=highlight-p2x67y75)
 
-%%El mestizo como identidad negativa frente al indio. En ese sentido, la dialectica negativa hegeliana, opera en el mestizo frente al indio, el mestizo logra diferenciarse, sublimarse, hasta convertirse en "blanco" a partir de la subordinacion del indio. El mismo movimiento dialctico que ocurre entre el amo y el siervo, opera entre el mestizo y el indio.%%
+%%El mestizo como identidad negativa frente al indio. En ese sentido, la dialéctica negativa hegeliana, opera en el mestizo frente al indio, el mestizo logra diferenciarse, sublimarse, hasta convertirse en "blanco" a partir de la subordinación del indio. El mismo movimiento dialéctico que ocurre entre el amo y el siervo, opera entre el mestizo y el indio.%%
 
 >[!quote|#ffd100] 
 >
@@ -200,7 +200,7 @@ El vocablo, pues, alude a la perturbación del orden social por mezcla o combina
 >
 Del mismo modo, la apariencia física apropiada dependía del vestido y peinado, limpieza y postura, en lugar de marcadores físicos. La piel negra parece haber tenido un campo más complicado de significación en tanto diferenciaba a los esclavos africanos (y sus descendientes) del resto de la población. [(p. 59)](zotero://open-pdf/library/items/VNN4TR3W?page=59&annotation=highlight-p9x71y91)
 
-%%The mestizaje in the colonial society is also part of the african hybridity, in that sense, in that sense, the alternatives of mestizaje didnt accomplish this transitions that could be made by the indigenous mestizos.. That she is quoting in the first paragraph of this page.%%
+%%The mestizaje in the colonial society is also part of the African hybridity, in that sense, in that sense, the alternatives of mestizaje didn't accomplish this transitions that could be made by the indigenous mestizos.. That she is quoting in the first paragraph of this page.%%
 
 >[!quote|#ffd100] 
 >
