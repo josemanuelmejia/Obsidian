@@ -26,7 +26,7 @@ comment::
 ### Note
 %% begin annotations %%
 
-### Imported on 2024-01-18 6:50 am
+### Imported on 2024-01-18 4:14 pm
 
 >[!quote|#ffd100] 
 >
@@ -129,7 +129,7 @@ Constitutions imposed by the colonial powers. Prior to ‘granting independence,
 >
 The Bretton Woods system, which locks countries into a fnancial structure controlled by the West. In particular it requires that central bank governors be ‘independent,’ that is, independent of their governments, but dependent on rules established by the Bank of International Settlements (BIS), at the top of the pyramid in the Bretton Woods system. [(p. 3)](zotero://open-pdf/library/items/THN9H58H?page=3&annotation=highlight-p22x76y109)
 
-%%The author translated the importance of Bretton Woods financial institutions as the subordination of %%
+%%The author translated the importance of Bretton Woods financial institutions as the subordination of independent development models countries (China, North Korea, Cuba, Vietnam and Islam Republic) to those instruments of global hegemony.%%
 
 >[!quote|#e52136] 
 >
@@ -178,4 +178,4 @@ GDP, PCI, Gini coefcient, credit ratings, stock valuations, infation fgures are 
 %%What is emphasized is that international war bring periods of enforcement on the conditions of material expansion. The magnitude of capital invested in military consumption was increasing already after the USSR fall, but the magnitude of money-capital which is expecting the right opportunity to be invested in the military large scale industry of the WW3 would be incomparable. %% %% end annotations %%
 
 
-%% Import Date: 2024-01-18T06:51:01.774-08:00 %%
+%% Import Date: 2024-01-18T16:14:20.474-08:00 %%

@@ -4,59 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "544e903ad41d40fb",
+        "id": "d2f853343e618518",
         "type": "tabs",
         "children": [
           {
-            "id": "ee2619ad5eea5ce3",
+            "id": "3cb08a77b64cbb66",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Accumulation of mining capital.md",
-                "mode": "preview",
-                "source": false
+                "file": "obsidian-history-vault-master/01 notes/lamaWhyWestCan2023.pdf"
               }
             }
           },
           {
-            "id": "f69c98c41148e13a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-history-vault-master/02 analysis/questions and arguments/Q3. Mining struggles international significance in class struggle/Q3. Mining struggles international significance in class struggle.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f3b4d7f848ba716e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-history-vault-master/01 notes/cadenaSonMestizosHibridos2006.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2d10c87fec599390",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-history-vault-master/01 notes/cadenaSonMestizosHibridos2006.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9c9af306a881ca76",
+            "id": "8313382fea413c85",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -68,7 +30,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -134,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/01 notes/lamaWhyWestCan2023.md",
+                "file": "obsidian-history-vault-master/01 notes/lamaWhyWestCan2023.pdf",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/01 notes/lamaWhyWestCan2023.md",
+                "file": "obsidian-history-vault-master/01 notes/lamaWhyWestCan2023.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-history-vault-master/01 notes/lamaWhyWestCan2023.md"
+                "file": "obsidian-history-vault-master/01 notes/lamaWhyWestCan2023.pdf"
               }
             }
           },
@@ -235,15 +197,26 @@
       "obsidian-translator:Translate": false
     }
   },
-  "active": "9c9af306a881ca76",
+  "active": "4156b5e5ac4c33be",
   "lastOpenFiles": [
-    "obsidian-history-vault-master/08 atlas.ti/Atlas.ti codebook.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jan Nederveen",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Nueva carpeta (2)",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/~$n Nederveen.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/~WRL0004.tmp",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/~WRD0003.tmp",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jan Nederveen.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Nueva carpeta",
+    "obsidian-history-vault-master/01 notes/lamaWhyWestCan2023.pdf",
     "obsidian-history-vault-master/01 notes/lamaWhyWestCan2023.md",
+    "obsidian-history-vault-master/01 notes/~$maWhyWestCan2023.docx",
+    "obsidian-history-vault-master/01 notes/~WRL0425.tmp",
+    "obsidian-history-vault-master/01 notes/~WRD0414.tmp",
     "obsidian-history-vault-master/01 notes/rahierIntroductionMestizajeMulataje2003.md",
-    "obsidian-history-vault-master/01 notes/cadenaSonMestizosHibridos2006.md",
     "obsidian-history-vault-master/01 notes/garciaFormationMestizoNations2022.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Untitled.md",
+    "obsidian-history-vault-master/08 atlas.ti/Atlas.ti codebook.md",
+    "obsidian-history-vault-master/01 notes/cadenaSonMestizosHibridos2006.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Erika Saldívar.md",
-    "obsidian-history-vault-master/01 notes/~$righiLongTwentiethCentury1994.docx",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q3. Mining struggles international significance in class struggle/Q3. Mining struggles international significance in class struggle.md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q2. Mining struggles challenge imperialist domination/Q2. Mining struggles challenge imperialist domination.md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q4. Mining struggles escalation effects/Q4. Mining struggles escalation effects in the formation of the revolutionary subject.md",
@@ -252,9 +225,6 @@
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q3. Mining struggles international significance in class struggle/The definition of the situation of class struggle.md",
     "obisidian-history-vault-master/01 notes/cadenaSonMestizosHibridos2006.md",
     "obsidian-history-vault-master/01 notes/valcarcelTempestadAndes1975.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/~$bmission_JWSR_25022023_DOCX.docx",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/~WRL0001.tmp",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/~WRD0000.tmp",
     "Translations.md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Accumulation of mining capital.md",
     "THe technological myth.md",
@@ -263,16 +233,8 @@
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/El proceso de acumulación minero.md",
     "obsidian-history-vault-master/03 writing/publicaciones/Tesis_JoseManuelMejia_final.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_25022023.md",
-    "obsidian-history-vault-master/03 writing/publicaciones/Tesis_JoseManuelMejia_final_UASB.pdf",
-    "obsidian-history-vault-master/03 writing/Tesis_JoseManuelMejia_final_UASB.pdf",
     "obsidian-history-vault-master/01 notes/arrighiLongTwentiethCentury1994.md",
-    "obsidian-history-vault-master/03 writing/tmp30vvs.pdf",
-    "obsidian-history-vault-master/03 writing/publicaciones",
-    "obsidian-history-vault-master/03 writing/Nueva carpeta",
-    "~$SB MA Latin American Studies Thesis.docx",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/William Robinson/The feudality of the current global capitalism's material expansion  in the aftermath of the US long twentieth century.md",
-    "FLACSO MA Political Sociology Thesis.md",
-    "obsidian-history-vault-master/01 notes/durkheimElementaryFormsReligious1995.md",
     "obsidian-history-vault-master/06 archives/Gold, Silver and Platiniaum prices historical.png",
     "obsidian-history-vault-master/06 archives/Copper and Tin prices historical.png",
     "obsidian-history-vault-master/06 archives/1er temario.png",
