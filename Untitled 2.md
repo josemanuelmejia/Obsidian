@@ -1,0 +1,1 @@
+My main interest is to study the current historical juncture connoted mainly by the overaccumulation crisis of capitalism and the acceleration of the intensification of interstate war to ensure the expansion of the colonial policy over the world-system for extraction of raw materials for the enforcement of the 
