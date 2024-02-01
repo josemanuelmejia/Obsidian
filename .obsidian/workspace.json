@@ -4,57 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "d2f853343e618518",
+        "id": "aede9758d2d33eb8",
         "type": "tabs",
         "children": [
           {
-            "id": "3cb08a77b64cbb66",
+            "id": "6e0035ed0f21aa63",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "obsidian-history-vault-master/01 notes/lamaWhyWestCan2023.pdf"
-              }
-            }
-          },
-          {
-            "id": "8313382fea413c85",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Accumulation of mining capital.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1f61378e2abbb11f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Imperialism.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b656f87646594f6f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled 2.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -120,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled 2.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Untitled 2.md"
-              }
+              "state": {}
             }
           },
           {
@@ -221,14 +178,15 @@
       "obsidian-translator:Translate": false
     }
   },
-  "active": "b656f87646594f6f",
+  "active": "6e0035ed0f21aa63",
   "lastOpenFiles": [
-    "Recording 20240129184513.webm",
-    "Imperialism.md",
     "Untitled 2.md",
+    "Imperialism.md",
+    "obsidian-history-vault-master/01 notes/lamaWhyWestCan2023.pdf",
+    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Accumulation of mining capital.md",
+    "Recording 20240129184513.webm",
     "~$perialism.docx",
     "Imperialism.docx",
-    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Accumulation of mining capital.md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Profits, mining capital and gold accumulation..md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Profits, mining capital and gold accumulation.md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Q1. Mining struggles antisystemic effects on capital accumulation.md",
@@ -245,8 +203,6 @@
     "THe technological myth.md",
     "Translations.md",
     "obsidian-history-vault-master/01 notes/lamaWhyWestCan2023.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jan Nederveen/~$ G Grad el Multip Glob(1).docx",
-    "obsidian-history-vault-master/01 notes/~WRL1613.tmp",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jan Nederveen/lamaWhyWestCan2023.md",
     "obsidian-history-vault-master/01 notes/arrighiLongTwentiethCentury1994.md",
     "obsidian-history-vault-master/01 notes/rahierIntroductionMestizajeMulataje2003.md",
