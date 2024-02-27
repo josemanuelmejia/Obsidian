@@ -63,6 +63,8 @@ The chi-square test of statistical significance is supportive of the alternative
 
 The number 3.7e+03 calculated by the Stata package chi square test should be read as 3676.19368, as the result of the sum of its 24 components calculated by "the difference between the squared difference between the observed and expected frequencies then divided by the expected frequencies of each of the 24 cells of the crosstable Table 3, following the formula offered by Knoke et al. (2002, 145). Indeed, considering this calculation for the interpretation of the chi-square Pearson coefficient, we can conclude that the critical value of 37.697 chi square coefficient value for a degree difference of 15 was highly superseded by the 3676.19368 value (3.7e+03 in Table 3 Stata exported result) and indeed reject the null hypothesis of no covariation between the discrete variables struggle performances and protests claims.
 
+The Cramer's V value of 0.2364 can be interpreted as a medium effect size of the discrete variable protests claims over the prediction of the covariation of discrete variable performances struggles.
+
 . bys protest_centralism: tab perfor_id claim_id, col all
 
 ![[bys protest_centralism Lima tab perfor_id claim_id col all.png]]
