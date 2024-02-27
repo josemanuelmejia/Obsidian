@@ -4,15 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "0366256c29ee6408",
+        "id": "3397de516ec440ab",
         "type": "tabs",
         "children": [
           {
-            "id": "acf3b116b826f3f1",
+            "id": "ece1273ed7173886",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Paper 1. Crosstables.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b91c6cf9bf1b00aa",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.8"
+              }
             }
           }
         ]
@@ -65,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281.5
+    "width": 200
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -81,6 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Paper 1. Crosstables.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Paper 1. Crosstables.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +134,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Paper 1. Crosstables.md"
+              }
             }
           },
           {
@@ -179,8 +197,32 @@
       "obsidian-translator:Translate": false
     }
   },
-  "active": "acf3b116b826f3f1",
+  "active": "ece1273ed7173886",
   "lastOpenFiles": [
+    "tab perfor_id claim_id col all 1.png",
+    "bys protest_centralism Lima tab perfor_id claim_id col all 1.png",
+    "bys protest_centralism countryside tab perfor_id claim_id col all.png",
+    "bys protest_centralism Lima tab perfor_id claim_id col all.png",
+    "tab perfor_id claim_id col all.png",
+    "bys protest_centralism 2 tab perfor_id claim_id col all.png",
+    "tab perfor_id claim_id exp.png",
+    "bys protest_centralism 1 tab perfor_id claim_id exp.png",
+    "bys protest_centralism 1 tab perfor_id claim_id col all.png",
+    "tab perfor_id claim_id 1.jpg",
+    "bys protest_centralism tab perfor_id claim_id exp.png",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_25022023.md",
+    "Paper 1. Crosstables.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Erika Saldívar.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/~$n Nederveen.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Graduate Program Handbook and Guidelines 2022-2023.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Tristan Bridges.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Untitled.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/David Feldman/Untitled.md",
+    "TA English proficiency evaluation.md",
+    "Ololiuqui.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Revision Strategies - Excelsior OWL.md",
+    "Regressions.md",
+    "Rethinking Agency and Structure in the Study of Regime Change.md",
     "Notes on Economic Manuscripts of Marx.md",
     "Note.md",
     "Translation of Capital first ch from german.md",
@@ -191,7 +233,6 @@
     "obsidian-history-vault-master/03 writing/documents/Index.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_04052023.md",
     "obsidian-history-vault-master/07 diary/11222gro.md",
-    "Ololiuqui.md",
     "stata.md",
     "Recording 20240205142404.webm",
     "Recording 20240205141737.webm",
@@ -201,30 +242,11 @@
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q4. Mining struggles escalation effects/Q4. Mining struggles escalation effects in the formation of the revolutionary subject.md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q3. Mining struggles international significance in class struggle/Q3. Mining struggles international significance in class struggle.md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q2. Mining struggles challenge imperialist domination/Q2. Mining struggles challenge imperialist domination.md",
-    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Q1. Mining struggles antisystemic effects on capital accumulation.md",
-    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Profits, mining capital and gold accumulation.md",
-    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Profits, mining capital and gold accumulation..md",
-    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/El proceso de acumulación minero.md",
-    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Accumulation of mining capital.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_25022023.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Revision Strategies - Excelsior OWL.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
-    "obsidian-history-vault-master/07 diary/08MAY23.md",
     "IlsaSheWolfoftheSS-eng 4.srt",
     "IlsaSheWolfoftheSS-eng 3.srt",
     "IlsaSheWolfoftheSS-eng 2.srt",
-    "IlsaSheWolfoftheSS-eng 1.srt",
-    "obsidian-history-vault-master/01 notes/marxManuscritosEconomicofilosoficos18442004a.md",
-    "obisidian-history-vault-master/01 notes/marxTransformationCommodityCapital2015.md",
-    "obsidian-history-vault-master/01 notes/leninIzquierdismoEnfermedadInfantil1978.md",
-    "obsidian-history-vault-master/06 archives/Gold, Silver and Platiniaum prices historical.png",
-    "obsidian-history-vault-master/06 archives/Copper and Tin prices historical.png",
-    "obsidian-history-vault-master/06 archives/1er temario.png",
-    "obsidian-history-vault-master/06 archives/1er conv. 14FEB2021.png",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Comunicado FFAA.jpg",
     "Mayra.canvas",
-    "Estallido.canvas",
-    "obsidian-history-vault-master/06 archives/MyChart(1).png"
+    "Estallido.canvas"
   ]
 }
