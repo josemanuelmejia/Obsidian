@@ -106,14 +106,5 @@
       ],
       "key": "K"
     }
-  ],
-  "language-translator:language-translator-editor-command": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "L"
-    }
   ]
 }

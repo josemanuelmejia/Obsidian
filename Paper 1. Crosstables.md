@@ -4,7 +4,7 @@
 
 # Introduction/Theory
 %%Introduce important issues, review relevant literature, and identify
-an argument, debate, or empirical puzzle that can be addressed using cross-tabulation.%%
+an argument, debate, or empirical puzzle that can be addressed using cross-tabulation.%% 
 
 Contentious performances are defined as the forms of struggle learned historically which certain populations and collective actors have disposable to mobilize for certain  claims which antagonize or challenge the interests of specific targets (Tilly and Tarrow 2010, 14). In this sense, for instance, labor unions learned, created and adapt certain struggle performances as marches and strikes, routinizing and some times innovating its repeated contention against corporations for the payment of unpaid salaries, and another kind of performances to challenge the state for a rise in the wages as road blockades and general strikes.
 

@@ -4,29 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "3397de516ec440ab",
+        "id": "c8c16929982f9be9",
         "type": "tabs",
         "children": [
           {
-            "id": "ece1273ed7173886",
+            "id": "b735bd03fc63af03",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Paper 1. Crosstables.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "668e15e72388c404",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "bys protest_centralism countryside tab perfor_id claim_id col all.png"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -58,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "hoja",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -75,7 +61,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -95,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Paper 1. Crosstables.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Paper 1. Crosstables.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Paper 1. Crosstables.md"
-              }
+              "state": {}
             }
           },
           {
@@ -197,21 +180,21 @@
       "obsidian-translator:Translate": false
     }
   },
-  "active": "ece1273ed7173886",
+  "active": "b735bd03fc63af03",
   "lastOpenFiles": [
-    "~WRL1394.tmp",
-    "~WRD1386.tmp",
-    "~WRL1911.tmp",
-    "~WRD1903.tmp",
-    "~WRL1839.tmp",
-    "~WRD1831.tmp",
-    "~WRL2345.tmp",
-    "~WRD2337.tmp",
-    "~WRL3097.tmp",
-    "~WRD3093.tmp",
-    "~WRL1271.tmp",
     "bys protest_centralism countryside tab perfor_id claim_id col all.png",
+    "Hoja de vida (resumen).md",
+    "CV_JoseManuelMejia2024_feb_español.docx",
+    "~WRL0002.tmp",
+    "~WRD0001.tmp",
+    "~WRD0000.tmp",
+    "obsidian-history-vault-master/06 archives/CV_JoseManuelMejia_2024_feb.pdf",
+    "CV_JoseManuelMejia_2024_feb.pdf",
+    "mso3BCF.tmp",
+    "~$ja de vida (resumen).docx",
+    "Hoja de vida (resumen).docx",
     "Paper 1. Crosstables.md",
+    "msoA84B.tmp",
     "tab perfor_id claim_id exp all.png",
     "stata.md",
     "Regressions.md",
@@ -244,7 +227,6 @@
     "obsidian-history-vault-master/05 tasks/WSJ submission.md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q4. Mining struggles escalation effects/Q4. Mining struggles escalation effects in the formation of the revolutionary subject.md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q3. Mining struggles international significance in class struggle/Q3. Mining struggles international significance in class struggle.md",
-    "obsidian-history-vault-master/02 analysis/questions and arguments/Q2. Mining struggles challenge imperialist domination/Q2. Mining struggles challenge imperialist domination.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",
     "Mayra.canvas",
     "Estallido.canvas"
