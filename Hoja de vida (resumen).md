@@ -1,96 +1,96 @@
 
 JOSÉ MANUEL MEJÍA
 
-Móvil: +1(603)3220688
+Mobile: +1(603)3220688
 mejia.villena@ucsb.edu; jose.mejia.v@uasb.edu.ec; jmmejiafl@flacso.edu.ec; jose.mejia2@unmsm.edu.pe
 
-EDUCACIÓN
-actual
-Estudiante de maestría / doctorado en sociología, Universidad de California, Santa Bárbara - EEUU.
+EDUCATION
+current
+Master's/PhD student in sociology, University of California, Santa Barbara - USA.
 2024
-Magíster en Estudios Latinoamericanos, Universidad Andina Simón Bolívar – Ecuador.
-Título de la tesis: Luchas campesinas contra la expansión de la frontera extractiva. Imperialista
-la minería y la lucha de clases en Cajamarca, Perú.
+Master's Degree in Latin American Studies, Universidad Andina Simón Bolívar – Ecuador.
+Thesis title: Peasant struggles against the expansion of the extractive frontier. Imperialist
+mining and the class struggle in Cajamarca, Peru.
 2021
-Magíster en Sociología Política, Facultad Latinoamericana de Ciencias Sociales – Ecuador
-Título de la tesis: Cambio de escala en la contienda antiminera peruana. Construcción de la teoría basada en la
-campañas de lucha por la exploración minera de la montaña Quilish en Cajamarca.
+Master's Degree in Political Sociology, Latin American Faculty of Social Sciences – Ecuador
+Thesis title: Change of scale in the Peruvian anti-mining conflict. Construction of the theory based on the
+campaigns to fight for the mining exploration of the Quilish mountain in Cajamarca.
 2013
-Bachiller en Ciencias Políticas, Universidad Nacional Mayor de San Marcos – Perú
+Bachelor's Degree in Political Science, Universidad Nacional Mayor de San Marcos – Peru
 
-BECAS y BECAS
+SCHOLARSHIPS & BURSARIES
 2023
-Premio otorgado por el Departamento de Sociología de la UCSB
-Beca Internacional de Reclutamiento de Doctores (IDRF)
+Award given by the UCSB Department of Sociology
+International Doctoral Recruitment Scholarship (IDRF)
 2022
-Beca para trabajo de campo en la comunidad indígena de Huanuara (Tacna), UNMSM-Perú.
+Scholarship for fieldwork in the indigenous community of Huanuara (Tacna), UNMSM-Peru.
 2019-2020
-Beca completa para cursar la Maestría en Estudios Latinoamericanos, UASB-Ecuador.
+Full scholarship to pursue the Master's Degree in Latin American Studies, UASB-Ecuador.
 2016-2018
-Beca completa para estudiar la Maestría en Sociología Política, FLACSO-Ecuador.
+Full scholarship to study the Master's Degree in Political Sociology, FLACSO-Ecuador.
 
-EXPERIENCIA DOCENTE
+TEACHING EXPERIENCE
 2022
-Ayudante de Cátedra de la Profesora Angélica Ordóñez en su curso: Movimientos Sociales,
-organizaciones y culturales en el departamento de Artes Liberales y Estudios Culturales,
+Teaching Assistant to Professor Angélica Ordóñez in her course: Social Movements,
+organizations and cultural organizations in the Department of Liberal Arts and Cultural Studies,
 UASB-Ecuador.
 2014-2015
-Docente de la Facultad de Ciencias Políticas y Gobernabilidad de la Universidad
-Nacional Micaela Bastidas de Apurímac, Perú.
+Professor at the Faculty of Political Science and Governance of the University
+Micaela Bastidas National Team from Apurímac, Peru.
 
-EXPERIENCIA INVESTIGADORA
+RESEARCH EXPERIENCE
 2020-2021
-Investigadora y coordinadora del proyecto de análisis de eventos reivindicativos para la actualización de la Base de Protestas Sociales del Perú (BPSP) correspondiente al periodo 2016-2020. Director del proyecto: Profesor Moisés Arce
-(Universidad de Tulane).
+Researcher and coordinator of the project for the analysis of protest events for the update of the Social Protest Base of Peru (BPSP) corresponding to the period 2016-2020. Project Director: Professor Moisés Arce
+(Tulane University).
 2016-2017
-Asistente de investigación para el análisis de la Base de Datos de Conflictos Sociopolíticos del Ecuador.
-Director del proyecto: Profesor Santiago Ortiz (FLACSO-Ecuador).
+Research assistant for the analysis of the Database of Sociopolitical Conflicts of Ecuador.
+Project director: Professor Santiago Ortiz (FLACSO-Ecuador).
 
-REVISOR Y EXPERIENCIA EDITORIAL
-2011-presente
-Co-creador y Miembro del Comité Editorial de la Revista de Estudios Políticos Andinos
-(RAEP), ISSN: 22214135, Lima-Perú. Editor, revisor y administrador de indexación: ProQuest,
+REVIEWER AND EDITORIAL EXPERIENCE
+2011-present
+Co-creator and Member of the Editorial Committee of the Journal of Andean Political Studies
+(RAEP), ISSN: 22214135, Lima-Peru. Editor, Reviewer, and Indexing Manager: ProQuest,
 ESCI (WoS, Clarivate), EBSCO, Latindex.
 
-ONG, OFICINAS PÚBLICAS Y CONSULTORÍAS
+NGOS, PUBLIC OFFICES AND CONSULTANCIES
 2021
-Consultor para elaborar el Informe sobre la primera boleta electoral de la presidencia y elecciones al congreso nacional de 2021 en Perú, exigidas por el Proceso Electoral Nacional Oficina Nacional de Protección Ambiental (ONPE). Director del proyecto: Gerson Julcarima.
+Consultant to prepare the Report on the first electoral ballot of the presidency and elections to the national congress of 2021 in Peru, required by the National Electoral Process of the National Office of Environmental Protection (ONPE). Project director: Gerson Julcarima.
 2014-2016
-Consultor del Proyecto APROLABII - Ministerio de Educación; Lima-Perú. Monitoreo y asistencia técnica para el proyecto APROLAB y la Dirección de Investigaciones Superiores Educación Tecnológica - Ministerio de Educación. Director del proyecto: Miguel Calderón.
+Consultant of the APROLABII Project - Ministry of Education; Lima. Monitoring and technical assistance for the APROLAB project and the Directorate of Higher Research Technological Education - Ministry of Education. Project director: Miguel Calderón.
 2013
-Investigadora de la Consultora PROYECTA LAB; Lima-Perú. Elaboración de la investigación Informes: Motivación, intención y decisión para la rotación laboral en ejecutivos; Informalidad y la responsabilidad social en el Perú; Modelización del comportamiento del consumidor en plataformas de comercio electrónico. Director del proyecto: Juan Arroyo.
+Researcher at the consulting firm PROYECTA LAB; Lima. Research Preparation Reports: Motivation, Intention and Decision for Job Rotation in Executives; Informality and Social Responsibility in Peru; Modelling consumer behaviour on e-commerce platforms. Project director: Juan Arroyo.
 2012-2013
-Consultor, Proyecto REDPROEMPLEO - Ministerio de Trabajo y Empleo; Lima-Perú.
-Asistencia para la sistematización jurídica del proyecto RedProEmpleo y la Dirección de Migración Laboral. Director del proyecto: Miguel Calderón.
+Consultant, REDPROEMPLEO Project - Ministry of Labor and Employment; Lima.
+Assistance for the legal systematization of the RedProEmpleo project and the Directorate of Labor Migration. Project director: Miguel Calderón.
 
-PARTICIPACIÓN EN CONGRESOS
-Mejía, José Manuel y Renzo Ovidio Aurazo. 2015. "Mapeando La Fragmentación de La
-Contienda Política Transgresiva, Perú 2001‐2006". Ponencia de la VIII Conferencia Iberoamericana Congreso de Ciencia Política - ALACIP. Lima: Pontificia Universidad Católica del Perú.
-Mejía, José Manuel. 2013. "Aproximación Teórica a La Fragmentación de La Contienda Política Transgresiva.", III Congreso Nacional de Ciencia Política. Lima: Universidad Nacional Mayor de San Marcos.
+PARTICIPATION IN CONGRESSES
+Mejía, José Manuel and Renzo Ovidio Aurazo. 2015. "Mapping the Fragmentation of the
+Transgressive Political Contest, Peru 2001‐2006". Presentation of the VIII Ibero-American Conference Congress of Political Science - ALACIP. Lima: Pontificia Universidad Católica del Perú.
+Mejía, José Manuel. 2013. "Theoretical Approach to the Fragmentation of Transgressive Political Contest," III National Congress of Political Science. Lima: Universidad Nacional Mayor de San Marcos.
 
-AFILIACIONES PROFESIONALES
-2023-presente
-Miembro del Grupo de Trabajo CLACSO "Fronteras, Regionalización y Globalización"
-2011- actualidad
-Cofundadora e Investigadora Asociada del Instituto de Estudios Políticos Andinos (IEPA),
-Lima-Perú
+PROFESSIONAL AFFILIATIONS
+2023-present
+Member of the CLACSO Working Group "Borders, Regionalization and Globalization"
+2011- Present
+Co-founder and Research Associate at the Institute of Andean Political Studies (IEPA),
+Lima
 
 PUBLICATIONS
-Tesis
-Mejía, José Manuel. 2024. “Luchas campesinas contra la expansión de la frontera
-extractiva. Minería imperialista y conflicto de clases en Cajamarca, Perú.” Tesis de Maestría en Estudios Latinoamericanos, Universidad Andina Simón Bolívar - Ecuador, Quito. http://repositorio.uasb.edu.ec/handle/10644/9715
-Mejía, José Manuel. 2021. “Cambio de escala en la contienda anti-minera peruana.
-Construcción de teoría a partir del conflicto por la exploración del cerro Quilish en Cajamarca.” Tesis de Maestría en Sociología Política, Facultad Latinoamericana de Ciencias Sociales - Sede Ecuador, Quito. https://repositorio.flacsoandes.edu.ec/handle/10469/17341
+Thesis
+Mejía, José Manuel. 2024. "Peasant Struggles Against the Expansion of the Frontier
+Extractive. Imperialist Mining and Class Conflict in Cajamarca, Peru." Master's Thesis in Latin American Studies, Universidad Andina Simón Bolívar - Ecuador, Quito. http://repositorio.uasb.edu.ec/handle/10644/9715
+Mejía, José Manuel. 2021. "Change of Scale in the Peruvian Anti-Mining Contest.
+Theory construction based on the conflict over the exploration of Cerro Quilish in Cajamarca." Master's Thesis in Political Sociology, Latin American Faculty of Social Sciences - Ecuador Campus, Quito. https://repositorio.flacsoandes.edu.ec/handle/10469/17341
 Journal Articles (Peer Reviewed)
-Mejía, José Manuel, and Renzo Aurazo. 2015. “Repensando La Fragmentación de La
-Contienda Política Transgresiva En El Perú Post-Transición, 2001-2003.” Encrucijadas. Revista Crítica de Ciencias Sociales 9.
+Mejía, José Manuel, and Renzo Aurazo. 2015. "Rethinking the Fragmentation of the
+Transgressive Political Contest in Post-Transition Peru, 2001-2003." Crossroads. Critical Journal of Social Sciences 9.
 https://recyt.fecyt.es/index.php/encrucijadas/article/view/79029
 Reviews
-Mejía, José Manuel, and Luis Meléndez. 2017. “Review: La extracción de recursos naturales y la protesta social en el Perú.” Revista Andina de Estudios Políticos 101-104 Páginas. doi:
+Mejía, José Manuel, and Luis Meléndez. 2017. "Review: Natural Resource Extraction and Social Protest in Peru." Andean Journal of Political Studies 101-104 Pages. Doi:
 10.35004/RAEP. V7I1.60. http://www.iepa.org.pe/raep/index.php/ojs/article/view/60
 
-PARTICIPACIÓN COMUNTARIA
-2020-actualidad
-Co-fundador de la organización Surco Común. Organización comprometida con la planificación de una transición a una economía agroecológica campesina y construir formas recíprocas de estar con la naturaleza. Apoyo de los procesos de monitoreo de las industrias extractivas, el trabajo comunitario con el medio ambiente organizaciones y agroecólogos, mapa sonoro del paisaje acuático.
+COMMUNITY PARTICIPATION
+2020-Present
+Co-founder of the organization Surco Común. Organization committed to planning a transition to a peasant agroecological economy and building reciprocal ways of being with nature. Support of the monitoring processes of extractive industries, community work with the environment, organizations and agroecologists, sound map of the aquatic landscape.
 2018-2019
-Participación activa en los proyectos agroecológicos de rehabilitación de suelos, construcción y comercio no monetario de horchatas urbanas (también durante COVID19), y cultivo de maíz en vecino popular de Quito. Trabajo con familias campesinas recién migradas a la ciudad y diversas grupos de jóvenes urbanos, en la producción de relaciones sociales alternativas.
+Active participation in agroecological projects for soil rehabilitation, construction and non-monetary trade of urban horchatas (also during COVID19), and corn cultivation in a popular neighborhood of Quito. I work with peasant families who have recently migrated to the city and various groups of urban youth, in the production of alternative social relations.

@@ -4,22 +4,79 @@
     "type": "split",
     "children": [
       {
-        "id": "c8c16929982f9be9",
+        "id": "87d1689a1ab1be02",
         "type": "tabs",
         "children": [
           {
-            "id": "b735bd03fc63af03",
+            "id": "129ee4ff131b3159",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
+                "file": "Paper 1. Crosstables.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7f37ac3f620083b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Paper 1. Crosstables.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8fbfeda56f9a22c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hoja de vida (resumen).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "44b88f028a143fe9",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "6bc6bb079b23ac74",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Regression analysis.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "55e708e49467dbc6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-history-vault-master/07 diary/Moscow, Quito discuss repairs to Russian military hardware in Ecuador’s arsenal — envoy - Russian Politics & Diplomacy - TASS.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -69,7 +126,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 258.5
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -85,7 +142,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +158,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +179,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md"
-              }
+              "state": {}
             }
           },
           {
@@ -187,54 +240,53 @@
       "obsidian-translator:Translate": false
     }
   },
-  "active": "b735bd03fc63af03",
+  "active": "44b88f028a143fe9",
   "lastOpenFiles": [
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_04052023.md",
-    "obsidian-history-vault-master/readme.md",
-    "Stata regression.md",
-    "bys protest_centralism countryside tab perfor_id claim_id col all.png",
+    "Regression analysis.md",
+    "Alena.md",
+    "Recording 20240313104149.webm",
+    "Recording 20240313103743.webm",
     "Hoja de vida (resumen).md",
-    "CV_JoseManuelMejia2024_feb_español.docx",
-    "~WRL0002.tmp",
-    "~WRD0001.tmp",
-    "~WRD0000.tmp",
-    "obsidian-history-vault-master/06 archives/CV_JoseManuelMejia_2024_feb.pdf",
-    "CV_JoseManuelMejia_2024_feb.pdf",
-    "mso3BCF.tmp",
+    "CV_JoseManuelMejia_mar_2024.pdf",
+    "mso1A61.tmp",
     "~$ja de vida (resumen).docx",
     "Hoja de vida (resumen).docx",
+    "Paper 2. Regression.md",
+    "~$_JoseManuelMejia2024_feb_español.docx",
     "Paper 1. Crosstables.md",
-    "msoA84B.tmp",
+    "~$per 1. Crosstables.docx",
+    "regress.png",
+    "sum regress.png",
+    "Stata regression.md",
+    "obsidian-history-vault-master/07 diary/Moscow, Quito discuss repairs to Russian military hardware in Ecuador’s arsenal — envoy - Russian Politics & Diplomacy - TASS.md",
+    "Untitled.md",
+    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Accumulation of mining capital.md",
+    "Environmental contention scale shift.md",
+    "obsidian-history-vault-master/02 analysis/annotated bibliography/l1. Imperialism.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Fellowships/James D. Kline Fund for International Studies Award.md",
+    "tu y tu.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Fellowships/~WRL1473.tmp",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Fellowships/~WRD1450.tmp",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Fellowships/Untitled.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_04052023.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
+    "Regressions.md",
+    "obsidian-history-vault-master/readme.md",
+    "bys protest_centralism countryside tab perfor_id claim_id col all.png",
     "tab perfor_id claim_id exp all.png",
     "stata.md",
-    "Regressions.md",
     "tab perfor_id claim_id col all 1.png",
     "bys protest_centralism Lima tab perfor_id claim_id col all 1.png",
     "bys protest_centralism Lima tab perfor_id claim_id col all.png",
     "tab perfor_id claim_id col all.png",
     "bys protest_centralism 2 tab perfor_id claim_id col all.png",
     "tab perfor_id claim_id exp.png",
-    "bys protest_centralism 1 tab perfor_id claim_id exp.png",
-    "bys protest_centralism 1 tab perfor_id claim_id col all.png",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_25022023.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Erika Saldívar.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Graduate Program Handbook and Guidelines 2022-2023.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Tristan Bridges.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Untitled.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/David Feldman/Untitled.md",
-    "TA English proficiency evaluation.md",
-    "Ololiuqui.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Revision Strategies - Excelsior OWL.md",
-    "Rethinking Agency and Structure in the Study of Regime Change.md",
-    "Notes on Economic Manuscripts of Marx.md",
-    "Note.md",
-    "Translation of Capital first ch from german.md",
-    "obsidian-history-vault-master/02 analysis/annotated bibliography/l1. Imperialism.md",
-    "obsidian-history-vault-master/02 analysis/annotated bibliography/a1. Marx at the Margins.md",
-    "obsidian-history-vault-master/03 writing/documents/Index.md",
-    "obsidian-history-vault-master/07 diary/11222gro.md",
-    "obsidian-history-vault-master/05 tasks/WSJ submission.md",
-    "obsidian-history-vault-master/02 analysis/questions and arguments/Q4. Mining struggles escalation effects/Q4. Mining struggles escalation effects in the formation of the revolutionary subject.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",
     "Mayra.canvas",
     "Estallido.canvas"
