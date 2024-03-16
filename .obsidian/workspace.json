@@ -57,7 +57,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Regression analysis.md",
+                "file": "Paper 2. Regression.md",
                 "mode": "source",
                 "source": false
               }
@@ -76,7 +76,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -142,6 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Paper 2. Regression.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,6 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Paper 2. Regression.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +181,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Paper 2. Regression.md"
+              }
             }
           },
           {
@@ -240,25 +244,25 @@
       "obsidian-translator:Translate": false
     }
   },
-  "active": "44b88f028a143fe9",
+  "active": "6bc6bb079b23ac74",
   "lastOpenFiles": [
+    "Paper 1. Crosstables.md",
+    "Paper 2. Regression.md",
     "Regression analysis.md",
+    "Hoja de vida (resumen).md",
+    "obsidian-history-vault-master/07 diary/Moscow, Quito discuss repairs to Russian military hardware in Ecuador’s arsenal — envoy - Russian Politics & Diplomacy - TASS.md",
     "Alena.md",
     "Recording 20240313104149.webm",
     "Recording 20240313103743.webm",
-    "Hoja de vida (resumen).md",
     "CV_JoseManuelMejia_mar_2024.pdf",
     "mso1A61.tmp",
     "~$ja de vida (resumen).docx",
     "Hoja de vida (resumen).docx",
-    "Paper 2. Regression.md",
     "~$_JoseManuelMejia2024_feb_español.docx",
-    "Paper 1. Crosstables.md",
     "~$per 1. Crosstables.docx",
     "regress.png",
     "sum regress.png",
     "Stata regression.md",
-    "obsidian-history-vault-master/07 diary/Moscow, Quito discuss repairs to Russian military hardware in Ecuador’s arsenal — envoy - Russian Politics & Diplomacy - TASS.md",
     "Untitled.md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Accumulation of mining capital.md",
     "Environmental contention scale shift.md",
