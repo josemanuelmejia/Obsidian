@@ -64,6 +64,18 @@
             }
           },
           {
+            "id": "2ed5721c95eb5f67",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled 2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "55e708e49467dbc6",
             "type": "leaf",
             "state": {
@@ -76,7 +88,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -142,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Final Paper 2. Regression.md",
+                "file": "Untitled 2.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Final Paper 2. Regression.md",
+                "file": "Untitled 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Final Paper 2. Regression.md"
+                "file": "Untitled 2.md"
               }
             }
           },
@@ -244,8 +256,10 @@
       "obsidian-translator:Translate": false
     }
   },
-  "active": "6bc6bb079b23ac74",
+  "active": "2ed5721c95eb5f67",
   "lastOpenFiles": [
+    "Final Paper 2. Regression.md",
+    "Untitled 2.md",
     "do regression.pdf",
     "MEJIA_regression_soc205.pdf",
     "Final Paper 2. Regression.pdf",
@@ -256,9 +270,7 @@
     "~$nal Paper 2. Regression.docx",
     "~$per 1. Crosstables.docx",
     "Final Paper 2. Regression.docx",
-    "~WRL2407.tmp",
     "Paper 1. Crosstables.md",
-    "Final Paper 2. Regression.md",
     "Regression analysis.md",
     "Hoja de vida (resumen).md",
     "obsidian-history-vault-master/07 diary/Moscow, Quito discuss repairs to Russian military hardware in Ecuador’s arsenal — envoy - Russian Politics & Diplomacy - TASS.md",
