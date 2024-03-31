@@ -73,7 +73,9 @@
   ],
   "service_settings": {
     "google_translate": {
-      "selected_languages": [],
+      "selected_languages": [
+        "en"
+      ],
       "api_key": "",
       "auto_translate": false,
       "auto_translate_interval": 500,
@@ -219,7 +221,9 @@
       "version": "1.1.0"
     },
     "openai_translator": {
-      "selected_languages": [],
+      "selected_languages": [
+        "en"
+      ],
       "api_key": "",
       "host": "api.openai.com",
       "auto_translate": false,

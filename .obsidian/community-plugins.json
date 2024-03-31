@@ -23,6 +23,7 @@
   "text-extractor",
   "obsidian-topic-linking",
   "obsidian-translator",
-  "deepl",
-  "translate"
+  "translate",
+  "language-translator",
+  "deepl"
 ]

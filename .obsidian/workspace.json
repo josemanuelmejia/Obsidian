@@ -4,91 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "87d1689a1ab1be02",
+        "id": "cc2974f0f40092a5",
         "type": "tabs",
         "children": [
           {
-            "id": "129ee4ff131b3159",
+            "id": "e2e5382fa08b3fe3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper 1. Crosstables.md",
+                "file": "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Q1. Mining struggles antisystemic effects on capital accumulation.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7f37ac3f620083b3",
+            "id": "aa0ef5dfdc57a7ac",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper 1. Crosstables.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8fbfeda56f9a22c3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Hoja de vida (resumen).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "44b88f028a143fe9",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "6bc6bb079b23ac74",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Final Paper 2. Regression.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2ed5721c95eb5f67",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled 2.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "55e708e49467dbc6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-history-vault-master/07 diary/Moscow, Quito discuss repairs to Russian military hardware in Ecuador’s arsenal — envoy - Russian Politics & Diplomacy - TASS.md",
+                "file": "obsidian-history-vault-master/01 notes/davalosPlanEcuadorEstado2024.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -117,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "mosco",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -154,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled 2.md",
+                "file": "obsidian-history-vault-master/01 notes/davalosPlanEcuadorEstado2024.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled 2.md",
+                "file": "obsidian-history-vault-master/01 notes/davalosPlanEcuadorEstado2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled 2.md"
+                "file": "obsidian-history-vault-master/01 notes/davalosPlanEcuadorEstado2024.md"
               }
             }
           },
@@ -203,14 +147,6 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
-              "state": {}
-            }
-          },
-          {
-            "id": "70da04856ae468b6",
-            "type": "leaf",
-            "state": {
-              "type": "ReferenceListView",
               "state": {}
             }
           },
@@ -235,8 +171,8 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "translate:Open translation view": false,
       "publish:Publish changes...": false,
-      "templater-obsidian:Templater": false,
       "markdown-table-editor:Open Markdown Table Editor": false,
       "vantage-obsidian:Vantage - Advanced search builder": false,
       "switcher:Open quick switcher": false,
@@ -249,17 +185,26 @@
       "workspaces:Manage workspace layouts": false,
       "random-note:Open random note": false,
       "audio-recorder:Start/stop recording": false,
-      "obsidian-tts:Text to Speech": false,
+      "obsidian-translator:Translate": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-import-json:JSON/CSV Importer": false,
+      "templater-obsidian:Templater": false,
       "obsidian-wordnet-plugin:WordNet Dictionary": false,
-      "obsidian-translator:Translate": false
+      "obsidian-tts:Text to Speech": false,
+      "obsidian-import-json:JSON/CSV Importer": false
     }
   },
-  "active": "2ed5721c95eb5f67",
+  "active": "aa0ef5dfdc57a7ac",
   "lastOpenFiles": [
-    "Final Paper 2. Regression.md",
+    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Q1. Mining struggles antisystemic effects on capital accumulation.md",
+    "obsidian-history-vault-master/01 notes/davalosPlanEcuadorEstado2024.md",
+    "obsidian-history-vault-master/02 analysis/annotated bibliography/a1. Marx at the Margins.md",
+    "obsidian-history-vault-master/07 diary/Moscow, Quito discuss repairs to Russian military hardware in Ecuador’s arsenal — envoy - Russian Politics & Diplomacy - TASS.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Fellowships/MEJIA_Kline_fund_2024.pdf",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
     "Untitled 2.md",
+    "Hoja de vida (resumen).md",
+    "Paper 1. Crosstables.md",
+    "Final Paper 2. Regression.md",
     "do regression.pdf",
     "MEJIA_regression_soc205.pdf",
     "Final Paper 2. Regression.pdf",
@@ -269,11 +214,7 @@
     "~WRD1895.tmp",
     "~$nal Paper 2. Regression.docx",
     "~$per 1. Crosstables.docx",
-    "Final Paper 2. Regression.docx",
-    "Paper 1. Crosstables.md",
     "Regression analysis.md",
-    "Hoja de vida (resumen).md",
-    "obsidian-history-vault-master/07 diary/Moscow, Quito discuss repairs to Russian military hardware in Ecuador’s arsenal — envoy - Russian Politics & Diplomacy - TASS.md",
     "Alena.md",
     "regress.png",
     "sum regress.png",
@@ -286,7 +227,6 @@
     "tu y tu.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Fellowships/Untitled.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_04052023.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
     "Regressions.md",
     "obsidian-history-vault-master/readme.md",
     "bys protest_centralism countryside tab perfor_id claim_id col all.png",
@@ -301,9 +241,6 @@
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_25022023.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Erika Saldívar.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Graduate Program Handbook and Guidelines 2022-2023.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Tristan Bridges.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Untitled.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/David Feldman/Untitled.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",
     "Mayra.canvas",
     "Estallido.canvas"

@@ -15,7 +15,6 @@ author: —Eds.
 
 _Originally published:_ [Pearls and Irritations](https://johnmenadue.com/americas-latest-move-to-block-chinas-economic-rise/) on March 26, 2024 by Percy Allan (more by [Pearls and Irritations](https://mronline.org/guest-author/cap-pearls-and-irritations/)) (Posted Mar 28, 2024)
 
-[Capitalism](https://mronline.org/subject/capitalism/), [Imperialism](https://mronline.org/subject/imperialism/), [Inequality](https://mronline.org/subject/inequality/), [State Repression](https://mronline.org/subject/state-repression/)[Americas](https://mronline.org/geography/americas/), [Asia](https://mronline.org/geography/asia/), [China](https://mronline.org/geography/china/), [United States](https://mronline.org/geography/united-states/)[Newswire](https://mronline.org/category/newswire/)
 
 > US lawmakers have introduced a bill that would bar U.S. mutual funds from investing in indexes that track Chinese stocks ([Bloomberg](https://www.bloomberg.com/news/articles/2024-03-21/mutual-fund-investments-in-chinese-firms-targeted-in-new-us-bill)). According to Bloomberg “The legislation targets mutual funds that invest in indexes tracking primarily Chinese stocks, rather than those investing in indexes that only include some Chinese companies, according to Sherman’s office. However, the lawmakers left it to the Securities and Exchange Commission to write rules that’d ultimately determine which products are impacted.”
 

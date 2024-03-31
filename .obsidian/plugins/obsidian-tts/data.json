@@ -1,5 +1,5 @@
 {
-  "defaultVoice": "Microsoft Zira - English (United States)",
+  "defaultVoice": "speechSynthesis-Microsoft Zira - English (United States)",
   "pitch": 1,
   "rate": 1,
   "volume": 1,
@@ -13,12 +13,19 @@
   "languageVoices": [
     {
       "language": "es",
-      "voice": "Microsoft Sabina - Spanish (Mexico)"
+      "voice": "Microsoft Sabina - Spanish (Mexico)",
+      "id": "speechSynthesis-Microsoft Sabina - Spanish (Mexico)"
     },
     {
       "language": "en",
-      "voice": "Microsoft Zira - English (United States)"
+      "voice": "Microsoft Zira - English (United States)",
+      "id": "speechSynthesis-Microsoft Zira - English (United States)"
     }
   ],
-  "stopPlaybackWhenNoteChanges": true
+  "stopPlaybackWhenNoteChanges": true,
+  "services": {
+    "openai": {
+      "key": ""
+    }
+  }
 }
