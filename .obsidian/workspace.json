@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "cc2974f0f40092a5",
+        "id": "0570d828ec2aa554",
         "type": "tabs",
         "children": [
           {
-            "id": "e2e5382fa08b3fe3",
+            "id": "58ae9e2750624374",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Q1. Mining struggles antisystemic effects on capital accumulation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aa0ef5dfdc57a7ac",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Charmaine Chua/We Aren’t Here to Learn What We Already Know  Avidly.md",
+                "file": "Mau - 2023 - Mute compulsion a Marxist theory of the economic .md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mosco",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Charmaine Chua/We Aren’t Here to Learn What We Already Know  Avidly.md",
+                "file": "Mau - 2023 - Mute compulsion a Marxist theory of the economic .md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Charmaine Chua/We Aren’t Here to Learn What We Already Know  Avidly.md",
+                "file": "Mau - 2023 - Mute compulsion a Marxist theory of the economic .md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Charmaine Chua/We Aren’t Here to Learn What We Already Know  Avidly.md"
+                "file": "Mau - 2023 - Mute compulsion a Marxist theory of the economic .md"
               }
             }
           },
@@ -190,49 +177,49 @@
       "templater-obsidian:Templater": false,
       "obsidian-wordnet-plugin:WordNet Dictionary": false,
       "obsidian-tts:Text to Speech": false,
-      "obsidian-import-json:JSON/CSV Importer": false
+      "obsidian-import-json:JSON/CSV Importer": false,
+      "whisper:Open recording controls": false
     }
   },
-  "active": "aa0ef5dfdc57a7ac",
+  "active": "58ae9e2750624374",
   "lastOpenFiles": [
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Charmaine Chua/Logic and Theory of Inquiry  transversal texts.md",
+    "Mau - 2023 - Mute compulsion a Marxist theory of the economic .pdf",
+    "Mau - 2023 - Mute compulsion a Marxist theory of the economic .md",
+    "MEJIA_regression_soc205.md",
+    "do regression.pdf",
+    "Chapter2_2.1.pdf",
+    "Chapter2_2.1.md",
+    "Arrighi - 1994 - The long twentieth century money, power, and the .pdf",
+    "Untitled 1.md",
+    "Generated/images",
+    "Generated",
+    "2024-04-09T08-10-44-363Z.webm",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
+    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Profits, mining capital and gold accumulation.md",
+    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Accumulation of mining capital.md",
+    "obsidian-history-vault-master/10 conversations/Whispers/recordings/2024-04-08T04-27-30-803Z.webm",
+    "obsidian-history-vault-master/10 conversations/Whispers/recordings/2024-04-08T04-27-02-159Z.webm",
+    "2024-04-08T04-21-43-951Z.webm",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jason Turowitz/Durkheim.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Erika Arenas/OLS.md",
+    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Q1. Mining struggles antisystemic effects on capital accumulation.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Erika Arenas/Erika Arenas.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Charmaine Chua/We Aren’t Here to Learn What We Already Know  Avidly.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Charmaine Chua/Logic and Theory of Inquiry  transversal texts.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Charmaine Chua/Charmaine Chua.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/UCSB Soc Grad How To.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Charmaine Chua",
     "obsidian-history-vault-master/01 notes/davalosPlanEcuadorEstado2024.md",
-    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Q1. Mining struggles antisystemic effects on capital accumulation.md",
     "obsidian-history-vault-master/02 analysis/annotated bibliography/a1. Marx at the Margins.md",
     "obsidian-history-vault-master/07 diary/Moscow, Quito discuss repairs to Russian military hardware in Ecuador’s arsenal — envoy - Russian Politics & Diplomacy - TASS.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Fellowships/MEJIA_Kline_fund_2024.pdf",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
     "Untitled 2.md",
     "Hoja de vida (resumen).md",
     "Paper 1. Crosstables.md",
     "Final Paper 2. Regression.md",
-    "do regression.pdf",
-    "MEJIA_regression_soc205.pdf",
-    "Final Paper 2. Regression.pdf",
-    "mso4174.tmp",
-    "mso3F41.tmp",
-    "~WRL1914.tmp",
-    "~WRD1895.tmp",
-    "~$nal Paper 2. Regression.docx",
     "Regression analysis.md",
     "Alena.md",
     "regress.png",
     "sum regress.png",
     "Stata regression.md",
-    "Untitled.md",
-    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Accumulation of mining capital.md",
-    "Environmental contention scale shift.md",
-    "obsidian-history-vault-master/02 analysis/annotated bibliography/l1. Imperialism.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Fellowships/James D. Kline Fund for International Studies Award.md",
-    "tu y tu.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Fellowships/Untitled.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_04052023.md",
-    "Regressions.md",
-    "obsidian-history-vault-master/readme.md",
     "bys protest_centralism countryside tab perfor_id claim_id col all.png",
     "tab perfor_id claim_id exp all.png",
     "tab perfor_id claim_id col all 1.png",

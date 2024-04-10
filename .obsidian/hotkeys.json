@@ -106,5 +106,13 @@
       ],
       "key": "K"
     }
+  ],
+  "whisper:upload-audio-file": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "U"
+    }
   ]
 }
