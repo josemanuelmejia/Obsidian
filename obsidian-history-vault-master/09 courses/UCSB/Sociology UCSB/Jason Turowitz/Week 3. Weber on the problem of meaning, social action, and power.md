@@ -3,15 +3,15 @@ José Manuel Mejía V.
 
 ## Reading summary
 
-The readings selected to approach Weber's analytical sociology covers a broad scope of theoretical problems, categories and assumptions which are still being reproduced mainly by mainstream and mainly American political sociology and political science. The focus of these section of the syllabus was specifically pointed to the problem of meaning, social action, and power.
+The readings selected to approach Weber's analytical sociology covers a broad scope of theoretical problems, categories and assumptions which are still being reproduced mainly by mainstream American political sociology and political science. The focus of these section of the syllabus was specifically pointed to the problem of meaning, social action, and power.
 
-I will consider the two first selected readings to approach the problem of meaning in Weber's theoretical framework in relation with the diffusion and change of ethic beliefs, particularly religious one's, in the trajectories of capitalist development. This point is relevant for the interpretation of Weber's work because he is attempting to counter historical materialism stating that:
+I will consider the two first selected readings to approach the problem of meaning in Weber's theoretical framework in relation with the diffusion and change of ethical beliefs, particularly religious one's, over the trajectories of capitalist development. This point is relevant for the interpretation of Weber's work because he is attempting to counter historical materialism stating that:
 
 "*An economic ethic is not a straightforward 'function' of the organizational
 forms of the economy, just as, conversely, an economic form cannot be
 unambiguously derived from a religious ethic*" (p. 26).
 
-The impact of these assumption over his analysis on the effects of ethical beliefs diffused between the growing middle class (particularly ascetic Protestantism), have a expanding outcome on capital accumulation, because the diffusion of certain ethical beliefs that influence the "way of life" of a growing "middle-class" is not explained economically, materially, in the sphere of capital accumulation. The mechanism that Weber used to explain the effect of Protestant ascetism over accumulation of capital are mainly oriented to describe a particular behavior of consumption motivated by a certain subset of religious beliefs in concrete historical contexts, which states that Protestant ascetism religious ethic beliefs reduced the consumption specially of luxury goods and incentives the acquisition of middle-class home clean and solid comfort goods.
+For Weber the effects of Protestant ascetism diffusion among the growing middle-class have the outcome of expanding capital accumulation, but because the economic effects on capital accumulation of the diffusion of certain ethical beliefs that influence the "way of life" of a growing "middle-class" are not causally explanatory. The mechanism that Weber used to explain the effect of Protestant ascetism over accumulation of capital are mainly oriented to describe a particular behavior of rational consumption, reduced consumption, specially of luxury goods, while incentives the acquisition of "middle-class home" "clean and solid comfort" goods.
 
 Inclusively, considering the definition of goods made by Weber, this doesn't excuse himself to identify the economic, materiality of the causal mechanism which explains the accumulation of capital by the diffusion of ascetic Protestantism on the way of life of the European and North American middle classes. Weber state that:
 
