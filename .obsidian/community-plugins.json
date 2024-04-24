@@ -26,5 +26,6 @@
   "translate",
   "language-translator",
   "deepl",
-  "whisper"
+  "whisper",
+  "quick-latex"
 ]
