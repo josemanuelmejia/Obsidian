@@ -114,5 +114,14 @@
       ],
       "key": "U"
     }
+  ],
+  "obsidian-camera:Open camera modal": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "V"
+    }
   ]
 }

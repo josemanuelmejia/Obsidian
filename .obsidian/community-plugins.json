@@ -27,5 +27,10 @@
   "language-translator",
   "deepl",
   "whisper",
-  "quick-latex"
+  "quick-latex",
+  "obsidian-camera",
+  "obsidian-transcription",
+  "obsidian-audio-notes",
+  "ai-commander",
+  "ytranscript"
 ]
