@@ -37,9 +37,7 @@ China and Russia have served as a role model by showing others ways of buil
 
 The first principle involves demonstrating mutual respect and firm commitment to supporting each other on matters dealing with the core interests of both sides.
 
-President Putin and I share the view that we have been able to develop a new model enabling neighbouring major powers to develop their relations based on the principles of respect and equality. We also demonstrate mutual and resolute support on matters dealing with the core interests of both parties and address each other’s current concerns. This is the main pillar of the Russia-China comprehensive partnership and strategic cooperation for a new era. Our two countries are committed to acting in the spirit of non-alignment with any blocs, rejecting confrontation and refraining from targeting any third countries while demonstrating our steadfast commitment to confidence building measures on political matters, respecting the development trajectories we choose for ourselves and firmly supporting each other as we strive for shared prosperity and revival.
-
-### See also
+President Putin and I share the view that we have been able to develop a new model enabling neighbouring major powers to develop their relations based on the principles of respect and equality. We also demonstrate mutual and resolute support on matters dealing with the core interests of both parties and address each other’s current concerns ^34. This is the main pillar of the Russia-China comprehensive partnership and strategic cooperation for a new era. Our two countries are committed to acting in the spirit of non-alignment with any blocs, rejecting confrontation and refraining from targeting any third countries while demonstrating our steadfast commitment to confidence building measures on political matters, respecting the development trajectories we choose for ourselves and firmly supporting each other as we strive for shared prosperity and revival.
 
 The second principle consists of promoting a win-win approach to shaping a new architecture of mutually beneficial cooperation.
 
@@ -55,13 +53,13 @@ The fourth point is that we must act in the spirit of strategic cooperation 
 
 We express our firm commitment to working together in the context of Russia’s BRICS chairmanship this year and when China assumes the SCO presidency in the second half of the year by forging a comprehensive, closely-knit, result-driven and inclusive high-level partnership for uniting the Global South and making it stronger.
 
-The fifth principle deals with promoting a political settlement for hotspots in the interest of truth and justice. Today’s world is still plagued by Cold War mentality. Aspirations to securing a unilateral hegemony, bloc-based confrontation and power politics pose a direct threat to peace and security for all countries around the world.
+El quinto principio se refiere a la promoción de una solución política para los puntos críticos en interés de la verdad y la justicia. El mundo de hoy todavía está plagado de la mentalidad de la Guerra Fría. Las aspiraciones de asegurar una hegemonía unilateral, la confrontación basada en bloques y la política de poder plantean una amenaza directa a la paz y la seguridad de todos los países del mundo.
 
-President Putin and I discussed the need to achieve an immediate settlement in the Israeli-Palestinian conflict and to resolve the Palestinian issue based on the two-state solution and in keeping with the UN resolution.
+El Presidente Putin y yo discutimos la necesidad de lograr una solución inmediata en el conflicto palestino-israelí y de resolver la cuestión palestina sobre la base de la solución de dos Estados y de conformidad con la resolución de la ONU.
 
-China and Russia believe that the Ukraine crisis must be resolved by political means. China has been consistent and clear on this matter by advocating for compliance with the norms and principles set forth in the UN Charter, respecting state sovereignty and territorial integrity for all countries, while taking into consideration their reasonable security concerns. This approach aims to shape a new balanced, effective and sustainable security architecture.
+China y Rusia creen que la crisis de Ucrania debe resolverse por medios políticos. China ha sido coherente y clara en este asunto al abogar por el cumplimiento de las normas y principios establecidos en la Carta de las Naciones Unidas, respetando la soberanía estatal y la integridad territorial de todos los países, al tiempo que tiene en cuenta sus preocupaciones razonables de seguridad. Este enfoque tiene como objetivo dar forma a una nueva arquitectura de seguridad equilibrada, eficaz y sostenible.
 
-China hopes that peace and stability will return to the European continent soon and is ready to constructively contribute to making this happen. As we say in China, tree bark forms by the accumulation of soil, while an accumulation of water creates oceans. It is thanks to their efforts over the past 75 years that China and Russia have been building upon their centuries-old friendship and comprehensive cooperation to generate powerful momentum, which enabled them to overcome all challenges and reach new heights.
+China espera que la paz y la estabilidad regresen pronto al continente europeo y está dispuesta a contribuir de manera constructiva a que esto suceda. Como decimos en China, la corteza de los árboles se forma por la acumulación de tierra, mientras que la acumulación de agua crea océanos. Es gracias a sus esfuerzos durante los últimos 75 años que China y Rusia han estado construyendo sobre su amistad centenaria y su cooperación integral para generar un impulso poderoso, que les permitió superar todos los desafíos y alcanzar nuevas alturas.
 
 Having reached a new threshold in the history of their relations, China and Russia will uphold their commitment to the primary goal of working for the benefit of the two nations and effectively contributing to promoting lasting peace and development across the planet with a sense of responsibility. Thank you.
 
@@ -91,7 +89,7 @@ I want to note the significance of the Joint Statement we have adopted, whi
 
 Certainly, trade and investment interaction was a focal point during our talks, considering China’s prominent position as Russia’s leading foreign trade partner. Additionally, our country secured the fourth place in the export-import balance of the People’s Republic of China based on last year’s results.
 
-In 2023, bilateral trade surged by a quarter, reaching a new milestone of $240 billion, as reported by Chinese statistics. While there may be a slight variance in figures, the overall total is entirely accurate.
+[[Untitled 4]]
 
 I would particularly like to highlight the growth of Russian food exports to the Chinese market, which surged by more than 50 percent to $7.6 billion. Overall, bilateral trade in agricultural products grew by 40 percent, totalling $9.7 billion. There are strong indications that this trade segment will continue to expand further.
 
