@@ -4,7 +4,7 @@ tags: [RULES:IRAN,NMKR,MTPIX,CIV,CWP,DIS,GEN,HRGT,POL,PRO,SECUR,VIO,SWASIA,MEAST
 source: https://www.reuters.com/world/middle-east/iranian-president-raisi-hardliner-morality-protests-nuclear-talks-2024-05-19/
 author: Reuters
 ---
-
+}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
 # Iranian President Raisi: a hardliner on morality, protests and nuclear talks | Reuters
 
 > ## Excerpt
