@@ -74,6 +74,18 @@
             }
           },
           {
+            "id": "b797cc6724c9fe41",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interview Camera Obscura.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "f927b61dfdf77ca0",
             "type": "leaf",
             "state": {
@@ -152,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/06 archives/China-Russia/Media statement following Russia-China talks • President of Russia.md",
+                "file": "Interview Camera Obscura.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +181,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/06 archives/China-Russia/Media statement following Russia-China talks • President of Russia.md",
+                "file": "Interview Camera Obscura.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,7 +204,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-history-vault-master/06 archives/China-Russia/Media statement following Russia-China talks • President of Russia.md"
+                "file": "Interview Camera Obscura.md"
               }
             }
           },
@@ -265,8 +277,11 @@
       "obsidian-audio-notes:Quick Audio Note with Transcription": false
     }
   },
-  "active": "f927b61dfdf77ca0",
+  "active": "b797cc6724c9fe41",
   "lastOpenFiles": [
+    "Untitled 7.md",
+    "Interview Camera Obscura.md",
+    "obsidian-history-vault-master/06 archives/China-Russia/Media statement following Russia-China talks • President of Russia.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Erika Arenas/final_soc205B_s2024.dta",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Erika Arenas/final_soc205B_s2024(1).dta",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jason Turowetz/~WRL2301.tmp",
@@ -275,14 +290,11 @@
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jason Turowetz/~WRD3948.tmp",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jason Turowetz/~$JIA-FinalPaper_207B_4.docx",
     "obsidian-history-vault-master/06 archives/China-Russia/EN_Media statement following Russia-China talks • President of Russia.md",
-    "obsidian-history-vault-master/06 archives/China-Russia/Media statement following Russia-China talks • President of Russia.md",
     "Untitled 8.md",
-    "Untitled 7.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jason Turowetz/~$JIA-FinalPaper_207B_2.docx",
     "Table problemset4.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jason Turowetz/~WRL1398.tmp",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jason Turowetz/~WRD1386.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jason Turowetz/~$JIA-FinalPaper_207B.docx",
     "obsidian-history-vault-master/05 tasks/Application UCSB.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jason Turowetz/A transactional interpretation of the contentious performances of the American Palestinian Struggles (APS).md",
     "obsidian-history-vault-master/06 archives/China-Russia/Iran-Israel/Iranian President Raisi a hardliner on morality, protests and nuclear talks  Reuters(1).md",
