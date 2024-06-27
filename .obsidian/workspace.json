@@ -4,101 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "3e2ab6d0068ed41a",
+        "id": "0db77312540d9890",
         "type": "tabs",
         "children": [
           {
-            "id": "e227159e00050e6e",
+            "id": "84c80cdb490ed45e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jason Turowetz/A transactional interpretation of the contentious performances of the American Palestinian Struggles (APS).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7cdea7122c350c05",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "obsidian-history-vault-master/05 tasks/CV_JoseManuelMejia_mar_2024-1.pdf"
-              }
-            }
-          },
-          {
-            "id": "b5ddf559bd74962b",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.2"
-              }
-            }
-          },
-          {
-            "id": "4ab3ff123a666a0e",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.3"
-              }
-            }
-          },
-          {
-            "id": "4c8e0ada67e707c5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Table problemset4.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5a318cbad1c58598",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled 7.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b797cc6724c9fe41",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview Camera Obscura.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f927b61dfdf77ca0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-history-vault-master/06 archives/China-Russia/Media statement following Russia-China talks • President of Russia.md",
+                "file": "obsidian-history-vault-master/07 diary/los heraldos negros de Cesar Vallejo (1918).md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "vertical"
@@ -148,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 258.5
+    "width": 393.5
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -164,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interview Camera Obscura.md",
+                "file": "obsidian-history-vault-master/07 diary/los heraldos negros de Cesar Vallejo (1918).md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Interview Camera Obscura.md",
+                "file": "obsidian-history-vault-master/07 diary/los heraldos negros de Cesar Vallejo (1918).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -204,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interview Camera Obscura.md"
+                "file": "obsidian-history-vault-master/07 diary/los heraldos negros de Cesar Vallejo (1918).md"
               }
             }
           },
@@ -277,44 +198,44 @@
       "obsidian-audio-notes:Quick Audio Note with Transcription": false
     }
   },
-  "active": "b797cc6724c9fe41",
+  "active": "84c80cdb490ed45e",
   "lastOpenFiles": [
-    "Untitled 7.md",
-    "Interview Camera Obscura.md",
+    "GitHub/Obsidian/Obsidian/obsidian-history-vault-master/06 archives/recordings/video_Jun_26_2024_17-57-41_GMT.webm",
+    "GitHub/Obsidian/Obsidian/obsidian-history-vault-master/06 archives/recordings/video_Jun_26_2024_17-55-00_GMT.webm",
+    "GitHub/Obsidian/Obsidian/obsidian-history-vault-master/06 archives/recordings/video_Jun_26_2024_17-54-42_GMT.webm",
+    "GitHub/Obsidian/Obsidian/obsidian-history-vault-master/06 archives/recordings/video_Jun_26_2024_17-52-58_GMT.webm",
+    "GitHub/Obsidian/Obsidian/obsidian-history-vault-master/06 archives/recordings/video_Jun_26_2024_17-51-45_GMT.webm",
+    "obsidian-history-vault-master/01 notes/wallersteinNewRevoltsSystem2002.md",
+    "obsidian-history-vault-master/07 diary/los heraldos negros de Cesar Vallejo (1918).md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Post Draft Outline_JWSR_submission.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/~$63+blinded(1).docx",
+    "obsidian-history-vault-master/02 analysis/annotated bibliography/TCC.md",
+    "obsidian-history-vault-master/readme.md",
+    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Profits, mining capital and gold accumulation.md",
+    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Profits, mining capital and gold accumulation..md",
+    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Accumulation of mining capital.md",
+    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/El proceso de acumulación minero.md",
+    "obsidian-history-vault-master/02 analysis/annotated bibliography/l1. Imperialism.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_04052023.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/~$itorial 1.docx",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_25022023.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Revision Strategies - Excelsior OWL.md",
+    "obsidian-history-vault-master/02 analysis/questions and arguments/Audiovisual culture/Vivre.Sa.Vie.1962.(Jean-Luc.Godard).1080p.BRRip.x264-Classics.md",
+    "Recording 20240623213700.webm",
+    "Vivre.Sa.Vie.1962.(Jean-Luc.Godard).1080p.BRRip.x264-Classics.mkv",
+    "obsidian-history-vault-master/02 analysis/questions and arguments/Audiovisual culture",
     "obsidian-history-vault-master/06 archives/China-Russia/Media statement following Russia-China talks • President of Russia.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Erika Arenas/final_soc205B_s2024.dta",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Erika Arenas/final_soc205B_s2024(1).dta",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jason Turowetz/~WRL2301.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jason Turowetz/~WRD2285.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jason Turowetz/~WRL3960.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jason Turowetz/~WRD3948.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jason Turowetz/~$JIA-FinalPaper_207B_4.docx",
+    "Interview Camera Obscura.md",
+    "Untitled 7.md",
+    "Table problemset4.md",
+    "obsidian-history-vault-master/05 tasks/CV_JoseManuelMejia_mar_2024-1.pdf",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jason Turowetz/A transactional interpretation of the contentious performances of the American Palestinian Struggles (APS).md",
     "obsidian-history-vault-master/06 archives/China-Russia/EN_Media statement following Russia-China talks • President of Russia.md",
     "Untitled 8.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jason Turowetz/~$JIA-FinalPaper_207B_2.docx",
-    "Table problemset4.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jason Turowetz/~WRL1398.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jason Turowetz/~WRD1386.tmp",
     "obsidian-history-vault-master/05 tasks/Application UCSB.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jason Turowetz/A transactional interpretation of the contentious performances of the American Palestinian Struggles (APS).md",
     "obsidian-history-vault-master/06 archives/China-Russia/Iran-Israel/Iranian President Raisi a hardliner on morality, protests and nuclear talks  Reuters(1).md",
     "obsidian-history-vault-master/06 archives/China-Russia/Russia's Putin expresses gratitude to China's Xi for Ukraine peace plan  AP News.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jason Turowetz/Primary Frameworks, Keying and the Dynamics of Contentious Politics The Islamization of the Chechen and Palestinian National Movements - Hank Johnston, Eitan Y. Alimi, 2012.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/Hoai-An Nguyen.md",
-    "Untitled 2.md",
-    "Untitled 6.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/Hoai-An Nguyen (old).md",
-    "obsidian-history-vault-master/01 notes/goffmanInteractionRitualEssays1967.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jason Turowetz/Week 4. Pragmatism and symbolic interactionism.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jason Turowetz/Week 3. Weber on the problem of meaning, social action, and power.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/Discussion of Weber.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/On Arrighi (1994).md",
-    "README.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jason Turowetz/Durkheim.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Erika Arenas/lmlogit.md",
-    "obsidian-history-vault-master/10 conversations/26MAY2024/What Is at Stake in Palestine Radical New Stage in Ruling Class Modalities of Control - ZNetwork.md",
-    "obsidian-history-vault-master/07 diary/2023-06-02.md",
-    "obsidian-history-vault-master/07 diary/2023-07-02.md",
     "regress.png",
     "sum regress.png",
     "bys protest_centralism countryside tab perfor_id claim_id col all.png",

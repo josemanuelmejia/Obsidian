@@ -1,7 +1,6 @@
-*Aún recuerdo la voz de ella, cuando la primera palabra apareció*.
+*Aún recuerdo la voz de ella, cuando la primera palabra apareció*. 
 
-
-
+  
  1. Imperialist mining: a) structure of class dominance, b) concentration of TCC's capital, c) state violence to guarantee capital accumulation
 
 Evidenced by the militarization of repression against antimining protests in the Andes.
