@@ -31,7 +31,7 @@ Gold price
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="https://chart-studio.plotly.com/~TioJason/6/?share_key=zaExCAADwTsSMHgDi94iE6#plot"></iframe>
 
 Total reserves in monetary gold holdings (current US$)
-<iframe frameBorder='no' src="https://databank.worldbank.org/embed/Total-reserves-in-monetary-gold-holdings-(currents-US$)/id/90eeb6dd?ti=y&ds=n&dd=y&tb=y&sh=y&dw=y&pr=y&inf=y&zm=y&md=y&navigator=n&theme=darkGrey&bdrClr=rgb(68,68,68)&bdrStyle=solid&bdrWidth=0px&title=Arial;14px;true;false;rgb(68,68,68);justify&exptypes=Excel,CSV,TabbedTxt" width= "900"  height="500"></iframe>
+<iframe frameBorder='no' src="0ti=y&ds=n&dd=y&tb=y&sh=y&dw=y&pr=y&inf=y&zm=y&md=y&navigator=n&theme=darkGrey&bdrClr=rgb(68,68,68)&bdrStyle=solid&bdrWidth=0px&title=Arial;14px;true;false;rgb(68,68,68);justify&exptypes=Excel,CSV,TabbedTxt" width= "900"  height="500"></iframe>
 
 Total reserves and total reserves in monetary gold (current US$), 1960-2021
 
