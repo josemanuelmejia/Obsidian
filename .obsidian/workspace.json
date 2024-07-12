@@ -4,45 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "f473a84682d24cdc",
+        "id": "41a5226576d8d344",
         "type": "tabs",
         "children": [
           {
-            "id": "16944525f3a73ee3",
+            "id": "85c5080ae1b8adac",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_04052023.md",
+                "file": "Antisystemic effects of the Andean peasants’ antimining struggles.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "14ecf5624af4274a",
+            "id": "180da4d956cd2f45",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Q1. Mining struggles antisystemic effects on capital accumulation.md",
+                "file": "Draft.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "b244895f809e9211",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "obsidian-history-vault-master/02 analysis/annotated bibliography/Gold reserves/WOR5821_The_Evolution of Gold Reserves.pdf"
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -92,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 393.5
+    "width": 200
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -108,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/02 analysis/annotated bibliography/Gold reserves/WOR5821_The_Evolution of Gold Reserves.pdf",
+                "file": "Draft.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/02 analysis/annotated bibliography/Gold reserves/WOR5821_The_Evolution of Gold Reserves.pdf",
+                "file": "Draft.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-history-vault-master/02 analysis/annotated bibliography/Gold reserves/WOR5821_The_Evolution of Gold Reserves.pdf"
+                "file": "Draft.md"
               }
             }
           },
@@ -221,10 +211,28 @@
       "obsidian-audio-notes:Quick Audio Note with Transcription": false
     }
   },
-  "active": "b244895f809e9211",
+  "active": "180da4d956cd2f45",
   "lastOpenFiles": [
-    "obsidian-history-vault-master/02 analysis/annotated bibliography/Gold reserves/WOR5821_The Evolution of Gold Reserves.pdf",
+    "Recording 20240711214138.webm",
+    "Draft.md",
+    "Antisystemic effects of the Andean peasants’ antimining struggles.md",
+    "Audiobook.md",
+    "Untitled 15.md",
+    "Recording 20240711223822.webm",
+    "Recording 20240711223816.webm",
+    "Recording 20240711213900.webm",
+    "Recording 20240711213845.webm",
+    "Untitled 14.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_04052023.md",
+    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Q1. Mining struggles antisystemic effects on capital accumulation.md",
     "obsidian-history-vault-master/02 analysis/annotated bibliography/Gold reserves/WOR5821_The_Evolution of Gold Reserves.pdf",
+    "Untitled 12.md",
+    "obsidian-history-vault-master/01 notes/arrighiChaosGovernanceModern1999.md",
+    "Chaos and governance.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/On Arrighi (1994).md",
+    "Arrighi 1994.md",
+    "Untitled 13.md",
+    "obsidian-history-vault-master/02 analysis/annotated bibliography/Gold reserves/WOR5821_The Evolution of Gold Reserves.pdf",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Graphs.md",
     "obsidian-history-vault-master/07 diary/Audiovisual culture/Untitled.md",
     "Recording 20240701160726.webm",
@@ -234,31 +242,12 @@
     "1StephanieJShawWEBDuBoisa-1.md",
     "1StephanieJShawWEBDuBoisa-1 1.md",
     "Du Bois Intro.md",
-    "Chaos and governance.md",
-    "Arrighi 1994.md",
     "Arrighi - 1994 - The long twentieth century money, power, and the .pdf",
     "Hoja de vida (resumen).md",
-    "~$perialism.docx",
     "FLACSO MA Political Sociology Thesis.md",
-    "~$ACSO MA Political Sociology Thesis.docx",
-    "Informe Final. Violacion de Derechos Humanos en Peru 2022 2023.webm",
-    "Recording 20230331113159.webm",
     "Propuesta para la elaboración del Plan de Trabajo Anual de Indexación de la RSPDI.md",
-    "~$EP - Translation of The Travesty of Anti-imperialism by William Robinson.docx",
     "Observaciones.md",
     "Notes on Economic Manuscripts of Marx.md",
-    "La adicción.md",
-    "JOSÉ MANUEL MEJÍA V..md",
-    "Informe Final. Violación de Derechos Humanos en Perú Diciembre 2022 a Febrero 2023.md",
-    "Recording 20230331151124.webm",
-    "UCSB Fall 2023 Profile.md",
-    "Translations.md",
-    "THe technological myth.md",
-    "Untitled 1.md",
-    "Note.md",
-    "Translation of Capital first ch from german.md",
-    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/The strategical centrality of anti-mining struggles.md",
-    "The Global Revolt and Its Discontents.md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Monetary gold.PNG",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Monetary holdings.PNG",
     "regress.png",
