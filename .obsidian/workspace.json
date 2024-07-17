@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "41a5226576d8d344",
+        "id": "f43147d4a8d42920",
         "type": "tabs",
         "children": [
           {
-            "id": "85c5080ae1b8adac",
+            "id": "1b37e21ed373c878",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Antisystemic effects of the Andean peasants’ antimining struggles.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "180da4d956cd2f45",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Draft.md",
+                "file": "Un poder A power.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -77,12 +64,44 @@
               "type": "bookmarks",
               "state": {}
             }
+          },
+          {
+            "id": "8e11716e2e33570a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "3bbfc020dc47aa7e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled 17.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "705530c9b38d3527",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled 16.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 407.5
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -98,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Draft.md",
+                "file": "Un poder A power.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Draft.md",
+                "file": "Un poder A power.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Draft.md"
+                "file": "Un poder A power.md"
               }
             }
           },
@@ -211,43 +230,44 @@
       "obsidian-audio-notes:Quick Audio Note with Transcription": false
     }
   },
-  "active": "180da4d956cd2f45",
+  "active": "1b37e21ed373c878",
   "lastOpenFiles": [
-    "Recording 20240711214138.webm",
-    "Draft.md",
-    "Antisystemic effects of the Andean peasants’ antimining struggles.md",
+    "Recording 20240715210425.webm",
+    "Un poder A power.md",
+    "Untitled 17.md",
+    "obsidian-history-vault-master/07 diary/Audiovisual culture/Untitled.md",
+    "obsidian-history-vault-master/10 conversations/26MAY2024/Untitled.md",
+    "Untitled.md",
+    "Recording 20240715212242.webm",
+    "Recording 20240715211708.webm",
+    "Recording 20240715205743.webm",
+    "Recording 20240715205532.webm",
+    "Recording 20240715205230.webm",
+    "Recording 20240715205058.webm",
+    "Recording 20240715204906.webm",
+    "Recording 20240715204158.webm",
+    "Recording 20240715204155.webm",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Dimensions of diffusion of the process of scale shift (rescale) local, categorial and institutional boundaries.md",
+    "Notes on Economic Manuscripts of Marx.md",
+    "Untitled 3.md",
+    "Untitled 4.md",
+    "Ukraine.md",
+    "Ukraine_crisis.md",
+    "Untitled 6.md",
+    "Untitled 7.md",
+    "Untitled 8.md",
+    "Interview Camera Obscura.md",
+    "Untitled 11.md",
+    "Untitled 12.md",
+    "The Global Revolt and Its Discontents.md",
+    "Untitled 13.md",
+    "Untitled 14.md",
     "Audiobook.md",
     "Untitled 15.md",
-    "Recording 20240711223822.webm",
-    "Recording 20240711223816.webm",
-    "Recording 20240711213900.webm",
-    "Recording 20240711213845.webm",
-    "Untitled 14.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/submission_04052023.md",
-    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Q1. Mining struggles antisystemic effects on capital accumulation.md",
-    "obsidian-history-vault-master/02 analysis/annotated bibliography/Gold reserves/WOR5821_The_Evolution of Gold Reserves.pdf",
-    "Untitled 12.md",
-    "obsidian-history-vault-master/01 notes/arrighiChaosGovernanceModern1999.md",
-    "Chaos and governance.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/On Arrighi (1994).md",
-    "Arrighi 1994.md",
-    "Untitled 13.md",
-    "obsidian-history-vault-master/02 analysis/annotated bibliography/Gold reserves/WOR5821_The Evolution of Gold Reserves.pdf",
-    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Graphs.md",
-    "obsidian-history-vault-master/07 diary/Audiovisual culture/Untitled.md",
-    "Recording 20240701160726.webm",
-    "Recording 20240701160703.webm",
-    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/El proceso de acumulación minero.md",
-    "Untitled 11.md",
-    "1StephanieJShawWEBDuBoisa-1.md",
-    "1StephanieJShawWEBDuBoisa-1 1.md",
-    "Du Bois Intro.md",
-    "Arrighi - 1994 - The long twentieth century money, power, and the .pdf",
-    "Hoja de vida (resumen).md",
-    "FLACSO MA Political Sociology Thesis.md",
-    "Propuesta para la elaboración del Plan de Trabajo Anual de Indexación de la RSPDI.md",
-    "Observaciones.md",
-    "Notes on Economic Manuscripts of Marx.md",
+    "Draft.md",
+    "un pacto.md",
+    "Untitled 16.md",
+    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/scale.PNG",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Monetary gold.PNG",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Monetary holdings.PNG",
     "regress.png",
@@ -257,7 +277,6 @@
     "tab perfor_id claim_id col all 1.png",
     "bys protest_centralism Lima tab perfor_id claim_id col all 1.png",
     "bys protest_centralism Lima tab perfor_id claim_id col all.png",
-    "tab perfor_id claim_id col all.png",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",
     "Mayra.canvas",
     "Estallido.canvas"
