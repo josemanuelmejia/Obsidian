@@ -123,5 +123,40 @@
       ],
       "key": "V"
     }
+  ],
+  "smart-memos:record-smart-memo": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "G"
+    }
+  ],
+  "smart-memos:open-transcript-modal": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "T"
+    }
+  ],
+  "privacy-glasses:privacy-glasses-hide-all": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "H"
+    }
+  ],
+  "privacy-glasses:privacy-glasses-reveal-all": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "H"
+    }
   ]
 }
