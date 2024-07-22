@@ -4,6 +4,7 @@ longform:
   title: JWSR
   workflow: Default Workflow
   sceneFolder: /
-  scenes: []
+  scenes:
+    - Second draft
   ignoredFiles: []
 ---

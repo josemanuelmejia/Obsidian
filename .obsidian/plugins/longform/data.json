@@ -6,6 +6,42 @@
   "sessionStorage": "data",
   "sessions": [
     {
+      "start": "2024-07-22T21:50:30.444Z",
+      "total": 0,
+      "drafts": {
+        "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Untitled/JWSR/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Second draft": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2024-07-20T23:37:46.314Z",
+      "total": 0,
+      "drafts": {
+        "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Untitled/JWSR/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Second draft": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2024-07-19T22:28:09.850Z",
+      "total": 29,
+      "drafts": {
+        "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Untitled/JWSR/Index.md": {
+          "total": 29,
+          "scenes": {
+            "Second draft": 29
+          }
+        }
+      }
+    },
+    {
       "start": "2024-07-19T04:08:07.979Z",
       "total": 0,
       "drafts": {
