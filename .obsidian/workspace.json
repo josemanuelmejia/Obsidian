@@ -4,21 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a9331ea6ffa2e85a",
+        "id": "bc2a82b990962dfc",
         "type": "tabs",
         "children": [
           {
-            "id": "fee7a4715289a9e8",
-            "type": "leaf",
-            "state": {
-              "type": "kanban",
-              "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Untitled/JWSR/Second draft.md"
-              }
-            }
-          },
-          {
-            "id": "a95bfc855e050de3",
+            "id": "63f45783e782c07e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -30,12 +20,12 @@
             }
           },
           {
-            "id": "28970a96a63ada10",
+            "id": "877a2178519065a6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Efectos Antisistémicos de las Luchas Campesinas Antimineras en Los Andes.md",
+                "file": "obsidian-history-vault-master/01 notes/WalshMignoloSegato+2024+1+31.md",
                 "mode": "source",
                 "source": false
               }
@@ -112,8 +102,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -129,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Untitled/JWSR/Second draft.md",
+                "file": "obsidian-history-vault-master/01 notes/WalshMignoloSegato+2024+1+31.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Untitled/JWSR/Second draft.md",
+                "file": "obsidian-history-vault-master/01 notes/WalshMignoloSegato+2024+1+31.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Untitled/JWSR/Second draft.md"
+                "file": "obsidian-history-vault-master/01 notes/WalshMignoloSegato+2024+1+31.md"
               }
             }
           },
@@ -258,30 +247,32 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "4156b5e5ac4c33be",
+  "active": "877a2178519065a6",
   "lastOpenFiles": [
-    "Efectos Antisistémicos de las Luchas Campesinas Antimineras en Los Andes.md",
+    "obsidian-history-vault-master/01 notes/~WRL0004.tmp",
+    "obsidian-history-vault-master/01 notes/~WRD0003.tmp",
+    "obsidian-history-vault-master/01 notes/~WRD0002.tmp",
+    "obsidian-history-vault-master/01 notes/~$lshMignoloSegato+2024+1+31.docx",
+    "obsidian-history-vault-master/01 notes/WalshMignoloSegato+2024+1+31.docx",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Antisystemic Effects of  Peasants AntimininAndeang Struggles_2024-07-18.md",
+    "obsidian-history-vault-master/01 notes/WalshMignoloSegato+2024+1+31.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Submission_feb2023/~$SR_submission.docx",
+    "obsidian-history-vault-master/03 writing/documents/Sample Corkboard.md",
+    "Efectos Antisistémicos de las Luchas Campesinas Antimineras en Los Andes.md",
+    "1. The structural processes of circulation and production of the world economy produced historical antisystemic resistances with world scale effects over the reproduction of those vital processes..md",
+    "Untitled.canvas",
+    "The structural processes of circulation and production of the world economy produced historical antisystemic resistances with world scale effects over the reproduction of those vital processes..md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Untitled/JWSR/Second draft.md",
     "old_jun2024_nonclass/Audiobook.md",
     "Recording 20240719184225.webm",
     "Recording 20240719183947.webm",
     "Recording 20240719183858.webm",
     "Recording 20240719183146.webm",
     "Recording 20240719183016.webm",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Untitled/JWSR/Second draft.md",
-    "1. The structural processes of circulation and production of the world economy produced historical antisystemic resistances with world scale effects over the reproduction of those vital processes..md",
     "old_jun2024_nonclass/Untitled 17.md",
-    "Recording 20240719182613.webm",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Untitled/JWSR/Index.md",
-    "Recording 20240719182009.webm",
-    "Recording 20240719181817.webm",
-    "Recording 20240719181738.webm",
-    "Recording 20240719181730.webm",
     "obsidian-history-vault-master/01 notes/arrighiLongTwentiethCentury1994.md",
-    "The structural processes of circulation and production of the world economy produced historical antisystemic resistances with world scale effects over the reproduction of those vital processes..md",
-    "Untitled.canvas",
     "obsidian-history-vault-master/03 writing/documents/Index.md",
-    "obsidian-history-vault-master/03 writing/documents/Sample Corkboard.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Untitled Kanban.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Antisystemic Effects of Antimining Andean Peasant Struggles.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Untitled.md",
@@ -300,7 +291,6 @@
     "Is Generalized Anxiety Disorder a disorder In the context of disaster, not really. - Everyday Society - The British Sociological Association.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Is Generalized Anxiety Disorder a disorder In the context of disaster, not really. - Everyday Society - The British Sociological Association.md",
     "a sHINING POWER.md",
-    "Untitled 17.md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/scale.PNG",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Monetary gold.PNG",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Monetary holdings.PNG",
