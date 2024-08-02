@@ -1,8 +1,8 @@
 {
   "apiKey": "",
-  "fromLanguage": "AUTO",
+  "fromLanguage": "EN",
   "toLanguage": "ES",
   "showStatusBar": true,
-  "useProAPI": true,
+  "useProAPI": false,
   "formality": "default"
 }

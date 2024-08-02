@@ -5,7 +5,7 @@
   "translation_service": "bergamot",
   "security_setting": "none",
   "switch_button_action": "switch-both",
-  "translation_command_action": "replace",
+  "translation_command_action": "below",
   "apply_glossary": false,
   "local_glossary": false,
   "glossary_preference": "online",
@@ -27,22 +27,15 @@
   "right_quickactions_default": [
     "copy"
   ],
-  "hide_attribution_default": false,
-  "default_source_language": "auto",
+  "hide_attribution_default": true,
+  "default_source_language": "en",
   "target_language_preference": "specific",
   "last_used_target_languages": [],
-  "default_target_language": "en",
+  "default_target_language": "es",
   "filtered_services": [
     "bergamot"
   ],
   "hotkeys": [
-    {
-      "id": "view-translate",
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "Enter"
-    },
     {
       "id": "view-language-switch",
       "modifiers": [
@@ -69,6 +62,14 @@
       "id": "view-clear-fields",
       "modifiers": [],
       "key": ""
+    },
+    {
+      "id": "view-translate",
+      "modifiers": [
+        "Mod",
+        "Alt"
+      ],
+      "key": "T"
     }
   ],
   "service_settings": {
@@ -893,7 +894,8 @@
     },
     "bergamot": {
       "selected_languages": [
-        "en"
+        "en",
+        "es"
       ],
       "validated": null,
       "auto_translate": false,
