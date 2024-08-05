@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/After the Gold Crash  Alchemist  LBMA(1).md",
+                "file": "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Graphs.md",
                 "mode": "source",
                 "source": false
               }
@@ -27,7 +27,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -113,7 +114,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/After the Gold Crash  Alchemist  LBMA(1).md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/After the Gold Crash  Alchemist  LBMA(1).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,9 +151,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/After the Gold Crash  Alchemist  LBMA(1).md"
-              }
+              "state": {}
             }
           },
           {
@@ -243,9 +240,16 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "f69dd3fe2f69091b",
+  "active": "13501723b56982fb",
   "lastOpenFiles": [
+    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Graphs.md",
+    "obsidian-history-vault-master/06 archives/Gold/The Fed - Selected Foreign Official Assets Held at Federal Reserve Banks, July 2024.md",
+    "obsidian-history-vault-master/06 archives/Gold/The Fed - U.S. Reserve Assets, July 2024.md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/After the Gold Crash  Alchemist  LBMA(1).md",
+    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/~$Prices.xlsx",
+    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Prices.xlsx",
+    "obsidian-history-vault-master/06 archives/Gold/Factiva.md",
+    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Factiva.md",
     "Afterthegoldcrashalchemistlbma(1).md",
     "Gold crash.md",
     "obsidian-history-vault-master/04 index/Gómez, Manuel Octavio (person note).md",
@@ -267,11 +271,6 @@
     "obsidian-history-vault-master/06 archives/China-Russia/EN_Media statement following Russia-China talks • President of Russia.md",
     "obsidian-history-vault-master/06 archives/China-Russia/Media statement following Russia-China talks • President of Russia.md",
     "obsidian-history-vault-master/06 archives/China-Russia/Russia's Putin expresses gratitude to China's Xi for Ukraine peace plan  AP News.md",
-    "obsidian-history-vault-master/07 diary/Audiovisual culture/Vivre.Sa.Vie.1962.(Jean-Luc.Godard).1080p.BRRip.x264-Classics.md",
-    "obsidian-history-vault-master/07 diary/Audiovisual culture/Untitled.md",
-    "obsidian-history-vault-master/07 diary/los heraldos negros de Cesar Vallejo (1918).md",
-    "obsidian-history-vault-master/07 diary/Moscow, Quito discuss repairs to Russian military hardware in Ecuador’s arsenal — envoy - Russian Politics & Diplomacy - TASS.md",
-    "obsidian-history-vault-master/07 diary/11222gro.md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/After the Gold Crash  Alchemist  LBMA/issue-74-5.jpg",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/After the Gold Crash  Alchemist  LBMA/issue-74-5(1).jpg",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/After the Gold Crash  Alchemist  LBMA",
@@ -282,8 +281,6 @@
     "Recording 20240731143900.webm",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/~$riátegui 7E (1928).docx",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/~$esentation JCM 7E.docx",
-    "AltShiftV/video_Jul_25_2024_10-46-33_GMT.webm",
-    "AltShiftV/video_Jul_25_2024_10-42-46_GMT.webm",
     "AltShiftV/image_Jul_18_2024_15-44-24_GMT.png",
     "AltShiftV/image_Jul_18_2024_15-43-55_GMT.png",
     "AltShiftV/image_Jul_18_2024_15-42-26_GMT.png",
