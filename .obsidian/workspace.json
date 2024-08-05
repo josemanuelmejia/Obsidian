@@ -18,17 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "13501723b56982fb",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -114,6 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Graphs.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,6 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Graphs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +144,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Graphs.md"
+              }
             }
           },
           {
@@ -240,7 +235,7 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "13501723b56982fb",
+  "active": "f69dd3fe2f69091b",
   "lastOpenFiles": [
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Graphs.md",
     "obsidian-history-vault-master/06 archives/Gold/The Fed - Selected Foreign Official Assets Held at Federal Reserve Banks, July 2024.md",
