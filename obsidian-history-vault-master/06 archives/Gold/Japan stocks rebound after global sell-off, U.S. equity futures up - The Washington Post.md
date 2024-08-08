@@ -15,7 +15,7 @@ U.S. stocks on Tuesday regained some of the ground they lost after the major ind
 
 The Dow Jones Industrial Average and the tech-heavy Nasdaq composite index ended Tuesday up more than about 1 percent, while the S&P 500 rose almost 0.8 percent. The Nasdaq and S&P 500 each had gained more than 2 percent around midafternoon before falling back in the final hour of the session.
 
-Tuesday’s results represented a modest rebound after Monday’s turmoil, when the Dow closed down 1,034 points, or 2.6 percent, while the S&P 500 lost 3 percent and the Nasdaq dropped 3.4 percent. The decline came in the wake of poor economic data, some disappointing earnings from Big Tech last week and an interest rate hike in Japan that sent investment firms scrambling to [unwind certain types of trades](https://www.washingtonpost.com/business/2024/08/06/stocks-markets-carry-japan-currency/88291116-53e2-11ef-9a60-5b6e8b4da7c0_story.html?itid=lk_inline_manual_5).
+Tuesday’s results represented a modest rebound after Monday’s turmoil, when the Dow closed down 1,034 points, or 2.6 percent, while the S&P 500 lost 3 percent and the Nasdaq dropped 3.4 percent. The decline came in the wake of poor economic data, some disappointing earnings from Big Tech last week and an interest rate hike in Japan that sent investment firms scrambling to [unwind certain types of trades](https://www.washingtonpost.com/business/2024/08/06/stocks-markets-carry-japan-currency/88291116-53e2-11ef-9a60-5b6e8b4da7c0_story.html?itid=lk_inline_manual_5). ^555637
 
 Quincy Krosby, chief global strategist for LPL Financial, said in a research note that markets appeared calm this morning.
 
