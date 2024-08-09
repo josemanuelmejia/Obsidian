@@ -1,10 +1,28 @@
 {
   "version": 3,
   "projects": {},
-  "selectedDraftVaultPath": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Untitled/JWSR/Index.md",
+  "selectedDraftVaultPath": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Index.md",
   "userScriptFolder": null,
   "sessionStorage": "data",
   "sessions": [
+    {
+      "start": "2024-08-08T07:27:41.336Z",
+      "total": 622,
+      "drafts": {
+        "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Untitled/JWSR/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Second draft": 0
+          }
+        },
+        "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Index.md": {
+          "total": 622,
+          "scenes": {
+            "Second draft": 622
+          }
+        }
+      }
+    },
     {
       "start": "2024-08-07T18:16:33.479Z",
       "total": 593,
