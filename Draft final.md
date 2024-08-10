@@ -1,3 +1,4 @@
+
 % interactcadsample.tex
 % v1.03 - April 2017
 
@@ -211,12 +212,16 @@ On Friday, October 14, 2016, two hundred indigenous peasants from the communitie
 
 The communities of southern Cotabambas rebelled against the power of the Chinese mining company MMG Limited Las Bambas for 186 days until April 17, 2017, when the province of Cotabambas was assigned the state of emergency, authorizing military repression against community members. Although the mining struggle of the peasant communities of Cotabambas (Apurímac) against the Chinese mining company MMG Limited Las Bambas did not include an antimining claim -as in Cajamarca and Cotopaxi-, the magnitude of the repression executed to secure the interests of China’s mining bourgeoisie confirms that the TCC rules imperialist mining.
 
+\section{Historical boundaries for imperialist mining militarism at the breakdown meantime of Sino-American shared imperialism: The antimining indigenous-cholo movement struggles against the Atico Canadian Mining in Cotopaxi, Ecuador}
+
+
+
 \section{Conclusions}
 The article shows that mining struggles have an anti-system effect on the TCC's circuit of extended capital accumulation, and effectively challenge imperialist domination in Peru. By blocking the expansion of mining’s territorial frontier and obstructing the production and circulation of mining commodities, mining struggles challenge the mining bourgeoisie and the circulation of its productive capital.
 
 The effectiveness of obstructive mining performances in Peru was revealed at least since 2004, with the success of the mining protests against Minera Yanacocha-Newmont and the withdrawal of government authorization to explore the Quilish mountain in Cajamarca. The increasingly radical nature of the contentious performances by the peasants of Huambocancha Alta and Huambocancha Baja achieved an uninterrupted blockade of the access route to Minera Yanacocha-Newmont gold mine, and stalled the police forces sent to unblock it. Although  it wasn’t the first time that highway was blocked during episodes of mining contention in Cajamarca, it is worth saying that such the blockade leads to the gradual stoppage of the mine’s gold mining activities, significantly affecting its production and profits (Mejía 2021:97).
 
-Ross (2003:54, 62) points out that minerals are a type of natural resource whose transport is relatively  easy to obstruct, which has implications for the duration and intensity of extractive conflicts. The blockade implied not only the impossibility of access and exit to the mine’s facilities, but also the expensive use of helicopters for the supply of fuel, equipment, labor and other supplies (Pérez Mundaca 2012:70-71). Thus, the obstructive performance  blocking  the Cajamarca-Bambamarca highway ended up drowning Minera Yanacocha-Newmont, proving to be an effective performance of struggle for almost the entire duration of the mining campaign for the defense of Quilish mountain (Mejía 2021:98-99).
+Ross (2003:54, 62) points out that minerals are a type of natural resource whose transport is relatively  easy to obstruct, which has implications for the duration and intensity of extractive conflicts. The blockade implied not only the impossibility of access and exit to the mine’s facilities, but also the expensive use of helicopters for the supply of fuel, equipment, labor and other supplies (Pérez Mundaca 2012:70-71). Thus, the obstructive performances blocking the Cajamarca-Bambamarca highway ended up drowning Minera Yanacocha-Newmont, proving to be an effective performance of struggle for almost the entire duration of the mining campaign for the defense of Quilish mountain (Mejía 2021:98-99).
 
 Innovative obstructive performances shared in Apurímac and Cajamarca highlight how imperialist mining operates in the Andes. The companies of the international mining bourgeoisies need to establish the flow of the extracted mineral either to a smelting plant -such as the Southern Peru Copper Corporation has in Moquegua-, or directly to the port of Matarani in Arequipa. As suggested by Ye et al. (2020:7), mining multinational corporations claim the monopolized control of the territory and its resources, but also of the entry and exit points from which mineral commodities are transported to a port for exportation, finally traded for export, where it completes its conversion into money-capital. 
 
