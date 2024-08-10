@@ -6,6 +6,18 @@
   "sessionStorage": "data",
   "sessions": [
     {
+      "start": "2024-08-09T07:08:31.941Z",
+      "total": 0,
+      "drafts": {
+        "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Second draft": 0
+          }
+        }
+      }
+    },
+    {
       "start": "2024-08-08T07:27:41.336Z",
       "total": 622,
       "drafts": {

@@ -1,9 +1,36 @@
 {
   "items": [
     {
-      "type": "file",
-      "ctime": 1683220575871,
-      "path": "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/VF Estallido en los Andes.md"
+      "type": "group",
+      "ctime": 1723238562723,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1723238541227,
+          "path": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Abstract_en-es.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1723238541227,
+          "path": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Conclusions en_es.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1723238541227,
+          "path": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Section 2 en_es.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1723238541227,
+          "path": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Section 1 en_es.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1723238541227,
+          "path": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Introduction en_es.md"
+        }
+      ],
+      "title": "Draft JWSR"
     }
   ]
 }
