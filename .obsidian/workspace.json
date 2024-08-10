@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "26ca6fe08bff1615",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Section 2 en_es.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "17f53da7767e609b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled 2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -48,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "beard",
+                "query": "Elena ",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -117,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Section 2 en_es.md",
+                "file": "Untitled 2.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Section 2 en_es.md",
+                "file": "Untitled 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Section 2 en_es.md"
+                "file": "Untitled 2.md"
               }
             }
           },
@@ -247,10 +272,14 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "704039a95b6d3a23",
+  "active": "17f53da7767e609b",
   "lastOpenFiles": [
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Section 1 en_es.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Section 2 en_es.md",
+    "Untitled 2.md",
+    "obsidian-history-vault-master/06 archives/Gold/Gold in SDRs, Currencies, & Gold.md",
+    "overleaf.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/~$bmission_JWSR_25022023_DOCX.docx",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Section 1 en_es.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Abstract_en-es.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Introduction en_es.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/VF Estallido en los Andes.md",
@@ -282,11 +311,7 @@
     "obsidian-history-vault-master/06 archives/Gold/Wall Street rallies from worst day in 2 years as Japanese stocks soar  AP News 1.md",
     "obsidian-history-vault-master/06 archives/Gold/LBMA Precious Metal Prices  LBMA 1.md",
     "obsidian-history-vault-master/06 archives/Gold/Gold in SDRs, Currencies, & Gold 1.md",
-    "obsidian-history-vault-master/06 archives/Gold/Japan stocks rebound after global sell-off, U.S. equity futures up - The Washington Post(1).md",
-    "obsidian-history-vault-master/06 archives/Gold/Gold in SDRs, Currencies, & Gold.md",
-    "obsidian-history-vault-master/06 archives/Gold/Wall Street rallies from worst day in 2 years as Japanese stocks soar  AP News.md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/~$Prices.xlsx",
-    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Prices.xlsx",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/After the Gold Crash  Alchemist  LBMA/issue-74-5.jpg",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/After the Gold Crash  Alchemist  LBMA/issue-74-5(1).jpg",
     "Untitled.canvas",
