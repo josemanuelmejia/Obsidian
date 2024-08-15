@@ -1,6 +1,13 @@
 # Conclusions: The indigenous-cholo peasantry struggles against imperialist mining as an antisystemic movement
 
-\subsection{The indigenous-cholo peasantry struggles against imperialist mining as an antisystemic movement}
+\subsection{The indigenous-cholo peasantry struggles against imperialist mining as an antisystemic movement}```pseudo
+	\begin{algorithm}
+	\caption{Algo Caption}
+	\begin{algorithmic}
+
+	\end{algorithmic}
+	\end{algorithm}
+```
 
 The location of this antisystemic historical resistance in Los Andes is indigenous in its broad base, structurally placed in subordination by the negative dialectics of race, which created the international division of labor by the material expansion of the competitive semi-colonial policy for mining exploitation, trade, and hoarding of merchant capitals in its attempted transition toward the formation of the oligarchic financial bourgeoisies which held the modern world-system under four successive Western inner-transitions since the XVI century.
 
@@ -41,3 +48,4 @@ Until the beginning of the Twenty First century, the rising tide of environmenta
 Mining industry, taken as a large-profitable investment for capital accumulation by imperialist bourgeoisies, exhibits clearly the other side of extended reproduction, the militarized dimension of capital accumulation actualizes today in the repression of indigenous peasants mining struggles. In this sense, mining struggles require study as a priority field of contention for class struggle development in the Andean region, considering their position in the mines of the capital accumulation circuit in a period in which financial capital requires another phase of material expansion. The realization of another cycle of capital accumulation -a more profitable one for capitalist reproduction- actually depends on their highly profitable industries to take a big breath by the circulation of money capital into productive capital (MCM'). 
 
 Indeed, mining struggles grow as limits to capital accumulation and imperialist domination in the Andes, in Latin America and at a global scale. O'Connor (1984) tried to remind to other radical thinkers in the middle of the 80's, that Marxist theorists “left few clues regarding possible 'external barriers' to capitalist accumulation in the form of either 'limits to growth' determined by the availability of natural resources or [...] limits to accumulation determined by cultural-ideological conditions of economic and social reproduction” (O´Connor 1984:6). Environmental socialist struggles, as he would also state, are a central field of contention "to combat the attempt by capital and the state to ideologically construct and politically use the current crisis to restructure economic, political, and social life with the sole purpose of renewed capitalist accumulation, including a new 'long wave' of ideological innovation” (O'Connor 1984:23). Nevertheless, the material challenge that environmental socialist struggles display over militarized accumulation, as in antimining struggles in the Andes, show a further development of the ideological struggles mentioned by James O'Connor. **POR importar y latearconx++
+

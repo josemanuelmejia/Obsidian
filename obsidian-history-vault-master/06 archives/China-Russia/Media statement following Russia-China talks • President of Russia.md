@@ -89,7 +89,7 @@ I want to note the significance of the Joint Statement we have adopted, whi
 
 Certainly, trade and investment interaction was a focal point during our talks, considering China’s prominent position as Russia’s leading foreign trade partner. Additionally, our country secured the fourth place in the export-import balance of the People’s Republic of China based on last year’s results.
 
-[[Untitled 4]]
+[[Untitled 4 1]]
 
 I would particularly like to highlight the growth of Russian food exports to the Chinese market, which surged by more than 50 percent to $7.6 billion. Overall, bilateral trade in agricultural products grew by 40 percent, totalling $9.7 billion. There are strong indications that this trade segment will continue to expand further.
 
