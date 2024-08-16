@@ -4,47 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "cb5cd4babf08ff2d",
+        "id": "2a294c157546b480",
         "type": "tabs",
         "children": [
           {
-            "id": "69dc0b0270aa2f6c",
+            "id": "a459a69a2f14dc45",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Introduction_en-JWSR.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0d922f766b489c6a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Introduction_JWSR-en.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "cb3d5432a12e4858",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "53224f1ebea8dd97",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Introduction_JWSR-en.md",
+                "file": "AltShiftV/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -120,7 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 438.5
+    "width": 459.5
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -136,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Introduction_JWSR-en.md",
+                "file": "AltShiftV/Untitled.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Introduction_JWSR-en.md",
+                "file": "AltShiftV/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -176,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Introduction_JWSR-en.md"
+                "file": "AltShiftV/Untitled.md"
               }
             }
           },
@@ -266,16 +235,35 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "4156b5e5ac4c33be",
+  "active": "a459a69a2f14dc45",
   "lastOpenFiles": [
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Introduction_en-JWSR.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Introduction_en-JWSR.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Introduction en.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Introduction_JWSR-en.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Section1_JWSR_en.md",
+    "AltShiftV/Untitled.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/~WRL0003.tmp",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/~WRD0002.tmp",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/~$submission_JWSR_August15_2024.docx",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/~WRL1628.tmp",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/~WRD1612.tmp",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/resubmission_JWSR_August15_2024.docx",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/~WRL2852.tmp",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/~WRD2833.tmp",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/~WRL1310.tmp",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/~WRD1271.tmp",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/eq iv.PNG",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/eq iii.PNG",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/eq ii.PNG",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/eq i.PNG",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Section1_en.md",
     "obsidian-history-vault-master/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/main.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Section1_es.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Total gold-capital reserves.PNG",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Introduction_en-JWSR.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/resubmission_improved_v.0.md",
+    "old_jun2024_nonclass/Draft JWSR.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Section 2 en_es.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Introduction_JWSR-en.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Introduction en.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Introduction_en_JWSR.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Section 1 en_es.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Introducción es.md",
     "obsidian-history-vault-master/10 conversations/26MAY2024/What Is at Stake in Palestine Radical New Stage in Ruling Class Modalities of Control - ZNetwork.md",
     "old_jun2024_nonclass/Recover after another attack to erase.md",
@@ -284,35 +272,17 @@
     "obsidian-history-vault-master/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/Untitled-1.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Conclusions en_es.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Abstract_en-es.md",
-    "old_jun2024_nonclass/booktabs(1).sty",
-    "old_jun2024_nonclass/epsfig(1).sty",
-    "old_jun2024_nonclass/natbib(1).sty",
-    "old_jun2024_nonclass/rotating(1).sty",
-    "old_jun2024_nonclass/subfig(1).sty",
-    "old_jun2024_nonclass/subfigure(1).sty",
-    "natbib.sty",
-    "obsidian-history-vault-master/natbib.sty",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Finalfinal draft.md",
     "old_jun2024_nonclass/Untitled 4 1.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Elementos exportados.txt",
     "old_jun2024_nonclass/Gold crash.md",
-    "old_jun2024_nonclass/Draft JWSR.md",
     "old_jun2024_nonclass/overleaf.md",
     "obsidian-history-vault-master/12 Latex/Overleaf Projects (20 items)/Draft final JWSR (Copy)spa/1723066104381.png",
     "obsidian-history-vault-master/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/Total gold-capital reserves-China-US.png",
     "obsidian-history-vault-master/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/1723066384892.png",
     "obsidian-history-vault-master/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/1723066104381.png",
-    "obsidian-history-vault-master/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/Captura  2.PNG",
-    "obsidian-history-vault-master/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/Captura.PNG",
-    "obsidian-history-vault-master/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/World Bank Commodity Price Data 1960-2022.png",
-    "obsidian-history-vault-master/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/Total-reserves-in-monetary-holdings-(currents-US$).jpg",
-    "obsidian-history-vault-master/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/Total-reserves-in-monetary-gold-holdings-(currents-US$).jpg",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Jason Turowetz/American Palestinian Struggles (APS).md",
     "obsidian-history-vault-master/06 archives/Peru/MPP LONG LIVE THE 44th ANNIVERSARY OF OUR VICTORIOUS AND INVINCIBLE PEOPLE’S WAR! – The Red Herald.md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/After the Gold Crash  Alchemist  LBMA(1).md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Gold world capital fund.md",
-    "old_jun2024_nonclass/Audiobook.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Submission_feb2023/submission_04052023.md",
     "Untitled.canvas",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",
     "Mayra.canvas",

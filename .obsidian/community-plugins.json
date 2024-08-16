@@ -16,7 +16,6 @@
   "obsidian-tts",
   "obsidian-mind-map",
   "obsidian-pandoc-reference-list",
-  "obsidian-pandoc",
   "obsidian-wordnet-plugin",
   "obsidian-footnotes",
   "tag-summary-plugin",
@@ -37,5 +36,6 @@
   "longform",
   "obsidian-completr",
   "copy-as-latex",
-  "swiftlatex-render"
+  "swiftlatex-render",
+  "obsidian-pandoc"
 ]
