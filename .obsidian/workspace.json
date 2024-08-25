@@ -4,18 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "28cd8585c41e7218",
+        "id": "b303462e9a5a3755",
         "type": "tabs",
         "children": [
           {
-            "id": "68828f7588f5e8fd",
+            "id": "2fdf89f8137da2e8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/esp-.md",
+                "file": "obsidian-history-vault-master/07 diary/2024-08-24.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#National-Endowment-for-the-Humanities-NEH",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/esp-.md",
+                "file": "obsidian-history-vault-master/07 diary/2024-08-24.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/esp-.md",
+                "file": "obsidian-history-vault-master/07 diary/2024-08-24.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/esp-.md"
+                "file": "obsidian-history-vault-master/07 diary/2024-08-24.md"
               }
             }
           },
@@ -235,53 +235,54 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "68828f7588f5e8fd",
+  "active": "2fdf89f8137da2e8",
   "lastOpenFiles": [
-    "AltShiftV/Untitled.md",
+    "obsidian-history-vault-master/07 diary/2024-08-22.md",
+    "obsidian-history-vault-master/07 diary/2024-08-24.md",
+    "obsidian-history-vault-master/03 writing/applications/~$ Grad Student FORM_Fall 2024 & Winter 2025.docx",
+    "obsidian-history-vault-master/03 writing/applications/IHC/IHC-Budget-Template.docx",
+    "obsidian-history-vault-master/03 writing/applications/IHC/Graduate Collaborative Awards - Interdisciplinary Humanities Center UCSB.md",
+    "obsidian-history-vault-master/03 writing/applications/IHC/What We Do - Interdisciplinary Humanities Center UCSB/HistoryOfLogos.jpg",
+    "obsidian-history-vault-master/03 writing/applications/IHC/What We Do - Interdisciplinary Humanities Center UCSB/IHC_UCSB_WhatWeDo.jpg",
+    "obsidian-history-vault-master/03 writing/applications/IHC/What We Do - Interdisciplinary Humanities Center UCSB",
+    "obsidian-history-vault-master/03 writing/applications/EIN/entity-checklist.pdf",
+    "obsidian-history-vault-master/03 writing/applications/entity-checklist.pdf",
+    "obsidian-history-vault-master/03 writing/applications/IHC/IHC milestones.md",
+    "obsidian-history-vault-master/03 writing/applications/IHC/Funding History An Inside Look at Foundation and Government Decisionmaking.md",
+    "obsidian-history-vault-master/03 writing/applications/NEH/Fieldwork 2024 and 2025 NOFO.pdf",
+    "obsidian-history-vault-master/03 writing/applications/EIN/EIN APPLICATION.md",
+    "obsidian-history-vault-master/03 writing/applications/EIN/EIN Online Application.md",
+    "obsidian-history-vault-master/03 writing/applications/NEH/NEH Grants  National Endowment for the Humanities.md",
+    "obsidian-history-vault-master/03 writing/applications/EIN",
+    "obsidian-history-vault-master/03 writing/applications/NEH",
+    "obsidian-history-vault-master/03 writing/applications/What We Do - Interdisciplinary Humanities Center UCSB.md",
+    "obsidian-history-vault-master/03 writing/applications/IHC",
+    "obsidian-history-vault-master/03 writing/applications/Who We Are - Interdisciplinary Humanities Center UCSB.md",
+    "obsidian-history-vault-master/03 writing/applications/What We Do - Interdisciplinary Humanities Center UCSB/IHC_UCSB_WhatWeDo.jpg",
+    "obsidian-history-vault-master/03 writing/applications/What We Do - Interdisciplinary Humanities Center UCSB/HistoryOfLogos.jpg",
+    "obsidian-history-vault-master/03 writing/applications/What We Do - Interdisciplinary Humanities Center UCSB",
+    "obsidian-history-vault-master/03 writing/applications/Graduate Collaborative Awards - Interdisciplinary Humanities Center UCSB.md",
+    "old_jun2024_nonclass/Untitled 11.md",
+    "old_jun2024_nonclass/Untitled 12.md",
+    "old_jun2024_nonclass/Untitled 14.md",
+    "old_jun2024_nonclass/Untitled 15.md",
+    "old_jun2024_nonclass/Untitled 16.md",
+    "old_jun2024_nonclass/Untitled 17.md",
+    "old_jun2024_nonclass/Untitled 18.md",
+    "old_jun2024_nonclass/Translations.md",
+    "old_jun2024_nonclass/Translation of Capital first ch from german.md",
+    "obsidian-history-vault-master/11 labor/Revista/Revista.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/esp-.md",
+    "AltShiftV/Untitled.md",
     "AltShiftV/image_Aug_19_2024_17-36-59_GMT.png",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/~$submission_JWSR_August19_2024.docx",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/~WRL3048.tmp",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/~WRD0005.tmp",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/resubmission_JWSR_August19_2024.docx",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Introduction_JWSR-en.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/~$troduction_JWSR-en.docx",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Section1_es.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Section 2 en_es.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Second draft.md",
-    "obsidian-history-vault-master/07 diary/los heraldos negros de Cesar Vallejo (1918).md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Draft.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Antisystemic Effects of  Peasants AntimininAndeang Struggles_2024-07-18.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Section1_en.md",
-    "obsidian-history-vault-master/06 archives/Peru/Editorial – Esmagar o intervencionismo ianque na Venezuela! - A Nova Democracia.md",
-    "obsidian-history-vault-master/06 archives/Peru/Untitled.md",
-    "obsidian-history-vault-master/06 archives/Peru/Editorial – Esmagar o intervencionismo ianque na Venezuela! - A Nova Democracia 1.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Introducción es.md",
-    "obsidian-history-vault-master/06 archives/Untitled",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/~WRL0003.tmp",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/~WRD0002.tmp",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/~$submission_JWSR_August15_2024.docx",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/~WRL0001.tmp",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Section1_JWSR_en.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/eq iv.PNG",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/eq iii.PNG",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/eq ii.PNG",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/eq i.PNG",
-    "obsidian-history-vault-master/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/main.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Total gold-capital reserves.PNG",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Introduction_en-JWSR.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/resubmission_improved_v.0.md",
-    "old_jun2024_nonclass/Draft JWSR.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Introduction en.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Introduction_en_JWSR.md",
-    "obsidian-history-vault-master/10 conversations/26MAY2024/What Is at Stake in Palestine Radical New Stage in Ruling Class Modalities of Control - ZNetwork.md",
-    "old_jun2024_nonclass/Recover after another attack to erase.md",
-    "old_jun2024_nonclass/1. The structural processes of circulation and production.md",
-    "obsidian-history-vault-master/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/8e6e6cd5.png",
-    "obsidian-history-vault-master/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/Untitled-1.md",
-    "obsidian-history-vault-master/12 Latex/Overleaf Projects (20 items)/Draft final JWSR (Copy)spa/1723066104381.png",
-    "obsidian-history-vault-master/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/Total gold-capital reserves-China-US.png",
-    "obsidian-history-vault-master/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/1723066384892.png",
     "Untitled.canvas",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",
     "Mayra.canvas",
