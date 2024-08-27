@@ -923,6 +923,8 @@ checking
 completion
 curiosity
 connoted
+coyuntura
+corriente
 UTC
 United
 Update
@@ -2436,6 +2438,7 @@ slU
 sLV
 seminar
 struggling
+sociolog
 author
 at
 and
@@ -3157,6 +3160,8 @@ accurate
 acknowledge
 anticolonial
 audience
+abajo
+arriba
 The
 Table
 Total
@@ -4787,6 +4792,7 @@ EFt
 EIN
 Emphasize
 Employer
+Econom
 Board
 Banks
 Borrow
@@ -6218,6 +6224,7 @@ iLa
 iFZi
 internship
 insurrection
+instrumento
 Washington
 We
 Wg
@@ -7505,6 +7512,7 @@ MDt
 Mrk
 Mof
 MIe
+Marxista
 dollars
 drawing
 data
@@ -8154,6 +8162,7 @@ dEL
 design
 designee
 deliver
+divorcio
 end
 earmark
 economy
@@ -8834,6 +8843,8 @@ employees
 entity
 ein
 exacerbation
+entiende
+enfoques
 period
 position
 positions
@@ -9581,6 +9592,7 @@ pgzt
 pounds
 paramos
 punas
+proporciones
 Special
 States
 Scroll
@@ -10554,6 +10566,7 @@ rJN
 requirements
 reservations
 read
+radicales
 International
 IMF
 Industrial
@@ -12899,6 +12912,7 @@ lIl
 liFe
 lwPR
 listed
+limitado
 valued
 volatile
 volatility
@@ -13195,6 +13209,7 @@ vfu
 vDd
 vqO
 vehicle
+vio
 million
 matter
 market
@@ -13728,6 +13743,7 @@ mail
 merged
 multidisciplinary
 multiverse
+multiverso
 New
 Nikkei
 Nasdaq

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b303462e9a5a3755",
+        "id": "e3ed2da69882423d",
         "type": "tabs",
         "children": [
           {
-            "id": "2fdf89f8137da2e8",
+            "id": "f33644ef91124710",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -235,10 +235,10 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "2fdf89f8137da2e8",
+  "active": "f33644ef91124710",
   "lastOpenFiles": [
-    "obsidian-history-vault-master/07 diary/2024-08-22.md",
     "obsidian-history-vault-master/07 diary/2024-08-24.md",
+    "obsidian-history-vault-master/07 diary/2024-08-22.md",
     "obsidian-history-vault-master/03 writing/applications/~$ Grad Student FORM_Fall 2024 & Winter 2025.docx",
     "obsidian-history-vault-master/03 writing/applications/IHC/IHC-Budget-Template.docx",
     "obsidian-history-vault-master/03 writing/applications/IHC/Graduate Collaborative Awards - Interdisciplinary Humanities Center UCSB.md",
