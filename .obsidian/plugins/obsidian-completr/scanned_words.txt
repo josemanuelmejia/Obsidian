@@ -925,6 +925,9 @@ curiosity
 connoted
 coyuntura
 corriente
+convertido
+cerros
+comemos
 UTC
 United
 Update
@@ -1677,6 +1680,8 @@ tPB
 tobacco
 taxes
 taxid
+transformaciones
+trabajando
 source
 stock
 see
@@ -3162,6 +3167,11 @@ anticolonial
 audience
 abajo
 arriba
+anejado
+alcanzaron
+alternativa
+aire
+ars
 The
 Table
 Total
@@ -4327,6 +4337,8 @@ AyP
 ALT
 Activity
 Address
+Adorno
+Amazon
 July
 Jan
 Jun
@@ -6225,6 +6237,7 @@ iFZi
 internship
 insurrection
 instrumento
+integrante
 Washington
 We
 Wg
@@ -7190,6 +7203,7 @@ fvf
 fEr
 firearms
 federal
+fuentes
 Millions
 Mar
 May
@@ -8163,6 +8177,10 @@ design
 designee
 deliver
 divorcio
+disciplinario
+decant
+derrocamiento
+dan
 end
 earmark
 economy
@@ -8845,6 +8863,7 @@ ein
 exacerbation
 entiende
 enfoques
+especies
 period
 position
 positions
@@ -9593,6 +9612,10 @@ pounds
 paramos
 punas
 proporciones
+purifican
+protegen
+plata
+pulm
 Special
 States
 Scroll
@@ -10567,6 +10590,8 @@ requirements
 reservations
 read
 radicales
+ramos
+reservan
 International
 IMF
 Industrial
@@ -11233,6 +11258,7 @@ City
 Closing
 Communication
 Client
+Campo
 held
 holdings
 height
@@ -11852,6 +11878,7 @@ uOKn
 uLPi
 uCG
 uVC
+uranio
 not
 no
 newsletter
@@ -12913,6 +12940,8 @@ liFe
 lwPR
 listed
 limitado
+liberaci
+litio
 valued
 volatile
 volatility
@@ -13210,6 +13239,7 @@ vDd
 vqO
 vehicle
 vio
+virtud
 million
 matter
 market
@@ -14891,6 +14921,7 @@ bqXb
 bXD
 bCn
 box
+biodiversidad
 Published
 PM
 People
