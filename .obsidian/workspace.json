@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "41a5369d58c35da9",
+        "id": "3caad42eccb84e82",
         "type": "tabs",
         "children": [
           {
-            "id": "db85b687e0bdaba6",
+            "id": "e9342d528ad2bf4f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/readme.md",
+                "file": "obsidian-history-vault-master/08 atlas.ti/Atlas.ti codebook.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#National-Endowment-for-the-Humanities-NEH",
+                "query": "octubre",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -85,7 +85,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -105,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/readme.md",
+                "file": "obsidian-history-vault-master/08 atlas.ti/Atlas.ti codebook.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/readme.md",
+                "file": "obsidian-history-vault-master/08 atlas.ti/Atlas.ti codebook.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-history-vault-master/readme.md"
+                "file": "obsidian-history-vault-master/08 atlas.ti/Atlas.ti codebook.md"
               }
             }
           },
@@ -235,8 +236,24 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "db85b687e0bdaba6",
+  "active": "e9342d528ad2bf4f",
   "lastOpenFiles": [
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Intro.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/RV_Estallido en los Andes.md",
+    "obsidian-history-vault-master/03 writing/publicaciones/Tesis_JoseManuelMejia_final.md",
+    "obsidian-history-vault-master/01 notes/xijinpingTranscriptsReportMade2022.md",
+    "obsidian-history-vault-master/11 labor/Revista/Revista.md",
+    "obsidian-history-vault-master/07 diary/2024-08-22.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Nuevo Perú/note.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Nuevo Perú",
+    "obsidian-history-vault-master/07 diary/2024-08-24.md",
+    "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/Description 300 palabras.md",
+    "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/Environmental Justice  Climate Justice Hub.md",
+    "obsidian-history-vault-master/readme.md",
+    "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/Copy of OC Grad Student FORM_Fall 2024 & Winter 2025.md",
+    "AltShiftV/video_Aug_28_2024_18-18-32_GMT.webm",
+    "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/Cluster fit of the project 300 words.md",
+    "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/About – Environmental Justice.md",
     "old_jun2024_nonclass/Ukraine_crisis.md",
     "old_jun2024_nonclass/Untitled.md",
     "old_jun2024_nonclass/Untitled 1 1.md",
@@ -251,20 +268,12 @@
     "old_jun2024_nonclass/Recording 20240514094029.webm",
     "old_jun2024_nonclass/Recording 20240514104320.webm",
     "AltShiftV/video_Aug_28_2024_20-14-26_GMT.webm",
-    "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/Cluster fit of the project 300 words.md",
     "AltShiftV/video_Aug_28_2024_20-09-08_GMT.webm",
     "AltShiftV/video_Aug_28_2024_20-04-59_GMT.webm",
     "AltShiftV/video_Aug_28_2024_20-04-40_GMT.webm",
     "AltShiftV/video_Aug_28_2024_20-03-22_GMT.webm",
-    "AltShiftV/video_Aug_28_2024_20-00-14_GMT.webm",
-    "AltShiftV/video_Aug_28_2024_19-58-54_GMT.webm",
-    "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/Description 300 palabras.md",
-    "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/Environmental Justice  Climate Justice Hub.md",
     "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/Environmental JusticeClimate Justice Studie.md",
     "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/Research – Environmental Justice  Climate Justice Hub.md",
-    "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/About – Environmental Justice.md",
-    "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/People – Environmental JusticeClimate Justice.md",
-    "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/Copy of OC Grad Student FORM_Fall 2024 & Winter 2025.md",
     "OBSIDI~2/11LABO~1/FELLOW~1/Orfela/Application/People – Environmental JusticeClimate Justice – Orfalea Center for Global & International Studies/Widick-Headshot-2023.jpeg",
     "OBSIDI~2/11LABO~1/FELLOW~1/Orfela/Application/People – Environmental JusticeClimate Justice – Orfalea Center for Global & International Studies/Miranda-OBrian-Headshot-400px.jpg",
     "OBSIDI~2/11LABO~1/FELLOW~1/Orfela/Application/People – Environmental JusticeClimate Justice – Orfalea Center for Global & International Studies/Lauren-Gifford-Headshot-400px.jpg",
@@ -275,14 +284,6 @@
     "OBSIDI~2/11LABO~1/FELLOW~1/Orfela/Application/Environmental Justice  Climate Justice Hub  Orfalea Center for Global & International Studies/THEORY.-1-China-Ho-Ji-Hotel-Concrete-Motorcycle-foto-Widick-2009-P5242798-Widick-2009-180x180.jpg",
     "OBSIDI~2/11LABO~1/FELLOW~1/Orfela/Application/Environmental Justice  Climate Justice Hub  Orfalea Center for Global & International Studies/see-you-in-our-dream-1-180x180.jpg",
     "OBSIDI~2/11LABO~1/FELLOW~1/Orfela/Application/Environmental Justice  Climate Justice Hub  Orfalea Center for Global & International Studies/Reimagine-banner-4.22.jpg",
-    "OBSIDI~2/11LABO~1/FELLOW~1/Orfela/Application/Research – Environmental Justice  Climate Justice Hub  Orfalea Center for Global & International Studies.md",
-    "OBSIDI~2/11LABO~1/FELLOW~1/Orfela/Application/People – Environmental JusticeClimate Justice – Orfalea Center for Global & International Studies.md",
-    "OBSIDI~2/11LABO~1/FELLOW~1/Orfela/Application/Environmental JusticeClimate Justice Studies – Orfalea Center for Global & International Studies.md",
-    "OBSIDI~2/11LABO~1/FELLOW~1/Orfela/Application/Environmental Justice  Climate Justice Hub  Orfalea Center for Global & International Studies.md",
-    "OBSIDI~2/11LABO~1/FELLOW~1/Orfela/Application/Description 300 palabras.md",
-    "OBSIDI~2/11LABO~1/FELLOW~1/Orfela/Application/Copy of OC Grad Student FORM_Fall 2024 & Winter 2025 - Google Docs.md",
-    "OBSIDI~2/11LABO~1/FELLOW~1/Orfela/Application/About – Environmental Justice  Climate Justice Hub  Orfalea Center for Global & International Studies.md",
-    "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/Environmental Justice  Climate Justice Hub  Orfalea Center for Global & International Studies.md",
     "Untitled.canvas",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",
     "Mayra.canvas",
