@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/08 atlas.ti/Atlas.ti codebook.md",
+                "file": "obsidian-history-vault-master/11 labor/Revista/Revista.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,8 +48,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "octubre",
-                "matchingCase": true,
+                "query": "",
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
                 "extraContext": false,
@@ -85,8 +85,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -106,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/08 atlas.ti/Atlas.ti codebook.md",
+                "file": "obsidian-history-vault-master/11 labor/Revista/Revista.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/08 atlas.ti/Atlas.ti codebook.md",
+                "file": "obsidian-history-vault-master/11 labor/Revista/Revista.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-history-vault-master/08 atlas.ti/Atlas.ti codebook.md"
+                "file": "obsidian-history-vault-master/11 labor/Revista/Revista.md"
               }
             }
           },
@@ -238,15 +237,17 @@
   },
   "active": "e9342d528ad2bf4f",
   "lastOpenFiles": [
+    "obsidian-history-vault-master/07 diary/2024-08-24.md",
+    "obsidian-history-vault-master/11 labor/Revista/Revista.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Gold world capital fund.md",
+    "obsidian-history-vault-master/08 atlas.ti/Atlas.ti codebook.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Luchas campesinas contra la minería imperialista/Intro.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/RV_Estallido en los Andes.md",
     "obsidian-history-vault-master/03 writing/publicaciones/Tesis_JoseManuelMejia_final.md",
     "obsidian-history-vault-master/01 notes/xijinpingTranscriptsReportMade2022.md",
-    "obsidian-history-vault-master/11 labor/Revista/Revista.md",
     "obsidian-history-vault-master/07 diary/2024-08-22.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Nuevo Perú/note.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Nuevo Perú",
-    "obsidian-history-vault-master/07 diary/2024-08-24.md",
     "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/Description 300 palabras.md",
     "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/Environmental Justice  Climate Justice Hub.md",
     "obsidian-history-vault-master/readme.md",
@@ -272,8 +273,6 @@
     "AltShiftV/video_Aug_28_2024_20-04-59_GMT.webm",
     "AltShiftV/video_Aug_28_2024_20-04-40_GMT.webm",
     "AltShiftV/video_Aug_28_2024_20-03-22_GMT.webm",
-    "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/Environmental JusticeClimate Justice Studie.md",
-    "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/Research – Environmental Justice  Climate Justice Hub.md",
     "OBSIDI~2/11LABO~1/FELLOW~1/Orfela/Application/People – Environmental JusticeClimate Justice – Orfalea Center for Global & International Studies/Widick-Headshot-2023.jpeg",
     "OBSIDI~2/11LABO~1/FELLOW~1/Orfela/Application/People – Environmental JusticeClimate Justice – Orfalea Center for Global & International Studies/Miranda-OBrian-Headshot-400px.jpg",
     "OBSIDI~2/11LABO~1/FELLOW~1/Orfela/Application/People – Environmental JusticeClimate Justice – Orfalea Center for Global & International Studies/Lauren-Gifford-Headshot-400px.jpg",
