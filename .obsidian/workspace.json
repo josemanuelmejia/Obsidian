@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3caad42eccb84e82",
+        "id": "feb8038f92c0f03f",
         "type": "tabs",
         "children": [
           {
-            "id": "e9342d528ad2bf4f",
+            "id": "f47b0a9127d1ec1f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Introducción es.md",
+                "file": "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/Copy of OC Grad Student FORM_Fall 2024 & Winter 2025 - Google Docs(1).md",
                 "mode": "source",
                 "source": false
               }
@@ -89,7 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 263.5
+    "width": 607.5
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Introducción es.md",
+                "file": "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/Copy of OC Grad Student FORM_Fall 2024 & Winter 2025 - Google Docs(1).md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Introducción es.md",
+                "file": "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/Copy of OC Grad Student FORM_Fall 2024 & Winter 2025 - Google Docs(1).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Introducción es.md"
+                "file": "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/Copy of OC Grad Student FORM_Fall 2024 & Winter 2025 - Google Docs(1).md"
               }
             }
           },
@@ -235,13 +235,18 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "e9342d528ad2bf4f",
+  "active": "f47b0a9127d1ec1f",
   "lastOpenFiles": [
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Introduction_en-JWSR.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/~$aft resubmission August 19 2024.docx",
+    "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/Copy of OC Grad Student FORM_Fall 2024 & Winter 2025 - Google Docs(1).md",
+    "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/Copy of OC Grad Student FORM_Fall 2024 & Winter 2025.md",
+    "old_jun2024_nonclass/Un poder A power.md",
+    "old_jun2024_nonclass/a sHINING POWER.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Introducción es.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/~$submission_JWSR_August19_2024.docx",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Introduction en.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Introduction_en_JWSR.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Introducción es.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Index.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Finalfinal draft.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Section1_JWSR_en.md",
@@ -250,7 +255,6 @@
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/esp-.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Section1_en.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Introduction_JWSR-en.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Introduction_en-JWSR.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/~$troduction_en-JWSR.docx",
     "obsidian-history-vault-master/11 labor/Revista/Revista.md",
     "obsidian-history-vault-master/07 diary/2024-08-24.md",
@@ -261,18 +265,13 @@
     "obsidian-history-vault-master/03 writing/publicaciones/Tesis_JoseManuelMejia_final.md",
     "obsidian-history-vault-master/01 notes/xijinpingTranscriptsReportMade2022.md",
     "obsidian-history-vault-master/07 diary/2024-08-22.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Nuevo Perú/note.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Nuevo Perú",
-    "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/Description 300 palabras.md",
-    "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/Environmental Justice  Climate Justice Hub.md",
-    "obsidian-history-vault-master/readme.md",
     "AltShiftV/video_Aug_28_2024_18-18-32_GMT.webm",
     "old_jun2024_nonclass/~$titled 5.docx",
     "old_jun2024_nonclass/Recording 20240514094029.webm",
     "old_jun2024_nonclass/Recording 20240514104320.webm",
     "AltShiftV/video_Aug_28_2024_20-14-26_GMT.webm",
     "AltShiftV/video_Aug_28_2024_20-09-08_GMT.webm",
-    "AltShiftV/video_Aug_28_2024_20-04-59_GMT.webm",
     "OBSIDI~2/11LABO~1/FELLOW~1/Orfela/Application/People – Environmental JusticeClimate Justice – Orfalea Center for Global & International Studies/Widick-Headshot-2023.jpeg",
     "OBSIDI~2/11LABO~1/FELLOW~1/Orfela/Application/People – Environmental JusticeClimate Justice – Orfalea Center for Global & International Studies/Miranda-OBrian-Headshot-400px.jpg",
     "OBSIDI~2/11LABO~1/FELLOW~1/Orfela/Application/People – Environmental JusticeClimate Justice – Orfalea Center for Global & International Studies/Lauren-Gifford-Headshot-400px.jpg",
