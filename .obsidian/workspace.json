@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -118,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/11 labor/Revista/Victor Serge Year One of the Russian Revolution (I. The October Insurrection).md",
+                "file": "obsidian-history-vault-master/11 labor/Revista/Revista.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/11 labor/Revista/Victor Serge Year One of the Russian Revolution (I. The October Insurrection).md",
+                "file": "obsidian-history-vault-master/11 labor/Revista/Revista.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-history-vault-master/11 labor/Revista/Victor Serge Year One of the Russian Revolution (I. The October Insurrection).md"
+                "file": "obsidian-history-vault-master/11 labor/Revista/Revista.md"
               }
             }
           },
@@ -248,10 +247,10 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "1ad5abd5d41fee4a",
+  "active": "f47b0a9127d1ec1f",
   "lastOpenFiles": [
-    "obsidian-history-vault-master/11 labor/Revista/Revista.md",
     "obsidian-history-vault-master/11 labor/Revista/Victor Serge Year One of the Russian Revolution (I. The October Insurrection).md",
+    "obsidian-history-vault-master/11 labor/Revista/Revista.md",
     "obsidian-history-vault-master/01 notes/trotskyLeccionesOctubre1931.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Gold world capital fund.md",
     "obsidian-history-vault-master/11 labor/Fellowships/Orfela/Application/Copy of OC Grad Student FORM_Fall 2024 & Winter 2025 - Google Docs(1).md",

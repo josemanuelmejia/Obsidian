@@ -15,11 +15,11 @@ Trotsky on October:
 The party is ravaged by a crisis, and the movement passes the
 party by and heads toward defeat.
 
-
 ¿Cuál es la importancia de Octubre?
 
-Octubre no es pues un mes del año, no es posible reducir la significancia histórica de las cadenas de insurrecciones y revoluciones que se desarrollan en su marco temporal, van incluso más allá de la toma de los símbolos de poder del viejo estado. 
-
+Octubre no es pues un mes del año, no es posible reducir la significancia histórica de las cadenas de insurrecciones y revoluciones que se desarrollan en su marco temporal, van incluso más allá de la toma de los símbolos de poder del viejo estado.
 
 ¿Por qué es necesaria esta revista?
+
+La internacionalización
 
