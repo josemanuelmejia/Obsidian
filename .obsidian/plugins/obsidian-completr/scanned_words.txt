@@ -7057,6 +7057,7 @@ clemency
 compensated
 costly
 coordinated
+choque
 UTC
 United
 Update
@@ -11684,6 +11685,7 @@ Ubicado
 Unarmed
 Urrego
 Uritsky
+Ucrania
 tags
 the
 table
@@ -22281,6 +22283,12 @@ surrenders
 sidearms
 spontaneity
 shells
+suplantando
+sacando
+sujetan
+sublimarse
+selectos
+sublimaci
 author
 at
 and
@@ -28418,6 +28426,15 @@ arriving
 academies
 artillery
 armistice
+autoritarismos
+autocr
+anticipando
+anticipaci
+apropi
+anticapitalista
+anticoloniales
+aparatos
+amenazada
 The
 Table
 Total
@@ -40778,6 +40795,7 @@ Reds
 Requisition
 Rudenev
 Riabtsev
+Ruso
 Assets
 Asset
 Apr
@@ -45642,6 +45660,7 @@ Agitators
 Abramovich
 Alexandrovsky
 Arms
+Australiano
 July
 Jan
 Jun
@@ -53364,6 +53383,8 @@ Eastman
 Eve
 Enough
 Extremely
+Estadounidense
+Europeo
 Board
 Banks
 Borrow
@@ -94592,6 +94613,10 @@ doorway
 drown
 dissolved
 defective
+diametralmente
+desv
+discusi
+destruyen
 end
 earmark
 economy
@@ -100230,6 +100255,14 @@ encircled
 endeavored
 escaped
 enforcements
+encubierta
+esquivo
+encubre
+explicativo
+estremeciendo
+emplean
+efectivas
+envenenando
 period
 position
 positions
@@ -106358,6 +106391,10 @@ projected
 palaces
 proof
 provocation
+populismos
+ponderar
+previendo
+pesados
 Special
 States
 Scroll
@@ -116336,6 +116373,8 @@ rear
 rattles
 retreated
 reminiscent
+repeticiones
+retroalimenta
 International
 IMF
 Industrial
@@ -142856,6 +142895,7 @@ graceful
 gesture
 gray
 guarantees
+genocidios
 line
 long
 levels
@@ -147533,6 +147573,7 @@ lockouts
 liquidations
 legality
 losses
+llamamos
 valued
 volatile
 volatility
@@ -151683,6 +151724,8 @@ veiled
 vastnesses
 volition
 vanquished
+voluntades
+viviente
 million
 matter
 market
@@ -156969,6 +157012,8 @@ mingles
 monuments
 minute
 maxims
+martillazo
+mortales
 New
 Nikkei
 Nasdaq
