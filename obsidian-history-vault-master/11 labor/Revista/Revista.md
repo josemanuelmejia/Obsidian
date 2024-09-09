@@ -32,3 +32,18 @@ Los carteles internacionales de capitalistas bancarios estatales, como la formac
 
 La defensa de la tierra y del agua como valores fundamentales para la reproducción de la vida humana y biodiversidad, es asumida por el campesinado como clase antagonista y antagónica cuya existencia es amenazada por la expansión de la frontera extractiva minera que destruye los ríos, lagunas, acuíferos y páramos, envenenando la tierra y toda la vida que nace de ella, con múltiples y mortales metales pesados como arsénico, cianuro y mercurio.
 
+
+
+_Historical Materialism_ is an interdisciplinary journal dedicated to exploring and developing the critical and explanatory potential of Marxist theory. The journal started as a project at the London School of Economics from 1995 to 1998. The advisory editorial board comprises many leading Marxists, including Robert Brenner, Maurice Godelier, Michael Lebowitz, Justin Rosenberg and others.  
+  
+Marxism has manifested itself in the late 1990s from the pages of the _Financial Times_ to new work by Fredric Jameson, Terry Eagleton and David Harvey. Unburdened by pre-1989 ideological baggage, _Historical Materialism_ stands at the edge of a vibrant intellectual current, publishing a new generation of Marxist thinkers and scholars.
+
+When submitting a revised manuscript, we insist that two versions of the revised manuscript are submitted. The first, to be submitted as a ‘Revised Manuscript (anonymized)’, should be a clean, readable version of the manuscript showing all changes as accepted. The second, to be submitted as a ‘Marked Manuscript (anonymized)’, should clearly indicate all deletions and additions by use of the ‘Track Changes’ function in Word. If both versions are not submitted, the manuscript may be returned to the author.
+
+Double-blinded Peer Review
+HIMA uses a double-blind peer review system, which means that manuscript author(s) do not know who
+the reviewers are, and that reviewers do not know the names of the author(s). When you submit your
+article via Editorial Manager, you will be asked to submit a separate title page which includes the full title of the manuscript, the names and complete contact details of all authors, the abstract, keywords,
+and any acknowledgement texts. This page will not be accessible to the referees. All other files
+(manuscript, figures, tables, etc.) should not contain any information concerning author names,
+institutions, etc. The names of these files and the document properties should also be anonymized.
