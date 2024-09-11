@@ -47,3 +47,5 @@ article via Editorial Manager, you will be asked to submit a separate title page
 and any acknowledgement texts. This page will not be accessible to the referees. All other files
 (manuscript, figures, tables, etc.) should not contain any information concerning author names,
 institutions, etc. The names of these files and the document properties should also be anonymized.
+
+Con todo el amor que te tengo me disculpo mucho por haberte negado una vez esa palabra, no era mi sentir.
