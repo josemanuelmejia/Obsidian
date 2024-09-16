@@ -7641,6 +7641,10 @@ cWNG
 cQFe
 cwIC
 comprises
+counting
+complementary
+carec
+calor
 UTC
 United
 Update
@@ -12869,6 +12873,7 @@ UQg
 UtYZ
 UEimJkSZ
 Unburdened
+Unique
 tags
 the
 table
@@ -18171,6 +18176,10 @@ tEtI
 tNlP
 tcqR
 texts
+takeovers
+triple
+tememos
+transiciones
 source
 stock
 see
@@ -24839,6 +24848,10 @@ szMm
 sDNgj
 sJEN
 submitted
+slide
+scan
+stablish
+sudor
 author
 at
 and
@@ -31569,6 +31582,12 @@ aNGU
 anonymized
 additions
 acknowledgement
+aggregated
+asumimos
+antepen
+aparta
+agon
+animando
 The
 Table
 Total
@@ -41198,6 +41217,7 @@ FIG
 FIZr
 FHr
 Fredric
+Fifth
 Reserve
 Release
 Reuters
@@ -60751,6 +60771,7 @@ EsuA
 Eqwt
 EMQD
 Eagleton
+Expresando
 Board
 Banks
 Borrow
@@ -75774,6 +75795,7 @@ GjhXw
 GDH
 GDyXz
 Godelier
+Good
 in
 international
 is
@@ -82061,6 +82083,13 @@ iVUfsv
 iETUw
 iKdF
 imcjK
+indirectly
+interdisciplinaria
+incumplida
+intelectualidad
+ideotizante
+inhumanamente
+inestimables
 Washington
 We
 Wg
@@ -96574,6 +96603,8 @@ fYY
 fUUU
 fVD
 files
+fantas
+forjaron
 Millions
 Mar
 May
@@ -107956,6 +107987,11 @@ dxNcD
 dUB
 deletions
 disculpo
+despiertos
+deliberando
+demandamos
+dudar
+dig
 end
 earmark
 economy
@@ -114166,6 +114202,10 @@ eKms
 eKX
 elX
 exploring
+exposici
+encarnada
+educ
+estremece
 period
 position
 positions
@@ -120973,6 +121013,8 @@ pPQm
 pDX
 pYtr
 peer
+pintado
+palpitar
 Special
 States
 Scroll
@@ -126153,6 +126195,7 @@ Sahbb
 SSHjR
 School
 Short
+Somos
 rights
 reserve
 report
@@ -132426,6 +132469,11 @@ revised
 readable
 reviewers
 referees
+register
+registered
+registering
+revindication
+rechazaban
 International
 IMF
 Industrial
@@ -147622,6 +147670,8 @@ hIE
 hZoE
 hZGO
 haberte
+hijas
+heredero
 under
 unprecedented
 us
@@ -157683,6 +157733,7 @@ njoH
 nBER
 names
 negado
+negaban
 gold
 generic
 global
@@ -162538,6 +162589,7 @@ gSZn
 gvoW
 guQ
 gIn
+generaciones
 line
 long
 levels
@@ -167755,6 +167807,7 @@ lNnJ
 lWh
 lFLk
 ltiy
+labeling
 valued
 volatile
 volatility
@@ -172431,6 +172484,8 @@ vaF
 vPEEs
 vICj
 vVHt
+verb
+vencemos
 million
 matter
 market
@@ -178410,6 +178465,10 @@ mxjA
 mGsx
 mKa
 manuscript
+merge
+muerta
+mecanicismo
+movemos
 New
 Nikkei
 Nasdaq
@@ -182806,6 +182865,7 @@ NlM
 NAA
 NXMJ
 NJfRMR
+Narodnaya
 Last
 Log
 Lee
@@ -202664,6 +202724,7 @@ PqBE
 PgPn
 PMQD
 Peer
+Prof
 year
 yields
 your
@@ -240505,6 +240566,7 @@ qpkzya
 qBBOhvaz
 qTtS
 qFFk
+quantitively
 jobs
 job
 joint
@@ -265045,6 +265107,8 @@ VZf
 VPIJ
 VrGedd
 VJq
+Voluntad
+Volya
 ZX
 Zy
 ZL
