@@ -25,7 +25,7 @@ Best wishes, and thanks again for the scholar communication, coming from a Marxi
 
 José Manuel
 
-Kevin,
+Kevin,  
 
 Fast update, in my draft I develop the Bukharin approach of imperialism on a world-economy dominated by the process of capital concentration, but mostly by its production and circulation processes centralization for finance capital reproduction, guaranteed by the monopolist control of bank state capitalists trusts over each “imperialist state” (I’m using quotes as it’s a problematic category which requires framework and context to be understood productively) and by means of their colonial policy -considering Lenin’s own aware of the political distinction between national liberation struggles and imperialists interventions–.
 
