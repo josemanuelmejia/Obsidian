@@ -1,7 +1,3 @@
-
-![[AltShiftV/video_Sep_13_2024_20-27-47_GMT.webm]]
-
-
 Good afternoon, at this opportunity I will offer to you a short presentation on the Protest Events Analysis method. {slide1}
 First of all, we requiere some agreement on a minimal operative definition of what a protest event is.
 A protest in this regard, is conceptualized as a kind of collective action featured by: (i) a public gathering of more than 10 participants, (ii) executing some disruptive performance, (iii) oriented to the satisfaction of a collective claim, (iv) by a political decision. {slide2}

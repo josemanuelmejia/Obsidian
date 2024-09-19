@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "aaa39b9448f25b2f",
+        "id": "33b47a25e1dbb6cc",
         "type": "tabs",
         "children": [
           {
-            "id": "138d5d77f23fdd60",
+            "id": "3a1a3f95400dafd9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/06 archives/Untitled.md",
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Antisystemic Effects of  Peasants AntimininAndeang Struggles_2024-07-18.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1186f1329830c70f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Correspondence September 19, 2024.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -105,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/06 archives/Untitled.md",
+                "file": "Correspondence September 19, 2024.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/06 archives/Untitled.md",
+                "file": "Correspondence September 19, 2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-history-vault-master/06 archives/Untitled.md"
+                "file": "Correspondence September 19, 2024.md"
               }
             }
           },
@@ -235,48 +248,15 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "floating": {
-    "id": "7b8e8191cbb4d4ba",
-    "type": "floating",
-    "children": [
-      {
-        "id": "70b8418b821a59d7",
-        "type": "window",
-        "children": [
-          {
-            "id": "5bd85d974af7cd7d",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "f4b36ac0ef6725eb",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "obsidian-history-vault-master/03 writing/documents/Drafts/Presentation ITA Monday September 16th, 2024 12hrs to 12hrs10m..md",
-                    "mode": "preview",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 36,
-        "y": 0,
-        "width": 1028,
-        "height": 620,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "138d5d77f23fdd60",
+  "active": "1186f1329830c70f",
   "lastOpenFiles": [
-    "obsidian-history-vault-master/11 labor/Revista/Revista.md",
-    "obsidian-history-vault-master/06 archives/Untitled.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Antisystemic Effects of  Peasants AntimininAndeang Struggles_2024-07-18.md",
+    "Correspondence September 19, 2024.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Presentation ITA Monday September 16th, 2024 12hrs to 12hrs10m..md",
+    "obsidian-history-vault-master/11 labor/TAship/Presentation ITA.pptx",
+    "obsidian-history-vault-master/11 labor/TAship/~$Presentation ITA.pptx",
+    "obsidian-history-vault-master/06 archives/Untitled.md",
+    "obsidian-history-vault-master/11 labor/Revista/Revista.md",
     "obsidian-history-vault-master/11 labor/Revista/~$tubre_version2.docx",
     "AltShiftV/video_Sep_13_2024_20-27-47_GMT.webm",
     "AltShiftV/video_Sep_13_2024_20-20-09_GMT.webm",
@@ -287,11 +267,8 @@
     "obsidian-history-vault-master/11 labor/Fellowships/Public Humanities/Profile for Public Humanists Fellows Program IHC.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/HIMA/~WRL3856.tmp",
     "obsidian-history-vault-master/03 writing/documents/Drafts/HIMA/~WRD3821.tmp",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/HIMA/~WRD3805.tmp",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/HIMA/~$bmission_HIMA_September11_2024.docx",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/esp-.md",
     "Cancion de amor.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Antisystemic Effects of  Peasants AntimininAndeang Struggles_2024-07-18.md",
     "obsidian-history-vault-master/11 labor/Revista/Publication Ethics & COPE Compliance.md",
     "obsidian-history-vault-master/06 archives/Comunicado FFAA.md",
     "obsidian-history-vault-master/06 archives/1er temario.png",
@@ -311,7 +288,6 @@
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Finalfinal draft.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Section1_JWSR_en.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Section1_es.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Section1_en.md",
     "OBSIDI~2/11LABO~1/FELLOW~1/Orfela/Application/People – Environmental JusticeClimate Justice – Orfalea Center for Global & International Studies/Widick-Headshot-2023.jpeg",
     "OBSIDI~2/11LABO~1/FELLOW~1/Orfela/Application/People – Environmental JusticeClimate Justice – Orfalea Center for Global & International Studies/Miranda-OBrian-Headshot-400px.jpg",
     "OBSIDI~2/11LABO~1/FELLOW~1/Orfela/Application/People – Environmental JusticeClimate Justice – Orfalea Center for Global & International Studies/Lauren-Gifford-Headshot-400px.jpg",
