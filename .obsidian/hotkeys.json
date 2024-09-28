@@ -158,5 +158,22 @@
       ],
       "key": "H"
     }
+  ],
+  "privacy-glasses:privacy-glasses-hide-private": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "A"
+    }
+  ],
+  "privacy-glasses:privacy-glasses-reveal-headlines": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "S"
+    }
   ]
 }
