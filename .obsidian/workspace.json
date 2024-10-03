@@ -4,18 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "d09df9c4792f46d6",
+        "id": "cb363d25f3e14112",
         "type": "tabs",
         "children": [
           {
-            "id": "de2bde4a65f06faa",
+            "id": "22daded954fb6634",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/The ceteris paribus for the fall in the rate of profit.md",
+                "file": "obsidian-history-vault-master/readme.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "typol",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -66,30 +66,30 @@
             }
           },
           {
+            "id": "54938419a507857e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hannah Wohl/Hannah Wohl.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "1d5aac17e84ef453",
             "type": "leaf",
             "state": {
               "type": "VIEW_TYPE_LONGFORM_EXPLORER",
               "state": {}
             }
-          },
-          {
-            "id": "09a675bc5655783a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "old_jun2024_nonclass/Draft JWSR.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 327.5
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/The ceteris paribus for the fall in the rate of profit.md",
+                "file": "obsidian-history-vault-master/readme.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/The ceteris paribus for the fall in the rate of profit.md",
+                "file": "obsidian-history-vault-master/readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/The ceteris paribus for the fall in the rate of profit.md"
+                "file": "obsidian-history-vault-master/readme.md"
               }
             }
           },
@@ -237,51 +237,52 @@
   },
   "active": "4156b5e5ac4c33be",
   "lastOpenFiles": [
-    "LS3 LTR Single Subject Notebook 4_0012.png",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Sarah Thebaud/Logics of inquiry.md",
-    "Correspondence September 19, 2024.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Fall 2023 UCSB Sociology MA courses/Fall 2023 UCSB Sociology MA courses.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/PS272_Syllabus_Fall2024_draft.pdf",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Global Governance Goals and Lessons for AI - Microsoft On the Issues.md",
-    "obsidian-history-vault-master/05 tasks/Week 2 Fall 2024.md",
-    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/The ceteris paribus for the fall in the rate of profit.md",
-    "obsidian-history-vault-master/05 tasks/shortcuts.md",
-    "AltShiftV/video_Sep_13_2024_20-19-58_GMT.webm",
-    "obsidian-history-vault-master/05 tasks/CV_JoseManuelMejia_mar_2024-1.pdf",
-    "obsidian-history-vault-master/05 tasks/Dictamen.md",
-    "obsidian-history-vault-master/05 tasks/WSJ submission.md",
-    "obsidian-history-vault-master/05 tasks/Indexación de la Revista de la Sociedad Peruana de Derecho Internacional (RSPDI).md",
-    "obsidian-history-vault-master/05 tasks/enter references from screening cuba.md",
-    "obsidian-history-vault-master/07 diary/Week 2 Fall 2024.md",
-    "obsidian-history-vault-master/07 diary/11222gro.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/~$submission_JWSR_August19_2024.docx",
-    "obsidian-history-vault-master/01 notes/morseChapterBuildingBlocks2024.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Morse y Coggins - 2024 - Your silence speaks volumes Weak states and strat.pdf",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Morse_2024_Chapter 2.pdf",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Morse y Pratt - 2022 - Strategies of Contestation International Law, Dom.pdf",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Morse - 2023 - Rule and Resistance in the Anti-globalization Era.pdf",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Julia C. Morse.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Global Governance Goals and Lessons for AI - Microsoft On the Issues/GlobalGov_Postcard-Front_UPDATED-225x300.jpg",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Global Governance Goals and Lessons for AI - Microsoft On the Issues",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Your silence speaks volumes.pdf",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Erika Saldivar/Erika Saldívar.md",
-    "obsidian-history-vault-master/07 diary/September 25, 2024.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Antisystemic Effects of  Peasants AntimininAndeang Struggles_2024-07-18.md",
-    "obsidian-history-vault-master/06 archives/recordings/LS3 LTR Single Subject Notebook 4_002.png",
-    "obsidian-history-vault-master/06 archives/recordings/LS3 LTR Single Subject Notebook 4_001.png",
-    "obsidian-history-vault-master/readme.md",
-    "obsidian-history-vault-master/06 archives/Untitled.md",
-    "obsidian-history-vault-master/06 archives/Gold/Dow falls more than 1,000 points in global market selloff - The Washington Post.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Presentation ITA Monday September 16th, 2024 12hrs to 12hrs10m..md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Gold world capital fund.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Draft.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Total reserves.PNG",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Total gold-capital reserves.PNG",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Total gold-capital reserves-China-US.png",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Second draft.md",
-    "obsidian-history-vault-master/06 archives/recordings/Tuesday, 24 September 2024_001.png",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Fig3.PNG",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Fig2.PNG",
+    "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/A Typology of the Publicly.md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Sarah Thebaud/Sociology 209A/Sociology 290A Professional Development Seminar.md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Sarah Thebaud/Sociology 209A/A_Field_Guide_to_Grad_School_Uncovering_the_Hidden..._----_(Introduction_).pdf",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Sarah Thebaud/Sociology 209A/A_Field_Guide_to_Grad_School_Uncovering_the_Hidden..._----_(Chapter_5._Staying_on_Track_in_Your_Program).pdf",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Sarah Thebaud/Sociology 209A/2023-24 Grad Student Handbook.pdf",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/Émile Durkheim, Karen Elise Fields (Transl.) - The Elementary Forms of Religious Life-Free Press (1995).pdf",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/SOC207A-Syll-F23.docx",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/SOC207A - Introduction to Sociology - Fall 2023.md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/Presentation JCM 7E.docx",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/Mejia-durkheimElementaryFormsReligious1995.docx",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/Marx graduate seminar-F24-Soc232-2.docx",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/Mariátegui 7E (1928).md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/Mariátegui 7E (1928).docx",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/Mariátegui 7E (1928) Presentation.docx",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/Kevin Anderson.md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/French Strikes and Popular Mobilizations Continue.md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/First paper Marx Chapter 1. Sec 1-2..md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/First paper Marx Chapter 1. Sec 1-2. 1.md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Dialectics.md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Julia C. Morse/Global Governance Goals and Lessons for AI - Microsoft On the Issues/GlobalGov_Postcard-Front_UPDATED-225x300.jpg",
+    "OBSIDI~2/09COUR~1/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/A Typology of the Publicly Engaged Humanities.md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Yağmur Ali Coşkun/Yağmur Ali Coşkun.md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Vernon Shawn/Vernon Shawn.md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/William Robinson/William Robinson.md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/William Robinson/UC-Santa Barbara email to William Robinson.md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/William Robinson/The feudality of the current global capitalism's material expansion  in the aftermath of the US long twentieth century.md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/William Robinson/Reply to Professor Robinson (UC-SB).md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/William Robinson/Interview to William Robinson.md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Sarah Thebaud/Sarah Thebaud.md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Sarah Thebaud/Logics of inquiry.md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Mehmet Gürsan Şenalp/Mehmet Gürsan Şenalp.md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Lisa Hajjar/Lisa Hajjar.md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Julia C. Morse/Julia C. Morse.md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Julia C. Morse/Global Governance Goals and Lessons for AI - Microsoft On the Issues.md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/John Foran/John Foran.md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Jason Turowetz/Week 4. Pragmatism and symbolic interactionism.md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Jason Turowetz/Week 3. Weber on the problem of meaning, social action, and power.md",
+    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Jason Turowetz/APP.png",
+    "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/A Typology of the Publicly Engaged Humanities/the-encounters-series-encountering-the-one-percent-2-580x-q90.jpg",
+    "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/A Typology of the Publicly Engaged Humanities/salinas-chinatown-history-project-lafollette-580x-q90.jpg",
+    "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/A Typology of the Publicly Engaged Humanities/i-m-still-surviving-new-blurred-essay-580x-q90.jpg",
+    "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/A Typology of the Publicly Engaged Humanities/clio-hero-580x-q90.jpg",
+    "OBSIDI~2/09COUR~1/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/A Typology of the Publicly Engaged Humanities  Humanities for All/the-encounters-series-encountering-the-one-percent-2-580x-q90.jpg",
+    "OBSIDI~2/09COUR~1/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/A Typology of the Publicly Engaged Humanities  Humanities for All/salinas-chinatown-history-project-lafollette-580x-q90.jpg",
+    "OBSIDI~2/09COUR~1/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/A Typology of the Publicly Engaged Humanities  Humanities for All/i-m-still-surviving-new-blurred-essay-580x-q90.jpg",
+    "OBSIDI~2/09COUR~1/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/A Typology of the Publicly Engaged Humanities  Humanities for All/clio-hero-580x-q90.jpg",
     "Untitled.canvas",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",
     "Mayra.canvas",

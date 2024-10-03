@@ -5,8 +5,8 @@
   "prompt": "",
   "language": "en",
   "saveAudioFile": true,
-  "saveAudioFilePath": "",
+  "saveAudioFilePath": "/Obsidian/Obsidian/obsidian-history-vault-master/06 archives/recordings",
   "debugMode": true,
   "createNewFileAfterRecording": true,
-  "createNewFileAfterRecordingPath": ""
+  "createNewFileAfterRecordingPath": "/Obsidian/Obsidian/obsidian-history-vault-master/06 archives/recordings/transcriptions"
 }
