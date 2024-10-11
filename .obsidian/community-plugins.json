@@ -25,7 +25,6 @@
   "translate",
   "language-translator",
   "deepl",
-  "whisper",
   "quick-latex",
   "obsidian-transcription",
   "obsidian-audio-notes",
@@ -37,5 +36,8 @@
   "obsidian-completr",
   "copy-as-latex",
   "swiftlatex-render",
-  "obsidian-pandoc"
+  "obsidian-pandoc",
+  "whisper",
+  "ai-summarize",
+  "notes-refresher"
 ]

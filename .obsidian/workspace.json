@@ -4,18 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "cb363d25f3e14112",
+        "id": "2e7632da82710ff2",
         "type": "tabs",
         "children": [
           {
-            "id": "22daded954fb6634",
+            "id": "27f5d526b83bf8a5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "obsidian-history-vault-master/readme.md",
-                "mode": "source",
-                "source": true
+                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Susan Derwin/Jacobson, “Afterword- The Doing of Doing Public Humanities” .pdf"
               }
             }
           }
@@ -48,8 +46,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "typol",
-                "matchingCase": false,
+                "query": "susan",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
                 "extraContext": false,
@@ -66,18 +64,6 @@
             }
           },
           {
-            "id": "54938419a507857e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hannah Wohl/Hannah Wohl.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "1d5aac17e84ef453",
             "type": "leaf",
             "state": {
@@ -89,7 +75,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 327.5
+    "width": 200
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -105,14 +91,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/readme.md",
+                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Susan Derwin/Jacobson, “Afterword- The Doing of Doing Public Humanities” .pdf",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -122,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/readme.md",
+                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Susan Derwin/Jacobson, “Afterword- The Doing of Doing Public Humanities” .pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-history-vault-master/readme.md"
+                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Susan Derwin/Jacobson, “Afterword- The Doing of Doing Public Humanities” .pdf"
               }
             }
           },
@@ -201,11 +187,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
+      "notes-refresher:Get note summaries": false,
       "translate:Open translation view": false,
       "publish:Publish changes...": false,
       "markdown-table-editor:Open Markdown Table Editor": false,
@@ -235,45 +221,47 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "4156b5e5ac4c33be",
+  "active": "d11fe171adcbc229",
   "lastOpenFiles": [
-    "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/A Typology of the Publicly.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/PS272_Syllabus_Fall2024_draft.pdf",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Morse_2024_Chapter 2.pdf",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Morse y Pratt - 2022 - Strategies of Contestation International Law, Dom.pdf",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Morse y Coggins - 2024 - Your silence speaks volumes Weak states and strat.pdf",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Morse - 2023 - Rule and Resistance in the Anti-globalization Era.pdf",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Microsoft_Morse_GlobalGovChapter_adapted.pdf",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/JuliaCMorse_CV_FullVersion2024.pdf",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Julia C. Morse.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Global Governance Goals and Lessons for AI - Microsoft On the Issues.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Global Governance Goals and Lessons for AI - Microsoft On the Issues/GlobalGov_Postcard-Front_UPDATED-225x300.jpg",
+    "Jacobson, “Afterword- The Doing of Doing Public Humanities”.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Susan Derwin/Jacobson, “Afterword- The Doing of Doing Public Humanities” .pdf",
+    "Summary Ellison.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Susan Derwin/Ellison - 2013 - Guest Column The New Public Humanists.pdf",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Susan Derwin/Ellison-week2.pdf",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Susan Derwin/ellisonGuestColumnNew2013.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Susan Derwin/ellisonGuestColumnNew2013.pdf",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Susan Derwin/Untitled.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Susan Derwin/Untitled 1.md",
+    "obsidian-history-vault-master/meta/zotero/research note.md",
+    "Untitled.md",
+    "obsidian-history-vault-master/06 archives/recordings/Tuesday, 24 September 2024_001.png",
+    "Notes.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Dialectics.md",
+    "October 4 recorded.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Finalfinal draft.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Graduate Program Handbook and Guidelines 2022-2023.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/Summary Week 2. A typology of the Publicly Engaged Humanities.md",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Sarah Thebaud/Sociology 209A/Sociology 290A Professional Development Seminar.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Sarah Thebaud/Sociology 209A/A_Field_Guide_to_Grad_School_Uncovering_the_Hidden..._----_(Introduction_).pdf",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Sarah Thebaud/Sociology 209A/A_Field_Guide_to_Grad_School_Uncovering_the_Hidden..._----_(Chapter_5._Staying_on_Track_in_Your_Program).pdf",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Sarah Thebaud/Sociology 209A/2023-24 Grad Student Handbook.pdf",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/Émile Durkheim, Karen Elise Fields (Transl.) - The Elementary Forms of Religious Life-Free Press (1995).pdf",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/SOC207A-Syll-F23.docx",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/SOC207A - Introduction to Sociology - Fall 2023.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/Presentation JCM 7E.docx",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/Mejia-durkheimElementaryFormsReligious1995.docx",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/Marx graduate seminar-F24-Soc232-2.docx",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/Mariátegui 7E (1928).md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/Mariátegui 7E (1928).docx",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/Mariátegui 7E (1928) Presentation.docx",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/Kevin Anderson.md",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/French Strikes and Popular Mobilizations Continue.md",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/First paper Marx Chapter 1. Sec 1-2..md",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/First paper Marx Chapter 1. Sec 1-2. 1.md",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Dialectics.md",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Julia C. Morse/Global Governance Goals and Lessons for AI - Microsoft On the Issues/GlobalGov_Postcard-Front_UPDATED-225x300.jpg",
-    "OBSIDI~2/09COUR~1/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/A Typology of the Publicly Engaged Humanities.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Yağmur Ali Coşkun/Yağmur Ali Coşkun.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Vernon Shawn/Vernon Shawn.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/William Robinson/William Robinson.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/William Robinson/UC-Santa Barbara email to William Robinson.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/William Robinson/The feudality of the current global capitalism's material expansion  in the aftermath of the US long twentieth century.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/William Robinson/Reply to Professor Robinson (UC-SB).md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/William Robinson/Interview to William Robinson.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Sarah Thebaud/Sarah Thebaud.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Sarah Thebaud/Logics of inquiry.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Mehmet Gürsan Şenalp/Mehmet Gürsan Şenalp.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Lisa Hajjar/Lisa Hajjar.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Julia C. Morse/Julia C. Morse.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Julia C. Morse/Global Governance Goals and Lessons for AI - Microsoft On the Issues.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/John Foran/John Foran.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Jason Turowetz/Week 4. Pragmatism and symbolic interactionism.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Jason Turowetz/Week 3. Weber on the problem of meaning, social action, and power.md",
+    "OBSIDI~2/09COUR~1/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/Summary Week 2. A typology of the Publicly Engaged Humanities.md",
+    "OBSIDI~2/09COUR~1/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/A Typology of the Publicly.md",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Jason Turowetz/APP.png",
     "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/A Typology of the Publicly Engaged Humanities/the-encounters-series-encountering-the-one-percent-2-580x-q90.jpg",
     "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/A Typology of the Publicly Engaged Humanities/salinas-chinatown-history-project-lafollette-580x-q90.jpg",
@@ -281,8 +269,6 @@
     "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/A Typology of the Publicly Engaged Humanities/clio-hero-580x-q90.jpg",
     "OBSIDI~2/09COUR~1/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/A Typology of the Publicly Engaged Humanities  Humanities for All/the-encounters-series-encountering-the-one-percent-2-580x-q90.jpg",
     "OBSIDI~2/09COUR~1/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/A Typology of the Publicly Engaged Humanities  Humanities for All/salinas-chinatown-history-project-lafollette-580x-q90.jpg",
-    "OBSIDI~2/09COUR~1/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/A Typology of the Publicly Engaged Humanities  Humanities for All/i-m-still-surviving-new-blurred-essay-580x-q90.jpg",
-    "OBSIDI~2/09COUR~1/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/A Typology of the Publicly Engaged Humanities  Humanities for All/clio-hero-580x-q90.jpg",
     "Untitled.canvas",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",
     "Mayra.canvas",

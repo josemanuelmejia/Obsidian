@@ -1,12 +1,12 @@
 {
-  "apiKey": "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",
+  "apiKey": "sk-svcacct-m8zcv4W62ycy_exraTsfYWexhYtldZePGrrTWCDvN35fnbgTzR54nxw_YX0_9x5T3BlbkFJFTr8_Yfxi4dw3_sms6Iuan2Gdt19_aQpJqaFu59VFFraRa_CbglP_peCOOqk-AA",
   "apiUrl": "https://api.openai.com/v1/audio/transcriptions",
   "model": "whisper-1",
   "prompt": "",
   "language": "en",
-  "saveAudioFile": true,
-  "saveAudioFilePath": "/Obsidian/Obsidian/obsidian-history-vault-master/06 archives/recordings",
-  "debugMode": true,
+  "saveAudioFile": false,
+  "saveAudioFilePath": "",
+  "debugMode": false,
   "createNewFileAfterRecording": true,
-  "createNewFileAfterRecordingPath": "/Obsidian/Obsidian/obsidian-history-vault-master/06 archives/recordings/transcriptions"
+  "createNewFileAfterRecordingPath": ""
 }

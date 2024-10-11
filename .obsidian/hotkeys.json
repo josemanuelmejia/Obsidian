@@ -175,5 +175,21 @@
       ],
       "key": "S"
     }
+  ],
+  "ai-summary:ai-summary": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "S"
+    }
+  ],
+  "ai-summarize:summarize-selection": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "S"
+    }
   ]
 }
