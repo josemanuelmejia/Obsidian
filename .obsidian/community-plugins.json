@@ -39,5 +39,6 @@
   "obsidian-pandoc",
   "whisper",
   "ai-summarize",
-  "notes-refresher"
+  "notes-refresher",
+  "gpg-encrypt"
 ]

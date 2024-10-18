@@ -4,20 +4,95 @@
     "type": "split",
     "children": [
       {
-        "id": "2e7632da82710ff2",
+        "id": "016e888f6b00eda4",
         "type": "tabs",
         "children": [
           {
-            "id": "27f5d526b83bf8a5",
+            "id": "80bc268a9f61bd26",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Susan Derwin/Jacobson, “Afterword- The Doing of Doing Public Humanities” .pdf"
-              }
+                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1.2..md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "KV1.2."
+            }
+          },
+          {
+            "id": "5e1cedd3ad771991",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "KV1.2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "KV1.2"
+            }
+          },
+          {
+            "id": "e2d4bb61b6eaa4eb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Presentation Outline.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Presentation Outline"
+            }
+          },
+          {
+            "id": "7b36d55a56cf19a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "KV1C2P179L15.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "KV1C2P179L15"
+            }
+          },
+          {
+            "id": "e3f9059207ce06ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "KV1C2P179L15.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "KV1C2P179L15"
+            }
+          },
+          {
+            "id": "46fac9494ae829c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "KV1C2P179L13.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "KV1C2P179L13"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -37,7 +112,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -46,13 +123,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "susan",
+                "query": "admission",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -60,7 +139,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           },
           {
@@ -68,14 +149,17 @@
             "type": "leaf",
             "state": {
               "type": "VIEW_TYPE_LONGFORM_EXPLORER",
-              "state": {}
+              "state": {},
+              "icon": "longform",
+              "title": "Longform"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -91,15 +175,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Susan Derwin/Jacobson, “Afterword- The Doing of Doing Public Humanities” .pdf",
-                "collapseAll": true,
+                "file": "Presentation Outline.md",
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": false
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Presentation Outline"
             }
           },
           {
@@ -108,10 +194,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Susan Derwin/Jacobson, “Afterword- The Doing of Doing Public Humanities” .pdf",
+                "file": "German.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from German"
             }
           },
           {
@@ -122,7 +210,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -131,8 +221,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Susan Derwin/Jacobson, “Afterword- The Doing of Doing Public Humanities” .pdf"
-              }
+                "file": "German.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of German"
             }
           },
           {
@@ -140,7 +232,9 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
-              "state": {}
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           },
           {
@@ -152,7 +246,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           },
           {
@@ -160,7 +256,9 @@
             "type": "leaf",
             "state": {
               "type": "transcript-view",
-              "state": {}
+              "state": {},
+              "icon": "scroll",
+              "title": "YouTube Transcript"
             }
           },
           {
@@ -168,7 +266,9 @@
             "type": "leaf",
             "state": {
               "type": "transcript-view",
-              "state": {}
+              "state": {},
+              "icon": "scroll",
+              "title": "YouTube Transcript"
             }
           },
           {
@@ -180,14 +280,17 @@
                 "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Antisystemic Effects of  Peasants AntimininAndeang Struggles_2024-07-18.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Antisystemic Effects of  Peasants AntimininAndeang Struggles_2024-07-18"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -221,47 +324,47 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "d11fe171adcbc229",
+  "active": "e2d4bb61b6eaa4eb",
   "lastOpenFiles": [
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/PS272_Syllabus_Fall2024_draft.pdf",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Morse_2024_Chapter 2.pdf",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Morse y Pratt - 2022 - Strategies of Contestation International Law, Dom.pdf",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Morse y Coggins - 2024 - Your silence speaks volumes Weak states and strat.pdf",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Morse - 2023 - Rule and Resistance in the Anti-globalization Era.pdf",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Microsoft_Morse_GlobalGovChapter_adapted.pdf",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/JuliaCMorse_CV_FullVersion2024.pdf",
+    "KV1C2P180L24.md",
+    "Presentation Outline.md",
+    "KV1C2P179L15.md",
+    "KV1C2P179L13.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1.2..md",
+    "KV1.2.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL0562.tmp",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD0551.tmp",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD0547.tmp",
+    "178-1.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL2410.tmp",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD2391.tmp",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Dialectics.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$tebook Marx Seminar October 2024-JM.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/MEJIA_Seed_grant2024_Application.pdf",
+    "German.md",
+    "Untitled.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Mx-late-CM-Pref-Russia-Shanin.pdf",
+    "obsidian-history-vault-master/02 analysis/annotated bibliography/MEM1864-1865/MEGA² II.4.2 - Karl Marx - Manuskripte 1863-1867 - Teil 2.pdf",
+    "obsidian-history-vault-master/02 analysis/annotated bibliography/MEM1864-1865",
+    "Morse 2019.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 3/jacobsonAfterwordDoingDoing2021.md",
+    "obisidian-history-vault-master/01 notes/jacobsonAfterwordDoingDoing2021.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 3/Jacobson Summary - Week 3 - Mejía, José Manuel.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/A Typology of the Publicly.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 3/Untitled.md",
+    "Jacobson, “Afterword- The Doing of Doing Public Humanities”.md",
+    "Summary Ellison.md",
+    "Notes.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Julia C. Morse.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Global Governance Goals and Lessons for AI - Microsoft On the Issues.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Global Governance Goals and Lessons for AI - Microsoft On the Issues/GlobalGov_Postcard-Front_UPDATED-225x300.jpg",
-    "Jacobson, “Afterword- The Doing of Doing Public Humanities”.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Susan Derwin/Jacobson, “Afterword- The Doing of Doing Public Humanities” .pdf",
-    "Summary Ellison.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Susan Derwin/Ellison - 2013 - Guest Column The New Public Humanists.pdf",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Susan Derwin/Ellison-week2.pdf",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Susan Derwin/ellisonGuestColumnNew2013.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Susan Derwin/ellisonGuestColumnNew2013.pdf",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Susan Derwin/Untitled.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Susan Derwin/Untitled 1.md",
     "obsidian-history-vault-master/meta/zotero/research note.md",
-    "Untitled.md",
     "obsidian-history-vault-master/06 archives/recordings/Tuesday, 24 September 2024_001.png",
-    "Notes.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Dialectics.md",
     "October 4 recorded.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Finalfinal draft.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Graduate Program Handbook and Guidelines 2022-2023.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/Summary Week 2. A typology of the Publicly Engaged Humanities.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Sarah Thebaud/Sociology 209A/Sociology 290A Professional Development Seminar.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/SOC207A - Introduction to Sociology - Fall 2023.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/Mariátegui 7E (1928).md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/Kevin Anderson.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/French Strikes and Popular Mobilizations Continue.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/First paper Marx Chapter 1. Sec 1-2..md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Sociological Theory/First paper Marx Chapter 1. Sec 1-2. 1.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Dialectics.md",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Julia C. Morse/Global Governance Goals and Lessons for AI - Microsoft On the Issues/GlobalGov_Postcard-Front_UPDATED-225x300.jpg",
-    "OBSIDI~2/09COUR~1/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/Summary Week 2. A typology of the Publicly Engaged Humanities.md",
-    "OBSIDI~2/09COUR~1/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/A Typology of the Publicly.md",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Jason Turowetz/APP.png",
     "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/A Typology of the Publicly Engaged Humanities/the-encounters-series-encountering-the-one-percent-2-580x-q90.jpg",
     "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/A Typology of the Publicly Engaged Humanities/salinas-chinatown-history-project-lafollette-580x-q90.jpg",
