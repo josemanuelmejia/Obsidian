@@ -12,5 +12,6 @@
     "downscalePercent": 98
   },
   "showRibbon": false,
-  "promptDelete": false
+  "promptDelete": false,
+  "showLineNumber": true
 }
