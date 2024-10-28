@@ -4,68 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "885721166c6beaa7",
+        "id": "8d734bb888bedc19",
         "type": "tabs",
         "children": [
           {
-            "id": "4afa05f4be44d78f",
+            "id": "c5d01eec6af12b9a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2.md",
+                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "KV1C2"
-            }
-          },
-          {
-            "id": "3f7098360e42b714",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "KV1C3.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "KV1C3"
-            }
-          },
-          {
-            "id": "c281b49acc91f8b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Indications of the de-dollarization process in the world. Through a special review of BRICS economies.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Indications of the de-dollarization process in the world. Through a special review of BRICS economies"
-            }
-          },
-          {
-            "id": "c5679c999d4558be",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "KV1C3P188.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "KV1C3P188"
+              "title": "KV1C2C3"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "admission",
+                "query": "boyte",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -296,23 +252,32 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "c281b49acc91f8b9",
+  "active": "c5d01eec6af12b9a",
   "lastOpenFiles": [
-    "KV1C3.md",
-    "Indications of the de-dollarization process in the world. Through a special review of BRICS economies.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL0527.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD0511.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$JIA-Presentation Outline_KV1C2C3.docx",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL3400.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD3384.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL3507.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD3495.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL1470.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD1454.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL3165.tmp",
-    "KV1C3P188.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/HIMA/The mystery of globalization as a commodity.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Dialectics.md",
+    "obisidian-history-vault-master/The mystery of globalization as a commodity.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/HIMA/~$bmission_HIMA_September11_2024.docx",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/HIMA/GOLD AND MONEY AS CAPITAL.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Editorial decision 2.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Draft.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/INT201HTSyllabus 2024 .pdf",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Editorial decision 2.md.txt",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Editorial decision 2.txt",
+    "Boyte summary.md",
+    "~$jia - Summary Week 5.docx",
+    "~WRL0005.tmp",
+    "~WRD0004.tmp",
+    "Mejia - Summary Week 5.docx",
+    "~$yte summary.docx",
+    "~WRL0003.tmp",
+    "obsidian-history-vault-master/01 notes/BoyteEducatingCitizen.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 4/Boyte, “Educating the Citizen Professional”.docx.md",
+    "obsidian-history-vault-master/02 analysis/annotated bibliography/Gold reserves/The lies of Kremlin about the “de-dollarization” of the global economy.md",
+    "Indications of the de-dollarization process in the world. Through a special review of BRICS economies.md",
+    "KV1C3.md",
+    "KV1C3P188.md",
     "Untitled 1.md",
     "Untitled 2.md",
     "Untitled.md",
@@ -325,15 +290,6 @@
     "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Personal History and Diversity Statement.md",
     "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Cartas de recomendación University California - Santa Bárbara.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Applications/UCSB Sociology MA PhD/Writting sample.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Applications/UCSB Sociology MA PhD/The first paragraph of your introduction.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Applications/UCSB Sociology MA PhD/Open House recruitment event.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Applications/UCSB Sociology MA PhD/Statement of Purpose.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Applications/UCSB Sociology MA PhD/Personal History and Diversity Statement.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Applications/UCSB Sociology MA PhD/Open House for Admitted Students Sociology MA, PhD.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Applications/UCSB Sociology MA PhD/Cartas de recomendación University California - Santa Bárbara.md",
-    "KV1C2P186L24.md",
-    "KV1C2P187L9.md",
-    "KV1C2P182L34.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Global Governance Goals and Lessons for AI - Microsoft On the Issues/GlobalGov_Postcard-Front_UPDATED-225x300.jpg",
     "obsidian-history-vault-master/06 archives/recordings/Tuesday, 24 September 2024_001.png",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Julia C. Morse/Global Governance Goals and Lessons for AI - Microsoft On the Issues/GlobalGov_Postcard-Front_UPDATED-225x300.jpg",

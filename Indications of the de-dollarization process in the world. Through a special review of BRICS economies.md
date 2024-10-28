@@ -25,7 +25,7 @@ Tokom npomeKAnx mpugecem nem roguHa, KuHa je 6nAa jegHa og naj6pxe pacmy-hux ycn
 Ako mo carAegaMo Kpo3 eKoHoMcKu najaMe eKoHoMuje cBema CAA, Ey u KuHe u3 2023. roguHe goAap ce npo^ayje Ha 88% cbux Mefyynapognux mpanca^uja, eBpo ca 31% je caMo cKpoMaH KonKypenm (nommo mpanca^uja Moxe yKAyMUBamu gBe BaAyme, ykynaH 6poj Moxe ga npefye 100%). EBpo, 3a pa3AHky og goAapa, nnkaga Hehe 6umu Be3aH 3a jegny Ha^uoHaAHy BAagy. JyaH ce npo^ayje Ha caMo 7% og ykynHor 6poja Mefyynapognux mpanca^uja a muhu ce ga KuHa Huje BoAna ga omBopu cBoja mpxnmma KanumaAa, jep 6u mo MorAo goBecmu go 6p3or ogAHBa KanumaAa u Moryhe ^unancujcKe Kpu3e. Aar 6e3 omBopennx mpxnmma KanumaAa, jyan Huje jak Kangugam 3a rAo6aAny pe-2
 3epBHy BaAymy.2
 C o63upoM na BeAHMuny knnecKe eKonoMuje, Kuneckn 6anKapckn cucmeM ce 3na-Majno npomupuo tokom npomekAe ge^nuje (CuAKoBuh 2016). KoncoAngoBana umo-Buna 6anKapcKor cucmeMa (yKAyMyjyhu cpegcmBa y KuneckHM npeKoMopckHM $nAuja-AaMa u nogpyxnu^Ma 6anaka) ogroBapaAa je oko 240% BAn-a na Kpajy 2011. rognne y ognocy na oko 200% na noMemKy 21. BeKa, Kao mmo je npnka3ano na ca^u 3 ucnog
-1 H3Bop: https://ideas.repec.Org/p/imf/imfwpa/2022-058.html)
+1 H3Bop: [https://ideas.repec.Org/p/imf/imfwpa/2022-058.html])
 2 H3Bop: https://www.bloomberg.com/opinion/articles/2023-04-13/the-dollar-rules-the-world-now-
 -and-for-the-foreseeable-future
 Ha3Hake upoueca gegoAapu3auuje y cBemy - kpo3 noceSaH ocBpm Ha ekOHOMuje BPUKC'-a
