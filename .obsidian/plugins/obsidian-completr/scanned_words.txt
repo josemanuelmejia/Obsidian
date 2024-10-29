@@ -8434,6 +8434,7 @@ concretely
 cSQA
 cnlj
 cumbersome
+coinage
 UTC
 United
 Update
@@ -19886,6 +19887,9 @@ talent
 transcript
 tridimensional
 tZCw
+treats
+territorially
+transient
 source
 stock
 see
@@ -27162,6 +27166,7 @@ stupid
 sjVY
 sQRn
 syntax
+slight
 author
 at
 and
@@ -34642,6 +34647,8 @@ adgK
 aTj
 aIYS
 allowing
+alienable
+alteration
 The
 Table
 Total
@@ -45130,6 +45137,7 @@ Forgotten
 Feuer
 Fung
 Fej
+Fixing
 Reserve
 Release
 Reuters
@@ -105698,6 +105706,7 @@ fatherhood
 flower
 fruition
 frSL
+finishes
 Millions
 Mar
 May
@@ -118205,6 +118214,12 @@ definitional
 delineated
 detour
 dissection
+debasing
+debase
+disturbs
+duplication
+defining
+detrimental
 end
 earmark
 economy
@@ -167130,6 +167145,7 @@ utilitarianism
 uninterested
 urnE
 uTXh
+unchanged
 not
 no
 newsletter
@@ -195466,6 +195482,7 @@ memberships
 mgSR
 maUQ
 moreso
+motorcycle
 New
 Nikkei
 Nasdaq
@@ -216415,6 +216432,7 @@ beer
 bipartisan
 byHOb
 blxxse
+ballot
 Published
 PM
 People
