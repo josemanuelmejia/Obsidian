@@ -26,22 +26,24 @@ With the liberalization of gold price, since 1971, the total monetary system deb
 
 B.    Marx, Karl. [1969] 1976. “Chapter 3. Money, or the Circulation of Commodities.” Pp. 188–244 in _Capital. A critique of political economy_. Vol. 1. New York: Penguin Books.
 
+The Chapter 3 of Capital explains the social functions executed by money in the circulation process. Marx distinguished money, first, as measure of value, as the social incarnation of labour expressing in price or money-form an imaginary quantity of gold ideally equivalent to the labour time socially necessary for the production of the correspondent amount of standard units of price defined by a fixed weight of gold. Which became the universal equivalent commodity and indeed the money-commodity. 
+
+"Money as a measure of value is the necessary form of appearance of the measure of value which is immanent in commodities, namely labour time" [[KV1C3P188L14]].
 "The ***expression of the value of a commodity in gold*** is its ***money-form or price***" [[KV1C3P189L1]].
-
 "The price or money-form of commodities is, like their form of value generally, quite distinct from their palpable and real bodily form; it is therefore a purely ideal or notional form" [[KV1C3P189L21]].
-
 "In its function as **measure of value**, money therefore serves only in an  imaginary or ideal capacity. [...] But, although the **money that performs the functions of a measure of value is only imaginary**, the ***price depends  entirely on the actual substance that is money***" [[KV1C3P190L6]].
+
+The second role of money in the circulation process is being also the elementary form of the standard of price, its actual substance that is gold required an stable measure. For gold, as was already the money-commodity, its measurement standards were translated to the sphere of circulation, as happened with the ounce of gold.
 
 "The price-form therefore implies both the exchangeability of commodities for money and the necessity of exchanges. On the other hand, gold serves as an *ideal measure of value* only because it has already established itself as the money commodity in the process of exchange" [[KV1C3P198L8]].
 
 "As measure of value, and as standard of price, money performs two quite different functions. It is the *measure of value* as the *social* incarnation of human labour; it is the standard of price as a quantity of metal with a fixed weight. As the *measure of value* it serves to convert the values of all the manifold commodities into prices, into *imaginary quantities of gold*; as the standard of price it measures those quantities of gold. The measure of values measures commodities considered as values; the standard of price  measures, on the contrary, quantities of gold by a unit quantity of gold, [...] a certain weight of gold [...] fixed as the unit of measurement" [[KV1C3P192L5]].
 
+While the imaginary, ideal, character of the money-form of value or price of the commodities, highlight the fictitious essence of money and its permanent expulsion from the circulation process of commodities (C-M-C); the relevance of the analysis of the standard of price for the study of the reproduction crisis of finance capital may be critical for the development of theoretical assumptions build over Marx's critique to the political economy of the bourgeoisie society, considering the reforms to the gold standard of the international monetary system during 1968 and 1971.
 
 "Price is the money-name of the labour objectified in a commodity" [[KV1C3P195L20]].
 
 The process of exchange finishes in the realization of commodities as exchange-values. So, it is by consumption, which for the particular formation of interest (bourgeois society) is realized with the payment of the commodity price (C): as the magnitude of the general measure of the exchange value for every commodity produced by, for, and as, capital [[KV1C3P255L10]].
-
-
 
 Standard of price as Metallic-money
 Money as standard of price
@@ -60,11 +62,7 @@ Metabolism as Nature is
 By the realization of the exchange process, by the purchase of a commodity, the use-value produced as a commodity for capital reproduction can be appropriated. Indeed, the circulation of the commodities and its transubstantiation into money, differentiates in their scale of exchange. The chance or social accident by which the circuit M-C-M' is obstructed mediate between the necessary conversion of commodities into money.
 
 "But what is the commodity exchanged for? For the universal shape assumed by its own value. And what is the gold exchanged for? For a particular form of its own use-value" [[KV1C3P203L17]].
-
 The particular form of gold use-value, which Marx is referring to is the standard of price, which is a fixed weight of gold (i.e. an ounce of gold) operating as the unit of expression shared by their comparable magnitudes of price [[KV1C3P192L5]].
-
-
-
 
 "The commodity is divested of its original form through its sale, i.e. -the moment its use-value actually attracts the gold, which previously had a merely imaginary existence in its price. The  realization of a commodity's price, or of its merely ideal value form, is therefore at the same time, and inversely, the realization of the merely ideal use-value of money; the conversion of a commodity into money is the conversion - of money into a commodity. This single process is two-sided: from one pole, that of the commodity-owner, it is a sale, from the other pole, that of the money-owner, it is a purchase. In other words, a sale is a purchase, C-M is also M-C" [[KV1C3P203L22]].
 

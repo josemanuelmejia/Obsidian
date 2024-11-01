@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "boyte",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -83,7 +83,8 @@
               "title": "Longform"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -254,25 +255,26 @@
   },
   "active": "b15aecd5de0894ff",
   "lastOpenFiles": [
-    "KV1C3P213L30.md",
+    "obsidian-history-vault-master/07 diary/los heraldos negros de Cesar Vallejo (1918).md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3.md",
+    "Recording 20241010004949.webm",
+    "Recording 20241010011332.webm",
+    "Recording 20241010011403.webm",
+    "Recording 20241010012348.webm",
+    "Recording 20241010012348-converted.mp3",
+    "PRS-000001922b46fd91.mp4",
+    "AltShiftV/video_Nov_01_2024_00-01-57_GMT.webm",
+    "KV1C3P213L30.md",
     "KV1C3P189L21.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3.pdf",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/mso13C6.tmp",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$V1C2C3.docx",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3.docx",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$JIA-Presentation Outline_draft_KV1C3.docx",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$JIA-Presentation Outline_draft_KV1C2.docx",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Dialectics.md",
     "obisidian-history-vault-master/The mystery of globalization as a commodity.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/HIMA/~$bmission_HIMA_September11_2024.docx",
     "obsidian-history-vault-master/03 writing/documents/Drafts/HIMA/GOLD AND MONEY AS CAPITAL.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Editorial decision 2.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Draft.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/INT201HTSyllabus 2024 .pdf",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Editorial decision 2.md.txt",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Editorial decision 2.txt",
     "Boyte summary.md",
     "obsidian-history-vault-master/01 notes/BoyteEducatingCitizen.md",
     "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 4/Boyte, “Educating the Citizen Professional”.docx.md",
@@ -289,7 +291,6 @@
     "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Writting sample.md",
     "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Open House recruitment event.md",
     "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Statement of Purpose.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Applications/UCSB Sociology MA PhD/Personal History and Diversity Statement.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Global Governance Goals and Lessons for AI - Microsoft On the Issues/GlobalGov_Postcard-Front_UPDATED-225x300.jpg",
     "obsidian-history-vault-master/06 archives/recordings/Tuesday, 24 September 2024_001.png",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Julia C. Morse/Global Governance Goals and Lessons for AI - Microsoft On the Issues/GlobalGov_Postcard-Front_UPDATED-225x300.jpg",
