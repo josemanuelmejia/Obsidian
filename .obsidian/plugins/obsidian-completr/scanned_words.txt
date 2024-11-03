@@ -8896,6 +8896,11 @@ cuYu
 cced
 cmAB
 cXmy
+contractual
+calculated
+culminar
+calentamiento
+calentarse
 UTC
 United
 Update
@@ -15081,6 +15086,7 @@ UdNo
 UYDU
 USuP
 UsQxjP
+Ukrainian
 tags
 the
 table
@@ -21440,6 +21446,7 @@ txbg
 tnua
 tKXJ
 tJE
+temperatura
 source
 stock
 see
@@ -29242,6 +29249,9 @@ spIT
 sJev
 sXZu
 sXFjp
+soul
+suppliers
+suggestive
 author
 at
 and
@@ -37285,6 +37295,8 @@ aPi
 aAfp
 aFQw
 aTynM
+arsenals
+advertisements
 The
 Table
 Total
@@ -42904,6 +42916,8 @@ TjNH
 TpBv
 TIsj
 TcIA
+TASS
+Technical
 Fed
 Federal
 Feb
@@ -54804,6 +54818,9 @@ RYoF
 RHZq
 RHpd
 RPRÖ
+Richardson
+Remarks
+Reading
 Assets
 Asset
 Apr
@@ -61247,6 +61264,9 @@ AqRT
 ABvKi
 ABVk
 AXCws
+Appearing
+Ambassador
+Actual
 July
 Jan
 Jun
@@ -78127,6 +78147,7 @@ Bhc
 BToc
 BnRM
 Bet
+Become
 of
 outstanding
 on
@@ -84517,6 +84538,7 @@ oidg
 oMzw
 oWQh
 oEab
+obstruyendo
 Governors
 Gold
 Gift
@@ -97812,6 +97834,10 @@ iodCC
 irTU
 ijmV
 ideally
+individualized
+immanence
+imparable
+insectos
 Washington
 We
 Wg
@@ -109024,6 +109050,8 @@ DQCx
 DpqF
 Drzbf
 DXpzCI
+Descartes
+Diplomacy
 footnote
 for
 foreign
@@ -121477,6 +121505,7 @@ MVIkQ
 Mttm
 MVkWLO
 MyYJ
+Matter
 dollars
 drawing
 data
@@ -128780,6 +128809,8 @@ dvEH
 dbll
 dpKW
 dblw
+depreciate
+demora
 end
 earmark
 economy
@@ -136233,6 +136264,8 @@ eTCjm
 eUwV
 ezDW
 eLuX
+envoy
+elaboro
 period
 position
 positions
@@ -144277,6 +144310,11 @@ pmtH
 poan
 phegP
 pxJO
+peut
+pour
+priced
+preface
+pron
 Special
 States
 Scroll
@@ -150512,6 +150550,9 @@ SKIM
 SsZC
 SUjl
 SHgl
+Sauve
+Sprinchan
+Sullivan
 rights
 reserve
 report
@@ -157948,6 +157989,10 @@ rKWo
 rFDl
 rKRt
 rQw
+rationalism
+repairs
+repairing
+redirige
 International
 IMF
 Industrial
@@ -163726,6 +163771,7 @@ IrZg
 IHjQ
 IClF
 IOvy
+Inorganic
 Currencies
 China
 CHINA
@@ -170193,6 +170239,11 @@ CVmi
 CTIrj
 CCHC
 CiuR
+Cooperation
+Commander
+Critique
+Celsius
+Comparar
 held
 holdings
 height
@@ -176126,6 +176177,7 @@ hplG
 hRFS
 hyNtb
 hgdE
+hardware
 under
 unprecedented
 us
@@ -181905,6 +181957,7 @@ uGNq
 umBo
 uDSrUW
 uKpd
+unacknowledged
 not
 no
 newsletter
@@ -188097,6 +188150,7 @@ nMXp
 nEge
 nDVE
 nwIT
+noreste
 gold
 generic
 global
@@ -205767,6 +205821,8 @@ vmUp
 vkiI
 vQKA
 vKqb
+vivre
+valorized
 million
 matter
 market
@@ -212764,6 +212820,7 @@ mUEVf
 mQPdm
 mbaX
 mSkc
+multiplicaci
 New
 Nikkei
 Nasdaq
@@ -218152,6 +218209,7 @@ NvhX
 Nwf
 NcwQO
 NRWe
+Noboa
 Last
 Log
 Lee
@@ -241871,6 +241929,7 @@ PMDu
 PEwM
 PfX
 PamF
+Primicias
 year
 yields
 your
@@ -264187,6 +264246,8 @@ HQXK
 HaSJ
 HvpbP
 HQyH
+HAVANA
+Hemisphere
 keywords
 keeping
 kRg
@@ -281025,6 +281086,7 @@ KZFct
 KVrb
 KfSB
 KqrT
+Kant
 question
 qdk
 qqO
