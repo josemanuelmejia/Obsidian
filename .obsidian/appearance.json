@@ -1,12 +1,13 @@
 {
   "accentColor": "#00ff33",
-  "baseFontSize": 24,
+  "baseFontSize": 26,
   "cssTheme": "Terminal",
   "theme": "obsidian",
   "textFontFamily": "Source Code Pro,Times New Roman",
   "interfaceFontFamily": "Source Code Pro,Times New Roman",
   "monospaceFontFamily": "Source Code Pro,Times New Roman",
-  "baseFontSizeAction": true,
-  "nativeMenus": true,
-  "translucency": false
+  "baseFontSizeAction": false,
+  "nativeMenus": false,
+  "translucency": false,
+  "showViewHeader": false
 }
