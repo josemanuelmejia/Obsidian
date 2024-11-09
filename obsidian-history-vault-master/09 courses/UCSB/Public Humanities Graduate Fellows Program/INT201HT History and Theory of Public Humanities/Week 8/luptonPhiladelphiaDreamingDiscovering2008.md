@@ -99,3 +99,9 @@ Building the linguistic, logical, critical, and expressive skills of these young
 
 
 %% Import Date: 2024-11-08T06:43:07.166-08:00 %%
+
+Tradaptation. Different than translation.
+
+History and literature.
+
+ 

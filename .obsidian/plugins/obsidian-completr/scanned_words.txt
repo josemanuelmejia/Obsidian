@@ -8924,6 +8924,9 @@ contends
 colonialist
 constituents
 complicity
+cssclasses
+cumulate
+cutural
 UTC
 United
 Update
@@ -21483,6 +21486,7 @@ theatrical
 tighter
 templates
 temptation
+trascend
 source
 stock
 see
@@ -29308,6 +29312,7 @@ situate
 suffocate
 silencing
 sectarianism
+sincere
 author
 at
 and
@@ -78268,6 +78273,7 @@ BUQg
 BitsPerSample
 BoQQoE
 Breaking
+Blurring
 of
 outstanding
 on
@@ -136493,6 +136499,8 @@ eloquence
 epistemologically
 evoked
 educator
+epistemology
+enuntiation
 period
 position
 positions
@@ -144561,6 +144569,9 @@ periphery
 prejudicial
 privilege
 paralyzing
+proportionally
+positionality
+prejudices
 Special
 States
 Scroll
@@ -158262,6 +158273,7 @@ relegating
 relativistic
 renouncing
 revealer
+resr
 International
 IMF
 Industrial
@@ -182255,6 +182267,8 @@ umich
 uneasiness
 undoubtedly
 unscientific
+uncertainity
+undeniable
 not
 no
 newsletter
@@ -206145,6 +206159,7 @@ valorization
 validated
 validating
 victim
+validate
 million
 matter
 market
@@ -270351,6 +270366,8 @@ ktyx
 kmRCN
 kNRM
 khep
+knowldge
+knowldege
 Quincy
 QK
 Qv
