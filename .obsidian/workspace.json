@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "300288ab3dd71e60",
+        "id": "2da2101ce6e1626e",
         "type": "tabs",
         "children": [
           {
-            "id": "d31f10b17cde9600",
+            "id": "f9d8958d5a8d5be3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/Hoai-An Nguyen.md",
+                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_v2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Hoai-An Nguyen"
+              "title": "KV1C2C3_v2"
             }
           }
         ]
@@ -87,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -218,8 +219,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -253,28 +253,30 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "d31f10b17cde9600",
+  "active": "f9d8958d5a8d5be3",
   "lastOpenFiles": [
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/On Arrighi (1994).md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C3P188F1L1.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_v2.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C3S1.doc",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL0002.tmp",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD0001.tmp",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD0000.tmp",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$V1C3Sa.doc",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C3Sa.doc",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/Hoai-An Nguyen.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/On Arrighi (1994).md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/Hoai-An Nguyen (old).md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/Discussion of Weber.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/38C12500",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Quotes JMM.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_v2.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Quotes JMM.xlsx",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$Quotes JMM.xlsx",
     "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 8/luptonPhiladelphiaDreamingDiscovering2008.md",
     "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 7/leistynaPresenceMindProcess2004.md",
     "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 7/week 7 summary.md",
     "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 7/~$ek 7 summary.docx",
-    "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 7/week 7 summary.docx",
-    "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 7/Leistyna_2004_Presence of Mind.pdf",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Sarah Thebaud/Sociology 209A/Sociology 290A Professional Development Seminar.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Sarah Thebaud/Sociology 209A/A_Field_Guide_to_Grad_School_Uncovering_the_Hidden..._----_(Introduction_).pdf",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Sarah Thebaud/Sociology 209A/A_Field_Guide_to_Grad_School_Uncovering_the_Hidden..._----_(Chapter_5._Staying_on_Track_in_Your_Program).pdf",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Sarah Thebaud/Sociology 209A/2023-24 Grad Student Handbook.pdf",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$JIA-Presentation Outline_draft_KV1C2C3.docx",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/t.md",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_v2.md",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3.md",
@@ -290,8 +292,6 @@
     "OBSIDI~2/09COUR~1/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 3/Untitled.md",
     "OBSIDI~2/09COUR~1/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 3/jacobsonAfterwordDoingDoing2021.md",
     "OBSIDI~2/09COUR~1/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 3/Jacobson Summary - Week 3 - Mejía, José Manuel.md",
-    "OBSIDI~2/09COUR~1/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 4/Boyte, “Educating the Citizen Professional”.docx.md",
-    "OBSIDI~2/09COUR~1/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 2/Summary Week 2..md",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Jason Turowetz/APP.png",
     "LS3 LTR Single Subject Notebook 4_0012.png",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Global Governance Goals and Lessons for AI - Microsoft On the Issues/GlobalGov_Postcard-Front_UPDATED-225x300.jpg",
