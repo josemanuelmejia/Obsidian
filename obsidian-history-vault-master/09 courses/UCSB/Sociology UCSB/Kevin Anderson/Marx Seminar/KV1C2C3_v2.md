@@ -1,5 +1,7 @@
 _Devil lives in the details._
-In Chapter 2 of Capital Vol 1., Marx was tracing the determinants of the exchange process, particular for bourgeois society, in its initial conditions. Which begins with the social movement of commodities, by one side, and money in the other extreme of exchange relations.
+In Chapter 2 of Capital Vol 1., Marx was tracing the determinants of the exchange process, particular for bourgeois society, in its initial conditions. Which begins with the social mo
+![[AltShiftV/video_Nov_12_2024_09-52-46_GMT.webm]]
+vement of commodities, by one side, and money in the other extreme of exchange relations.
 The first distinction presented by Marx as a determinant of the exchange process of the bourgeoisie society is the differentiation between the commodity and the bearer. For the [bearer] his commodity possesses no direct use-value %%[[KV1C2P179L13]]%%. For himself, it is only use-value as mean of exchange %%[[KV1C2P179L15]]%%.
 The second, is the determination of a universal equivalent as a consequence of the expansion of the exchange process. From the perspective of the individual, each of the bearers treats his own commodity in exchange as the universal equivalent for all other commodities.
 The third one corresponds to the transformation of gold, the money-commodity, into monetarized capital. In the transition between the exchange of use-values, and the exchange of commodities, there is a determinant detail. And more than a detail, the particularity of the exchange process, an original mistake, a social accident, acted first then thought, to treat something, that is not for being appropriated as a commodity, as if it was a commodity.
