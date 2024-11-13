@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2da2101ce6e1626e",
+        "id": "e8ed047c9fb942cd",
         "type": "tabs",
         "children": [
           {
-            "id": "f9d8958d5a8d5be3",
+            "id": "c97ec37b5c792470",
             "type": "leaf",
             "state": {
-              "type": "video",
+              "type": "markdown",
               "state": {
-                "file": "AltShiftV/video_Nov_12_2024_09-52-46_GMT.webm"
+                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_v2.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "video_Nov_12_2024_09-52-46_GMT"
+              "title": "KV1C2C3_v2"
             }
           }
         ]
@@ -85,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -216,7 +219,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -250,13 +254,13 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "4156b5e5ac4c33be",
+  "active": "c97ec37b5c792470",
   "lastOpenFiles": [
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$1C3S2A.doc",
+    "AltShiftV/video_Nov_12_2024_09-52-46_GMT.webm",
     "AltShiftV/video_Nov_12_2024_09-52-46_GMT.mp4",
     "AltShiftV/video_Nov_01_2024_00-01-57_GMT.webm",
-    "AltShiftV/video_Nov_12_2024_09-52-46_GMT.webm",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_v2.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$1C3S2A.doc",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL0004.tmp",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD0003.tmp",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C3S2A.doc",
