@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a416ea6ca188fec2",
+        "id": "b90962a794179db7",
         "type": "tabs",
         "children": [
           {
-            "id": "aea13ee429f1fb36",
+            "id": "25dd3762e5814603",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -250,8 +250,9 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "aea13ee429f1fb36",
+  "active": "25dd3762e5814603",
   "lastOpenFiles": [
+    "Untitled.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_v2.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL0001.tmp",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD0000.tmp",
