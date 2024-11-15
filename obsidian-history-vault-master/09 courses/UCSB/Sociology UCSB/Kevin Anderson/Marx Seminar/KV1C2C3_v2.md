@@ -32,14 +32,28 @@ The circulation of money, on the other hands, is determined by the circulation o
 %% 2626:167 p 210, KV1C3P211L21 en Karl Marx - Capital, Volume 1
 https://go.atlasti.com/b0853060-83cf-45ff-8c33-f41b894b4007/documents/6bf9416f-b560-46d7-845c-8071da674a66/quotations/bf299081-c9e5-400e-8d9a-b662ae00ae80 %%
 The circuit of money is the expression of the circuit of commodities, so on Marx rised the question about how much money is being absorbed by the circulation of commodities? %%[[KV1C3P213L3]][[KV1C3P216L2]][[KV1C3P216L30]]%%, introducing in that manner circulation time as a determinant of the **ratio between** the velocity of the circulation of commodities and the velocity of circulation of money.
-So, if the total quantity of money circulating, is determined by the total sum of prices of all commodities in circulation %%[[KV1C3P213L17]]%%, then, the circulation of the money-commodity (gold) is the expression of the total price of the commodities which exchange was mediated by money. 
-As the quantity of total money absorbed as means for circulation is known by its equivalence to the total sum of the prices of all the commodities in circulation. We can also rise the following interrogants: How much gold is being absorbed by the circulation of money? As, its answer should be different from the response of the next one: How much gold is being expressed ideally by the sum of total prices of the commodities circulating?
+So, if the total quantity of money circulating, is determined by the total sum of prices of all commodities in circulation %%[[KV1C3P213L17]]%%, then, the circulation of the money-commodity (gold) is the expression of the total price of the commodities which exchange was mediated by money. As the quantity of total money absorbed as means for circulation is known by its equivalence to the total sum of the prices of all the commodities in circulation. We can also rise the following interrogants: How much gold is being absorbed by the circulation of money? As, its answer should be different from the response of the next one: How much gold is being expressed ideally by the sum of total prices of the commodities circulating?
 
+Gold, indeed, is the medium of circulation and measure of value as the money-commodity, "either in its own body or through a representative, is money. Gold (or silver) is therefore money" %%[[KV1C3P225L28]]%%. It is because gold is a commodity, that has value, and can function as standard of price. So, only if paper money represents gold is a symbol of value. %%[[KV1C3P227L24]]%%
+The total sum of the prices of the commodities in circulation blass the average of the velocity of circulation (measured as the number of times the same piece of money turns-over within a given period), determine the price of the quantity of money or the price of the money-commodity which is gold as means of circulation. %%[[KV1C3P216L2]]%%.
+
+%% 2626:125 p 215, KV1C3P216L2 en Karl Marx - Capital, Volume 1
+https://go.atlasti.com/b0853060-83cf-45ff-8c33-f41b894b4007/documents/6bf9416f-b560-46d7-845c-8071da674a66/quotations/d50102b2-fd72-446d-ac7f-2774116f1e92 %%
+
+%% 2626:139 p 224, KV1C3P225L28 en Karl Marx - Capital, Volume 1
+https://go.atlasti.com/b0853060-83cf-45ff-8c33-f41b894b4007/documents/6bf9416f-b560-46d7-845c-8071da674a66/quotations/6205f33a-6bf7-42e2-a5fd-29abaf7890c4
+
+2626:79 p 226, KV1C3P227L4 en Karl Marx - Capital, Volume 1
+https://go.atlasti.com/b0853060-83cf-45ff-8c33-f41b894b4007/documents/6bf9416f-b560-46d7-845c-8071da674a66/quotations/033c2ece-236f-42cc-aec2-e093031fb262 %%
 
 Indeed, the rise in the productivity of labor in gold production changed the quantity of the standard of value measure of money that is being produced by an equivalent abstract quantity of labor, while the price of gold growth exponentially as it is hoarded in its money-commodity form of value by the international finance state capitalists in reserves funds.
 
 
-As the circulation of the commodities and their transubstantiation into money can be differentiated, first, by their exchange scale, the chance of social accident by which the circuit M-C-M' is being obstructed, mediate between the necessary conversion of commodities into money, correspondent to the process of transformation of surplus-value into profit.
+
+
+
+
+As the circulation of the commodities and their transubstantiation into money are by their exchange scale, the chance of social accident by which the circuit M-C-M' is being obstructed, mediate between the necessary conversion of commodities into money, correspondent to the process of transformation of surplus-value into profit.
 Is it not in the transition forms in which we should pay attention? 
 What is to be done? Historically, the exchange process produced the accumulation of gold as a universal equivalent commodity which became money-commodity. At the same pace the production of gold reaches the circulation process, “gold […], in its crude state, becomes immediately, on its emergence from the bowels of the earth, the direct incarnation of all human labour” %%[[KV1C2P187L18]]%%. 
 With the liberalization of gold price, since 1971, the total monetary system debased money from its elementary form. As if in that manner, the use-value of gold as the socially formed universally equivalent, would be suppressed, and replaced by certain specific currency (US Dollar), fixed by a hegemonic arrangement relying only on U.S. hegemony. 
