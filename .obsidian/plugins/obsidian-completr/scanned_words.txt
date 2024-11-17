@@ -9507,6 +9507,7 @@ coherence
 commemorated
 considerated
 composited
+compilated
 UTC
 United
 Update
@@ -39902,6 +39903,7 @@ arguing
 althought
 appropiation
 alineable
+aniquilation
 The
 Table
 Total
@@ -45929,6 +45931,7 @@ Trenton
 Trentonian
 TAPinto
 THAT
+Thrown
 Fed
 Federal
 Feb
@@ -97251,6 +97254,7 @@ Gutkin
 Groves
 Georgia
 Guam
+Grundrisse
 in
 international
 is
@@ -105096,6 +105100,7 @@ impactful
 inclusivity
 insularity
 inequitable
+identificated
 Washington
 We
 Wg
@@ -130566,6 +130571,7 @@ Marketing
 Martucci
 Memorials
 Mutual
+Manuscrits
 dollars
 drawing
 data
@@ -138316,6 +138322,8 @@ defacing
 defaced
 dimminished
 disspossesion
+discontinuity
+delirium
 end
 earmark
 economy
@@ -154850,6 +154858,7 @@ prolific
 proposing
 purchased
 predictable
+perfectioned
 Special
 States
 Scroll
@@ -161552,6 +161561,7 @@ Slaves
 Statue
 Slavery
 Spaces
+Stepforward
 rights
 reserve
 report
@@ -202129,6 +202139,7 @@ namesake
 narity
 newark
 neccessarily
+negated
 gold
 generic
 global
@@ -228842,6 +228853,7 @@ muse
 monographs
 mistrust
 memorialization
+maximization
 New
 Nikkei
 Nasdaq
@@ -234625,6 +234637,7 @@ NJCH
 Ngram
 Nevada
 NATIONAL
+Notebooks
 Last
 Log
 Lee
@@ -253725,6 +253738,7 @@ biographies
 bench
 bestows
 blog
+burgher
 Published
 PM
 People
