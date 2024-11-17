@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "79380cbd04b334f6",
+        "id": "947a9830b2337630",
         "type": "tabs",
         "children": [
           {
-            "id": "87516bc5cd9ee455",
+            "id": "12744cb2c684144f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-history-vault-master/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/GNBVII.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "GNBVII"
+              "title": "New tab"
             }
           }
         ]
@@ -253,9 +249,9 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "87516bc5cd9ee455",
+  "active": "12744cb2c684144f",
   "lastOpenFiles": [
-    "obsidian-history-vault-master/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/GNBVII.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII.md",
     "Public humanities project.md",
     "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/week 9/Berkowitz and Gibson - Reframing the Humanities.md",
     "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/week 9/Berkowitz and Gibson - Reframing the Humanities 1.md",
