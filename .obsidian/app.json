@@ -15,7 +15,7 @@
   "promptDelete": true,
   "showLineNumber": true,
   "focusNewTab": false,
-  "readableLineLength": false,
+  "readableLineLength": true,
   "strictLineBreaks": true,
   "foldHeading": true,
   "foldIndent": false,
