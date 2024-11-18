@@ -24,8 +24,9 @@
   "autoPairBrackets": false,
   "autoPairMarkdown": false,
   "smartIndentList": false,
-  "autoConvertHtml": false,
+  "autoConvertHtml": true,
   "newFileLocation": "current",
   "attachmentFolderPath": "./",
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "propertiesInDocument": "visible"
 }
