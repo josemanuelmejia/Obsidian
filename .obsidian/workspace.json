@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "property",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -83,7 +83,8 @@
               "title": "Longform"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -251,7 +252,7 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "f31f92a0f43d1f22",
+  "active": "11f193bbd8e05176",
   "lastOpenFiles": [
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$BVII v3.docx",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII v3.docx",
