@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f51d2c2912cf3137",
+        "id": "db5ee218eef9c04a",
         "type": "tabs",
         "children": [
           {
-            "id": "e9a02ae327a60bfd",
+            "id": "f31f92a0f43d1f22",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_v2.md",
+                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII v3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "KV1C2C3_v2"
+              "title": "GNBVII v3"
             }
           }
         ]
@@ -87,7 +87,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 236.50785064697266
+    "width": 556.8000000000001
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -251,27 +251,28 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "e9a02ae327a60bfd",
+  "active": "f31f92a0f43d1f22",
   "lastOpenFiles": [
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL0003.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD0002.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$1C2C3_v2.docx",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_v2.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$BVII v3.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII v3.docx",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII v2.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII v2.docx",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII v2.tex",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII v3.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$BVII v2 1.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII v2 1.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_v2.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL0001.tmp",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD0000.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$avance.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$1C2C3_v2.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$BVII v2.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL0003.tmp",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD0002.tmp",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_v2.docx",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL3460.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD3453.tmp",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVIIP701L30.md",
     "Public humanities project.md",
     "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/week 9/Berkowitz and Gibson - Reframing the Humanities.md",
     "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/week 9/Berkowitz and Gibson - Reframing the Humanities 1.md",
     "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/week 9/Summary.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_v2.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C3P227L24.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/MARX SEMINAR KV1C3_nonused.md",
     "Untitled.md",
@@ -288,7 +289,6 @@
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Sarah Thebaud/Sociology 209A/Sociology 290A Professional Development Seminar.md",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/t.md",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_v2.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3.md",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Julia C. Morse/Global Governance Goals and Lessons for AI - Microsoft On the Issues/GlobalGov_Postcard-Front_UPDATED-225x300.jpg",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Jason Turowetz/APP.png",
     "LS3 LTR Single Subject Notebook 4_0012.png",

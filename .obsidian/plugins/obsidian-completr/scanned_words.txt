@@ -9509,6 +9509,7 @@ considerated
 composited
 compilated
 configures
+cancellation
 UTC
 United
 Update
@@ -31360,6 +31361,10 @@ slower
 solutioned
 sourcing
 subordinating
+supplying
+sperfluous
+symetrically
+supplied
 author
 at
 and
@@ -39913,6 +39918,7 @@ augmenting
 amassed
 antagonic
 appropiates
+atural
 The
 Table
 Total
@@ -105114,6 +105120,7 @@ inclusivity
 insularity
 inequitable
 identificated
+intervining
 Washington
 We
 Wg
@@ -123860,6 +123867,7 @@ fleeting
 fascinating
 fluidity
 floyd
+fictiously
 Millions
 Mar
 May
@@ -138339,6 +138347,8 @@ discontinuity
 delirium
 decorating
 distopyan
+dystopian
+dissapear
 end
 earmark
 economy
@@ -146298,6 +146308,7 @@ esmont
 entertainment
 exemplifies
 equivalency
+efectiveness
 period
 position
 positions
@@ -154876,6 +154887,9 @@ predictable
 perfectioned
 pressupossed
 pricefull
+powerfull
+proudfully
+paragraphs
 Special
 States
 Scroll
@@ -202158,6 +202172,8 @@ narity
 newark
 neccessarily
 negated
+neccesities
+neccessities
 gold
 generic
 global
@@ -228873,6 +228889,11 @@ mistrust
 memorialization
 maximization
 monetarization
+mantain
+mastery
+minumum
+mastering
+minimizing
 New
 Nikkei
 Nasdaq
@@ -253762,6 +253783,7 @@ burgher
 benevolently
 burgeoisies
 burgeoisie
+branchs
 Published
 PM
 People
