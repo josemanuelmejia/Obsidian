@@ -28,5 +28,6 @@
   "newFileLocation": "current",
   "attachmentFolderPath": "./",
   "showInlineTitle": false,
-  "propertiesInDocument": "visible"
+  "propertiesInDocument": "visible",
+  "defaultViewMode": "preview"
 }
