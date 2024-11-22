@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "eb6369e1d914c560",
+        "id": "33151dddaf1596c8",
         "type": "tabs",
         "children": [
           {
-            "id": "769e6afc12c5186c",
+            "id": "3e119b2199d28167",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Optimized_Automation_v1_Long_Spa.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Optimized_Automation_v1_Long_Spa"
             }
           }
         ]
@@ -83,8 +87,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 480.50785064697266
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -248,22 +251,27 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "769e6afc12c5186c",
+  "active": "3e119b2199d28167",
   "lastOpenFiles": [
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Optimized_Automation_v1_Long_Spa.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Optimized_Automation_v1_Spa_Scheme.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Optimized_Automation_v1_Spa.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Automation v1_Spa.md",
+    "Untitled 3.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Automation v1.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$tomation v1.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$BVII v2 1.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Automation v1.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$BVII v3.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$avance.docx",
     "obsidian-history-vault-master/07 diary/November 20/Cultural differences.webm",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII v3.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$BVII v3.docx",
     "obsidian-history-vault-master/07 diary/November 20/Speech At A Plenary Session The Moscow Soviet.md",
     "obsidian-history-vault-master/07 diary/November 20/record 1.md",
     "obsidian-history-vault-master/07 diary/November 20/Recording 20241120152138.webm",
     "obsidian-history-vault-master/07 diary/November 20/Recording 20241120150615.webm",
     "obsidian-history-vault-master/07 diary/November 20/Language and learning.webm",
     "obsidian-history-vault-master/07 diary/November 20/Recording 20241120145050.webm",
-    "obsidian-history-vault-master/07 diary/November 20/Recording 20241120144709.webm",
-    "obsidian-history-vault-master/07 diary/November 20",
-    "obsidian-history-vault-master/07 diary/Nueva carpeta",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII v3.docx",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII v2.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_v2.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII.md",
@@ -281,11 +289,6 @@
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/On Arrighi (1994).md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/Hoai-An Nguyen (old).md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/Discussion of Weber.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Quotes JMM.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 8/luptonPhiladelphiaDreamingDiscovering2008.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 7/leistynaPresenceMindProcess2004.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 7/week 7 summary.md",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Sarah Thebaud/Sociology 209A/Sociology 290A Professional Development Seminar.md",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Julia C. Morse/Global Governance Goals and Lessons for AI - Microsoft On the Issues/GlobalGov_Postcard-Front_UPDATED-225x300.jpg",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Jason Turowetz/APP.png",
     "LS3 LTR Single Subject Notebook 4_0012.png",
