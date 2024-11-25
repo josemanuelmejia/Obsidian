@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "c0fef2b478bee608",
+        "id": "af373ed2643f71ba",
         "type": "tabs",
         "children": [
           {
-            "id": "e4ea48b35a550d01",
+            "id": "21cd6b876aecad15",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Automation.md",
-                "mode": "preview",
+                "file": "obsidian-history-vault-master/09 courses/UCSB/ITA/Presentation.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Automation"
+              "title": "Presentation"
+            }
+          },
+          {
+            "id": "9cbed2375b4038f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-history-vault-master/09 courses/UCSB/ITA/La Agonía de Mariátegui, o de Unamuno en Mariátegui, también.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "La Agonía de Mariátegui, o de Unamuno en Mariátegui, también"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -251,10 +266,24 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "e4ea48b35a550d01",
+  "active": "9cbed2375b4038f3",
   "lastOpenFiles": [
-    "Jacobson, “Afterword- The Doing of Doing Public Humanities”.md",
+    "obsidian-history-vault-master/09 courses/UCSB/ITA/Presentation.md",
+    "obsidian-history-vault-master/09 courses/UCSB/ITA/La Agonía de Mariátegui, o de Unamuno en Mariátegui, también.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_v2.md",
+    "obsidian-history-vault-master/09 courses/UCSB/ITA",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$1C2C3_v2.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII v3.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Automation v1.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Automation v1.pdf",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Automation v1.html",
+    "obsidian-history-vault-master/07 diary/Untitled.md",
+    "old_jun2024_nonclass/^goldcrash2013.md",
+    "Untitled.md",
+    "Untitled 1.md",
+    "Untitled 3.md",
     "Automation.md",
+    "Jacobson, “Afterword- The Doing of Doing Public Humanities”.md",
     "Indications of the de-dollarization process in the world. Through a special review of BRICS economies.md",
     "~$yte summary.docx",
     "1.md",
@@ -263,10 +292,8 @@
     "7.md",
     "obsidian-history-vault-master/06 archives/7.pdf",
     "RV-GPT-1.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Automation v1.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Condensed_Automation.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Reorganized_Automation.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII v3.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/t.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$tomation v1.docx",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Optimized_Automation_v1_Long_Spa.md",
@@ -275,20 +302,8 @@
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Quotes JMM.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Optimized_Automation_v1_Spa_Scheme.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Optimized_Automation_Final.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Optimized_Automation_v1_Spa.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Automation v1_Spa.md",
-    "Untitled 3.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$BVII v2 1.docx",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Automation v1.docx",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$BVII v3.docx",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$avance.docx",
-    "obsidian-history-vault-master/07 diary/November 20/Cultural differences.webm",
-    "obsidian-history-vault-master/07 diary/November 20/Speech At A Plenary Session The Moscow Soviet.md",
-    "obsidian-history-vault-master/07 diary/November 20/record 1.md",
-    "obsidian-history-vault-master/07 diary/November 20/Recording 20241120152138.webm",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII v2.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_v2.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII.md",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Julia C. Morse/Global Governance Goals and Lessons for AI - Microsoft On the Issues/GlobalGov_Postcard-Front_UPDATED-225x300.jpg",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Jason Turowetz/APP.png",
     "LS3 LTR Single Subject Notebook 4_0012.png",
