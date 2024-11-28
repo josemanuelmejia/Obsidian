@@ -88,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -252,7 +253,7 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "11f193bbd8e05176",
+  "active": "123d96655f3517be",
   "lastOpenFiles": [
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$1C2C3_v2.docx",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_v2 (2).md",
