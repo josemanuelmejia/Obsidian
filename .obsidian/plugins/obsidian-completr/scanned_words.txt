@@ -9599,6 +9599,8 @@ comfortable
 compulsiva
 completado
 cripto
+consumiendo
+compraventa
 UTC
 United
 Update
@@ -23142,6 +23144,9 @@ teonanancatl
 tastes
 teapot
 trazaba
+trastienda
+transubstanciaci
+transitorias
 source
 stock
 see
@@ -31626,6 +31631,7 @@ sudar
 superfluidad
 suprimido
 sobredeterminando
+signada
 author
 at
 and
@@ -40256,6 +40262,9 @@ acaparador
 atesorado
 acaparan
 azares
+acumulando
+alienables
+absorbida
 The
 Table
 Total
@@ -66353,6 +66362,7 @@ AJir
 AVZs
 Autz
 Adds
+Acumulando
 July
 Jan
 Jun
@@ -124750,6 +124760,7 @@ fAjiaGLNQwsEgE
 fVWqOXEtMfYjUHvoZ
 flavor
 ficticia
+fantasmalmente
 Millions
 Mar
 May
@@ -139355,6 +139366,11 @@ damiana
 diluyendo
 degrad
 dependiera
+divorcia
+diferenci
+diluye
+desarraig
+determinando
 end
 earmark
 economy
@@ -147394,6 +147410,9 @@ enraizados
 encarnaciones
 elev
 expulsi
+elud
+enredadas
+estandar
 period
 position
 positions
@@ -156046,6 +156065,7 @@ precipitado
 plante
 perdi
 pertinencia
+pluscapital
 Special
 States
 Scroll
@@ -177059,6 +177079,7 @@ IyxF
 Ihvs
 IwAR
 Imagine
+Introduciendo
 Currencies
 China
 CHINA
@@ -184109,6 +184130,7 @@ Canciller
 Contralor
 Consuming
 Chop
+Consumiendo
 held
 holdings
 height
@@ -196894,6 +196916,7 @@ unknowns
 universales
 utilizarlo
 universalmente
+uanto
 not
 no
 newsletter
@@ -216810,6 +216833,7 @@ libr
 lSKOc
 licorice
 ligeramente
+liberalizado
 valued
 volatile
 volatility
@@ -230573,6 +230597,7 @@ monetarizado
 metalizado
 materializaci
 mediadoras
+monetizada
 New
 Nikkei
 Nasdaq
