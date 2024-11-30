@@ -9596,6 +9596,9 @@ cups
 chop
 ceramic
 comfortable
+compulsiva
+completado
+cripto
 UTC
 United
 Update
@@ -23138,6 +23141,7 @@ tensando
 teonanancatl
 tastes
 teapot
+trazaba
 source
 stock
 see
@@ -31616,6 +31620,12 @@ straining
 strainer
 swallowed
 subtleties
+supuesta
+sufridas
+sudar
+superfluidad
+suprimido
+sobredeterminando
 author
 at
 and
@@ -40240,6 +40250,12 @@ await
 alerts
 averages
 accumulating
+alienaci
+atesoraba
+acaparador
+atesorado
+acaparan
+azares
 The
 Table
 Total
@@ -46301,6 +46317,8 @@ TWWN
 TCQP
 TIONS
 Teonanctl
+Trataban
+Todav
 Fed
 Federal
 Feb
@@ -52950,6 +52968,7 @@ Fmmp
 FclIm
 File
 Fresh
+Fijando
 Reserve
 Release
 Reuters
@@ -59363,6 +59382,7 @@ RFOG
 READS
 Recipe
 Ritual
+Realmente
 Assets
 Asset
 Apr
@@ -78381,6 +78401,7 @@ Exploracio
 Expansio
 Erowid
 Elixir
+Extendiendo
 Board
 Banks
 Borrow
@@ -84484,6 +84505,7 @@ BaBaBa
 BHUCl
 BEEA
 BhdH
+Breve
 of
 outstanding
 on
@@ -105841,6 +105863,8 @@ intervalo
 identifico
 infusion
 interrogate
+irreflexiva
+impuls
 Washington
 We
 Wg
@@ -117984,6 +118008,7 @@ DiFDE
 DWEW
 Drink
 Damiana
+Delfos
 footnote
 for
 foreign
@@ -124724,6 +124749,7 @@ fbclid
 fAjiaGLNQwsEgE
 fVWqOXEtMfYjUHvoZ
 flavor
+ficticia
 Millions
 Mar
 May
@@ -139326,6 +139352,9 @@ devela
 desencuentros
 disccounted
 damiana
+diluyendo
+degrad
+dependiera
 end
 earmark
 economy
@@ -147360,6 +147389,11 @@ enclavadas
 eluded
 edibles
 earthy
+enajenado
+enraizados
+encarnaciones
+elev
+expulsi
 period
 position
 positions
@@ -156008,6 +156042,10 @@ paste
 pick
 pepper
 pleasant
+precipitado
+plante
+perdi
+pertinencia
 Special
 States
 Scroll
@@ -170738,6 +170776,9 @@ retomar
 recurrieron
 represion
 rama
+reduc
+resuelta
+reemplazado
 International
 IMF
 Industrial
@@ -196850,6 +196891,9 @@ uxZCUK
 unpleasantness
 unrewarding
 unknowns
+universales
+utilizarlo
+universalmente
 not
 no
 newsletter
@@ -209973,6 +210017,7 @@ gjAw
 gAOu
 ginger
 green
+gira
 line
 long
 levels
@@ -216764,6 +216809,7 @@ lQKu
 libr
 lSKOc
 licorice
+ligeramente
 valued
 volatile
 volatility
@@ -222907,6 +222953,10 @@ vava
 vGYV
 vWnxi
 vessel
+variabilidad
+volatilidad
+vacantes
+volviendo
 million
 matter
 market
@@ -230519,6 +230569,10 @@ mint
 mellow
 meditative
 mins
+monetarizado
+metalizado
+materializaci
+mediadoras
 New
 Nikkei
 Nasdaq
@@ -255551,6 +255605,7 @@ bowl
 bite
 blanket
 bemushroomed
+bendecidos
 Published
 PM
 People
@@ -262094,6 +262149,7 @@ Psilocybin
 Preparation
 Psilo
 Pour
+Plutarco
 year
 yields
 your
