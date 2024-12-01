@@ -31637,6 +31637,7 @@ signada
 suck
 subsumido
 stolen
+subsumida
 author
 at
 and
@@ -66372,6 +66373,7 @@ AVZs
 Autz
 Adds
 Acumulando
+Accumulating
 July
 Jan
 Jun
@@ -124772,6 +124774,7 @@ flavor
 ficticia
 fantasmalmente
 formative
+fulfills
 Millions
 Mar
 May
@@ -147432,6 +147435,7 @@ expresed
 engendred
 expressinging
 extendiendo
+eliminada
 period
 position
 positions
@@ -170827,6 +170831,8 @@ resuelta
 reemplazado
 representant
 robadas
+removida
+reducted
 International
 IMF
 Industrial
