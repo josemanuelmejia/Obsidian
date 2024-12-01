@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "41cdd414fac4289a",
+        "id": "fbbb6d3c874b31d3",
         "type": "split",
         "children": [
           {
-            "id": "1369eccc2829e685",
+            "id": "53532833b995c1bc",
             "type": "tabs",
-            "dimension": 50.66964285714286,
+            "dimension": 52.23214285714286,
             "children": [
               {
-                "id": "b0fc53e9f82341b8",
+                "id": "a044ae0378414353",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -29,12 +29,12 @@
             ]
           },
           {
-            "id": "9abfae5eb5534d7f",
+            "id": "649971a7653df507",
             "type": "tabs",
-            "dimension": 49.330357142857146,
+            "dimension": 47.767857142857146,
             "children": [
               {
-                "id": "db57e2d13849ee59",
+                "id": "a437793b3e3cc2b4",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -281,10 +281,20 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "b0fc53e9f82341b8",
+  "active": "a044ae0378414353",
   "lastOpenFiles": [
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_vF es_sin citas.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_vF.md",
+    "obsidian-history-vault-master/06 archives/Yo perdí el corazón (acordes) - Eva Ayllón - Cifra Club.md",
+    "old_nov2024/1.md",
+    "old_nov2024",
+    "old_nov2024/KV1C2C3_vF es_sin citas.md",
+    "old_nov2024/KV1C2C3_vF 1.md",
+    "old_nov2024/KV1C2C3_vF.md",
+    "old_nov2024/Poste.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL1124.tmp",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD1089.tmp",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/HIMA/~$bmission_HIMA_September11_2024.docx",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$1C2C3_vF es_sin citas.docx",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$1C3S3A.doc",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Metamorphosis of Commodities.pdf",
@@ -292,13 +302,6 @@
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C3S2C.doc",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Grundrisse general report_Nov29_2024.doc",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_vF es.md",
-    "KV1C2C3_vF 1.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL1262.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD1250.tmp",
-    "KV1C2C3_vF.md",
-    "KV1C2C3_vF es_sin citas.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$1C2C3_vF.docx",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL2636.tmp",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_v3.md",
     "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/COP-out 29 – Michael Roberts Blog.md",
     "obsidian-history-vault-master/06 archives/cop29/cop out 29.md",
@@ -308,8 +311,8 @@
     "obsidian-history-vault-master/07 diary/Moscow, Quito discuss repairs to Russian military hardware in Ecuador’s arsenal — envoy - Russian Politics & Diplomacy - TASS.md",
     "obsidian-history-vault-master/07 diary/Erowid Psilocybin Mushroom Vault  Tea Preparation/Erowid Psilocybin Mushroom Vault  Tea Preparation.md",
     "obsidian-history-vault-master/07 diary/Erowid Psilocybin Mushroom Vault  Tea Preparation/teonanancatl.jpg",
-    "Untitled 3.md",
-    "copper hairs.md",
+    "old_nov2024/Untitled 3.md",
+    "old_nov2024/copper hairs.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_v2 (2).md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C3P227L24.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII v3.md",
@@ -317,8 +320,6 @@
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Marx Seminar - November 26th, 2024.md",
     "obsidian-history-vault-master/02 analysis/Untitled/Untitled.md",
     "obsidian-history-vault-master/02 analysis/Untitled/T4239-MELA-Mejia-Luchas.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBIVP459.md",
-    "obsidian-history-vault-master/07 diary/gRUNDRISSE/rEADING GNBIVP459/GNBIVP459.md",
     "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop295.png",
     "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop294.png",
     "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop293.jpg",
@@ -326,7 +327,7 @@
     "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop292.jpg",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Julia C. Morse/Global Governance Goals and Lessons for AI - Microsoft On the Issues/GlobalGov_Postcard-Front_UPDATED-225x300.jpg",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Jason Turowetz/APP.png",
-    "LS3 LTR Single Subject Notebook 4_0012.png",
+    "old_nov2024/LS3 LTR Single Subject Notebook 4_0012.png",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Julia C. Morse/Global Governance Goals and Lessons for AI - Microsoft On the Issues/GlobalGov_Postcard-Front_UPDATED-225x300.jpg",
     "Untitled.canvas",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",

@@ -4,7 +4,7 @@
 
 
 
-![[Recording 20241010012348.webm]]
+![[old_nov2024/Recording 20241010012348.webm]]
 
 ## Transcript
 

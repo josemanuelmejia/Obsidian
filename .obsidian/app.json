@@ -1,5 +1,5 @@
 {
-  "alwaysUpdateLinks": false,
+  "alwaysUpdateLinks": true,
   "showUnsupportedFiles": true,
   "spellcheck": false,
   "spellcheckLanguages": null,
