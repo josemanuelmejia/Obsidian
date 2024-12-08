@@ -11,10 +11,14 @@
             "id": "5686c4cc2214d42e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Comunicado de prevención contra la aplicación de la política antiterrorismo internacional y nacional de los EEUU, Ecuador y Peru-7 de diciembre 2024..md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Comunicado de prevención contra la aplicación de la política antiterrorismo internacional y nacional de los EEUU, Ecuador y Peru-7 de diciembre 2024."
             }
           }
         ]
@@ -83,8 +87,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -248,8 +251,9 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "5686c4cc2214d42e",
+  "active": "4156b5e5ac4c33be",
   "lastOpenFiles": [
+    "AltShiftV/video_Dec_07_2024_23-53-00_GMT.mp3",
     "Comunicado de prevención contra la aplicación de la política antiterrorismo internacional y nacional de los EEUU, Ecuador y Peru-7 de diciembre 2024..md",
     "AltShiftV/video_Dec_07_2024_23-53-00_GMT.webm",
     "AltShiftV/video_Dec_07_2024_23-05-50_GMT.webm",
