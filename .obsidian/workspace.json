@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "2d253cfadd3b51d6",
+        "id": "751b6937914b84e9",
         "type": "tabs",
         "children": [
           {
-            "id": "dcf9ead31110019b",
+            "id": "0cf0c185df39f3a0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-history-vault-master/07 diary/September 25, 2024.md",
-                "mode": "preview",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "September 25, 2024"
+              "title": "New tab"
             }
           }
         ]
@@ -52,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "gold and money",
+                "query": "1723066104381",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -87,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 465.51237964630127
+    "width": 419.5
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -251,9 +247,25 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "dcf9ead31110019b",
+  "active": "0cf0c185df39f3a0",
   "lastOpenFiles": [
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$JIA_Shot-paper_KV1C2C3.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL0001.tmp",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD0000.tmp",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$BVII v3.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII v3.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Finalfinal draft.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$1C2C3_vF_F.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL3183.tmp",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD3168.tmp",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$JIA-Paper 1-MARX Seminar.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL0738.tmp",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD0722.tmp",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/MEJIA-Paper 1-MARX Seminar.docx",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/HIMA/~$bmission_HIMA_September11_2024.docx",
+    "obsidian-history-vault-master/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/main.md",
+    "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/The ceteris paribus for the fall in the rate of profit.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Gold world capital fund.md",
+    "obsidian-history-vault-master/07 diary/September 25, 2024.md",
     "obsidian-history-vault-master/07 diary/Untitled.md",
     "obsidian-history-vault-master/06 archives/Gold/The Fed - Selected Foreign Official Assets Held at Federal Reserve Banks, July 2024.md",
     "obsidian-history-vault-master/06 archives/Gold/Milestones in the History of U.S. Foreign Relations - Office of the Historian.md",
@@ -262,35 +274,19 @@
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q2. Mining struggles challenge imperialist domination/Q2. Mining struggles challenge imperialist domination.md",
     "obsidian-history-vault-master/02 analysis/annotated bibliography/TCC.md",
     "obsidian-history-vault-master/06 archives/Gold/After the Gold Crash  Alchemist  LBMA.md",
-    "obsidian-history-vault-master/06 archives/Gold/Book-Tria-Arcelli-A-new-Bretton-Woods-for-a-new-world.pdf",
     "obsidian-history-vault-master/06 archives/Gold/China central bank asks some institutions to report daily long-term bond holdings sources.md",
     "obsidian-history-vault-master/06 archives/Gold/Gold in SDRs, Currencies, & Gold.md",
     "obsidian-history-vault-master/06 archives/Gold/LBMA Precious Metal Prices  LBMA.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/HIMA/GOLD AND MONEY AS CAPITAL.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Quotes JMM.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL2357.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD2338.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$BVII v3.docx",
     "AltShiftV/on social accident.md",
-    "AltShiftV/video_Dec_09_2024_18-03-48_GMT.webm",
     "AltShiftV/People Guards.md",
     "AltShiftV/JF Vs. JM.png",
     "obsidian-history-vault-master/11 labor/Readership/Reading Reflection 1.md",
     "obsidian-history-vault-master/11 labor/Readership/SOC 130 Reading Reflection #8.md",
     "obsidian-history-vault-master/11 labor/Readership/SOC 130 Reading Reflection.md",
-    "obsidian-history-vault-master/11 labor/Readership/SOC 130 Reading Reflection #8.pdf",
-    "obsidian-history-vault-master/11 labor/Readership/Reading Reflection 1.pdf",
     "AltShiftV/Reading Reflection 2.md",
     "AltShiftV/Reading Reflection 1.md",
-    "AltShiftV/Reading Reflection #8 1.md",
-    "AltShiftV/video_Dec_07_2024_23-53-00_GMT.webm",
-    "AltShiftV/Reading Reflection #8.md",
-    "obsidian-history-vault-master/11 labor/Readership/Reading Reflection #8.pdf",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL2121.tmp",
-    "Comunicado de prevención contra la aplicación de la política antiterrorismo internacional y nacional de los EEUU, Ecuador y Peru-7 de diciembre 2024..md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_vF.md",
-    "obsidian-history-vault-master/11 labor/Revista/Victor Serge Year One of the Russian Revolution (I. The October Insurrection).md",
-    "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 4/Boyte, “Educating the Citizen Professional”.docx.md",
     "obsidian-history-vault-master/07 diary/Erowid Psilocybin Mushroom Vault  Tea Preparation/teonanancatl.jpg",
     "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop295.png",
     "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop294.png",
