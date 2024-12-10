@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2f932d4b3ac80846",
+        "id": "2d253cfadd3b51d6",
         "type": "tabs",
         "children": [
           {
-            "id": "5686c4cc2214d42e",
+            "id": "dcf9ead31110019b",
             "type": "leaf",
             "state": {
-              "type": "video",
+              "type": "markdown",
               "state": {
-                "file": "AltShiftV/video_Dec_09_2024_18-03-48_GMT.webm"
+                "file": "obsidian-history-vault-master/07 diary/September 25, 2024.md",
+                "mode": "preview",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "video_Dec_09_2024_18-03-48_GMT"
+              "title": "September 25, 2024"
             }
           }
         ]
@@ -50,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "vertu",
+                "query": "gold and money",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -85,7 +87,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 423.51237964630127
+    "width": 465.51237964630127
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -249,11 +251,30 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "5686c4cc2214d42e",
+  "active": "dcf9ead31110019b",
   "lastOpenFiles": [
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$JIA_Shot-paper_KV1C2C3.docx",
+    "obsidian-history-vault-master/07 diary/Untitled.md",
+    "obsidian-history-vault-master/06 archives/Gold/The Fed - Selected Foreign Official Assets Held at Federal Reserve Banks, July 2024.md",
+    "obsidian-history-vault-master/06 archives/Gold/Milestones in the History of U.S. Foreign Relations - Office of the Historian.md",
+    "obsidian-history-vault-master/06 archives/Gold/Dow falls more than 1,000 points in global market selloff - The Washington Post.md",
+    "obsidian-history-vault-master/06 archives/Gold/Captura.PNG",
+    "obsidian-history-vault-master/02 analysis/questions and arguments/Q2. Mining struggles challenge imperialist domination/Q2. Mining struggles challenge imperialist domination.md",
+    "obsidian-history-vault-master/02 analysis/annotated bibliography/TCC.md",
+    "obsidian-history-vault-master/06 archives/Gold/After the Gold Crash  Alchemist  LBMA.md",
+    "obsidian-history-vault-master/06 archives/Gold/Book-Tria-Arcelli-A-new-Bretton-Woods-for-a-new-world.pdf",
+    "obsidian-history-vault-master/06 archives/Gold/China central bank asks some institutions to report daily long-term bond holdings sources.md",
+    "obsidian-history-vault-master/06 archives/Gold/Gold in SDRs, Currencies, & Gold.md",
+    "obsidian-history-vault-master/06 archives/Gold/LBMA Precious Metal Prices  LBMA.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/HIMA/GOLD AND MONEY AS CAPITAL.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Quotes JMM.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL2357.tmp",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD2338.tmp",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$BVII v3.docx",
+    "AltShiftV/on social accident.md",
+    "AltShiftV/video_Dec_09_2024_18-03-48_GMT.webm",
     "AltShiftV/People Guards.md",
     "AltShiftV/JF Vs. JM.png",
-    "AltShiftV/video_Dec_09_2024_18-03-48_GMT.webm",
     "obsidian-history-vault-master/11 labor/Readership/Reading Reflection 1.md",
     "obsidian-history-vault-master/11 labor/Readership/SOC 130 Reading Reflection #8.md",
     "obsidian-history-vault-master/11 labor/Readership/SOC 130 Reading Reflection.md",
@@ -266,27 +287,10 @@
     "AltShiftV/Reading Reflection #8.md",
     "obsidian-history-vault-master/11 labor/Readership/Reading Reflection #8.pdf",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL2121.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD2106.tmp",
-    "AltShiftV/video_Dec_08_2024_12-43-52_GMT.webm",
-    "AltShiftV/video_Dec_07_2024_23-05-50_GMT.webm",
-    "AltShiftV/video_Nov_28_2024_16-36-52_GMT.webm",
     "Comunicado de prevención contra la aplicación de la política antiterrorismo internacional y nacional de los EEUU, Ecuador y Peru-7 de diciembre 2024..md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_vF.md",
     "obsidian-history-vault-master/11 labor/Revista/Victor Serge Year One of the Russian Revolution (I. The October Insurrection).md",
     "obsidian-history-vault-master/09 courses/UCSB/Public Humanities Graduate Fellows Program/INT201HT History and Theory of Public Humanities/Week 4/Boyte, “Educating the Citizen Professional”.docx.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Surco.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_v3.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_vF es_sin citas.md",
-    "obsidian-history-vault-master/06 archives/Yo perdí el corazón (acordes) - Eva Ayllón - Cifra Club.md",
-    "old_nov2024/1.md",
-    "old_nov2024/KV1C2C3_vF es_sin citas.md",
-    "old_nov2024/KV1C2C3_vF 1.md",
-    "old_nov2024/KV1C2C3_vF.md",
-    "old_nov2024/Poste.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_vF es.md",
-    "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/COP-out 29 – Michael Roberts Blog.md",
-    "obsidian-history-vault-master/06 archives/cop29/cop out 29.md",
-    "obsidian-history-vault-master/07 diary/Untitled.md",
     "obsidian-history-vault-master/07 diary/Erowid Psilocybin Mushroom Vault  Tea Preparation/teonanancatl.jpg",
     "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop295.png",
     "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop294.png",
@@ -295,7 +299,6 @@
     "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop292.jpg",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Julia C. Morse/Global Governance Goals and Lessons for AI - Microsoft On the Issues/GlobalGov_Postcard-Front_UPDATED-225x300.jpg",
     "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Jason Turowetz/APP.png",
-    "old_nov2024/LS3 LTR Single Subject Notebook 4_0012.png",
     "Untitled.canvas",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",
     "Mayra.canvas",
