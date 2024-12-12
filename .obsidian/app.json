@@ -12,7 +12,7 @@
     "downscalePercent": 98
   },
   "showRibbon": true,
-  "promptDelete": true,
+  "promptDelete": false,
   "showLineNumber": true,
   "focusNewTab": false,
   "readableLineLength": true,
