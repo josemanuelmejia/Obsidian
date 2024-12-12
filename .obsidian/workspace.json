@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "751b6937914b84e9",
+        "id": "19f9745c3913dd4f",
         "type": "tabs",
         "children": [
           {
-            "id": "0cf0c185df39f3a0",
+            "id": "83bf4fc91dbb71cc",
             "type": "leaf",
             "state": {
-              "type": "video",
-              "state": {
-                "file": "AltShiftV/video_Dec_09_2024_18-03-48_GMT.webm"
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "video_Dec_09_2024_18-03-48_GMT"
+              "title": "New tab"
             }
           }
         ]
@@ -50,12 +48,12 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "1723066104381",
-                "matchingCase": true,
-                "explainSearch": true,
-                "collapseAll": true,
+                "query": "path:\"AltShiftV/\" ",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
                 "extraContext": false,
-                "sortOrder": "byCreatedTime"
+                "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
               "title": "Search"
@@ -85,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 419.5
+    "width": 527.5
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -249,27 +247,33 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "0cf0c185df39f3a0",
+  "active": "4156b5e5ac4c33be",
   "lastOpenFiles": [
-    "AltShiftV/video_Dec_07_2024_23-53-00_GMT.webm",
-    "AltShiftV/video_Dec_07_2024_23-05-50_GMT.webm",
-    "AltShiftV/People Guards.md",
-    "AltShiftV/Reading Reflection #8.md",
+    "obsidian-history-vault-master/11 labor/Readership/SOC 130 Reading Reflection #8.pdf",
+    "obsidian-history-vault-master/11 labor/Readership/SOC 130 Reading Reflection #8.md",
+    "obsidian-history-vault-master/11 labor/Readership/Reading Reflection 1.pdf",
+    "obsidian-history-vault-master/11 labor/Readership/Reading Reflection 1.md",
+    "obsidian-history-vault-master/11 labor/Readership/Reading Reflection #8.pdf",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/MEJIA-Paper 1-MARX Seminar_es.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/MEJIA-Paper 1-MARX Seminar.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_vF_F.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL0005.tmp",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$1C2C3_vF.docx",
+    "Comunicado de prevención contra la aplicación de la política antiterrorismo internacional y nacional de los EEUU, Ecuador y Peru-7 de diciembre 2024..md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$JIA-Paper 1-MARX Seminar_es.docx",
+    "MEJIA-Paper 1-MARX Seminar_es.md",
+    "MEJIA-Paper 1-MARX Seminar_es 2.md",
+    "MEJIA-Paper 1-MARX Seminar_es 2.docx",
+    "MEJIA-Paper 1-MARX Seminar_es 1.md",
+    "AltShiftV/MEJIA-Paper 1-MARX Seminar.md",
     "AltShiftV/on social accident.md",
+    "AltShiftV/People Guards.md",
     "AltShiftV/JF Vs. JM.png",
     "AltShiftV/image_Dec_10_2024_17-58-23_GMT.png",
+    "AltShiftV/Reading Reflection #8.md",
     "obsidian-history-vault-master/07 diary/A man for himself is a man without fortune nor virtue. Woman valorization of man is the keystone of non-nuclear fusion social reproduction..md",
-    "AltShiftV/video_Dec_10_2024_17-58-08_GMT.webm",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL0001.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD0000.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$BVII v3.docx",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII v3.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Finalfinal draft.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$1C2C3_vF_F.docx",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL3183.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD3168.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$JIA-Paper 1-MARX Seminar.docx",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL0738.tmp",
     "obsidian-history-vault-master/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/main.md",
     "obsidian-history-vault-master/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/The ceteris paribus for the fall in the rate of profit.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Gold world capital fund.md",
@@ -283,13 +287,6 @@
     "obsidian-history-vault-master/02 analysis/annotated bibliography/TCC.md",
     "obsidian-history-vault-master/06 archives/Gold/After the Gold Crash  Alchemist  LBMA.md",
     "obsidian-history-vault-master/06 archives/Gold/China central bank asks some institutions to report daily long-term bond holdings sources.md",
-    "obsidian-history-vault-master/06 archives/Gold/Gold in SDRs, Currencies, & Gold.md",
-    "obsidian-history-vault-master/06 archives/Gold/LBMA Precious Metal Prices  LBMA.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/HIMA/GOLD AND MONEY AS CAPITAL.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Quotes JMM.md",
-    "obsidian-history-vault-master/11 labor/Readership/Reading Reflection 1.md",
-    "obsidian-history-vault-master/11 labor/Readership/SOC 130 Reading Reflection #8.md",
-    "obsidian-history-vault-master/11 labor/Readership/SOC 130 Reading Reflection.md",
     "obsidian-history-vault-master/07 diary/Erowid Psilocybin Mushroom Vault  Tea Preparation/teonanancatl.jpg",
     "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop295.png",
     "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop294.png",
