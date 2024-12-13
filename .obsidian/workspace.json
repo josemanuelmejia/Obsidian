@@ -11,10 +11,14 @@
             "id": "5414389d9ee7ab1f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "AltShiftV/on social accident.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "on social accident"
             }
           }
         ]
@@ -83,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 527.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -247,7 +252,7 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "4156b5e5ac4c33be",
+  "active": "5414389d9ee7ab1f",
   "lastOpenFiles": [
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD0003.tmp",
     "~$JIA-Paper 1-MARX Seminar_es 2.docx",
