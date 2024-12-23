@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "32fd9c3584bac5b6",
+        "id": "77e272e5c306322c",
         "type": "tabs",
         "children": [
           {
-            "id": "1364ffb600fff927",
+            "id": "42d16eaf1d6be57b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "old_nov2024/Karl Marx - Capital, Volume 1.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Karl Marx - Capital, Volume 1"
             }
           }
         ]
@@ -48,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"AltShiftV/\" ",
+                "query": "30Apr",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -83,8 +87,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 609.5
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -248,8 +251,9 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "1364ffb600fff927",
+  "active": "4156b5e5ac4c33be",
   "lastOpenFiles": [
+    "musica buena.md",
     "Global Police State.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/HIMA/~$bmission_HIMA_September11_2024.docx",
     "AltShiftV/on social accident.md",
@@ -287,7 +291,6 @@
     "obsidian-history-vault-master/07 diary/September 25, 2024.md",
     "obsidian-history-vault-master/07 diary/Untitled.md",
     "obsidian-history-vault-master/06 archives/Gold/The Fed - Selected Foreign Official Assets Held at Federal Reserve Banks, July 2024.md",
-    "obsidian-history-vault-master/06 archives/Gold/Milestones in the History of U.S. Foreign Relations - Office of the Historian.md",
     "obsidian-history-vault-master/06 archives/Gold/Captura.PNG",
     "obsidian-history-vault-master/07 diary/Erowid Psilocybin Mushroom Vault  Tea Preparation/teonanancatl.jpg",
     "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop295.png",
