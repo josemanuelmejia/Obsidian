@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "77e272e5c306322c",
+        "id": "506397dbaeac778a",
         "type": "tabs",
         "children": [
           {
-            "id": "42d16eaf1d6be57b",
+            "id": "b51e4ee080f56eb3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "old_jun2024_nonclass/Un poder A power.md",
-                "mode": "preview",
-                "source": false
+                "file": "obsidian-history-vault-master/06 archives/China-Russia/China-Afganistan/CHINA’S ECONOMIC DIPLOMACY TOWARDS.md",
+                "mode": "source",
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "Un poder A power"
+              "title": "CHINA’S ECONOMIC DIPLOMACY TOWARDS"
             }
           }
         ]
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "30Apr",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -82,12 +82,26 @@
               "icon": "longform",
               "title": "Longform"
             }
+          },
+          {
+            "id": "8134248eacf0de67",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-history-vault-master/06 archives/China-Russia/China-Afganistan/CHINA’S ECONOMIC DIPLOMACY TOWARDS.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CHINA’S ECONOMIC DIPLOMACY TOWARDS"
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 920.5
+    "width": 402.5
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -251,10 +265,15 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "42d16eaf1d6be57b",
+  "active": "b51e4ee080f56eb3",
   "lastOpenFiles": [
-    "musica buena.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/desktop.ini",
+    "obsidian-history-vault-master/06 archives/China-Russia/China-Afganistan/CHINA’S ECONOMIC DIPLOMACY TOWARDS.md",
+    "obsidian-history-vault-master/06 archives/China-Russia/China-Afganistan/CHINA’S ECONOMIC DIPLOMACY TOWARDS.pdf",
+    "obsidian-history-vault-master/06 archives/China-Russia/China-Afganistan",
+    "Global Police State.md",
     "old_jun2024_nonclass/Un poder A power.md",
+    "musica buena.md",
     "old_jun2024_nonclass/Valicha.md",
     "old_jun2024_nonclass/Note.md",
     "old_jun2024_nonclass/Notes on Economic Manuscripts of Marx.md",
@@ -262,7 +281,6 @@
     "old_jun2024_nonclass/Lecture_1_OLS.pdf",
     "old_jun2024_nonclass/La adicción.md",
     "old_jun2024_nonclass/James_The Self and Its Selves.pdf",
-    "Global Police State.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/HIMA/~$bmission_HIMA_September11_2024.docx",
     "AltShiftV/on social accident.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD0003.tmp",
@@ -270,8 +288,6 @@
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$BVII v3.docx",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL0002.tmp",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD0001.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD0000.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$JIA-Paper 1-MARX Seminar_es 2.docx",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/MEJIA-Paper 1-MARX Seminar_es 1.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/MEJIA-Paper 1-MARX Seminar_es 3.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/MEJIA-Paper 1-MARX Seminar_es.md",
@@ -289,8 +305,6 @@
     "AltShiftV/image_Dec_10_2024_17-58-23_GMT.png",
     "AltShiftV/Reading Reflection #8.md",
     "obsidian-history-vault-master/07 diary/A man for himself is a man without fortune nor virtue. Woman valorization of man is the keystone of non-nuclear fusion social reproduction..md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII v3.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Finalfinal draft.md",
     "obsidian-history-vault-master/06 archives/Gold/Captura.PNG",
     "obsidian-history-vault-master/07 diary/Erowid Psilocybin Mushroom Vault  Tea Preparation/teonanancatl.jpg",
     "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop295.png",
