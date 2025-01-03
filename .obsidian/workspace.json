@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "506397dbaeac778a",
+        "id": "2c259611b2e34af0",
         "type": "tabs",
         "children": [
           {
-            "id": "b51e4ee080f56eb3",
+            "id": "32038002049d43c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/06 archives/China-Russia/China-Afganistan/CHINA’S ECONOMIC DIPLOMACY TOWARDS.md",
-                "mode": "source",
-                "source": true
+                "file": "obsidian-history-vault-master/11 labor/MS y movilización.md",
+                "mode": "preview",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "CHINA’S ECONOMIC DIPLOMACY TOWARDS"
+              "title": "MS y movilización"
             }
           }
         ]
@@ -40,7 +40,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "byModifiedTime"
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -61,6 +61,20 @@
               },
               "icon": "lucide-search",
               "title": "Search"
+            }
+          },
+          {
+            "id": "f32806cc32fae8d6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-history-vault-master/11 labor/MS y movilización.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "MS y movilización"
             }
           },
           {
@@ -101,7 +115,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 402.5
+    "width": 627.5
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -265,46 +279,46 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "b51e4ee080f56eb3",
+  "active": "32038002049d43c9",
   "lastOpenFiles": [
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/desktop.ini",
-    "obsidian-history-vault-master/06 archives/China-Russia/China-Afganistan/CHINA’S ECONOMIC DIPLOMACY TOWARDS.md",
-    "obsidian-history-vault-master/06 archives/China-Russia/China-Afganistan/CHINA’S ECONOMIC DIPLOMACY TOWARDS.pdf",
-    "obsidian-history-vault-master/06 archives/China-Russia/China-Afganistan",
-    "Global Police State.md",
-    "old_jun2024_nonclass/Un poder A power.md",
-    "musica buena.md",
-    "old_jun2024_nonclass/Valicha.md",
-    "old_jun2024_nonclass/Note.md",
-    "old_jun2024_nonclass/Notes on Economic Manuscripts of Marx.md",
-    "old_jun2024_nonclass/LING4.md",
-    "old_jun2024_nonclass/Lecture_1_OLS.pdf",
-    "old_jun2024_nonclass/La adicción.md",
-    "old_jun2024_nonclass/James_The Self and Its Selves.pdf",
+    "obsidian-history-vault-master/11 labor/~$ y movilización.docx",
+    "obsidian-history-vault-master/11 labor/~WRL3944.tmp",
+    "obsidian-history-vault-master/11 labor/~WRD3936.tmp",
     "obsidian-history-vault-master/03 writing/documents/Drafts/HIMA/~$bmission_HIMA_September11_2024.docx",
-    "AltShiftV/on social accident.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD0003.tmp",
-    "~$JIA-Paper 1-MARX Seminar_es 2.docx",
+    "obsidian-history-vault-master/11 labor/MS y movilización.docx",
+    "obsidian-history-vault-master/11 labor/[.md",
+    "obsidian-history-vault-master/11 labor/MS y movilización.md",
+    "obsidian-history-vault-master/06 archives/China-Russia/China-Afganistan/CHINA’S ECONOMIC DIPLOMACY TOWARDS.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/HIMA/~WRL3567.tmp",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/HIMA/~WRD0005.tmp",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$BVII v3.docx",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRL0002.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~WRD0001.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/MEJIA-Paper 1-MARX Seminar_es 1.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$avance.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Marx Seminar - November 26th, 2024.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/MEJIA-Paper 1-MARX Seminar_es 3.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$JIA_Shot-paper_KV1C2C3.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$JIA-Paper 1-MARX Seminar_es 2.docx",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_v3.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_vF es_sin citas.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_vF.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII v3.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII v2.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/MEJIA-Paper 1-MARX Seminar_es.md",
+    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/MEJIA-Paper 1-MARX Seminar_es 1.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/MEJIA-Paper 1-MARX Seminar_es 2.md",
-    "MEJIA-Paper 1-MARX Seminar_es 3.md",
-    "obsidian-history-vault-master/11 labor/Readership/SOC 130 Reading Reflection #8.md",
-    "obsidian-history-vault-master/11 labor/Readership/Reading Reflection 1.md",
-    "MEJIA-Paper 1-MARX Seminar_es.md",
-    "MEJIA-Paper 1-MARX Seminar_es 2.md",
-    "MEJIA-Paper 1-MARX Seminar_es 1.md",
-    "Comunicado de prevención contra la aplicación de la política antiterrorismo internacional y nacional de los EEUU, Ecuador y Peru-7 de diciembre 2024..md",
-    "AltShiftV/MEJIA-Paper 1-MARX Seminar.md",
-    "AltShiftV/People Guards.md",
+    "obsidian-history-vault-master/06 archives/China-Russia/Russia's Putin expresses gratitude to China's Xi for Ukraine peace plan  AP News.md",
+    "obsidian-history-vault-master/07 diary/November 20/Speech At A Plenary Session The Moscow Soviet.md",
+    "obsidian-history-vault-master/07 diary/08MAY23.md",
+    "obsidian-history-vault-master/07 diary/2023-04-02.md",
+    "obsidian-history-vault-master/07 diary/2023-06-02.md",
+    "obsidian-history-vault-master/07 diary/2023-07-02.md",
+    "obsidian-history-vault-master/07 diary/2023-10-03.md",
+    "obsidian-history-vault-master/07 diary/2023-15-02.md",
+    "obsidian-history-vault-master/07 diary/2024-08-22.md",
+    "obsidian-history-vault-master/07 diary/2024-08-24.md",
     "AltShiftV/JF Vs. JM.png",
     "AltShiftV/image_Dec_10_2024_17-58-23_GMT.png",
-    "AltShiftV/Reading Reflection #8.md",
-    "obsidian-history-vault-master/07 diary/A man for himself is a man without fortune nor virtue. Woman valorization of man is the keystone of non-nuclear fusion social reproduction..md",
     "obsidian-history-vault-master/06 archives/Gold/Captura.PNG",
     "obsidian-history-vault-master/07 diary/Erowid Psilocybin Mushroom Vault  Tea Preparation/teonanancatl.jpg",
     "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop295.png",

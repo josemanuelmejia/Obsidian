@@ -191,5 +191,11 @@
       ],
       "key": "S"
     }
-  ]
+  ],
+  "obsidian-completr:completr-bypass-enter-key": [],
+  "obsidian-completr:completr-bypass-tab-key": [],
+  "obsidian-completr:completr-insert-selected-suggestion": [],
+  "obsidian-completr:completr-jump-to-next-snippet-placeholder": [],
+  "obsidian-completr:completr-select-next-suggestion": [],
+  "obsidian-completr:completr-select-previous-suggestion": []
 }
