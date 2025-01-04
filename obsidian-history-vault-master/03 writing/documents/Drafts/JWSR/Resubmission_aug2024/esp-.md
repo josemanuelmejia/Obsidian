@@ -1,5 +1,4 @@
-# Introducción![image_Aug_19_2024_17-36-59_GMT.png]
-
+# Introducción
 
 Los efectos de la resistencia antisistémica del movimiento antiminero en Los Andes expresan el avance del desarrollo de la lucha de clases en la formación identitaria de contendientes históricos en absoluta contradicción (Lenin 1914; Anderson y Hudis 2007) a la reproducción de las burguesías imperialistas que financian el capital a través del circuito minero de acumulación. La minería en Los Andes está en el centro de los procesos fundacionales del sistema-mundo moderno y en los procesos metabólicos de reproducción del capital financiero en la economía-mundo actual[[1]](#_ftn1). El desarrollo de los procesos de producción y circulación de la minería colonial e imperialista, y de la minería aurífera en particular, han estructurado la formación social y la resistencia histórica del campesinado indígena-choló, contra el militarismo, el despojo y la destrucción expansiva de los valores vitales para su reproducción social: el agua y la tierra.
 

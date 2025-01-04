@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "2c259611b2e34af0",
+        "id": "01df271247246ed6",
         "type": "tabs",
         "children": [
           {
-            "id": "32038002049d43c9",
+            "id": "2fdf2da2f589cdad",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "obsidian-history-vault-master/11 labor/MS y movilización.md",
-                "mode": "preview",
-                "source": false
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Latex/Antisystemic_Effects_of_Antimining_Andean_Peasant_Struggles__1___Copy_.pdf"
               },
-              "icon": "lucide-file",
-              "title": "MS y movilización"
+              "icon": "lucide-file-text",
+              "title": "Antisystemic_Effects_of_Antimining_Andean_Peasant_Struggles__1___Copy_"
             }
           }
         ]
@@ -52,10 +50,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "los efectos",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               },
@@ -111,11 +109,12 @@
               "title": "CHINA’S ECONOMIC DIPLOMACY TOWARDS"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 627.5
+    "width": 884.5
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -279,22 +278,36 @@
       "privacy-glasses:Reveal all": false
     }
   },
-  "active": "32038002049d43c9",
+  "active": "11f193bbd8e05176",
   "lastOpenFiles": [
-    "obsidian-history-vault-master/11 labor/~WRL0004.tmp",
-    "obsidian-history-vault-master/11 labor/~WRD0003.tmp",
-    "obsidian-history-vault-master/11 labor/~WRD0002.tmp",
-    "obsidian-history-vault-master/11 labor/~$ y movilización.docx",
-    "obsidian-history-vault-master/11 labor/~WRL3944.tmp",
-    "obsidian-history-vault-master/11 labor/~WRD3936.tmp",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/HIMA/~$bmission_HIMA_September11_2024.docx",
-    "obsidian-history-vault-master/11 labor/MS y movilización.docx",
-    "obsidian-history-vault-master/11 labor/[.md",
+    "obsidian-history-vault-master/12 Latex/Overleaf Projects (20 items)/Draft final JWSR (Copy)spa/Los efectos sobre la reproducci´on del capital financiero imperialista - copia.pdf",
+    "obsidian-history-vault-master/12 Latex/Overleaf Projects (20 items)/Draft final JWSR (Copy)spa/Los efectos sobre la reproducci´on del capital financiero imperialista.pdf",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Latex/Antisystemic_Effects_of_Antimining_Andean_Peasant_Struggles__1___Copy_.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Latex/Antisystemic_Effects_of_Antimining_Andean_Peasant_Struggles__1___Copy_.pdf",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Antisystemic Effects of  Peasants AntimininAndeang Struggles_2024-07-18.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Section1_es.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Antisystemic_Effects_of_Antimining_Andean_Peasant_Struggles__1___Copy_.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Section 2 en_es.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Introducción es.md",
+    "obsidian-history-vault-master/07 diary/Untitled.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/~$esp-.docx",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Total gold-capital reserves-China-US.png",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Submission_feb2023/~$SR_submission.docx",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Second draft.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Finalfinal draft.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Draft.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/~$aft resubmission August 19 2024.docx",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Conversational AI Memo for D 2749_ MEJIA-Paper 1-MARX Seminar (6).docx",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/~$nversational AI Memo for D 2713_ submission_HIMA_September11_2024.docx",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/~$e antisystemic effects hyphotesis for antimining struggles.docx",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Introduction_en_JWSR.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/The antisystemic effects hyphotesis for antimining struggles.docx",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Conversational AI Memo for D 2713_ submission_HIMA_September11_2024.docx",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/esp-.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Presentation ITA Monday September 16th, 2024 12hrs to 12hrs10m..md",
     "obsidian-history-vault-master/11 labor/MS y movilización.md",
+    "obsidian-history-vault-master/11 labor/[.md",
     "obsidian-history-vault-master/06 archives/China-Russia/China-Afganistan/CHINA’S ECONOMIC DIPLOMACY TOWARDS.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/HIMA/~WRL3567.tmp",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/HIMA/~WRD0005.tmp",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/~$BVII v3.docx",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Marx Seminar - November 26th, 2024.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/MEJIA-Paper 1-MARX Seminar_es 3.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3_v3.md",
@@ -304,19 +317,6 @@
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/KV1C2C3.md",
     "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/GNBVII v2.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/MEJIA-Paper 1-MARX Seminar_es.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/MEJIA-Paper 1-MARX Seminar_es 1.md",
-    "obsidian-history-vault-master/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/MEJIA-Paper 1-MARX Seminar_es 2.md",
-    "obsidian-history-vault-master/06 archives/China-Russia/Russia's Putin expresses gratitude to China's Xi for Ukraine peace plan  AP News.md",
-    "obsidian-history-vault-master/07 diary/November 20/Speech At A Plenary Session The Moscow Soviet.md",
-    "obsidian-history-vault-master/07 diary/08MAY23.md",
-    "obsidian-history-vault-master/07 diary/2023-04-02.md",
-    "obsidian-history-vault-master/07 diary/2023-06-02.md",
-    "obsidian-history-vault-master/07 diary/2023-07-02.md",
-    "obsidian-history-vault-master/07 diary/2023-10-03.md",
-    "obsidian-history-vault-master/07 diary/2023-15-02.md",
-    "obsidian-history-vault-master/07 diary/2024-08-22.md",
-    "obsidian-history-vault-master/07 diary/2024-08-24.md",
     "AltShiftV/JF Vs. JM.png",
     "AltShiftV/image_Dec_10_2024_17-58-23_GMT.png",
     "obsidian-history-vault-master/06 archives/Gold/Captura.PNG",
@@ -326,7 +326,6 @@
     "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop293.jpg",
     "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop291-1.jpg",
     "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop292.jpg",
-    "OBSIDI~2/09COUR~1/UCSB/Sociology UCSB/Julia C. Morse/Global Governance Goals and Lessons for AI - Microsoft On the Issues/GlobalGov_Postcard-Front_UPDATED-225x300.jpg",
     "Untitled.canvas",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",
     "Mayra.canvas",
