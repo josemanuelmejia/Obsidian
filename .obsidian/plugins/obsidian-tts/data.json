@@ -1,15 +1,15 @@
 {
-  "defaultVoice": "speechSynthesis-Microsoft Raul - Spanish (Mexico)",
+  "defaultVoice": "speechSynthesis-Microsoft Zira - English (United States)",
   "pitch": 0.8,
   "rate": 0.9,
   "volume": 1,
-  "speakLinks": false,
-  "speakFrontmatter": false,
-  "speakSyntax": false,
-  "speakTitle": true,
-  "speakCodeblocks": false,
-  "speakEmoji": false,
-  "speakComments": false,
+  "speakLinks": true,
+  "speakFrontmatter": true,
+  "speakSyntax": true,
+  "speakTitle": false,
+  "speakCodeblocks": true,
+  "speakEmoji": true,
+  "speakComments": true,
   "languageVoices": [
     {
       "language": "es",
@@ -17,9 +17,9 @@
       "id": "speechSynthesis-Microsoft Sabina - Spanish (Mexico)"
     },
     {
+      "id": "speechSynthesis-Microsoft Zira - English (United States)",
       "language": "en",
-      "voice": "Microsoft Zira - English (United States)",
-      "id": "speechSynthesis-Microsoft Zira - English (United States)"
+      "voice": "Microsoft Zira - English (United States)"
     }
   ],
   "stopPlaybackWhenNoteChanges": true,

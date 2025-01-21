@@ -1,7 +1,7 @@
 {
   "apiKey": "",
   "fromLanguage": "EN",
-  "toLanguage": "FR",
+  "toLanguage": "EN-US",
   "showStatusBar": true,
   "useProAPI": false,
   "formality": "default"
