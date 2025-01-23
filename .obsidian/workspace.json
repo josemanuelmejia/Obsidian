@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/11 labor/Opresión social y desdemocratización/Notebook.md",
+                "file": "obsidian-history-vault-master/07 diary/21E.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "Notebook"
+              "title": "21E"
             }
           }
         ],
@@ -35,18 +35,6 @@
         "id": "a90bc08e71677c95",
         "type": "tabs",
         "children": [
-          {
-            "id": "4156b5e5ac4c33be",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "byModifiedTime"
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
-            }
-          },
           {
             "id": "11f193bbd8e05176",
             "type": "leaf",
@@ -97,8 +85,21 @@
               "icon": "lucide-file",
               "title": "CHINA’S ECONOMIC DIPLOMACY TOWARDS"
             }
+          },
+          {
+            "id": "e69ad7ec32513f3f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -268,10 +269,12 @@
   },
   "active": "b7f3d121c38cae38",
   "lastOpenFiles": [
+    "old_jun2024_nonclass/^goldcrash2013.md",
+    "obsidian-history-vault-master/07 diary/21E.md",
+    "obsidian-history-vault-master/07 diary/20E.md",
+    "obsidian-history-vault-master/11 labor/Opresión social y desdemocratización/Notebook.md",
     "obsidian-history-vault-master/11 labor/~$_JoseManuelMejia_jun_2024.docx",
     "obsidian-history-vault-master/11 labor/Opresión social y desdemocratización/(.md",
-    "obsidian-history-vault-master/11 labor/Opresión social y desdemocratización/Notebook.md",
-    "obsidian-history-vault-master/07 diary/20E.md",
     "obsidian-history-vault-master/11 labor/Opresión social y desdemocratización",
     "gold.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Capital & Class/Pablo.md",
@@ -291,7 +294,6 @@
     "AltShiftV/video_Jan_16_2025_19-55-03_GMT.webm",
     "obsidian-history-vault-master/07 diary/4E/5E.md",
     "obsidian-history-vault-master/01 notes/feichtnerStruggleInternationalSeabed2024.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/UNMSM/El_impacto_sobre_las_ganancias-9.pdf",
     "obsidian-history-vault-master/07 diary/4E/4E.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Antisystemic Effects of  Peasants AntimininAndeang Struggles_2024-07-18.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/UNMSM/los efectos de la lucha.md",
@@ -303,7 +305,6 @@
     "obsidian-history-vault-master/03 writing/documents/Drafts/UNMSM/Los efectos..md",
     "obsidian-history-vault-master/12 Latex/Overleaf Projects (20 items)/Draft final JWSR (Copy)spa/Los efectos sobre la.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Latex/El impacto.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Latex/Los efectos sobre la reproducci´on del capital financiero imperialista.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Total gold-capital reserves-China-US.png",
     "AltShiftV/JF Vs. JM.png",
     "AltShiftV/image_Dec_10_2024_17-58-23_GMT.png",
