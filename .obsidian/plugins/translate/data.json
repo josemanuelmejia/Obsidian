@@ -1,7 +1,7 @@
 {
   "version": "1.4.5",
-  "display_language": "display",
-  "filter_mode": "0",
+  "display_language": "local",
+  "filter_mode": "2",
   "translation_service": "bergamot",
   "security_setting": "none",
   "switch_button_action": "switch-both",
@@ -898,7 +898,7 @@
         "es"
       ],
       "validated": null,
-      "auto_translate": false,
+      "auto_translate": true,
       "auto_translate_interval": 500,
       "available_languages": [],
       "version": "0.3.4",
