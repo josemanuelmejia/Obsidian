@@ -68,8 +68,8 @@
             "state": {
               "type": "VIEW_TYPE_LONGFORM_EXPLORER",
               "state": {},
-              "icon": "longform",
-              "title": "Longform"
+              "icon": "lucide-ghost",
+              "title": "VIEW_TYPE_LONGFORM_EXPLORER"
             }
           },
           {
@@ -92,10 +92,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de archivos"
             }
           }
         ],
@@ -176,8 +177,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
+              "icon": "lucide-ghost",
+              "title": "advanced-tables-toolbar"
             }
           },
           {
@@ -200,8 +201,8 @@
             "state": {
               "type": "transcript-view",
               "state": {},
-              "icon": "scroll",
-              "title": "YouTube Transcript"
+              "icon": "lucide-ghost",
+              "title": "transcript-view"
             }
           },
           {
@@ -210,8 +211,8 @@
             "state": {
               "type": "transcript-view",
               "state": {},
-              "icon": "scroll",
-              "title": "YouTube Transcript"
+              "icon": "lucide-ghost",
+              "title": "transcript-view"
             }
           },
           {
@@ -257,8 +258,8 @@
                   "copy"
                 ]
               },
-              "icon": "bergamot",
-              "title": "Bergamot"
+              "icon": "lucide-ghost",
+              "title": "translator-view"
             }
           }
         ],
@@ -271,33 +272,32 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "notes-refresher:Get note summaries": false,
-      "translate:Open translation view": false,
-      "publish:Publish changes...": true,
-      "markdown-table-editor:Open Markdown Table Editor": true,
-      "vantage-obsidian:Vantage - Advanced search builder": true,
-      "switcher:Open quick switcher": true,
-      "graph:Open graph view": true,
-      "canvas:Create new canvas": true,
-      "daily-notes:Open today's daily note": true,
-      "templates:Insert template": true,
-      "command-palette:Open command palette": true,
-      "markdown-importer:Open format converter": true,
-      "workspaces:Manage workspace layouts": true,
-      "random-note:Open random note": true,
-      "audio-recorder:Start/stop recording": false,
-      "obsidian-translator:Translate": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": true,
-      "templater-obsidian:Templater": true,
-      "obsidian-wordnet-plugin:WordNet Dictionary": true,
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "markdown-importer:Abrir el importador de Markdown": false,
+      "random-note:Abrir nota al azar": false,
+      "audio-recorder:Iniciar/Detener la grabación": false,
+      "workspaces:Gestionar disposiciones de espacio de trabajo": false,
+      "publish:Publicar cambios...": false,
+      "bases:Crear nueva base": false,
+      "templater-obsidian:Templater": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-import-json:JSON/CSV Importer": false,
+      "markdown-table-editor:Open Markdown Table Editor": false,
+      "vantage-obsidian:Vantage - Advanced search builder": false,
       "obsidian-tts:Text to Speech": false,
-      "obsidian-import-json:JSON/CSV Importer": true,
-      "whisper:Open recording controls": true,
-      "obsidian-camera:Obsidian Camera": true,
+      "obsidian-wordnet-plugin:WordNet Dictionary": false,
+      "obsidian-translator:Translate": false,
+      "translate:Open translation view": false,
       "obsidian-audio-notes:Quick Audio Note with Transcription": false,
+      "obsidian-camera:Obsidian Camera": false,
       "privacy-glasses:Hide all": false,
-      "privacy-glasses:Reveal non-private": true,
-      "privacy-glasses:Reveal headlines only": true,
+      "privacy-glasses:Reveal non-private": false,
+      "privacy-glasses:Reveal headlines only": false,
       "privacy-glasses:Reveal all": false
     }
   },

@@ -11,7 +11,6 @@
     "margin": "2",
     "downscalePercent": 98
   },
-  "showRibbon": true,
   "promptDelete": false,
   "showLineNumber": true,
   "focusNewTab": false,
