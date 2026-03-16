@@ -6,8 +6,8 @@
   "language": "auto",
   "verbosity": 1,
   "whisperASRUrls": "http://localhost:9000",
-  "debug": false,
-  "transcriptionEngine": "swiftink",
+  "debug": true,
+  "transcriptionEngine": "whisper_asr",
   "embedAdditionalFunctionality": false,
   "embedSummary": false,
   "embedOutline": false,
@@ -17,6 +17,6 @@
   "lineSpacing": "multi",
   "encode": true,
   "initialPrompt": "",
-  "vadFilter": false,
-  "wordTimestamps": false
+  "vadFilter": true,
+  "wordTimestamps": true
 }

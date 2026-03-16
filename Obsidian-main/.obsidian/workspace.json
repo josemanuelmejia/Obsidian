@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-history-vault-master/11 labor/Opresión social y desdemocratización/Rodrigo Barrenechea, Alberto Vergara - Democracia Asaltada_ _El colapso de la política peruana (y una advertencia para América.md",
-                "mode": "source",
+                "file": "obsidian-main/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Q1. Mining struggles antisystemic effects on capital accumulation.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Rodrigo Barrenechea, Alberto Vergara - Democracia Asaltada_ _El colapso de la política peruana (y una advertencia para América"
+              "title": "Q1. Mining struggles antisystemic effects on capital accumulation"
             }
           }
         ],
@@ -63,43 +63,20 @@
             }
           },
           {
-            "id": "1d5aac17e84ef453",
-            "type": "leaf",
-            "state": {
-              "type": "VIEW_TYPE_LONGFORM_EXPLORER",
-              "state": {},
-              "icon": "longform",
-              "title": "Longform"
-            }
-          },
-          {
-            "id": "8134248eacf0de67",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-history-vault-master/06 archives/China-Russia/China-Afganistan/CHINA’S ECONOMIC DIPLOMACY TOWARDS.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CHINA’S ECONOMIC DIPLOMACY TOWARDS"
-            }
-          },
-          {
             "id": "e69ad7ec32513f3f",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de archivos"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -176,8 +153,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
+              "icon": "lucide-ghost",
+              "title": "advanced-tables-toolbar"
             }
           },
           {
@@ -200,8 +177,8 @@
             "state": {
               "type": "transcript-view",
               "state": {},
-              "icon": "scroll",
-              "title": "YouTube Transcript"
+              "icon": "lucide-ghost",
+              "title": "transcript-view"
             }
           },
           {
@@ -210,8 +187,8 @@
             "state": {
               "type": "transcript-view",
               "state": {},
-              "icon": "scroll",
-              "title": "YouTube Transcript"
+              "icon": "lucide-ghost",
+              "title": "transcript-view"
             }
           },
           {
@@ -257,8 +234,8 @@
                   "copy"
                 ]
               },
-              "icon": "bergamot",
-              "title": "Bergamot"
+              "icon": "lucide-ghost",
+              "title": "translator-view"
             }
           }
         ],
@@ -271,38 +248,47 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "notes-refresher:Get note summaries": false,
-      "translate:Open translation view": false,
-      "publish:Publish changes...": true,
-      "markdown-table-editor:Open Markdown Table Editor": true,
-      "vantage-obsidian:Vantage - Advanced search builder": true,
-      "switcher:Open quick switcher": true,
-      "graph:Open graph view": true,
-      "canvas:Create new canvas": true,
-      "daily-notes:Open today's daily note": true,
-      "templates:Insert template": true,
-      "command-palette:Open command palette": true,
-      "markdown-importer:Open format converter": true,
-      "workspaces:Manage workspace layouts": true,
-      "random-note:Open random note": true,
-      "audio-recorder:Start/stop recording": false,
-      "obsidian-translator:Translate": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": true,
-      "templater-obsidian:Templater": true,
-      "obsidian-wordnet-plugin:WordNet Dictionary": true,
-      "obsidian-tts:Text to Speech": false,
-      "obsidian-import-json:JSON/CSV Importer": true,
-      "whisper:Open recording controls": true,
-      "obsidian-camera:Obsidian Camera": true,
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "markdown-importer:Abrir el importador de Markdown": false,
+      "random-note:Abrir nota al azar": false,
+      "audio-recorder:Iniciar/Detener la grabación": false,
+      "workspaces:Gestionar disposiciones de espacio de trabajo": false,
+      "publish:Publicar cambios...": false,
+      "bases:Crear nueva base": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-audio-notes:Quick Audio Note with Transcription": false,
+      "obsidian-camera:Obsidian Camera": false,
+      "obsidian-import-json:JSON/CSV Importer": false,
+      "markdown-table-editor:Open Markdown Table Editor": false,
+      "notes-refresher:Get note summaries": false,
       "privacy-glasses:Hide all": false,
-      "privacy-glasses:Reveal non-private": true,
-      "privacy-glasses:Reveal headlines only": true,
-      "privacy-glasses:Reveal all": false
+      "privacy-glasses:Reveal non-private": false,
+      "privacy-glasses:Reveal headlines only": false,
+      "privacy-glasses:Reveal all": false,
+      "smart-memos:Record smart memo": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-tts:Text to Speech": false,
+      "translate:Open translation view": false,
+      "obsidian-translator:Translate": false,
+      "vantage-obsidian:Vantage - Advanced search builder": false,
+      "whisper:Open recording controls": false,
+      "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
   "active": "b7f3d121c38cae38",
   "lastOpenFiles": [
+    "obsidian-main/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Q1. Mining struggles antisystemic effects on capital accumulation.md",
+    "obsidian-main/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/The strategical centrality of anti-mining struggles.md",
+    "obsidian-main/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/The ceteris paribus for the fall in the rate of profit.md",
+    "obsidian-main/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/scale.PNG",
+    "obsidian-main/02 analysis/questions and arguments/Q2. Mining struggles challenge imperialist domination/Q2. Mining struggles challenge imperialist domination.md",
+    "obsidian-main/02 analysis/Research plan.md",
+    "Research Proposal.md",
     "obsidian-history-vault-master/07 diary/Ene-19-2025.md",
     "obsidian-history-vault-master/11 labor/[.md",
     "obsidian-history-vault-master/11 labor/Opresión social y desdemocratización/Rodrigo Barrenechea, Alberto Vergara - Democracia Asaltada_ _El colapso de la política peruana (y una advertencia para América.md",
@@ -334,12 +320,6 @@
     "obsidian-history-vault-master/11 labor/~$_JoseManuelMejia_jun_2024.docx",
     "obsidian-history-vault-master/11 labor/Opresión social y desdemocratización/(.md",
     "gold.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Capital & Class/Pablo.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Capital & Class/Capital and Class.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/Gold world capital fund.md",
-    "Global Police State.md",
-    "obsidian-history-vault-master/02 analysis/MARX/MEGAdigital. Online-Angebot der historisch-kritischen Gesamtausgabe von Karl Marx und Friedrich Engels.md",
-    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Finalfinal draft.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Total gold-capital reserves-China-US.png",
     "AltShiftV/JF Vs. JM.png",
     "AltShiftV/image_Dec_10_2024_17-58-23_GMT.png",
@@ -348,7 +328,6 @@
     "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop294.png",
     "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop293.jpg",
     "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop291-1.jpg",
-    "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop292.jpg",
     "Untitled.canvas",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",
     "Mayra.canvas",

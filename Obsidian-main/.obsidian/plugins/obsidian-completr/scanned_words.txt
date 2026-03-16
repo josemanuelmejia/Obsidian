@@ -37354,6 +37354,8 @@ tremendamente
 topercepci
 tabicantes
 tresspass
+transclusions
+typing
 source
 stock
 see
@@ -50573,6 +50575,12 @@ sostuvo
 salv
 sanci
 sequentiality
+subsummption
+stockpiling
+stockpiles
+sizable
+supersession
+stablishing
 author
 at
 and
@@ -63672,6 +63680,7 @@ anticorre
 anticipadas
 anverso
 assummed
+ahYx
 The
 Table
 Total
@@ -73075,6 +73084,9 @@ Torrico
 Tribu
 Telas
 TikTok
+Tell
+TabbedTxt
+TpIV
 Fed
 Federal
 Feb
@@ -83232,6 +83244,7 @@ Fear
 Fernenbug
 Fedemin
 Favo
+FgFG
 Reserve
 Release
 Reuters
@@ -93487,6 +93500,8 @@ Repi
 Regresemos
 Rica
 Recalde
+Restate
+Reassume
 Assets
 Asset
 Apr
@@ -123330,6 +123345,7 @@ Extremo
 Esperanza
 Embajada
 Expresses
+Excel
 Board
 Banks
 Borrow
@@ -132657,6 +132673,9 @@ Bernardo
 Baham
 Burbano
 Boliv
+Blocking
+Bordo
+Breton
 of
 outstanding
 on
@@ -145889,6 +145908,8 @@ oscar
 oscilado
 observemos
 omnipresente
+overflowed
+openness
 Governors
 Gold
 Gift
@@ -156138,6 +156159,7 @@ Grimaldo
 Georgetown
 Giammattei
 Guayaquil
+GAXz
 in
 international
 is
@@ -178940,6 +178962,8 @@ Weak
 Willax
 Westfield
 Warma
+WXL
+Write
 DC
 Date
 Dec
@@ -188469,6 +188493,7 @@ Dadas
 Duque
 Duarte
 Dominicana
+DExR
 footnote
 for
 foreign
@@ -199160,6 +199185,9 @@ fernando
 fugaron
 fallida
 fallecido
+filtering
+fCHW
+freeform
 Millions
 Mar
 May
@@ -210227,6 +210255,7 @@ Maril
 Martens
 Magisterial
 Manta
+Maybe
 dollars
 drawing
 data
@@ -222087,6 +222116,9 @@ desencanto
 desapro
 desilusi
 dudada
+darkGrey
+desc
+demonetizing
 end
 earmark
 economy
@@ -234208,6 +234240,9 @@ exfiscales
 exiliarse
 evitado
 estabilizan
+exclusivity
+exptypes
+edit
 period
 position
 positions
@@ -247109,6 +247144,8 @@ paraguayo
 provista
 perforados
 percentil
+prewar
+parity
 Special
 States
 Scroll
@@ -258108,6 +258145,9 @@ Sandra
 Semilla
 Sebasti
 Saylor
+SUBHEADING
+Sammadar
+Specially
 rights
 reserve
 report
@@ -270199,6 +270239,8 @@ recho
 reyertas
 resumir
 rankingcn
+regressions
+renegotiate
 International
 IMF
 Industrial
@@ -280393,6 +280435,8 @@ Indecopi
 Ilaipp
 Interdisciplinarios
 Isaacs
+Intro
+Insert
 Currencies
 China
 CHINA
@@ -291740,6 +291784,8 @@ Comencemos
 Centroam
 Convenci
 Ciudades
+Conseguir
+Challenge
 held
 holdings
 height
@@ -301868,6 +301914,8 @@ hinostroza
 hugo
 hidrop
 hundido
+hedge
+holded
 under
 unprecedented
 us
@@ -312301,6 +312349,7 @@ universida
 unedu
 universitar
 ubicarla
+uDya
 not
 no
 newsletter
@@ -323402,6 +323451,7 @@ negados
 nsfugas
 narcogenera
 narcot
+navigator
 gold
 generic
 global
@@ -354228,6 +354278,8 @@ vaciados
 vota
 veamos
 viesa
+vCfF
+vXqQ
 million
 matter
 market
@@ -367450,6 +367502,8 @@ malteco
 mencionemos
 merece
 monetizing
+motivates
+mjAC
 New
 Nikkei
 Nasdaq
@@ -386439,6 +386493,9 @@ Lorena
 Lumi
 LaEncerrona
 Lasso
+Lgzsa
+LZOF
+Longform
 width
 with
 why
@@ -397679,6 +397736,9 @@ wirb
 wraw
 wARlYSVDJ
 whatsapp
+weirdly
+wartime
+wFEx
 bank
 bond
 balances
@@ -407984,6 +408044,9 @@ brecha
 baci
 boliviano
 banos
+bdrClr
+bdrStyle
+bdrWidth
 Published
 PM
 People
@@ -417947,6 +418010,8 @@ Priman
 Parisi
 Pachano
 Percentil
+Prove
+Precautionary
 year
 yields
 your
@@ -428032,6 +428097,7 @@ yuwU
 yQbZ
 yvEj
 yenifer
+yoLB
 Yields
 Ye
 Ys
@@ -448437,6 +448503,7 @@ zado
 zacionales
 zarse
 zombi
+zjwC
 Holdings
 However
 Hee
@@ -468615,6 +468682,7 @@ khMEs
 kZBMM
 kZXca
 kilogramos
+kECC
 Quincy
 QK
 Qv
@@ -497848,6 +497916,7 @@ quierdas
 quejarse
 quebraron
 quitarse
+qcGLP
 jobs
 job
 joint
@@ -508297,6 +508366,7 @@ jueza
 jeri
 jaime
 jovenes
+jsMf
 One
 Oshimo
 Okasan
@@ -519316,6 +519386,7 @@ Operators
 Orval
 Origen
 Otero
+Oktay
 xp
 xj
 xI
@@ -548399,6 +548470,8 @@ Vivas
 Vexler
 Valent
 Votos
+Veins
+VXjl
 ZX
 Zy
 ZL
@@ -559073,6 +559146,7 @@ Zdoi
 Zapana
 Zorro
 Zamora
+Zfop
 Ön
 ÖK
 Öm

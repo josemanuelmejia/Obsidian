@@ -893,8 +893,8 @@
     },
     "bergamot": {
       "selected_languages": [
-        "en",
-        "es"
+        "es",
+        "en"
       ],
       "validated": null,
       "auto_translate": true,
@@ -1381,5 +1381,5 @@
       ]
     }
   },
-  "translation_service": "dummy_translate"
+  "translation_service": "bergamot"
 }
