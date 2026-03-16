@@ -1,0 +1,19 @@
+{
+  "pathToPandoc": "C:\\Users\\51964\\AppData\\Local\\Pandoc\\pandoc.EXE",
+  "tooltipDelay": 800,
+  "zoteroGroups": [
+    {
+      "id": 1,
+      "name": "Mi biblioteca",
+      "lastUpdate": 1737678686787
+    }
+  ],
+  "renderCitations": true,
+  "renderCitationsReadingMode": true,
+  "renderLinkCitations": true,
+  "pullFromZotero": true,
+  "cslStyleURL": "https://raw.githubusercontent.com/citation-style-language/styles/master/chicago-author-date.csl",
+  "cslLang": "en-US",
+  "enableCiteKeyCompletion": true,
+  "showCitekeyTooltips": true
+}

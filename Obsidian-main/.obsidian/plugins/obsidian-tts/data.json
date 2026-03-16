@@ -1,0 +1,31 @@
+{
+  "defaultVoice": "speechSynthesis-Microsoft Sabina - Spanish (Mexico)",
+  "pitch": 0.8,
+  "rate": 0.9,
+  "volume": 1,
+  "speakLinks": true,
+  "speakFrontmatter": true,
+  "speakSyntax": true,
+  "speakTitle": false,
+  "speakCodeblocks": true,
+  "speakEmoji": true,
+  "speakComments": true,
+  "languageVoices": [
+    {
+      "language": "es",
+      "voice": "Microsoft Sabina - Spanish (Mexico)",
+      "id": "speechSynthesis-Microsoft Sabina - Spanish (Mexico)"
+    },
+    {
+      "id": "speechSynthesis-Microsoft Zira - English (United States)",
+      "language": "en",
+      "voice": "Microsoft Zira - English (United States)"
+    }
+  ],
+  "stopPlaybackWhenNoteChanges": true,
+  "services": {
+    "openai": {
+      "key": ""
+    }
+  }
+}

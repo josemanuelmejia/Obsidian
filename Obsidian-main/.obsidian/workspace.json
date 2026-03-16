@@ -1,0 +1,357 @@
+{
+  "main": {
+    "id": "ed708ac2f19d4a22",
+    "type": "split",
+    "children": [
+      {
+        "id": "b522ca37d9f61220",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b7f3d121c38cae38",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-history-vault-master/11 labor/Opresión social y desdemocratización/Rodrigo Barrenechea, Alberto Vergara - Democracia Asaltada_ _El colapso de la política peruana (y una advertencia para América.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Rodrigo Barrenechea, Alberto Vergara - Democracia Asaltada_ _El colapso de la política peruana (y una advertencia para América"
+            }
+          }
+        ],
+        "stacked": true
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3095fbc5aa1285ac",
+    "type": "split",
+    "children": [
+      {
+        "id": "a90bc08e71677c95",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "11f193bbd8e05176",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "MARX",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "360f6d7aa4d9ce1e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "1d5aac17e84ef453",
+            "type": "leaf",
+            "state": {
+              "type": "VIEW_TYPE_LONGFORM_EXPLORER",
+              "state": {},
+              "icon": "longform",
+              "title": "Longform"
+            }
+          },
+          {
+            "id": "8134248eacf0de67",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-history-vault-master/06 archives/China-Russia/China-Afganistan/CHINA’S ECONOMIC DIPLOMACY TOWARDS.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CHINA’S ECONOMIC DIPLOMACY TOWARDS"
+            }
+          },
+          {
+            "id": "e69ad7ec32513f3f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 271.5
+  },
+  "right": {
+    "id": "724d7ed597eef718",
+    "type": "split",
+    "children": [
+      {
+        "id": "4269438fa1aa817f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d11fe171adcbc229",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "082c5c0b73f3b020",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "German.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from German"
+            }
+          },
+          {
+            "id": "5c1da3ec98978ece",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "2a28041bf860f792",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "German.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of German"
+            }
+          },
+          {
+            "id": "009e3573c75380d4",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          },
+          {
+            "id": "6b675d9bfdf9b47e",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "826c9aab0245c60a",
+            "type": "leaf",
+            "state": {
+              "type": "transcript-view",
+              "state": {},
+              "icon": "scroll",
+              "title": "YouTube Transcript"
+            }
+          },
+          {
+            "id": "e2fc57904b770e6b",
+            "type": "leaf",
+            "state": {
+              "type": "transcript-view",
+              "state": {},
+              "icon": "scroll",
+              "title": "YouTube Transcript"
+            }
+          },
+          {
+            "id": "151df5cc40481a2c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Antisystemic Effects of  Peasants AntimininAndeang Struggles_2024-07-18.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Antisystemic Effects of  Peasants AntimininAndeang Struggles_2024-07-18"
+            }
+          },
+          {
+            "id": "bc44ac9d204aa2f4",
+            "type": "leaf",
+            "state": {
+              "type": "translator-view",
+              "state": {
+                "language_from": "en",
+                "language_to": "es",
+                "translation_service": "bergamot",
+                "auto_translate": false,
+                "apply_glossary": false,
+                "view_mode": 0,
+                "filter_mode": 0,
+                "show_attribution": true,
+                "top_buttons": [
+                  "change-service",
+                  "automatic-translation",
+                  "change-layout",
+                  "apply-filter",
+                  "open-settings"
+                ],
+                "left_buttons": [
+                  "paste",
+                  "clear"
+                ],
+                "right_buttons": [
+                  "copy"
+                ]
+              },
+              "icon": "bergamot",
+              "title": "Bergamot"
+            }
+          }
+        ],
+        "currentTab": 9
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "notes-refresher:Get note summaries": false,
+      "translate:Open translation view": false,
+      "publish:Publish changes...": true,
+      "markdown-table-editor:Open Markdown Table Editor": true,
+      "vantage-obsidian:Vantage - Advanced search builder": true,
+      "switcher:Open quick switcher": true,
+      "graph:Open graph view": true,
+      "canvas:Create new canvas": true,
+      "daily-notes:Open today's daily note": true,
+      "templates:Insert template": true,
+      "command-palette:Open command palette": true,
+      "markdown-importer:Open format converter": true,
+      "workspaces:Manage workspace layouts": true,
+      "random-note:Open random note": true,
+      "audio-recorder:Start/stop recording": false,
+      "obsidian-translator:Translate": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": true,
+      "templater-obsidian:Templater": true,
+      "obsidian-wordnet-plugin:WordNet Dictionary": true,
+      "obsidian-tts:Text to Speech": false,
+      "obsidian-import-json:JSON/CSV Importer": true,
+      "whisper:Open recording controls": true,
+      "obsidian-camera:Obsidian Camera": true,
+      "obsidian-audio-notes:Quick Audio Note with Transcription": false,
+      "privacy-glasses:Hide all": false,
+      "privacy-glasses:Reveal non-private": true,
+      "privacy-glasses:Reveal headlines only": true,
+      "privacy-glasses:Reveal all": false
+    }
+  },
+  "active": "b7f3d121c38cae38",
+  "lastOpenFiles": [
+    "obsidian-history-vault-master/07 diary/Ene-19-2025.md",
+    "obsidian-history-vault-master/11 labor/[.md",
+    "obsidian-history-vault-master/11 labor/Opresión social y desdemocratización/Rodrigo Barrenechea, Alberto Vergara - Democracia Asaltada_ _El colapso de la política peruana (y una advertencia para América.md",
+    "obsidian-history-vault-master/11 labor/Opresión social y desdemocratización/Notebook.md",
+    "obsidian-history-vault-master/11 labor/Opresión social y desdemocratización/Rodrigo Barrenechea, Alberto Vergara - Democracia Asaltada_ _El colapso de la política peruana (y una advertencia para América.pdf",
+    "obsidian-history-vault-master/07 diary/Translations/西安交通大学马克思主义学院 2025年博士研究生“申请-考核”制实施细则-西安交通大学马克思主义学院.md",
+    "obsidian-history-vault-master/05 tasks/Application School of Marxism Studies at Jiaotong University.md",
+    "obsidian-history-vault-master/05 tasks/Dictamen.md",
+    "obsidian-history-vault-master/06 archives/Gold/China’s Zijin Mining to expand lithium footprint.md",
+    "obsidian-history-vault-master/06 archives/Gold/upload.pdf",
+    "obsidian-history-vault-master/06 archives/Gold/The new gold rush why the precious metal has lost none of its allure.md",
+    "obsidian-history-vault-master/06 archives/Gold/Latin America, democracy without democrats.rtf",
+    "obsidian-history-vault-master/06 archives/Gold/Gross Official Reserves - the bitter reality hidden.rtf",
+    "obsidian-history-vault-master/06 archives/Gold/Gold monetary holdings from national reserves 1960-2023.png",
+    "obsidian-history-vault-master/06 archives/Gold/Gold in SDRs, Currencies, & Gold.md",
+    "obsidian-history-vault-master/06 archives/Gold/Gold crashes to 10-month low on selling spree.md",
+    "obsidian-history-vault-master/06 archives/Gold/standard.pdf",
+    "obsidian-history-vault-master/06 archives/Gold/The Fed - Selected Foreign Official Assets Held at Federal Reserve Banks, July 2024.md",
+    "obsidian-history-vault-master/06 archives/Gold/Milestones in the History of U.S. Foreign Relations - Office of the Historian.md",
+    "obsidian-history-vault-master/06 archives/Gold/LBMA Precious Metal Prices  LBMA.md",
+    "obsidian-history-vault-master/06 archives/Gold/kazan declaration BRICS SUMMIT 2024.pdf",
+    "obsidian-history-vault-master/06 archives/Gold/Japan stocks rebound after global sell-off, U.S. equity futures up - The Washington Post.md",
+    "obsidian-history-vault-master/06 archives/Gold/~$P_Total reserves in monetary gold holdings (currents US$)-P_Total reserves minus gold (currents US$)-.xlsx",
+    "obsidian-history-vault-master/06 archives/Gold/Book-Tria-Arcelli-A-new-Bretton-Woods-for-a-new-world.pdf",
+    "obsidian-history-vault-master/07 diary/21E.md",
+    "obsidian-history-vault-master/11 labor/Opresión social y desdemocratización",
+    "old_jun2024_nonclass/^goldcrash2013.md",
+    "obsidian-history-vault-master/07 diary/20E.md",
+    "obsidian-history-vault-master/11 labor/~$_JoseManuelMejia_jun_2024.docx",
+    "obsidian-history-vault-master/11 labor/Opresión social y desdemocratización/(.md",
+    "gold.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Capital & Class/Pablo.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Capital & Class/Capital and Class.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Gold world capital fund.md",
+    "Global Police State.md",
+    "obsidian-history-vault-master/02 analysis/MARX/MEGAdigital. Online-Angebot der historisch-kritischen Gesamtausgabe von Karl Marx und Friedrich Engels.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Finalfinal draft.md",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Total gold-capital reserves-China-US.png",
+    "AltShiftV/JF Vs. JM.png",
+    "AltShiftV/image_Dec_10_2024_17-58-23_GMT.png",
+    "obsidian-history-vault-master/07 diary/Erowid Psilocybin Mushroom Vault  Tea Preparation/teonanancatl.jpg",
+    "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop295.png",
+    "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop294.png",
+    "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop293.jpg",
+    "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop291-1.jpg",
+    "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop292.jpg",
+    "Untitled.canvas",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",
+    "Mayra.canvas",
+    "Estallido.canvas"
+  ]
+}

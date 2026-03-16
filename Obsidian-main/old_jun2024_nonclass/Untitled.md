@@ -1,0 +1,1 @@
+<iframe webkitAllowFullScreen="true" mozallowfullscreen="true" allowFullScreen="true" width="100%" height="500px" src="https://tass.com/politics/1750151">Your browser does not support iFrames.</iframe>

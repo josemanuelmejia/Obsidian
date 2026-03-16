@@ -1,0 +1,28 @@
+"Cierta acumulación de capital en manos de productores individuales de mercancías constituye, pues, el supuesto del modo de producción específicamente capitalista. Por eso, al analizar la transición del artesanado a la industria capitalista, tuvimos que suponer esa acumulación. Podemos denominarla acumulación originaria, porque en vez de resultado histórico es fundamento histórico de la producción específicamente capitalista" (Marx 1975a, 3, Tomo 1:776).
+
+"[...] si cierto grado de acumulación del capital se manifiesta como condición del modo de producción específicamente capitalista, este último ocasiona, como reacción, una acumulación acelerada del capital. Con la acumulación del capital se desarrolla, por consiguiente, el modo de producción específicamente capitalista, y con el modo de producción específicamente capitalista la acumulación del capital" (Marx 1975a, 3, Tomo 1:776–77).
+
+Certain magnitude of capital accumulation %%original accumulation%%
+
+condición post-colonial: feudality of ***historical capitalism*** %%process of expansion%%
+
+proceso de concentración y proceso de reproducción (ampliada?)
+
+La feudalidad es rasgo post-colonial que trasciende las condiciones del proceso de expansión del capitalismo histórico, subyace al proceso de formación y acumulación de capital como condición política. La condición feudal, en ese sentido, posterga en el tiempo las condiciones políticas en que cierto grado de concentración y magnitud de acumulación fueron posibles y a la vez pusieron en operación el sistema de gobierno moderno (modern political system) which was built as a purposed change of the political conditions which allowed the accumulation of capital until this level of concentration and overaccumulation.
+
+The current interstate system isn't compatible with the institutions of money holding, in a manner in which the overaccumulation of monetary-capital requires and allows a restructuration of the size of the transnational capitalist class which implies a higher amount of concentration of capital with new class members. The level of concentration which implies this articulation of the transnational capitalist's class don't have a political but an economic reason. It is the necessity to apply the conditions of accumulation which allows a material expansion only possible by the dispossession, colonization and militarism as means and methods of the productive reproduction of certain magnitude of money-capital. 
+
+The magnitude of money-capital accumulated by a certain capitalist implies a high level of concentration of capital (k), and the magnitude of violence which implies its material expansion is also consistent with the historical stages of original accumulation and to the emulation of the political conditions for which the category of feudality as a postcolonial condition is useful.
+
+The reproduction of certain capital required to pass through the circuit of material production, but the production of means of payment after the reduction, not elimination, of the constraint which attach money capital to the gold standard linked to monetary gold holding in national reserves.
+%%The pressure over gold mining augmented in an exponential manner as the mass of monetary-gold holdings in the national reserves of the main capitalists states incremented exponentially. This can be interpreted as a contradictory and defensive movement of US capitalist's (capitalists who own the US state)%%
+
+The level of concentration is a feature of capital accumulation, and also of the expansion of the scale of reproduction of certain capital. The level of concentration is a measure not only of the advancement and scale of the process of reproduction, but also for the class analysis of the transnational capitalist class (TCC), due to the level of concentration inside or within the TCC.
+
+
+
+
+
+
+
+

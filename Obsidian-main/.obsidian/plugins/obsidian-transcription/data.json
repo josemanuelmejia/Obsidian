@@ -1,0 +1,22 @@
+{
+  "timestamps": true,
+  "timestampFormat": "auto",
+  "timestampInterval": "0",
+  "translate": false,
+  "language": "auto",
+  "verbosity": 1,
+  "whisperASRUrls": "http://localhost:9000",
+  "debug": false,
+  "transcriptionEngine": "swiftink",
+  "embedAdditionalFunctionality": false,
+  "embedSummary": false,
+  "embedOutline": false,
+  "embedKeywords": false,
+  "swiftink_access_token": "eyJhbGciOiJIUzI1NiIsImtpZCI6InROTjVMbEN2Zk5WWU5NRWUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3ZjZGVxZ3JzcWFleHBub2dhdWx5LnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI4NzE0ZWZkMi0zZTc3LTRjNjQtOTBjOS1mZGE3YWY4NzIzMGYiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzI2OTU2MTc2LCJpYXQiOjE3MjY5NTI1NzYsImVtYWlsIjoiam1tZWppYWZsQGZsYWNzby5lZHUuZWMiLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImdpdGh1YiIsInByb3ZpZGVycyI6WyJnaXRodWIiXX0sInVzZXJfbWV0YWRhdGEiOnsiYXZhdGFyX3VybCI6Imh0dHBzOi8vYXZhdGFycy5naXRodWJ1c2VyY29udGVudC5jb20vdS8yNDY4ODY5Mj92PTQiLCJlbWFpbCI6ImptbWVqaWFmbEBmbGFjc28uZWR1LmVjIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZ1bGxfbmFtZSI6Ikpvc2VNYW51ZWxNZWppYSIsImlzcyI6Imh0dHBzOi8vYXBpLmdpdGh1Yi5jb20iLCJuYW1lIjoiSm9zZU1hbnVlbE1lamlhIiwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJqb3NlbWFudWVsbWVqaWEiLCJwcm92aWRlcl9pZCI6IjI0Njg4NjkyIiwic3ViIjoiMjQ2ODg2OTIiLCJ1c2VyX25hbWUiOiJqb3NlbWFudWVsbWVqaWEifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJvYXV0aCIsInRpbWVzdGFtcCI6MTcyNjk1MjU3Nn1dLCJzZXNzaW9uX2lkIjoiN2JmN2QwMTAtODA3Zi00MTJmLWJjYWQtZWY3Y2MzMGQ0YjgzIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.rrJhhP-xKuRJBHEw7Zt7o6Hh-_AGDs23Gi_8lckuYx0",
+  "swiftink_refresh_token": "rcSZX39KAIomTFq6rX1yQw",
+  "lineSpacing": "multi",
+  "encode": true,
+  "initialPrompt": "",
+  "vadFilter": false,
+  "wordTimestamps": false
+}

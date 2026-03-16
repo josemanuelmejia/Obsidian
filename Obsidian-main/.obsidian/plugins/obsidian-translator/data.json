@@ -1,0 +1,18 @@
+{
+  "youdaoEnable": false,
+  "appId": "",
+  "secretKey": "",
+  "yFrom": "auto",
+  "yTo": "es",
+  "audio": false,
+  "microsoftEnable": true,
+  "microsoftSecretKey": "9efc479d4df84339b13e1ebef8e53e7a",
+  "microsoftLocation": "westcentralus",
+  "mFrom": "",
+  "mTo": "es",
+  "baiduEnable": false,
+  "baiduSecretKey": "",
+  "baiduAppId": "",
+  "bFrom": "",
+  "bTo": "spa"
+}

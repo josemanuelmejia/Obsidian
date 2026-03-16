@@ -1,0 +1,7 @@
+{
+  "apiKey": "sk-svcacct-sANC8tcECS42seVrfGJ3Zn1dodfN6fdtHNxeOy8kFbo5VIban5ASGWR61jfiameT3BlbkFJH3PLFuTq92zsGulT4KT98CAdBD_aJdAs4ng5mkLBH9xos0Iy4poPQcUg0J0fCAA",
+  "maxTokens": 1000,
+  "defaultPrompt": "Generate a very short summary of the following note in 5-6 sentences:\n\n",
+  "putSummaryInFrontmatter": true,
+  "model": "gpt-3.5-turbo"
+}

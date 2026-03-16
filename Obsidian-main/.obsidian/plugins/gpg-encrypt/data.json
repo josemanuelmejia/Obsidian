@@ -1,0 +1,10 @@
+{
+  "pgpExecPath": "C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe",
+  "pgpSignPublicKeyId": "500E1DE0E4E879E8",
+  "pgpAlwaysTrust": false,
+  "pgpDefaultEncryptKeys": [],
+  "pgpAditionalCommands": false,
+  "pgpAditionalCommandsBefore": "",
+  "pgpAditionalCommandsAfter": "",
+  "pgpAditionalCommandsConsole": false
+}
