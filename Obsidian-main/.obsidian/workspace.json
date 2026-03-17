@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "obsidian-main/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Q1. Mining struggles antisystemic effects on capital accumulation.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -266,10 +266,6 @@
       "obsidian-import-json:JSON/CSV Importer": false,
       "markdown-table-editor:Open Markdown Table Editor": false,
       "notes-refresher:Get note summaries": false,
-      "privacy-glasses:Hide all": false,
-      "privacy-glasses:Reveal non-private": false,
-      "privacy-glasses:Reveal headlines only": false,
-      "privacy-glasses:Reveal all": false,
       "smart-memos:Record smart memo": false,
       "templater-obsidian:Templater": false,
       "obsidian-tts:Text to Speech": false,
@@ -280,8 +276,10 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "b7f3d121c38cae38",
+  "active": "e69ad7ec32513f3f",
   "lastOpenFiles": [
+    "obsidian-main/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Monetary gold.PNG",
+    "obsidian-main/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Monetary holdings.PNG",
     "obsidian-main/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Q1. Mining struggles antisystemic effects on capital accumulation.md",
     "obsidian-main/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/The strategical centrality of anti-mining struggles.md",
     "obsidian-main/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/The ceteris paribus for the fall in the rate of profit.md",
@@ -319,7 +317,6 @@
     "obsidian-history-vault-master/07 diary/20E.md",
     "obsidian-history-vault-master/11 labor/~$_JoseManuelMejia_jun_2024.docx",
     "obsidian-history-vault-master/11 labor/Opresión social y desdemocratización/(.md",
-    "gold.md",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Total gold-capital reserves-China-US.png",
     "AltShiftV/JF Vs. JM.png",
     "AltShiftV/image_Dec_10_2024_17-58-23_GMT.png",
@@ -327,7 +324,6 @@
     "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop295.png",
     "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop294.png",
     "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop293.jpg",
-    "obsidian-history-vault-master/06 archives/cop29/COP-out 29 – Michael Roberts Blog/cop291-1.jpg",
     "Untitled.canvas",
     "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",
     "Mayra.canvas",
