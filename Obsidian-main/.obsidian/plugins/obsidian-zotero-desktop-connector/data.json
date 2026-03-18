@@ -27,6 +27,7 @@
   "exeVersion": "1.0.15",
   "shouldShowCiteSuggest": true,
   "shouldConcat": true,
-  "pdfExportImageOCR": true,
-  "_exeInternalVersion": 1
+  "pdfExportImageOCR": false,
+  "_exeInternalVersion": 1,
+  "exeOverridePath": "D:\\Usuarios\\Obsidian\\Documents\\GitHub\\Obsidian\\Obsidian-main\\obsidian-main\\meta\\pdfannots2json.exe"
 }
