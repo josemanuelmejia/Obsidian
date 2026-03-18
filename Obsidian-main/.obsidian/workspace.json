@@ -4,35 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b522ca37d9f61220",
+        "id": "23a8c2e723675738",
         "type": "tabs",
         "children": [
           {
-            "id": "b7f3d121c38cae38",
+            "id": "702847b64be9c159",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-main/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Graphs.md",
+                "file": "obsidian-main/02 analysis/Research plan.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Graphs"
-            }
-          },
-          {
-            "id": "d36c798c925a6bbf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-main/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Joe Kent (counterterrorism agent) resignation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Joe Kent (counterterrorism agent) resignation"
+              "title": "Research plan"
             }
           }
         ],
@@ -55,7 +41,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "MARX",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -63,7 +49,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Buscar"
             }
           },
           {
@@ -290,10 +276,26 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "b7f3d121c38cae38",
+  "active": "702847b64be9c159",
   "lastOpenFiles": [
-    "obsidian-main/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Joe Kent (counterterrorism agent) resignation.md",
+    "obsidian-main/14 zotero/Herrera-AMarxistInterpretation-2014-conversation-history.md",
+    "obsidian-main/14 zotero/Herrera-MarxistInterpretationCurrent-2014.pdf",
+    "obsidian-main/14 zotero/Sin confirmar 1051.crdownload",
+    "obsidian-main/14 zotero/Moseley-ContinuationDebateMoney-2019.pdf",
+    "obsidian-main/14 zotero/Sin título.md",
+    "obsidian-main/14 zotero/Herrera-AMarxistInterpretation-2014-conversation-history 1.html",
+    "obsidian-main/02 analysis/Research plan.md",
+    "obsidian-main/14 zotero/Herrera-AMarxistInterpretation-2014-conversation-history.html",
+    "obsidian-main/01 notes/marxTransformationCommodityCapital2015.md",
+    "obsidian-main/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Accumulation of mining capital.md",
+    "obsidian-main/02 analysis/MARX/Sin título.md",
+    "obsidian-main/14 zotero/07-dussel.pdf",
+    "obsidian-main/14 zotero",
+    "obsidian-main/Nueva carpeta",
+    "obsidian-main/03 writing/documents/Drafts/Capital & Class/Capital and Class.md",
+    "obsidian-main/02 analysis/Untitled/Untitled.md",
     "obsidian-main/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Graphs.md",
+    "obsidian-main/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Joe Kent (counterterrorism agent) resignation.md",
     "obsidian-main/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Q1. Mining struggles antisystemic effects on capital accumulation.md",
     "obsidian-main/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Monetary gold.PNG",
     "obsidian-main/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Monetary holdings.PNG",
@@ -301,7 +303,6 @@
     "obsidian-main/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/The ceteris paribus for the fall in the rate of profit.md",
     "obsidian-main/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/scale.PNG",
     "obsidian-main/02 analysis/questions and arguments/Q2. Mining struggles challenge imperialist domination/Q2. Mining struggles challenge imperialist domination.md",
-    "obsidian-main/02 analysis/Research plan.md",
     "Research Proposal.md",
     "obsidian-history-vault-master/07 diary/Ene-19-2025.md",
     "obsidian-history-vault-master/11 labor/[.md",
@@ -314,24 +315,8 @@
     "obsidian-history-vault-master/06 archives/Gold/China’s Zijin Mining to expand lithium footprint.md",
     "obsidian-history-vault-master/06 archives/Gold/upload.pdf",
     "obsidian-history-vault-master/06 archives/Gold/The new gold rush why the precious metal has lost none of its allure.md",
-    "obsidian-history-vault-master/06 archives/Gold/Latin America, democracy without democrats.rtf",
-    "obsidian-history-vault-master/06 archives/Gold/Gross Official Reserves - the bitter reality hidden.rtf",
     "obsidian-history-vault-master/06 archives/Gold/Gold monetary holdings from national reserves 1960-2023.png",
     "obsidian-history-vault-master/06 archives/Gold/Gold in SDRs, Currencies, & Gold.md",
-    "obsidian-history-vault-master/06 archives/Gold/Gold crashes to 10-month low on selling spree.md",
-    "obsidian-history-vault-master/06 archives/Gold/standard.pdf",
-    "obsidian-history-vault-master/06 archives/Gold/The Fed - Selected Foreign Official Assets Held at Federal Reserve Banks, July 2024.md",
-    "obsidian-history-vault-master/06 archives/Gold/Milestones in the History of U.S. Foreign Relations - Office of the Historian.md",
-    "obsidian-history-vault-master/06 archives/Gold/LBMA Precious Metal Prices  LBMA.md",
-    "obsidian-history-vault-master/06 archives/Gold/kazan declaration BRICS SUMMIT 2024.pdf",
-    "obsidian-history-vault-master/06 archives/Gold/Japan stocks rebound after global sell-off, U.S. equity futures up - The Washington Post.md",
-    "obsidian-history-vault-master/06 archives/Gold/~$P_Total reserves in monetary gold holdings (currents US$)-P_Total reserves minus gold (currents US$)-.xlsx",
-    "obsidian-history-vault-master/06 archives/Gold/Book-Tria-Arcelli-A-new-Bretton-Woods-for-a-new-world.pdf",
-    "obsidian-history-vault-master/07 diary/21E.md",
-    "obsidian-history-vault-master/11 labor/Opresión social y desdemocratización",
-    "old_jun2024_nonclass/^goldcrash2013.md",
-    "obsidian-history-vault-master/07 diary/20E.md",
-    "obsidian-history-vault-master/11 labor/~$_JoseManuelMejia_jun_2024.docx",
     "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Total gold-capital reserves-China-US.png",
     "AltShiftV/JF Vs. JM.png",
     "AltShiftV/image_Dec_10_2024_17-58-23_GMT.png",

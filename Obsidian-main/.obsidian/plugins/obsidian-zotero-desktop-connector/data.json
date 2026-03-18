@@ -1,6 +1,6 @@
 {
   "database": "Zotero",
-  "noteImportFolder": "obisidian-history-vault-master/01 notes",
+  "noteImportFolder": "obisidian-main/01 notes",
   "pdfExportImageDPI": 120,
   "pdfExportImageFormat": "jpg",
   "pdfExportImageQuality": 90,
@@ -14,7 +14,7 @@
   "exportFormats": [
     {
       "name": "Import Research Notes",
-      "outputPathTemplate": "obsidian-history-vault-master/01 notes/{{citekey}}.md",
+      "outputPathTemplate": "obsidian-main/01 notes/{{citekey}}.md",
       "imageOutputPathTemplate": "{{citekey}}/",
       "imageBaseNameTemplate": "image",
       "templatePath": "obsidian-history-vault-master/meta/zotero/research note.md",
