@@ -1,3 +1,0 @@
-Transnational capitalist class:
-
-Se trata de “una clase capitalista transnacional con su propia consciencia de clase estratégica” (Arrighi, Giovanni, y Beverly J. Silver, eds. _Chaos and governance in the modern world system_. Minneapolis: University of Minnesota Press, 1999, p. 13). “Es la fracción hegemónica del capital a escala mundial. Está formado por los dueños y gerentes de las corporaciones transnacionales gigantes, o corporaciones transnacionales, y las instituciones financieras que impulsan la economía global” (Robinson, William I. _The Global Police State_. London: Pluto Press, 2020, p. 11) [traducción propia].

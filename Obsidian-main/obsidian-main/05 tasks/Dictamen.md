@@ -1,2 +1,0 @@
-
-The methodology section of the paper need to explain how the case study had unfolded. The authors must state precisely which is the set of other similar cases of the same "bounded empirical phenomenon". The study of a case has value for theory because the conclusions it produced can be useful to explain other cases of the same "bounded empirical phenomenon" of which the case is part of.

@@ -1,1 +1,0 @@
-![[Pampel - 1998 - National Context, Social Change, and Sex Differenc.pdf]]

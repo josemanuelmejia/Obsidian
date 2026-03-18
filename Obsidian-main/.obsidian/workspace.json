@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "23a8c2e723675738",
+        "id": "57b16983c6c7e284",
         "type": "tabs",
         "children": [
           {
-            "id": "702847b64be9c159",
+            "id": "1257d9acfdb2214c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "obsidian-main/09 courses/UCSB/Sociology UCSB/William Robinson/Interview to William Robinson.md",
-                "mode": "preview",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Interview to William Robinson"
+              "title": "Nueva pestaña"
             }
           }
         ],
@@ -32,78 +28,55 @@
     "type": "split",
     "children": [
       {
-        "id": "5501a4d75830ec87",
-        "type": "split",
+        "id": "a90bc08e71677c95",
+        "type": "tabs",
         "children": [
           {
-            "id": "a90bc08e71677c95",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "11f193bbd8e05176",
-                "type": "leaf",
-                "state": {
-                  "type": "search",
-                  "state": {
-                    "query": "",
-                    "matchingCase": false,
-                    "explainSearch": false,
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical"
-                  },
-                  "icon": "lucide-search",
-                  "title": "Buscar"
-                }
+            "id": "11f193bbd8e05176",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
               },
-              {
-                "id": "360f6d7aa4d9ce1e",
-                "type": "leaf",
-                "state": {
-                  "type": "bookmarks",
-                  "state": {},
-                  "icon": "lucide-bookmark",
-                  "title": "Bookmarks"
-                }
-              },
-              {
-                "id": "e69ad7ec32513f3f",
-                "type": "leaf",
-                "state": {
-                  "type": "file-explorer",
-                  "state": {
-                    "sortOrder": "alphabetical",
-                    "autoReveal": true
-                  },
-                  "icon": "lucide-folder-closed",
-                  "title": "Explorador de archivos"
-                }
-              }
-            ],
-            "currentTab": 2
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
           },
           {
-            "id": "2fb01912e89afed7",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "c0f49b7a1d6cda5b",
-                "type": "leaf",
-                "state": {
-                  "type": "zdc-debug",
-                  "state": {},
-                  "icon": "gear",
-                  "title": "Zotero Data Explorer"
-                }
-              }
-            ]
+            "id": "360f6d7aa4d9ce1e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "e69ad7ec32513f3f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
           }
         ],
-        "direction": "vertical"
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 883.5
+    "width": 200
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -299,54 +272,54 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "702847b64be9c159",
+  "active": "e69ad7ec32513f3f",
   "lastOpenFiles": [
-    "obsidian-main/09 courses/UCSB/Sociology UCSB/William Robinson/Reply to Professor Robinson (UC-SB).md",
-    "obsidian-main/09 courses/UCSB/Sociology UCSB/William Robinson/William Robinson.md",
-    "obsidian-main/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/On Arrighi (1994).md",
-    "obsidian-main/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/Discussion of Weber.md",
-    "obsidian-main/09 courses/UCSB/Sociology UCSB/MEJIA_Seed_grant2024_Application.pdf",
-    "obsidian-main/09 courses/UCSB/Sociology UCSB/Vernon Shawn/VShaw-SOC207A-FirstPaper.pdf",
-    "obsidian-main/09 courses/UCSB/Sociology UCSB/Vernon Shawn/Vernon Shawn.md",
-    "obsidian-main/09 courses/UCSB/Sociology UCSB/Mehmet Gürsan Şenalp/Mehmet Gürsan Şenalp.md",
-    "obsidian-main/09 courses/UCSB/Sociology UCSB/Lisa Hajjar/Lisa Hajjar.md",
-    "obsidian-main/09 courses/UCSB/Sociology UCSB/Jason Turowetz/American Palestinian Struggles (APS).md",
-    "obsidian-main/09 courses/UCSB/Sociology UCSB/Hannah Wohl/Hannah Wohl.md",
-    "obsidian-main/09 courses/UCSB/Sociology UCSB/Hannah Wohl/Communication Hannah Wohl.md",
-    "obsidian-main/09 courses/UCSB/Sociology UCSB/France Winddance Twine/France Winddance Twine.md",
-    "obsidian-main/09 courses/UCSB/Sociology UCSB/Erika Arenas/Erika Arenas.md",
-    "obsidian-main/09 courses/UCSB/Sociology UCSB/Hoai-An Nguyen/Hoai-An Nguyen.md",
-    "obsidian-main/09 courses/UCSB/Sociology UCSB/David Feldman/David Feldman.md",
-    "obsidian-main/09 courses/UCSB/Sociology UCSB/Charmaine Chua/We Aren’t Here to Learn What We Already Know  Avidly.md",
-    "obsidian-main/09 courses/UCSB/Sociology UCSB/Charmaine Chua/Logic and Theory of Inquiry  transversal texts.md",
-    "obsidian-main/09 courses/UCSB/Sociology UCSB/Charmaine Chua/Charmaine Chua.md",
-    "2025.md",
-    "obsidian-main/06 archives/Research Proposal.md",
-    "obsidian-main/06 archives/Vspa-2026.md",
-    "obsidian-main/14 zotero/Sin título.md",
-    "obsidian-main/14 zotero/research note.md",
-    "obsidian-main/14 zotero/Moseley-ContinuationDebateMoney-2019.pdf",
-    "obsidian-main/14 zotero/Herrera-MarxistInterpretationCurrent-2014.pdf",
-    "obsidian-main/14 zotero/Herrera-AMarxistInterpretation-2014-conversation-history.md",
-    "obsidian-main/14 zotero/Herrera-AMarxistInterpretation-2014-conversation-history.html",
-    "obsidian-main/14 zotero/07-dussel.pdf",
-    "obsidian-main/14 zotero",
-    "obsidian-main/13 kapital/stocks/Trump Tariffs Coffee US China.md",
-    "obsidian-main/13 kapital/stocks/queries.md",
-    "obsidian-main/13 kapital/stocks/brevete6.md",
-    "obsidian-main/13 kapital/stocks",
-    "obsidian-main/13 kapital",
-    "obsidian-main/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/Total-reserves-in-monetary-holdings-(currents-US$).jpg",
-    "obsidian-main/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/World Bank Commodity Price Data 1960-2022.png",
-    "obsidian-main/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/Total-reserves-in-monetary-gold-holdings-(currents-US$).jpg",
-    "obsidian-main/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/Total reserves.PNG",
-    "obsidian-main/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/Total gold-capital reserves.PNG",
-    "obsidian-main/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/Total gold-capital reserves-China-US.png",
-    "obsidian-main/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/tfcad.bst",
-    "obsidian-main/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/Captura.PNG",
-    "obsidian-main/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/Captura  2.PNG",
-    "obsidian-main/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/8e6e6cd5.png",
-    "obsidian-main/12 Latex/Overleaf Projects (20 items)/Draft final JWSR/1723066384892.png",
+    "obsidian-main/04 WSPREA/Sin título.md",
+    "obsidian-main/04 WSPREA/research note.md",
+    "obsidian-main/04 WSPREA/Moseley-ContinuationDebateMoney-2019.pdf",
+    "obsidian-main/04 WSPREA/Herrera-MarxistInterpretationCurrent-2014.pdf",
+    "obsidian-main/04 WSPREA/Herrera-AMarxistInterpretation-2014-conversation-history.md",
+    "obsidian-main/04 WSPREA/Herrera-AMarxistInterpretation-2014-conversation-history.html",
+    "obsidian-main/04 WSPREA/07-dussel.pdf",
+    "obsidian-main/04 WSPREA",
+    "obsidian-main/04 wsprea/research note.md",
+    "obsidian-main/04 wsprea/Sin título.md",
+    "obsidian-main/04 wsprea/Moseley-ContinuationDebateMoney-2019.pdf",
+    "obsidian-main/04 wsprea/Herrera-MarxistInterpretationCurrent-2014.pdf",
+    "obsidian-main/04 wsprea/Herrera-AMarxistInterpretation-2014-conversation-history.md",
+    "obsidian-main/04 wsprea/Herrera-AMarxistInterpretation-2014-conversation-history.html",
+    "obsidian-main/04 wsprea/07-dussel.pdf",
+    "obsidian-main/04 wsprea",
+    "obsidian-main/02 research/2.1 questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/inputs/After the Gold Crash  Alchemist  LBMA/issue-74-5.jpg",
+    "obsidian-main/02 research/2.1 questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/inputs/After the Gold Crash  Alchemist  LBMA/issue-74-5(1).jpg",
+    "obsidian-main/02 research/2.1 questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/inputs/The strategical centrality of anti-mining struggles.md",
+    "obsidian-main/02 research/2.1 questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/inputs/scale.PNG",
+    "obsidian-main/02 research/2.1 questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/inputs/Q1. Mining struggles antisystemic effects on capital accumulation.md",
+    "obsidian-main/02 research/2.1 questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/inputs/Profits, mining capital and gold accumulation..md",
+    "obsidian-main/02 research/2.1 questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/inputs/Profits, mining capital and gold accumulation.md",
+    "obsidian-main/02 research/2.1 questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/inputs/Monetary holdings.PNG",
+    "obsidian-main/02 research/2.1 questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/inputs/Monetary gold.PNG",
+    "obsidian-main/02 research/2.1 questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/inputs/Joe Kent (counterterrorism agent) resignation.md",
+    "obsidian-main/02 research/2.1 questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/inputs/Graphs.md",
+    "obsidian-main/02 research/2.1 questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/inputs/El proceso de acumulación minero.md",
+    "obsidian-main/02 research/2.1 questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/inputs/After the Gold Crash  Alchemist  LBMA(1).md",
+    "obsidian-main/02 research/2.1 questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/inputs/Accumulation of mining capital.md",
+    "obsidian-main/02 research/2.1 questions and arguments/Q4. Mining struggles escalation effects/Q4. Mining struggles escalation effects in the formation of the revolutionary subject.md",
+    "obsidian-main/02 research/2.1 questions and arguments/Q3. Mining struggles international significance in class struggle/The definition of the situation of class struggle.md",
+    "obsidian-main/02 research/2.1 questions and arguments/Q3. Mining struggles international significance in class struggle/Q3. Mining struggles international significance in class struggle.md",
+    "obsidian-main/02 research/2.1 questions and arguments/Q2. Mining struggles challenge imperialist domination/Q2. Mining struggles challenge imperialist domination.md",
+    "obsidian-main/02 research/research plan-draft.md",
+    "obsidian-main/02 analysis/2.1 questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/inputs/The strategical centrality of anti-mining struggles.md",
+    "obsidian-main/02 analysis/2.1 questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/inputs/scale.PNG",
+    "obsidian-main/02 analysis/2.1 questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/inputs/Q1. Mining struggles antisystemic effects on capital accumulation.md",
+    "obsidian-main/02 analysis/2.1 questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/inputs/Profits, mining capital and gold accumulation.md",
+    "obsidian-main/02 analysis/2.1 questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/inputs/Profits, mining capital and gold accumulation..md",
+    "obsidian-main/02 analysis/2.1 questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/inputs/Monetary holdings.PNG",
+    "obsidian-main/02 analysis/2.1 questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/inputs/Monetary gold.PNG",
+    "obsidian-main/02 analysis/2.1 questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/inputs/Joe Kent (counterterrorism agent) resignation.md",
+    "obsidian-main/02 analysis/2.1 questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/inputs/Graphs.md",
+    "obsidian-main/02 analysis/2.1 questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/inputs/After the Gold Crash  Alchemist  LBMA/issue-74-5.jpg",
+    "obsidian-main/02 analysis/2.1 questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/inputs/After the Gold Crash  Alchemist  LBMA/issue-74-5(1).jpg",
     "obsidian-main/03 writing/documents/Drafts/Estallido/Estallido.canvas",
     "obsidian-main/old/old_jun2024_nonclass/Mayra.canvas",
     "obsidian-main/old_jun2024_nonclass/Mayra.canvas",
