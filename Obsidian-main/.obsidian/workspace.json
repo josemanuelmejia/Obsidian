@@ -1,0 +1,353 @@
+{
+  "main": {
+    "id": "ed708ac2f19d4a22",
+    "type": "split",
+    "children": [
+      {
+        "id": "23a8c2e723675738",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "702847b64be9c159",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nueva pestaña"
+            }
+          }
+        ],
+        "stacked": true
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3095fbc5aa1285ac",
+    "type": "split",
+    "children": [
+      {
+        "id": "5501a4d75830ec87",
+        "type": "split",
+        "children": [
+          {
+            "id": "a90bc08e71677c95",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "11f193bbd8e05176",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Buscar"
+                }
+              },
+              {
+                "id": "360f6d7aa4d9ce1e",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              },
+              {
+                "id": "e69ad7ec32513f3f",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": true
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Explorador de archivos"
+                }
+              }
+            ],
+            "currentTab": 2
+          },
+          {
+            "id": "2fb01912e89afed7",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "c0f49b7a1d6cda5b",
+                "type": "leaf",
+                "state": {
+                  "type": "zdc-debug",
+                  "state": {},
+                  "icon": "gear",
+                  "title": "Zotero Data Explorer"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      }
+    ],
+    "direction": "horizontal",
+    "width": 883.5
+  },
+  "right": {
+    "id": "724d7ed597eef718",
+    "type": "split",
+    "children": [
+      {
+        "id": "4269438fa1aa817f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d11fe171adcbc229",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "082c5c0b73f3b020",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "German.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from German"
+            }
+          },
+          {
+            "id": "5c1da3ec98978ece",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "2a28041bf860f792",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "German.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of German"
+            }
+          },
+          {
+            "id": "009e3573c75380d4",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "advanced-tables-toolbar"
+            }
+          },
+          {
+            "id": "6b675d9bfdf9b47e",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "826c9aab0245c60a",
+            "type": "leaf",
+            "state": {
+              "type": "transcript-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "transcript-view"
+            }
+          },
+          {
+            "id": "e2fc57904b770e6b",
+            "type": "leaf",
+            "state": {
+              "type": "transcript-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "transcript-view"
+            }
+          },
+          {
+            "id": "151df5cc40481a2c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Antisystemic Effects of  Peasants AntimininAndeang Struggles_2024-07-18.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Antisystemic Effects of  Peasants AntimininAndeang Struggles_2024-07-18"
+            }
+          },
+          {
+            "id": "bc44ac9d204aa2f4",
+            "type": "leaf",
+            "state": {
+              "type": "translator-view",
+              "state": {
+                "language_from": "en",
+                "language_to": "es",
+                "translation_service": "bergamot",
+                "auto_translate": false,
+                "apply_glossary": false,
+                "view_mode": 0,
+                "filter_mode": 0,
+                "show_attribution": true,
+                "top_buttons": [
+                  "change-service",
+                  "automatic-translation",
+                  "change-layout",
+                  "apply-filter",
+                  "open-settings"
+                ],
+                "left_buttons": [
+                  "paste",
+                  "clear"
+                ],
+                "right_buttons": [
+                  "copy"
+                ]
+              },
+              "icon": "lucide-ghost",
+              "title": "translator-view"
+            }
+          }
+        ],
+        "currentTab": 9
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "markdown-importer:Abrir el importador de Markdown": false,
+      "random-note:Abrir nota al azar": false,
+      "audio-recorder:Iniciar/Detener la grabación": false,
+      "workspaces:Gestionar disposiciones de espacio de trabajo": false,
+      "publish:Publicar cambios...": false,
+      "bases:Crear nueva base": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-audio-notes:Quick Audio Note with Transcription": false,
+      "obsidian-camera:Obsidian Camera": false,
+      "obsidian-import-json:JSON/CSV Importer": false,
+      "markdown-table-editor:Open Markdown Table Editor": false,
+      "notes-refresher:Get note summaries": false,
+      "smart-memos:Record smart memo": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-tts:Text to Speech": false,
+      "translate:Open translation view": false,
+      "obsidian-translator:Translate": false,
+      "vantage-obsidian:Vantage - Advanced search builder": false,
+      "whisper:Open recording controls": false,
+      "obsidian-wordnet-plugin:WordNet Dictionary": false
+    }
+  },
+  "active": "702847b64be9c159",
+  "lastOpenFiles": [
+    "obsidian-main/01 notes/remyherreraMarxistInterpretationCurrent2014.md",
+    "obsidian-main/old-obisidian-history-vault-master/01 notes/jacobsonAfterwordDoingDoing2021.md",
+    "obsidian-main/old-obisidian-history-vault-master/The mystery of globalization as a commodity.md",
+    "obsidian-main/old-obisidian-history-vault-master/01 notes",
+    "obsidian-main/old-obisidian-history-vault-master",
+    "obsidian-main/old_jun2024_nonclass/^goldcrash2013.md",
+    "obsidian-main/old_jun2024_nonclass/Weber_The+Essential+Weber_Selections.pdf",
+    "obsidian-main/old_jun2024_nonclass/Untitled.md",
+    "obsidian-main/old_jun2024_nonclass/Untitled 9.md",
+    "obsidian-main/old_jun2024_nonclass/Untitled 8.md",
+    "obsidian-main/old_jun2024_nonclass/Untitled 7.md",
+    "obsidian-main/old_jun2024_nonclass/Untitled 6.md",
+    "obsidian-main/old_jun2024_nonclass/Untitled 5.md",
+    "obsidian-main/old_jun2024_nonclass/Untitled 5.docx",
+    "obsidian-main/old_jun2024_nonclass/Untitled 4.md",
+    "obsidian-main/old_jun2024_nonclass/Untitled 4 1.md",
+    "obsidian-main/old_jun2024_nonclass/Untitled 3.md",
+    "obsidian-main/old_jun2024_nonclass/Untitled 2.md",
+    "obsidian-main/old_jun2024_nonclass/Untitled 2 1.md",
+    "obsidian-main/old_jun2024_nonclass/Untitled 18.md",
+    "obsidian-main/old_jun2024_nonclass/Untitled 17.md",
+    "obsidian-main/old_jun2024_nonclass/Untitled 16.md",
+    "obsidian-main/old_jun2024_nonclass/Untitled 14.md",
+    "obsidian-main/old_jun2024_nonclass/Untitled 15.md",
+    "obsidian-main/old_jun2024_nonclass/Untitled 13.md",
+    "obsidian-main/old_jun2024_nonclass/Untitled 12.md",
+    "obsidian-main/old_jun2024_nonclass/Untitled 11.md",
+    "obsidian-main/old_jun2024_nonclass/Untitled 10.md",
+    "obsidian-main/old_jun2024_nonclass/Untitled 1.md",
+    "obsidian-main/old_jun2024_nonclass/Untitled 1 1.md",
+    "obsidian-main/old_jun2024_nonclass/UASB MA Latin American Studies Thesis.docx",
+    "obsidian-main/old_jun2024_nonclass/tab perfor_id claim_id.jpg",
+    "obsidian-main/old_jun2024_nonclass/tab perfor_id claim_id exp.png",
+    "obsidian-main/old_jun2024_nonclass/tab perfor_id claim_id exp all.png",
+    "obsidian-main/old_jun2024_nonclass/tab perfor_id claim_id col all.png",
+    "obsidian-main/old_jun2024_nonclass/tab perfor_id claim_id col all 1.png",
+    "obsidian-main/old_jun2024_nonclass/tab perfor_id claim_id 1.jpg",
+    "obsidian-main/old_jun2024_nonclass/sum regress.png",
+    "obsidian-main/old_jun2024_nonclass/subfigure(1).sty",
+    "obsidian-main/old_jun2024_nonclass/subfig(1).sty",
+    "obsidian-main/old_jun2024_nonclass/rotating(1).sty",
+    "obsidian-main/old_jun2024_nonclass/regress.png",
+    "obsidian-main/old_jun2024_nonclass/Recording 20240514104320.webm",
+    "obsidian-main/old_jun2024_nonclass/Recording 20240514094029.webm",
+    "obsidian-main/old_jun2024_nonclass/Mayra.canvas",
+    "obsidian-main/old_jun2024_nonclass/bys protest_centralism tab perfor_id claim_id.jpg",
+    "obsidian-main/old_jun2024_nonclass/bys protest_centralism tab perfor_id claim_id exp.png",
+    "old_jun2024_nonclass/Mayra.canvas",
+    "Untitled.canvas",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",
+    "Mayra.canvas",
+    "Estallido.canvas"
+  ]
+}
