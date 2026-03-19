@@ -1,7 +1,0 @@
-TCC: Transnational capitalist class
-Q2: How do Andean anti-mining struggles challenge imperialist domination in the first quart of the XXI century?
-
-Argument:
-Anti-mining struggles directly contest the interests of the international mining bourgeoisie in the Andes, challenging the effective instumentality of states and domestic bourgoisies to guarant capital accumulation.
-1) the escalation of anti-mining struggles in the Andes demonstrated the sustained capacity of popular mobilization, with a strong indigenous peasant composition, to support the struggle against transnational mining companies, challenging state repression until mining contention becames militarized.
-2) the obstruction of mineral commodities production and circulation resulted in changes over the ownership of the productive capital invested in large scale mining projects, and can stop the extension of the extractive mining frontier. The high mobility of capital at the current stage of global capitalism and the TCC's current urgency to initiate a new material expansion phase, push capital to fly away from the territories where there are no conditions for reproduction. The radicalization of anti-mining struggles can result in liberated territories from the capital accumulation circuit of the transnational capitalist class, exposing the weakness of the domestic bourgoisies and capitalists states of the Andes as vulnerable to a revolutionary challenge.

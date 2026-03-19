@@ -1,0 +1,5 @@
+
+ 
+ The definition of the situation of class struggle in the hegemony and overaccumulation current crisis of global capitalism
+ 
+ Arrighi and Silver (1999) compared three hegemonic transitions of the world-system, currently we are under the fourth. But transitions aren't gradual processes, for a completed one the crisis should develop in a breakdown of hegemony. This breakdown imply systemic chaos reached by the different advancement of two related processes, which combination and timing could shape the outcome. Those processes are class struggle and interstate war. The crisis of hegemony and breakdown should develop pushed by the material expansion of overaccumulated capital in the largest-profit industries as mining.
