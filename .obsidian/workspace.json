@@ -14,11 +14,25 @@
               "type": "markdown",
               "state": {
                 "file": "obsidian/notes/remyherreraMarxistInterpretationCurrent2014.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "remyherreraMarxistInterpretationCurrent2014"
+            }
+          },
+          {
+            "id": "5ab156b1f81583b0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian/notes/World-System Political Risk Event Analysis.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "World-System Political Risk Event Analysis"
             }
           }
         ],
@@ -286,12 +300,13 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "e69ad7ec32513f3f",
+  "active": "dc3790f295af129f",
   "lastOpenFiles": [
+    "obsidian/notes/World-System Political Risk Event Analysis.md",
     "obsidian/notes/remyherreraMarxistInterpretationCurrent2014.md",
     "obsidian/meta/zotero/research note.md",
-    "obsidian/notes/marxTransformationCommodityCapital2015.md",
     "obsidian/brandwatch/research plan-draft.md",
+    "obsidian/notes/marxTransformationCommodityCapital2015.md",
     "obsidian/brandwatch",
     "obsidian/writing/publicaciones/Tesis_JoseManuelMejia_final_UASB.pdf",
     "obsidian/writing/publicaciones/Tesis_JoseManuelMejia_final.md",
@@ -332,7 +347,6 @@
     "obsidian/writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Abstract_en-es.md",
     "obsidian/writing/documents/Drafts/UNMSM/drafted translations/UNMSM.md",
     "obsidian/writing/documents/Drafts/UNMSM/drafted translations/Los efectos..md",
-    "obsidian/writing/documents/Drafts/UNMSM/drafted translations/los efectos de la lucha.md",
     "obsidian/writing/documents/Drafts/Estallido/Estallido.canvas",
     "obsidian/writing/documents/Drafts/Estallido/Comunicado FFAA.jpg",
     "writing/3.1 documents/Drafts/Estallido/Estallido.canvas",
