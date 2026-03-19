@@ -1,7 +1,7 @@
 {
   "alwaysUpdateLinks": true,
   "showUnsupportedFiles": true,
-  "spellcheck": false,
+  "spellcheck": true,
   "spellcheckLanguages": null,
   "useTab": true,
   "pdfExportSettings": {
@@ -30,5 +30,6 @@
   "propertiesInDocument": "visible",
   "defaultViewMode": "preview",
   "uriCallbacks": true,
-  "tabSize": 6
+  "tabSize": 6,
+  "useMarkdownLinks": true
 }
