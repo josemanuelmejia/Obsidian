@@ -19,8 +19,4 @@ Moseley 2017, 205-206 argumented for the inapplication of the transformation of 
 [Remy Herrera 2014](obsidian://open?vault=Obsidian&file=obsidian%2Fnotes%2FremyherreraMarxistInterpretationCurrent2014) presented a proposal to frame the ongoing crisis... 
 
 # Methodology
-A supervised approach to live stream monitoring of content published using [Brandwatch](obsidian://open?vault=Obsidian&file=obsidian%2Fbrandwatch%2FWorld-System%20Political%20Risk%20Event%20Analysis) advance event catalogues.
-
-## Hypothesis
-The effects of gold circulation's obstruction on the rate of profit is a particular assumption for the money-commodity.
-The rate of profit affected is the jointed by the international financial bourguesie.
+A supervised approach to live stream monitoring of military mobilization event catalogues allow the identification of crisis peaks using [Brandwatch](obsidian://open?vault=Obsidian&file=obsidian%2Fbrandwatch%2FWorld-System%20Political%20Risk%20Event%20Analysis).
