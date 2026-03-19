@@ -9,5 +9,3 @@ Password: Brandwatch26#
 - All Mentions on Cuba (live)
 - All Mentions on gold, silver, aluminum, copper, platinum, palladium,  and oil (live)
 - US Mentions on reserves (live)
-
-test
