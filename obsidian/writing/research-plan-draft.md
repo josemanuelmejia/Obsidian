@@ -16,7 +16,7 @@ Nevertheless, the application of the determinant character of the level of labor
 
 Moseley 2017, 205-206 argument for the impossible application of the transformation of surplus value into profit, as the total surplus-value of the gold industry is the total amount of gold produced by certain magnitude of capital advanced, and indeed the transformation of surplus value into profit do not occur as in any other industry susceptible due to changes in its organic composition. In gold industry the total surplus value produced as a total quantity of gold is the total profit as a result of the difference among the total capital advanced in gold industry and the total amount of gold produced.
 
-[Remy Herrera](../notes/remyherreramarxistinterpretationcurrent2014.md) advanced a proposal...
+[Remy Herrera](../notes/remyherreraMarxistInterpretationCurrent2014.md) advanced a proposal...
 
 
 # Methodology
