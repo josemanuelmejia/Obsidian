@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian/intro.md",
+                "file": "obsidian/brandwatch/World-System Political Risk Event Analysis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "intro"
+              "title": "World-System Political Risk Event Analysis"
             }
           }
         ],
@@ -288,10 +288,10 @@
   },
   "active": "7c710d97ee41f63b",
   "lastOpenFiles": [
-    "obsidian/brandwatch/World-System Political Risk Event Analysis.md",
     "obsidian/writing/research plan-draft.md",
-    "obsidian/notes/remyherreraMarxistInterpretationCurrent2014.md",
     "obsidian/intro.md",
+    "obsidian/brandwatch/World-System Political Risk Event Analysis.md",
+    "obsidian/notes/remyherreraMarxistInterpretationCurrent2014.md",
     "obsidian/meta/zotero/research note.md",
     "obsidian/notes/marxTransformationCommodityCapital2015.md",
     "obsidian/brandwatch",
