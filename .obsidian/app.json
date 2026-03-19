@@ -31,6 +31,6 @@
   "defaultViewMode": "preview",
   "uriCallbacks": true,
   "tabSize": 6,
-  "useMarkdownLinks": false,
-  "newLinkFormat": "absolute"
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative"
 }
