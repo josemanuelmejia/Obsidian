@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian/notes/World-System Political Risk Event Analysis.md",
+                "file": "obsidian/brandwatch/World-System Political Risk Event Analysis.md",
                 "mode": "source",
                 "source": false
               },
@@ -36,6 +36,7 @@
             }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -300,12 +301,12 @@
       "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "dc3790f295af129f",
+  "active": "e69ad7ec32513f3f",
   "lastOpenFiles": [
-    "obsidian/notes/World-System Political Risk Event Analysis.md",
+    "obsidian/writing/research plan-draft.md",
+    "obsidian/brandwatch/World-System Political Risk Event Analysis.md",
     "obsidian/notes/remyherreraMarxistInterpretationCurrent2014.md",
     "obsidian/meta/zotero/research note.md",
-    "obsidian/brandwatch/research plan-draft.md",
     "obsidian/notes/marxTransformationCommodityCapital2015.md",
     "obsidian/brandwatch",
     "obsidian/writing/publicaciones/Tesis_JoseManuelMejia_final_UASB.pdf",
