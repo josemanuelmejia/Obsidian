@@ -1,3 +1,0 @@
-The process of exchange finishes in the realization of commodities as exchange-values. So, it is by consumption, which for the particular social formation of interest (bourgeois society) is realized with the payment of the commodity price (C): as the magnitude of the general measure of the exchange value for every commodity produced by, for, and as, capital.
-
-By the realization of the exchange process, by the purchase of a commodity, the use-value produced as a commodity for capital reproduction can be appropriated.

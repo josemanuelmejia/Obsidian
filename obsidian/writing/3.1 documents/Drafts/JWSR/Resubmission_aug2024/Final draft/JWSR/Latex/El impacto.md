@@ -1,3 +1,0 @@
-
-
-![[El impacto.pdf]]
