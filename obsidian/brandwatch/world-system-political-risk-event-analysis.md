@@ -3,7 +3,8 @@ Brandwatch live streaming link: https://shared-dashboards.suite.brandwatch.com/d
 Password: Brandwatch26#
 # Dashboard tabs
 - Middle East Mentions (live)
-- Mentions per Million capita Heat World Map (live)
+- Total Reach of military mobilization news by threat categories (live)
+- Mentions per Million Capita Heat World Map (live)
 - US All Mentions (live)
 - Germany Mentions (live)
 - All Mentions on Cuba (live)
