@@ -16,7 +16,7 @@ Nevertheless, the application of the determinant character of the level of labor
 
 Moseley 2017, 205-206 argument for the impossible application of the transformation of surplus value into profit, as the total surplus-value of the gold industry is the total amount of gold produced by certain magnitude of capital advanced, and indeed the transformation of surplus value into profit do not occur as in any other industry susceptible to changes in it organic composition. In gold industry the total surplus value produced as a total quantity of gold is accounted and is equal to the total profit as a result of the difference among the total capital advanced in gold industry and the total amount of gold produced.
 
-[Remy Herrera 2014](obsidian://open?vault=Obsidian&file=obsidian%2Fnotes%2FremyherreraMarxistInterpretationCurrent2014) presented a proposal to frame the ongoing crisis... 
+[Remy Herrera 2014](https://github.com/josemanuelmejia/Obsidian/blob/master/obsidian/notes/remyherreraMarxistInterpretationCurrent2014.md) presented a proposal to frame the ongoing crisis... 
 
 # Methodology
-A supervised approach to live stream monitoring of military mobilization event catalogues allow the identification of crisis peaks using [Brandwatch](obsidian://open?vault=Obsidian&file=obsidian%2Fbrandwatch%2FWorld-System%20Political%20Risk%20Event%20Analysis)
+A supervised approach to live stream monitoring of military mobilization event catalogues allow the identification of crisis peaks using [Brandwatch](https://github.com/josemanuelmejia/Obsidian/blob/master/obsidian/brandwatch/World-System%20Political%20Risk%20Event%20Analysis.md)
