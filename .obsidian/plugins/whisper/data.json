@@ -1,0 +1,12 @@
+{
+  "apiKey": "sk-svcacct-m8zcv4W62ycy_exraTsfYWexhYtldZePGrrTWCDvN35fnbgTzR54nxw_YX0_9x5T3BlbkFJFTr8_Yfxi4dw3_sms6Iuan2Gdt19_aQpJqaFu59VFFraRa_CbglP_peCOOqk-AA",
+  "apiUrl": "https://api.openai.com/v1/audio/transcriptions",
+  "model": "whisper-1",
+  "prompt": "",
+  "language": "en",
+  "saveAudioFile": false,
+  "saveAudioFilePath": "",
+  "debugMode": false,
+  "createNewFileAfterRecording": true,
+  "createNewFileAfterRecordingPath": ""
+}

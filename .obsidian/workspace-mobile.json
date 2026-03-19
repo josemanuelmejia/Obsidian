@@ -1,0 +1,219 @@
+{
+  "main": {
+    "id": "6a3e2010cfa7b1c4",
+    "type": "split",
+    "children": [
+      {
+        "id": "0aebfacf8df1e01d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "58830e04a2d5bd34",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b5c98f46407920fe",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "bc0e1ea11afe21fd",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical",
+            "autoReveal": false
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
+        }
+      },
+      {
+        "id": "c537156f210ebaf4",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "godard",
+            "matchingCase": false,
+            "explainSearch": true,
+            "collapseAll": true,
+            "extraContext": true,
+            "sortOrder": "byModifiedTime"
+          },
+          "icon": "lucide-search",
+          "title": "Search"
+        }
+      },
+      {
+        "id": "45e9e312717a4a43",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
+        }
+      },
+      {
+        "id": "84676977bf0e7f31",
+        "type": "leaf",
+        "state": {
+          "type": "all-properties",
+          "state": {
+            "sortOrder": "frequency",
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-archive",
+          "title": "All properties"
+        }
+      },
+      {
+        "id": "da69cec51f86e056",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
+        }
+      },
+      {
+        "id": "b369dbb6d6d5897f",
+        "type": "leaf",
+        "state": {
+          "type": "VIEW_TYPE_LONGFORM_EXPLORER",
+          "state": {},
+          "icon": "lucide-ghost",
+          "title": "VIEW_TYPE_LONGFORM_EXPLORER"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "dc4a78f1092b949d",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "8d85834f8c15c4c5",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
+        }
+      },
+      {
+        "id": "7b02a635084507bd",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
+        }
+      },
+      {
+        "id": "2adbb3f8fd58944e",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "random-note:Open random note": false,
+      "audio-recorder:Start/stop recording": false,
+      "workspaces:Manage workspace layouts": false,
+      "publish:Publish changes...": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "bc0e1ea11afe21fd",
+  "lastOpenFiles": [
+    "obsidian-main/02 analysis/Research plan.md",
+    "obsidian-main/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/Accumulation of mining capital.md",
+    "obsidian-main/05 tasks/Application School of Marxism Studies at Jiaotong University.md",
+    "obsidian-main/05 tasks/China application.md",
+    "obsidian-main/01 notes/bordoGoldStandardRelated1999 1.md",
+    "obsidian-main/02 analysis/questions and arguments/Q1. Mining struggles antisystemic effects on capital accumulation/After the Gold Crash  Alchemist  LBMA/issue-74-5(1).jpg",
+    "obsidian-main/03 writing/documents/Drafts/Presentation ITA Monday September 16th, 2024 12hrs to 12hrs10m..md",
+    "Research Proposal.md",
+    "obsidian-main/03 writing/documents/Drafts/Capital & Class/Capital and Class.md",
+    "obsidian-main/11 labor/Revista/Revista.md",
+    "obsidian-main/01 notes/marxManuscritosEconomicofilosoficos18442004a.md",
+    "obsidian-main/02 analysis/annotated bibliography/Vallejo-Heraldos Negros/Robert Bly1962.pdf",
+    "obsidian-main/02 analysis/MARX/MEGAdigital. Online-Angebot der historisch-kritischen Gesamtausgabe von Karl Marx und Friedrich Engels.md",
+    "obsidian-main/07 diary/4E/4E.mp3",
+    "obsidian-main/02 analysis/annotated bibliography/Bukharin/Bukharin.pdf",
+    "obsidian-main/02 analysis/annotated bibliography/TCC.md",
+    "obsidian-main/02 analysis/annotated bibliography/l1. Imperialism.md",
+    "obsidian-main/02 analysis/annotated bibliography/Vallejo-Heraldos Negros/Fogden 1995.pdf",
+    "obsidian-main/02 analysis/annotated bibliography/Bukharin/Bukharin - 1915 - Impeialism and world economy.pdf",
+    "2025.md",
+    "El_impacto_sobre_las_ganancias.md",
+    "gold.md",
+    "Vspa-2026.md",
+    "Recording 20251104130206.m4a",
+    "obsidian-main/07 diary/Audiovisual culture/Vivre.Sa.Vie.1962.(Jean-Luc.Godard).1080p.BRRip.x264-Classics.md",
+    "obsidian-main/10 conversations/07MAR2023/Peru China Networking.md",
+    "obsidian-main/13 kapital/8_Coffee.md",
+    "obsidian-main/03 writing/documents/Drafts/Capital & Class/Pablo.md",
+    "obsidian-main/13 kapital/bilu_xdwb_en.md",
+    "obsidian-main/13 kapital/stocks/Trump Tariffs Coffee US China.md",
+    "obsidian-main/13 kapital/stocks/queries.md",
+    "obsidian-main/13 kapital/stocks/brevete4.md",
+    "obsidian-main/13 kapital/stocks/brevete5.md",
+    "obsidian-main/13 kapital/stocks",
+    "obsidian-main/13 kapital",
+    "obsidian-main/09 courses/UCSB/Sociology UCSB/Kevin Anderson/Marx Seminar/Notebook Marx Seminar October 2024-JM.pdf",
+    "obsidian-main/03 writing/documents/Drafts/UNMSM/El_impacto_sobre_las_ganancias-9.pdf"
+  ]
+}

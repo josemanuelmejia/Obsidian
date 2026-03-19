@@ -1,0 +1,33 @@
+{
+  "database": "Zotero",
+  "noteImportFolder": "obisidian/notes",
+  "pdfExportImageDPI": 120,
+  "pdfExportImageFormat": "jpg",
+  "pdfExportImageQuality": 90,
+  "citeFormats": [
+    {
+      "name": "ASA",
+      "format": "formatted-bibliography",
+      "cslStyle": "american-sociological-association"
+    }
+  ],
+  "exportFormats": [
+    {
+      "name": "Import Research Notes",
+      "outputPathTemplate": "obsidian/notes/{{citekey}}.md",
+      "imageOutputPathTemplate": "{{citekey}}/",
+      "imageBaseNameTemplate": "image",
+      "templatePath": "obsidian/meta/zotero/research note.md",
+      "cslStyle": "american-sociological-association"
+    }
+  ],
+  "citeSuggestTemplate": "[[{{citekey}}]]",
+  "openNoteAfterImport": true,
+  "whichNotesToOpenAfterImport": "first-imported-note",
+  "exeVersion": "1.0.15",
+  "shouldShowCiteSuggest": true,
+  "shouldConcat": true,
+  "pdfExportImageOCR": false,
+  "_exeInternalVersion": 1,
+  "exeOverridePath": "D:\\Usuarios\\Obsidian\\Documents\\GitHub\\Obsidian\\obsidian\\meta\\pdfannots2json.exe"
+}

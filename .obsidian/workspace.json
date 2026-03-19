@@ -1,50 +1,42 @@
 {
   "main": {
-    "id": "178f0ad2451dcfb8",
+    "id": "ed708ac2f19d4a22",
     "type": "split",
     "children": [
       {
-        "id": "dd9fdfffd7da7cf2",
+        "id": "32d775356185d211",
         "type": "tabs",
         "children": [
           {
-            "id": "bfca0eb6d8227f2c",
+            "id": "6f1399ff4e87ff60",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "obsidian/notes/remyherreraMarxistInterpretationCurrent2014.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "remyherreraMarxistInterpretationCurrent2014"
             }
           }
-        ]
+        ],
+        "stacked": true
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "eacb9b4f7c54af48",
+    "id": "3095fbc5aa1285ac",
     "type": "split",
     "children": [
       {
-        "id": "ebd4f6e9a39cccc6",
+        "id": "a90bc08e71677c95",
         "type": "tabs",
         "children": [
           {
-            "id": "8c29c760aef93359",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Explorador de archivos"
-            }
-          },
-          {
-            "id": "7417ba7681e4c0be",
+            "id": "11f193bbd8e05176",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,31 +53,55 @@
             }
           },
           {
-            "id": "e01927e1778b26ed",
+            "id": "360f6d7aa4d9ce1e",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Marcadores"
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "e69ad7ec32513f3f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "d5e317f7c0ff189a",
+            "type": "leaf",
+            "state": {
+              "type": "VIEW_TYPE_LONGFORM_EXPLORER",
+              "state": {},
+              "icon": "longform",
+              "title": "Longform"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
-    "id": "97434906aae73989",
+    "id": "724d7ed597eef718",
     "type": "split",
     "children": [
       {
-        "id": "071d255f4f35cc75",
+        "id": "4269438fa1aa817f",
         "type": "tabs",
         "children": [
           {
-            "id": "51501ce2c8cde647",
+            "id": "d11fe171adcbc229",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -93,45 +109,66 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "9a5f0ddf56cb6b16",
+            "id": "082c5c0b73f3b020",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "German.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes"
+              "title": "Outgoing links from German"
             }
           },
           {
-            "id": "9763e0f540ec94fe",
+            "id": "5c1da3ec98978ece",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
+                "useHierarchy": true
               },
               "icon": "lucide-tags",
-              "title": "Etiquetas"
+              "title": "Tags"
             }
           },
           {
-            "id": "d51f937bcc1a671b",
+            "id": "2a28041bf860f792",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "German.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of German"
+            }
+          },
+          {
+            "id": "009e3573c75380d4",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "advanced-tables-toolbar"
+            }
+          },
+          {
+            "id": "6b675d9bfdf9b47e",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -141,28 +178,82 @@
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
-              "title": "Todas las propiedades"
+              "title": "All properties"
             }
           },
           {
-            "id": "c48c9f417864d4ad",
+            "id": "826c9aab0245c60a",
             "type": "leaf",
             "state": {
-              "type": "outline",
+              "type": "transcript-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "transcript-view"
+            }
+          },
+          {
+            "id": "e2fc57904b770e6b",
+            "type": "leaf",
+            "state": {
+              "type": "transcript-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "transcript-view"
+            }
+          },
+          {
+            "id": "151df5cc40481a2c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
               "state": {
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
+                "file": "obsidian-history-vault-master/03 writing/documents/Drafts/JWSR/Resubmission_aug2024/Antisystemic Effects of  Peasants AntimininAndeang Struggles_2024-07-18.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-list",
-              "title": "Esquema"
+              "icon": "lucide-file",
+              "title": "Antisystemic Effects of  Peasants AntimininAndeang Struggles_2024-07-18"
+            }
+          },
+          {
+            "id": "bc44ac9d204aa2f4",
+            "type": "leaf",
+            "state": {
+              "type": "translator-view",
+              "state": {
+                "language_from": "en",
+                "language_to": "es",
+                "translation_service": "bergamot",
+                "auto_translate": false,
+                "apply_glossary": false,
+                "view_mode": 0,
+                "filter_mode": 0,
+                "show_attribution": true,
+                "top_buttons": [
+                  "change-service",
+                  "automatic-translation",
+                  "change-layout",
+                  "apply-filter",
+                  "open-settings"
+                ],
+                "left_buttons": [
+                  "paste",
+                  "clear"
+                ],
+                "right_buttons": [
+                  "copy"
+                ]
+              },
+              "icon": "lucide-ghost",
+              "title": "translator-view"
             }
           }
-        ]
+        ],
+        "currentTab": 9
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -173,9 +264,85 @@
       "daily-notes:Abrir la nota de hoy": false,
       "templates:Insertar plantilla": false,
       "command-palette:Abrir paleta de comandos": false,
-      "bases:Crear nueva base": false
+      "markdown-importer:Abrir el importador de Markdown": false,
+      "random-note:Abrir nota al azar": false,
+      "audio-recorder:Iniciar/Detener la grabación": false,
+      "workspaces:Gestionar disposiciones de espacio de trabajo": false,
+      "publish:Publicar cambios...": false,
+      "bases:Crear nueva base": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-audio-notes:Quick Audio Note with Transcription": false,
+      "obsidian-camera:Obsidian Camera": false,
+      "obsidian-import-json:JSON/CSV Importer": false,
+      "markdown-table-editor:Open Markdown Table Editor": false,
+      "notes-refresher:Get note summaries": false,
+      "smart-memos:Record smart memo": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-tts:Text to Speech": false,
+      "translate:Open translation view": false,
+      "obsidian-translator:Translate": false,
+      "vantage-obsidian:Vantage - Advanced search builder": false,
+      "whisper:Open recording controls": false,
+      "obsidian-wordnet-plugin:WordNet Dictionary": false
     }
   },
-  "active": "bfca0eb6d8227f2c",
-  "lastOpenFiles": []
+  "active": "6f1399ff4e87ff60",
+  "lastOpenFiles": [
+    "obsidian/notes/remyherreraMarxistInterpretationCurrent2014.md",
+    "obsidian/notes/robinsonGlobalRevoltIts2022.md",
+    "meta/templates/country.md",
+    "meta/templates/institution.md",
+    "meta/zotero/research note.md",
+    "meta/templates/city.md",
+    "meta/templates/writing template.md",
+    "meta/templates/task.md",
+    "meta/templates/place.md",
+    "meta/templates/person.md",
+    "meta/templates/event.md",
+    "meta/templater/extract research note from selection.md",
+    "meta/templates/diary.md",
+    "meta/templates/annotated bibliography.md",
+    "meta/templates/analysis.md",
+    "meta/templater/extract bibliography task from selection.md",
+    "meta/javascript/workspace-load-Write-with-Longform.js",
+    "meta/javascript/workspace-load-Search-research-notes.js",
+    "meta/javascript/projecttag.js",
+    "meta/javascript/load-current-note.js",
+    "meta/javascript/workspace-load-work-with-notes.js",
+    "meta/javascript/header.js",
+    "meta/dataview/view.js",
+    "meta/dataview/twenty latest notes.md",
+    "meta/dataview/Search Research Notes.md",
+    "meta/dataview/notes as a timeline.md",
+    "meta/dataview/all tasks.md",
+    "meta/zotero",
+    "meta/templates",
+    "meta/templater",
+    "input/Herrera-AMarxistInterpretation-2014-conversation-history.md",
+    "writing/3.1 documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Latex/Los efectos sobre la reproducci´on del capital financiero imperialista.md",
+    "writing/3.1 documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Latex/El impacto.md",
+    "writing/3.1 documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Latex/Antisystemic_Effects_of_Antimining_Andean_Peasant_Struggles__1___Copy_.md",
+    "writing/3.1 documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Section1_JWSR_en.md",
+    "writing/3.1 documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Comparisons version_JWSR-en/Section1_es.md",
+    "writing/3.1 documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Total reserves.PNG",
+    "writing/3.1 documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Total gold-capital reserves.PNG",
+    "writing/3.1 documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Total gold-capital reserves-China-US.png",
+    "writing/3.1 documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Fig3.PNG",
+    "writing/3.1 documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Fig2.PNG",
+    "writing/3.1 documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/eq iv.PNG",
+    "writing/3.1 documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/eq iii.PNG",
+    "writing/3.1 documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/eq ii.PNG",
+    "writing/3.1 documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/eq i.PNG",
+    "writing/3.1 documents/Drafts/Estallido/Estallido.canvas",
+    "writing/3.1 documents/Drafts/Estallido/Comunicado FFAA.jpg",
+    "obsidian-main/writing/3.1 documents/Drafts/Estallido/Estallido.canvas",
+    "obsidian-main/03 writing/3.1 documents/Drafts/Estallido/Estallido.canvas",
+    "obsidian-main/03 writing/documents/Drafts/Estallido/Estallido.canvas",
+    "obsidian-main/old/old_jun2024_nonclass/Mayra.canvas",
+    "obsidian-main/old_jun2024_nonclass/Mayra.canvas",
+    "old_jun2024_nonclass/Mayra.canvas",
+    "Untitled.canvas",
+    "obsidian-history-vault-master/03 writing/documents/Drafts/Estallido/Estallido.canvas",
+    "Mayra.canvas"
+  ]
 }

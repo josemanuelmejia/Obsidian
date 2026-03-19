@@ -27,7 +27,7 @@ comment::
 ### Note
 %% begin annotations %%
 
-### Imported on 2026-03-18 5:50 pm
+### Imported on 2026-03-18 7:21 pm
 
 We are dealing with a systemic crisis that is affecting the very heart of the present capitalist world system, i.e., the power centre of high finance which has been controlling capital accumulation over the past three decades. [(p. 128)](zotero://open-pdf/library/items/52G3NMK4?page=128&annotation=2U49CYXE)
 
@@ -42,8 +42,6 @@ brutal rise in the interest rate) in the United States in 1979; Mexico in 1982; 
 
 %%The initial point given by Herrera is characterized as a long-term brutal rise in the interest rates headed by US.%%
 
->[!quote|#5fb236] Reference
->
 speculation is not an “excess” or “error” of corporate governance: it is a magic potion against the structural evil of capitalism, a remedy to counteract the tendency for the rate of profit to fall, and it provides outlets to the masses of capital that are no longer able to invest profitably [(p. 130)](zotero://open-pdf/library/items/52G3NMK4?page=130&annotation=RHBMN9AI)
 
 %%Speculation as a remedy to counteract the structural tendency for the rate of profit to fall.%%
@@ -53,4 +51,4 @@ the crisis was to be explained, not so much by the insufficiency of investment�
 %%By insufficiency of investment, we should understand not the absence of an increased amount of capital invested, but its fail to produce profit, exhibited by the fall in the rate of profit, given higher magnitudes of total capital advanced and a limited increment, or none significant increment at all in the total surplus value produced (p'=s/K). Apart of this reason, supported by the general law of the tendency of fall in the rate of profit caused by a higher productivity of labor which increase the constant capital magnitude of the average organic capital composition in a sector of industry. The author mentioned the tendency of rise in interest rates since 1979. As we know, the rate of interest is defined apriori the distribution of the total surplus value and the equalization of profit rates. Indeed an increment in rates of interests diminish the  magnitude of enterprise profit, independently of the total profit variation. As the total profit is composed by the total profit of enterprise and the interest as the payment discounted for the credit advanced.%% %% end annotations %%
 
 
-%% Import Date: 2026-03-18T17:51:16.475-05:00 %%
+%% Import Date: 2026-03-18T19:21:37.587-05:00 %%
