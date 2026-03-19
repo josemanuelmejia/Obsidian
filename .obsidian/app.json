@@ -31,5 +31,5 @@
   "defaultViewMode": "preview",
   "uriCallbacks": true,
   "tabSize": 6,
-  "useMarkdownLinks": true
+  "useMarkdownLinks": false
 }
