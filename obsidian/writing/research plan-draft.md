@@ -19,4 +19,4 @@ Moseley 2017, 205-206 argument for the impossible application of the transformat
 [Remy Herrera 2014](https://github.com/josemanuelmejia/Obsidian/blob/master/obsidian/notes/remyherreraMarxistInterpretationCurrent2014.md) presented a proposal to frame the ongoing crisis... 
 
 # Methodology
-A supervised approach to live stream monitoring of military mobilization event catalogues allow the identification of crisis peaks using [Brandwatch](https://github.com/josemanuelmejia/Obsidian/blob/master/obsidian/brandwatch/World-System%20Political%20Risk%20Event%20Analysis.md)
+A supervised approach to live stream monitoring of military mobilization event catalogues allow the identification of crisis peaks using [Brandwatch](https://obsidian-links.kennethchristensen.me/v/Obsidian/r/obsidian/brandwatch/World-System%20Political%20Risk%20Event%20Analysis)
