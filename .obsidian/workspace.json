@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian/brandwatch/World-System Political Risk Event Analysis.md",
+                "file": "obsidian/writing/research-plan-draft.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "World-System Political Risk Event Analysis"
+              "title": "research-plan-draft"
             }
           }
         ],
@@ -283,14 +283,16 @@
       "obsidian-translator:Translate": false,
       "vantage-obsidian:Vantage - Advanced search builder": false,
       "whisper:Open recording controls": false,
-      "obsidian-wordnet-plugin:WordNet Dictionary": false
+      "obsidian-wordnet-plugin:WordNet Dictionary": false,
+      "vault-file-renamer:Vault File Renamer": false
     }
   },
-  "active": "7c710d97ee41f63b",
+  "active": "e69ad7ec32513f3f",
   "lastOpenFiles": [
-    "obsidian/writing/research plan-draft.md",
-    "obsidian/notes/remyherreraMarxistInterpretationCurrent2014.md",
-    "obsidian/brandwatch/World-System Political Risk Event Analysis.md",
+    "obsidian/obsidian - Acceso directo.lnk",
+    "obsidian/notes/remyherreramarxistinterpretationcurrent2014.md",
+    "obsidian/brandwatch/world-system-political-risk-event-analysis.md",
+    "obsidian/writing/research-plan-draft.md",
     "obsidian/obsidian/writing/research plan-draft.md",
     "obsidian/obsidian/writing",
     "obsidian/obsidian/notes/remyherreraMarxistInterpretationCurrent2014.md",
@@ -321,7 +323,6 @@
     "obsidian/obsidian/brandwatch",
     "obsidian/obsidian",
     "obsidian/intro.md",
-    "[obsidian/brandwatch/World-System.md",
     "[obsidian/brandwatch",
     "[obsidian",
     "obsidian/writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Total reserves.PNG",
