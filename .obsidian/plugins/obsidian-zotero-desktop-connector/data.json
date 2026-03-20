@@ -17,7 +17,7 @@
       "outputPathTemplate": "obsidian/notes/{{citekey}}.md",
       "imageOutputPathTemplate": "{{citekey}}/",
       "imageBaseNameTemplate": "image",
-      "templatePath": "obsidian/meta/zotero/research note.md",
+      "templatePath": "obsidian/meta/zotero/research-note.md",
       "cslStyle": "american-sociological-association"
     }
   ],
