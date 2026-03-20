@@ -11,14 +11,12 @@
             "id": "7c710d97ee41f63b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "obsidian/briefs/2026-03-20.md",
-                "mode": "source",
-                "source": false
+                "file": "obsidian/briefs/GC1!_2026-03-20_16-40-05.png"
               },
-              "icon": "lucide-file",
-              "title": "2026-03-20"
+              "icon": "lucide-image",
+              "title": "GC1!_2026-03-20_16-40-05"
             }
           }
         ],
@@ -289,6 +287,10 @@
   },
   "active": "7c710d97ee41f63b",
   "lastOpenFiles": [
+    "obsidian/briefs/2026-03-20.md",
+    "obsidian/briefs/GC1!_2026-03-20_16-40-05.png",
+    "briefs",
+    "obsidian/writing/research-plan-draft.md",
     "obsidian/notes/goldsetworst2026.md",
     "obsidian/meta/javascript/Gold-Silver-Futures-Historical/Untitled (1).html",
     "obsidian/meta/javascript/Gold-Silver-Futures-Historical/Silver Futures Historical Data.csv",
@@ -301,13 +303,10 @@
     "obsidian/meta/javascript/extract_historical_prices/silver.csv",
     "obsidian/meta/javascript/extract_historical_prices/scrapingGoldAndSilverData.py",
     "obsidian/meta/javascript/extract_historical_prices/gold.csv",
-    "obsidian/meta/javascript/extract_historical_prices/getCommodityPrice.py",
     "obsidian/meta/javascript/extract_historical_prices/readme.md",
-    "obsidian/briefs/2026-03-20.md",
     "obsidian/brandwatch/sin-titulo-2.md",
     "obsidian/brandwatch/world-system-political-risk-event-analysis.md",
     "obsidian/notes/remyherreramarxistinterpretationcurrent2014.md",
-    "obsidian/writing/research-plan-draft.md",
     "obsidian/notes/marxmarxseconomicmanuscript2016.md",
     "obsidian/notes/remyherreramarxistinterpretationcurrent2014.md",
     "obsidian/intro.md",
@@ -333,7 +332,6 @@
     "obsidian/writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/eq iv.PNG",
     "obsidian/writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/eq iii.PNG",
     "obsidian/writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/eq ii.PNG",
-    "obsidian/writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/eq i.PNG",
     "obsidian/writing/documents/Drafts/Estallido/Estallido.canvas",
     "writing/3.1 documents/Drafts/Estallido/Estallido.canvas",
     "obsidian-main/writing/3.1 documents/Drafts/Estallido/Estallido.canvas",
