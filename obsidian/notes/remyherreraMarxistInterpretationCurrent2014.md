@@ -27,7 +27,7 @@ comment::
 ### Note
 %% begin annotations %%
 
-### Imported on 2026-03-18 9:33 pm
+### Imported on 2026-03-20 2:23 pm
 
 We are dealing with a systemic crisis that is affecting the very heart of the present capitalist world system, i.e., the power centre of high finance which has been controlling capital accumulation over the past three decades. [(p. 128)](zotero://open-pdf/library/items/52G3NMK4?page=128&annotation=2U49CYXE)
 
@@ -48,7 +48,23 @@ Speculation as a remedy to counteract the structural tendency for the rate of pr
 
 the crisis was to be explained, not so much by the insufficiency of investment—due to a reduction in the marginal efficiency of capital, which is itself linked to the obsolescence of capital and possibly accentuated by the rise in interest rate [(p. 131)](zotero://open-pdf/library/items/52G3NMK4?page=131&annotation=XQMFQ4SB)
 
-By insufficiency of investment, we should understand not the absence of an increased amount of capital invested, but its fail to produce profit, exhibited by the fall in the rate of profit, given higher magnitudes of total capital advanced and a limited increment, or none significant increment at all in the total surplus value produced (p'=s/K). Apart of this reason, supported by the general law of the tendency of fall in the rate of profit caused by a higher productivity of labor which increase the constant capital magnitude of the average organic capital composition in a sector of industry. The author mentioned the tendency of rise in interest rates since 1979. As we know, the rate of interest is defined apriori the distribution of the total surplus value and the equalization of profit rates. Indeed an increment in rates of interests diminish the  magnitude of enterprise profit, independently of the total profit variation. As the total profit is composed by the total profit of enterprise and the interest as the payment discounted for the credit advanced. %% end annotations %%
+By insufficiency of investment, we should understand not the absence of an increased amount of capital invested, but its fail to produce profit, exhibited by the fall in the rate of profit, given higher magnitudes of total capital advanced and a limited increment, or none significant increment at all in the total surplus value produced (p'=s/K). Apart of this reason, supported by the general law of the tendency of fall in the rate of profit caused by a higher productivity of labor which increase the constant capital magnitude of the average organic capital composition in a sector of industry. The author mentioned the tendency of rise in interest rates since 1979. As we know, the rate of interest is defined apriori the distribution of the total surplus value and the equalization of profit rates. Indeed an increment in rates of interests diminish the  magnitude of enterprise profit, independently of the total profit variation. As the total profit is composed by the total profit of enterprise and the interest as the payment discounted for the credit advanced.
+
+capital to accumulate in money-capital which can take forms that are increasingly abstract, unreal, and “fictitious.” [(p. 131)](zotero://open-pdf/library/items/52G3NMK4?page=131&annotation=QMDL75YY)
+
+Fictitious capital concept.
+
+Thus, one must understand this crisis within the context of a long period of worsening dysfunction in the regulation mechanisms of the world system under the hegemony of the United States, at least since the over-accumulation of money-capital in the 1960s, linked to US internal and external deficits (caused partially by the Vietnam war), to the untenable strains on the dollar and to the proliferation of eurodollars, then petrodollars, on the inter-bank markets. [(p. 133)](zotero://open-pdf/library/items/52G3NMK4?page=133&annotation=ESGLBYA8)
+
+The process described by Herrera as the dysfunction in the regulation mechanisms (institutions) of the world-system given since the 1960s, connects the formation of Sino-American shared imperialism with US internal and external deficits, and "to the untenable strains on the dollar and to the proliferation of eurodollars, then petrodollars, on the inter-bank markets".
+
+In this process, certain events played a fundamental role, among them being, in the exchange market, the dismantling of the Bretton Woods agreements because of the US decision, in 1971–73, to abandon the convertibility of the dollar into gold and to de-monetize gold—hence dismantling the system of the gold standard under Nixon (and Paul Volker, now adviser to President Obama) and to introduce flexibility in exchange rates at a worldwide scale (Herrera and Nakatani 2008). [(p. 133)](zotero://open-pdf/library/items/52G3NMK4?page=133&annotation=LNY7MHZE)
+
+Dismantling of financial institutions as the Bretton Woods agreements abandoning the gold standard, indeed liberalizing gold price. and introduce flexibility in exchanges rates in a world scale.
+
+The debt crisis of the countries of the South stems from the rise in the rates of interest of the Federal Reserve Bank (Fed) in 1979 [(p. 133)](zotero://open-pdf/library/items/52G3NMK4?page=133&annotation=GU8P83ML)
+
+The liberalization of interest rates of the Fed in 1979 caused the rise in the global south debt. %% end annotations %%
 
 
-%% Import Date: 2026-03-18T21:34:05.905-05:00 %%
+%% Import Date: 2026-03-20T14:23:55.906-05:00 %%
