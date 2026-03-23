@@ -21,7 +21,6 @@
   "obsidian-mind-map",
   "nldates-obsidian",
   "notes-refresher",
-  "obsidian-pandoc",
   "obsidian-pandoc-reference-list",
   "obsidian-plotly",
   "quick-latex",
@@ -39,8 +38,8 @@
   "obsidian-wordnet-plugin",
   "ytranscript",
   "obsidian-zotero-desktop-connector",
-  "docxer",
   "consistent-attachments-and-links",
   "vault-file-renamer",
-  "obsidian-link-converter"
+  "obsidian-link-converter",
+  "obsidian-pandoc"
 ]

@@ -1,12 +1,12 @@
 KV1C3S1 
 
-[KV1C3P188F1L1](../writing/kv1c3p188f1l1.md)	"The question why money does not itself directly represent labour-time, so that a piece of paper may represent, for instance, x hours' labour, comes down simply to the question why, on the basis of commodity production, the products of labour must take the form of commodities. This is obvious, because their taking the form of commodities implies their differentiation into commodities [on the one hand] and the money commodity [on the other]. "		"KV1C3S1 Money-commodity | Dinero-mercancía" 
+[KV1C3P188F1L1](../writing/quotes/kv1c3p188f1l1.md)	"The question why money does not itself directly represent labour-time, so that a piece of paper may represent, for instance, x hours' labour, comes down simply to the question why, on the basis of commodity production, the products of labour must take the form of commodities. This is obvious, because their taking the form of commodities implies their differentiation into commodities [on the one hand] and the money commodity [on the other]. "		"KV1C3S1 Money-commodity | Dinero-mercancía" 
 
-[KV1C3P189L18](../writing/kv1c3p189l18.md)	"As against this, money has no price. In order to form a part of this uniform relative form of value of the other commodities, it would have to be brought into relation with itself as its own equivalent. "		"1971 Commodity price | Money form | Ideal measure of value | Imaginary quantities of money-commodity | Precio de la mercancía KV1C3S1" 
+[KV1C3P189L18](../writing/quotes/kv1c3p189l18.md)	"As against this, money has no price. In order to form a part of this uniform relative form of value of the other commodities, it would have to be brought into relation with itself as its own equivalent. "		"1971 Commodity price | Money form | Ideal measure of value | Imaginary quantities of money-commodity | Precio de la mercancía KV1C3S1" 
 
-[KV1C3P190L6](../writing/kv1c3p190l6.md)	"In its function as measure of value,'money therefore serves only in an imaginary or ideal capacity. "		"Commodity price | Money form | Ideal measure of value | Imaginary quantities of money-commodity | Precio de la mercancía KV1C3S1 Money | Dinero" 
+[KV1C3P190L6](../writing/quotes/kv1c3p190l6.md)	"In its function as measure of value,'money therefore serves only in an imaginary or ideal capacity. "		"Commodity price | Money form | Ideal measure of value | Imaginary quantities of money-commodity | Precio de la mercancía KV1C3S1 Money | Dinero" 
 
-[KV1C3P190L9](../writing/kv1c3p190l9.md)	"the price depends entirely on the actual substance that is money. "		
+[KV1C3P190L9](../writing/quotes/kv1c3p190l9.md)	"the price depends entirely on the actual substance that is money. "		
 
 KV1C3S1 
 
