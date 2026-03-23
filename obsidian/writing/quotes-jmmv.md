@@ -20,6 +20,6 @@ KV1C3S1 Nombre de cita	Contenido de cita	Comentario	Códigos KV1C3P189L18	"El di
 
 [[KV1C3P231L1]]	"any other commodity. But at the same time every actual sum of money is limited in amount, and therefore has only a limited ^efficacy as a means of purchase. This contradiction between the -quantitative limitation and the qualitative lack of limitation of money keeps driving the hoarder back to his Sisyphean task: ■ accumulation. "		"Gold | Oro Gold hoarding | Atesoramiento de oro KV1C3S3a Money | Dinero Universal equivalent | u.v."
 
-[KV1C3P231L8](KV1C3P231L8)	"In order that gold may be held as money, and made to form a ; hoard, it must be prevented from circulating, or from dissolving iihto the means of purchasing enjoyment. "		"Gold | Oro Gold hoarding | Atesoramiento de oro KV1C3S3a Money | Dinero"
+[KV1C3P231L8](../writing/kv1c3p231l8.md)	"In order that gold may be held as money, and made to form a ; hoard, it must be prevented from circulating, or from dissolving into the means of purchasing enjoyment. "		"Gold | Oro Gold hoarding | Atesoramiento de oro KV1C3S3a Money | Dinero"
 
 ![[Quotes JMM.xlsx]]
