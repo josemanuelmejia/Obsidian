@@ -11,12 +11,14 @@
             "id": "11b57bb41a28bace",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "obsidian/writing/drafts/The subsumption of circulation over exchange and the forgotten determinants of value metamorphosis.pdf"
+                "file": "obsidian/notes/innescapitalismgold1981.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "The subsumption of circulation over exchange and the forgotten determinants of value metamorphosis"
+              "icon": "lucide-file",
+              "title": "innescapitalismgold1981"
             }
           }
         ],
@@ -88,7 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 277.5
   },
   "right": {
     "id": "724d7ed597eef718",
@@ -286,8 +288,9 @@
   },
   "active": "11b57bb41a28bace",
   "lastOpenFiles": [
+    "obsidian/notes/The subsumption of circulation over exchange and the forgotten determinants of value metamorphosis.pdf",
+    "obsidian/notes/innescapitalismgold1981.md",
     "obsidian/writing/quotes/kv1c3p192l5.md",
-    "obsidian/writing/drafts/The subsumption of circulation over exchange and the forgotten determinants of value metamorphosis.pdf",
     "obsidian/writing/quotes/kv1c3p216l2.md",
     "obsidian/writing/quotes/kv1c3p203l3.md",
     "obsidian/writing/quotes/kv1c3p230l23.md",
@@ -315,10 +318,8 @@
     "obsidian/writing/quotes/kv1c3p188f1l1.md",
     "obsidian/writing/quotes/kv1c3p190l16.md",
     "obsidian/writing/quotes/kv1c3p231l8.md",
-    "obsidian/intro.md",
     "obsidian/writing/quotes",
     "obsidian/writing/~$Quotes JMM.xlsx",
-    "obsidian/writing/drafts/gnbvii.md",
     "obsidian/writing/drafts/~$undrisse general report_Nov29_2024.doc",
     "obsidian/writing/drafts/the subsumption of circulation.pdf",
     "obsidian/writing/drafts/Grundrisse general report_Nov29_2024.doc",
