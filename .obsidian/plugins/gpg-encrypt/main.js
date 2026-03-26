@@ -181,6 +181,7 @@ var DEFAULT_SETTINGS = {
   pgpSignPublicKeyId: "0",
   pgpAlwaysTrust: false,
   pgpDefaultEncryptKeys: [],
+  pgpLibrary: "openpgpjs",
   pgpAditionalCommands: false,
   pgpAditionalCommandsBefore: "",
   pgpAditionalCommandsAfter: "",
@@ -202,12 +203,16 @@ var Settings = class {
 };
 function getDefaultExecPath() {
   switch (process.platform) {
+    // In case of Windows OS
     case "win32":
       return "C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe";
+    // In case of MacOS
     case "darwin":
       return "/usr/local/bin/gpg";
+    // In case of Linux
     case "linux":
       return "/usr/bin/gpg";
+    // In default value return empty
     default:
       return "";
   }
@@ -225,13 +230,22 @@ var GpgSettingsTab = class extends import_obsidian.PluginSettingTab {
   display() {
     const { containerEl } = this;
     containerEl.empty();
+    this.gpgLibrary = new import_obsidian.Setting(containerEl).setName("GPG Library").setDesc("Select which GPG library you want to use (Tip: If you want the app to work on mobile devices, use openpgpjs)").addDropdown((dropdown) => {
+      dropdown.addOption("openpgpjs", "openpgpjs");
+      dropdown.addOption("cli", "CLI commands");
+      dropdown.setValue(this.plugin.settings.pgpLibrary);
+      dropdown.onChange((value) => {
+        this.plugin.settings.pgpLibrary = value;
+        this.RefreshLibrary(value);
+      });
+    });
     this.gpgExecPath = new import_obsidian.Setting(containerEl).setName("GPG executable").setDesc("Path to GPG executable").addText((text) => text.setPlaceholder("gpg").setValue(this.plugin.settings.pgpExecPath).onChange(async (value) => {
       await this.checkGpgPath(value);
     }));
     this.gpgExecPathStatus = this.gpgExecPath.descEl.createDiv();
     this.gpgPublicKeysList = new import_obsidian.Setting(containerEl).setName("Public keys");
     this.checkGpgPath(this.plugin.settings.pgpExecPath);
-    new import_obsidian.Setting(containerEl).setName("Always trust any key").setDesc("Always trust any used GPG key").addToggle((toggle) => {
+    this.gpgAlwaysTrust = new import_obsidian.Setting(containerEl).setName("Always trust any key").setDesc("Always trust any used GPG key").addToggle((toggle) => {
       toggle.setValue(this.plugin.settings.pgpAlwaysTrust);
       toggle.onChange(async (value) => {
         this.plugin.settings.pgpAlwaysTrust = value;
@@ -258,10 +272,13 @@ var GpgSettingsTab = class extends import_obsidian.PluginSettingTab {
     this.gpgAditionalCommandsBefore = new import_obsidian.Setting(containerEl);
     this.gpgAditionalCommandsAfter = new import_obsidian.Setting(containerEl);
     this.gpgAditionalCommandsConsole = new import_obsidian.Setting(containerEl);
+    this.RefreshLibrary(this.plugin.settings.pgpLibrary);
     this.RefreshAditionalCommands(this.plugin.settings.pgpAditionalCommands);
   }
   // Function to check if GPG Path exits
   async checkGpgPath(value) {
+    if (this.plugin.settings.pgpLibrary == "openpgpjs")
+      return;
     this.plugin.settings.pgpExecPath = value;
     await new Settings(this.plugin).saveSettings();
     this.gpgPublicKeysList.settingEl.hide();
@@ -292,13 +309,16 @@ var GpgSettingsTab = class extends import_obsidian.PluginSettingTab {
       }
     } catch (ex) {
       switch (ex.code) {
+        // In case or ENOENT
         case "ENOENT":
           this.changeGpgPathStatus("File or directory not found" /* FILE_NOT_FOUND */);
           break;
+        // In case or EACCES or EPERM
         case "EACCES":
         case "EPERM":
           this.changeGpgPathStatus("Access to the executable file has been denied" /* NOT_PERMISSION */);
           break;
+        // In another error code
         default:
           this.changeGpgPathStatus("An unknown error occurred" /* UNKNOWN_ERROR */);
           break;
@@ -310,12 +330,15 @@ var GpgSettingsTab = class extends import_obsidian.PluginSettingTab {
   changeGpgPathStatus(status) {
     this.gpgExecPathStatus.setText(`Status: ${status}`);
     switch (status) {
+      // In case of Loading status
       case "Loading..." /* LOADING */:
         this.gpgExecPathStatus.className = "text-color-orange";
         break;
+      // In case of OK status
       case "Ok" /* OK */:
         this.gpgExecPathStatus.className = "text-color-green";
         break;
+      // In case of error status
       default:
         this.gpgExecPathStatus.className = "text-color-red";
         break;
@@ -405,6 +428,26 @@ var GpgSettingsTab = class extends import_obsidian.PluginSettingTab {
     });
     this.plugin.settings.pgpAditionalCommands = aditionalCommands;
     await new Settings(this.plugin).saveSettings();
+  }
+  // Function to refresh pgp library
+  RefreshLibrary(value) {
+    if (value == "openpgpjs") {
+      this.plugin.settings.pgpAditionalCommands = false;
+      this.gpgAditionalCommands.settingEl.hide();
+      this.gpgExecPath.settingEl.hide();
+      this.gpgPublicKeysList.settingEl.hide();
+      this.gpgSignKeyId.settingEl.hide();
+      this.gpgAlwaysTrust.settingEl.hide();
+    } else {
+      this.gpgAditionalCommands.settingEl.show();
+      this.gpgExecPath.settingEl.show();
+      this.gpgPublicKeysList.settingEl.show();
+      this.gpgAlwaysTrust.settingEl.show();
+      if (this.plugin.settings.pgpSignPublicKeyId != "0")
+        this.gpgSignKeyId.settingEl.show();
+      this.checkGpgPath(this.plugin.settings.pgpExecPath);
+    }
+    this.RefreshAditionalCommands(this.plugin.settings.pgpAditionalCommands);
   }
 };
 
@@ -532,7 +575,6 @@ var import_obsidian6 = require("obsidian");
 var import_view = require("@codemirror/view");
 var import_obsidian5 = require("obsidian");
 var import_state = require("@codemirror/state");
-var import_language = require("@codemirror/language");
 
 // src/DecryptPreviewModal.ts
 var import_obsidian4 = require("obsidian");
@@ -569,6 +611,11 @@ var DecryptModal = class extends import_obsidian3.Modal {
     }));
     if (this.app.workspace.activeEditor && this.app.workspace.activeEditor.editor) {
       buttons.addButton((btn) => btn.setButtonText("Restore plain text to document").setCta().onClick(async () => {
+        const activeView = this.app.workspace.getActiveViewOfType(import_obsidian3.MarkdownView);
+        if (activeView && activeView.getMode() === "preview") {
+          new import_obsidian3.Notice("Cannot restore plain text in reading mode. Please switch to Live Preview mode to restore the text.");
+          return;
+        }
         if (this.app.workspace.activeEditor && this.app.workspace.activeEditor.editor) {
           this.replaceEncryptedTextWithPlainText(this.from, this.to, this.app.workspace.activeEditor.editor);
         } else {
@@ -580,19 +627,32 @@ var DecryptModal = class extends import_obsidian3.Modal {
   }
   // Function to replace the encrypted with plaintext
   replaceEncryptedTextWithPlainText(from, to, editor) {
-    let lineSum = 0;
-    let lineCount = editor.lineCount();
-    for (let lineNum = 0; lineNum < lineCount; lineNum++) {
-      const lineTxt = editor.getLine(lineNum);
-      const lineLenght = lineTxt.length;
-      if (lineSum + lineLenght > from && lineSum + lineLenght > to) {
-        let editorPositionFrom = { ch: from - lineSum - 1, line: lineNum };
-        let editorPositionTo = { ch: to - lineSum + 1, line: lineNum };
+    const fullText = editor.getValue();
+    const encryptedText = fullText.substring(from, to);
+    const lines = editor.getValue().split("\n");
+    let charCount = 0;
+    for (let lineNum = 0; lineNum < lines.length; lineNum++) {
+      const line = lines[lineNum];
+      const lineStart = charCount;
+      const lineEnd = charCount + line.length;
+      if (lineStart <= from && lineEnd >= to) {
+        const chFrom = from - lineStart;
+        const chTo = to - lineStart;
+        const editorPositionFrom = { ch: chFrom, line: lineNum };
+        const editorPositionTo = { ch: chTo, line: lineNum };
         editor.replaceRange(this.plainText, editorPositionFrom, editorPositionTo);
+        new import_obsidian3.Notice("Plain text restored successfully!");
         return;
-      } else {
-        lineSum += lineLenght + 1;
       }
+      charCount += line.length + 1;
+    }
+    const pattern = new RegExp("`" + encryptedText.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "`", "g");
+    const fullTextWithPattern = editor.getValue();
+    if (pattern.test(fullTextWithPattern)) {
+      const newText = fullTextWithPattern.replace(pattern, this.plainText);
+      editor.setValue(newText);
+      new import_obsidian3.Notice("Plain text restored successfully!");
+      return;
     }
     new import_obsidian3.Notice("The encrypted text was not found in the current document");
   }
@@ -736,21 +796,21 @@ var livePreviewExtensionGpgEncrypt = (app, plugin) => import_view.ViewPlugin.fro
       }
       const builder = new import_state.RangeSetBuilder();
       for (const { from, to } of view.visibleRanges) {
-        (0, import_language.syntaxTree)(view.state).iterate({ from, to, enter(node) {
-          if (node.type.name.startsWith("inline-code")) {
-            const value = view.state.doc.sliceString(node.from, node.to);
-            const isEncrypted = value.indexOf(GPG_INLINE_ENCRYPT_PREFIX) === 0;
-            if (isEncrypted) {
-              builder.add(
-                node.from,
-                node.to,
-                import_view.Decoration.replace({
-                  widget: new EncryptedWidget(app, value, plugin, node.from, node.to)
-                })
-              );
-            }
-          }
-        } });
+        const text = view.state.doc.sliceString(from, to);
+        const codePattern = /`(gpg-base-64[^`]+)`/g;
+        let match;
+        while ((match = codePattern.exec(text)) !== null) {
+          const matchStart = from + match.index;
+          const matchEnd = matchStart + match[0].length;
+          const encryptedValue = match[1];
+          builder.add(
+            matchStart,
+            matchEnd,
+            import_view.Decoration.replace({
+              widget: new EncryptedWidget(app, encryptedValue, plugin, matchStart, matchEnd)
+            })
+          );
+        }
       }
       return builder.finish();
     }
@@ -760,6 +820,39 @@ var livePreviewExtensionGpgEncrypt = (app, plugin) => import_view.ViewPlugin.fro
   },
   { decorations: (instance) => instance.decorations }
 );
+
+// src/ReadingModeProcessor.ts
+var registerReadingModeProcessor = (app, plugin) => {
+  return (el, ctx) => {
+    const codeElements = el.querySelectorAll("code");
+    codeElements.forEach((codeEl) => {
+      const text = codeEl.textContent || "";
+      if (text.startsWith(GPG_INLINE_ENCRYPT_PREFIX)) {
+        const wrapper = document.createElement("span");
+        wrapper.addClass("gpg-decrypt-div");
+        const decryptButton = document.createElement("a");
+        decryptButton.addClass("gpg-decrypt-a");
+        decryptButton.addEventListener("click", async () => {
+          let matchStart = 0;
+          let matchEnd = 0;
+          const file = app.workspace.getActiveFile();
+          if (file) {
+            const content = await app.vault.read(file);
+            const pattern = new RegExp(`\`${text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\``);
+            const match = pattern.exec(content);
+            if (match && match.index !== void 0) {
+              matchStart = match.index;
+              matchEnd = matchStart + match[0].length;
+            }
+          }
+          new DecryptPreviewModal(app, text, plugin, matchStart, matchEnd).open();
+        });
+        wrapper.appendChild(decryptButton);
+        codeEl.replaceWith(wrapper);
+      }
+    });
+  };
+};
 
 // main.ts
 var GpgEncryptPlugin = class extends import_obsidian6.Plugin {
@@ -771,8 +864,11 @@ var GpgEncryptPlugin = class extends import_obsidian6.Plugin {
     this.addCommand(hotKeys.GpgEncryptInline);
     this.addCommand(hotKeys.GpgEncryptDocument);
     this.registerEditorExtension(livePreviewExtensionGpgEncrypt(this.app, this));
+    this.registerMarkdownPostProcessor(registerReadingModeProcessor(this.app, this));
   }
   // OnUnload Method in PGP Encrypt Plugin
   onunload() {
   }
 };
+
+/* nosourcemap */

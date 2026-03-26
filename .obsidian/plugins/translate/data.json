@@ -1380,6 +1380,10 @@
           "dev": true
         }
       ]
+    },
+    "fasttext": {
+      "default_usage": false,
+      "version": "1.0.0"
     }
   },
   "translation_service": "bergamot"

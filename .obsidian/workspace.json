@@ -74,7 +74,7 @@
             }
           },
           {
-            "id": "d5e317f7c0ff189a",
+            "id": "c43fc46a4ba2c6cb",
             "type": "leaf",
             "state": {
               "type": "VIEW_TYPE_LONGFORM_EXPLORER",
@@ -180,26 +180,6 @@
             }
           },
           {
-            "id": "826c9aab0245c60a",
-            "type": "leaf",
-            "state": {
-              "type": "transcript-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "transcript-view"
-            }
-          },
-          {
-            "id": "e2fc57904b770e6b",
-            "type": "leaf",
-            "state": {
-              "type": "transcript-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "transcript-view"
-            }
-          },
-          {
             "id": "151df5cc40481a2c",
             "type": "leaf",
             "state": {
@@ -247,7 +227,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -281,7 +261,8 @@
       "vantage-obsidian:Vantage - Advanced search builder": false,
       "whisper:Open recording controls": false,
       "obsidian-wordnet-plugin:WordNet Dictionary": false,
-      "vault-file-renamer:Vault File Renamer": false
+      "vault-file-renamer:Vault File Renamer": false,
+      "obsidian-kanban:Create new board": false
     }
   },
   "active": "11b57bb41a28bace",

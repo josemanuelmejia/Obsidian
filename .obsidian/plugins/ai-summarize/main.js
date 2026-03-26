@@ -35,64 +35,6733 @@ function Notify(message) {
   new import_obsidian.Notice(`AI Summarize: ${message}`);
 }
 
-// src/plugin/gpt.ts
-var url = "https://api.openai.com/v1/chat/completions";
-async function* prompt(prompt2, apiKey, maxTokens, model = "gpt-3.5-turbo") {
-  var _a;
-  const requestOptions = {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${apiKey}`
-    },
-    body: JSON.stringify({
-      messages: [{ role: "system", content: prompt2 }],
-      model,
-      temperature: 0.7,
-      max_tokens: maxTokens,
-      top_p: 1,
-      frequency_penalty: 0,
-      presence_penalty: 0,
-      stream: true
-    })
-  };
-  const response = await fetch(url, requestOptions);
-  const reader = (_a = response.body) == null ? void 0 : _a.pipeThrough(new TextDecoderStream()).getReader();
-  let content = "";
-  let gotDoneMessage = false;
-  while (!gotDoneMessage) {
-    const res = await (reader == null ? void 0 : reader.read());
-    if (res == null ? void 0 : res.done)
-      break;
-    if (!(res == null ? void 0 : res.value))
-      continue;
-    const text = res == null ? void 0 : res.value;
-    const lines = text.split("\n").filter((line) => line.trim() !== "");
-    for (const line of lines) {
-      const lineMessage = line.replace(/^data: /, "");
-      if (lineMessage === "[DONE]") {
-        gotDoneMessage = true;
-        break;
+// node_modules/openai/internal/tslib.mjs
+function __classPrivateFieldSet(receiver, state, value, kind, f) {
+  if (kind === "m")
+    throw new TypeError("Private method is not writable");
+  if (kind === "a" && !f)
+    throw new TypeError("Private accessor was defined without a setter");
+  if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver))
+    throw new TypeError("Cannot write private member to an object whose class did not declare it");
+  return kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value), value;
+}
+function __classPrivateFieldGet(receiver, state, kind, f) {
+  if (kind === "a" && !f)
+    throw new TypeError("Private accessor was defined without a getter");
+  if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver))
+    throw new TypeError("Cannot read private member from an object whose class did not declare it");
+  return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
+}
+
+// node_modules/openai/internal/utils/uuid.mjs
+var uuid4 = function() {
+  const { crypto: crypto2 } = globalThis;
+  if (crypto2 == null ? void 0 : crypto2.randomUUID) {
+    uuid4 = crypto2.randomUUID.bind(crypto2);
+    return crypto2.randomUUID();
+  }
+  const u8 = new Uint8Array(1);
+  const randomByte = crypto2 ? () => crypto2.getRandomValues(u8)[0] : () => Math.random() * 255 & 255;
+  return "10000000-1000-4000-8000-100000000000".replace(/[018]/g, (c) => (+c ^ randomByte() & 15 >> +c / 4).toString(16));
+};
+
+// node_modules/openai/internal/errors.mjs
+function isAbortError(err) {
+  return typeof err === "object" && err !== null && // Spec-compliant fetch implementations
+  ("name" in err && err.name === "AbortError" || // Expo fetch
+  "message" in err && String(err.message).includes("FetchRequestCanceledException"));
+}
+var castToError = (err) => {
+  if (err instanceof Error)
+    return err;
+  if (typeof err === "object" && err !== null) {
+    try {
+      if (Object.prototype.toString.call(err) === "[object Error]") {
+        const error = new Error(err.message, err.cause ? { cause: err.cause } : {});
+        if (err.stack)
+          error.stack = err.stack;
+        if (err.cause && !error.cause)
+          error.cause = err.cause;
+        if (err.name)
+          error.name = err.name;
+        return error;
       }
+    } catch (e) {
+    }
+    try {
+      return new Error(JSON.stringify(err));
+    } catch (e) {
+    }
+  }
+  return new Error(err);
+};
+
+// node_modules/openai/core/error.mjs
+var OpenAIError = class extends Error {
+};
+var APIError = class extends OpenAIError {
+  constructor(status, error, message, headers) {
+    super(`${APIError.makeMessage(status, error, message)}`);
+    this.status = status;
+    this.headers = headers;
+    this.requestID = headers == null ? void 0 : headers.get("x-request-id");
+    this.error = error;
+    const data = error;
+    this.code = data == null ? void 0 : data["code"];
+    this.param = data == null ? void 0 : data["param"];
+    this.type = data == null ? void 0 : data["type"];
+  }
+  static makeMessage(status, error, message) {
+    const msg = (error == null ? void 0 : error.message) ? typeof error.message === "string" ? error.message : JSON.stringify(error.message) : error ? JSON.stringify(error) : message;
+    if (status && msg) {
+      return `${status} ${msg}`;
+    }
+    if (status) {
+      return `${status} status code (no body)`;
+    }
+    if (msg) {
+      return msg;
+    }
+    return "(no status code or body)";
+  }
+  static generate(status, errorResponse, message, headers) {
+    if (!status || !headers) {
+      return new APIConnectionError({ message, cause: castToError(errorResponse) });
+    }
+    const error = errorResponse == null ? void 0 : errorResponse["error"];
+    if (status === 400) {
+      return new BadRequestError(status, error, message, headers);
+    }
+    if (status === 401) {
+      return new AuthenticationError(status, error, message, headers);
+    }
+    if (status === 403) {
+      return new PermissionDeniedError(status, error, message, headers);
+    }
+    if (status === 404) {
+      return new NotFoundError(status, error, message, headers);
+    }
+    if (status === 409) {
+      return new ConflictError(status, error, message, headers);
+    }
+    if (status === 422) {
+      return new UnprocessableEntityError(status, error, message, headers);
+    }
+    if (status === 429) {
+      return new RateLimitError(status, error, message, headers);
+    }
+    if (status >= 500) {
+      return new InternalServerError(status, error, message, headers);
+    }
+    return new APIError(status, error, message, headers);
+  }
+};
+var APIUserAbortError = class extends APIError {
+  constructor({ message } = {}) {
+    super(void 0, void 0, message || "Request was aborted.", void 0);
+  }
+};
+var APIConnectionError = class extends APIError {
+  constructor({ message, cause }) {
+    super(void 0, void 0, message || "Connection error.", void 0);
+    if (cause)
+      this.cause = cause;
+  }
+};
+var APIConnectionTimeoutError = class extends APIConnectionError {
+  constructor({ message } = {}) {
+    super({ message: message != null ? message : "Request timed out." });
+  }
+};
+var BadRequestError = class extends APIError {
+};
+var AuthenticationError = class extends APIError {
+};
+var PermissionDeniedError = class extends APIError {
+};
+var NotFoundError = class extends APIError {
+};
+var ConflictError = class extends APIError {
+};
+var UnprocessableEntityError = class extends APIError {
+};
+var RateLimitError = class extends APIError {
+};
+var InternalServerError = class extends APIError {
+};
+var LengthFinishReasonError = class extends OpenAIError {
+  constructor() {
+    super(`Could not parse response content as the length limit was reached`);
+  }
+};
+var ContentFilterFinishReasonError = class extends OpenAIError {
+  constructor() {
+    super(`Could not parse response content as the request was rejected by the content filter`);
+  }
+};
+var InvalidWebhookSignatureError = class extends Error {
+  constructor(message) {
+    super(message);
+  }
+};
+
+// node_modules/openai/internal/utils/values.mjs
+var startsWithSchemeRegexp = /^[a-z][a-z0-9+.-]*:/i;
+var isAbsoluteURL = (url) => {
+  return startsWithSchemeRegexp.test(url);
+};
+var isArray = (val) => (isArray = Array.isArray, isArray(val));
+var isReadonlyArray = isArray;
+function maybeObj(x) {
+  if (typeof x !== "object") {
+    return {};
+  }
+  return x != null ? x : {};
+}
+function isEmptyObj(obj) {
+  if (!obj)
+    return true;
+  for (const _k in obj)
+    return false;
+  return true;
+}
+function hasOwn(obj, key) {
+  return Object.prototype.hasOwnProperty.call(obj, key);
+}
+function isObj(obj) {
+  return obj != null && typeof obj === "object" && !Array.isArray(obj);
+}
+var validatePositiveInteger = (name, n) => {
+  if (typeof n !== "number" || !Number.isInteger(n)) {
+    throw new OpenAIError(`${name} must be an integer`);
+  }
+  if (n < 0) {
+    throw new OpenAIError(`${name} must be a positive integer`);
+  }
+  return n;
+};
+var safeJSON = (text) => {
+  try {
+    return JSON.parse(text);
+  } catch (err) {
+    return void 0;
+  }
+};
+
+// node_modules/openai/internal/utils/sleep.mjs
+var sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+// node_modules/openai/version.mjs
+var VERSION = "6.1.0";
+
+// node_modules/openai/internal/detect-platform.mjs
+var isRunningInBrowser = () => {
+  return (
+    // @ts-ignore
+    typeof window !== "undefined" && // @ts-ignore
+    typeof window.document !== "undefined" && // @ts-ignore
+    typeof navigator !== "undefined"
+  );
+};
+function getDetectedPlatform() {
+  if (typeof Deno !== "undefined" && Deno.build != null) {
+    return "deno";
+  }
+  if (typeof EdgeRuntime !== "undefined") {
+    return "edge";
+  }
+  if (Object.prototype.toString.call(typeof globalThis.process !== "undefined" ? globalThis.process : 0) === "[object process]") {
+    return "node";
+  }
+  return "unknown";
+}
+var getPlatformProperties = () => {
+  var _a3, _b, _c, _d, _e;
+  const detectedPlatform = getDetectedPlatform();
+  if (detectedPlatform === "deno") {
+    return {
+      "X-Stainless-Lang": "js",
+      "X-Stainless-Package-Version": VERSION,
+      "X-Stainless-OS": normalizePlatform(Deno.build.os),
+      "X-Stainless-Arch": normalizeArch(Deno.build.arch),
+      "X-Stainless-Runtime": "deno",
+      "X-Stainless-Runtime-Version": typeof Deno.version === "string" ? Deno.version : (_b = (_a3 = Deno.version) == null ? void 0 : _a3.deno) != null ? _b : "unknown"
+    };
+  }
+  if (typeof EdgeRuntime !== "undefined") {
+    return {
+      "X-Stainless-Lang": "js",
+      "X-Stainless-Package-Version": VERSION,
+      "X-Stainless-OS": "Unknown",
+      "X-Stainless-Arch": `other:${EdgeRuntime}`,
+      "X-Stainless-Runtime": "edge",
+      "X-Stainless-Runtime-Version": globalThis.process.version
+    };
+  }
+  if (detectedPlatform === "node") {
+    return {
+      "X-Stainless-Lang": "js",
+      "X-Stainless-Package-Version": VERSION,
+      "X-Stainless-OS": normalizePlatform((_c = globalThis.process.platform) != null ? _c : "unknown"),
+      "X-Stainless-Arch": normalizeArch((_d = globalThis.process.arch) != null ? _d : "unknown"),
+      "X-Stainless-Runtime": "node",
+      "X-Stainless-Runtime-Version": (_e = globalThis.process.version) != null ? _e : "unknown"
+    };
+  }
+  const browserInfo = getBrowserInfo();
+  if (browserInfo) {
+    return {
+      "X-Stainless-Lang": "js",
+      "X-Stainless-Package-Version": VERSION,
+      "X-Stainless-OS": "Unknown",
+      "X-Stainless-Arch": "unknown",
+      "X-Stainless-Runtime": `browser:${browserInfo.browser}`,
+      "X-Stainless-Runtime-Version": browserInfo.version
+    };
+  }
+  return {
+    "X-Stainless-Lang": "js",
+    "X-Stainless-Package-Version": VERSION,
+    "X-Stainless-OS": "Unknown",
+    "X-Stainless-Arch": "unknown",
+    "X-Stainless-Runtime": "unknown",
+    "X-Stainless-Runtime-Version": "unknown"
+  };
+};
+function getBrowserInfo() {
+  if (typeof navigator === "undefined" || !navigator) {
+    return null;
+  }
+  const browserPatterns = [
+    { key: "edge", pattern: /Edge(?:\W+(\d+)\.(\d+)(?:\.(\d+))?)?/ },
+    { key: "ie", pattern: /MSIE(?:\W+(\d+)\.(\d+)(?:\.(\d+))?)?/ },
+    { key: "ie", pattern: /Trident(?:.*rv\:(\d+)\.(\d+)(?:\.(\d+))?)?/ },
+    { key: "chrome", pattern: /Chrome(?:\W+(\d+)\.(\d+)(?:\.(\d+))?)?/ },
+    { key: "firefox", pattern: /Firefox(?:\W+(\d+)\.(\d+)(?:\.(\d+))?)?/ },
+    { key: "safari", pattern: /(?:Version\W+(\d+)\.(\d+)(?:\.(\d+))?)?(?:\W+Mobile\S*)?\W+Safari/ }
+  ];
+  for (const { key, pattern } of browserPatterns) {
+    const match = pattern.exec(navigator.userAgent);
+    if (match) {
+      const major = match[1] || 0;
+      const minor = match[2] || 0;
+      const patch = match[3] || 0;
+      return { browser: key, version: `${major}.${minor}.${patch}` };
+    }
+  }
+  return null;
+}
+var normalizeArch = (arch) => {
+  if (arch === "x32")
+    return "x32";
+  if (arch === "x86_64" || arch === "x64")
+    return "x64";
+  if (arch === "arm")
+    return "arm";
+  if (arch === "aarch64" || arch === "arm64")
+    return "arm64";
+  if (arch)
+    return `other:${arch}`;
+  return "unknown";
+};
+var normalizePlatform = (platform) => {
+  platform = platform.toLowerCase();
+  if (platform.includes("ios"))
+    return "iOS";
+  if (platform === "android")
+    return "Android";
+  if (platform === "darwin")
+    return "MacOS";
+  if (platform === "win32")
+    return "Windows";
+  if (platform === "freebsd")
+    return "FreeBSD";
+  if (platform === "openbsd")
+    return "OpenBSD";
+  if (platform === "linux")
+    return "Linux";
+  if (platform)
+    return `Other:${platform}`;
+  return "Unknown";
+};
+var _platformHeaders;
+var getPlatformHeaders = () => {
+  return _platformHeaders != null ? _platformHeaders : _platformHeaders = getPlatformProperties();
+};
+
+// node_modules/openai/internal/shims.mjs
+function getDefaultFetch() {
+  if (typeof fetch !== "undefined") {
+    return fetch;
+  }
+  throw new Error("`fetch` is not defined as a global; Either pass `fetch` to the client, `new OpenAI({ fetch })` or polyfill the global, `globalThis.fetch = fetch`");
+}
+function makeReadableStream(...args) {
+  const ReadableStream = globalThis.ReadableStream;
+  if (typeof ReadableStream === "undefined") {
+    throw new Error("`ReadableStream` is not defined as a global; You will need to polyfill it, `globalThis.ReadableStream = ReadableStream`");
+  }
+  return new ReadableStream(...args);
+}
+function ReadableStreamFrom(iterable) {
+  let iter = Symbol.asyncIterator in iterable ? iterable[Symbol.asyncIterator]() : iterable[Symbol.iterator]();
+  return makeReadableStream({
+    start() {
+    },
+    async pull(controller) {
+      const { done, value } = await iter.next();
+      if (done) {
+        controller.close();
+      } else {
+        controller.enqueue(value);
+      }
+    },
+    async cancel() {
+      var _a3;
+      await ((_a3 = iter.return) == null ? void 0 : _a3.call(iter));
+    }
+  });
+}
+function ReadableStreamToAsyncIterable(stream) {
+  if (stream[Symbol.asyncIterator])
+    return stream;
+  const reader = stream.getReader();
+  return {
+    async next() {
       try {
-        const parsed = JSON.parse(lineMessage);
-        const token = parsed.choices[0].delta.content;
-        if (token) {
-          content += token;
-          yield token;
+        const result = await reader.read();
+        if (result == null ? void 0 : result.done)
+          reader.releaseLock();
+        return result;
+      } catch (e) {
+        reader.releaseLock();
+        throw e;
+      }
+    },
+    async return() {
+      const cancelPromise = reader.cancel();
+      reader.releaseLock();
+      await cancelPromise;
+      return { done: true, value: void 0 };
+    },
+    [Symbol.asyncIterator]() {
+      return this;
+    }
+  };
+}
+async function CancelReadableStream(stream) {
+  var _a3, _b;
+  if (stream === null || typeof stream !== "object")
+    return;
+  if (stream[Symbol.asyncIterator]) {
+    await ((_b = (_a3 = stream[Symbol.asyncIterator]()).return) == null ? void 0 : _b.call(_a3));
+    return;
+  }
+  const reader = stream.getReader();
+  const cancelPromise = reader.cancel();
+  reader.releaseLock();
+  await cancelPromise;
+}
+
+// node_modules/openai/internal/request-options.mjs
+var FallbackEncoder = ({ headers, body }) => {
+  return {
+    bodyHeaders: {
+      "content-type": "application/json"
+    },
+    body: JSON.stringify(body)
+  };
+};
+
+// node_modules/openai/internal/qs/formats.mjs
+var default_format = "RFC3986";
+var default_formatter = (v) => String(v);
+var formatters = {
+  RFC1738: (v) => String(v).replace(/%20/g, "+"),
+  RFC3986: default_formatter
+};
+var RFC1738 = "RFC1738";
+
+// node_modules/openai/internal/qs/utils.mjs
+var has = (obj, key) => {
+  var _a3;
+  return has = (_a3 = Object.hasOwn) != null ? _a3 : Function.prototype.call.bind(Object.prototype.hasOwnProperty), has(obj, key);
+};
+var hex_table = /* @__PURE__ */ (() => {
+  const array = [];
+  for (let i = 0; i < 256; ++i) {
+    array.push("%" + ((i < 16 ? "0" : "") + i.toString(16)).toUpperCase());
+  }
+  return array;
+})();
+var limit = 1024;
+var encode = (str2, _defaultEncoder, charset, _kind, format) => {
+  if (str2.length === 0) {
+    return str2;
+  }
+  let string = str2;
+  if (typeof str2 === "symbol") {
+    string = Symbol.prototype.toString.call(str2);
+  } else if (typeof str2 !== "string") {
+    string = String(str2);
+  }
+  if (charset === "iso-8859-1") {
+    return escape(string).replace(/%u[0-9a-f]{4}/gi, function($0) {
+      return "%26%23" + parseInt($0.slice(2), 16) + "%3B";
+    });
+  }
+  let out = "";
+  for (let j = 0; j < string.length; j += limit) {
+    const segment = string.length >= limit ? string.slice(j, j + limit) : string;
+    const arr = [];
+    for (let i = 0; i < segment.length; ++i) {
+      let c = segment.charCodeAt(i);
+      if (c === 45 || // -
+      c === 46 || // .
+      c === 95 || // _
+      c === 126 || // ~
+      c >= 48 && c <= 57 || // 0-9
+      c >= 65 && c <= 90 || // a-z
+      c >= 97 && c <= 122 || // A-Z
+      format === RFC1738 && (c === 40 || c === 41)) {
+        arr[arr.length] = segment.charAt(i);
+        continue;
+      }
+      if (c < 128) {
+        arr[arr.length] = hex_table[c];
+        continue;
+      }
+      if (c < 2048) {
+        arr[arr.length] = hex_table[192 | c >> 6] + hex_table[128 | c & 63];
+        continue;
+      }
+      if (c < 55296 || c >= 57344) {
+        arr[arr.length] = hex_table[224 | c >> 12] + hex_table[128 | c >> 6 & 63] + hex_table[128 | c & 63];
+        continue;
+      }
+      i += 1;
+      c = 65536 + ((c & 1023) << 10 | segment.charCodeAt(i) & 1023);
+      arr[arr.length] = hex_table[240 | c >> 18] + hex_table[128 | c >> 12 & 63] + hex_table[128 | c >> 6 & 63] + hex_table[128 | c & 63];
+    }
+    out += arr.join("");
+  }
+  return out;
+};
+function is_buffer(obj) {
+  if (!obj || typeof obj !== "object") {
+    return false;
+  }
+  return !!(obj.constructor && obj.constructor.isBuffer && obj.constructor.isBuffer(obj));
+}
+function maybe_map(val, fn) {
+  if (isArray(val)) {
+    const mapped = [];
+    for (let i = 0; i < val.length; i += 1) {
+      mapped.push(fn(val[i]));
+    }
+    return mapped;
+  }
+  return fn(val);
+}
+
+// node_modules/openai/internal/qs/stringify.mjs
+var array_prefix_generators = {
+  brackets(prefix) {
+    return String(prefix) + "[]";
+  },
+  comma: "comma",
+  indices(prefix, key) {
+    return String(prefix) + "[" + key + "]";
+  },
+  repeat(prefix) {
+    return String(prefix);
+  }
+};
+var push_to_array = function(arr, value_or_array) {
+  Array.prototype.push.apply(arr, isArray(value_or_array) ? value_or_array : [value_or_array]);
+};
+var toISOString;
+var defaults = {
+  addQueryPrefix: false,
+  allowDots: false,
+  allowEmptyArrays: false,
+  arrayFormat: "indices",
+  charset: "utf-8",
+  charsetSentinel: false,
+  delimiter: "&",
+  encode: true,
+  encodeDotInKeys: false,
+  encoder: encode,
+  encodeValuesOnly: false,
+  format: default_format,
+  formatter: default_formatter,
+  /** @deprecated */
+  indices: false,
+  serializeDate(date) {
+    return (toISOString != null ? toISOString : toISOString = Function.prototype.call.bind(Date.prototype.toISOString))(date);
+  },
+  skipNulls: false,
+  strictNullHandling: false
+};
+function is_non_nullish_primitive(v) {
+  return typeof v === "string" || typeof v === "number" || typeof v === "boolean" || typeof v === "symbol" || typeof v === "bigint";
+}
+var sentinel = {};
+function inner_stringify(object, prefix, generateArrayPrefix, commaRoundTrip, allowEmptyArrays, strictNullHandling, skipNulls, encodeDotInKeys, encoder, filter, sort, allowDots, serializeDate, format, formatter, encodeValuesOnly, charset, sideChannel) {
+  let obj = object;
+  let tmp_sc = sideChannel;
+  let step = 0;
+  let find_flag = false;
+  while ((tmp_sc = tmp_sc.get(sentinel)) !== void 0 && !find_flag) {
+    const pos = tmp_sc.get(object);
+    step += 1;
+    if (typeof pos !== "undefined") {
+      if (pos === step) {
+        throw new RangeError("Cyclic object value");
+      } else {
+        find_flag = true;
+      }
+    }
+    if (typeof tmp_sc.get(sentinel) === "undefined") {
+      step = 0;
+    }
+  }
+  if (typeof filter === "function") {
+    obj = filter(prefix, obj);
+  } else if (obj instanceof Date) {
+    obj = serializeDate == null ? void 0 : serializeDate(obj);
+  } else if (generateArrayPrefix === "comma" && isArray(obj)) {
+    obj = maybe_map(obj, function(value) {
+      if (value instanceof Date) {
+        return serializeDate == null ? void 0 : serializeDate(value);
+      }
+      return value;
+    });
+  }
+  if (obj === null) {
+    if (strictNullHandling) {
+      return encoder && !encodeValuesOnly ? (
+        // @ts-expect-error
+        encoder(prefix, defaults.encoder, charset, "key", format)
+      ) : prefix;
+    }
+    obj = "";
+  }
+  if (is_non_nullish_primitive(obj) || is_buffer(obj)) {
+    if (encoder) {
+      const key_value = encodeValuesOnly ? prefix : encoder(prefix, defaults.encoder, charset, "key", format);
+      return [
+        (formatter == null ? void 0 : formatter(key_value)) + "=" + // @ts-expect-error
+        (formatter == null ? void 0 : formatter(encoder(obj, defaults.encoder, charset, "value", format)))
+      ];
+    }
+    return [(formatter == null ? void 0 : formatter(prefix)) + "=" + (formatter == null ? void 0 : formatter(String(obj)))];
+  }
+  const values = [];
+  if (typeof obj === "undefined") {
+    return values;
+  }
+  let obj_keys;
+  if (generateArrayPrefix === "comma" && isArray(obj)) {
+    if (encodeValuesOnly && encoder) {
+      obj = maybe_map(obj, encoder);
+    }
+    obj_keys = [{ value: obj.length > 0 ? obj.join(",") || null : void 0 }];
+  } else if (isArray(filter)) {
+    obj_keys = filter;
+  } else {
+    const keys = Object.keys(obj);
+    obj_keys = sort ? keys.sort(sort) : keys;
+  }
+  const encoded_prefix = encodeDotInKeys ? String(prefix).replace(/\./g, "%2E") : String(prefix);
+  const adjusted_prefix = commaRoundTrip && isArray(obj) && obj.length === 1 ? encoded_prefix + "[]" : encoded_prefix;
+  if (allowEmptyArrays && isArray(obj) && obj.length === 0) {
+    return adjusted_prefix + "[]";
+  }
+  for (let j = 0; j < obj_keys.length; ++j) {
+    const key = obj_keys[j];
+    const value = (
+      // @ts-ignore
+      typeof key === "object" && typeof key.value !== "undefined" ? key.value : obj[key]
+    );
+    if (skipNulls && value === null) {
+      continue;
+    }
+    const encoded_key = allowDots && encodeDotInKeys ? key.replace(/\./g, "%2E") : key;
+    const key_prefix = isArray(obj) ? typeof generateArrayPrefix === "function" ? generateArrayPrefix(adjusted_prefix, encoded_key) : adjusted_prefix : adjusted_prefix + (allowDots ? "." + encoded_key : "[" + encoded_key + "]");
+    sideChannel.set(object, step);
+    const valueSideChannel = /* @__PURE__ */ new WeakMap();
+    valueSideChannel.set(sentinel, sideChannel);
+    push_to_array(values, inner_stringify(
+      value,
+      key_prefix,
+      generateArrayPrefix,
+      commaRoundTrip,
+      allowEmptyArrays,
+      strictNullHandling,
+      skipNulls,
+      encodeDotInKeys,
+      // @ts-ignore
+      generateArrayPrefix === "comma" && encodeValuesOnly && isArray(obj) ? null : encoder,
+      filter,
+      sort,
+      allowDots,
+      serializeDate,
+      format,
+      formatter,
+      encodeValuesOnly,
+      charset,
+      valueSideChannel
+    ));
+  }
+  return values;
+}
+function normalize_stringify_options(opts = defaults) {
+  if (typeof opts.allowEmptyArrays !== "undefined" && typeof opts.allowEmptyArrays !== "boolean") {
+    throw new TypeError("`allowEmptyArrays` option can only be `true` or `false`, when provided");
+  }
+  if (typeof opts.encodeDotInKeys !== "undefined" && typeof opts.encodeDotInKeys !== "boolean") {
+    throw new TypeError("`encodeDotInKeys` option can only be `true` or `false`, when provided");
+  }
+  if (opts.encoder !== null && typeof opts.encoder !== "undefined" && typeof opts.encoder !== "function") {
+    throw new TypeError("Encoder has to be a function.");
+  }
+  const charset = opts.charset || defaults.charset;
+  if (typeof opts.charset !== "undefined" && opts.charset !== "utf-8" && opts.charset !== "iso-8859-1") {
+    throw new TypeError("The charset option must be either utf-8, iso-8859-1, or undefined");
+  }
+  let format = default_format;
+  if (typeof opts.format !== "undefined") {
+    if (!has(formatters, opts.format)) {
+      throw new TypeError("Unknown format option provided.");
+    }
+    format = opts.format;
+  }
+  const formatter = formatters[format];
+  let filter = defaults.filter;
+  if (typeof opts.filter === "function" || isArray(opts.filter)) {
+    filter = opts.filter;
+  }
+  let arrayFormat;
+  if (opts.arrayFormat && opts.arrayFormat in array_prefix_generators) {
+    arrayFormat = opts.arrayFormat;
+  } else if ("indices" in opts) {
+    arrayFormat = opts.indices ? "indices" : "repeat";
+  } else {
+    arrayFormat = defaults.arrayFormat;
+  }
+  if ("commaRoundTrip" in opts && typeof opts.commaRoundTrip !== "boolean") {
+    throw new TypeError("`commaRoundTrip` must be a boolean, or absent");
+  }
+  const allowDots = typeof opts.allowDots === "undefined" ? !!opts.encodeDotInKeys === true ? true : defaults.allowDots : !!opts.allowDots;
+  return {
+    addQueryPrefix: typeof opts.addQueryPrefix === "boolean" ? opts.addQueryPrefix : defaults.addQueryPrefix,
+    // @ts-ignore
+    allowDots,
+    allowEmptyArrays: typeof opts.allowEmptyArrays === "boolean" ? !!opts.allowEmptyArrays : defaults.allowEmptyArrays,
+    arrayFormat,
+    charset,
+    charsetSentinel: typeof opts.charsetSentinel === "boolean" ? opts.charsetSentinel : defaults.charsetSentinel,
+    commaRoundTrip: !!opts.commaRoundTrip,
+    delimiter: typeof opts.delimiter === "undefined" ? defaults.delimiter : opts.delimiter,
+    encode: typeof opts.encode === "boolean" ? opts.encode : defaults.encode,
+    encodeDotInKeys: typeof opts.encodeDotInKeys === "boolean" ? opts.encodeDotInKeys : defaults.encodeDotInKeys,
+    encoder: typeof opts.encoder === "function" ? opts.encoder : defaults.encoder,
+    encodeValuesOnly: typeof opts.encodeValuesOnly === "boolean" ? opts.encodeValuesOnly : defaults.encodeValuesOnly,
+    filter,
+    format,
+    formatter,
+    serializeDate: typeof opts.serializeDate === "function" ? opts.serializeDate : defaults.serializeDate,
+    skipNulls: typeof opts.skipNulls === "boolean" ? opts.skipNulls : defaults.skipNulls,
+    // @ts-ignore
+    sort: typeof opts.sort === "function" ? opts.sort : null,
+    strictNullHandling: typeof opts.strictNullHandling === "boolean" ? opts.strictNullHandling : defaults.strictNullHandling
+  };
+}
+function stringify(object, opts = {}) {
+  let obj = object;
+  const options = normalize_stringify_options(opts);
+  let obj_keys;
+  let filter;
+  if (typeof options.filter === "function") {
+    filter = options.filter;
+    obj = filter("", obj);
+  } else if (isArray(options.filter)) {
+    filter = options.filter;
+    obj_keys = filter;
+  }
+  const keys = [];
+  if (typeof obj !== "object" || obj === null) {
+    return "";
+  }
+  const generateArrayPrefix = array_prefix_generators[options.arrayFormat];
+  const commaRoundTrip = generateArrayPrefix === "comma" && options.commaRoundTrip;
+  if (!obj_keys) {
+    obj_keys = Object.keys(obj);
+  }
+  if (options.sort) {
+    obj_keys.sort(options.sort);
+  }
+  const sideChannel = /* @__PURE__ */ new WeakMap();
+  for (let i = 0; i < obj_keys.length; ++i) {
+    const key = obj_keys[i];
+    if (options.skipNulls && obj[key] === null) {
+      continue;
+    }
+    push_to_array(keys, inner_stringify(
+      obj[key],
+      key,
+      // @ts-expect-error
+      generateArrayPrefix,
+      commaRoundTrip,
+      options.allowEmptyArrays,
+      options.strictNullHandling,
+      options.skipNulls,
+      options.encodeDotInKeys,
+      options.encode ? options.encoder : null,
+      options.filter,
+      options.sort,
+      options.allowDots,
+      options.serializeDate,
+      options.format,
+      options.formatter,
+      options.encodeValuesOnly,
+      options.charset,
+      sideChannel
+    ));
+  }
+  const joined = keys.join(options.delimiter);
+  let prefix = options.addQueryPrefix === true ? "?" : "";
+  if (options.charsetSentinel) {
+    if (options.charset === "iso-8859-1") {
+      prefix += "utf8=%26%2310003%3B&";
+    } else {
+      prefix += "utf8=%E2%9C%93&";
+    }
+  }
+  return joined.length > 0 ? prefix + joined : "";
+}
+
+// node_modules/openai/internal/utils/bytes.mjs
+function concatBytes(buffers) {
+  let length = 0;
+  for (const buffer of buffers) {
+    length += buffer.length;
+  }
+  const output = new Uint8Array(length);
+  let index = 0;
+  for (const buffer of buffers) {
+    output.set(buffer, index);
+    index += buffer.length;
+  }
+  return output;
+}
+var encodeUTF8_;
+function encodeUTF8(str2) {
+  let encoder;
+  return (encodeUTF8_ != null ? encodeUTF8_ : (encoder = new globalThis.TextEncoder(), encodeUTF8_ = encoder.encode.bind(encoder)))(str2);
+}
+var decodeUTF8_;
+function decodeUTF8(bytes) {
+  let decoder;
+  return (decodeUTF8_ != null ? decodeUTF8_ : (decoder = new globalThis.TextDecoder(), decodeUTF8_ = decoder.decode.bind(decoder)))(bytes);
+}
+
+// node_modules/openai/internal/decoders/line.mjs
+var _LineDecoder_buffer;
+var _LineDecoder_carriageReturnIndex;
+var LineDecoder = class {
+  constructor() {
+    _LineDecoder_buffer.set(this, void 0);
+    _LineDecoder_carriageReturnIndex.set(this, void 0);
+    __classPrivateFieldSet(this, _LineDecoder_buffer, new Uint8Array(), "f");
+    __classPrivateFieldSet(this, _LineDecoder_carriageReturnIndex, null, "f");
+  }
+  decode(chunk) {
+    if (chunk == null) {
+      return [];
+    }
+    const binaryChunk = chunk instanceof ArrayBuffer ? new Uint8Array(chunk) : typeof chunk === "string" ? encodeUTF8(chunk) : chunk;
+    __classPrivateFieldSet(this, _LineDecoder_buffer, concatBytes([__classPrivateFieldGet(this, _LineDecoder_buffer, "f"), binaryChunk]), "f");
+    const lines = [];
+    let patternIndex;
+    while ((patternIndex = findNewlineIndex(__classPrivateFieldGet(this, _LineDecoder_buffer, "f"), __classPrivateFieldGet(this, _LineDecoder_carriageReturnIndex, "f"))) != null) {
+      if (patternIndex.carriage && __classPrivateFieldGet(this, _LineDecoder_carriageReturnIndex, "f") == null) {
+        __classPrivateFieldSet(this, _LineDecoder_carriageReturnIndex, patternIndex.index, "f");
+        continue;
+      }
+      if (__classPrivateFieldGet(this, _LineDecoder_carriageReturnIndex, "f") != null && (patternIndex.index !== __classPrivateFieldGet(this, _LineDecoder_carriageReturnIndex, "f") + 1 || patternIndex.carriage)) {
+        lines.push(decodeUTF8(__classPrivateFieldGet(this, _LineDecoder_buffer, "f").subarray(0, __classPrivateFieldGet(this, _LineDecoder_carriageReturnIndex, "f") - 1)));
+        __classPrivateFieldSet(this, _LineDecoder_buffer, __classPrivateFieldGet(this, _LineDecoder_buffer, "f").subarray(__classPrivateFieldGet(this, _LineDecoder_carriageReturnIndex, "f")), "f");
+        __classPrivateFieldSet(this, _LineDecoder_carriageReturnIndex, null, "f");
+        continue;
+      }
+      const endIndex = __classPrivateFieldGet(this, _LineDecoder_carriageReturnIndex, "f") !== null ? patternIndex.preceding - 1 : patternIndex.preceding;
+      const line = decodeUTF8(__classPrivateFieldGet(this, _LineDecoder_buffer, "f").subarray(0, endIndex));
+      lines.push(line);
+      __classPrivateFieldSet(this, _LineDecoder_buffer, __classPrivateFieldGet(this, _LineDecoder_buffer, "f").subarray(patternIndex.index), "f");
+      __classPrivateFieldSet(this, _LineDecoder_carriageReturnIndex, null, "f");
+    }
+    return lines;
+  }
+  flush() {
+    if (!__classPrivateFieldGet(this, _LineDecoder_buffer, "f").length) {
+      return [];
+    }
+    return this.decode("\n");
+  }
+};
+_LineDecoder_buffer = /* @__PURE__ */ new WeakMap(), _LineDecoder_carriageReturnIndex = /* @__PURE__ */ new WeakMap();
+LineDecoder.NEWLINE_CHARS = /* @__PURE__ */ new Set(["\n", "\r"]);
+LineDecoder.NEWLINE_REGEXP = /\r\n|[\n\r]/g;
+function findNewlineIndex(buffer, startIndex) {
+  const newline = 10;
+  const carriage = 13;
+  for (let i = startIndex != null ? startIndex : 0; i < buffer.length; i++) {
+    if (buffer[i] === newline) {
+      return { preceding: i, index: i + 1, carriage: false };
+    }
+    if (buffer[i] === carriage) {
+      return { preceding: i, index: i + 1, carriage: true };
+    }
+  }
+  return null;
+}
+function findDoubleNewlineIndex(buffer) {
+  const newline = 10;
+  const carriage = 13;
+  for (let i = 0; i < buffer.length - 1; i++) {
+    if (buffer[i] === newline && buffer[i + 1] === newline) {
+      return i + 2;
+    }
+    if (buffer[i] === carriage && buffer[i + 1] === carriage) {
+      return i + 2;
+    }
+    if (buffer[i] === carriage && buffer[i + 1] === newline && i + 3 < buffer.length && buffer[i + 2] === carriage && buffer[i + 3] === newline) {
+      return i + 4;
+    }
+  }
+  return -1;
+}
+
+// node_modules/openai/internal/utils/log.mjs
+var levelNumbers = {
+  off: 0,
+  error: 200,
+  warn: 300,
+  info: 400,
+  debug: 500
+};
+var parseLogLevel = (maybeLevel, sourceName, client) => {
+  if (!maybeLevel) {
+    return void 0;
+  }
+  if (hasOwn(levelNumbers, maybeLevel)) {
+    return maybeLevel;
+  }
+  loggerFor(client).warn(`${sourceName} was set to ${JSON.stringify(maybeLevel)}, expected one of ${JSON.stringify(Object.keys(levelNumbers))}`);
+  return void 0;
+};
+function noop() {
+}
+function makeLogFn(fnLevel, logger, logLevel) {
+  if (!logger || levelNumbers[fnLevel] > levelNumbers[logLevel]) {
+    return noop;
+  } else {
+    return logger[fnLevel].bind(logger);
+  }
+}
+var noopLogger = {
+  error: noop,
+  warn: noop,
+  info: noop,
+  debug: noop
+};
+var cachedLoggers = /* @__PURE__ */ new WeakMap();
+function loggerFor(client) {
+  var _a3;
+  const logger = client.logger;
+  const logLevel = (_a3 = client.logLevel) != null ? _a3 : "off";
+  if (!logger) {
+    return noopLogger;
+  }
+  const cachedLogger = cachedLoggers.get(logger);
+  if (cachedLogger && cachedLogger[0] === logLevel) {
+    return cachedLogger[1];
+  }
+  const levelLogger = {
+    error: makeLogFn("error", logger, logLevel),
+    warn: makeLogFn("warn", logger, logLevel),
+    info: makeLogFn("info", logger, logLevel),
+    debug: makeLogFn("debug", logger, logLevel)
+  };
+  cachedLoggers.set(logger, [logLevel, levelLogger]);
+  return levelLogger;
+}
+var formatRequestDetails = (details) => {
+  if (details.options) {
+    details.options = { ...details.options };
+    delete details.options["headers"];
+  }
+  if (details.headers) {
+    details.headers = Object.fromEntries((details.headers instanceof Headers ? [...details.headers] : Object.entries(details.headers)).map(([name, value]) => [
+      name,
+      name.toLowerCase() === "authorization" || name.toLowerCase() === "cookie" || name.toLowerCase() === "set-cookie" ? "***" : value
+    ]));
+  }
+  if ("retryOfRequestLogID" in details) {
+    if (details.retryOfRequestLogID) {
+      details.retryOf = details.retryOfRequestLogID;
+    }
+    delete details.retryOfRequestLogID;
+  }
+  return details;
+};
+
+// node_modules/openai/core/streaming.mjs
+var _Stream_client;
+var Stream = class {
+  constructor(iterator, controller, client) {
+    this.iterator = iterator;
+    _Stream_client.set(this, void 0);
+    this.controller = controller;
+    __classPrivateFieldSet(this, _Stream_client, client, "f");
+  }
+  static fromSSEResponse(response, controller, client) {
+    let consumed = false;
+    const logger = client ? loggerFor(client) : console;
+    async function* iterator() {
+      if (consumed) {
+        throw new OpenAIError("Cannot iterate over a consumed stream, use `.tee()` to split the stream.");
+      }
+      consumed = true;
+      let done = false;
+      try {
+        for await (const sse of _iterSSEMessages(response, controller)) {
+          if (done)
+            continue;
+          if (sse.data.startsWith("[DONE]")) {
+            done = true;
+            continue;
+          }
+          if (sse.event === null || !sse.event.startsWith("thread.")) {
+            let data;
+            try {
+              data = JSON.parse(sse.data);
+            } catch (e) {
+              logger.error(`Could not parse message into JSON:`, sse.data);
+              logger.error(`From chunk:`, sse.raw);
+              throw e;
+            }
+            if (data && data.error) {
+              throw new APIError(void 0, data.error, void 0, response.headers);
+            }
+            yield data;
+          } else {
+            let data;
+            try {
+              data = JSON.parse(sse.data);
+            } catch (e) {
+              console.error(`Could not parse message into JSON:`, sse.data);
+              console.error(`From chunk:`, sse.raw);
+              throw e;
+            }
+            if (sse.event == "error") {
+              throw new APIError(void 0, data.error, data.message, void 0);
+            }
+            yield { event: sse.event, data };
+          }
         }
-      } catch (error) {
-        console.error(`Could not JSON parse stream message`, {
-          text,
-          lines,
-          line,
-          lineMessage,
-          error
-        });
+        done = true;
+      } catch (e) {
+        if (isAbortError(e))
+          return;
+        throw e;
+      } finally {
+        if (!done)
+          controller.abort();
+      }
+    }
+    return new Stream(iterator, controller, client);
+  }
+  /**
+   * Generates a Stream from a newline-separated ReadableStream
+   * where each item is a JSON value.
+   */
+  static fromReadableStream(readableStream, controller, client) {
+    let consumed = false;
+    async function* iterLines() {
+      const lineDecoder = new LineDecoder();
+      const iter = ReadableStreamToAsyncIterable(readableStream);
+      for await (const chunk of iter) {
+        for (const line of lineDecoder.decode(chunk)) {
+          yield line;
+        }
+      }
+      for (const line of lineDecoder.flush()) {
+        yield line;
+      }
+    }
+    async function* iterator() {
+      if (consumed) {
+        throw new OpenAIError("Cannot iterate over a consumed stream, use `.tee()` to split the stream.");
+      }
+      consumed = true;
+      let done = false;
+      try {
+        for await (const line of iterLines()) {
+          if (done)
+            continue;
+          if (line)
+            yield JSON.parse(line);
+        }
+        done = true;
+      } catch (e) {
+        if (isAbortError(e))
+          return;
+        throw e;
+      } finally {
+        if (!done)
+          controller.abort();
+      }
+    }
+    return new Stream(iterator, controller, client);
+  }
+  [(_Stream_client = /* @__PURE__ */ new WeakMap(), Symbol.asyncIterator)]() {
+    return this.iterator();
+  }
+  /**
+   * Splits the stream into two streams which can be
+   * independently read from at different speeds.
+   */
+  tee() {
+    const left = [];
+    const right = [];
+    const iterator = this.iterator();
+    const teeIterator = (queue) => {
+      return {
+        next: () => {
+          if (queue.length === 0) {
+            const result = iterator.next();
+            left.push(result);
+            right.push(result);
+          }
+          return queue.shift();
+        }
+      };
+    };
+    return [
+      new Stream(() => teeIterator(left), this.controller, __classPrivateFieldGet(this, _Stream_client, "f")),
+      new Stream(() => teeIterator(right), this.controller, __classPrivateFieldGet(this, _Stream_client, "f"))
+    ];
+  }
+  /**
+   * Converts this stream to a newline-separated ReadableStream of
+   * JSON stringified values in the stream
+   * which can be turned back into a Stream with `Stream.fromReadableStream()`.
+   */
+  toReadableStream() {
+    const self = this;
+    let iter;
+    return makeReadableStream({
+      async start() {
+        iter = self[Symbol.asyncIterator]();
+      },
+      async pull(ctrl) {
+        try {
+          const { value, done } = await iter.next();
+          if (done)
+            return ctrl.close();
+          const bytes = encodeUTF8(JSON.stringify(value) + "\n");
+          ctrl.enqueue(bytes);
+        } catch (err) {
+          ctrl.error(err);
+        }
+      },
+      async cancel() {
+        var _a3;
+        await ((_a3 = iter.return) == null ? void 0 : _a3.call(iter));
+      }
+    });
+  }
+};
+async function* _iterSSEMessages(response, controller) {
+  if (!response.body) {
+    controller.abort();
+    if (typeof globalThis.navigator !== "undefined" && globalThis.navigator.product === "ReactNative") {
+      throw new OpenAIError(`The default react-native fetch implementation does not support streaming. Please use expo/fetch: https://docs.expo.dev/versions/latest/sdk/expo/#expofetch-api`);
+    }
+    throw new OpenAIError(`Attempted to iterate over a response with no body`);
+  }
+  const sseDecoder = new SSEDecoder();
+  const lineDecoder = new LineDecoder();
+  const iter = ReadableStreamToAsyncIterable(response.body);
+  for await (const sseChunk of iterSSEChunks(iter)) {
+    for (const line of lineDecoder.decode(sseChunk)) {
+      const sse = sseDecoder.decode(line);
+      if (sse)
+        yield sse;
+    }
+  }
+  for (const line of lineDecoder.flush()) {
+    const sse = sseDecoder.decode(line);
+    if (sse)
+      yield sse;
+  }
+}
+async function* iterSSEChunks(iterator) {
+  let data = new Uint8Array();
+  for await (const chunk of iterator) {
+    if (chunk == null) {
+      continue;
+    }
+    const binaryChunk = chunk instanceof ArrayBuffer ? new Uint8Array(chunk) : typeof chunk === "string" ? encodeUTF8(chunk) : chunk;
+    let newData = new Uint8Array(data.length + binaryChunk.length);
+    newData.set(data);
+    newData.set(binaryChunk, data.length);
+    data = newData;
+    let patternIndex;
+    while ((patternIndex = findDoubleNewlineIndex(data)) !== -1) {
+      yield data.slice(0, patternIndex);
+      data = data.slice(patternIndex);
+    }
+  }
+  if (data.length > 0) {
+    yield data;
+  }
+}
+var SSEDecoder = class {
+  constructor() {
+    this.event = null;
+    this.data = [];
+    this.chunks = [];
+  }
+  decode(line) {
+    if (line.endsWith("\r")) {
+      line = line.substring(0, line.length - 1);
+    }
+    if (!line) {
+      if (!this.event && !this.data.length)
+        return null;
+      const sse = {
+        event: this.event,
+        data: this.data.join("\n"),
+        raw: this.chunks
+      };
+      this.event = null;
+      this.data = [];
+      this.chunks = [];
+      return sse;
+    }
+    this.chunks.push(line);
+    if (line.startsWith(":")) {
+      return null;
+    }
+    let [fieldname, _, value] = partition(line, ":");
+    if (value.startsWith(" ")) {
+      value = value.substring(1);
+    }
+    if (fieldname === "event") {
+      this.event = value;
+    } else if (fieldname === "data") {
+      this.data.push(value);
+    }
+    return null;
+  }
+};
+function partition(str2, delimiter) {
+  const index = str2.indexOf(delimiter);
+  if (index !== -1) {
+    return [str2.substring(0, index), delimiter, str2.substring(index + delimiter.length)];
+  }
+  return [str2, "", ""];
+}
+
+// node_modules/openai/internal/parse.mjs
+async function defaultParseResponse(client, props) {
+  const { response, requestLogID, retryOfRequestLogID, startTime } = props;
+  const body = await (async () => {
+    var _a3;
+    if (props.options.stream) {
+      loggerFor(client).debug("response", response.status, response.url, response.headers, response.body);
+      if (props.options.__streamClass) {
+        return props.options.__streamClass.fromSSEResponse(response, props.controller, client);
+      }
+      return Stream.fromSSEResponse(response, props.controller, client);
+    }
+    if (response.status === 204) {
+      return null;
+    }
+    if (props.options.__binaryResponse) {
+      return response;
+    }
+    const contentType = response.headers.get("content-type");
+    const mediaType = (_a3 = contentType == null ? void 0 : contentType.split(";")[0]) == null ? void 0 : _a3.trim();
+    const isJSON = (mediaType == null ? void 0 : mediaType.includes("application/json")) || (mediaType == null ? void 0 : mediaType.endsWith("+json"));
+    if (isJSON) {
+      const json = await response.json();
+      return addRequestID(json, response);
+    }
+    const text = await response.text();
+    return text;
+  })();
+  loggerFor(client).debug(`[${requestLogID}] response parsed`, formatRequestDetails({
+    retryOfRequestLogID,
+    url: response.url,
+    status: response.status,
+    body,
+    durationMs: Date.now() - startTime
+  }));
+  return body;
+}
+function addRequestID(value, response) {
+  if (!value || typeof value !== "object" || Array.isArray(value)) {
+    return value;
+  }
+  return Object.defineProperty(value, "_request_id", {
+    value: response.headers.get("x-request-id"),
+    enumerable: false
+  });
+}
+
+// node_modules/openai/core/api-promise.mjs
+var _APIPromise_client;
+var APIPromise = class extends Promise {
+  constructor(client, responsePromise, parseResponse2 = defaultParseResponse) {
+    super((resolve) => {
+      resolve(null);
+    });
+    this.responsePromise = responsePromise;
+    this.parseResponse = parseResponse2;
+    _APIPromise_client.set(this, void 0);
+    __classPrivateFieldSet(this, _APIPromise_client, client, "f");
+  }
+  _thenUnwrap(transform) {
+    return new APIPromise(__classPrivateFieldGet(this, _APIPromise_client, "f"), this.responsePromise, async (client, props) => addRequestID(transform(await this.parseResponse(client, props), props), props.response));
+  }
+  /**
+   * Gets the raw `Response` instance instead of parsing the response
+   * data.
+   *
+   * If you want to parse the response body but still get the `Response`
+   * instance, you can use {@link withResponse()}.
+   *
+   * 👋 Getting the wrong TypeScript type for `Response`?
+   * Try setting `"moduleResolution": "NodeNext"` or add `"lib": ["DOM"]`
+   * to your `tsconfig.json`.
+   */
+  asResponse() {
+    return this.responsePromise.then((p) => p.response);
+  }
+  /**
+   * Gets the parsed response data, the raw `Response` instance and the ID of the request,
+   * returned via the X-Request-ID header which is useful for debugging requests and reporting
+   * issues to OpenAI.
+   *
+   * If you just want to get the raw `Response` instance without parsing it,
+   * you can use {@link asResponse()}.
+   *
+   * 👋 Getting the wrong TypeScript type for `Response`?
+   * Try setting `"moduleResolution": "NodeNext"` or add `"lib": ["DOM"]`
+   * to your `tsconfig.json`.
+   */
+  async withResponse() {
+    const [data, response] = await Promise.all([this.parse(), this.asResponse()]);
+    return { data, response, request_id: response.headers.get("x-request-id") };
+  }
+  parse() {
+    if (!this.parsedPromise) {
+      this.parsedPromise = this.responsePromise.then((data) => this.parseResponse(__classPrivateFieldGet(this, _APIPromise_client, "f"), data));
+    }
+    return this.parsedPromise;
+  }
+  then(onfulfilled, onrejected) {
+    return this.parse().then(onfulfilled, onrejected);
+  }
+  catch(onrejected) {
+    return this.parse().catch(onrejected);
+  }
+  finally(onfinally) {
+    return this.parse().finally(onfinally);
+  }
+};
+_APIPromise_client = /* @__PURE__ */ new WeakMap();
+
+// node_modules/openai/core/pagination.mjs
+var _AbstractPage_client;
+var AbstractPage = class {
+  constructor(client, response, body, options) {
+    _AbstractPage_client.set(this, void 0);
+    __classPrivateFieldSet(this, _AbstractPage_client, client, "f");
+    this.options = options;
+    this.response = response;
+    this.body = body;
+  }
+  hasNextPage() {
+    const items = this.getPaginatedItems();
+    if (!items.length)
+      return false;
+    return this.nextPageRequestOptions() != null;
+  }
+  async getNextPage() {
+    const nextOptions = this.nextPageRequestOptions();
+    if (!nextOptions) {
+      throw new OpenAIError("No next page expected; please check `.hasNextPage()` before calling `.getNextPage()`.");
+    }
+    return await __classPrivateFieldGet(this, _AbstractPage_client, "f").requestAPIList(this.constructor, nextOptions);
+  }
+  async *iterPages() {
+    let page = this;
+    yield page;
+    while (page.hasNextPage()) {
+      page = await page.getNextPage();
+      yield page;
+    }
+  }
+  async *[(_AbstractPage_client = /* @__PURE__ */ new WeakMap(), Symbol.asyncIterator)]() {
+    for await (const page of this.iterPages()) {
+      for (const item of page.getPaginatedItems()) {
+        yield item;
       }
     }
   }
-  return content;
+};
+var PagePromise = class extends APIPromise {
+  constructor(client, request, Page2) {
+    super(client, request, async (client2, props) => new Page2(client2, props.response, await defaultParseResponse(client2, props), props.options));
+  }
+  /**
+   * Allow auto-paginating iteration on an unawaited list call, eg:
+   *
+   *    for await (const item of client.items.list()) {
+   *      console.log(item)
+   *    }
+   */
+  async *[Symbol.asyncIterator]() {
+    const page = await this;
+    for await (const item of page) {
+      yield item;
+    }
+  }
+};
+var Page = class extends AbstractPage {
+  constructor(client, response, body, options) {
+    super(client, response, body, options);
+    this.data = body.data || [];
+    this.object = body.object;
+  }
+  getPaginatedItems() {
+    var _a3;
+    return (_a3 = this.data) != null ? _a3 : [];
+  }
+  nextPageRequestOptions() {
+    return null;
+  }
+};
+var CursorPage = class extends AbstractPage {
+  constructor(client, response, body, options) {
+    super(client, response, body, options);
+    this.data = body.data || [];
+    this.has_more = body.has_more || false;
+  }
+  getPaginatedItems() {
+    var _a3;
+    return (_a3 = this.data) != null ? _a3 : [];
+  }
+  hasNextPage() {
+    if (this.has_more === false) {
+      return false;
+    }
+    return super.hasNextPage();
+  }
+  nextPageRequestOptions() {
+    var _a3;
+    const data = this.getPaginatedItems();
+    const id = (_a3 = data[data.length - 1]) == null ? void 0 : _a3.id;
+    if (!id) {
+      return null;
+    }
+    return {
+      ...this.options,
+      query: {
+        ...maybeObj(this.options.query),
+        after: id
+      }
+    };
+  }
+};
+var ConversationCursorPage = class extends AbstractPage {
+  constructor(client, response, body, options) {
+    super(client, response, body, options);
+    this.data = body.data || [];
+    this.has_more = body.has_more || false;
+    this.last_id = body.last_id || "";
+  }
+  getPaginatedItems() {
+    var _a3;
+    return (_a3 = this.data) != null ? _a3 : [];
+  }
+  hasNextPage() {
+    if (this.has_more === false) {
+      return false;
+    }
+    return super.hasNextPage();
+  }
+  nextPageRequestOptions() {
+    const cursor = this.last_id;
+    if (!cursor) {
+      return null;
+    }
+    return {
+      ...this.options,
+      query: {
+        ...maybeObj(this.options.query),
+        after: cursor
+      }
+    };
+  }
+};
+
+// node_modules/openai/internal/uploads.mjs
+var checkFileSupport = () => {
+  var _a3;
+  if (typeof File === "undefined") {
+    const { process: process2 } = globalThis;
+    const isOldNode = typeof ((_a3 = process2 == null ? void 0 : process2.versions) == null ? void 0 : _a3.node) === "string" && parseInt(process2.versions.node.split(".")) < 20;
+    throw new Error("`File` is not defined as a global, which is required for file uploads." + (isOldNode ? " Update to Node 20 LTS or newer, or set `globalThis.File` to `import('node:buffer').File`." : ""));
+  }
+};
+function makeFile(fileBits, fileName, options) {
+  checkFileSupport();
+  return new File(fileBits, fileName != null ? fileName : "unknown_file", options);
+}
+function getName(value) {
+  return (typeof value === "object" && value !== null && ("name" in value && value.name && String(value.name) || "url" in value && value.url && String(value.url) || "filename" in value && value.filename && String(value.filename) || "path" in value && value.path && String(value.path)) || "").split(/[\\/]/).pop() || void 0;
+}
+var isAsyncIterable = (value) => value != null && typeof value === "object" && typeof value[Symbol.asyncIterator] === "function";
+var multipartFormRequestOptions = async (opts, fetch2) => {
+  return { ...opts, body: await createForm(opts.body, fetch2) };
+};
+var supportsFormDataMap = /* @__PURE__ */ new WeakMap();
+function supportsFormData(fetchObject) {
+  const fetch2 = typeof fetchObject === "function" ? fetchObject : fetchObject.fetch;
+  const cached = supportsFormDataMap.get(fetch2);
+  if (cached)
+    return cached;
+  const promise = (async () => {
+    try {
+      const FetchResponse = "Response" in fetch2 ? fetch2.Response : (await fetch2("data:,")).constructor;
+      const data = new FormData();
+      if (data.toString() === await new FetchResponse(data).text()) {
+        return false;
+      }
+      return true;
+    } catch (e) {
+      return true;
+    }
+  })();
+  supportsFormDataMap.set(fetch2, promise);
+  return promise;
+}
+var createForm = async (body, fetch2) => {
+  if (!await supportsFormData(fetch2)) {
+    throw new TypeError("The provided fetch function does not support file uploads with the current global FormData class.");
+  }
+  const form = new FormData();
+  await Promise.all(Object.entries(body || {}).map(([key, value]) => addFormValue(form, key, value)));
+  return form;
+};
+var isNamedBlob = (value) => value instanceof Blob && "name" in value;
+var addFormValue = async (form, key, value) => {
+  if (value === void 0)
+    return;
+  if (value == null) {
+    throw new TypeError(`Received null for "${key}"; to pass null in FormData, you must use the string 'null'`);
+  }
+  if (typeof value === "string" || typeof value === "number" || typeof value === "boolean") {
+    form.append(key, String(value));
+  } else if (value instanceof Response) {
+    form.append(key, makeFile([await value.blob()], getName(value)));
+  } else if (isAsyncIterable(value)) {
+    form.append(key, makeFile([await new Response(ReadableStreamFrom(value)).blob()], getName(value)));
+  } else if (isNamedBlob(value)) {
+    form.append(key, value, getName(value));
+  } else if (Array.isArray(value)) {
+    await Promise.all(value.map((entry) => addFormValue(form, key + "[]", entry)));
+  } else if (typeof value === "object") {
+    await Promise.all(Object.entries(value).map(([name, prop]) => addFormValue(form, `${key}[${name}]`, prop)));
+  } else {
+    throw new TypeError(`Invalid value given to form, expected a string, number, boolean, object, Array, File or Blob but got ${value} instead`);
+  }
+};
+
+// node_modules/openai/internal/to-file.mjs
+var isBlobLike = (value) => value != null && typeof value === "object" && typeof value.size === "number" && typeof value.type === "string" && typeof value.text === "function" && typeof value.slice === "function" && typeof value.arrayBuffer === "function";
+var isFileLike = (value) => value != null && typeof value === "object" && typeof value.name === "string" && typeof value.lastModified === "number" && isBlobLike(value);
+var isResponseLike = (value) => value != null && typeof value === "object" && typeof value.url === "string" && typeof value.blob === "function";
+async function toFile(value, name, options) {
+  checkFileSupport();
+  value = await value;
+  if (isFileLike(value)) {
+    if (value instanceof File) {
+      return value;
+    }
+    return makeFile([await value.arrayBuffer()], value.name);
+  }
+  if (isResponseLike(value)) {
+    const blob = await value.blob();
+    name || (name = new URL(value.url).pathname.split(/[\\/]/).pop());
+    return makeFile(await getBytes(blob), name, options);
+  }
+  const parts = await getBytes(value);
+  name || (name = getName(value));
+  if (!(options == null ? void 0 : options.type)) {
+    const type = parts.find((part) => typeof part === "object" && "type" in part && part.type);
+    if (typeof type === "string") {
+      options = { ...options, type };
+    }
+  }
+  return makeFile(parts, name, options);
+}
+async function getBytes(value) {
+  var _a3;
+  let parts = [];
+  if (typeof value === "string" || ArrayBuffer.isView(value) || // includes Uint8Array, Buffer, etc.
+  value instanceof ArrayBuffer) {
+    parts.push(value);
+  } else if (isBlobLike(value)) {
+    parts.push(value instanceof Blob ? value : await value.arrayBuffer());
+  } else if (isAsyncIterable(value)) {
+    for await (const chunk of value) {
+      parts.push(...await getBytes(chunk));
+    }
+  } else {
+    const constructor = (_a3 = value == null ? void 0 : value.constructor) == null ? void 0 : _a3.name;
+    throw new Error(`Unexpected data type: ${typeof value}${constructor ? `; constructor: ${constructor}` : ""}${propsForError(value)}`);
+  }
+  return parts;
+}
+function propsForError(value) {
+  if (typeof value !== "object" || value === null)
+    return "";
+  const props = Object.getOwnPropertyNames(value);
+  return `; props: [${props.map((p) => `"${p}"`).join(", ")}]`;
+}
+
+// node_modules/openai/core/resource.mjs
+var APIResource = class {
+  constructor(client) {
+    this._client = client;
+  }
+};
+
+// node_modules/openai/internal/utils/path.mjs
+function encodeURIPath(str2) {
+  return str2.replace(/[^A-Za-z0-9\-._~!$&'()*+,;=:@]+/g, encodeURIComponent);
+}
+var EMPTY = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.create(null));
+var createPathTagFunction = (pathEncoder = encodeURIPath) => function path2(statics, ...params) {
+  if (statics.length === 1)
+    return statics[0];
+  let postPath = false;
+  const invalidSegments = [];
+  const path3 = statics.reduce((previousValue, currentValue, index) => {
+    var _a3, _b, _c;
+    if (/[?#]/.test(currentValue)) {
+      postPath = true;
+    }
+    const value = params[index];
+    let encoded = (postPath ? encodeURIComponent : pathEncoder)("" + value);
+    if (index !== params.length && (value == null || typeof value === "object" && // handle values from other realms
+    value.toString === ((_c = Object.getPrototypeOf((_b = Object.getPrototypeOf((_a3 = value.hasOwnProperty) != null ? _a3 : EMPTY)) != null ? _b : EMPTY)) == null ? void 0 : _c.toString))) {
+      encoded = value + "";
+      invalidSegments.push({
+        start: previousValue.length + currentValue.length,
+        length: encoded.length,
+        error: `Value of type ${Object.prototype.toString.call(value).slice(8, -1)} is not a valid path parameter`
+      });
+    }
+    return previousValue + currentValue + (index === params.length ? "" : encoded);
+  }, "");
+  const pathOnly = path3.split(/[?#]/, 1)[0];
+  const invalidSegmentPattern = /(?<=^|\/)(?:\.|%2e){1,2}(?=\/|$)/gi;
+  let match;
+  while ((match = invalidSegmentPattern.exec(pathOnly)) !== null) {
+    invalidSegments.push({
+      start: match.index,
+      length: match[0].length,
+      error: `Value "${match[0]}" can't be safely passed as a path parameter`
+    });
+  }
+  invalidSegments.sort((a, b) => a.start - b.start);
+  if (invalidSegments.length > 0) {
+    let lastEnd = 0;
+    const underline = invalidSegments.reduce((acc, segment) => {
+      const spaces = " ".repeat(segment.start - lastEnd);
+      const arrows = "^".repeat(segment.length);
+      lastEnd = segment.start + segment.length;
+      return acc + spaces + arrows;
+    }, "");
+    throw new OpenAIError(`Path parameters result in path with invalid segments:
+${invalidSegments.map((e) => e.error).join("\n")}
+${path3}
+${underline}`);
+  }
+  return path3;
+};
+var path = /* @__PURE__ */ createPathTagFunction(encodeURIPath);
+
+// node_modules/openai/resources/chat/completions/messages.mjs
+var Messages = class extends APIResource {
+  /**
+   * Get the messages in a stored chat completion. Only Chat Completions that have
+   * been created with the `store` parameter set to `true` will be returned.
+   *
+   * @example
+   * ```ts
+   * // Automatically fetches more pages as needed.
+   * for await (const chatCompletionStoreMessage of client.chat.completions.messages.list(
+   *   'completion_id',
+   * )) {
+   *   // ...
+   * }
+   * ```
+   */
+  list(completionID, query = {}, options) {
+    return this._client.getAPIList(path`/chat/completions/${completionID}/messages`, CursorPage, { query, ...options });
+  }
+};
+
+// node_modules/openai/lib/parser.mjs
+function isChatCompletionFunctionTool(tool) {
+  return tool !== void 0 && "function" in tool && tool.function !== void 0;
+}
+function isAutoParsableResponseFormat(response_format) {
+  return (response_format == null ? void 0 : response_format["$brand"]) === "auto-parseable-response-format";
+}
+function isAutoParsableTool(tool) {
+  return (tool == null ? void 0 : tool["$brand"]) === "auto-parseable-tool";
+}
+function maybeParseChatCompletion(completion, params) {
+  if (!params || !hasAutoParseableInput(params)) {
+    return {
+      ...completion,
+      choices: completion.choices.map((choice) => {
+        assertToolCallsAreChatCompletionFunctionToolCalls(choice.message.tool_calls);
+        return {
+          ...choice,
+          message: {
+            ...choice.message,
+            parsed: null,
+            ...choice.message.tool_calls ? {
+              tool_calls: choice.message.tool_calls
+            } : void 0
+          }
+        };
+      })
+    };
+  }
+  return parseChatCompletion(completion, params);
+}
+function parseChatCompletion(completion, params) {
+  const choices = completion.choices.map((choice) => {
+    var _a3, _b;
+    if (choice.finish_reason === "length") {
+      throw new LengthFinishReasonError();
+    }
+    if (choice.finish_reason === "content_filter") {
+      throw new ContentFilterFinishReasonError();
+    }
+    assertToolCallsAreChatCompletionFunctionToolCalls(choice.message.tool_calls);
+    return {
+      ...choice,
+      message: {
+        ...choice.message,
+        ...choice.message.tool_calls ? {
+          tool_calls: (_b = (_a3 = choice.message.tool_calls) == null ? void 0 : _a3.map((toolCall) => parseToolCall(params, toolCall))) != null ? _b : void 0
+        } : void 0,
+        parsed: choice.message.content && !choice.message.refusal ? parseResponseFormat(params, choice.message.content) : null
+      }
+    };
+  });
+  return { ...completion, choices };
+}
+function parseResponseFormat(params, content) {
+  var _a3, _b;
+  if (((_a3 = params.response_format) == null ? void 0 : _a3.type) !== "json_schema") {
+    return null;
+  }
+  if (((_b = params.response_format) == null ? void 0 : _b.type) === "json_schema") {
+    if ("$parseRaw" in params.response_format) {
+      const response_format = params.response_format;
+      return response_format.$parseRaw(content);
+    }
+    return JSON.parse(content);
+  }
+  return null;
+}
+function parseToolCall(params, toolCall) {
+  var _a3;
+  const inputTool = (_a3 = params.tools) == null ? void 0 : _a3.find((inputTool2) => {
+    var _a4;
+    return isChatCompletionFunctionTool(inputTool2) && ((_a4 = inputTool2.function) == null ? void 0 : _a4.name) === toolCall.function.name;
+  });
+  return {
+    ...toolCall,
+    function: {
+      ...toolCall.function,
+      parsed_arguments: isAutoParsableTool(inputTool) ? inputTool.$parseRaw(toolCall.function.arguments) : (inputTool == null ? void 0 : inputTool.function.strict) ? JSON.parse(toolCall.function.arguments) : null
+    }
+  };
+}
+function shouldParseToolCall(params, toolCall) {
+  var _a3;
+  if (!params || !("tools" in params) || !params.tools) {
+    return false;
+  }
+  const inputTool = (_a3 = params.tools) == null ? void 0 : _a3.find((inputTool2) => {
+    var _a4;
+    return isChatCompletionFunctionTool(inputTool2) && ((_a4 = inputTool2.function) == null ? void 0 : _a4.name) === toolCall.function.name;
+  });
+  return isChatCompletionFunctionTool(inputTool) && (isAutoParsableTool(inputTool) || (inputTool == null ? void 0 : inputTool.function.strict) || false);
+}
+function hasAutoParseableInput(params) {
+  var _a3, _b;
+  if (isAutoParsableResponseFormat(params.response_format)) {
+    return true;
+  }
+  return (_b = (_a3 = params.tools) == null ? void 0 : _a3.some((t) => isAutoParsableTool(t) || t.type === "function" && t.function.strict === true)) != null ? _b : false;
+}
+function assertToolCallsAreChatCompletionFunctionToolCalls(toolCalls) {
+  for (const toolCall of toolCalls || []) {
+    if (toolCall.type !== "function") {
+      throw new OpenAIError(`Currently only \`function\` tool calls are supported; Received \`${toolCall.type}\``);
+    }
+  }
+}
+function validateInputTools(tools) {
+  for (const tool of tools != null ? tools : []) {
+    if (tool.type !== "function") {
+      throw new OpenAIError(`Currently only \`function\` tool types support auto-parsing; Received \`${tool.type}\``);
+    }
+    if (tool.function.strict !== true) {
+      throw new OpenAIError(`The \`${tool.function.name}\` tool is not marked with \`strict: true\`. Only strict function tools can be auto-parsed`);
+    }
+  }
+}
+
+// node_modules/openai/lib/chatCompletionUtils.mjs
+var isAssistantMessage = (message) => {
+  return (message == null ? void 0 : message.role) === "assistant";
+};
+var isToolMessage = (message) => {
+  return (message == null ? void 0 : message.role) === "tool";
+};
+
+// node_modules/openai/lib/EventStream.mjs
+var _EventStream_instances;
+var _EventStream_connectedPromise;
+var _EventStream_resolveConnectedPromise;
+var _EventStream_rejectConnectedPromise;
+var _EventStream_endPromise;
+var _EventStream_resolveEndPromise;
+var _EventStream_rejectEndPromise;
+var _EventStream_listeners;
+var _EventStream_ended;
+var _EventStream_errored;
+var _EventStream_aborted;
+var _EventStream_catchingPromiseCreated;
+var _EventStream_handleError;
+var EventStream = class {
+  constructor() {
+    _EventStream_instances.add(this);
+    this.controller = new AbortController();
+    _EventStream_connectedPromise.set(this, void 0);
+    _EventStream_resolveConnectedPromise.set(this, () => {
+    });
+    _EventStream_rejectConnectedPromise.set(this, () => {
+    });
+    _EventStream_endPromise.set(this, void 0);
+    _EventStream_resolveEndPromise.set(this, () => {
+    });
+    _EventStream_rejectEndPromise.set(this, () => {
+    });
+    _EventStream_listeners.set(this, {});
+    _EventStream_ended.set(this, false);
+    _EventStream_errored.set(this, false);
+    _EventStream_aborted.set(this, false);
+    _EventStream_catchingPromiseCreated.set(this, false);
+    __classPrivateFieldSet(this, _EventStream_connectedPromise, new Promise((resolve, reject) => {
+      __classPrivateFieldSet(this, _EventStream_resolveConnectedPromise, resolve, "f");
+      __classPrivateFieldSet(this, _EventStream_rejectConnectedPromise, reject, "f");
+    }), "f");
+    __classPrivateFieldSet(this, _EventStream_endPromise, new Promise((resolve, reject) => {
+      __classPrivateFieldSet(this, _EventStream_resolveEndPromise, resolve, "f");
+      __classPrivateFieldSet(this, _EventStream_rejectEndPromise, reject, "f");
+    }), "f");
+    __classPrivateFieldGet(this, _EventStream_connectedPromise, "f").catch(() => {
+    });
+    __classPrivateFieldGet(this, _EventStream_endPromise, "f").catch(() => {
+    });
+  }
+  _run(executor) {
+    setTimeout(() => {
+      executor().then(() => {
+        this._emitFinal();
+        this._emit("end");
+      }, __classPrivateFieldGet(this, _EventStream_instances, "m", _EventStream_handleError).bind(this));
+    }, 0);
+  }
+  _connected() {
+    if (this.ended)
+      return;
+    __classPrivateFieldGet(this, _EventStream_resolveConnectedPromise, "f").call(this);
+    this._emit("connect");
+  }
+  get ended() {
+    return __classPrivateFieldGet(this, _EventStream_ended, "f");
+  }
+  get errored() {
+    return __classPrivateFieldGet(this, _EventStream_errored, "f");
+  }
+  get aborted() {
+    return __classPrivateFieldGet(this, _EventStream_aborted, "f");
+  }
+  abort() {
+    this.controller.abort();
+  }
+  /**
+   * Adds the listener function to the end of the listeners array for the event.
+   * No checks are made to see if the listener has already been added. Multiple calls passing
+   * the same combination of event and listener will result in the listener being added, and
+   * called, multiple times.
+   * @returns this ChatCompletionStream, so that calls can be chained
+   */
+  on(event, listener) {
+    const listeners = __classPrivateFieldGet(this, _EventStream_listeners, "f")[event] || (__classPrivateFieldGet(this, _EventStream_listeners, "f")[event] = []);
+    listeners.push({ listener });
+    return this;
+  }
+  /**
+   * Removes the specified listener from the listener array for the event.
+   * off() will remove, at most, one instance of a listener from the listener array. If any single
+   * listener has been added multiple times to the listener array for the specified event, then
+   * off() must be called multiple times to remove each instance.
+   * @returns this ChatCompletionStream, so that calls can be chained
+   */
+  off(event, listener) {
+    const listeners = __classPrivateFieldGet(this, _EventStream_listeners, "f")[event];
+    if (!listeners)
+      return this;
+    const index = listeners.findIndex((l) => l.listener === listener);
+    if (index >= 0)
+      listeners.splice(index, 1);
+    return this;
+  }
+  /**
+   * Adds a one-time listener function for the event. The next time the event is triggered,
+   * this listener is removed and then invoked.
+   * @returns this ChatCompletionStream, so that calls can be chained
+   */
+  once(event, listener) {
+    const listeners = __classPrivateFieldGet(this, _EventStream_listeners, "f")[event] || (__classPrivateFieldGet(this, _EventStream_listeners, "f")[event] = []);
+    listeners.push({ listener, once: true });
+    return this;
+  }
+  /**
+   * This is similar to `.once()`, but returns a Promise that resolves the next time
+   * the event is triggered, instead of calling a listener callback.
+   * @returns a Promise that resolves the next time given event is triggered,
+   * or rejects if an error is emitted.  (If you request the 'error' event,
+   * returns a promise that resolves with the error).
+   *
+   * Example:
+   *
+   *   const message = await stream.emitted('message') // rejects if the stream errors
+   */
+  emitted(event) {
+    return new Promise((resolve, reject) => {
+      __classPrivateFieldSet(this, _EventStream_catchingPromiseCreated, true, "f");
+      if (event !== "error")
+        this.once("error", reject);
+      this.once(event, resolve);
+    });
+  }
+  async done() {
+    __classPrivateFieldSet(this, _EventStream_catchingPromiseCreated, true, "f");
+    await __classPrivateFieldGet(this, _EventStream_endPromise, "f");
+  }
+  _emit(event, ...args) {
+    if (__classPrivateFieldGet(this, _EventStream_ended, "f")) {
+      return;
+    }
+    if (event === "end") {
+      __classPrivateFieldSet(this, _EventStream_ended, true, "f");
+      __classPrivateFieldGet(this, _EventStream_resolveEndPromise, "f").call(this);
+    }
+    const listeners = __classPrivateFieldGet(this, _EventStream_listeners, "f")[event];
+    if (listeners) {
+      __classPrivateFieldGet(this, _EventStream_listeners, "f")[event] = listeners.filter((l) => !l.once);
+      listeners.forEach(({ listener }) => listener(...args));
+    }
+    if (event === "abort") {
+      const error = args[0];
+      if (!__classPrivateFieldGet(this, _EventStream_catchingPromiseCreated, "f") && !(listeners == null ? void 0 : listeners.length)) {
+        Promise.reject(error);
+      }
+      __classPrivateFieldGet(this, _EventStream_rejectConnectedPromise, "f").call(this, error);
+      __classPrivateFieldGet(this, _EventStream_rejectEndPromise, "f").call(this, error);
+      this._emit("end");
+      return;
+    }
+    if (event === "error") {
+      const error = args[0];
+      if (!__classPrivateFieldGet(this, _EventStream_catchingPromiseCreated, "f") && !(listeners == null ? void 0 : listeners.length)) {
+        Promise.reject(error);
+      }
+      __classPrivateFieldGet(this, _EventStream_rejectConnectedPromise, "f").call(this, error);
+      __classPrivateFieldGet(this, _EventStream_rejectEndPromise, "f").call(this, error);
+      this._emit("end");
+    }
+  }
+  _emitFinal() {
+  }
+};
+_EventStream_connectedPromise = /* @__PURE__ */ new WeakMap(), _EventStream_resolveConnectedPromise = /* @__PURE__ */ new WeakMap(), _EventStream_rejectConnectedPromise = /* @__PURE__ */ new WeakMap(), _EventStream_endPromise = /* @__PURE__ */ new WeakMap(), _EventStream_resolveEndPromise = /* @__PURE__ */ new WeakMap(), _EventStream_rejectEndPromise = /* @__PURE__ */ new WeakMap(), _EventStream_listeners = /* @__PURE__ */ new WeakMap(), _EventStream_ended = /* @__PURE__ */ new WeakMap(), _EventStream_errored = /* @__PURE__ */ new WeakMap(), _EventStream_aborted = /* @__PURE__ */ new WeakMap(), _EventStream_catchingPromiseCreated = /* @__PURE__ */ new WeakMap(), _EventStream_instances = /* @__PURE__ */ new WeakSet(), _EventStream_handleError = function _EventStream_handleError2(error) {
+  __classPrivateFieldSet(this, _EventStream_errored, true, "f");
+  if (error instanceof Error && error.name === "AbortError") {
+    error = new APIUserAbortError();
+  }
+  if (error instanceof APIUserAbortError) {
+    __classPrivateFieldSet(this, _EventStream_aborted, true, "f");
+    return this._emit("abort", error);
+  }
+  if (error instanceof OpenAIError) {
+    return this._emit("error", error);
+  }
+  if (error instanceof Error) {
+    const openAIError = new OpenAIError(error.message);
+    openAIError.cause = error;
+    return this._emit("error", openAIError);
+  }
+  return this._emit("error", new OpenAIError(String(error)));
+};
+
+// node_modules/openai/lib/RunnableFunction.mjs
+function isRunnableFunctionWithParse(fn) {
+  return typeof fn.parse === "function";
+}
+
+// node_modules/openai/lib/AbstractChatCompletionRunner.mjs
+var _AbstractChatCompletionRunner_instances;
+var _AbstractChatCompletionRunner_getFinalContent;
+var _AbstractChatCompletionRunner_getFinalMessage;
+var _AbstractChatCompletionRunner_getFinalFunctionToolCall;
+var _AbstractChatCompletionRunner_getFinalFunctionToolCallResult;
+var _AbstractChatCompletionRunner_calculateTotalUsage;
+var _AbstractChatCompletionRunner_validateParams;
+var _AbstractChatCompletionRunner_stringifyFunctionCallResult;
+var DEFAULT_MAX_CHAT_COMPLETIONS = 10;
+var AbstractChatCompletionRunner = class extends EventStream {
+  constructor() {
+    super(...arguments);
+    _AbstractChatCompletionRunner_instances.add(this);
+    this._chatCompletions = [];
+    this.messages = [];
+  }
+  _addChatCompletion(chatCompletion) {
+    var _a3;
+    this._chatCompletions.push(chatCompletion);
+    this._emit("chatCompletion", chatCompletion);
+    const message = (_a3 = chatCompletion.choices[0]) == null ? void 0 : _a3.message;
+    if (message)
+      this._addMessage(message);
+    return chatCompletion;
+  }
+  _addMessage(message, emit = true) {
+    if (!("content" in message))
+      message.content = null;
+    this.messages.push(message);
+    if (emit) {
+      this._emit("message", message);
+      if (isToolMessage(message) && message.content) {
+        this._emit("functionToolCallResult", message.content);
+      } else if (isAssistantMessage(message) && message.tool_calls) {
+        for (const tool_call of message.tool_calls) {
+          if (tool_call.type === "function") {
+            this._emit("functionToolCall", tool_call.function);
+          }
+        }
+      }
+    }
+  }
+  /**
+   * @returns a promise that resolves with the final ChatCompletion, or rejects
+   * if an error occurred or the stream ended prematurely without producing a ChatCompletion.
+   */
+  async finalChatCompletion() {
+    await this.done();
+    const completion = this._chatCompletions[this._chatCompletions.length - 1];
+    if (!completion)
+      throw new OpenAIError("stream ended without producing a ChatCompletion");
+    return completion;
+  }
+  /**
+   * @returns a promise that resolves with the content of the final ChatCompletionMessage, or rejects
+   * if an error occurred or the stream ended prematurely without producing a ChatCompletionMessage.
+   */
+  async finalContent() {
+    await this.done();
+    return __classPrivateFieldGet(this, _AbstractChatCompletionRunner_instances, "m", _AbstractChatCompletionRunner_getFinalContent).call(this);
+  }
+  /**
+   * @returns a promise that resolves with the the final assistant ChatCompletionMessage response,
+   * or rejects if an error occurred or the stream ended prematurely without producing a ChatCompletionMessage.
+   */
+  async finalMessage() {
+    await this.done();
+    return __classPrivateFieldGet(this, _AbstractChatCompletionRunner_instances, "m", _AbstractChatCompletionRunner_getFinalMessage).call(this);
+  }
+  /**
+   * @returns a promise that resolves with the content of the final FunctionCall, or rejects
+   * if an error occurred or the stream ended prematurely without producing a ChatCompletionMessage.
+   */
+  async finalFunctionToolCall() {
+    await this.done();
+    return __classPrivateFieldGet(this, _AbstractChatCompletionRunner_instances, "m", _AbstractChatCompletionRunner_getFinalFunctionToolCall).call(this);
+  }
+  async finalFunctionToolCallResult() {
+    await this.done();
+    return __classPrivateFieldGet(this, _AbstractChatCompletionRunner_instances, "m", _AbstractChatCompletionRunner_getFinalFunctionToolCallResult).call(this);
+  }
+  async totalUsage() {
+    await this.done();
+    return __classPrivateFieldGet(this, _AbstractChatCompletionRunner_instances, "m", _AbstractChatCompletionRunner_calculateTotalUsage).call(this);
+  }
+  allChatCompletions() {
+    return [...this._chatCompletions];
+  }
+  _emitFinal() {
+    const completion = this._chatCompletions[this._chatCompletions.length - 1];
+    if (completion)
+      this._emit("finalChatCompletion", completion);
+    const finalMessage = __classPrivateFieldGet(this, _AbstractChatCompletionRunner_instances, "m", _AbstractChatCompletionRunner_getFinalMessage).call(this);
+    if (finalMessage)
+      this._emit("finalMessage", finalMessage);
+    const finalContent = __classPrivateFieldGet(this, _AbstractChatCompletionRunner_instances, "m", _AbstractChatCompletionRunner_getFinalContent).call(this);
+    if (finalContent)
+      this._emit("finalContent", finalContent);
+    const finalFunctionCall = __classPrivateFieldGet(this, _AbstractChatCompletionRunner_instances, "m", _AbstractChatCompletionRunner_getFinalFunctionToolCall).call(this);
+    if (finalFunctionCall)
+      this._emit("finalFunctionToolCall", finalFunctionCall);
+    const finalFunctionCallResult = __classPrivateFieldGet(this, _AbstractChatCompletionRunner_instances, "m", _AbstractChatCompletionRunner_getFinalFunctionToolCallResult).call(this);
+    if (finalFunctionCallResult != null)
+      this._emit("finalFunctionToolCallResult", finalFunctionCallResult);
+    if (this._chatCompletions.some((c) => c.usage)) {
+      this._emit("totalUsage", __classPrivateFieldGet(this, _AbstractChatCompletionRunner_instances, "m", _AbstractChatCompletionRunner_calculateTotalUsage).call(this));
+    }
+  }
+  async _createChatCompletion(client, params, options) {
+    const signal = options == null ? void 0 : options.signal;
+    if (signal) {
+      if (signal.aborted)
+        this.controller.abort();
+      signal.addEventListener("abort", () => this.controller.abort());
+    }
+    __classPrivateFieldGet(this, _AbstractChatCompletionRunner_instances, "m", _AbstractChatCompletionRunner_validateParams).call(this, params);
+    const chatCompletion = await client.chat.completions.create({ ...params, stream: false }, { ...options, signal: this.controller.signal });
+    this._connected();
+    return this._addChatCompletion(parseChatCompletion(chatCompletion, params));
+  }
+  async _runChatCompletion(client, params, options) {
+    for (const message of params.messages) {
+      this._addMessage(message, false);
+    }
+    return await this._createChatCompletion(client, params, options);
+  }
+  async _runTools(client, params, options) {
+    var _a3, _b, _c;
+    const role = "tool";
+    const { tool_choice = "auto", stream, ...restParams } = params;
+    const singleFunctionToCall = typeof tool_choice !== "string" && tool_choice.type === "function" && ((_a3 = tool_choice == null ? void 0 : tool_choice.function) == null ? void 0 : _a3.name);
+    const { maxChatCompletions = DEFAULT_MAX_CHAT_COMPLETIONS } = options || {};
+    const inputTools = params.tools.map((tool) => {
+      if (isAutoParsableTool(tool)) {
+        if (!tool.$callback) {
+          throw new OpenAIError("Tool given to `.runTools()` that does not have an associated function");
+        }
+        return {
+          type: "function",
+          function: {
+            function: tool.$callback,
+            name: tool.function.name,
+            description: tool.function.description || "",
+            parameters: tool.function.parameters,
+            parse: tool.$parseRaw,
+            strict: true
+          }
+        };
+      }
+      return tool;
+    });
+    const functionsByName = {};
+    for (const f of inputTools) {
+      if (f.type === "function") {
+        functionsByName[f.function.name || f.function.function.name] = f.function;
+      }
+    }
+    const tools = "tools" in params ? inputTools.map((t) => t.type === "function" ? {
+      type: "function",
+      function: {
+        name: t.function.name || t.function.function.name,
+        parameters: t.function.parameters,
+        description: t.function.description,
+        strict: t.function.strict
+      }
+    } : t) : void 0;
+    for (const message of params.messages) {
+      this._addMessage(message, false);
+    }
+    for (let i = 0; i < maxChatCompletions; ++i) {
+      const chatCompletion = await this._createChatCompletion(client, {
+        ...restParams,
+        tool_choice,
+        tools,
+        messages: [...this.messages]
+      }, options);
+      const message = (_b = chatCompletion.choices[0]) == null ? void 0 : _b.message;
+      if (!message) {
+        throw new OpenAIError(`missing message in ChatCompletion response`);
+      }
+      if (!((_c = message.tool_calls) == null ? void 0 : _c.length)) {
+        return;
+      }
+      for (const tool_call of message.tool_calls) {
+        if (tool_call.type !== "function")
+          continue;
+        const tool_call_id = tool_call.id;
+        const { name, arguments: args } = tool_call.function;
+        const fn = functionsByName[name];
+        if (!fn) {
+          const content2 = `Invalid tool_call: ${JSON.stringify(name)}. Available options are: ${Object.keys(functionsByName).map((name2) => JSON.stringify(name2)).join(", ")}. Please try again`;
+          this._addMessage({ role, tool_call_id, content: content2 });
+          continue;
+        } else if (singleFunctionToCall && singleFunctionToCall !== name) {
+          const content2 = `Invalid tool_call: ${JSON.stringify(name)}. ${JSON.stringify(singleFunctionToCall)} requested. Please try again`;
+          this._addMessage({ role, tool_call_id, content: content2 });
+          continue;
+        }
+        let parsed;
+        try {
+          parsed = isRunnableFunctionWithParse(fn) ? await fn.parse(args) : args;
+        } catch (error) {
+          const content2 = error instanceof Error ? error.message : String(error);
+          this._addMessage({ role, tool_call_id, content: content2 });
+          continue;
+        }
+        const rawContent = await fn.function(parsed, this);
+        const content = __classPrivateFieldGet(this, _AbstractChatCompletionRunner_instances, "m", _AbstractChatCompletionRunner_stringifyFunctionCallResult).call(this, rawContent);
+        this._addMessage({ role, tool_call_id, content });
+        if (singleFunctionToCall) {
+          return;
+        }
+      }
+    }
+    return;
+  }
+};
+_AbstractChatCompletionRunner_instances = /* @__PURE__ */ new WeakSet(), _AbstractChatCompletionRunner_getFinalContent = function _AbstractChatCompletionRunner_getFinalContent2() {
+  var _a3;
+  return (_a3 = __classPrivateFieldGet(this, _AbstractChatCompletionRunner_instances, "m", _AbstractChatCompletionRunner_getFinalMessage).call(this).content) != null ? _a3 : null;
+}, _AbstractChatCompletionRunner_getFinalMessage = function _AbstractChatCompletionRunner_getFinalMessage2() {
+  var _a3, _b;
+  let i = this.messages.length;
+  while (i-- > 0) {
+    const message = this.messages[i];
+    if (isAssistantMessage(message)) {
+      const ret = {
+        ...message,
+        content: (_a3 = message.content) != null ? _a3 : null,
+        refusal: (_b = message.refusal) != null ? _b : null
+      };
+      return ret;
+    }
+  }
+  throw new OpenAIError("stream ended without producing a ChatCompletionMessage with role=assistant");
+}, _AbstractChatCompletionRunner_getFinalFunctionToolCall = function _AbstractChatCompletionRunner_getFinalFunctionToolCall2() {
+  var _a3, _b;
+  for (let i = this.messages.length - 1; i >= 0; i--) {
+    const message = this.messages[i];
+    if (isAssistantMessage(message) && ((_a3 = message == null ? void 0 : message.tool_calls) == null ? void 0 : _a3.length)) {
+      return (_b = message.tool_calls.filter((x) => x.type === "function").at(-1)) == null ? void 0 : _b.function;
+    }
+  }
+  return;
+}, _AbstractChatCompletionRunner_getFinalFunctionToolCallResult = function _AbstractChatCompletionRunner_getFinalFunctionToolCallResult2() {
+  for (let i = this.messages.length - 1; i >= 0; i--) {
+    const message = this.messages[i];
+    if (isToolMessage(message) && message.content != null && typeof message.content === "string" && this.messages.some((x) => {
+      var _a3;
+      return x.role === "assistant" && ((_a3 = x.tool_calls) == null ? void 0 : _a3.some((y) => y.type === "function" && y.id === message.tool_call_id));
+    })) {
+      return message.content;
+    }
+  }
+  return;
+}, _AbstractChatCompletionRunner_calculateTotalUsage = function _AbstractChatCompletionRunner_calculateTotalUsage2() {
+  const total = {
+    completion_tokens: 0,
+    prompt_tokens: 0,
+    total_tokens: 0
+  };
+  for (const { usage } of this._chatCompletions) {
+    if (usage) {
+      total.completion_tokens += usage.completion_tokens;
+      total.prompt_tokens += usage.prompt_tokens;
+      total.total_tokens += usage.total_tokens;
+    }
+  }
+  return total;
+}, _AbstractChatCompletionRunner_validateParams = function _AbstractChatCompletionRunner_validateParams2(params) {
+  if (params.n != null && params.n > 1) {
+    throw new OpenAIError("ChatCompletion convenience helpers only support n=1 at this time. To use n>1, please use chat.completions.create() directly.");
+  }
+}, _AbstractChatCompletionRunner_stringifyFunctionCallResult = function _AbstractChatCompletionRunner_stringifyFunctionCallResult2(rawContent) {
+  return typeof rawContent === "string" ? rawContent : rawContent === void 0 ? "undefined" : JSON.stringify(rawContent);
+};
+
+// node_modules/openai/lib/ChatCompletionRunner.mjs
+var ChatCompletionRunner = class extends AbstractChatCompletionRunner {
+  static runTools(client, params, options) {
+    const runner = new ChatCompletionRunner();
+    const opts = {
+      ...options,
+      headers: { ...options == null ? void 0 : options.headers, "X-Stainless-Helper-Method": "runTools" }
+    };
+    runner._run(() => runner._runTools(client, params, opts));
+    return runner;
+  }
+  _addMessage(message, emit = true) {
+    super._addMessage(message, emit);
+    if (isAssistantMessage(message) && message.content) {
+      this._emit("content", message.content);
+    }
+  }
+};
+
+// node_modules/openai/_vendor/partial-json-parser/parser.mjs
+var STR = 1;
+var NUM = 2;
+var ARR = 4;
+var OBJ = 8;
+var NULL = 16;
+var BOOL = 32;
+var NAN = 64;
+var INFINITY = 128;
+var MINUS_INFINITY = 256;
+var INF = INFINITY | MINUS_INFINITY;
+var SPECIAL = NULL | BOOL | INF | NAN;
+var ATOM = STR | NUM | SPECIAL;
+var COLLECTION = ARR | OBJ;
+var ALL = ATOM | COLLECTION;
+var Allow = {
+  STR,
+  NUM,
+  ARR,
+  OBJ,
+  NULL,
+  BOOL,
+  NAN,
+  INFINITY,
+  MINUS_INFINITY,
+  INF,
+  SPECIAL,
+  ATOM,
+  COLLECTION,
+  ALL
+};
+var PartialJSON = class extends Error {
+};
+var MalformedJSON = class extends Error {
+};
+function parseJSON(jsonString, allowPartial = Allow.ALL) {
+  if (typeof jsonString !== "string") {
+    throw new TypeError(`expecting str, got ${typeof jsonString}`);
+  }
+  if (!jsonString.trim()) {
+    throw new Error(`${jsonString} is empty`);
+  }
+  return _parseJSON(jsonString.trim(), allowPartial);
+}
+var _parseJSON = (jsonString, allow) => {
+  const length = jsonString.length;
+  let index = 0;
+  const markPartialJSON = (msg) => {
+    throw new PartialJSON(`${msg} at position ${index}`);
+  };
+  const throwMalformedError = (msg) => {
+    throw new MalformedJSON(`${msg} at position ${index}`);
+  };
+  const parseAny = () => {
+    skipBlank();
+    if (index >= length)
+      markPartialJSON("Unexpected end of input");
+    if (jsonString[index] === '"')
+      return parseStr();
+    if (jsonString[index] === "{")
+      return parseObj();
+    if (jsonString[index] === "[")
+      return parseArr();
+    if (jsonString.substring(index, index + 4) === "null" || Allow.NULL & allow && length - index < 4 && "null".startsWith(jsonString.substring(index))) {
+      index += 4;
+      return null;
+    }
+    if (jsonString.substring(index, index + 4) === "true" || Allow.BOOL & allow && length - index < 4 && "true".startsWith(jsonString.substring(index))) {
+      index += 4;
+      return true;
+    }
+    if (jsonString.substring(index, index + 5) === "false" || Allow.BOOL & allow && length - index < 5 && "false".startsWith(jsonString.substring(index))) {
+      index += 5;
+      return false;
+    }
+    if (jsonString.substring(index, index + 8) === "Infinity" || Allow.INFINITY & allow && length - index < 8 && "Infinity".startsWith(jsonString.substring(index))) {
+      index += 8;
+      return Infinity;
+    }
+    if (jsonString.substring(index, index + 9) === "-Infinity" || Allow.MINUS_INFINITY & allow && 1 < length - index && length - index < 9 && "-Infinity".startsWith(jsonString.substring(index))) {
+      index += 9;
+      return -Infinity;
+    }
+    if (jsonString.substring(index, index + 3) === "NaN" || Allow.NAN & allow && length - index < 3 && "NaN".startsWith(jsonString.substring(index))) {
+      index += 3;
+      return NaN;
+    }
+    return parseNum();
+  };
+  const parseStr = () => {
+    const start = index;
+    let escape2 = false;
+    index++;
+    while (index < length && (jsonString[index] !== '"' || escape2 && jsonString[index - 1] === "\\")) {
+      escape2 = jsonString[index] === "\\" ? !escape2 : false;
+      index++;
+    }
+    if (jsonString.charAt(index) == '"') {
+      try {
+        return JSON.parse(jsonString.substring(start, ++index - Number(escape2)));
+      } catch (e) {
+        throwMalformedError(String(e));
+      }
+    } else if (Allow.STR & allow) {
+      try {
+        return JSON.parse(jsonString.substring(start, index - Number(escape2)) + '"');
+      } catch (e) {
+        return JSON.parse(jsonString.substring(start, jsonString.lastIndexOf("\\")) + '"');
+      }
+    }
+    markPartialJSON("Unterminated string literal");
+  };
+  const parseObj = () => {
+    index++;
+    skipBlank();
+    const obj = {};
+    try {
+      while (jsonString[index] !== "}") {
+        skipBlank();
+        if (index >= length && Allow.OBJ & allow)
+          return obj;
+        const key = parseStr();
+        skipBlank();
+        index++;
+        try {
+          const value = parseAny();
+          Object.defineProperty(obj, key, { value, writable: true, enumerable: true, configurable: true });
+        } catch (e) {
+          if (Allow.OBJ & allow)
+            return obj;
+          else
+            throw e;
+        }
+        skipBlank();
+        if (jsonString[index] === ",")
+          index++;
+      }
+    } catch (e) {
+      if (Allow.OBJ & allow)
+        return obj;
+      else
+        markPartialJSON("Expected '}' at end of object");
+    }
+    index++;
+    return obj;
+  };
+  const parseArr = () => {
+    index++;
+    const arr = [];
+    try {
+      while (jsonString[index] !== "]") {
+        arr.push(parseAny());
+        skipBlank();
+        if (jsonString[index] === ",") {
+          index++;
+        }
+      }
+    } catch (e) {
+      if (Allow.ARR & allow) {
+        return arr;
+      }
+      markPartialJSON("Expected ']' at end of array");
+    }
+    index++;
+    return arr;
+  };
+  const parseNum = () => {
+    if (index === 0) {
+      if (jsonString === "-" && Allow.NUM & allow)
+        markPartialJSON("Not sure what '-' is");
+      try {
+        return JSON.parse(jsonString);
+      } catch (e) {
+        if (Allow.NUM & allow) {
+          try {
+            if ("." === jsonString[jsonString.length - 1])
+              return JSON.parse(jsonString.substring(0, jsonString.lastIndexOf(".")));
+            return JSON.parse(jsonString.substring(0, jsonString.lastIndexOf("e")));
+          } catch (e2) {
+          }
+        }
+        throwMalformedError(String(e));
+      }
+    }
+    const start = index;
+    if (jsonString[index] === "-")
+      index++;
+    while (jsonString[index] && !",]}".includes(jsonString[index]))
+      index++;
+    if (index == length && !(Allow.NUM & allow))
+      markPartialJSON("Unterminated number literal");
+    try {
+      return JSON.parse(jsonString.substring(start, index));
+    } catch (e) {
+      if (jsonString.substring(start, index) === "-" && Allow.NUM & allow)
+        markPartialJSON("Not sure what '-' is");
+      try {
+        return JSON.parse(jsonString.substring(start, jsonString.lastIndexOf("e")));
+      } catch (e2) {
+        throwMalformedError(String(e2));
+      }
+    }
+  };
+  const skipBlank = () => {
+    while (index < length && " \n\r	".includes(jsonString[index])) {
+      index++;
+    }
+  };
+  return parseAny();
+};
+var partialParse = (input) => parseJSON(input, Allow.ALL ^ Allow.NUM);
+
+// node_modules/openai/lib/ChatCompletionStream.mjs
+var _ChatCompletionStream_instances;
+var _ChatCompletionStream_params;
+var _ChatCompletionStream_choiceEventStates;
+var _ChatCompletionStream_currentChatCompletionSnapshot;
+var _ChatCompletionStream_beginRequest;
+var _ChatCompletionStream_getChoiceEventState;
+var _ChatCompletionStream_addChunk;
+var _ChatCompletionStream_emitToolCallDoneEvent;
+var _ChatCompletionStream_emitContentDoneEvents;
+var _ChatCompletionStream_endRequest;
+var _ChatCompletionStream_getAutoParseableResponseFormat;
+var _ChatCompletionStream_accumulateChatCompletion;
+var ChatCompletionStream = class extends AbstractChatCompletionRunner {
+  constructor(params) {
+    super();
+    _ChatCompletionStream_instances.add(this);
+    _ChatCompletionStream_params.set(this, void 0);
+    _ChatCompletionStream_choiceEventStates.set(this, void 0);
+    _ChatCompletionStream_currentChatCompletionSnapshot.set(this, void 0);
+    __classPrivateFieldSet(this, _ChatCompletionStream_params, params, "f");
+    __classPrivateFieldSet(this, _ChatCompletionStream_choiceEventStates, [], "f");
+  }
+  get currentChatCompletionSnapshot() {
+    return __classPrivateFieldGet(this, _ChatCompletionStream_currentChatCompletionSnapshot, "f");
+  }
+  /**
+   * Intended for use on the frontend, consuming a stream produced with
+   * `.toReadableStream()` on the backend.
+   *
+   * Note that messages sent to the model do not appear in `.on('message')`
+   * in this context.
+   */
+  static fromReadableStream(stream) {
+    const runner = new ChatCompletionStream(null);
+    runner._run(() => runner._fromReadableStream(stream));
+    return runner;
+  }
+  static createChatCompletion(client, params, options) {
+    const runner = new ChatCompletionStream(params);
+    runner._run(() => runner._runChatCompletion(client, { ...params, stream: true }, { ...options, headers: { ...options == null ? void 0 : options.headers, "X-Stainless-Helper-Method": "stream" } }));
+    return runner;
+  }
+  async _createChatCompletion(client, params, options) {
+    var _a3;
+    super._createChatCompletion;
+    const signal = options == null ? void 0 : options.signal;
+    if (signal) {
+      if (signal.aborted)
+        this.controller.abort();
+      signal.addEventListener("abort", () => this.controller.abort());
+    }
+    __classPrivateFieldGet(this, _ChatCompletionStream_instances, "m", _ChatCompletionStream_beginRequest).call(this);
+    const stream = await client.chat.completions.create({ ...params, stream: true }, { ...options, signal: this.controller.signal });
+    this._connected();
+    for await (const chunk of stream) {
+      __classPrivateFieldGet(this, _ChatCompletionStream_instances, "m", _ChatCompletionStream_addChunk).call(this, chunk);
+    }
+    if ((_a3 = stream.controller.signal) == null ? void 0 : _a3.aborted) {
+      throw new APIUserAbortError();
+    }
+    return this._addChatCompletion(__classPrivateFieldGet(this, _ChatCompletionStream_instances, "m", _ChatCompletionStream_endRequest).call(this));
+  }
+  async _fromReadableStream(readableStream, options) {
+    var _a3;
+    const signal = options == null ? void 0 : options.signal;
+    if (signal) {
+      if (signal.aborted)
+        this.controller.abort();
+      signal.addEventListener("abort", () => this.controller.abort());
+    }
+    __classPrivateFieldGet(this, _ChatCompletionStream_instances, "m", _ChatCompletionStream_beginRequest).call(this);
+    this._connected();
+    const stream = Stream.fromReadableStream(readableStream, this.controller);
+    let chatId;
+    for await (const chunk of stream) {
+      if (chatId && chatId !== chunk.id) {
+        this._addChatCompletion(__classPrivateFieldGet(this, _ChatCompletionStream_instances, "m", _ChatCompletionStream_endRequest).call(this));
+      }
+      __classPrivateFieldGet(this, _ChatCompletionStream_instances, "m", _ChatCompletionStream_addChunk).call(this, chunk);
+      chatId = chunk.id;
+    }
+    if ((_a3 = stream.controller.signal) == null ? void 0 : _a3.aborted) {
+      throw new APIUserAbortError();
+    }
+    return this._addChatCompletion(__classPrivateFieldGet(this, _ChatCompletionStream_instances, "m", _ChatCompletionStream_endRequest).call(this));
+  }
+  [(_ChatCompletionStream_params = /* @__PURE__ */ new WeakMap(), _ChatCompletionStream_choiceEventStates = /* @__PURE__ */ new WeakMap(), _ChatCompletionStream_currentChatCompletionSnapshot = /* @__PURE__ */ new WeakMap(), _ChatCompletionStream_instances = /* @__PURE__ */ new WeakSet(), _ChatCompletionStream_beginRequest = function _ChatCompletionStream_beginRequest2() {
+    if (this.ended)
+      return;
+    __classPrivateFieldSet(this, _ChatCompletionStream_currentChatCompletionSnapshot, void 0, "f");
+  }, _ChatCompletionStream_getChoiceEventState = function _ChatCompletionStream_getChoiceEventState2(choice) {
+    let state = __classPrivateFieldGet(this, _ChatCompletionStream_choiceEventStates, "f")[choice.index];
+    if (state) {
+      return state;
+    }
+    state = {
+      content_done: false,
+      refusal_done: false,
+      logprobs_content_done: false,
+      logprobs_refusal_done: false,
+      done_tool_calls: /* @__PURE__ */ new Set(),
+      current_tool_call_index: null
+    };
+    __classPrivateFieldGet(this, _ChatCompletionStream_choiceEventStates, "f")[choice.index] = state;
+    return state;
+  }, _ChatCompletionStream_addChunk = function _ChatCompletionStream_addChunk2(chunk) {
+    var _a3, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n, _o, _p, _q, _r, _s, _t;
+    if (this.ended)
+      return;
+    const completion = __classPrivateFieldGet(this, _ChatCompletionStream_instances, "m", _ChatCompletionStream_accumulateChatCompletion).call(this, chunk);
+    this._emit("chunk", chunk, completion);
+    for (const choice of chunk.choices) {
+      const choiceSnapshot = completion.choices[choice.index];
+      if (choice.delta.content != null && ((_a3 = choiceSnapshot.message) == null ? void 0 : _a3.role) === "assistant" && ((_b = choiceSnapshot.message) == null ? void 0 : _b.content)) {
+        this._emit("content", choice.delta.content, choiceSnapshot.message.content);
+        this._emit("content.delta", {
+          delta: choice.delta.content,
+          snapshot: choiceSnapshot.message.content,
+          parsed: choiceSnapshot.message.parsed
+        });
+      }
+      if (choice.delta.refusal != null && ((_c = choiceSnapshot.message) == null ? void 0 : _c.role) === "assistant" && ((_d = choiceSnapshot.message) == null ? void 0 : _d.refusal)) {
+        this._emit("refusal.delta", {
+          delta: choice.delta.refusal,
+          snapshot: choiceSnapshot.message.refusal
+        });
+      }
+      if (((_e = choice.logprobs) == null ? void 0 : _e.content) != null && ((_f = choiceSnapshot.message) == null ? void 0 : _f.role) === "assistant") {
+        this._emit("logprobs.content.delta", {
+          content: (_g = choice.logprobs) == null ? void 0 : _g.content,
+          snapshot: (_i = (_h = choiceSnapshot.logprobs) == null ? void 0 : _h.content) != null ? _i : []
+        });
+      }
+      if (((_j = choice.logprobs) == null ? void 0 : _j.refusal) != null && ((_k = choiceSnapshot.message) == null ? void 0 : _k.role) === "assistant") {
+        this._emit("logprobs.refusal.delta", {
+          refusal: (_l = choice.logprobs) == null ? void 0 : _l.refusal,
+          snapshot: (_n = (_m = choiceSnapshot.logprobs) == null ? void 0 : _m.refusal) != null ? _n : []
+        });
+      }
+      const state = __classPrivateFieldGet(this, _ChatCompletionStream_instances, "m", _ChatCompletionStream_getChoiceEventState).call(this, choiceSnapshot);
+      if (choiceSnapshot.finish_reason) {
+        __classPrivateFieldGet(this, _ChatCompletionStream_instances, "m", _ChatCompletionStream_emitContentDoneEvents).call(this, choiceSnapshot);
+        if (state.current_tool_call_index != null) {
+          __classPrivateFieldGet(this, _ChatCompletionStream_instances, "m", _ChatCompletionStream_emitToolCallDoneEvent).call(this, choiceSnapshot, state.current_tool_call_index);
+        }
+      }
+      for (const toolCall of (_o = choice.delta.tool_calls) != null ? _o : []) {
+        if (state.current_tool_call_index !== toolCall.index) {
+          __classPrivateFieldGet(this, _ChatCompletionStream_instances, "m", _ChatCompletionStream_emitContentDoneEvents).call(this, choiceSnapshot);
+          if (state.current_tool_call_index != null) {
+            __classPrivateFieldGet(this, _ChatCompletionStream_instances, "m", _ChatCompletionStream_emitToolCallDoneEvent).call(this, choiceSnapshot, state.current_tool_call_index);
+          }
+        }
+        state.current_tool_call_index = toolCall.index;
+      }
+      for (const toolCallDelta of (_p = choice.delta.tool_calls) != null ? _p : []) {
+        const toolCallSnapshot = (_q = choiceSnapshot.message.tool_calls) == null ? void 0 : _q[toolCallDelta.index];
+        if (!(toolCallSnapshot == null ? void 0 : toolCallSnapshot.type)) {
+          continue;
+        }
+        if ((toolCallSnapshot == null ? void 0 : toolCallSnapshot.type) === "function") {
+          this._emit("tool_calls.function.arguments.delta", {
+            name: (_r = toolCallSnapshot.function) == null ? void 0 : _r.name,
+            index: toolCallDelta.index,
+            arguments: toolCallSnapshot.function.arguments,
+            parsed_arguments: toolCallSnapshot.function.parsed_arguments,
+            arguments_delta: (_t = (_s = toolCallDelta.function) == null ? void 0 : _s.arguments) != null ? _t : ""
+          });
+        } else {
+          assertNever(toolCallSnapshot == null ? void 0 : toolCallSnapshot.type);
+        }
+      }
+    }
+  }, _ChatCompletionStream_emitToolCallDoneEvent = function _ChatCompletionStream_emitToolCallDoneEvent2(choiceSnapshot, toolCallIndex) {
+    var _a3, _b, _c;
+    const state = __classPrivateFieldGet(this, _ChatCompletionStream_instances, "m", _ChatCompletionStream_getChoiceEventState).call(this, choiceSnapshot);
+    if (state.done_tool_calls.has(toolCallIndex)) {
+      return;
+    }
+    const toolCallSnapshot = (_a3 = choiceSnapshot.message.tool_calls) == null ? void 0 : _a3[toolCallIndex];
+    if (!toolCallSnapshot) {
+      throw new Error("no tool call snapshot");
+    }
+    if (!toolCallSnapshot.type) {
+      throw new Error("tool call snapshot missing `type`");
+    }
+    if (toolCallSnapshot.type === "function") {
+      const inputTool = (_c = (_b = __classPrivateFieldGet(this, _ChatCompletionStream_params, "f")) == null ? void 0 : _b.tools) == null ? void 0 : _c.find((tool) => isChatCompletionFunctionTool(tool) && tool.function.name === toolCallSnapshot.function.name);
+      this._emit("tool_calls.function.arguments.done", {
+        name: toolCallSnapshot.function.name,
+        index: toolCallIndex,
+        arguments: toolCallSnapshot.function.arguments,
+        parsed_arguments: isAutoParsableTool(inputTool) ? inputTool.$parseRaw(toolCallSnapshot.function.arguments) : (inputTool == null ? void 0 : inputTool.function.strict) ? JSON.parse(toolCallSnapshot.function.arguments) : null
+      });
+    } else {
+      assertNever(toolCallSnapshot.type);
+    }
+  }, _ChatCompletionStream_emitContentDoneEvents = function _ChatCompletionStream_emitContentDoneEvents2(choiceSnapshot) {
+    var _a3, _b;
+    const state = __classPrivateFieldGet(this, _ChatCompletionStream_instances, "m", _ChatCompletionStream_getChoiceEventState).call(this, choiceSnapshot);
+    if (choiceSnapshot.message.content && !state.content_done) {
+      state.content_done = true;
+      const responseFormat = __classPrivateFieldGet(this, _ChatCompletionStream_instances, "m", _ChatCompletionStream_getAutoParseableResponseFormat).call(this);
+      this._emit("content.done", {
+        content: choiceSnapshot.message.content,
+        parsed: responseFormat ? responseFormat.$parseRaw(choiceSnapshot.message.content) : null
+      });
+    }
+    if (choiceSnapshot.message.refusal && !state.refusal_done) {
+      state.refusal_done = true;
+      this._emit("refusal.done", { refusal: choiceSnapshot.message.refusal });
+    }
+    if (((_a3 = choiceSnapshot.logprobs) == null ? void 0 : _a3.content) && !state.logprobs_content_done) {
+      state.logprobs_content_done = true;
+      this._emit("logprobs.content.done", { content: choiceSnapshot.logprobs.content });
+    }
+    if (((_b = choiceSnapshot.logprobs) == null ? void 0 : _b.refusal) && !state.logprobs_refusal_done) {
+      state.logprobs_refusal_done = true;
+      this._emit("logprobs.refusal.done", { refusal: choiceSnapshot.logprobs.refusal });
+    }
+  }, _ChatCompletionStream_endRequest = function _ChatCompletionStream_endRequest2() {
+    if (this.ended) {
+      throw new OpenAIError(`stream has ended, this shouldn't happen`);
+    }
+    const snapshot = __classPrivateFieldGet(this, _ChatCompletionStream_currentChatCompletionSnapshot, "f");
+    if (!snapshot) {
+      throw new OpenAIError(`request ended without sending any chunks`);
+    }
+    __classPrivateFieldSet(this, _ChatCompletionStream_currentChatCompletionSnapshot, void 0, "f");
+    __classPrivateFieldSet(this, _ChatCompletionStream_choiceEventStates, [], "f");
+    return finalizeChatCompletion(snapshot, __classPrivateFieldGet(this, _ChatCompletionStream_params, "f"));
+  }, _ChatCompletionStream_getAutoParseableResponseFormat = function _ChatCompletionStream_getAutoParseableResponseFormat2() {
+    var _a3;
+    const responseFormat = (_a3 = __classPrivateFieldGet(this, _ChatCompletionStream_params, "f")) == null ? void 0 : _a3.response_format;
+    if (isAutoParsableResponseFormat(responseFormat)) {
+      return responseFormat;
+    }
+    return null;
+  }, _ChatCompletionStream_accumulateChatCompletion = function _ChatCompletionStream_accumulateChatCompletion2(chunk) {
+    var _a4, _b2, _c2, _d2, _e, _f;
+    var _a3, _b, _c, _d;
+    let snapshot = __classPrivateFieldGet(this, _ChatCompletionStream_currentChatCompletionSnapshot, "f");
+    const { choices, ...rest } = chunk;
+    if (!snapshot) {
+      snapshot = __classPrivateFieldSet(this, _ChatCompletionStream_currentChatCompletionSnapshot, {
+        ...rest,
+        choices: []
+      }, "f");
+    } else {
+      Object.assign(snapshot, rest);
+    }
+    for (const { delta, finish_reason, index, logprobs = null, ...other } of chunk.choices) {
+      let choice = snapshot.choices[index];
+      if (!choice) {
+        choice = snapshot.choices[index] = { finish_reason, index, message: {}, logprobs, ...other };
+      }
+      if (logprobs) {
+        if (!choice.logprobs) {
+          choice.logprobs = Object.assign({}, logprobs);
+        } else {
+          const { content: content2, refusal: refusal2, ...rest3 } = logprobs;
+          assertIsEmpty(rest3);
+          Object.assign(choice.logprobs, rest3);
+          if (content2) {
+            (_a4 = (_a3 = choice.logprobs).content) != null ? _a4 : _a3.content = [];
+            choice.logprobs.content.push(...content2);
+          }
+          if (refusal2) {
+            (_b2 = (_b = choice.logprobs).refusal) != null ? _b2 : _b.refusal = [];
+            choice.logprobs.refusal.push(...refusal2);
+          }
+        }
+      }
+      if (finish_reason) {
+        choice.finish_reason = finish_reason;
+        if (__classPrivateFieldGet(this, _ChatCompletionStream_params, "f") && hasAutoParseableInput(__classPrivateFieldGet(this, _ChatCompletionStream_params, "f"))) {
+          if (finish_reason === "length") {
+            throw new LengthFinishReasonError();
+          }
+          if (finish_reason === "content_filter") {
+            throw new ContentFilterFinishReasonError();
+          }
+        }
+      }
+      Object.assign(choice, other);
+      if (!delta)
+        continue;
+      const { content, refusal, function_call, role, tool_calls, ...rest2 } = delta;
+      assertIsEmpty(rest2);
+      Object.assign(choice.message, rest2);
+      if (refusal) {
+        choice.message.refusal = (choice.message.refusal || "") + refusal;
+      }
+      if (role)
+        choice.message.role = role;
+      if (function_call) {
+        if (!choice.message.function_call) {
+          choice.message.function_call = function_call;
+        } else {
+          if (function_call.name)
+            choice.message.function_call.name = function_call.name;
+          if (function_call.arguments) {
+            (_c2 = (_c = choice.message.function_call).arguments) != null ? _c2 : _c.arguments = "";
+            choice.message.function_call.arguments += function_call.arguments;
+          }
+        }
+      }
+      if (content) {
+        choice.message.content = (choice.message.content || "") + content;
+        if (!choice.message.refusal && __classPrivateFieldGet(this, _ChatCompletionStream_instances, "m", _ChatCompletionStream_getAutoParseableResponseFormat).call(this)) {
+          choice.message.parsed = partialParse(choice.message.content);
+        }
+      }
+      if (tool_calls) {
+        if (!choice.message.tool_calls)
+          choice.message.tool_calls = [];
+        for (const { index: index2, id, type, function: fn, ...rest3 } of tool_calls) {
+          const tool_call = (_d2 = (_d = choice.message.tool_calls)[index2]) != null ? _d2 : _d[index2] = {};
+          Object.assign(tool_call, rest3);
+          if (id)
+            tool_call.id = id;
+          if (type)
+            tool_call.type = type;
+          if (fn)
+            (_f = tool_call.function) != null ? _f : tool_call.function = { name: (_e = fn.name) != null ? _e : "", arguments: "" };
+          if (fn == null ? void 0 : fn.name)
+            tool_call.function.name = fn.name;
+          if (fn == null ? void 0 : fn.arguments) {
+            tool_call.function.arguments += fn.arguments;
+            if (shouldParseToolCall(__classPrivateFieldGet(this, _ChatCompletionStream_params, "f"), tool_call)) {
+              tool_call.function.parsed_arguments = partialParse(tool_call.function.arguments);
+            }
+          }
+        }
+      }
+    }
+    return snapshot;
+  }, Symbol.asyncIterator)]() {
+    const pushQueue = [];
+    const readQueue = [];
+    let done = false;
+    this.on("chunk", (chunk) => {
+      const reader = readQueue.shift();
+      if (reader) {
+        reader.resolve(chunk);
+      } else {
+        pushQueue.push(chunk);
+      }
+    });
+    this.on("end", () => {
+      done = true;
+      for (const reader of readQueue) {
+        reader.resolve(void 0);
+      }
+      readQueue.length = 0;
+    });
+    this.on("abort", (err) => {
+      done = true;
+      for (const reader of readQueue) {
+        reader.reject(err);
+      }
+      readQueue.length = 0;
+    });
+    this.on("error", (err) => {
+      done = true;
+      for (const reader of readQueue) {
+        reader.reject(err);
+      }
+      readQueue.length = 0;
+    });
+    return {
+      next: async () => {
+        if (!pushQueue.length) {
+          if (done) {
+            return { value: void 0, done: true };
+          }
+          return new Promise((resolve, reject) => readQueue.push({ resolve, reject })).then((chunk2) => chunk2 ? { value: chunk2, done: false } : { value: void 0, done: true });
+        }
+        const chunk = pushQueue.shift();
+        return { value: chunk, done: false };
+      },
+      return: async () => {
+        this.abort();
+        return { value: void 0, done: true };
+      }
+    };
+  }
+  toReadableStream() {
+    const stream = new Stream(this[Symbol.asyncIterator].bind(this), this.controller);
+    return stream.toReadableStream();
+  }
+};
+function finalizeChatCompletion(snapshot, params) {
+  const { id, choices, created, model, system_fingerprint, ...rest } = snapshot;
+  const completion = {
+    ...rest,
+    id,
+    choices: choices.map(({ message, finish_reason, index, logprobs, ...choiceRest }) => {
+      var _a3, _b, _c;
+      if (!finish_reason) {
+        throw new OpenAIError(`missing finish_reason for choice ${index}`);
+      }
+      const { content = null, function_call, tool_calls, ...messageRest } = message;
+      const role = message.role;
+      if (!role) {
+        throw new OpenAIError(`missing role for choice ${index}`);
+      }
+      if (function_call) {
+        const { arguments: args, name } = function_call;
+        if (args == null) {
+          throw new OpenAIError(`missing function_call.arguments for choice ${index}`);
+        }
+        if (!name) {
+          throw new OpenAIError(`missing function_call.name for choice ${index}`);
+        }
+        return {
+          ...choiceRest,
+          message: {
+            content,
+            function_call: { arguments: args, name },
+            role,
+            refusal: (_a3 = message.refusal) != null ? _a3 : null
+          },
+          finish_reason,
+          index,
+          logprobs
+        };
+      }
+      if (tool_calls) {
+        return {
+          ...choiceRest,
+          index,
+          finish_reason,
+          logprobs,
+          message: {
+            ...messageRest,
+            role,
+            content,
+            refusal: (_b = message.refusal) != null ? _b : null,
+            tool_calls: tool_calls.map((tool_call, i) => {
+              const { function: fn, type, id: id2, ...toolRest } = tool_call;
+              const { arguments: args, name, ...fnRest } = fn || {};
+              if (id2 == null) {
+                throw new OpenAIError(`missing choices[${index}].tool_calls[${i}].id
+${str(snapshot)}`);
+              }
+              if (type == null) {
+                throw new OpenAIError(`missing choices[${index}].tool_calls[${i}].type
+${str(snapshot)}`);
+              }
+              if (name == null) {
+                throw new OpenAIError(`missing choices[${index}].tool_calls[${i}].function.name
+${str(snapshot)}`);
+              }
+              if (args == null) {
+                throw new OpenAIError(`missing choices[${index}].tool_calls[${i}].function.arguments
+${str(snapshot)}`);
+              }
+              return { ...toolRest, id: id2, type, function: { ...fnRest, name, arguments: args } };
+            })
+          }
+        };
+      }
+      return {
+        ...choiceRest,
+        message: { ...messageRest, content, role, refusal: (_c = message.refusal) != null ? _c : null },
+        finish_reason,
+        index,
+        logprobs
+      };
+    }),
+    created,
+    model,
+    object: "chat.completion",
+    ...system_fingerprint ? { system_fingerprint } : {}
+  };
+  return maybeParseChatCompletion(completion, params);
+}
+function str(x) {
+  return JSON.stringify(x);
+}
+function assertIsEmpty(obj) {
+  return;
+}
+function assertNever(_x) {
+}
+
+// node_modules/openai/lib/ChatCompletionStreamingRunner.mjs
+var ChatCompletionStreamingRunner = class extends ChatCompletionStream {
+  static fromReadableStream(stream) {
+    const runner = new ChatCompletionStreamingRunner(null);
+    runner._run(() => runner._fromReadableStream(stream));
+    return runner;
+  }
+  static runTools(client, params, options) {
+    const runner = new ChatCompletionStreamingRunner(
+      // @ts-expect-error TODO these types are incompatible
+      params
+    );
+    const opts = {
+      ...options,
+      headers: { ...options == null ? void 0 : options.headers, "X-Stainless-Helper-Method": "runTools" }
+    };
+    runner._run(() => runner._runTools(client, params, opts));
+    return runner;
+  }
+};
+
+// node_modules/openai/resources/chat/completions/completions.mjs
+var Completions = class extends APIResource {
+  constructor() {
+    super(...arguments);
+    this.messages = new Messages(this._client);
+  }
+  create(body, options) {
+    var _a3;
+    return this._client.post("/chat/completions", { body, ...options, stream: (_a3 = body.stream) != null ? _a3 : false });
+  }
+  /**
+   * Get a stored chat completion. Only Chat Completions that have been created with
+   * the `store` parameter set to `true` will be returned.
+   *
+   * @example
+   * ```ts
+   * const chatCompletion =
+   *   await client.chat.completions.retrieve('completion_id');
+   * ```
+   */
+  retrieve(completionID, options) {
+    return this._client.get(path`/chat/completions/${completionID}`, options);
+  }
+  /**
+   * Modify a stored chat completion. Only Chat Completions that have been created
+   * with the `store` parameter set to `true` can be modified. Currently, the only
+   * supported modification is to update the `metadata` field.
+   *
+   * @example
+   * ```ts
+   * const chatCompletion = await client.chat.completions.update(
+   *   'completion_id',
+   *   { metadata: { foo: 'string' } },
+   * );
+   * ```
+   */
+  update(completionID, body, options) {
+    return this._client.post(path`/chat/completions/${completionID}`, { body, ...options });
+  }
+  /**
+   * List stored Chat Completions. Only Chat Completions that have been stored with
+   * the `store` parameter set to `true` will be returned.
+   *
+   * @example
+   * ```ts
+   * // Automatically fetches more pages as needed.
+   * for await (const chatCompletion of client.chat.completions.list()) {
+   *   // ...
+   * }
+   * ```
+   */
+  list(query = {}, options) {
+    return this._client.getAPIList("/chat/completions", CursorPage, { query, ...options });
+  }
+  /**
+   * Delete a stored chat completion. Only Chat Completions that have been created
+   * with the `store` parameter set to `true` can be deleted.
+   *
+   * @example
+   * ```ts
+   * const chatCompletionDeleted =
+   *   await client.chat.completions.delete('completion_id');
+   * ```
+   */
+  delete(completionID, options) {
+    return this._client.delete(path`/chat/completions/${completionID}`, options);
+  }
+  parse(body, options) {
+    validateInputTools(body.tools);
+    return this._client.chat.completions.create(body, {
+      ...options,
+      headers: {
+        ...options == null ? void 0 : options.headers,
+        "X-Stainless-Helper-Method": "chat.completions.parse"
+      }
+    })._thenUnwrap((completion) => parseChatCompletion(completion, body));
+  }
+  runTools(body, options) {
+    if (body.stream) {
+      return ChatCompletionStreamingRunner.runTools(this._client, body, options);
+    }
+    return ChatCompletionRunner.runTools(this._client, body, options);
+  }
+  /**
+   * Creates a chat completion stream
+   */
+  stream(body, options) {
+    return ChatCompletionStream.createChatCompletion(this._client, body, options);
+  }
+};
+Completions.Messages = Messages;
+
+// node_modules/openai/resources/chat/chat.mjs
+var Chat = class extends APIResource {
+  constructor() {
+    super(...arguments);
+    this.completions = new Completions(this._client);
+  }
+};
+Chat.Completions = Completions;
+
+// node_modules/openai/internal/headers.mjs
+var brand_privateNullableHeaders = /* @__PURE__ */ Symbol("brand.privateNullableHeaders");
+function* iterateHeaders(headers) {
+  if (!headers)
+    return;
+  if (brand_privateNullableHeaders in headers) {
+    const { values, nulls } = headers;
+    yield* values.entries();
+    for (const name of nulls) {
+      yield [name, null];
+    }
+    return;
+  }
+  let shouldClear = false;
+  let iter;
+  if (headers instanceof Headers) {
+    iter = headers.entries();
+  } else if (isReadonlyArray(headers)) {
+    iter = headers;
+  } else {
+    shouldClear = true;
+    iter = Object.entries(headers != null ? headers : {});
+  }
+  for (let row of iter) {
+    const name = row[0];
+    if (typeof name !== "string")
+      throw new TypeError("expected header name to be a string");
+    const values = isReadonlyArray(row[1]) ? row[1] : [row[1]];
+    let didClear = false;
+    for (const value of values) {
+      if (value === void 0)
+        continue;
+      if (shouldClear && !didClear) {
+        didClear = true;
+        yield [name, null];
+      }
+      yield [name, value];
+    }
+  }
+}
+var buildHeaders = (newHeaders) => {
+  const targetHeaders = new Headers();
+  const nullHeaders = /* @__PURE__ */ new Set();
+  for (const headers of newHeaders) {
+    const seenHeaders = /* @__PURE__ */ new Set();
+    for (const [name, value] of iterateHeaders(headers)) {
+      const lowerName = name.toLowerCase();
+      if (!seenHeaders.has(lowerName)) {
+        targetHeaders.delete(name);
+        seenHeaders.add(lowerName);
+      }
+      if (value === null) {
+        targetHeaders.delete(name);
+        nullHeaders.add(lowerName);
+      } else {
+        targetHeaders.append(name, value);
+        nullHeaders.delete(lowerName);
+      }
+    }
+  }
+  return { [brand_privateNullableHeaders]: true, values: targetHeaders, nulls: nullHeaders };
+};
+
+// node_modules/openai/resources/audio/speech.mjs
+var Speech = class extends APIResource {
+  /**
+   * Generates audio from the input text.
+   *
+   * @example
+   * ```ts
+   * const speech = await client.audio.speech.create({
+   *   input: 'input',
+   *   model: 'string',
+   *   voice: 'ash',
+   * });
+   *
+   * const content = await speech.blob();
+   * console.log(content);
+   * ```
+   */
+  create(body, options) {
+    return this._client.post("/audio/speech", {
+      body,
+      ...options,
+      headers: buildHeaders([{ Accept: "application/octet-stream" }, options == null ? void 0 : options.headers]),
+      __binaryResponse: true
+    });
+  }
+};
+
+// node_modules/openai/resources/audio/transcriptions.mjs
+var Transcriptions = class extends APIResource {
+  create(body, options) {
+    var _a3;
+    return this._client.post("/audio/transcriptions", multipartFormRequestOptions({
+      body,
+      ...options,
+      stream: (_a3 = body.stream) != null ? _a3 : false,
+      __metadata: { model: body.model }
+    }, this._client));
+  }
+};
+
+// node_modules/openai/resources/audio/translations.mjs
+var Translations = class extends APIResource {
+  create(body, options) {
+    return this._client.post("/audio/translations", multipartFormRequestOptions({ body, ...options, __metadata: { model: body.model } }, this._client));
+  }
+};
+
+// node_modules/openai/resources/audio/audio.mjs
+var Audio = class extends APIResource {
+  constructor() {
+    super(...arguments);
+    this.transcriptions = new Transcriptions(this._client);
+    this.translations = new Translations(this._client);
+    this.speech = new Speech(this._client);
+  }
+};
+Audio.Transcriptions = Transcriptions;
+Audio.Translations = Translations;
+Audio.Speech = Speech;
+
+// node_modules/openai/resources/batches.mjs
+var Batches = class extends APIResource {
+  /**
+   * Creates and executes a batch from an uploaded file of requests
+   */
+  create(body, options) {
+    return this._client.post("/batches", { body, ...options });
+  }
+  /**
+   * Retrieves a batch.
+   */
+  retrieve(batchID, options) {
+    return this._client.get(path`/batches/${batchID}`, options);
+  }
+  /**
+   * List your organization's batches.
+   */
+  list(query = {}, options) {
+    return this._client.getAPIList("/batches", CursorPage, { query, ...options });
+  }
+  /**
+   * Cancels an in-progress batch. The batch will be in status `cancelling` for up to
+   * 10 minutes, before changing to `cancelled`, where it will have partial results
+   * (if any) available in the output file.
+   */
+  cancel(batchID, options) {
+    return this._client.post(path`/batches/${batchID}/cancel`, options);
+  }
+};
+
+// node_modules/openai/resources/beta/assistants.mjs
+var Assistants = class extends APIResource {
+  /**
+   * Create an assistant with a model and instructions.
+   *
+   * @example
+   * ```ts
+   * const assistant = await client.beta.assistants.create({
+   *   model: 'gpt-4o',
+   * });
+   * ```
+   */
+  create(body, options) {
+    return this._client.post("/assistants", {
+      body,
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Retrieves an assistant.
+   *
+   * @example
+   * ```ts
+   * const assistant = await client.beta.assistants.retrieve(
+   *   'assistant_id',
+   * );
+   * ```
+   */
+  retrieve(assistantID, options) {
+    return this._client.get(path`/assistants/${assistantID}`, {
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Modifies an assistant.
+   *
+   * @example
+   * ```ts
+   * const assistant = await client.beta.assistants.update(
+   *   'assistant_id',
+   * );
+   * ```
+   */
+  update(assistantID, body, options) {
+    return this._client.post(path`/assistants/${assistantID}`, {
+      body,
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Returns a list of assistants.
+   *
+   * @example
+   * ```ts
+   * // Automatically fetches more pages as needed.
+   * for await (const assistant of client.beta.assistants.list()) {
+   *   // ...
+   * }
+   * ```
+   */
+  list(query = {}, options) {
+    return this._client.getAPIList("/assistants", CursorPage, {
+      query,
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Delete an assistant.
+   *
+   * @example
+   * ```ts
+   * const assistantDeleted =
+   *   await client.beta.assistants.delete('assistant_id');
+   * ```
+   */
+  delete(assistantID, options) {
+    return this._client.delete(path`/assistants/${assistantID}`, {
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+};
+
+// node_modules/openai/resources/beta/realtime/sessions.mjs
+var Sessions = class extends APIResource {
+  /**
+   * Create an ephemeral API token for use in client-side applications with the
+   * Realtime API. Can be configured with the same session parameters as the
+   * `session.update` client event.
+   *
+   * It responds with a session object, plus a `client_secret` key which contains a
+   * usable ephemeral API token that can be used to authenticate browser clients for
+   * the Realtime API.
+   *
+   * @example
+   * ```ts
+   * const session =
+   *   await client.beta.realtime.sessions.create();
+   * ```
+   */
+  create(body, options) {
+    return this._client.post("/realtime/sessions", {
+      body,
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+};
+
+// node_modules/openai/resources/beta/realtime/transcription-sessions.mjs
+var TranscriptionSessions = class extends APIResource {
+  /**
+   * Create an ephemeral API token for use in client-side applications with the
+   * Realtime API specifically for realtime transcriptions. Can be configured with
+   * the same session parameters as the `transcription_session.update` client event.
+   *
+   * It responds with a session object, plus a `client_secret` key which contains a
+   * usable ephemeral API token that can be used to authenticate browser clients for
+   * the Realtime API.
+   *
+   * @example
+   * ```ts
+   * const transcriptionSession =
+   *   await client.beta.realtime.transcriptionSessions.create();
+   * ```
+   */
+  create(body, options) {
+    return this._client.post("/realtime/transcription_sessions", {
+      body,
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+};
+
+// node_modules/openai/resources/beta/realtime/realtime.mjs
+var Realtime = class extends APIResource {
+  constructor() {
+    super(...arguments);
+    this.sessions = new Sessions(this._client);
+    this.transcriptionSessions = new TranscriptionSessions(this._client);
+  }
+};
+Realtime.Sessions = Sessions;
+Realtime.TranscriptionSessions = TranscriptionSessions;
+
+// node_modules/openai/resources/beta/threads/messages.mjs
+var Messages2 = class extends APIResource {
+  /**
+   * Create a message.
+   *
+   * @deprecated The Assistants API is deprecated in favor of the Responses API
+   */
+  create(threadID, body, options) {
+    return this._client.post(path`/threads/${threadID}/messages`, {
+      body,
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Retrieve a message.
+   *
+   * @deprecated The Assistants API is deprecated in favor of the Responses API
+   */
+  retrieve(messageID, params, options) {
+    const { thread_id } = params;
+    return this._client.get(path`/threads/${thread_id}/messages/${messageID}`, {
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Modifies a message.
+   *
+   * @deprecated The Assistants API is deprecated in favor of the Responses API
+   */
+  update(messageID, params, options) {
+    const { thread_id, ...body } = params;
+    return this._client.post(path`/threads/${thread_id}/messages/${messageID}`, {
+      body,
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Returns a list of messages for a given thread.
+   *
+   * @deprecated The Assistants API is deprecated in favor of the Responses API
+   */
+  list(threadID, query = {}, options) {
+    return this._client.getAPIList(path`/threads/${threadID}/messages`, CursorPage, {
+      query,
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Deletes a message.
+   *
+   * @deprecated The Assistants API is deprecated in favor of the Responses API
+   */
+  delete(messageID, params, options) {
+    const { thread_id } = params;
+    return this._client.delete(path`/threads/${thread_id}/messages/${messageID}`, {
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+};
+
+// node_modules/openai/resources/beta/threads/runs/steps.mjs
+var Steps = class extends APIResource {
+  /**
+   * Retrieves a run step.
+   *
+   * @deprecated The Assistants API is deprecated in favor of the Responses API
+   */
+  retrieve(stepID, params, options) {
+    const { thread_id, run_id, ...query } = params;
+    return this._client.get(path`/threads/${thread_id}/runs/${run_id}/steps/${stepID}`, {
+      query,
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Returns a list of run steps belonging to a run.
+   *
+   * @deprecated The Assistants API is deprecated in favor of the Responses API
+   */
+  list(runID, params, options) {
+    const { thread_id, ...query } = params;
+    return this._client.getAPIList(path`/threads/${thread_id}/runs/${runID}/steps`, CursorPage, {
+      query,
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+};
+
+// node_modules/openai/internal/utils/base64.mjs
+var toFloat32Array = (base64Str) => {
+  if (typeof Buffer !== "undefined") {
+    const buf = Buffer.from(base64Str, "base64");
+    return Array.from(new Float32Array(buf.buffer, buf.byteOffset, buf.length / Float32Array.BYTES_PER_ELEMENT));
+  } else {
+    const binaryStr = atob(base64Str);
+    const len = binaryStr.length;
+    const bytes = new Uint8Array(len);
+    for (let i = 0; i < len; i++) {
+      bytes[i] = binaryStr.charCodeAt(i);
+    }
+    return Array.from(new Float32Array(bytes.buffer));
+  }
+};
+
+// node_modules/openai/internal/utils/env.mjs
+var readEnv = (env) => {
+  var _a3, _b, _c, _d, _e, _f;
+  if (typeof globalThis.process !== "undefined") {
+    return (_c = (_b = (_a3 = globalThis.process.env) == null ? void 0 : _a3[env]) == null ? void 0 : _b.trim()) != null ? _c : void 0;
+  }
+  if (typeof globalThis.Deno !== "undefined") {
+    return (_f = (_e = (_d = globalThis.Deno.env) == null ? void 0 : _d.get) == null ? void 0 : _e.call(_d, env)) == null ? void 0 : _f.trim();
+  }
+  return void 0;
+};
+
+// node_modules/openai/lib/AssistantStream.mjs
+var _AssistantStream_instances;
+var _a;
+var _AssistantStream_events;
+var _AssistantStream_runStepSnapshots;
+var _AssistantStream_messageSnapshots;
+var _AssistantStream_messageSnapshot;
+var _AssistantStream_finalRun;
+var _AssistantStream_currentContentIndex;
+var _AssistantStream_currentContent;
+var _AssistantStream_currentToolCallIndex;
+var _AssistantStream_currentToolCall;
+var _AssistantStream_currentEvent;
+var _AssistantStream_currentRunSnapshot;
+var _AssistantStream_currentRunStepSnapshot;
+var _AssistantStream_addEvent;
+var _AssistantStream_endRequest;
+var _AssistantStream_handleMessage;
+var _AssistantStream_handleRunStep;
+var _AssistantStream_handleEvent;
+var _AssistantStream_accumulateRunStep;
+var _AssistantStream_accumulateMessage;
+var _AssistantStream_accumulateContent;
+var _AssistantStream_handleRun;
+var AssistantStream = class extends EventStream {
+  constructor() {
+    super(...arguments);
+    _AssistantStream_instances.add(this);
+    _AssistantStream_events.set(this, []);
+    _AssistantStream_runStepSnapshots.set(this, {});
+    _AssistantStream_messageSnapshots.set(this, {});
+    _AssistantStream_messageSnapshot.set(this, void 0);
+    _AssistantStream_finalRun.set(this, void 0);
+    _AssistantStream_currentContentIndex.set(this, void 0);
+    _AssistantStream_currentContent.set(this, void 0);
+    _AssistantStream_currentToolCallIndex.set(this, void 0);
+    _AssistantStream_currentToolCall.set(this, void 0);
+    _AssistantStream_currentEvent.set(this, void 0);
+    _AssistantStream_currentRunSnapshot.set(this, void 0);
+    _AssistantStream_currentRunStepSnapshot.set(this, void 0);
+  }
+  [(_AssistantStream_events = /* @__PURE__ */ new WeakMap(), _AssistantStream_runStepSnapshots = /* @__PURE__ */ new WeakMap(), _AssistantStream_messageSnapshots = /* @__PURE__ */ new WeakMap(), _AssistantStream_messageSnapshot = /* @__PURE__ */ new WeakMap(), _AssistantStream_finalRun = /* @__PURE__ */ new WeakMap(), _AssistantStream_currentContentIndex = /* @__PURE__ */ new WeakMap(), _AssistantStream_currentContent = /* @__PURE__ */ new WeakMap(), _AssistantStream_currentToolCallIndex = /* @__PURE__ */ new WeakMap(), _AssistantStream_currentToolCall = /* @__PURE__ */ new WeakMap(), _AssistantStream_currentEvent = /* @__PURE__ */ new WeakMap(), _AssistantStream_currentRunSnapshot = /* @__PURE__ */ new WeakMap(), _AssistantStream_currentRunStepSnapshot = /* @__PURE__ */ new WeakMap(), _AssistantStream_instances = /* @__PURE__ */ new WeakSet(), Symbol.asyncIterator)]() {
+    const pushQueue = [];
+    const readQueue = [];
+    let done = false;
+    this.on("event", (event) => {
+      const reader = readQueue.shift();
+      if (reader) {
+        reader.resolve(event);
+      } else {
+        pushQueue.push(event);
+      }
+    });
+    this.on("end", () => {
+      done = true;
+      for (const reader of readQueue) {
+        reader.resolve(void 0);
+      }
+      readQueue.length = 0;
+    });
+    this.on("abort", (err) => {
+      done = true;
+      for (const reader of readQueue) {
+        reader.reject(err);
+      }
+      readQueue.length = 0;
+    });
+    this.on("error", (err) => {
+      done = true;
+      for (const reader of readQueue) {
+        reader.reject(err);
+      }
+      readQueue.length = 0;
+    });
+    return {
+      next: async () => {
+        if (!pushQueue.length) {
+          if (done) {
+            return { value: void 0, done: true };
+          }
+          return new Promise((resolve, reject) => readQueue.push({ resolve, reject })).then((chunk2) => chunk2 ? { value: chunk2, done: false } : { value: void 0, done: true });
+        }
+        const chunk = pushQueue.shift();
+        return { value: chunk, done: false };
+      },
+      return: async () => {
+        this.abort();
+        return { value: void 0, done: true };
+      }
+    };
+  }
+  static fromReadableStream(stream) {
+    const runner = new _a();
+    runner._run(() => runner._fromReadableStream(stream));
+    return runner;
+  }
+  async _fromReadableStream(readableStream, options) {
+    var _a3;
+    const signal = options == null ? void 0 : options.signal;
+    if (signal) {
+      if (signal.aborted)
+        this.controller.abort();
+      signal.addEventListener("abort", () => this.controller.abort());
+    }
+    this._connected();
+    const stream = Stream.fromReadableStream(readableStream, this.controller);
+    for await (const event of stream) {
+      __classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_addEvent).call(this, event);
+    }
+    if ((_a3 = stream.controller.signal) == null ? void 0 : _a3.aborted) {
+      throw new APIUserAbortError();
+    }
+    return this._addRun(__classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_endRequest).call(this));
+  }
+  toReadableStream() {
+    const stream = new Stream(this[Symbol.asyncIterator].bind(this), this.controller);
+    return stream.toReadableStream();
+  }
+  static createToolAssistantStream(runId, runs, params, options) {
+    const runner = new _a();
+    runner._run(() => runner._runToolAssistantStream(runId, runs, params, {
+      ...options,
+      headers: { ...options == null ? void 0 : options.headers, "X-Stainless-Helper-Method": "stream" }
+    }));
+    return runner;
+  }
+  async _createToolAssistantStream(run, runId, params, options) {
+    var _a3;
+    const signal = options == null ? void 0 : options.signal;
+    if (signal) {
+      if (signal.aborted)
+        this.controller.abort();
+      signal.addEventListener("abort", () => this.controller.abort());
+    }
+    const body = { ...params, stream: true };
+    const stream = await run.submitToolOutputs(runId, body, {
+      ...options,
+      signal: this.controller.signal
+    });
+    this._connected();
+    for await (const event of stream) {
+      __classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_addEvent).call(this, event);
+    }
+    if ((_a3 = stream.controller.signal) == null ? void 0 : _a3.aborted) {
+      throw new APIUserAbortError();
+    }
+    return this._addRun(__classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_endRequest).call(this));
+  }
+  static createThreadAssistantStream(params, thread, options) {
+    const runner = new _a();
+    runner._run(() => runner._threadAssistantStream(params, thread, {
+      ...options,
+      headers: { ...options == null ? void 0 : options.headers, "X-Stainless-Helper-Method": "stream" }
+    }));
+    return runner;
+  }
+  static createAssistantStream(threadId, runs, params, options) {
+    const runner = new _a();
+    runner._run(() => runner._runAssistantStream(threadId, runs, params, {
+      ...options,
+      headers: { ...options == null ? void 0 : options.headers, "X-Stainless-Helper-Method": "stream" }
+    }));
+    return runner;
+  }
+  currentEvent() {
+    return __classPrivateFieldGet(this, _AssistantStream_currentEvent, "f");
+  }
+  currentRun() {
+    return __classPrivateFieldGet(this, _AssistantStream_currentRunSnapshot, "f");
+  }
+  currentMessageSnapshot() {
+    return __classPrivateFieldGet(this, _AssistantStream_messageSnapshot, "f");
+  }
+  currentRunStepSnapshot() {
+    return __classPrivateFieldGet(this, _AssistantStream_currentRunStepSnapshot, "f");
+  }
+  async finalRunSteps() {
+    await this.done();
+    return Object.values(__classPrivateFieldGet(this, _AssistantStream_runStepSnapshots, "f"));
+  }
+  async finalMessages() {
+    await this.done();
+    return Object.values(__classPrivateFieldGet(this, _AssistantStream_messageSnapshots, "f"));
+  }
+  async finalRun() {
+    await this.done();
+    if (!__classPrivateFieldGet(this, _AssistantStream_finalRun, "f"))
+      throw Error("Final run was not received.");
+    return __classPrivateFieldGet(this, _AssistantStream_finalRun, "f");
+  }
+  async _createThreadAssistantStream(thread, params, options) {
+    var _a3;
+    const signal = options == null ? void 0 : options.signal;
+    if (signal) {
+      if (signal.aborted)
+        this.controller.abort();
+      signal.addEventListener("abort", () => this.controller.abort());
+    }
+    const body = { ...params, stream: true };
+    const stream = await thread.createAndRun(body, { ...options, signal: this.controller.signal });
+    this._connected();
+    for await (const event of stream) {
+      __classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_addEvent).call(this, event);
+    }
+    if ((_a3 = stream.controller.signal) == null ? void 0 : _a3.aborted) {
+      throw new APIUserAbortError();
+    }
+    return this._addRun(__classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_endRequest).call(this));
+  }
+  async _createAssistantStream(run, threadId, params, options) {
+    var _a3;
+    const signal = options == null ? void 0 : options.signal;
+    if (signal) {
+      if (signal.aborted)
+        this.controller.abort();
+      signal.addEventListener("abort", () => this.controller.abort());
+    }
+    const body = { ...params, stream: true };
+    const stream = await run.create(threadId, body, { ...options, signal: this.controller.signal });
+    this._connected();
+    for await (const event of stream) {
+      __classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_addEvent).call(this, event);
+    }
+    if ((_a3 = stream.controller.signal) == null ? void 0 : _a3.aborted) {
+      throw new APIUserAbortError();
+    }
+    return this._addRun(__classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_endRequest).call(this));
+  }
+  static accumulateDelta(acc, delta) {
+    for (const [key, deltaValue] of Object.entries(delta)) {
+      if (!acc.hasOwnProperty(key)) {
+        acc[key] = deltaValue;
+        continue;
+      }
+      let accValue = acc[key];
+      if (accValue === null || accValue === void 0) {
+        acc[key] = deltaValue;
+        continue;
+      }
+      if (key === "index" || key === "type") {
+        acc[key] = deltaValue;
+        continue;
+      }
+      if (typeof accValue === "string" && typeof deltaValue === "string") {
+        accValue += deltaValue;
+      } else if (typeof accValue === "number" && typeof deltaValue === "number") {
+        accValue += deltaValue;
+      } else if (isObj(accValue) && isObj(deltaValue)) {
+        accValue = this.accumulateDelta(accValue, deltaValue);
+      } else if (Array.isArray(accValue) && Array.isArray(deltaValue)) {
+        if (accValue.every((x) => typeof x === "string" || typeof x === "number")) {
+          accValue.push(...deltaValue);
+          continue;
+        }
+        for (const deltaEntry of deltaValue) {
+          if (!isObj(deltaEntry)) {
+            throw new Error(`Expected array delta entry to be an object but got: ${deltaEntry}`);
+          }
+          const index = deltaEntry["index"];
+          if (index == null) {
+            console.error(deltaEntry);
+            throw new Error("Expected array delta entry to have an `index` property");
+          }
+          if (typeof index !== "number") {
+            throw new Error(`Expected array delta entry \`index\` property to be a number but got ${index}`);
+          }
+          const accEntry = accValue[index];
+          if (accEntry == null) {
+            accValue.push(deltaEntry);
+          } else {
+            accValue[index] = this.accumulateDelta(accEntry, deltaEntry);
+          }
+        }
+        continue;
+      } else {
+        throw Error(`Unhandled record type: ${key}, deltaValue: ${deltaValue}, accValue: ${accValue}`);
+      }
+      acc[key] = accValue;
+    }
+    return acc;
+  }
+  _addRun(run) {
+    return run;
+  }
+  async _threadAssistantStream(params, thread, options) {
+    return await this._createThreadAssistantStream(thread, params, options);
+  }
+  async _runAssistantStream(threadId, runs, params, options) {
+    return await this._createAssistantStream(runs, threadId, params, options);
+  }
+  async _runToolAssistantStream(runId, runs, params, options) {
+    return await this._createToolAssistantStream(runs, runId, params, options);
+  }
+};
+_a = AssistantStream, _AssistantStream_addEvent = function _AssistantStream_addEvent2(event) {
+  if (this.ended)
+    return;
+  __classPrivateFieldSet(this, _AssistantStream_currentEvent, event, "f");
+  __classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_handleEvent).call(this, event);
+  switch (event.event) {
+    case "thread.created":
+      break;
+    case "thread.run.created":
+    case "thread.run.queued":
+    case "thread.run.in_progress":
+    case "thread.run.requires_action":
+    case "thread.run.completed":
+    case "thread.run.incomplete":
+    case "thread.run.failed":
+    case "thread.run.cancelling":
+    case "thread.run.cancelled":
+    case "thread.run.expired":
+      __classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_handleRun).call(this, event);
+      break;
+    case "thread.run.step.created":
+    case "thread.run.step.in_progress":
+    case "thread.run.step.delta":
+    case "thread.run.step.completed":
+    case "thread.run.step.failed":
+    case "thread.run.step.cancelled":
+    case "thread.run.step.expired":
+      __classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_handleRunStep).call(this, event);
+      break;
+    case "thread.message.created":
+    case "thread.message.in_progress":
+    case "thread.message.delta":
+    case "thread.message.completed":
+    case "thread.message.incomplete":
+      __classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_handleMessage).call(this, event);
+      break;
+    case "error":
+      throw new Error("Encountered an error event in event processing - errors should be processed earlier");
+    default:
+      assertNever2(event);
+  }
+}, _AssistantStream_endRequest = function _AssistantStream_endRequest2() {
+  if (this.ended) {
+    throw new OpenAIError(`stream has ended, this shouldn't happen`);
+  }
+  if (!__classPrivateFieldGet(this, _AssistantStream_finalRun, "f"))
+    throw Error("Final run has not been received");
+  return __classPrivateFieldGet(this, _AssistantStream_finalRun, "f");
+}, _AssistantStream_handleMessage = function _AssistantStream_handleMessage2(event) {
+  const [accumulatedMessage, newContent] = __classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_accumulateMessage).call(this, event, __classPrivateFieldGet(this, _AssistantStream_messageSnapshot, "f"));
+  __classPrivateFieldSet(this, _AssistantStream_messageSnapshot, accumulatedMessage, "f");
+  __classPrivateFieldGet(this, _AssistantStream_messageSnapshots, "f")[accumulatedMessage.id] = accumulatedMessage;
+  for (const content of newContent) {
+    const snapshotContent = accumulatedMessage.content[content.index];
+    if ((snapshotContent == null ? void 0 : snapshotContent.type) == "text") {
+      this._emit("textCreated", snapshotContent.text);
+    }
+  }
+  switch (event.event) {
+    case "thread.message.created":
+      this._emit("messageCreated", event.data);
+      break;
+    case "thread.message.in_progress":
+      break;
+    case "thread.message.delta":
+      this._emit("messageDelta", event.data.delta, accumulatedMessage);
+      if (event.data.delta.content) {
+        for (const content of event.data.delta.content) {
+          if (content.type == "text" && content.text) {
+            let textDelta = content.text;
+            let snapshot = accumulatedMessage.content[content.index];
+            if (snapshot && snapshot.type == "text") {
+              this._emit("textDelta", textDelta, snapshot.text);
+            } else {
+              throw Error("The snapshot associated with this text delta is not text or missing");
+            }
+          }
+          if (content.index != __classPrivateFieldGet(this, _AssistantStream_currentContentIndex, "f")) {
+            if (__classPrivateFieldGet(this, _AssistantStream_currentContent, "f")) {
+              switch (__classPrivateFieldGet(this, _AssistantStream_currentContent, "f").type) {
+                case "text":
+                  this._emit("textDone", __classPrivateFieldGet(this, _AssistantStream_currentContent, "f").text, __classPrivateFieldGet(this, _AssistantStream_messageSnapshot, "f"));
+                  break;
+                case "image_file":
+                  this._emit("imageFileDone", __classPrivateFieldGet(this, _AssistantStream_currentContent, "f").image_file, __classPrivateFieldGet(this, _AssistantStream_messageSnapshot, "f"));
+                  break;
+              }
+            }
+            __classPrivateFieldSet(this, _AssistantStream_currentContentIndex, content.index, "f");
+          }
+          __classPrivateFieldSet(this, _AssistantStream_currentContent, accumulatedMessage.content[content.index], "f");
+        }
+      }
+      break;
+    case "thread.message.completed":
+    case "thread.message.incomplete":
+      if (__classPrivateFieldGet(this, _AssistantStream_currentContentIndex, "f") !== void 0) {
+        const currentContent = event.data.content[__classPrivateFieldGet(this, _AssistantStream_currentContentIndex, "f")];
+        if (currentContent) {
+          switch (currentContent.type) {
+            case "image_file":
+              this._emit("imageFileDone", currentContent.image_file, __classPrivateFieldGet(this, _AssistantStream_messageSnapshot, "f"));
+              break;
+            case "text":
+              this._emit("textDone", currentContent.text, __classPrivateFieldGet(this, _AssistantStream_messageSnapshot, "f"));
+              break;
+          }
+        }
+      }
+      if (__classPrivateFieldGet(this, _AssistantStream_messageSnapshot, "f")) {
+        this._emit("messageDone", event.data);
+      }
+      __classPrivateFieldSet(this, _AssistantStream_messageSnapshot, void 0, "f");
+  }
+}, _AssistantStream_handleRunStep = function _AssistantStream_handleRunStep2(event) {
+  const accumulatedRunStep = __classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_accumulateRunStep).call(this, event);
+  __classPrivateFieldSet(this, _AssistantStream_currentRunStepSnapshot, accumulatedRunStep, "f");
+  switch (event.event) {
+    case "thread.run.step.created":
+      this._emit("runStepCreated", event.data);
+      break;
+    case "thread.run.step.delta":
+      const delta = event.data.delta;
+      if (delta.step_details && delta.step_details.type == "tool_calls" && delta.step_details.tool_calls && accumulatedRunStep.step_details.type == "tool_calls") {
+        for (const toolCall of delta.step_details.tool_calls) {
+          if (toolCall.index == __classPrivateFieldGet(this, _AssistantStream_currentToolCallIndex, "f")) {
+            this._emit("toolCallDelta", toolCall, accumulatedRunStep.step_details.tool_calls[toolCall.index]);
+          } else {
+            if (__classPrivateFieldGet(this, _AssistantStream_currentToolCall, "f")) {
+              this._emit("toolCallDone", __classPrivateFieldGet(this, _AssistantStream_currentToolCall, "f"));
+            }
+            __classPrivateFieldSet(this, _AssistantStream_currentToolCallIndex, toolCall.index, "f");
+            __classPrivateFieldSet(this, _AssistantStream_currentToolCall, accumulatedRunStep.step_details.tool_calls[toolCall.index], "f");
+            if (__classPrivateFieldGet(this, _AssistantStream_currentToolCall, "f"))
+              this._emit("toolCallCreated", __classPrivateFieldGet(this, _AssistantStream_currentToolCall, "f"));
+          }
+        }
+      }
+      this._emit("runStepDelta", event.data.delta, accumulatedRunStep);
+      break;
+    case "thread.run.step.completed":
+    case "thread.run.step.failed":
+    case "thread.run.step.cancelled":
+    case "thread.run.step.expired":
+      __classPrivateFieldSet(this, _AssistantStream_currentRunStepSnapshot, void 0, "f");
+      const details = event.data.step_details;
+      if (details.type == "tool_calls") {
+        if (__classPrivateFieldGet(this, _AssistantStream_currentToolCall, "f")) {
+          this._emit("toolCallDone", __classPrivateFieldGet(this, _AssistantStream_currentToolCall, "f"));
+          __classPrivateFieldSet(this, _AssistantStream_currentToolCall, void 0, "f");
+        }
+      }
+      this._emit("runStepDone", event.data, accumulatedRunStep);
+      break;
+    case "thread.run.step.in_progress":
+      break;
+  }
+}, _AssistantStream_handleEvent = function _AssistantStream_handleEvent2(event) {
+  __classPrivateFieldGet(this, _AssistantStream_events, "f").push(event);
+  this._emit("event", event);
+}, _AssistantStream_accumulateRunStep = function _AssistantStream_accumulateRunStep2(event) {
+  switch (event.event) {
+    case "thread.run.step.created":
+      __classPrivateFieldGet(this, _AssistantStream_runStepSnapshots, "f")[event.data.id] = event.data;
+      return event.data;
+    case "thread.run.step.delta":
+      let snapshot = __classPrivateFieldGet(this, _AssistantStream_runStepSnapshots, "f")[event.data.id];
+      if (!snapshot) {
+        throw Error("Received a RunStepDelta before creation of a snapshot");
+      }
+      let data = event.data;
+      if (data.delta) {
+        const accumulated = _a.accumulateDelta(snapshot, data.delta);
+        __classPrivateFieldGet(this, _AssistantStream_runStepSnapshots, "f")[event.data.id] = accumulated;
+      }
+      return __classPrivateFieldGet(this, _AssistantStream_runStepSnapshots, "f")[event.data.id];
+    case "thread.run.step.completed":
+    case "thread.run.step.failed":
+    case "thread.run.step.cancelled":
+    case "thread.run.step.expired":
+    case "thread.run.step.in_progress":
+      __classPrivateFieldGet(this, _AssistantStream_runStepSnapshots, "f")[event.data.id] = event.data;
+      break;
+  }
+  if (__classPrivateFieldGet(this, _AssistantStream_runStepSnapshots, "f")[event.data.id])
+    return __classPrivateFieldGet(this, _AssistantStream_runStepSnapshots, "f")[event.data.id];
+  throw new Error("No snapshot available");
+}, _AssistantStream_accumulateMessage = function _AssistantStream_accumulateMessage2(event, snapshot) {
+  let newContent = [];
+  switch (event.event) {
+    case "thread.message.created":
+      return [event.data, newContent];
+    case "thread.message.delta":
+      if (!snapshot) {
+        throw Error("Received a delta with no existing snapshot (there should be one from message creation)");
+      }
+      let data = event.data;
+      if (data.delta.content) {
+        for (const contentElement of data.delta.content) {
+          if (contentElement.index in snapshot.content) {
+            let currentContent = snapshot.content[contentElement.index];
+            snapshot.content[contentElement.index] = __classPrivateFieldGet(this, _AssistantStream_instances, "m", _AssistantStream_accumulateContent).call(this, contentElement, currentContent);
+          } else {
+            snapshot.content[contentElement.index] = contentElement;
+            newContent.push(contentElement);
+          }
+        }
+      }
+      return [snapshot, newContent];
+    case "thread.message.in_progress":
+    case "thread.message.completed":
+    case "thread.message.incomplete":
+      if (snapshot) {
+        return [snapshot, newContent];
+      } else {
+        throw Error("Received thread message event with no existing snapshot");
+      }
+  }
+  throw Error("Tried to accumulate a non-message event");
+}, _AssistantStream_accumulateContent = function _AssistantStream_accumulateContent2(contentElement, currentContent) {
+  return _a.accumulateDelta(currentContent, contentElement);
+}, _AssistantStream_handleRun = function _AssistantStream_handleRun2(event) {
+  __classPrivateFieldSet(this, _AssistantStream_currentRunSnapshot, event.data, "f");
+  switch (event.event) {
+    case "thread.run.created":
+      break;
+    case "thread.run.queued":
+      break;
+    case "thread.run.in_progress":
+      break;
+    case "thread.run.requires_action":
+    case "thread.run.cancelled":
+    case "thread.run.failed":
+    case "thread.run.completed":
+    case "thread.run.expired":
+    case "thread.run.incomplete":
+      __classPrivateFieldSet(this, _AssistantStream_finalRun, event.data, "f");
+      if (__classPrivateFieldGet(this, _AssistantStream_currentToolCall, "f")) {
+        this._emit("toolCallDone", __classPrivateFieldGet(this, _AssistantStream_currentToolCall, "f"));
+        __classPrivateFieldSet(this, _AssistantStream_currentToolCall, void 0, "f");
+      }
+      break;
+    case "thread.run.cancelling":
+      break;
+  }
+};
+function assertNever2(_x) {
+}
+
+// node_modules/openai/resources/beta/threads/runs/runs.mjs
+var Runs = class extends APIResource {
+  constructor() {
+    super(...arguments);
+    this.steps = new Steps(this._client);
+  }
+  create(threadID, params, options) {
+    var _a3;
+    const { include, ...body } = params;
+    return this._client.post(path`/threads/${threadID}/runs`, {
+      query: { include },
+      body,
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers]),
+      stream: (_a3 = params.stream) != null ? _a3 : false
+    });
+  }
+  /**
+   * Retrieves a run.
+   *
+   * @deprecated The Assistants API is deprecated in favor of the Responses API
+   */
+  retrieve(runID, params, options) {
+    const { thread_id } = params;
+    return this._client.get(path`/threads/${thread_id}/runs/${runID}`, {
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Modifies a run.
+   *
+   * @deprecated The Assistants API is deprecated in favor of the Responses API
+   */
+  update(runID, params, options) {
+    const { thread_id, ...body } = params;
+    return this._client.post(path`/threads/${thread_id}/runs/${runID}`, {
+      body,
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Returns a list of runs belonging to a thread.
+   *
+   * @deprecated The Assistants API is deprecated in favor of the Responses API
+   */
+  list(threadID, query = {}, options) {
+    return this._client.getAPIList(path`/threads/${threadID}/runs`, CursorPage, {
+      query,
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Cancels a run that is `in_progress`.
+   *
+   * @deprecated The Assistants API is deprecated in favor of the Responses API
+   */
+  cancel(runID, params, options) {
+    const { thread_id } = params;
+    return this._client.post(path`/threads/${thread_id}/runs/${runID}/cancel`, {
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * A helper to create a run an poll for a terminal state. More information on Run
+   * lifecycles can be found here:
+   * https://platform.openai.com/docs/assistants/how-it-works/runs-and-run-steps
+   */
+  async createAndPoll(threadId, body, options) {
+    const run = await this.create(threadId, body, options);
+    return await this.poll(run.id, { thread_id: threadId }, options);
+  }
+  /**
+   * Create a Run stream
+   *
+   * @deprecated use `stream` instead
+   */
+  createAndStream(threadId, body, options) {
+    return AssistantStream.createAssistantStream(threadId, this._client.beta.threads.runs, body, options);
+  }
+  /**
+   * A helper to poll a run status until it reaches a terminal state. More
+   * information on Run lifecycles can be found here:
+   * https://platform.openai.com/docs/assistants/how-it-works/runs-and-run-steps
+   */
+  async poll(runId, params, options) {
+    var _a3, _b;
+    const headers = buildHeaders([
+      options == null ? void 0 : options.headers,
+      {
+        "X-Stainless-Poll-Helper": "true",
+        "X-Stainless-Custom-Poll-Interval": (_b = (_a3 = options == null ? void 0 : options.pollIntervalMs) == null ? void 0 : _a3.toString()) != null ? _b : void 0
+      }
+    ]);
+    while (true) {
+      const { data: run, response } = await this.retrieve(runId, params, {
+        ...options,
+        headers: { ...options == null ? void 0 : options.headers, ...headers }
+      }).withResponse();
+      switch (run.status) {
+        case "queued":
+        case "in_progress":
+        case "cancelling":
+          let sleepInterval = 5e3;
+          if (options == null ? void 0 : options.pollIntervalMs) {
+            sleepInterval = options.pollIntervalMs;
+          } else {
+            const headerInterval = response.headers.get("openai-poll-after-ms");
+            if (headerInterval) {
+              const headerIntervalMs = parseInt(headerInterval);
+              if (!isNaN(headerIntervalMs)) {
+                sleepInterval = headerIntervalMs;
+              }
+            }
+          }
+          await sleep(sleepInterval);
+          break;
+        case "requires_action":
+        case "incomplete":
+        case "cancelled":
+        case "completed":
+        case "failed":
+        case "expired":
+          return run;
+      }
+    }
+  }
+  /**
+   * Create a Run stream
+   */
+  stream(threadId, body, options) {
+    return AssistantStream.createAssistantStream(threadId, this._client.beta.threads.runs, body, options);
+  }
+  submitToolOutputs(runID, params, options) {
+    var _a3;
+    const { thread_id, ...body } = params;
+    return this._client.post(path`/threads/${thread_id}/runs/${runID}/submit_tool_outputs`, {
+      body,
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers]),
+      stream: (_a3 = params.stream) != null ? _a3 : false
+    });
+  }
+  /**
+   * A helper to submit a tool output to a run and poll for a terminal run state.
+   * More information on Run lifecycles can be found here:
+   * https://platform.openai.com/docs/assistants/how-it-works/runs-and-run-steps
+   */
+  async submitToolOutputsAndPoll(runId, params, options) {
+    const run = await this.submitToolOutputs(runId, params, options);
+    return await this.poll(run.id, params, options);
+  }
+  /**
+   * Submit the tool outputs from a previous run and stream the run to a terminal
+   * state. More information on Run lifecycles can be found here:
+   * https://platform.openai.com/docs/assistants/how-it-works/runs-and-run-steps
+   */
+  submitToolOutputsStream(runId, params, options) {
+    return AssistantStream.createToolAssistantStream(runId, this._client.beta.threads.runs, params, options);
+  }
+};
+Runs.Steps = Steps;
+
+// node_modules/openai/resources/beta/threads/threads.mjs
+var Threads = class extends APIResource {
+  constructor() {
+    super(...arguments);
+    this.runs = new Runs(this._client);
+    this.messages = new Messages2(this._client);
+  }
+  /**
+   * Create a thread.
+   *
+   * @deprecated The Assistants API is deprecated in favor of the Responses API
+   */
+  create(body = {}, options) {
+    return this._client.post("/threads", {
+      body,
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Retrieves a thread.
+   *
+   * @deprecated The Assistants API is deprecated in favor of the Responses API
+   */
+  retrieve(threadID, options) {
+    return this._client.get(path`/threads/${threadID}`, {
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Modifies a thread.
+   *
+   * @deprecated The Assistants API is deprecated in favor of the Responses API
+   */
+  update(threadID, body, options) {
+    return this._client.post(path`/threads/${threadID}`, {
+      body,
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Delete a thread.
+   *
+   * @deprecated The Assistants API is deprecated in favor of the Responses API
+   */
+  delete(threadID, options) {
+    return this._client.delete(path`/threads/${threadID}`, {
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  createAndRun(body, options) {
+    var _a3;
+    return this._client.post("/threads/runs", {
+      body,
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers]),
+      stream: (_a3 = body.stream) != null ? _a3 : false
+    });
+  }
+  /**
+   * A helper to create a thread, start a run and then poll for a terminal state.
+   * More information on Run lifecycles can be found here:
+   * https://platform.openai.com/docs/assistants/how-it-works/runs-and-run-steps
+   */
+  async createAndRunPoll(body, options) {
+    const run = await this.createAndRun(body, options);
+    return await this.runs.poll(run.id, { thread_id: run.thread_id }, options);
+  }
+  /**
+   * Create a thread and stream the run back
+   */
+  createAndRunStream(body, options) {
+    return AssistantStream.createThreadAssistantStream(body, this._client.beta.threads, options);
+  }
+};
+Threads.Runs = Runs;
+Threads.Messages = Messages2;
+
+// node_modules/openai/resources/beta/beta.mjs
+var Beta = class extends APIResource {
+  constructor() {
+    super(...arguments);
+    this.realtime = new Realtime(this._client);
+    this.assistants = new Assistants(this._client);
+    this.threads = new Threads(this._client);
+  }
+};
+Beta.Realtime = Realtime;
+Beta.Assistants = Assistants;
+Beta.Threads = Threads;
+
+// node_modules/openai/resources/completions.mjs
+var Completions2 = class extends APIResource {
+  create(body, options) {
+    var _a3;
+    return this._client.post("/completions", { body, ...options, stream: (_a3 = body.stream) != null ? _a3 : false });
+  }
+};
+
+// node_modules/openai/resources/containers/files/content.mjs
+var Content = class extends APIResource {
+  /**
+   * Retrieve Container File Content
+   */
+  retrieve(fileID, params, options) {
+    const { container_id } = params;
+    return this._client.get(path`/containers/${container_id}/files/${fileID}/content`, {
+      ...options,
+      headers: buildHeaders([{ Accept: "application/binary" }, options == null ? void 0 : options.headers]),
+      __binaryResponse: true
+    });
+  }
+};
+
+// node_modules/openai/resources/containers/files/files.mjs
+var Files = class extends APIResource {
+  constructor() {
+    super(...arguments);
+    this.content = new Content(this._client);
+  }
+  /**
+   * Create a Container File
+   *
+   * You can send either a multipart/form-data request with the raw file content, or
+   * a JSON request with a file ID.
+   */
+  create(containerID, body, options) {
+    return this._client.post(path`/containers/${containerID}/files`, multipartFormRequestOptions({ body, ...options }, this._client));
+  }
+  /**
+   * Retrieve Container File
+   */
+  retrieve(fileID, params, options) {
+    const { container_id } = params;
+    return this._client.get(path`/containers/${container_id}/files/${fileID}`, options);
+  }
+  /**
+   * List Container files
+   */
+  list(containerID, query = {}, options) {
+    return this._client.getAPIList(path`/containers/${containerID}/files`, CursorPage, {
+      query,
+      ...options
+    });
+  }
+  /**
+   * Delete Container File
+   */
+  delete(fileID, params, options) {
+    const { container_id } = params;
+    return this._client.delete(path`/containers/${container_id}/files/${fileID}`, {
+      ...options,
+      headers: buildHeaders([{ Accept: "*/*" }, options == null ? void 0 : options.headers])
+    });
+  }
+};
+Files.Content = Content;
+
+// node_modules/openai/resources/containers/containers.mjs
+var Containers = class extends APIResource {
+  constructor() {
+    super(...arguments);
+    this.files = new Files(this._client);
+  }
+  /**
+   * Create Container
+   */
+  create(body, options) {
+    return this._client.post("/containers", { body, ...options });
+  }
+  /**
+   * Retrieve Container
+   */
+  retrieve(containerID, options) {
+    return this._client.get(path`/containers/${containerID}`, options);
+  }
+  /**
+   * List Containers
+   */
+  list(query = {}, options) {
+    return this._client.getAPIList("/containers", CursorPage, { query, ...options });
+  }
+  /**
+   * Delete Container
+   */
+  delete(containerID, options) {
+    return this._client.delete(path`/containers/${containerID}`, {
+      ...options,
+      headers: buildHeaders([{ Accept: "*/*" }, options == null ? void 0 : options.headers])
+    });
+  }
+};
+Containers.Files = Files;
+
+// node_modules/openai/resources/conversations/items.mjs
+var Items = class extends APIResource {
+  /**
+   * Create items in a conversation with the given ID.
+   */
+  create(conversationID, params, options) {
+    const { include, ...body } = params;
+    return this._client.post(path`/conversations/${conversationID}/items`, {
+      query: { include },
+      body,
+      ...options
+    });
+  }
+  /**
+   * Get a single item from a conversation with the given IDs.
+   */
+  retrieve(itemID, params, options) {
+    const { conversation_id, ...query } = params;
+    return this._client.get(path`/conversations/${conversation_id}/items/${itemID}`, { query, ...options });
+  }
+  /**
+   * List all items for a conversation with the given ID.
+   */
+  list(conversationID, query = {}, options) {
+    return this._client.getAPIList(path`/conversations/${conversationID}/items`, ConversationCursorPage, { query, ...options });
+  }
+  /**
+   * Delete an item from a conversation with the given IDs.
+   */
+  delete(itemID, params, options) {
+    const { conversation_id } = params;
+    return this._client.delete(path`/conversations/${conversation_id}/items/${itemID}`, options);
+  }
+};
+
+// node_modules/openai/resources/conversations/conversations.mjs
+var Conversations = class extends APIResource {
+  constructor() {
+    super(...arguments);
+    this.items = new Items(this._client);
+  }
+  /**
+   * Create a conversation.
+   */
+  create(body = {}, options) {
+    return this._client.post("/conversations", { body, ...options });
+  }
+  /**
+   * Get a conversation
+   */
+  retrieve(conversationID, options) {
+    return this._client.get(path`/conversations/${conversationID}`, options);
+  }
+  /**
+   * Update a conversation
+   */
+  update(conversationID, body, options) {
+    return this._client.post(path`/conversations/${conversationID}`, { body, ...options });
+  }
+  /**
+   * Delete a conversation. Items in the conversation will not be deleted.
+   */
+  delete(conversationID, options) {
+    return this._client.delete(path`/conversations/${conversationID}`, options);
+  }
+};
+Conversations.Items = Items;
+
+// node_modules/openai/resources/embeddings.mjs
+var Embeddings = class extends APIResource {
+  /**
+   * Creates an embedding vector representing the input text.
+   *
+   * @example
+   * ```ts
+   * const createEmbeddingResponse =
+   *   await client.embeddings.create({
+   *     input: 'The quick brown fox jumped over the lazy dog',
+   *     model: 'text-embedding-3-small',
+   *   });
+   * ```
+   */
+  create(body, options) {
+    const hasUserProvidedEncodingFormat = !!body.encoding_format;
+    let encoding_format = hasUserProvidedEncodingFormat ? body.encoding_format : "base64";
+    if (hasUserProvidedEncodingFormat) {
+      loggerFor(this._client).debug("embeddings/user defined encoding_format:", body.encoding_format);
+    }
+    const response = this._client.post("/embeddings", {
+      body: {
+        ...body,
+        encoding_format
+      },
+      ...options
+    });
+    if (hasUserProvidedEncodingFormat) {
+      return response;
+    }
+    loggerFor(this._client).debug("embeddings/decoding base64 embeddings from base64");
+    return response._thenUnwrap((response2) => {
+      if (response2 && response2.data) {
+        response2.data.forEach((embeddingBase64Obj) => {
+          const embeddingBase64Str = embeddingBase64Obj.embedding;
+          embeddingBase64Obj.embedding = toFloat32Array(embeddingBase64Str);
+        });
+      }
+      return response2;
+    });
+  }
+};
+
+// node_modules/openai/resources/evals/runs/output-items.mjs
+var OutputItems = class extends APIResource {
+  /**
+   * Get an evaluation run output item by ID.
+   */
+  retrieve(outputItemID, params, options) {
+    const { eval_id, run_id } = params;
+    return this._client.get(path`/evals/${eval_id}/runs/${run_id}/output_items/${outputItemID}`, options);
+  }
+  /**
+   * Get a list of output items for an evaluation run.
+   */
+  list(runID, params, options) {
+    const { eval_id, ...query } = params;
+    return this._client.getAPIList(path`/evals/${eval_id}/runs/${runID}/output_items`, CursorPage, { query, ...options });
+  }
+};
+
+// node_modules/openai/resources/evals/runs/runs.mjs
+var Runs2 = class extends APIResource {
+  constructor() {
+    super(...arguments);
+    this.outputItems = new OutputItems(this._client);
+  }
+  /**
+   * Kicks off a new run for a given evaluation, specifying the data source, and what
+   * model configuration to use to test. The datasource will be validated against the
+   * schema specified in the config of the evaluation.
+   */
+  create(evalID, body, options) {
+    return this._client.post(path`/evals/${evalID}/runs`, { body, ...options });
+  }
+  /**
+   * Get an evaluation run by ID.
+   */
+  retrieve(runID, params, options) {
+    const { eval_id } = params;
+    return this._client.get(path`/evals/${eval_id}/runs/${runID}`, options);
+  }
+  /**
+   * Get a list of runs for an evaluation.
+   */
+  list(evalID, query = {}, options) {
+    return this._client.getAPIList(path`/evals/${evalID}/runs`, CursorPage, {
+      query,
+      ...options
+    });
+  }
+  /**
+   * Delete an eval run.
+   */
+  delete(runID, params, options) {
+    const { eval_id } = params;
+    return this._client.delete(path`/evals/${eval_id}/runs/${runID}`, options);
+  }
+  /**
+   * Cancel an ongoing evaluation run.
+   */
+  cancel(runID, params, options) {
+    const { eval_id } = params;
+    return this._client.post(path`/evals/${eval_id}/runs/${runID}`, options);
+  }
+};
+Runs2.OutputItems = OutputItems;
+
+// node_modules/openai/resources/evals/evals.mjs
+var Evals = class extends APIResource {
+  constructor() {
+    super(...arguments);
+    this.runs = new Runs2(this._client);
+  }
+  /**
+   * Create the structure of an evaluation that can be used to test a model's
+   * performance. An evaluation is a set of testing criteria and the config for a
+   * data source, which dictates the schema of the data used in the evaluation. After
+   * creating an evaluation, you can run it on different models and model parameters.
+   * We support several types of graders and datasources. For more information, see
+   * the [Evals guide](https://platform.openai.com/docs/guides/evals).
+   */
+  create(body, options) {
+    return this._client.post("/evals", { body, ...options });
+  }
+  /**
+   * Get an evaluation by ID.
+   */
+  retrieve(evalID, options) {
+    return this._client.get(path`/evals/${evalID}`, options);
+  }
+  /**
+   * Update certain properties of an evaluation.
+   */
+  update(evalID, body, options) {
+    return this._client.post(path`/evals/${evalID}`, { body, ...options });
+  }
+  /**
+   * List evaluations for a project.
+   */
+  list(query = {}, options) {
+    return this._client.getAPIList("/evals", CursorPage, { query, ...options });
+  }
+  /**
+   * Delete an evaluation.
+   */
+  delete(evalID, options) {
+    return this._client.delete(path`/evals/${evalID}`, options);
+  }
+};
+Evals.Runs = Runs2;
+
+// node_modules/openai/resources/files.mjs
+var Files2 = class extends APIResource {
+  /**
+   * Upload a file that can be used across various endpoints. Individual files can be
+   * up to 512 MB, and the size of all files uploaded by one organization can be up
+   * to 1 TB.
+   *
+   * The Assistants API supports files up to 2 million tokens and of specific file
+   * types. See the
+   * [Assistants Tools guide](https://platform.openai.com/docs/assistants/tools) for
+   * details.
+   *
+   * The Fine-tuning API only supports `.jsonl` files. The input also has certain
+   * required formats for fine-tuning
+   * [chat](https://platform.openai.com/docs/api-reference/fine-tuning/chat-input) or
+   * [completions](https://platform.openai.com/docs/api-reference/fine-tuning/completions-input)
+   * models.
+   *
+   * The Batch API only supports `.jsonl` files up to 200 MB in size. The input also
+   * has a specific required
+   * [format](https://platform.openai.com/docs/api-reference/batch/request-input).
+   *
+   * Please [contact us](https://help.openai.com/) if you need to increase these
+   * storage limits.
+   */
+  create(body, options) {
+    return this._client.post("/files", multipartFormRequestOptions({ body, ...options }, this._client));
+  }
+  /**
+   * Returns information about a specific file.
+   */
+  retrieve(fileID, options) {
+    return this._client.get(path`/files/${fileID}`, options);
+  }
+  /**
+   * Returns a list of files.
+   */
+  list(query = {}, options) {
+    return this._client.getAPIList("/files", CursorPage, { query, ...options });
+  }
+  /**
+   * Delete a file.
+   */
+  delete(fileID, options) {
+    return this._client.delete(path`/files/${fileID}`, options);
+  }
+  /**
+   * Returns the contents of the specified file.
+   */
+  content(fileID, options) {
+    return this._client.get(path`/files/${fileID}/content`, {
+      ...options,
+      headers: buildHeaders([{ Accept: "application/binary" }, options == null ? void 0 : options.headers]),
+      __binaryResponse: true
+    });
+  }
+  /**
+   * Waits for the given file to be processed, default timeout is 30 mins.
+   */
+  async waitForProcessing(id, { pollInterval = 5e3, maxWait = 30 * 60 * 1e3 } = {}) {
+    const TERMINAL_STATES = /* @__PURE__ */ new Set(["processed", "error", "deleted"]);
+    const start = Date.now();
+    let file = await this.retrieve(id);
+    while (!file.status || !TERMINAL_STATES.has(file.status)) {
+      await sleep(pollInterval);
+      file = await this.retrieve(id);
+      if (Date.now() - start > maxWait) {
+        throw new APIConnectionTimeoutError({
+          message: `Giving up on waiting for file ${id} to finish processing after ${maxWait} milliseconds.`
+        });
+      }
+    }
+    return file;
+  }
+};
+
+// node_modules/openai/resources/fine-tuning/methods.mjs
+var Methods = class extends APIResource {
+};
+
+// node_modules/openai/resources/fine-tuning/alpha/graders.mjs
+var Graders = class extends APIResource {
+  /**
+   * Run a grader.
+   *
+   * @example
+   * ```ts
+   * const response = await client.fineTuning.alpha.graders.run({
+   *   grader: {
+   *     input: 'input',
+   *     name: 'name',
+   *     operation: 'eq',
+   *     reference: 'reference',
+   *     type: 'string_check',
+   *   },
+   *   model_sample: 'model_sample',
+   * });
+   * ```
+   */
+  run(body, options) {
+    return this._client.post("/fine_tuning/alpha/graders/run", { body, ...options });
+  }
+  /**
+   * Validate a grader.
+   *
+   * @example
+   * ```ts
+   * const response =
+   *   await client.fineTuning.alpha.graders.validate({
+   *     grader: {
+   *       input: 'input',
+   *       name: 'name',
+   *       operation: 'eq',
+   *       reference: 'reference',
+   *       type: 'string_check',
+   *     },
+   *   });
+   * ```
+   */
+  validate(body, options) {
+    return this._client.post("/fine_tuning/alpha/graders/validate", { body, ...options });
+  }
+};
+
+// node_modules/openai/resources/fine-tuning/alpha/alpha.mjs
+var Alpha = class extends APIResource {
+  constructor() {
+    super(...arguments);
+    this.graders = new Graders(this._client);
+  }
+};
+Alpha.Graders = Graders;
+
+// node_modules/openai/resources/fine-tuning/checkpoints/permissions.mjs
+var Permissions = class extends APIResource {
+  /**
+   * **NOTE:** Calling this endpoint requires an [admin API key](../admin-api-keys).
+   *
+   * This enables organization owners to share fine-tuned models with other projects
+   * in their organization.
+   *
+   * @example
+   * ```ts
+   * // Automatically fetches more pages as needed.
+   * for await (const permissionCreateResponse of client.fineTuning.checkpoints.permissions.create(
+   *   'ft:gpt-4o-mini-2024-07-18:org:weather:B7R9VjQd',
+   *   { project_ids: ['string'] },
+   * )) {
+   *   // ...
+   * }
+   * ```
+   */
+  create(fineTunedModelCheckpoint, body, options) {
+    return this._client.getAPIList(path`/fine_tuning/checkpoints/${fineTunedModelCheckpoint}/permissions`, Page, { body, method: "post", ...options });
+  }
+  /**
+   * **NOTE:** This endpoint requires an [admin API key](../admin-api-keys).
+   *
+   * Organization owners can use this endpoint to view all permissions for a
+   * fine-tuned model checkpoint.
+   *
+   * @example
+   * ```ts
+   * const permission =
+   *   await client.fineTuning.checkpoints.permissions.retrieve(
+   *     'ft-AF1WoRqd3aJAHsqc9NY7iL8F',
+   *   );
+   * ```
+   */
+  retrieve(fineTunedModelCheckpoint, query = {}, options) {
+    return this._client.get(path`/fine_tuning/checkpoints/${fineTunedModelCheckpoint}/permissions`, {
+      query,
+      ...options
+    });
+  }
+  /**
+   * **NOTE:** This endpoint requires an [admin API key](../admin-api-keys).
+   *
+   * Organization owners can use this endpoint to delete a permission for a
+   * fine-tuned model checkpoint.
+   *
+   * @example
+   * ```ts
+   * const permission =
+   *   await client.fineTuning.checkpoints.permissions.delete(
+   *     'cp_zc4Q7MP6XxulcVzj4MZdwsAB',
+   *     {
+   *       fine_tuned_model_checkpoint:
+   *         'ft:gpt-4o-mini-2024-07-18:org:weather:B7R9VjQd',
+   *     },
+   *   );
+   * ```
+   */
+  delete(permissionID, params, options) {
+    const { fine_tuned_model_checkpoint } = params;
+    return this._client.delete(path`/fine_tuning/checkpoints/${fine_tuned_model_checkpoint}/permissions/${permissionID}`, options);
+  }
+};
+
+// node_modules/openai/resources/fine-tuning/checkpoints/checkpoints.mjs
+var Checkpoints = class extends APIResource {
+  constructor() {
+    super(...arguments);
+    this.permissions = new Permissions(this._client);
+  }
+};
+Checkpoints.Permissions = Permissions;
+
+// node_modules/openai/resources/fine-tuning/jobs/checkpoints.mjs
+var Checkpoints2 = class extends APIResource {
+  /**
+   * List checkpoints for a fine-tuning job.
+   *
+   * @example
+   * ```ts
+   * // Automatically fetches more pages as needed.
+   * for await (const fineTuningJobCheckpoint of client.fineTuning.jobs.checkpoints.list(
+   *   'ft-AF1WoRqd3aJAHsqc9NY7iL8F',
+   * )) {
+   *   // ...
+   * }
+   * ```
+   */
+  list(fineTuningJobID, query = {}, options) {
+    return this._client.getAPIList(path`/fine_tuning/jobs/${fineTuningJobID}/checkpoints`, CursorPage, { query, ...options });
+  }
+};
+
+// node_modules/openai/resources/fine-tuning/jobs/jobs.mjs
+var Jobs = class extends APIResource {
+  constructor() {
+    super(...arguments);
+    this.checkpoints = new Checkpoints2(this._client);
+  }
+  /**
+   * Creates a fine-tuning job which begins the process of creating a new model from
+   * a given dataset.
+   *
+   * Response includes details of the enqueued job including job status and the name
+   * of the fine-tuned models once complete.
+   *
+   * [Learn more about fine-tuning](https://platform.openai.com/docs/guides/model-optimization)
+   *
+   * @example
+   * ```ts
+   * const fineTuningJob = await client.fineTuning.jobs.create({
+   *   model: 'gpt-4o-mini',
+   *   training_file: 'file-abc123',
+   * });
+   * ```
+   */
+  create(body, options) {
+    return this._client.post("/fine_tuning/jobs", { body, ...options });
+  }
+  /**
+   * Get info about a fine-tuning job.
+   *
+   * [Learn more about fine-tuning](https://platform.openai.com/docs/guides/model-optimization)
+   *
+   * @example
+   * ```ts
+   * const fineTuningJob = await client.fineTuning.jobs.retrieve(
+   *   'ft-AF1WoRqd3aJAHsqc9NY7iL8F',
+   * );
+   * ```
+   */
+  retrieve(fineTuningJobID, options) {
+    return this._client.get(path`/fine_tuning/jobs/${fineTuningJobID}`, options);
+  }
+  /**
+   * List your organization's fine-tuning jobs
+   *
+   * @example
+   * ```ts
+   * // Automatically fetches more pages as needed.
+   * for await (const fineTuningJob of client.fineTuning.jobs.list()) {
+   *   // ...
+   * }
+   * ```
+   */
+  list(query = {}, options) {
+    return this._client.getAPIList("/fine_tuning/jobs", CursorPage, { query, ...options });
+  }
+  /**
+   * Immediately cancel a fine-tune job.
+   *
+   * @example
+   * ```ts
+   * const fineTuningJob = await client.fineTuning.jobs.cancel(
+   *   'ft-AF1WoRqd3aJAHsqc9NY7iL8F',
+   * );
+   * ```
+   */
+  cancel(fineTuningJobID, options) {
+    return this._client.post(path`/fine_tuning/jobs/${fineTuningJobID}/cancel`, options);
+  }
+  /**
+   * Get status updates for a fine-tuning job.
+   *
+   * @example
+   * ```ts
+   * // Automatically fetches more pages as needed.
+   * for await (const fineTuningJobEvent of client.fineTuning.jobs.listEvents(
+   *   'ft-AF1WoRqd3aJAHsqc9NY7iL8F',
+   * )) {
+   *   // ...
+   * }
+   * ```
+   */
+  listEvents(fineTuningJobID, query = {}, options) {
+    return this._client.getAPIList(path`/fine_tuning/jobs/${fineTuningJobID}/events`, CursorPage, { query, ...options });
+  }
+  /**
+   * Pause a fine-tune job.
+   *
+   * @example
+   * ```ts
+   * const fineTuningJob = await client.fineTuning.jobs.pause(
+   *   'ft-AF1WoRqd3aJAHsqc9NY7iL8F',
+   * );
+   * ```
+   */
+  pause(fineTuningJobID, options) {
+    return this._client.post(path`/fine_tuning/jobs/${fineTuningJobID}/pause`, options);
+  }
+  /**
+   * Resume a fine-tune job.
+   *
+   * @example
+   * ```ts
+   * const fineTuningJob = await client.fineTuning.jobs.resume(
+   *   'ft-AF1WoRqd3aJAHsqc9NY7iL8F',
+   * );
+   * ```
+   */
+  resume(fineTuningJobID, options) {
+    return this._client.post(path`/fine_tuning/jobs/${fineTuningJobID}/resume`, options);
+  }
+};
+Jobs.Checkpoints = Checkpoints2;
+
+// node_modules/openai/resources/fine-tuning/fine-tuning.mjs
+var FineTuning = class extends APIResource {
+  constructor() {
+    super(...arguments);
+    this.methods = new Methods(this._client);
+    this.jobs = new Jobs(this._client);
+    this.checkpoints = new Checkpoints(this._client);
+    this.alpha = new Alpha(this._client);
+  }
+};
+FineTuning.Methods = Methods;
+FineTuning.Jobs = Jobs;
+FineTuning.Checkpoints = Checkpoints;
+FineTuning.Alpha = Alpha;
+
+// node_modules/openai/resources/graders/grader-models.mjs
+var GraderModels = class extends APIResource {
+};
+
+// node_modules/openai/resources/graders/graders.mjs
+var Graders2 = class extends APIResource {
+  constructor() {
+    super(...arguments);
+    this.graderModels = new GraderModels(this._client);
+  }
+};
+Graders2.GraderModels = GraderModels;
+
+// node_modules/openai/resources/images.mjs
+var Images = class extends APIResource {
+  /**
+   * Creates a variation of a given image. This endpoint only supports `dall-e-2`.
+   *
+   * @example
+   * ```ts
+   * const imagesResponse = await client.images.createVariation({
+   *   image: fs.createReadStream('otter.png'),
+   * });
+   * ```
+   */
+  createVariation(body, options) {
+    return this._client.post("/images/variations", multipartFormRequestOptions({ body, ...options }, this._client));
+  }
+  edit(body, options) {
+    var _a3;
+    return this._client.post("/images/edits", multipartFormRequestOptions({ body, ...options, stream: (_a3 = body.stream) != null ? _a3 : false }, this._client));
+  }
+  generate(body, options) {
+    var _a3;
+    return this._client.post("/images/generations", { body, ...options, stream: (_a3 = body.stream) != null ? _a3 : false });
+  }
+};
+
+// node_modules/openai/resources/models.mjs
+var Models = class extends APIResource {
+  /**
+   * Retrieves a model instance, providing basic information about the model such as
+   * the owner and permissioning.
+   */
+  retrieve(model, options) {
+    return this._client.get(path`/models/${model}`, options);
+  }
+  /**
+   * Lists the currently available models, and provides basic information about each
+   * one such as the owner and availability.
+   */
+  list(options) {
+    return this._client.getAPIList("/models", Page, options);
+  }
+  /**
+   * Delete a fine-tuned model. You must have the Owner role in your organization to
+   * delete a model.
+   */
+  delete(model, options) {
+    return this._client.delete(path`/models/${model}`, options);
+  }
+};
+
+// node_modules/openai/resources/moderations.mjs
+var Moderations = class extends APIResource {
+  /**
+   * Classifies if text and/or image inputs are potentially harmful. Learn more in
+   * the [moderation guide](https://platform.openai.com/docs/guides/moderation).
+   */
+  create(body, options) {
+    return this._client.post("/moderations", { body, ...options });
+  }
+};
+
+// node_modules/openai/resources/realtime/calls.mjs
+var Calls = class extends APIResource {
+  /**
+   * Accept an incoming SIP call and configure the realtime session that will handle
+   * it.
+   *
+   * @example
+   * ```ts
+   * await client.realtime.calls.accept('call_id', {
+   *   type: 'realtime',
+   * });
+   * ```
+   */
+  accept(callID, body, options) {
+    return this._client.post(path`/realtime/calls/${callID}/accept`, {
+      body,
+      ...options,
+      headers: buildHeaders([{ Accept: "*/*" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * End an active Realtime API call, whether it was initiated over SIP or WebRTC.
+   *
+   * @example
+   * ```ts
+   * await client.realtime.calls.hangup('call_id');
+   * ```
+   */
+  hangup(callID, options) {
+    return this._client.post(path`/realtime/calls/${callID}/hangup`, {
+      ...options,
+      headers: buildHeaders([{ Accept: "*/*" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Transfer an active SIP call to a new destination using the SIP REFER verb.
+   *
+   * @example
+   * ```ts
+   * await client.realtime.calls.refer('call_id', {
+   *   target_uri: 'tel:+14155550123',
+   * });
+   * ```
+   */
+  refer(callID, body, options) {
+    return this._client.post(path`/realtime/calls/${callID}/refer`, {
+      body,
+      ...options,
+      headers: buildHeaders([{ Accept: "*/*" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Decline an incoming SIP call by returning a SIP status code to the caller.
+   *
+   * @example
+   * ```ts
+   * await client.realtime.calls.reject('call_id');
+   * ```
+   */
+  reject(callID, body = {}, options) {
+    return this._client.post(path`/realtime/calls/${callID}/reject`, {
+      body,
+      ...options,
+      headers: buildHeaders([{ Accept: "*/*" }, options == null ? void 0 : options.headers])
+    });
+  }
+};
+
+// node_modules/openai/resources/realtime/client-secrets.mjs
+var ClientSecrets = class extends APIResource {
+  /**
+   * Create a Realtime client secret with an associated session configuration.
+   *
+   * @example
+   * ```ts
+   * const clientSecret =
+   *   await client.realtime.clientSecrets.create();
+   * ```
+   */
+  create(body, options) {
+    return this._client.post("/realtime/client_secrets", { body, ...options });
+  }
+};
+
+// node_modules/openai/resources/realtime/realtime.mjs
+var Realtime2 = class extends APIResource {
+  constructor() {
+    super(...arguments);
+    this.clientSecrets = new ClientSecrets(this._client);
+    this.calls = new Calls(this._client);
+  }
+};
+Realtime2.ClientSecrets = ClientSecrets;
+Realtime2.Calls = Calls;
+
+// node_modules/openai/lib/ResponsesParser.mjs
+function maybeParseResponse(response, params) {
+  if (!params || !hasAutoParseableInput2(params)) {
+    return {
+      ...response,
+      output_parsed: null,
+      output: response.output.map((item) => {
+        if (item.type === "function_call") {
+          return {
+            ...item,
+            parsed_arguments: null
+          };
+        }
+        if (item.type === "message") {
+          return {
+            ...item,
+            content: item.content.map((content) => ({
+              ...content,
+              parsed: null
+            }))
+          };
+        } else {
+          return item;
+        }
+      })
+    };
+  }
+  return parseResponse(response, params);
+}
+function parseResponse(response, params) {
+  const output = response.output.map((item) => {
+    if (item.type === "function_call") {
+      return {
+        ...item,
+        parsed_arguments: parseToolCall2(params, item)
+      };
+    }
+    if (item.type === "message") {
+      const content = item.content.map((content2) => {
+        if (content2.type === "output_text") {
+          return {
+            ...content2,
+            parsed: parseTextFormat(params, content2.text)
+          };
+        }
+        return content2;
+      });
+      return {
+        ...item,
+        content
+      };
+    }
+    return item;
+  });
+  const parsed = Object.assign({}, response, { output });
+  if (!Object.getOwnPropertyDescriptor(response, "output_text")) {
+    addOutputText(parsed);
+  }
+  Object.defineProperty(parsed, "output_parsed", {
+    enumerable: true,
+    get() {
+      for (const output2 of parsed.output) {
+        if (output2.type !== "message") {
+          continue;
+        }
+        for (const content of output2.content) {
+          if (content.type === "output_text" && content.parsed !== null) {
+            return content.parsed;
+          }
+        }
+      }
+      return null;
+    }
+  });
+  return parsed;
+}
+function parseTextFormat(params, content) {
+  var _a3, _b, _c, _d;
+  if (((_b = (_a3 = params.text) == null ? void 0 : _a3.format) == null ? void 0 : _b.type) !== "json_schema") {
+    return null;
+  }
+  if ("$parseRaw" in ((_c = params.text) == null ? void 0 : _c.format)) {
+    const text_format = (_d = params.text) == null ? void 0 : _d.format;
+    return text_format.$parseRaw(content);
+  }
+  return JSON.parse(content);
+}
+function hasAutoParseableInput2(params) {
+  var _a3;
+  if (isAutoParsableResponseFormat((_a3 = params.text) == null ? void 0 : _a3.format)) {
+    return true;
+  }
+  return false;
+}
+function isAutoParsableTool2(tool) {
+  return (tool == null ? void 0 : tool["$brand"]) === "auto-parseable-tool";
+}
+function getInputToolByName(input_tools, name) {
+  return input_tools.find((tool) => tool.type === "function" && tool.name === name);
+}
+function parseToolCall2(params, toolCall) {
+  var _a3;
+  const inputTool = getInputToolByName((_a3 = params.tools) != null ? _a3 : [], toolCall.name);
+  return {
+    ...toolCall,
+    ...toolCall,
+    parsed_arguments: isAutoParsableTool2(inputTool) ? inputTool.$parseRaw(toolCall.arguments) : (inputTool == null ? void 0 : inputTool.strict) ? JSON.parse(toolCall.arguments) : null
+  };
+}
+function addOutputText(rsp) {
+  const texts = [];
+  for (const output of rsp.output) {
+    if (output.type !== "message") {
+      continue;
+    }
+    for (const content of output.content) {
+      if (content.type === "output_text") {
+        texts.push(content.text);
+      }
+    }
+  }
+  rsp.output_text = texts.join("");
+}
+
+// node_modules/openai/lib/responses/ResponseStream.mjs
+var _ResponseStream_instances;
+var _ResponseStream_params;
+var _ResponseStream_currentResponseSnapshot;
+var _ResponseStream_finalResponse;
+var _ResponseStream_beginRequest;
+var _ResponseStream_addEvent;
+var _ResponseStream_endRequest;
+var _ResponseStream_accumulateResponse;
+var ResponseStream = class extends EventStream {
+  constructor(params) {
+    super();
+    _ResponseStream_instances.add(this);
+    _ResponseStream_params.set(this, void 0);
+    _ResponseStream_currentResponseSnapshot.set(this, void 0);
+    _ResponseStream_finalResponse.set(this, void 0);
+    __classPrivateFieldSet(this, _ResponseStream_params, params, "f");
+  }
+  static createResponse(client, params, options) {
+    const runner = new ResponseStream(params);
+    runner._run(() => runner._createOrRetrieveResponse(client, params, {
+      ...options,
+      headers: { ...options == null ? void 0 : options.headers, "X-Stainless-Helper-Method": "stream" }
+    }));
+    return runner;
+  }
+  async _createOrRetrieveResponse(client, params, options) {
+    var _a3, _b;
+    const signal = options == null ? void 0 : options.signal;
+    if (signal) {
+      if (signal.aborted)
+        this.controller.abort();
+      signal.addEventListener("abort", () => this.controller.abort());
+    }
+    __classPrivateFieldGet(this, _ResponseStream_instances, "m", _ResponseStream_beginRequest).call(this);
+    let stream;
+    let starting_after = null;
+    if ("response_id" in params) {
+      stream = await client.responses.retrieve(params.response_id, { stream: true }, { ...options, signal: this.controller.signal, stream: true });
+      starting_after = (_a3 = params.starting_after) != null ? _a3 : null;
+    } else {
+      stream = await client.responses.create({ ...params, stream: true }, { ...options, signal: this.controller.signal });
+    }
+    this._connected();
+    for await (const event of stream) {
+      __classPrivateFieldGet(this, _ResponseStream_instances, "m", _ResponseStream_addEvent).call(this, event, starting_after);
+    }
+    if ((_b = stream.controller.signal) == null ? void 0 : _b.aborted) {
+      throw new APIUserAbortError();
+    }
+    return __classPrivateFieldGet(this, _ResponseStream_instances, "m", _ResponseStream_endRequest).call(this);
+  }
+  [(_ResponseStream_params = /* @__PURE__ */ new WeakMap(), _ResponseStream_currentResponseSnapshot = /* @__PURE__ */ new WeakMap(), _ResponseStream_finalResponse = /* @__PURE__ */ new WeakMap(), _ResponseStream_instances = /* @__PURE__ */ new WeakSet(), _ResponseStream_beginRequest = function _ResponseStream_beginRequest2() {
+    if (this.ended)
+      return;
+    __classPrivateFieldSet(this, _ResponseStream_currentResponseSnapshot, void 0, "f");
+  }, _ResponseStream_addEvent = function _ResponseStream_addEvent2(event, starting_after) {
+    if (this.ended)
+      return;
+    const maybeEmit = (name, event2) => {
+      if (starting_after == null || event2.sequence_number > starting_after) {
+        this._emit(name, event2);
+      }
+    };
+    const response = __classPrivateFieldGet(this, _ResponseStream_instances, "m", _ResponseStream_accumulateResponse).call(this, event);
+    maybeEmit("event", event);
+    switch (event.type) {
+      case "response.output_text.delta": {
+        const output = response.output[event.output_index];
+        if (!output) {
+          throw new OpenAIError(`missing output at index ${event.output_index}`);
+        }
+        if (output.type === "message") {
+          const content = output.content[event.content_index];
+          if (!content) {
+            throw new OpenAIError(`missing content at index ${event.content_index}`);
+          }
+          if (content.type !== "output_text") {
+            throw new OpenAIError(`expected content to be 'output_text', got ${content.type}`);
+          }
+          maybeEmit("response.output_text.delta", {
+            ...event,
+            snapshot: content.text
+          });
+        }
+        break;
+      }
+      case "response.function_call_arguments.delta": {
+        const output = response.output[event.output_index];
+        if (!output) {
+          throw new OpenAIError(`missing output at index ${event.output_index}`);
+        }
+        if (output.type === "function_call") {
+          maybeEmit("response.function_call_arguments.delta", {
+            ...event,
+            snapshot: output.arguments
+          });
+        }
+        break;
+      }
+      default:
+        maybeEmit(event.type, event);
+        break;
+    }
+  }, _ResponseStream_endRequest = function _ResponseStream_endRequest2() {
+    if (this.ended) {
+      throw new OpenAIError(`stream has ended, this shouldn't happen`);
+    }
+    const snapshot = __classPrivateFieldGet(this, _ResponseStream_currentResponseSnapshot, "f");
+    if (!snapshot) {
+      throw new OpenAIError(`request ended without sending any events`);
+    }
+    __classPrivateFieldSet(this, _ResponseStream_currentResponseSnapshot, void 0, "f");
+    const parsedResponse = finalizeResponse(snapshot, __classPrivateFieldGet(this, _ResponseStream_params, "f"));
+    __classPrivateFieldSet(this, _ResponseStream_finalResponse, parsedResponse, "f");
+    return parsedResponse;
+  }, _ResponseStream_accumulateResponse = function _ResponseStream_accumulateResponse2(event) {
+    var _a3;
+    let snapshot = __classPrivateFieldGet(this, _ResponseStream_currentResponseSnapshot, "f");
+    if (!snapshot) {
+      if (event.type !== "response.created") {
+        throw new OpenAIError(`When snapshot hasn't been set yet, expected 'response.created' event, got ${event.type}`);
+      }
+      snapshot = __classPrivateFieldSet(this, _ResponseStream_currentResponseSnapshot, event.response, "f");
+      return snapshot;
+    }
+    switch (event.type) {
+      case "response.output_item.added": {
+        snapshot.output.push(event.item);
+        break;
+      }
+      case "response.content_part.added": {
+        const output = snapshot.output[event.output_index];
+        if (!output) {
+          throw new OpenAIError(`missing output at index ${event.output_index}`);
+        }
+        const type = output.type;
+        const part = event.part;
+        if (type === "message" && part.type !== "reasoning_text") {
+          output.content.push(part);
+        } else if (type === "reasoning" && part.type === "reasoning_text") {
+          if (!output.content) {
+            output.content = [];
+          }
+          output.content.push(part);
+        }
+        break;
+      }
+      case "response.output_text.delta": {
+        const output = snapshot.output[event.output_index];
+        if (!output) {
+          throw new OpenAIError(`missing output at index ${event.output_index}`);
+        }
+        if (output.type === "message") {
+          const content = output.content[event.content_index];
+          if (!content) {
+            throw new OpenAIError(`missing content at index ${event.content_index}`);
+          }
+          if (content.type !== "output_text") {
+            throw new OpenAIError(`expected content to be 'output_text', got ${content.type}`);
+          }
+          content.text += event.delta;
+        }
+        break;
+      }
+      case "response.function_call_arguments.delta": {
+        const output = snapshot.output[event.output_index];
+        if (!output) {
+          throw new OpenAIError(`missing output at index ${event.output_index}`);
+        }
+        if (output.type === "function_call") {
+          output.arguments += event.delta;
+        }
+        break;
+      }
+      case "response.reasoning_text.delta": {
+        const output = snapshot.output[event.output_index];
+        if (!output) {
+          throw new OpenAIError(`missing output at index ${event.output_index}`);
+        }
+        if (output.type === "reasoning") {
+          const content = (_a3 = output.content) == null ? void 0 : _a3[event.content_index];
+          if (!content) {
+            throw new OpenAIError(`missing content at index ${event.content_index}`);
+          }
+          if (content.type !== "reasoning_text") {
+            throw new OpenAIError(`expected content to be 'reasoning_text', got ${content.type}`);
+          }
+          content.text += event.delta;
+        }
+        break;
+      }
+      case "response.completed": {
+        __classPrivateFieldSet(this, _ResponseStream_currentResponseSnapshot, event.response, "f");
+        break;
+      }
+    }
+    return snapshot;
+  }, Symbol.asyncIterator)]() {
+    const pushQueue = [];
+    const readQueue = [];
+    let done = false;
+    this.on("event", (event) => {
+      const reader = readQueue.shift();
+      if (reader) {
+        reader.resolve(event);
+      } else {
+        pushQueue.push(event);
+      }
+    });
+    this.on("end", () => {
+      done = true;
+      for (const reader of readQueue) {
+        reader.resolve(void 0);
+      }
+      readQueue.length = 0;
+    });
+    this.on("abort", (err) => {
+      done = true;
+      for (const reader of readQueue) {
+        reader.reject(err);
+      }
+      readQueue.length = 0;
+    });
+    this.on("error", (err) => {
+      done = true;
+      for (const reader of readQueue) {
+        reader.reject(err);
+      }
+      readQueue.length = 0;
+    });
+    return {
+      next: async () => {
+        if (!pushQueue.length) {
+          if (done) {
+            return { value: void 0, done: true };
+          }
+          return new Promise((resolve, reject) => readQueue.push({ resolve, reject })).then((event2) => event2 ? { value: event2, done: false } : { value: void 0, done: true });
+        }
+        const event = pushQueue.shift();
+        return { value: event, done: false };
+      },
+      return: async () => {
+        this.abort();
+        return { value: void 0, done: true };
+      }
+    };
+  }
+  /**
+   * @returns a promise that resolves with the final Response, or rejects
+   * if an error occurred or the stream ended prematurely without producing a REsponse.
+   */
+  async finalResponse() {
+    await this.done();
+    const response = __classPrivateFieldGet(this, _ResponseStream_finalResponse, "f");
+    if (!response)
+      throw new OpenAIError("stream ended without producing a ChatCompletion");
+    return response;
+  }
+};
+function finalizeResponse(snapshot, params) {
+  return maybeParseResponse(snapshot, params);
+}
+
+// node_modules/openai/resources/responses/input-items.mjs
+var InputItems = class extends APIResource {
+  /**
+   * Returns a list of input items for a given response.
+   *
+   * @example
+   * ```ts
+   * // Automatically fetches more pages as needed.
+   * for await (const responseItem of client.responses.inputItems.list(
+   *   'response_id',
+   * )) {
+   *   // ...
+   * }
+   * ```
+   */
+  list(responseID, query = {}, options) {
+    return this._client.getAPIList(path`/responses/${responseID}/input_items`, CursorPage, { query, ...options });
+  }
+};
+
+// node_modules/openai/resources/responses/responses.mjs
+var Responses = class extends APIResource {
+  constructor() {
+    super(...arguments);
+    this.inputItems = new InputItems(this._client);
+  }
+  create(body, options) {
+    var _a3;
+    return this._client.post("/responses", { body, ...options, stream: (_a3 = body.stream) != null ? _a3 : false })._thenUnwrap((rsp) => {
+      if ("object" in rsp && rsp.object === "response") {
+        addOutputText(rsp);
+      }
+      return rsp;
+    });
+  }
+  retrieve(responseID, query = {}, options) {
+    var _a3;
+    return this._client.get(path`/responses/${responseID}`, {
+      query,
+      ...options,
+      stream: (_a3 = query == null ? void 0 : query.stream) != null ? _a3 : false
+    })._thenUnwrap((rsp) => {
+      if ("object" in rsp && rsp.object === "response") {
+        addOutputText(rsp);
+      }
+      return rsp;
+    });
+  }
+  /**
+   * Deletes a model response with the given ID.
+   *
+   * @example
+   * ```ts
+   * await client.responses.delete(
+   *   'resp_677efb5139a88190b512bc3fef8e535d',
+   * );
+   * ```
+   */
+  delete(responseID, options) {
+    return this._client.delete(path`/responses/${responseID}`, {
+      ...options,
+      headers: buildHeaders([{ Accept: "*/*" }, options == null ? void 0 : options.headers])
+    });
+  }
+  parse(body, options) {
+    return this._client.responses.create(body, options)._thenUnwrap((response) => parseResponse(response, body));
+  }
+  /**
+   * Creates a model response stream
+   */
+  stream(body, options) {
+    return ResponseStream.createResponse(this._client, body, options);
+  }
+  /**
+   * Cancels a model response with the given ID. Only responses created with the
+   * `background` parameter set to `true` can be cancelled.
+   * [Learn more](https://platform.openai.com/docs/guides/background).
+   *
+   * @example
+   * ```ts
+   * const response = await client.responses.cancel(
+   *   'resp_677efb5139a88190b512bc3fef8e535d',
+   * );
+   * ```
+   */
+  cancel(responseID, options) {
+    return this._client.post(path`/responses/${responseID}/cancel`, options);
+  }
+};
+Responses.InputItems = InputItems;
+
+// node_modules/openai/resources/uploads/parts.mjs
+var Parts = class extends APIResource {
+  /**
+   * Adds a
+   * [Part](https://platform.openai.com/docs/api-reference/uploads/part-object) to an
+   * [Upload](https://platform.openai.com/docs/api-reference/uploads/object) object.
+   * A Part represents a chunk of bytes from the file you are trying to upload.
+   *
+   * Each Part can be at most 64 MB, and you can add Parts until you hit the Upload
+   * maximum of 8 GB.
+   *
+   * It is possible to add multiple Parts in parallel. You can decide the intended
+   * order of the Parts when you
+   * [complete the Upload](https://platform.openai.com/docs/api-reference/uploads/complete).
+   */
+  create(uploadID, body, options) {
+    return this._client.post(path`/uploads/${uploadID}/parts`, multipartFormRequestOptions({ body, ...options }, this._client));
+  }
+};
+
+// node_modules/openai/resources/uploads/uploads.mjs
+var Uploads = class extends APIResource {
+  constructor() {
+    super(...arguments);
+    this.parts = new Parts(this._client);
+  }
+  /**
+   * Creates an intermediate
+   * [Upload](https://platform.openai.com/docs/api-reference/uploads/object) object
+   * that you can add
+   * [Parts](https://platform.openai.com/docs/api-reference/uploads/part-object) to.
+   * Currently, an Upload can accept at most 8 GB in total and expires after an hour
+   * after you create it.
+   *
+   * Once you complete the Upload, we will create a
+   * [File](https://platform.openai.com/docs/api-reference/files/object) object that
+   * contains all the parts you uploaded. This File is usable in the rest of our
+   * platform as a regular File object.
+   *
+   * For certain `purpose` values, the correct `mime_type` must be specified. Please
+   * refer to documentation for the
+   * [supported MIME types for your use case](https://platform.openai.com/docs/assistants/tools/file-search#supported-files).
+   *
+   * For guidance on the proper filename extensions for each purpose, please follow
+   * the documentation on
+   * [creating a File](https://platform.openai.com/docs/api-reference/files/create).
+   */
+  create(body, options) {
+    return this._client.post("/uploads", { body, ...options });
+  }
+  /**
+   * Cancels the Upload. No Parts may be added after an Upload is cancelled.
+   */
+  cancel(uploadID, options) {
+    return this._client.post(path`/uploads/${uploadID}/cancel`, options);
+  }
+  /**
+   * Completes the
+   * [Upload](https://platform.openai.com/docs/api-reference/uploads/object).
+   *
+   * Within the returned Upload object, there is a nested
+   * [File](https://platform.openai.com/docs/api-reference/files/object) object that
+   * is ready to use in the rest of the platform.
+   *
+   * You can specify the order of the Parts by passing in an ordered list of the Part
+   * IDs.
+   *
+   * The number of bytes uploaded upon completion must match the number of bytes
+   * initially specified when creating the Upload object. No Parts may be added after
+   * an Upload is completed.
+   */
+  complete(uploadID, body, options) {
+    return this._client.post(path`/uploads/${uploadID}/complete`, { body, ...options });
+  }
+};
+Uploads.Parts = Parts;
+
+// node_modules/openai/lib/Util.mjs
+var allSettledWithThrow = async (promises) => {
+  const results = await Promise.allSettled(promises);
+  const rejected = results.filter((result) => result.status === "rejected");
+  if (rejected.length) {
+    for (const result of rejected) {
+      console.error(result.reason);
+    }
+    throw new Error(`${rejected.length} promise(s) failed - see the above errors`);
+  }
+  const values = [];
+  for (const result of results) {
+    if (result.status === "fulfilled") {
+      values.push(result.value);
+    }
+  }
+  return values;
+};
+
+// node_modules/openai/resources/vector-stores/file-batches.mjs
+var FileBatches = class extends APIResource {
+  /**
+   * Create a vector store file batch.
+   */
+  create(vectorStoreID, body, options) {
+    return this._client.post(path`/vector_stores/${vectorStoreID}/file_batches`, {
+      body,
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Retrieves a vector store file batch.
+   */
+  retrieve(batchID, params, options) {
+    const { vector_store_id } = params;
+    return this._client.get(path`/vector_stores/${vector_store_id}/file_batches/${batchID}`, {
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Cancel a vector store file batch. This attempts to cancel the processing of
+   * files in this batch as soon as possible.
+   */
+  cancel(batchID, params, options) {
+    const { vector_store_id } = params;
+    return this._client.post(path`/vector_stores/${vector_store_id}/file_batches/${batchID}/cancel`, {
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Create a vector store batch and poll until all files have been processed.
+   */
+  async createAndPoll(vectorStoreId, body, options) {
+    const batch = await this.create(vectorStoreId, body);
+    return await this.poll(vectorStoreId, batch.id, options);
+  }
+  /**
+   * Returns a list of vector store files in a batch.
+   */
+  listFiles(batchID, params, options) {
+    const { vector_store_id, ...query } = params;
+    return this._client.getAPIList(path`/vector_stores/${vector_store_id}/file_batches/${batchID}/files`, CursorPage, { query, ...options, headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers]) });
+  }
+  /**
+   * Wait for the given file batch to be processed.
+   *
+   * Note: this will return even if one of the files failed to process, you need to
+   * check batch.file_counts.failed_count to handle this case.
+   */
+  async poll(vectorStoreID, batchID, options) {
+    var _a3, _b;
+    const headers = buildHeaders([
+      options == null ? void 0 : options.headers,
+      {
+        "X-Stainless-Poll-Helper": "true",
+        "X-Stainless-Custom-Poll-Interval": (_b = (_a3 = options == null ? void 0 : options.pollIntervalMs) == null ? void 0 : _a3.toString()) != null ? _b : void 0
+      }
+    ]);
+    while (true) {
+      const { data: batch, response } = await this.retrieve(batchID, { vector_store_id: vectorStoreID }, {
+        ...options,
+        headers
+      }).withResponse();
+      switch (batch.status) {
+        case "in_progress":
+          let sleepInterval = 5e3;
+          if (options == null ? void 0 : options.pollIntervalMs) {
+            sleepInterval = options.pollIntervalMs;
+          } else {
+            const headerInterval = response.headers.get("openai-poll-after-ms");
+            if (headerInterval) {
+              const headerIntervalMs = parseInt(headerInterval);
+              if (!isNaN(headerIntervalMs)) {
+                sleepInterval = headerIntervalMs;
+              }
+            }
+          }
+          await sleep(sleepInterval);
+          break;
+        case "failed":
+        case "cancelled":
+        case "completed":
+          return batch;
+      }
+    }
+  }
+  /**
+   * Uploads the given files concurrently and then creates a vector store file batch.
+   *
+   * The concurrency limit is configurable using the `maxConcurrency` parameter.
+   */
+  async uploadAndPoll(vectorStoreId, { files, fileIds = [] }, options) {
+    var _a3;
+    if (files == null || files.length == 0) {
+      throw new Error(`No \`files\` provided to process. If you've already uploaded files you should use \`.createAndPoll()\` instead`);
+    }
+    const configuredConcurrency = (_a3 = options == null ? void 0 : options.maxConcurrency) != null ? _a3 : 5;
+    const concurrencyLimit = Math.min(configuredConcurrency, files.length);
+    const client = this._client;
+    const fileIterator = files.values();
+    const allFileIds = [...fileIds];
+    async function processFiles(iterator) {
+      for (let item of iterator) {
+        const fileObj = await client.files.create({ file: item, purpose: "assistants" }, options);
+        allFileIds.push(fileObj.id);
+      }
+    }
+    const workers = Array(concurrencyLimit).fill(fileIterator).map(processFiles);
+    await allSettledWithThrow(workers);
+    return await this.createAndPoll(vectorStoreId, {
+      file_ids: allFileIds
+    });
+  }
+};
+
+// node_modules/openai/resources/vector-stores/files.mjs
+var Files3 = class extends APIResource {
+  /**
+   * Create a vector store file by attaching a
+   * [File](https://platform.openai.com/docs/api-reference/files) to a
+   * [vector store](https://platform.openai.com/docs/api-reference/vector-stores/object).
+   */
+  create(vectorStoreID, body, options) {
+    return this._client.post(path`/vector_stores/${vectorStoreID}/files`, {
+      body,
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Retrieves a vector store file.
+   */
+  retrieve(fileID, params, options) {
+    const { vector_store_id } = params;
+    return this._client.get(path`/vector_stores/${vector_store_id}/files/${fileID}`, {
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Update attributes on a vector store file.
+   */
+  update(fileID, params, options) {
+    const { vector_store_id, ...body } = params;
+    return this._client.post(path`/vector_stores/${vector_store_id}/files/${fileID}`, {
+      body,
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Returns a list of vector store files.
+   */
+  list(vectorStoreID, query = {}, options) {
+    return this._client.getAPIList(path`/vector_stores/${vectorStoreID}/files`, CursorPage, {
+      query,
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Delete a vector store file. This will remove the file from the vector store but
+   * the file itself will not be deleted. To delete the file, use the
+   * [delete file](https://platform.openai.com/docs/api-reference/files/delete)
+   * endpoint.
+   */
+  delete(fileID, params, options) {
+    const { vector_store_id } = params;
+    return this._client.delete(path`/vector_stores/${vector_store_id}/files/${fileID}`, {
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Attach a file to the given vector store and wait for it to be processed.
+   */
+  async createAndPoll(vectorStoreId, body, options) {
+    const file = await this.create(vectorStoreId, body, options);
+    return await this.poll(vectorStoreId, file.id, options);
+  }
+  /**
+   * Wait for the vector store file to finish processing.
+   *
+   * Note: this will return even if the file failed to process, you need to check
+   * file.last_error and file.status to handle these cases
+   */
+  async poll(vectorStoreID, fileID, options) {
+    var _a3, _b;
+    const headers = buildHeaders([
+      options == null ? void 0 : options.headers,
+      {
+        "X-Stainless-Poll-Helper": "true",
+        "X-Stainless-Custom-Poll-Interval": (_b = (_a3 = options == null ? void 0 : options.pollIntervalMs) == null ? void 0 : _a3.toString()) != null ? _b : void 0
+      }
+    ]);
+    while (true) {
+      const fileResponse = await this.retrieve(fileID, {
+        vector_store_id: vectorStoreID
+      }, { ...options, headers }).withResponse();
+      const file = fileResponse.data;
+      switch (file.status) {
+        case "in_progress":
+          let sleepInterval = 5e3;
+          if (options == null ? void 0 : options.pollIntervalMs) {
+            sleepInterval = options.pollIntervalMs;
+          } else {
+            const headerInterval = fileResponse.response.headers.get("openai-poll-after-ms");
+            if (headerInterval) {
+              const headerIntervalMs = parseInt(headerInterval);
+              if (!isNaN(headerIntervalMs)) {
+                sleepInterval = headerIntervalMs;
+              }
+            }
+          }
+          await sleep(sleepInterval);
+          break;
+        case "failed":
+        case "completed":
+          return file;
+      }
+    }
+  }
+  /**
+   * Upload a file to the `files` API and then attach it to the given vector store.
+   *
+   * Note the file will be asynchronously processed (you can use the alternative
+   * polling helper method to wait for processing to complete).
+   */
+  async upload(vectorStoreId, file, options) {
+    const fileInfo = await this._client.files.create({ file, purpose: "assistants" }, options);
+    return this.create(vectorStoreId, { file_id: fileInfo.id }, options);
+  }
+  /**
+   * Add a file to a vector store and poll until processing is complete.
+   */
+  async uploadAndPoll(vectorStoreId, file, options) {
+    const fileInfo = await this.upload(vectorStoreId, file, options);
+    return await this.poll(vectorStoreId, fileInfo.id, options);
+  }
+  /**
+   * Retrieve the parsed contents of a vector store file.
+   */
+  content(fileID, params, options) {
+    const { vector_store_id } = params;
+    return this._client.getAPIList(path`/vector_stores/${vector_store_id}/files/${fileID}/content`, Page, { ...options, headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers]) });
+  }
+};
+
+// node_modules/openai/resources/vector-stores/vector-stores.mjs
+var VectorStores = class extends APIResource {
+  constructor() {
+    super(...arguments);
+    this.files = new Files3(this._client);
+    this.fileBatches = new FileBatches(this._client);
+  }
+  /**
+   * Create a vector store.
+   */
+  create(body, options) {
+    return this._client.post("/vector_stores", {
+      body,
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Retrieves a vector store.
+   */
+  retrieve(vectorStoreID, options) {
+    return this._client.get(path`/vector_stores/${vectorStoreID}`, {
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Modifies a vector store.
+   */
+  update(vectorStoreID, body, options) {
+    return this._client.post(path`/vector_stores/${vectorStoreID}`, {
+      body,
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Returns a list of vector stores.
+   */
+  list(query = {}, options) {
+    return this._client.getAPIList("/vector_stores", CursorPage, {
+      query,
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Delete a vector store.
+   */
+  delete(vectorStoreID, options) {
+    return this._client.delete(path`/vector_stores/${vectorStoreID}`, {
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+  /**
+   * Search a vector store for relevant chunks based on a query and file attributes
+   * filter.
+   */
+  search(vectorStoreID, body, options) {
+    return this._client.getAPIList(path`/vector_stores/${vectorStoreID}/search`, Page, {
+      body,
+      method: "post",
+      ...options,
+      headers: buildHeaders([{ "OpenAI-Beta": "assistants=v2" }, options == null ? void 0 : options.headers])
+    });
+  }
+};
+VectorStores.Files = Files3;
+VectorStores.FileBatches = FileBatches;
+
+// node_modules/openai/resources/webhooks.mjs
+var _Webhooks_instances;
+var _Webhooks_validateSecret;
+var _Webhooks_getRequiredHeader;
+var Webhooks = class extends APIResource {
+  constructor() {
+    super(...arguments);
+    _Webhooks_instances.add(this);
+  }
+  /**
+   * Validates that the given payload was sent by OpenAI and parses the payload.
+   */
+  async unwrap(payload, headers, secret = this._client.webhookSecret, tolerance = 300) {
+    await this.verifySignature(payload, headers, secret, tolerance);
+    return JSON.parse(payload);
+  }
+  /**
+   * Validates whether or not the webhook payload was sent by OpenAI.
+   *
+   * An error will be raised if the webhook payload was not sent by OpenAI.
+   *
+   * @param payload - The webhook payload
+   * @param headers - The webhook headers
+   * @param secret - The webhook secret (optional, will use client secret if not provided)
+   * @param tolerance - Maximum age of the webhook in seconds (default: 300 = 5 minutes)
+   */
+  async verifySignature(payload, headers, secret = this._client.webhookSecret, tolerance = 300) {
+    if (typeof crypto === "undefined" || typeof crypto.subtle.importKey !== "function" || typeof crypto.subtle.verify !== "function") {
+      throw new Error("Webhook signature verification is only supported when the `crypto` global is defined");
+    }
+    __classPrivateFieldGet(this, _Webhooks_instances, "m", _Webhooks_validateSecret).call(this, secret);
+    const headersObj = buildHeaders([headers]).values;
+    const signatureHeader = __classPrivateFieldGet(this, _Webhooks_instances, "m", _Webhooks_getRequiredHeader).call(this, headersObj, "webhook-signature");
+    const timestamp = __classPrivateFieldGet(this, _Webhooks_instances, "m", _Webhooks_getRequiredHeader).call(this, headersObj, "webhook-timestamp");
+    const webhookId = __classPrivateFieldGet(this, _Webhooks_instances, "m", _Webhooks_getRequiredHeader).call(this, headersObj, "webhook-id");
+    const timestampSeconds = parseInt(timestamp, 10);
+    if (isNaN(timestampSeconds)) {
+      throw new InvalidWebhookSignatureError("Invalid webhook timestamp format");
+    }
+    const nowSeconds = Math.floor(Date.now() / 1e3);
+    if (nowSeconds - timestampSeconds > tolerance) {
+      throw new InvalidWebhookSignatureError("Webhook timestamp is too old");
+    }
+    if (timestampSeconds > nowSeconds + tolerance) {
+      throw new InvalidWebhookSignatureError("Webhook timestamp is too new");
+    }
+    const signatures = signatureHeader.split(" ").map((part) => part.startsWith("v1,") ? part.substring(3) : part);
+    const decodedSecret = secret.startsWith("whsec_") ? Buffer.from(secret.replace("whsec_", ""), "base64") : Buffer.from(secret, "utf-8");
+    const signedPayload = webhookId ? `${webhookId}.${timestamp}.${payload}` : `${timestamp}.${payload}`;
+    const key = await crypto.subtle.importKey("raw", decodedSecret, { name: "HMAC", hash: "SHA-256" }, false, ["verify"]);
+    for (const signature of signatures) {
+      try {
+        const signatureBytes = Buffer.from(signature, "base64");
+        const isValid = await crypto.subtle.verify("HMAC", key, signatureBytes, new TextEncoder().encode(signedPayload));
+        if (isValid) {
+          return;
+        }
+      } catch (e) {
+        continue;
+      }
+    }
+    throw new InvalidWebhookSignatureError("The given webhook signature does not match the expected signature");
+  }
+};
+_Webhooks_instances = /* @__PURE__ */ new WeakSet(), _Webhooks_validateSecret = function _Webhooks_validateSecret2(secret) {
+  if (typeof secret !== "string" || secret.length === 0) {
+    throw new Error(`The webhook secret must either be set using the env var, OPENAI_WEBHOOK_SECRET, on the client class, OpenAI({ webhookSecret: '123' }), or passed to this function`);
+  }
+}, _Webhooks_getRequiredHeader = function _Webhooks_getRequiredHeader2(headers, name) {
+  if (!headers) {
+    throw new Error(`Headers are required`);
+  }
+  const value = headers.get(name);
+  if (value === null || value === void 0) {
+    throw new Error(`Missing required header: ${name}`);
+  }
+  return value;
+};
+
+// node_modules/openai/client.mjs
+var _OpenAI_instances;
+var _a2;
+var _OpenAI_encoder;
+var _OpenAI_baseURLOverridden;
+var OpenAI = class {
+  /**
+   * API Client for interfacing with the OpenAI API.
+   *
+   * @param {string | undefined} [opts.apiKey=process.env['OPENAI_API_KEY'] ?? undefined]
+   * @param {string | null | undefined} [opts.organization=process.env['OPENAI_ORG_ID'] ?? null]
+   * @param {string | null | undefined} [opts.project=process.env['OPENAI_PROJECT_ID'] ?? null]
+   * @param {string | null | undefined} [opts.webhookSecret=process.env['OPENAI_WEBHOOK_SECRET'] ?? null]
+   * @param {string} [opts.baseURL=process.env['OPENAI_BASE_URL'] ?? https://api.openai.com/v1] - Override the default base URL for the API.
+   * @param {number} [opts.timeout=10 minutes] - The maximum amount of time (in milliseconds) the client will wait for a response before timing out.
+   * @param {MergedRequestInit} [opts.fetchOptions] - Additional `RequestInit` options to be passed to `fetch` calls.
+   * @param {Fetch} [opts.fetch] - Specify a custom `fetch` function implementation.
+   * @param {number} [opts.maxRetries=2] - The maximum number of times the client will retry a request.
+   * @param {HeadersLike} opts.defaultHeaders - Default headers to include with every request to the API.
+   * @param {Record<string, string | undefined>} opts.defaultQuery - Default query parameters to include with every request to the API.
+   * @param {boolean} [opts.dangerouslyAllowBrowser=false] - By default, client-side use of this library is not allowed, as it risks exposing your secret API credentials to attackers.
+   */
+  constructor({ baseURL = readEnv("OPENAI_BASE_URL"), apiKey = readEnv("OPENAI_API_KEY"), organization = ((_a3) => (_a3 = readEnv("OPENAI_ORG_ID")) != null ? _a3 : null)(), project = ((_b) => (_b = readEnv("OPENAI_PROJECT_ID")) != null ? _b : null)(), webhookSecret = ((_c) => (_c = readEnv("OPENAI_WEBHOOK_SECRET")) != null ? _c : null)(), ...opts } = {}) {
+    var _a4, _b2, _c2, _d, _e, _f;
+    _OpenAI_instances.add(this);
+    _OpenAI_encoder.set(this, void 0);
+    this.completions = new Completions2(this);
+    this.chat = new Chat(this);
+    this.embeddings = new Embeddings(this);
+    this.files = new Files2(this);
+    this.images = new Images(this);
+    this.audio = new Audio(this);
+    this.moderations = new Moderations(this);
+    this.models = new Models(this);
+    this.fineTuning = new FineTuning(this);
+    this.graders = new Graders2(this);
+    this.vectorStores = new VectorStores(this);
+    this.webhooks = new Webhooks(this);
+    this.beta = new Beta(this);
+    this.batches = new Batches(this);
+    this.uploads = new Uploads(this);
+    this.responses = new Responses(this);
+    this.realtime = new Realtime2(this);
+    this.conversations = new Conversations(this);
+    this.evals = new Evals(this);
+    this.containers = new Containers(this);
+    if (apiKey === void 0) {
+      throw new OpenAIError("Missing credentials. Please pass an `apiKey`, or set the `OPENAI_API_KEY` environment variable.");
+    }
+    const options = {
+      apiKey,
+      organization,
+      project,
+      webhookSecret,
+      ...opts,
+      baseURL: baseURL || `https://api.openai.com/v1`
+    };
+    if (!options.dangerouslyAllowBrowser && isRunningInBrowser()) {
+      throw new OpenAIError("It looks like you're running in a browser-like environment.\n\nThis is disabled by default, as it risks exposing your secret API credentials to attackers.\nIf you understand the risks and have appropriate mitigations in place,\nyou can set the `dangerouslyAllowBrowser` option to `true`, e.g.,\n\nnew OpenAI({ apiKey, dangerouslyAllowBrowser: true });\n\nhttps://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety\n");
+    }
+    this.baseURL = options.baseURL;
+    this.timeout = (_a4 = options.timeout) != null ? _a4 : _a2.DEFAULT_TIMEOUT;
+    this.logger = (_b2 = options.logger) != null ? _b2 : console;
+    const defaultLogLevel = "warn";
+    this.logLevel = defaultLogLevel;
+    this.logLevel = (_d = (_c2 = parseLogLevel(options.logLevel, "ClientOptions.logLevel", this)) != null ? _c2 : parseLogLevel(readEnv("OPENAI_LOG"), "process.env['OPENAI_LOG']", this)) != null ? _d : defaultLogLevel;
+    this.fetchOptions = options.fetchOptions;
+    this.maxRetries = (_e = options.maxRetries) != null ? _e : 2;
+    this.fetch = (_f = options.fetch) != null ? _f : getDefaultFetch();
+    __classPrivateFieldSet(this, _OpenAI_encoder, FallbackEncoder, "f");
+    this._options = options;
+    this.apiKey = typeof apiKey === "string" ? apiKey : "Missing Key";
+    this.organization = organization;
+    this.project = project;
+    this.webhookSecret = webhookSecret;
+  }
+  /**
+   * Create a new client instance re-using the same options given to the current client with optional overriding.
+   */
+  withOptions(options) {
+    const client = new this.constructor({
+      ...this._options,
+      baseURL: this.baseURL,
+      maxRetries: this.maxRetries,
+      timeout: this.timeout,
+      logger: this.logger,
+      logLevel: this.logLevel,
+      fetch: this.fetch,
+      fetchOptions: this.fetchOptions,
+      apiKey: this.apiKey,
+      organization: this.organization,
+      project: this.project,
+      webhookSecret: this.webhookSecret,
+      ...options
+    });
+    return client;
+  }
+  defaultQuery() {
+    return this._options.defaultQuery;
+  }
+  validateHeaders({ values, nulls }) {
+    return;
+  }
+  async authHeaders(opts) {
+    return buildHeaders([{ Authorization: `Bearer ${this.apiKey}` }]);
+  }
+  stringifyQuery(query) {
+    return stringify(query, { arrayFormat: "brackets" });
+  }
+  getUserAgent() {
+    return `${this.constructor.name}/JS ${VERSION}`;
+  }
+  defaultIdempotencyKey() {
+    return `stainless-node-retry-${uuid4()}`;
+  }
+  makeStatusError(status, error, message, headers) {
+    return APIError.generate(status, error, message, headers);
+  }
+  async _callApiKey() {
+    const apiKey = this._options.apiKey;
+    if (typeof apiKey !== "function")
+      return false;
+    let token;
+    try {
+      token = await apiKey();
+    } catch (err) {
+      if (err instanceof OpenAIError)
+        throw err;
+      throw new OpenAIError(
+        `Failed to get token from 'apiKey' function: ${err.message}`,
+        // @ts-ignore
+        { cause: err }
+      );
+    }
+    if (typeof token !== "string" || !token) {
+      throw new OpenAIError(`Expected 'apiKey' function argument to return a string but it returned ${token}`);
+    }
+    this.apiKey = token;
+    return true;
+  }
+  buildURL(path2, query, defaultBaseURL) {
+    const baseURL = !__classPrivateFieldGet(this, _OpenAI_instances, "m", _OpenAI_baseURLOverridden).call(this) && defaultBaseURL || this.baseURL;
+    const url = isAbsoluteURL(path2) ? new URL(path2) : new URL(baseURL + (baseURL.endsWith("/") && path2.startsWith("/") ? path2.slice(1) : path2));
+    const defaultQuery = this.defaultQuery();
+    if (!isEmptyObj(defaultQuery)) {
+      query = { ...defaultQuery, ...query };
+    }
+    if (typeof query === "object" && query && !Array.isArray(query)) {
+      url.search = this.stringifyQuery(query);
+    }
+    return url.toString();
+  }
+  /**
+   * Used as a callback for mutating the given `FinalRequestOptions` object.
+   */
+  async prepareOptions(options) {
+    await this._callApiKey();
+  }
+  /**
+   * Used as a callback for mutating the given `RequestInit` object.
+   *
+   * This is useful for cases where you want to add certain headers based off of
+   * the request properties, e.g. `method` or `url`.
+   */
+  async prepareRequest(request, { url, options }) {
+  }
+  get(path2, opts) {
+    return this.methodRequest("get", path2, opts);
+  }
+  post(path2, opts) {
+    return this.methodRequest("post", path2, opts);
+  }
+  patch(path2, opts) {
+    return this.methodRequest("patch", path2, opts);
+  }
+  put(path2, opts) {
+    return this.methodRequest("put", path2, opts);
+  }
+  delete(path2, opts) {
+    return this.methodRequest("delete", path2, opts);
+  }
+  methodRequest(method, path2, opts) {
+    return this.request(Promise.resolve(opts).then((opts2) => {
+      return { method, path: path2, ...opts2 };
+    }));
+  }
+  request(options, remainingRetries = null) {
+    return new APIPromise(this, this.makeRequest(options, remainingRetries, void 0));
+  }
+  async makeRequest(optionsInput, retriesRemaining, retryOfRequestLogID) {
+    var _a3, _b, _c;
+    const options = await optionsInput;
+    const maxRetries = (_a3 = options.maxRetries) != null ? _a3 : this.maxRetries;
+    if (retriesRemaining == null) {
+      retriesRemaining = maxRetries;
+    }
+    await this.prepareOptions(options);
+    const { req, url, timeout } = await this.buildRequest(options, {
+      retryCount: maxRetries - retriesRemaining
+    });
+    await this.prepareRequest(req, { url, options });
+    const requestLogID = "log_" + (Math.random() * (1 << 24) | 0).toString(16).padStart(6, "0");
+    const retryLogStr = retryOfRequestLogID === void 0 ? "" : `, retryOf: ${retryOfRequestLogID}`;
+    const startTime = Date.now();
+    loggerFor(this).debug(`[${requestLogID}] sending request`, formatRequestDetails({
+      retryOfRequestLogID,
+      method: options.method,
+      url,
+      options,
+      headers: req.headers
+    }));
+    if ((_b = options.signal) == null ? void 0 : _b.aborted) {
+      throw new APIUserAbortError();
+    }
+    const controller = new AbortController();
+    const response = await this.fetchWithTimeout(url, req, timeout, controller).catch(castToError);
+    const headersTime = Date.now();
+    if (response instanceof globalThis.Error) {
+      const retryMessage = `retrying, ${retriesRemaining} attempts remaining`;
+      if ((_c = options.signal) == null ? void 0 : _c.aborted) {
+        throw new APIUserAbortError();
+      }
+      const isTimeout = isAbortError(response) || /timed? ?out/i.test(String(response) + ("cause" in response ? String(response.cause) : ""));
+      if (retriesRemaining) {
+        loggerFor(this).info(`[${requestLogID}] connection ${isTimeout ? "timed out" : "failed"} - ${retryMessage}`);
+        loggerFor(this).debug(`[${requestLogID}] connection ${isTimeout ? "timed out" : "failed"} (${retryMessage})`, formatRequestDetails({
+          retryOfRequestLogID,
+          url,
+          durationMs: headersTime - startTime,
+          message: response.message
+        }));
+        return this.retryRequest(options, retriesRemaining, retryOfRequestLogID != null ? retryOfRequestLogID : requestLogID);
+      }
+      loggerFor(this).info(`[${requestLogID}] connection ${isTimeout ? "timed out" : "failed"} - error; no more retries left`);
+      loggerFor(this).debug(`[${requestLogID}] connection ${isTimeout ? "timed out" : "failed"} (error; no more retries left)`, formatRequestDetails({
+        retryOfRequestLogID,
+        url,
+        durationMs: headersTime - startTime,
+        message: response.message
+      }));
+      if (isTimeout) {
+        throw new APIConnectionTimeoutError();
+      }
+      throw new APIConnectionError({ cause: response });
+    }
+    const specialHeaders = [...response.headers.entries()].filter(([name]) => name === "x-request-id").map(([name, value]) => ", " + name + ": " + JSON.stringify(value)).join("");
+    const responseInfo = `[${requestLogID}${retryLogStr}${specialHeaders}] ${req.method} ${url} ${response.ok ? "succeeded" : "failed"} with status ${response.status} in ${headersTime - startTime}ms`;
+    if (!response.ok) {
+      const shouldRetry = await this.shouldRetry(response);
+      if (retriesRemaining && shouldRetry) {
+        const retryMessage2 = `retrying, ${retriesRemaining} attempts remaining`;
+        await CancelReadableStream(response.body);
+        loggerFor(this).info(`${responseInfo} - ${retryMessage2}`);
+        loggerFor(this).debug(`[${requestLogID}] response error (${retryMessage2})`, formatRequestDetails({
+          retryOfRequestLogID,
+          url: response.url,
+          status: response.status,
+          headers: response.headers,
+          durationMs: headersTime - startTime
+        }));
+        return this.retryRequest(options, retriesRemaining, retryOfRequestLogID != null ? retryOfRequestLogID : requestLogID, response.headers);
+      }
+      const retryMessage = shouldRetry ? `error; no more retries left` : `error; not retryable`;
+      loggerFor(this).info(`${responseInfo} - ${retryMessage}`);
+      const errText = await response.text().catch((err2) => castToError(err2).message);
+      const errJSON = safeJSON(errText);
+      const errMessage = errJSON ? void 0 : errText;
+      loggerFor(this).debug(`[${requestLogID}] response error (${retryMessage})`, formatRequestDetails({
+        retryOfRequestLogID,
+        url: response.url,
+        status: response.status,
+        headers: response.headers,
+        message: errMessage,
+        durationMs: Date.now() - startTime
+      }));
+      const err = this.makeStatusError(response.status, errJSON, errMessage, response.headers);
+      throw err;
+    }
+    loggerFor(this).info(responseInfo);
+    loggerFor(this).debug(`[${requestLogID}] response start`, formatRequestDetails({
+      retryOfRequestLogID,
+      url: response.url,
+      status: response.status,
+      headers: response.headers,
+      durationMs: headersTime - startTime
+    }));
+    return { response, options, controller, requestLogID, retryOfRequestLogID, startTime };
+  }
+  getAPIList(path2, Page2, opts) {
+    return this.requestAPIList(Page2, { method: "get", path: path2, ...opts });
+  }
+  requestAPIList(Page2, options) {
+    const request = this.makeRequest(options, null, void 0);
+    return new PagePromise(this, request, Page2);
+  }
+  async fetchWithTimeout(url, init, ms, controller) {
+    const { signal, method, ...options } = init || {};
+    if (signal)
+      signal.addEventListener("abort", () => controller.abort());
+    const timeout = setTimeout(() => controller.abort(), ms);
+    const isReadableBody = globalThis.ReadableStream && options.body instanceof globalThis.ReadableStream || typeof options.body === "object" && options.body !== null && Symbol.asyncIterator in options.body;
+    const fetchOptions = {
+      signal: controller.signal,
+      ...isReadableBody ? { duplex: "half" } : {},
+      method: "GET",
+      ...options
+    };
+    if (method) {
+      fetchOptions.method = method.toUpperCase();
+    }
+    try {
+      return await this.fetch.call(void 0, url, fetchOptions);
+    } finally {
+      clearTimeout(timeout);
+    }
+  }
+  async shouldRetry(response) {
+    const shouldRetryHeader = response.headers.get("x-should-retry");
+    if (shouldRetryHeader === "true")
+      return true;
+    if (shouldRetryHeader === "false")
+      return false;
+    if (response.status === 408)
+      return true;
+    if (response.status === 409)
+      return true;
+    if (response.status === 429)
+      return true;
+    if (response.status >= 500)
+      return true;
+    return false;
+  }
+  async retryRequest(options, retriesRemaining, requestLogID, responseHeaders) {
+    var _a3;
+    let timeoutMillis;
+    const retryAfterMillisHeader = responseHeaders == null ? void 0 : responseHeaders.get("retry-after-ms");
+    if (retryAfterMillisHeader) {
+      const timeoutMs = parseFloat(retryAfterMillisHeader);
+      if (!Number.isNaN(timeoutMs)) {
+        timeoutMillis = timeoutMs;
+      }
+    }
+    const retryAfterHeader = responseHeaders == null ? void 0 : responseHeaders.get("retry-after");
+    if (retryAfterHeader && !timeoutMillis) {
+      const timeoutSeconds = parseFloat(retryAfterHeader);
+      if (!Number.isNaN(timeoutSeconds)) {
+        timeoutMillis = timeoutSeconds * 1e3;
+      } else {
+        timeoutMillis = Date.parse(retryAfterHeader) - Date.now();
+      }
+    }
+    if (!(timeoutMillis && 0 <= timeoutMillis && timeoutMillis < 60 * 1e3)) {
+      const maxRetries = (_a3 = options.maxRetries) != null ? _a3 : this.maxRetries;
+      timeoutMillis = this.calculateDefaultRetryTimeoutMillis(retriesRemaining, maxRetries);
+    }
+    await sleep(timeoutMillis);
+    return this.makeRequest(options, retriesRemaining - 1, requestLogID);
+  }
+  calculateDefaultRetryTimeoutMillis(retriesRemaining, maxRetries) {
+    const initialRetryDelay = 0.5;
+    const maxRetryDelay = 8;
+    const numRetries = maxRetries - retriesRemaining;
+    const sleepSeconds = Math.min(initialRetryDelay * Math.pow(2, numRetries), maxRetryDelay);
+    const jitter = 1 - Math.random() * 0.25;
+    return sleepSeconds * jitter * 1e3;
+  }
+  async buildRequest(inputOptions, { retryCount = 0 } = {}) {
+    var _a3, _b, _c;
+    const options = { ...inputOptions };
+    const { method, path: path2, query, defaultBaseURL } = options;
+    const url = this.buildURL(path2, query, defaultBaseURL);
+    if ("timeout" in options)
+      validatePositiveInteger("timeout", options.timeout);
+    options.timeout = (_a3 = options.timeout) != null ? _a3 : this.timeout;
+    const { bodyHeaders, body } = this.buildBody({ options });
+    const reqHeaders = await this.buildHeaders({ options: inputOptions, method, bodyHeaders, retryCount });
+    const req = {
+      method,
+      headers: reqHeaders,
+      ...options.signal && { signal: options.signal },
+      ...globalThis.ReadableStream && body instanceof globalThis.ReadableStream && { duplex: "half" },
+      ...body && { body },
+      ...(_b = this.fetchOptions) != null ? _b : {},
+      ...(_c = options.fetchOptions) != null ? _c : {}
+    };
+    return { req, url, timeout: options.timeout };
+  }
+  async buildHeaders({ options, method, bodyHeaders, retryCount }) {
+    let idempotencyHeaders = {};
+    if (this.idempotencyHeader && method !== "get") {
+      if (!options.idempotencyKey)
+        options.idempotencyKey = this.defaultIdempotencyKey();
+      idempotencyHeaders[this.idempotencyHeader] = options.idempotencyKey;
+    }
+    const headers = buildHeaders([
+      idempotencyHeaders,
+      {
+        Accept: "application/json",
+        "User-Agent": this.getUserAgent(),
+        "X-Stainless-Retry-Count": String(retryCount),
+        ...options.timeout ? { "X-Stainless-Timeout": String(Math.trunc(options.timeout / 1e3)) } : {},
+        ...getPlatformHeaders(),
+        "OpenAI-Organization": this.organization,
+        "OpenAI-Project": this.project
+      },
+      await this.authHeaders(options),
+      this._options.defaultHeaders,
+      bodyHeaders,
+      options.headers
+    ]);
+    this.validateHeaders(headers);
+    return headers.values;
+  }
+  buildBody({ options: { body, headers: rawHeaders } }) {
+    if (!body) {
+      return { bodyHeaders: void 0, body: void 0 };
+    }
+    const headers = buildHeaders([rawHeaders]);
+    if (
+      // Pass raw type verbatim
+      ArrayBuffer.isView(body) || body instanceof ArrayBuffer || body instanceof DataView || typeof body === "string" && // Preserve legacy string encoding behavior for now
+      headers.values.has("content-type") || // `Blob` is superset of `File`
+      globalThis.Blob && body instanceof globalThis.Blob || // `FormData` -> `multipart/form-data`
+      body instanceof FormData || // `URLSearchParams` -> `application/x-www-form-urlencoded`
+      body instanceof URLSearchParams || // Send chunked stream (each chunk has own `length`)
+      globalThis.ReadableStream && body instanceof globalThis.ReadableStream
+    ) {
+      return { bodyHeaders: void 0, body };
+    } else if (typeof body === "object" && (Symbol.asyncIterator in body || Symbol.iterator in body && "next" in body && typeof body.next === "function")) {
+      return { bodyHeaders: void 0, body: ReadableStreamFrom(body) };
+    } else {
+      return __classPrivateFieldGet(this, _OpenAI_encoder, "f").call(this, { body, headers });
+    }
+  }
+};
+_a2 = OpenAI, _OpenAI_encoder = /* @__PURE__ */ new WeakMap(), _OpenAI_instances = /* @__PURE__ */ new WeakSet(), _OpenAI_baseURLOverridden = function _OpenAI_baseURLOverridden2() {
+  return this.baseURL !== "https://api.openai.com/v1";
+};
+OpenAI.OpenAI = _a2;
+OpenAI.DEFAULT_TIMEOUT = 6e5;
+OpenAI.OpenAIError = OpenAIError;
+OpenAI.APIError = APIError;
+OpenAI.APIConnectionError = APIConnectionError;
+OpenAI.APIConnectionTimeoutError = APIConnectionTimeoutError;
+OpenAI.APIUserAbortError = APIUserAbortError;
+OpenAI.NotFoundError = NotFoundError;
+OpenAI.ConflictError = ConflictError;
+OpenAI.RateLimitError = RateLimitError;
+OpenAI.BadRequestError = BadRequestError;
+OpenAI.AuthenticationError = AuthenticationError;
+OpenAI.InternalServerError = InternalServerError;
+OpenAI.PermissionDeniedError = PermissionDeniedError;
+OpenAI.UnprocessableEntityError = UnprocessableEntityError;
+OpenAI.InvalidWebhookSignatureError = InvalidWebhookSignatureError;
+OpenAI.toFile = toFile;
+OpenAI.Completions = Completions2;
+OpenAI.Chat = Chat;
+OpenAI.Embeddings = Embeddings;
+OpenAI.Files = Files2;
+OpenAI.Images = Images;
+OpenAI.Audio = Audio;
+OpenAI.Moderations = Moderations;
+OpenAI.Models = Models;
+OpenAI.FineTuning = FineTuning;
+OpenAI.Graders = Graders2;
+OpenAI.VectorStores = VectorStores;
+OpenAI.Webhooks = Webhooks;
+OpenAI.Beta = Beta;
+OpenAI.Batches = Batches;
+OpenAI.Uploads = Uploads;
+OpenAI.Responses = Responses;
+OpenAI.Realtime = Realtime2;
+OpenAI.Conversations = Conversations;
+OpenAI.Evals = Evals;
+OpenAI.Containers = Containers;
+
+// src/plugin/gpt.ts
+async function* prompt(prompt2, apiKey, maxTokens, model = "gpt-4o-mini", instructions, options) {
+  var _a3, _b;
+  const client = new OpenAI({ apiKey, dangerouslyAllowBrowser: true });
+  console.log(`Making request to model: ${model}`);
+  const isReasoningModel = model.startsWith("gpt-5") || model.startsWith("o1") || model.startsWith("o3") || model.startsWith("o4");
+  const request = {
+    model,
+    input: prompt2,
+    max_output_tokens: maxTokens
+  };
+  if (instructions && instructions.trim().length > 0) {
+    request.instructions = instructions;
+  }
+  if (!isReasoningModel) {
+    request.temperature = 0.7;
+  }
+  let fullText = "";
+  try {
+    const stream = await client.responses.stream(request);
+    if ((options == null ? void 0 : options.signal) && ((_a3 = stream == null ? void 0 : stream.controller) == null ? void 0 : _a3.abort)) {
+      const onAbort = () => {
+        try {
+          stream.controller.abort();
+        } catch (e) {
+          console.warn("Failed to abort stream controller", e);
+        }
+      };
+      if (options.signal.aborted)
+        onAbort();
+      else
+        options.signal.addEventListener("abort", onAbort, { once: true });
+    }
+    for await (const event of stream) {
+      if ((event == null ? void 0 : event.type) === "response.output_text.delta" && typeof event.delta === "string") {
+        fullText += event.delta;
+        yield event.delta;
+      }
+      if ((event == null ? void 0 : event.type) === "response.completed") {
+        break;
+      }
+    }
+  } catch (err) {
+    if ((err == null ? void 0 : err.name) === "APIUserAbortError" || /aborted/i.test(String((err == null ? void 0 : err.message) || ""))) {
+      console.warn(
+        "Streaming aborted by SDK/user; returning partial text.",
+        err
+      );
+      return fullText;
+    }
+    console.warn(
+      "Streaming failed; falling back to non-streaming response.",
+      err
+    );
+    const resp = await client.responses.create(request);
+    const text = (_b = resp == null ? void 0 : resp.output_text) != null ? _b : "";
+    fullText = text;
+    if (text)
+      yield text;
+  }
+  return fullText;
 }
 
 // src/settings/settings.ts
@@ -102,9 +6771,91 @@ var default_settings = {
   apiKey: "",
   maxTokens: defaultMaxTokens,
   defaultPrompt: "Generate a very short summary of the following note in 3-4 sentences:\n\n",
-  putSummaryInFrontmatter: false,
-  model: "gpt-3.5-turbo"
+  model: "gpt-3.5-turbo",
+  availableModels: ["gpt-3.5-turbo", "gpt-4", "gpt-4-turbo", "gpt-4o"],
+  // fallback models
+  systemInstruction: "",
+  summaryPlacement: "replace",
+  profiles: [
+    {
+      id: "default",
+      name: "Default",
+      model: "gpt-3.5-turbo",
+      maxTokens: defaultMaxTokens,
+      defaultPrompt: "Generate a very short summary of the following note in 3-4 sentences:\n\n",
+      systemInstruction: "",
+      summaryPlacement: "replace"
+    }
+  ],
+  activeProfileId: "default"
 };
+var MODEL_CAPABILITIES = {
+  "gpt-3.5-turbo": ["Legacy"],
+  "gpt-4": ["Chat"],
+  "gpt-4-turbo": ["Chat"],
+  "gpt-4.1": ["Chat"],
+  "gpt-4.1-mini": ["Chat"],
+  "gpt-4.1-nano": ["Chat"],
+  "gpt-4o": ["Vision", "Chat"],
+  "gpt-4o-mini": ["Vision", "Chat"],
+  "gpt-5": ["Reasoning"],
+  "gpt-5-chat-latest": ["Reasoning", "Chat"],
+  "gpt-5-mini": ["Reasoning"],
+  "gpt-5-nano": ["Reasoning"],
+  o1: ["Reasoning"],
+  "o1-mini": ["Reasoning"],
+  o3: ["Reasoning"],
+  "o3-mini": ["Reasoning"],
+  "o4-mini": ["Reasoning"]
+};
+function labelForModel(id) {
+  const tags = MODEL_CAPABILITIES[id] || [];
+  return tags.length ? `${id} (${tags.join(", ")})` : id;
+}
+function genId(prefix = "profile") {
+  return `${prefix}_${Math.random().toString(36).slice(2, 8)}_${Date.now().toString(36)}`;
+}
+function ensureProfilesInitialized(settings) {
+  var _a3;
+  if (!settings.profiles || settings.profiles.length === 0) {
+    settings.profiles = [
+      {
+        id: "default",
+        name: "Default",
+        model: settings.model || "gpt-3.5-turbo",
+        maxTokens: (_a3 = settings.maxTokens) != null ? _a3 : defaultMaxTokens,
+        defaultPrompt: settings.defaultPrompt,
+        systemInstruction: settings.systemInstruction || "",
+        summaryPlacement: settings.summaryPlacement
+      }
+    ];
+    settings.activeProfileId = "default";
+  }
+}
+function getActiveProfile(settings) {
+  if (!settings.profiles || settings.profiles.length === 0)
+    return void 0;
+  const id = settings.activeProfileId || settings.profiles[0].id;
+  return settings.profiles.find((p) => p.id === id) || settings.profiles[0];
+}
+function applyProfileToRoot(settings, profile) {
+  settings.model = profile.model;
+  settings.maxTokens = profile.maxTokens;
+  settings.defaultPrompt = profile.defaultPrompt;
+  settings.systemInstruction = profile.systemInstruction || "";
+  settings.summaryPlacement = profile.summaryPlacement || settings.summaryPlacement || "replace";
+}
+function upsertActiveProfileFromRoot(settings) {
+  var _a3, _b;
+  const p = getActiveProfile(settings);
+  if (!p)
+    return;
+  p.model = settings.model || p.model;
+  p.maxTokens = (_a3 = settings.maxTokens) != null ? _a3 : p.maxTokens;
+  p.defaultPrompt = (_b = settings.defaultPrompt) != null ? _b : p.defaultPrompt;
+  p.systemInstruction = settings.systemInstruction || "";
+  p.summaryPlacement = settings.summaryPlacement || p.summaryPlacement || "replace";
+}
 var AiSummarizeSettingTab = class extends import_obsidian2.PluginSettingTab {
   constructor(app, plugin) {
     super(app, plugin);
@@ -113,50 +6864,169 @@ var AiSummarizeSettingTab = class extends import_obsidian2.PluginSettingTab {
   display() {
     const { containerEl } = this;
     containerEl.empty();
+    ensureProfilesInitialized(this.plugin.settings);
+    const activeProfileInit = getActiveProfile(this.plugin.settings);
+    if (activeProfileInit) {
+      applyProfileToRoot(this.plugin.settings, activeProfileInit);
+    }
+    new import_obsidian2.Setting(containerEl).setName("Profiles").setHeading();
+    new import_obsidian2.Setting(containerEl).setName("Active profile").setDesc("Select which profile to use for summarization").addDropdown((dropdown) => {
+      const options = {};
+      const profiles = this.plugin.settings.profiles || [];
+      for (const p of profiles) {
+        options[p.id] = p.name || p.id;
+      }
+      dropdown.addOptions(options).setValue(
+        this.plugin.settings.activeProfileId || (profiles[0] ? profiles[0].id : "default")
+      ).onChange(async (id) => {
+        this.plugin.settings.activeProfileId = id;
+        const chosen = (this.plugin.settings.profiles || []).find((p) => p.id === id);
+        if (chosen) {
+          applyProfileToRoot(this.plugin.settings, chosen);
+          await this.plugin.saveSettings();
+          this.display();
+        }
+      });
+    }).addButton(
+      (btn) => btn.setButtonText("New profile").setCta().onClick(async () => {
+        var _a3;
+        const count = (this.plugin.settings.profiles || []).length;
+        const id = genId();
+        const name = `Profile ${count + 1}`;
+        const newProfile = {
+          id,
+          name,
+          model: this.plugin.settings.model || "gpt-3.5-turbo",
+          maxTokens: (_a3 = this.plugin.settings.maxTokens) != null ? _a3 : defaultMaxTokens,
+          defaultPrompt: this.plugin.settings.defaultPrompt,
+          systemInstruction: this.plugin.settings.systemInstruction || "",
+          summaryPlacement: this.plugin.settings.summaryPlacement
+        };
+        this.plugin.settings.profiles = [
+          ...this.plugin.settings.profiles || [],
+          newProfile
+        ];
+        this.plugin.settings.activeProfileId = id;
+        applyProfileToRoot(this.plugin.settings, newProfile);
+        await this.plugin.saveSettings();
+        this.display();
+      })
+    ).addButton(
+      (btn) => btn.setButtonText("Delete profile").onClick(async () => {
+        const profiles = this.plugin.settings.profiles || [];
+        if (profiles.length <= 1)
+          return;
+        const activeId = this.plugin.settings.activeProfileId || profiles[0].id;
+        const remaining = profiles.filter((p) => p.id !== activeId);
+        this.plugin.settings.profiles = remaining;
+        this.plugin.settings.activeProfileId = remaining[0].id;
+        applyProfileToRoot(this.plugin.settings, remaining[0]);
+        await this.plugin.saveSettings();
+        this.display();
+      })
+    );
+    new import_obsidian2.Setting(containerEl).setName("Profile name").setDesc("Rename the active profile").addText((text) => {
+      const active = getActiveProfile(this.plugin.settings);
+      text.setPlaceholder("Profile name").setValue((active == null ? void 0 : active.name) || "").onChange(async (value) => {
+        const p = getActiveProfile(this.plugin.settings);
+        if (p)
+          p.name = value || p.name;
+        await this.plugin.saveSettings();
+      });
+    });
     new import_obsidian2.Setting(containerEl).setName("General Settings").setHeading();
-    new import_obsidian2.Setting(containerEl).setName("API key").setTooltip("Get your OpenAI API key from https://platform.openai.com/account/api-keys").setDesc("OpenAI API key is required to use the AI Summarize plugin.").addText(
+    new import_obsidian2.Setting(containerEl).setName("API key").setTooltip(
+      "Get your OpenAI API key from https://platform.openai.com/account/api-keys"
+    ).setDesc(
+      "OpenAI API key is required to use the AI Summarize plugin."
+    ).addText(
       (text) => text.setPlaceholder("Your API Key").setValue(this.plugin.settings.apiKey).onChange(async (value) => {
+        const oldApiKey = this.plugin.settings.apiKey;
         this.plugin.settings.apiKey = value;
         await this.plugin.saveSettings();
+        if (value && value !== oldApiKey) {
+          await this.plugin.refreshAvailableModels();
+          this.display();
+        }
       })
     );
     new import_obsidian2.Setting(containerEl).setName("Max tokens").setDesc("Max tokens to generate the summary. Default is 1000.").addText(
       (text) => {
-        var _a;
-        return text.setPlaceholder(defaultMaxTokens.toString()).setValue(((_a = this.plugin.settings.maxTokens) == null ? void 0 : _a.toString()) || defaultMaxTokens.toString()).onChange(async (value) => {
+        var _a3;
+        return text.setPlaceholder(defaultMaxTokens.toString()).setValue(
+          ((_a3 = this.plugin.settings.maxTokens) == null ? void 0 : _a3.toString()) || defaultMaxTokens.toString()
+        ).onChange(async (value) => {
           this.plugin.settings.maxTokens = Number.parseInt(value);
+          upsertActiveProfileFromRoot(this.plugin.settings);
           await this.plugin.saveSettings();
         });
       }
     );
-    new import_obsidian2.Setting(containerEl).setName("AI Model").setDesc("The AI model to use for generating the summary. Default is gpt-3.5-turbo.").addDropdown(
-      (dropdown) => dropdown.addOptions({ "gpt-3.5-turbo": "gpt-3.5-turbo", "gpt-4": "gpt-4", "gpt-4-turbo": "gpt-4-turbo", "gpt-4o": "gpt-4o" }).setValue(this.plugin.settings.model).onChange(async (value) => {
+    new import_obsidian2.Setting(containerEl).setName("AI Model").setDesc(
+      "The AI model to use for generating the summary. Default is gpt-4."
+    ).setTooltip(
+      "Some models may not stream responses and could be slower. Such as gpt-5 (use gpt-5-chat-latest instead)"
+    ).addDropdown((dropdown) => {
+      const options = {};
+      const availableModels = this.plugin.settings.availableModels || ["gpt-3.5-turbo"];
+      for (const model of availableModels) {
+        options[model] = labelForModel(model);
+      }
+      dropdown.addOptions(options).setValue(this.plugin.settings.model).onChange(async (value) => {
         this.plugin.settings.model = value;
+        upsertActiveProfileFromRoot(this.plugin.settings);
         await this.plugin.saveSettings();
-      })
-    );
+      });
+    });
     new import_obsidian2.Setting(containerEl).setName("Default prompt").setDesc("Default prompt for the AI to generate a summary.").addTextArea(
       (text) => text.setPlaceholder("Your custom prompt").setValue(this.plugin.settings.defaultPrompt).onChange(async (value) => {
         this.plugin.settings.defaultPrompt = value;
+        upsertActiveProfileFromRoot(this.plugin.settings);
         await this.plugin.saveSettings();
       })
     );
-    new import_obsidian2.Setting(containerEl).setName("Summary in the frontmatter").setDesc("This will put the generated summary in the frontmatter of the note otherwise the selected text will be replaced by the summary.").addToggle(
-      (toggle) => toggle.setValue(this.plugin.settings.putSummaryInFrontmatter).onChange(async (value) => {
-        this.plugin.settings.putSummaryInFrontmatter = value;
+    new import_obsidian2.Setting(containerEl).setName("System instructions").setDesc(
+      "Optional system guidance for the model (tone, constraints, style)"
+    ).setTooltip(
+      "You can ask for a summary in bullet points or a specific style or tone. Also you can define language constraints here (e.g. 'Respond in Turkish')."
+    ).addTextArea(
+      (text) => text.setPlaceholder(
+        "You are a helpful assistant that summarizes notes..."
+      ).setValue(this.plugin.settings.systemInstruction || "").onChange(async (value) => {
+        this.plugin.settings.systemInstruction = value;
+        upsertActiveProfileFromRoot(this.plugin.settings);
         await this.plugin.saveSettings();
       })
     );
+    new import_obsidian2.Setting(containerEl).setName("Summary placement").setDesc("Choose where the generated summary should go").addDropdown((dropdown) => {
+      const value = this.plugin.settings.summaryPlacement;
+      dropdown.addOptions({
+        replace: "Replace selection",
+        below: "Insert below selection",
+        frontmatter: "Frontmatter (YAML: summary)"
+      }).setValue(value).onChange(async (val) => {
+        this.plugin.settings.summaryPlacement = val;
+        const p = getActiveProfile(this.plugin.settings);
+        if (p)
+          p.summaryPlacement = val;
+        await this.plugin.saveSettings();
+      });
+    });
     new import_obsidian2.Setting(containerEl).setName("KNOW HOW").setHeading();
     containerEl.createEl("p", {
-      text: 'To generate a summary, select at least 10 words within a note. You can use the context menu by right-clicking on a selection and choosing "AI Summarize", or you can use the command palette and search for "AI Summarize".'
+      text: 'To generate a summary, select at least 30 words within a note. You can use the context menu by right-clicking on a selection and choosing "AI Summarize", or you can use the command palette and search for "AI Summarize".'
     });
     new import_obsidian2.Setting(containerEl).setName("SUPPORT").setHeading();
     const donateText = document.createElement("p");
     donateText.textContent = "If you find this plugin valuable and would like to support its continued development, please consider buying me a coffee:";
     containerEl.appendChild(donateText);
     const parser = new DOMParser();
-    containerEl.appendChild(createDonateButton("https://www.buymeacoffee.com/ravenwits", parser.parseFromString(buyMeACoffee, "text/xml").documentElement));
+    containerEl.appendChild(
+      createDonateButton(
+        "https://www.buymeacoffee.com/ravenwits",
+        parser.parseFromString(buyMeACoffee, "text/xml").documentElement
+      )
+    );
   }
 };
 var createDonateButton = (link, img) => {
@@ -194,6 +7064,8 @@ var AISummarizePlugin = class extends import_obsidian3.Plugin {
   constructor() {
     super(...arguments);
     this.frontmatterRegex = /^---\n([\s\S]*?)\n---\n/;
+    // Concurrency guard state
+    this.currentRunId = 0;
     this.handleHighlighterInContextMenu = (menu, editor) => {
       const selection = editor.getSelection();
       if (selection) {
@@ -203,47 +7075,314 @@ var AISummarizePlugin = class extends import_obsidian3.Plugin {
             if (editor.getSelection()) {
               const selected = editor.getSelection();
               const wordCount = selected.split(" ").length;
-              if (wordCount > 10) {
+              if (wordCount > 30) {
                 this.generateSummary(selection, editor);
               } else
-                Notify("Selected text is too short!");
+                Notify(
+                  "Selected text is too short! (>30 words)"
+                );
             }
           });
         });
       }
     };
   }
+  async getAvailableModels() {
+    if (!this.settings.apiKey) {
+      console.log("No API key provided, using fallback models");
+      return default_settings.availableModels || ["gpt-4"];
+    }
+    try {
+      const client = new OpenAI({
+        apiKey: this.settings.apiKey,
+        dangerouslyAllowBrowser: true
+      });
+      const list = await client.models.list();
+      const ids = (list.data || []).map((m) => m.id);
+      return ids.filter(
+        (id) => [
+          "gpt-3.5-turbo",
+          "gpt-4",
+          "gpt-4-turbo",
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "gpt-4.1-nano",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-5",
+          "gpt-5-chat-latest",
+          "gpt-5-mini",
+          "gpt-5-nano",
+          "o1",
+          "o3",
+          "o3-mini",
+          "o4-mini"
+        ].includes(id)
+      ).sort();
+    } catch (error) {
+      console.error("Failed to fetch available models:", error);
+      return default_settings.availableModels || ["gpt-4"];
+    }
+  }
+  async refreshAvailableModels() {
+    const availableModels = await this.getAvailableModels();
+    this.settings.availableModels = availableModels;
+    await this.saveSettings();
+    console.log("Refreshed available OpenAI models:", availableModels);
+  }
+  // Rough token estimator and context windows for budgeting
+  estimateTokens(text) {
+    return Math.ceil((text || "").length / 4);
+  }
+  contextWindowForModel(model) {
+    const map = {
+      "gpt-3.5-turbo": 16e3,
+      "gpt-4": 8192,
+      "gpt-4-turbo": 128e3,
+      "gpt-4.1": 128e3,
+      "gpt-4.1-mini": 128e3,
+      "gpt-4.1-nano": 128e3,
+      "gpt-4o": 128e3,
+      "gpt-4o-mini": 128e3,
+      "gpt-5": 2e5,
+      "gpt-5-chat-latest": 2e5,
+      "gpt-5-mini": 2e5,
+      "gpt-5-nano": 2e5,
+      o1: 2e5,
+      o3: 2e5,
+      "o3-mini": 2e5,
+      "o4-mini": 2e5
+    };
+    if (!model)
+      return 128e3;
+    return map[model] || 128e3;
+  }
+  splitIntoChunks(text, chunkCharTarget) {
+    if (text.length <= chunkCharTarget)
+      return [text];
+    const paras = text.split(/\n\n+/);
+    const chunks = [];
+    let cur = "";
+    for (const p of paras) {
+      const candidate = cur.length ? cur + "\n\n" + p : p;
+      if (candidate.length <= chunkCharTarget || !cur) {
+        cur = candidate;
+      } else {
+        chunks.push(cur);
+        cur = p;
+      }
+    }
+    if (cur)
+      chunks.push(cur);
+    return chunks;
+  }
   async generateSummary(selectedText, editor) {
+    var _a3;
     try {
       const activeFile = this.app.workspace.getActiveFile();
       if (!activeFile) {
         throw new Error("No active file found.");
       }
       const title = activeFile.basename;
-      const promptText = `${this.settings.defaultPrompt} ${title ? "title of the note is: " + title + "\n" : ""} 
+      const basePrompt = `${this.settings.defaultPrompt} ${title ? "title of the note is: " + title + "\n" : ""}
 
-${selectedText}`;
+`;
+      const fullPromptPreview = `${basePrompt}${selectedText}`;
       if (!!this.settings.apiKey) {
-        Notify(`Generating summary...`);
+        if (this.currentAbort) {
+          try {
+            this.currentAbort.abort();
+          } catch (e) {
+          }
+        }
+        this.currentAbort = new AbortController();
+        const myRunId = ++this.currentRunId;
+        const model = this.settings.model;
+        const ctx = this.contextWindowForModel(model);
+        const inputEstimate = this.estimateTokens(fullPromptPreview);
+        const outputBudget = (_a3 = this.settings.maxTokens) != null ? _a3 : 0;
+        Notify(
+          `Token estimate: ~${inputEstimate} input, ${outputBudget} output (model ${model}, ~${ctx} ctx)`
+        );
+        const overhead = 1e3;
+        const maxInputAllowed = Math.max(
+          1e3,
+          ctx - outputBudget - overhead
+        );
+        const needsChunking = inputEstimate > maxInputAllowed;
+        const placement = this.settings.summaryPlacement;
+        Notify(
+          needsChunking ? `Large selection detected (~${inputEstimate} tokens). Chunking to stay under context window...` : `Generating summary...`
+        );
+        let pending = "";
+        let flushTimer;
+        const flushNow = () => {
+          if (!pending)
+            return;
+          if (myRunId !== this.currentRunId) {
+            pending = "";
+            return;
+          }
+          editor.replaceSelection(pending);
+          pending = "";
+        };
+        const queueWrite = (s) => {
+          if (!s)
+            return;
+          pending += s;
+          if (pending.length > 96) {
+            flushNow();
+            if (flushTimer) {
+              window.clearTimeout(flushTimer);
+              flushTimer = void 0;
+            }
+          } else {
+            if (flushTimer)
+              window.clearTimeout(flushTimer);
+            flushTimer = window.setTimeout(() => {
+              flushTimer = void 0;
+              flushNow();
+            }, 50);
+          }
+        };
         let message = "Summary updated successfully.";
         (async () => {
-          let summary = "";
-          for await (const summaryChunk of prompt(promptText, this.settings.apiKey, this.settings.maxTokens, this.settings.model)) {
-            if (!this.settings.putSummaryInFrontmatter)
-              editor.replaceSelection(summaryChunk);
-            summary += summaryChunk;
+          var _a4, _b;
+          let finalSummary = "";
+          const writeHeader = (text) => {
+            if (placement === "frontmatter")
+              return;
+            queueWrite(text);
+            flushNow();
+          };
+          if (placement === "below") {
+            const to = editor.getCursor ? editor.getCursor("to") : null;
+            if (to) {
+              editor.setCursor(to);
+            }
+            queueWrite("\n");
+            flushNow();
           }
-          if (this.settings.putSummaryInFrontmatter) {
-            this.app.fileManager.processFrontMatter(activeFile, (fm) => {
-              fm["summary"] = summary;
-            });
+          const runChunk = async (chunkText, idx, total, perChunkMax) => {
+            var _a5;
+            let chunkSummary = "";
+            const promptText = `${basePrompt}${chunkText}`;
+            let prefix = "";
+            if (needsChunking && placement !== "frontmatter") {
+              prefix = (idx === 0 ? "" : "\n\n") + `Part ${idx + 1}/${total}: `;
+              writeHeader(prefix);
+            }
+            for await (const delta of prompt(
+              promptText,
+              this.settings.apiKey,
+              perChunkMax,
+              this.settings.model,
+              this.settings.systemInstruction,
+              { signal: (_a5 = this.currentAbort) == null ? void 0 : _a5.signal }
+            )) {
+              if (myRunId !== this.currentRunId)
+                return "";
+              chunkSummary += delta;
+              if (placement !== "frontmatter")
+                queueWrite(delta);
+            }
+            flushNow();
+            return chunkSummary;
+          };
+          if (!needsChunking) {
+            let single = "";
+            for await (const delta of prompt(
+              fullPromptPreview,
+              this.settings.apiKey,
+              this.settings.maxTokens,
+              this.settings.model,
+              this.settings.systemInstruction,
+              { signal: (_a4 = this.currentAbort) == null ? void 0 : _a4.signal }
+            )) {
+              if (myRunId !== this.currentRunId)
+                return;
+              single += delta;
+              if (placement !== "frontmatter")
+                queueWrite(delta);
+            }
+            flushNow();
+            finalSummary = single;
           } else {
+            const availableForInput = Math.max(
+              2e3,
+              ctx - outputBudget - overhead
+            );
+            const chunkTokens = Math.max(
+              3e3,
+              Math.min(6e3, Math.floor(availableForInput * 0.9))
+            );
+            const chunkChars = chunkTokens * 4;
+            const parts = this.splitIntoChunks(
+              selectedText,
+              chunkChars
+            );
+            const perChunkMax = Math.min(
+              512,
+              this.settings.maxTokens
+            );
+            const chunkSummaries = [];
+            for (let i = 0; i < parts.length; i++) {
+              if (myRunId !== this.currentRunId)
+                return;
+              const cs = await runChunk(
+                parts[i],
+                i,
+                parts.length,
+                perChunkMax
+              );
+              chunkSummaries.push(cs);
+            }
+            const metaPrompt = `${basePrompt}You will be given N partial summaries. Produce a concise, coherent single summary that captures the overall content without repetition. Keep it under ${this.settings.maxTokens} tokens.
+
+Partial summaries:
+${chunkSummaries.map((s, i) => `(${i + 1}) ${s}`).join("\n\n")}`;
+            if (placement !== "frontmatter") {
+              writeHeader("\n\nFinal summary:\n");
+            }
+            let finalText = "";
+            for await (const delta of prompt(
+              metaPrompt,
+              this.settings.apiKey,
+              this.settings.maxTokens,
+              this.settings.model,
+              this.settings.systemInstruction,
+              { signal: (_b = this.currentAbort) == null ? void 0 : _b.signal }
+            )) {
+              if (myRunId !== this.currentRunId)
+                return;
+              finalText += delta;
+              if (placement !== "frontmatter")
+                queueWrite(delta);
+            }
+            flushNow();
+            finalSummary = finalText;
+          }
+          if (placement === "frontmatter") {
+            this.app.fileManager.processFrontMatter(
+              activeFile,
+              (fm) => {
+                fm["summary"] = finalSummary;
+              }
+            );
+          }
+          if (placement === "frontmatter") {
+            message = "Summary added to frontmatter.";
+          } else if (placement === "replace") {
             message = "Selection summarized successfully.";
+          } else if (placement === "below") {
+            message = "Summary inserted below selection.";
           }
           Notify(message);
         })();
       } else {
-        throw new Error("Please enter your OpenAI API Key in the settings.");
+        throw new Error(
+          "Please enter your OpenAI API Key in the settings."
+        );
       }
     } catch (error) {
       Notify(error);
@@ -251,7 +7390,11 @@ ${selectedText}`;
     }
   }
   async loadSettings() {
-    this.settings = Object.assign({}, default_settings, await this.loadData());
+    this.settings = Object.assign(
+      {},
+      default_settings,
+      await this.loadData()
+    );
   }
   async saveSettings() {
     await this.saveData(this.settings);
@@ -259,7 +7402,20 @@ ${selectedText}`;
   async onload() {
     await this.loadSettings();
     console.log(`AI Summarize v${this.manifest.version} loaded!`);
-    this.registerEvent(this.app.workspace.on("editor-menu", this.handleHighlighterInContextMenu));
+    const availableModels = await this.getAvailableModels();
+    this.settings.availableModels = availableModels;
+    if (!this.settings.model || !availableModels.includes(this.settings.model)) {
+      this.settings.model = availableModels[0] || "gpt-4";
+    }
+    await this.saveSettings();
+    console.log("Available OpenAI models:", availableModels);
+    console.log("Selected model:", this.settings.model);
+    this.registerEvent(
+      this.app.workspace.on(
+        "editor-menu",
+        this.handleHighlighterInContextMenu
+      )
+    );
     this.addCommand({
       id: "summarize-selection",
       name: "Summarize selection",
@@ -268,11 +7424,11 @@ ${selectedText}`;
         const selected = editor.getSelection();
         const wordCount = selected.split(" ").length;
         if (selected) {
-          if (wordCount > 10) {
+          if (wordCount > 30) {
             this.generateSummary(selected, editor);
             return true;
           }
-          Notify("Selected text is too short!");
+          Notify("Selected text is too short! (>30 words)");
           return false;
         }
       }
@@ -283,4 +7439,5 @@ ${selectedText}`;
     console.log("unloading plugin of Ravenwits!");
   }
 };
-//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsic3JjL3BsdWdpbi9tYWluLnRzIiwgInNyYy9wbHVnaW4vTm90aWZ5LnRzIiwgInNyYy9wbHVnaW4vZ3B0LnRzIiwgInNyYy9zZXR0aW5ncy9zZXR0aW5ncy50cyJdLAogICJzb3VyY2VzQ29udGVudCI6IFsiaW1wb3J0IHsgQXBwLCBFZGl0b3IsIE1lbnUsIFBsdWdpbiB9IGZyb20gJ29ic2lkaWFuJztcclxuaW1wb3J0IE5vdGlmeSBmcm9tICcuL05vdGlmeSc7XHJcbmltcG9ydCB7IHByb21wdCB9IGZyb20gJy4vZ3B0JztcclxuaW1wb3J0IEFpU3VtbWFyaXplU2V0dGluZ1RhYiwgeyBBaVN1bW1hcml6ZVBsdWdpblNldHRpbmdzLCBkZWZhdWx0X3NldHRpbmdzIH0gZnJvbSAnc3JjL3NldHRpbmdzL3NldHRpbmdzJztcclxuXHJcbmV4cG9ydCB0eXBlIEVuaGFuY2VkTWVudSA9IE1lbnUgJiB7IGRvbTogSFRNTEVsZW1lbnQgfTtcclxuXHJcbmV4cG9ydCB0eXBlIEVuaGFuY2VkQXBwID0gQXBwICYge1xyXG5cdGNvbW1hbmRzOiB7IGV4ZWN1dGVDb21tYW5kQnlJZDogRnVuY3Rpb24gfTtcclxufTtcclxuXHJcbmV4cG9ydCB0eXBlIEVuaGFuY2VkRWRpdG9yID0gRWRpdG9yICYge1xyXG5cdGdldFNlbGVjdGlvbjogRnVuY3Rpb247XHJcbn07XHJcblxyXG5leHBvcnQgZGVmYXVsdCBjbGFzcyBBSVN1bW1hcml6ZVBsdWdpbiBleHRlbmRzIFBsdWdpbiB7XHJcblx0c2V0dGluZ3M6IEFpU3VtbWFyaXplUGx1Z2luU2V0dGluZ3M7XHJcblx0ZnJvbnRtYXR0ZXJSZWdleCA9IC9eLS0tXFxuKFtcXHNcXFNdKj8pXFxuLS0tXFxuLztcclxuXHJcblx0YXN5bmMgZ2VuZXJhdGVTdW1tYXJ5KHNlbGVjdGVkVGV4dDogc3RyaW5nLCBlZGl0b3I6IEVuaGFuY2VkRWRpdG9yKTogUHJvbWlzZTxzdHJpbmc+IHtcclxuXHRcdHRyeSB7XHJcblx0XHRcdGNvbnN0IGFjdGl2ZUZpbGUgPSB0aGlzLmFwcC53b3Jrc3BhY2UuZ2V0QWN0aXZlRmlsZSgpO1xyXG5cclxuXHRcdFx0aWYgKCFhY3RpdmVGaWxlKSB7XHJcblx0XHRcdFx0dGhyb3cgbmV3IEVycm9yKCdObyBhY3RpdmUgZmlsZSBmb3VuZC4nKTtcclxuXHRcdFx0fVxyXG5cclxuXHRcdFx0Y29uc3QgdGl0bGUgPSBhY3RpdmVGaWxlLmJhc2VuYW1lO1xyXG5cdFx0XHRjb25zdCBwcm9tcHRUZXh0ID0gYCR7dGhpcy5zZXR0aW5ncy5kZWZhdWx0UHJvbXB0fSAke3RpdGxlID8gJ3RpdGxlIG9mIHRoZSBub3RlIGlzOiAnICsgdGl0bGUgKyAnXFxuJyA6ICcnfSBcXG5cXG4ke3NlbGVjdGVkVGV4dH1gO1xyXG5cclxuXHRcdFx0aWYgKCEhdGhpcy5zZXR0aW5ncy5hcGlLZXkpIHtcclxuXHRcdFx0XHROb3RpZnkoYEdlbmVyYXRpbmcgc3VtbWFyeS4uLmApO1xyXG5cdFx0XHRcdGxldCBtZXNzYWdlID0gJ1N1bW1hcnkgdXBkYXRlZCBzdWNjZXNzZnVsbHkuJztcclxuXHRcdFx0XHQoYXN5bmMgKCkgPT4ge1xyXG5cdFx0XHRcdFx0bGV0IHN1bW1hcnkgPSAnJztcclxuXHRcdFx0XHRcdGZvciBhd2FpdCAoY29uc3Qgc3VtbWFyeUNodW5rIG9mIHByb21wdChwcm9tcHRUZXh0LCB0aGlzLnNldHRpbmdzLmFwaUtleSwgdGhpcy5zZXR0aW5ncy5tYXhUb2tlbnMsIHRoaXMuc2V0dGluZ3MubW9kZWwpKSB7XHJcblx0XHRcdFx0XHRcdGlmICghdGhpcy5zZXR0aW5ncy5wdXRTdW1tYXJ5SW5Gcm9udG1hdHRlcikgZWRpdG9yLnJlcGxhY2VTZWxlY3Rpb24oc3VtbWFyeUNodW5rKTtcclxuXHRcdFx0XHRcdFx0c3VtbWFyeSArPSBzdW1tYXJ5Q2h1bms7XHJcblx0XHRcdFx0XHR9XHJcblx0XHRcdFx0XHRpZiAodGhpcy5zZXR0aW5ncy5wdXRTdW1tYXJ5SW5Gcm9udG1hdHRlcikge1xyXG5cdFx0XHRcdFx0XHR0aGlzLmFwcC5maWxlTWFuYWdlci5wcm9jZXNzRnJvbnRNYXR0ZXIoYWN0aXZlRmlsZSwgKGZtKSA9PiB7XHJcblx0XHRcdFx0XHRcdFx0Zm1bJ3N1bW1hcnknXSA9IHN1bW1hcnk7XHJcblx0XHRcdFx0XHRcdH0pO1xyXG5cdFx0XHRcdFx0fSBlbHNlIHtcclxuXHRcdFx0XHRcdFx0bWVzc2FnZSA9ICdTZWxlY3Rpb24gc3VtbWFyaXplZCBzdWNjZXNzZnVsbHkuJztcclxuXHRcdFx0XHRcdH1cclxuXHRcdFx0XHRcdE5vdGlmeShtZXNzYWdlKTtcclxuXHRcdFx0XHR9KSgpO1xyXG5cdFx0XHR9IGVsc2Uge1xyXG5cdFx0XHRcdHRocm93IG5ldyBFcnJvcignUGxlYXNlIGVudGVyIHlvdXIgT3BlbkFJIEFQSSBLZXkgaW4gdGhlIHNldHRpbmdzLicpO1xyXG5cdFx0XHR9XHJcblx0XHR9IGNhdGNoIChlcnJvcikge1xyXG5cdFx0XHROb3RpZnkoZXJyb3IpO1xyXG5cdFx0XHRyZXR1cm47XHJcblx0XHR9XHJcblx0fVxyXG5cclxuXHRhc3luYyBsb2FkU2V0dGluZ3MoKSB7XHJcblx0XHR0aGlzLnNldHRpbmdzID0gT2JqZWN0LmFzc2lnbih7fSwgZGVmYXVsdF9zZXR0aW5ncywgYXdhaXQgdGhpcy5sb2FkRGF0YSgpKTtcclxuXHR9XHJcblxyXG5cdGFzeW5jIHNhdmVTZXR0aW5ncygpIHtcclxuXHRcdGF3YWl0IHRoaXMuc2F2ZURhdGEodGhpcy5zZXR0aW5ncyk7XHJcblx0fVxyXG5cclxuXHRhc3luYyBvbmxvYWQoKSB7XHJcblx0XHRhd2FpdCB0aGlzLmxvYWRTZXR0aW5ncygpO1xyXG5cdFx0Y29uc29sZS5sb2coYEFJIFN1bW1hcml6ZSB2JHt0aGlzLm1hbmlmZXN0LnZlcnNpb259IGxvYWRlZCFgKTtcclxuXHJcblx0XHR0aGlzLnJlZ2lzdGVyRXZlbnQodGhpcy5hcHAud29ya3NwYWNlLm9uKCdlZGl0b3ItbWVudScsIHRoaXMuaGFuZGxlSGlnaGxpZ2h0ZXJJbkNvbnRleHRNZW51KSk7XHJcblxyXG5cdFx0dGhpcy5hZGRDb21tYW5kKHtcclxuXHRcdFx0aWQ6ICdzdW1tYXJpemUtc2VsZWN0aW9uJyxcclxuXHRcdFx0bmFtZTogJ1N1bW1hcml6ZSBzZWxlY3Rpb24nLFxyXG5cdFx0XHRpY29uOiAnbHVjaWRlLWJvdCcsXHJcblx0XHRcdGVkaXRvckNhbGxiYWNrOiAoZWRpdG9yLCBjdHgpID0+IHtcclxuXHRcdFx0XHRjb25zdCBzZWxlY3RlZCA9IGVkaXRvci5nZXRTZWxlY3Rpb24oKTtcclxuXHRcdFx0XHRjb25zdCB3b3JkQ291bnQgPSBzZWxlY3RlZC5zcGxpdCgnICcpLmxlbmd0aDtcclxuXHJcblx0XHRcdFx0aWYgKHNlbGVjdGVkKSB7XHJcblx0XHRcdFx0XHRpZiAod29yZENvdW50ID4gMTApIHtcclxuXHRcdFx0XHRcdFx0dGhpcy5nZW5lcmF0ZVN1bW1hcnkoc2VsZWN0ZWQsIGVkaXRvcik7XHJcblx0XHRcdFx0XHRcdHJldHVybiB0cnVlO1xyXG5cdFx0XHRcdFx0fVxyXG5cclxuXHRcdFx0XHRcdE5vdGlmeSgnU2VsZWN0ZWQgdGV4dCBpcyB0b28gc2hvcnQhJyk7XHJcblx0XHRcdFx0XHRyZXR1cm4gZmFsc2U7XHJcblx0XHRcdFx0fVxyXG5cdFx0XHR9LFxyXG5cdFx0fSk7XHJcblxyXG5cdFx0Ly8gVGhpcyBhZGRzIGEgc2V0dGluZ3MgdGFiIHNvIHRoZSB1c2VyIGNhbiBjb25maWd1cmUgdmFyaW91cyBhc3BlY3RzIG9mIHRoZSBwbHVnaW5cclxuXHRcdHRoaXMuYWRkU2V0dGluZ1RhYihuZXcgQWlTdW1tYXJpemVTZXR0aW5nVGFiKHRoaXMuYXBwLCB0aGlzKSk7XHJcblx0fVxyXG5cclxuXHRhc3luYyBvbnVubG9hZCgpIHtcclxuXHRcdGNvbnNvbGUubG9nKCd1bmxvYWRpbmcgcGx1Z2luIG9mIFJhdmVud2l0cyEnKTtcclxuXHR9XHJcblxyXG5cdGhhbmRsZUhpZ2hsaWdodGVySW5Db250ZXh0TWVudSA9IChtZW51OiBNZW51LCBlZGl0b3I6IEVuaGFuY2VkRWRpdG9yKTogdm9pZCA9PiB7XHJcblx0XHRjb25zdCBzZWxlY3Rpb24gPSBlZGl0b3IuZ2V0U2VsZWN0aW9uKCk7XHJcblx0XHRpZiAoc2VsZWN0aW9uKSB7XHJcblx0XHRcdG1lbnUuYWRkU2VwYXJhdG9yKCk7XHJcblx0XHRcdG1lbnUuYWRkSXRlbSgoaXRlbSkgPT4ge1xyXG5cdFx0XHRcdGl0ZW1cclxuXHRcdFx0XHRcdC5zZXRUaXRsZSgnQUkgc3VtbWFyaXplJylcclxuXHRcdFx0XHRcdC5zZXRJY29uKCdsdWNpZGUtYm90JylcclxuXHRcdFx0XHRcdC5vbkNsaWNrKChlKSA9PiB7XHJcblx0XHRcdFx0XHRcdGlmIChlZGl0b3IuZ2V0U2VsZWN0aW9uKCkpIHtcclxuXHRcdFx0XHRcdFx0XHRjb25zdCBzZWxlY3RlZCA9IGVkaXRvci5nZXRTZWxlY3Rpb24oKTtcclxuXHRcdFx0XHRcdFx0XHRjb25zdCB3b3JkQ291bnQgPSBzZWxlY3RlZC5zcGxpdCgnICcpLmxlbmd0aDtcclxuXHJcblx0XHRcdFx0XHRcdFx0aWYgKHdvcmRDb3VudCA+IDEwKSB7XHJcblx0XHRcdFx0XHRcdFx0XHR0aGlzLmdlbmVyYXRlU3VtbWFyeShzZWxlY3Rpb24sIGVkaXRvcik7XHJcblx0XHRcdFx0XHRcdFx0fSBlbHNlIE5vdGlmeSgnU2VsZWN0ZWQgdGV4dCBpcyB0b28gc2hvcnQhJyk7XHJcblx0XHRcdFx0XHRcdH1cclxuXHRcdFx0XHRcdH0pO1xyXG5cdFx0XHR9KTtcclxuXHRcdH1cclxuXHR9O1xyXG59XHJcbiIsICJpbXBvcnQgeyBOb3RpY2UgfSBmcm9tICdvYnNpZGlhbic7XHJcblxyXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBOb3RpZnkobWVzc2FnZTogc3RyaW5nKSB7XHJcblx0bmV3IE5vdGljZShgQUkgU3VtbWFyaXplOiAke21lc3NhZ2V9YCk7XHJcbn1cclxuIiwgImNvbnN0IHVybCA9ICdodHRwczovL2FwaS5vcGVuYWkuY29tL3YxL2NoYXQvY29tcGxldGlvbnMnO1xyXG5cclxuZXhwb3J0IGFzeW5jIGZ1bmN0aW9uKiBwcm9tcHQocHJvbXB0OiBzdHJpbmcsIGFwaUtleTogc3RyaW5nLCBtYXhUb2tlbnM6IG51bWJlciwgbW9kZWw6IHN0cmluZyA9ICdncHQtMy41LXR1cmJvJykge1xyXG5cdGNvbnN0IHJlcXVlc3RPcHRpb25zID0ge1xyXG5cdFx0bWV0aG9kOiAnUE9TVCcsXHJcblx0XHRoZWFkZXJzOiB7XHJcblx0XHRcdCdDb250ZW50LVR5cGUnOiAnYXBwbGljYXRpb24vanNvbicsXHJcblx0XHRcdEF1dGhvcml6YXRpb246IGBCZWFyZXIgJHthcGlLZXl9YCxcclxuXHRcdH0sXHJcblx0XHRib2R5OiBKU09OLnN0cmluZ2lmeSh7XHJcblx0XHRcdG1lc3NhZ2VzOiBbeyByb2xlOiAnc3lzdGVtJywgY29udGVudDogcHJvbXB0IH1dLFxyXG5cdFx0XHRtb2RlbDogbW9kZWwsXHJcblx0XHRcdHRlbXBlcmF0dXJlOiAwLjcsXHJcblx0XHRcdG1heF90b2tlbnM6IG1heFRva2VucyxcclxuXHRcdFx0dG9wX3A6IDEsXHJcblx0XHRcdGZyZXF1ZW5jeV9wZW5hbHR5OiAwLFxyXG5cdFx0XHRwcmVzZW5jZV9wZW5hbHR5OiAwLFxyXG5cdFx0XHRzdHJlYW06IHRydWUsXHJcblx0XHR9KSxcclxuXHR9O1xyXG5cclxuXHRjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKHVybCwgcmVxdWVzdE9wdGlvbnMpO1xyXG5cdGNvbnN0IHJlYWRlciA9IHJlc3BvbnNlLmJvZHk/LnBpcGVUaHJvdWdoKG5ldyBUZXh0RGVjb2RlclN0cmVhbSgpKS5nZXRSZWFkZXIoKTtcclxuXHRsZXQgY29udGVudCA9ICcnO1xyXG5cdGxldCBnb3REb25lTWVzc2FnZSA9IGZhbHNlO1xyXG5cdHdoaWxlICghZ290RG9uZU1lc3NhZ2UpIHtcclxuXHRcdGNvbnN0IHJlcyA9IGF3YWl0IHJlYWRlcj8ucmVhZCgpO1xyXG5cdFx0aWYgKHJlcz8uZG9uZSkgYnJlYWs7XHJcblx0XHRpZiAoIXJlcz8udmFsdWUpIGNvbnRpbnVlO1xyXG5cdFx0Y29uc3QgdGV4dCA9IHJlcz8udmFsdWU7XHJcblx0XHRjb25zdCBsaW5lcyA9IHRleHQuc3BsaXQoJ1xcbicpLmZpbHRlcigobGluZSkgPT4gbGluZS50cmltKCkgIT09ICcnKTtcclxuXHRcdGZvciAoY29uc3QgbGluZSBvZiBsaW5lcykge1xyXG5cdFx0XHRjb25zdCBsaW5lTWVzc2FnZSA9IGxpbmUucmVwbGFjZSgvXmRhdGE6IC8sICcnKTtcclxuXHRcdFx0aWYgKGxpbmVNZXNzYWdlID09PSAnW0RPTkVdJykge1xyXG5cdFx0XHRcdGdvdERvbmVNZXNzYWdlID0gdHJ1ZTtcclxuXHRcdFx0XHRicmVhaztcclxuXHRcdFx0fVxyXG5cdFx0XHR0cnkge1xyXG5cdFx0XHRcdGNvbnN0IHBhcnNlZCA9IEpTT04ucGFyc2UobGluZU1lc3NhZ2UpO1xyXG5cdFx0XHRcdGNvbnN0IHRva2VuID0gcGFyc2VkLmNob2ljZXNbMF0uZGVsdGEuY29udGVudDtcclxuXHRcdFx0XHRpZiAodG9rZW4pIHtcclxuXHRcdFx0XHRcdGNvbnRlbnQgKz0gdG9rZW47XHJcblx0XHRcdFx0XHR5aWVsZCB0b2tlbjtcclxuXHRcdFx0XHR9XHJcblx0XHRcdH0gY2F0Y2ggKGVycm9yKSB7XHJcblx0XHRcdFx0Y29uc29sZS5lcnJvcihgQ291bGQgbm90IEpTT04gcGFyc2Ugc3RyZWFtIG1lc3NhZ2VgLCB7XHJcblx0XHRcdFx0XHR0ZXh0LFxyXG5cdFx0XHRcdFx0bGluZXMsXHJcblx0XHRcdFx0XHRsaW5lLFxyXG5cdFx0XHRcdFx0bGluZU1lc3NhZ2UsXHJcblx0XHRcdFx0XHRlcnJvcixcclxuXHRcdFx0XHR9KTtcclxuXHRcdFx0fVxyXG5cdFx0fVxyXG5cdH1cclxuXHRyZXR1cm4gY29udGVudDtcclxufVxyXG4iLCAiaW1wb3J0IHsgQXBwLCBTZXR0aW5nLCBQbHVnaW5TZXR0aW5nVGFiIH0gZnJvbSAnb2JzaWRpYW4nO1xyXG5pbXBvcnQgQUlTdW1tYXJpemVQbHVnaW4gZnJvbSAnc3JjL3BsdWdpbi9tYWluJztcclxuXHJcbmV4cG9ydCBpbnRlcmZhY2UgQWlTdW1tYXJpemVQbHVnaW5TZXR0aW5ncyB7XHJcblx0YXBpS2V5OiBzdHJpbmc7XHJcblx0bWF4VG9rZW5zOiBudW1iZXI7XHJcblx0ZGVmYXVsdFByb21wdDogc3RyaW5nO1xyXG5cdHB1dFN1bW1hcnlJbkZyb250bWF0dGVyOiBib29sZWFuO1xyXG5cdG1vZGVsPzogc3RyaW5nO1xyXG59XHJcblxyXG5jb25zdCBkZWZhdWx0TWF4VG9rZW5zID0gMTAwMDtcclxuZXhwb3J0IGNvbnN0IGRlZmF1bHRfc2V0dGluZ3M6IEFpU3VtbWFyaXplUGx1Z2luU2V0dGluZ3MgPSB7XHJcblx0YXBpS2V5OiAnJyxcclxuXHRtYXhUb2tlbnM6IGRlZmF1bHRNYXhUb2tlbnMsXHJcblx0ZGVmYXVsdFByb21wdDogJ0dlbmVyYXRlIGEgdmVyeSBzaG9ydCBzdW1tYXJ5IG9mIHRoZSBmb2xsb3dpbmcgbm90ZSBpbiAzLTQgc2VudGVuY2VzOlxcblxcbicsXHJcblx0cHV0U3VtbWFyeUluRnJvbnRtYXR0ZXI6IGZhbHNlLFxyXG5cdG1vZGVsOiAnZ3B0LTMuNS10dXJibycsXHJcbn07XHJcblxyXG5leHBvcnQgZGVmYXVsdCBjbGFzcyBBaVN1bW1hcml6ZVNldHRpbmdUYWIgZXh0ZW5kcyBQbHVnaW5TZXR0aW5nVGFiIHtcclxuXHRwbHVnaW46IEFJU3VtbWFyaXplUGx1Z2luO1xyXG5cclxuXHRjb25zdHJ1Y3RvcihhcHA6IEFwcCwgcGx1Z2luOiBBSVN1bW1hcml6ZVBsdWdpbikge1xyXG5cdFx0c3VwZXIoYXBwLCBwbHVnaW4pO1xyXG5cdFx0dGhpcy5wbHVnaW4gPSBwbHVnaW47XHJcblx0fVxyXG5cclxuXHRkaXNwbGF5KCk6IHZvaWQge1xyXG5cdFx0Y29uc3QgeyBjb250YWluZXJFbCB9ID0gdGhpcztcclxuXHJcblx0XHRjb250YWluZXJFbC5lbXB0eSgpO1xyXG5cdFx0bmV3IFNldHRpbmcoY29udGFpbmVyRWwpLnNldE5hbWUoJ0dlbmVyYWwgU2V0dGluZ3MnKS5zZXRIZWFkaW5nKCk7XHJcblxyXG5cdFx0bmV3IFNldHRpbmcoY29udGFpbmVyRWwpXHJcblx0XHRcdC5zZXROYW1lKCdBUEkga2V5JylcclxuXHRcdFx0LnNldFRvb2x0aXAoJ0dldCB5b3VyIE9wZW5BSSBBUEkga2V5IGZyb20gaHR0cHM6Ly9wbGF0Zm9ybS5vcGVuYWkuY29tL2FjY291bnQvYXBpLWtleXMnKVxyXG5cdFx0XHQuc2V0RGVzYygnT3BlbkFJIEFQSSBrZXkgaXMgcmVxdWlyZWQgdG8gdXNlIHRoZSBBSSBTdW1tYXJpemUgcGx1Z2luLicpXHJcblx0XHRcdC5hZGRUZXh0KCh0ZXh0KSA9PlxyXG5cdFx0XHRcdHRleHRcclxuXHRcdFx0XHRcdC5zZXRQbGFjZWhvbGRlcignWW91ciBBUEkgS2V5JylcclxuXHRcdFx0XHRcdC5zZXRWYWx1ZSh0aGlzLnBsdWdpbi5zZXR0aW5ncy5hcGlLZXkpXHJcblx0XHRcdFx0XHQub25DaGFuZ2UoYXN5bmMgKHZhbHVlKSA9PiB7XHJcblx0XHRcdFx0XHRcdHRoaXMucGx1Z2luLnNldHRpbmdzLmFwaUtleSA9IHZhbHVlO1xyXG5cdFx0XHRcdFx0XHRhd2FpdCB0aGlzLnBsdWdpbi5zYXZlU2V0dGluZ3MoKTtcclxuXHRcdFx0XHRcdH0pLFxyXG5cdFx0XHQpO1xyXG5cclxuXHRcdG5ldyBTZXR0aW5nKGNvbnRhaW5lckVsKVxyXG5cdFx0XHQuc2V0TmFtZSgnTWF4IHRva2VucycpXHJcblx0XHRcdC5zZXREZXNjKCdNYXggdG9rZW5zIHRvIGdlbmVyYXRlIHRoZSBzdW1tYXJ5LiBEZWZhdWx0IGlzIDEwMDAuJylcclxuXHRcdFx0LmFkZFRleHQoKHRleHQpID0+XHJcblx0XHRcdFx0dGV4dFxyXG5cdFx0XHRcdFx0LnNldFBsYWNlaG9sZGVyKGRlZmF1bHRNYXhUb2tlbnMudG9TdHJpbmcoKSlcclxuXHRcdFx0XHRcdC5zZXRWYWx1ZSh0aGlzLnBsdWdpbi5zZXR0aW5ncy5tYXhUb2tlbnM/LnRvU3RyaW5nKCkgfHwgZGVmYXVsdE1heFRva2Vucy50b1N0cmluZygpKVxyXG5cdFx0XHRcdFx0Lm9uQ2hhbmdlKGFzeW5jICh2YWx1ZSkgPT4ge1xyXG5cdFx0XHRcdFx0XHR0aGlzLnBsdWdpbi5zZXR0aW5ncy5tYXhUb2tlbnMgPSBOdW1iZXIucGFyc2VJbnQodmFsdWUpO1xyXG5cdFx0XHRcdFx0XHRhd2FpdCB0aGlzLnBsdWdpbi5zYXZlU2V0dGluZ3MoKTtcclxuXHRcdFx0XHRcdH0pLFxyXG5cdFx0XHQpO1xyXG5cclxuXHRcdG5ldyBTZXR0aW5nKGNvbnRhaW5lckVsKVxyXG5cdFx0XHQuc2V0TmFtZSgnQUkgTW9kZWwnKVxyXG5cdFx0XHQuc2V0RGVzYygnVGhlIEFJIG1vZGVsIHRvIHVzZSBmb3IgZ2VuZXJhdGluZyB0aGUgc3VtbWFyeS4gRGVmYXVsdCBpcyBncHQtMy41LXR1cmJvLicpXHJcblx0XHRcdC5hZGREcm9wZG93bigoZHJvcGRvd24pID0+XHJcblx0XHRcdFx0ZHJvcGRvd25cclxuXHRcdFx0XHRcdC5hZGRPcHRpb25zKHsgJ2dwdC0zLjUtdHVyYm8nOiAnZ3B0LTMuNS10dXJibycsICdncHQtNCc6ICdncHQtNCcsICdncHQtNC10dXJibyc6ICdncHQtNC10dXJibycsICdncHQtNG8nOiAnZ3B0LTRvJyB9KVxyXG5cdFx0XHRcdFx0LnNldFZhbHVlKHRoaXMucGx1Z2luLnNldHRpbmdzLm1vZGVsKVxyXG5cdFx0XHRcdFx0Lm9uQ2hhbmdlKGFzeW5jICh2YWx1ZSkgPT4ge1xyXG5cdFx0XHRcdFx0XHR0aGlzLnBsdWdpbi5zZXR0aW5ncy5tb2RlbCA9IHZhbHVlO1xyXG5cdFx0XHRcdFx0XHRhd2FpdCB0aGlzLnBsdWdpbi5zYXZlU2V0dGluZ3MoKTtcclxuXHRcdFx0XHRcdH0pLFxyXG5cdFx0XHQpO1xyXG5cclxuXHRcdG5ldyBTZXR0aW5nKGNvbnRhaW5lckVsKVxyXG5cdFx0XHQuc2V0TmFtZSgnRGVmYXVsdCBwcm9tcHQnKVxyXG5cdFx0XHQuc2V0RGVzYygnRGVmYXVsdCBwcm9tcHQgZm9yIHRoZSBBSSB0byBnZW5lcmF0ZSBhIHN1bW1hcnkuJylcclxuXHRcdFx0LmFkZFRleHRBcmVhKCh0ZXh0KSA9PlxyXG5cdFx0XHRcdHRleHRcclxuXHRcdFx0XHRcdC5zZXRQbGFjZWhvbGRlcignWW91ciBjdXN0b20gcHJvbXB0JylcclxuXHRcdFx0XHRcdC5zZXRWYWx1ZSh0aGlzLnBsdWdpbi5zZXR0aW5ncy5kZWZhdWx0UHJvbXB0KVxyXG5cdFx0XHRcdFx0Lm9uQ2hhbmdlKGFzeW5jICh2YWx1ZSkgPT4ge1xyXG5cdFx0XHRcdFx0XHR0aGlzLnBsdWdpbi5zZXR0aW5ncy5kZWZhdWx0UHJvbXB0ID0gdmFsdWU7XHJcblx0XHRcdFx0XHRcdGF3YWl0IHRoaXMucGx1Z2luLnNhdmVTZXR0aW5ncygpO1xyXG5cdFx0XHRcdFx0fSksXHJcblx0XHRcdCk7XHJcblxyXG5cdFx0bmV3IFNldHRpbmcoY29udGFpbmVyRWwpXHJcblx0XHRcdC5zZXROYW1lKCdTdW1tYXJ5IGluIHRoZSBmcm9udG1hdHRlcicpXHJcblx0XHRcdC5zZXREZXNjKCdUaGlzIHdpbGwgcHV0IHRoZSBnZW5lcmF0ZWQgc3VtbWFyeSBpbiB0aGUgZnJvbnRtYXR0ZXIgb2YgdGhlIG5vdGUgb3RoZXJ3aXNlIHRoZSBzZWxlY3RlZCB0ZXh0IHdpbGwgYmUgcmVwbGFjZWQgYnkgdGhlIHN1bW1hcnkuJylcclxuXHRcdFx0LmFkZFRvZ2dsZSgodG9nZ2xlKSA9PlxyXG5cdFx0XHRcdHRvZ2dsZS5zZXRWYWx1ZSh0aGlzLnBsdWdpbi5zZXR0aW5ncy5wdXRTdW1tYXJ5SW5Gcm9udG1hdHRlcikub25DaGFuZ2UoYXN5bmMgKHZhbHVlKSA9PiB7XHJcblx0XHRcdFx0XHR0aGlzLnBsdWdpbi5zZXR0aW5ncy5wdXRTdW1tYXJ5SW5Gcm9udG1hdHRlciA9IHZhbHVlO1xyXG5cdFx0XHRcdFx0YXdhaXQgdGhpcy5wbHVnaW4uc2F2ZVNldHRpbmdzKCk7XHJcblx0XHRcdFx0fSksXHJcblx0XHRcdCk7XHJcblxyXG5cdFx0bmV3IFNldHRpbmcoY29udGFpbmVyRWwpLnNldE5hbWUoJ0tOT1cgSE9XJykuc2V0SGVhZGluZygpO1xyXG5cdFx0Y29udGFpbmVyRWwuY3JlYXRlRWwoJ3AnLCB7XHJcblx0XHRcdHRleHQ6ICdUbyBnZW5lcmF0ZSBhIHN1bW1hcnksIHNlbGVjdCBhdCBsZWFzdCAxMCB3b3JkcyB3aXRoaW4gYSBub3RlLiBZb3UgY2FuIHVzZSB0aGUgY29udGV4dCBtZW51IGJ5IHJpZ2h0LWNsaWNraW5nIG9uIGEgc2VsZWN0aW9uIGFuZCBjaG9vc2luZyBcIkFJIFN1bW1hcml6ZVwiLCBvciB5b3UgY2FuIHVzZSB0aGUgY29tbWFuZCBwYWxldHRlIGFuZCBzZWFyY2ggZm9yIFwiQUkgU3VtbWFyaXplXCIuJyxcclxuXHRcdH0pO1xyXG5cclxuXHRcdG5ldyBTZXR0aW5nKGNvbnRhaW5lckVsKS5zZXROYW1lKCdTVVBQT1JUJykuc2V0SGVhZGluZygpO1xyXG5cdFx0Y29uc3QgZG9uYXRlVGV4dCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3AnKTtcclxuXHRcdGRvbmF0ZVRleHQudGV4dENvbnRlbnQgPSAnSWYgeW91IGZpbmQgdGhpcyBwbHVnaW4gdmFsdWFibGUgYW5kIHdvdWxkIGxpa2UgdG8gc3VwcG9ydCBpdHMgY29udGludWVkIGRldmVsb3BtZW50LCBwbGVhc2UgY29uc2lkZXIgYnV5aW5nIG1lIGEgY29mZmVlOic7XHJcblx0XHRjb250YWluZXJFbC5hcHBlbmRDaGlsZChkb25hdGVUZXh0KTtcclxuXHJcblx0XHRjb25zdCBwYXJzZXIgPSBuZXcgRE9NUGFyc2VyKCk7XHJcblxyXG5cdFx0Y29udGFpbmVyRWwuYXBwZW5kQ2hpbGQoY3JlYXRlRG9uYXRlQnV0dG9uKCdodHRwczovL3d3dy5idXltZWFjb2ZmZWUuY29tL3JhdmVud2l0cycsIHBhcnNlci5wYXJzZUZyb21TdHJpbmcoYnV5TWVBQ29mZmVlLCAndGV4dC94bWwnKS5kb2N1bWVudEVsZW1lbnQpKTtcclxuXHR9XHJcbn1cclxuXHJcbmNvbnN0IGNyZWF0ZURvbmF0ZUJ1dHRvbiA9IChsaW5rOiBzdHJpbmcsIGltZzogSFRNTEVsZW1lbnQpOiBIVE1MRWxlbWVudCA9PiB7XHJcblx0Y29uc3QgYSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2EnKTtcclxuXHRhLnNldEF0dHJpYnV0ZSgnaHJlZicsIGxpbmspO1xyXG5cdGEuYXBwZW5kQ2hpbGQoaW1nKTtcclxuXHRyZXR1cm4gYTtcclxufTtcclxuXHJcbmNvbnN0IGJ1eU1lQUNvZmZlZSA9IGBcclxuPHN2ZyB3aWR0aD1cIjE1MFwiIGhlaWdodD1cIjQyXCIgdmlld0JveD1cIjAgMCAyNjAgNzNcIiBmaWxsPVwibm9uZVwiIHhtbG5zPVwiaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmdcIj5cclxuPHBhdGggZD1cIk0wIDExLjY4QzAgNS4yMjkzMiA1LjIyOTMxIDAgMTEuNjggMEgyNDguMkMyNTQuNjUxIDAgMjU5Ljg4IDUuMjI5MzEgMjU5Ljg4IDExLjY4VjYxLjMyQzI1OS44OCA2Ny43NzA3IDI1NC42NTEgNzMgMjQ4LjIgNzNIMTEuNjhDNS4yMjkzMSA3MyAwIDY3Ljc3MDcgMCA2MS4zMlYxMS42OFpcIiBmaWxsPVwiI0ZGREQwMFwiLz5cclxuPHBhdGggZD1cIk01Mi4yNTY2IDI0LjAwNzhMNTIuMjI0NiAyMy45ODg5TDUyLjE1MDQgMjMuOTY2M0M1Mi4xODAyIDIzLjk5MTUgNTIuMjE3NiAyNC4wMDYxIDUyLjI1NjYgMjQuMDA3OFpcIiBmaWxsPVwiIzBEMEMyMlwiLz5cclxuPHBhdGggZD1cIk01Mi43MjQ4IDI3LjM0NTdMNTIuNjg5NSAyNy4zNTU2TDUyLjcyNDggMjcuMzQ1N1pcIiBmaWxsPVwiIzBEMEMyMlwiLz5cclxuPHBhdGggZD1cIk01Mi4yNzAxIDI0LjAwMjRDNTIuMjY2IDI0LjAwMTkgNTIuMjYxOSAyNC4wMDA5IDUyLjI1OCAyMy45OTk1QzUyLjI1NzggMjQuMDAyMiA1Mi4yNTc4IDI0LjAwNDkgNTIuMjU4IDI0LjAwNzZDNTIuMjYyNCAyNC4wMDcgNTIuMjY2NiAyNC4wMDUyIDUyLjI3MDEgMjQuMDAyNFpcIiBmaWxsPVwiIzBEMEMyMlwiLz5cclxuPHBhdGggZD1cIk01Mi4yNTc4IDI0LjAwOTRINTIuMjY0M1YyNC4wMDU0TDUyLjI1NzggMjQuMDA5NFpcIiBmaWxsPVwiIzBEMEMyMlwiLz5cclxuPHBhdGggZD1cIk01Mi42OTczIDI3LjMzOTRMNTIuNzUxMyAyNy4zMDg2TDUyLjc3MTQgMjcuMjk3M0w1Mi43ODk3IDI3LjI3NzhDNTIuNzU1NCAyNy4yOTI2IDUyLjcyNDEgMjcuMzEzNSA1Mi42OTczIDI3LjMzOTRaXCIgZmlsbD1cIiMwRDBDMjJcIi8+XHJcbjxwYXRoIGQ9XCJNNTIuMzQ4NCAyNC4wODEyTDUyLjI5NTYgMjQuMDMxTDUyLjI1OTggMjQuMDExNUM1Mi4yNzkgMjQuMDQ1NCA1Mi4zMTA4IDI0LjA3MDUgNTIuMzQ4NCAyNC4wODEyWlwiIGZpbGw9XCIjMEQwQzIyXCIvPlxyXG48cGF0aCBkPVwiTTM5LjA2ODQgNTYuNDY5QzM5LjAyNjIgNTYuNDg3MiAzOC45ODkzIDU2LjUxNTggMzguOTYwOSA1Ni41NTJMMzguOTk0MyA1Ni41MzA2QzM5LjAxNjkgNTYuNTA5OCAzOS4wNDg5IDU2LjQ4NTMgMzkuMDY4NCA1Ni40NjlaXCIgZmlsbD1cIiMwRDBDMjJcIi8+XHJcbjxwYXRoIGQ9XCJNNDYuNzgwMiA1NC45NTE4QzQ2Ljc4MDIgNTQuOTA0MSA0Ni43NTY5IDU0LjkxMjkgNDYuNzYyNiA1NS4wODI2QzQ2Ljc2MjYgNTUuMDY4NyA0Ni43NjgzIDU1LjA1NDkgNDYuNzcwOCA1NS4wNDE3QzQ2Ljc3MzkgNTUuMDExNSA0Ni43NzY0IDU0Ljk4MiA0Ni43ODAyIDU0Ljk1MThaXCIgZmlsbD1cIiMwRDBDMjJcIi8+XHJcbjxwYXRoIGQ9XCJNNDUuOTg0NCA1Ni40NjlDNDUuOTQyMiA1Ni40ODcyIDQ1LjkwNTMgNTYuNTE1OCA0NS44NzcgNTYuNTUyTDQ1LjkxMDMgNTYuNTMwNkM0NS45MzI5IDU2LjUwOTggNDUuOTY0OSA1Ni40ODUzIDQ1Ljk4NDQgNTYuNDY5WlwiIGZpbGw9XCIjMEQwQzIyXCIvPlxyXG48cGF0aCBkPVwiTTMzLjYzMDcgNTYuODMwMUMzMy41OTg3IDU2LjgwMjMgMzMuNTU5NSA1Ni43ODQgMzMuNTE3NiA1Ni43NzczQzMzLjU1MTUgNTYuNzkzNyAzMy41ODU1IDU2LjgxIDMzLjYwODEgNTYuODIyNkwzMy42MzA3IDU2LjgzMDFaXCIgZmlsbD1cIiMwRDBDMjJcIi8+XHJcbjxwYXRoIGQ9XCJNMzIuNDExOCA1NS42NTk4QzMyLjQwNjggNTUuNjEwMyAzMi4zOTE2IDU1LjU2MjQgMzIuMzY3MiA1NS41MTlDMzIuMzg0NSA1NS41NjQyIDMyLjM5OSA1NS42MTA0IDMyLjQxMDYgNTUuNjU3M0wzMi40MTE4IDU1LjY1OThaXCIgZmlsbD1cIiMwRDBDMjJcIi8+XHJcbjxwYXRoIGQ9XCJNNDAuNjIzIDM0LjcyMjFDMzguOTQ0OSAzNS40NDA1IDM3LjA0MDQgMzYuMjU1MSAzNC41NzIyIDM2LjI1NTFDMzMuNTM5NyAzNi4yNTMxIDMyLjUxMjIgMzYuMTExNCAzMS41MTc2IDM1LjgzNEwzMy4yMjQ3IDUzLjM2MDVDMzMuMjg1MSA1NC4wOTMgMzMuNjE4OCA1NC43NzYxIDM0LjE1OTUgNTUuMjczOUMzNC43MDAzIDU1Ljc3MTggMzUuNDA4NSA1Ni4wNDgyIDM2LjE0MzUgNTYuMDQ4QzM2LjE0MzUgNTYuMDQ4IDM4LjU2NCA1Ni4xNzM3IDM5LjM3MTYgNTYuMTczN0M0MC4yNDA5IDU2LjE3MzcgNDIuODQ3NCA1Ni4wNDggNDIuODQ3NCA1Ni4wNDhDNDMuNTgyMyA1Ni4wNDggNDQuMjkwNCA1NS43NzE2IDQ0LjgzMSA1NS4yNzM3QzQ1LjM3MTYgNTQuNzc1OSA0NS43MDUyIDU0LjA5MjkgNDUuNzY1NiA1My4zNjA1TDQ3LjU5NCAzMy45OTNDNDYuNzc2OSAzMy43MTQgNDUuOTUyMyAzMy41Mjg2IDQ1LjAyMjcgMzMuNTI4NkM0My40MTUgMzMuNTI3OSA0Mi4xMTk2IDM0LjA4MTcgNDAuNjIzIDM0LjcyMjFaXCIgZmlsbD1cIndoaXRlXCIvPlxyXG48cGF0aCBkPVwiTTI2LjIzNDQgMjcuMjQ0OUwyNi4yNjMzIDI3LjI3MTlMMjYuMjgyMSAyNy4yODMyQzI2LjI2NzYgMjcuMjY4OCAyNi4yNTE2IDI3LjI1NTkgMjYuMjM0NCAyNy4yNDQ5WlwiIGZpbGw9XCIjMEQwQzIyXCIvPlxyXG48cGF0aCBkPVwiTTU1LjQ5MDYgMjUuNjI3NEw1NS4yMzM2IDI0LjMzMDdDNTUuMDAyOSAyMy4xNjczIDU0LjQ3OTMgMjIuMDY4IDUzLjI4NTEgMjEuNjQ3NUM1Mi45MDI0IDIxLjUxMyA1Mi40NjggMjEuNDU1MiA1Mi4xNzQ1IDIxLjE3NjhDNTEuODgxIDIwLjg5ODMgNTEuNzk0MyAyMC40NjU5IDUxLjcyNjQgMjAuMDY0OUM1MS42MDA3IDE5LjMyODkgNTEuNDgyNSAxOC41OTIzIDUxLjM1MzcgMTcuODU3NUM1MS4yNDI0IDE3LjIyNTkgNTEuMTU0NCAxNi41MTYzIDUwLjg2NDcgMTUuOTM2OEM1MC40ODc2IDE1LjE1ODYgNDkuNzA1IDE0LjcwMzYgNDguOTI2OSAxNC40MDI1QzQ4LjUyODIgMTQuMjUzNyA0OC4xMjEzIDE0LjEyNzggNDcuNzA4MiAxNC4wMjU0QzQ1Ljc2NDIgMTMuNTEyNSA0My43MjAyIDEzLjMyNCA0MS43MjAyIDEzLjIxNjVDMzkuMzE5NyAxMy4wODQgMzYuOTEyOCAxMy4xMjM5IDM0LjUxOCAxMy4zMzU5QzMyLjczNTUgMTMuNDk4MSAzMC44NTgxIDEzLjY5NDIgMjkuMTY0MiAxNC4zMTA4QzI4LjU0NTEgMTQuNTM2NCAyNy45MDcxIDE0LjgwNzMgMjcuNDM2NCAxNS4yODU2QzI2Ljg1ODcgMTUuODczMyAyNi42NzAyIDE2Ljc4MjEgMjcuMDkxOSAxNy41MTVDMjcuMzkxNyAxOC4wMzU0IDI3Ljg5OTYgMTguNDAzMSAyOC40MzgyIDE4LjY0NjNDMjkuMTM5OCAxOC45NTk3IDI5Ljg3MjYgMTkuMTk4MiAzMC42MjQyIDE5LjM1NzhDMzIuNzE3MiAxOS44MjA0IDM0Ljg4NSAyMC4wMDIxIDM3LjAyMzMgMjAuMDc5NEMzOS4zOTMyIDIwLjE3NSA0MS43NjcgMjAuMDk3NSA0NC4xMjU2IDE5Ljg0NzRDNDQuNzA4OSAxOS43ODMzIDQ1LjI5MTEgMTkuNzA2NCA0NS44NzIzIDE5LjYxNjhDNDYuNTU2OCAxOS41MTE4IDQ2Ljk5NjEgMTguNjE2OCA0Ni43OTQzIDE3Ljk5MzNDNDYuNTUzIDE3LjI0NzkgNDUuOTA0NCAxNi45NTg3IDQ1LjE3MDkgMTcuMDcxMkM0NS4wNjI4IDE3LjA4ODIgNDQuOTU1MyAxNy4xMDM5IDQ0Ljg0NzIgMTcuMTE5Nkw0NC43NjkyIDE3LjEzMUM0NC41MjA4IDE3LjE2MjQgNDQuMjcyMyAxNy4xOTE3IDQ0LjAyMzggMTcuMjE5QzQzLjUxMDUgMTcuMjc0MyA0Mi45OTU5IDE3LjMxOTUgNDIuNDgwMSAxNy4zNTQ3QzQxLjMyNDkgMTcuNDM1MiA0MC4xNjY1IDE3LjQ3MjIgMzkuMDA4OCAxNy40NzQxQzM3Ljg3MTIgMTcuNDc0MSAzNi43MzI5IDE3LjQ0MjEgMzUuNTk3OCAxNy4zNjczQzM1LjA3OTkgMTcuMzMzMyAzNC41NjMyIDE3LjI5MDIgMzQuMDQ3OCAxNy4yMzc4QzMzLjgxMzQgMTcuMjEzMyAzMy41Nzk2IDE3LjE4NzUgMzMuMzQ1OCAxNy4xNTg2TDMzLjEyMzMgMTcuMTMwM0wzMy4wNzQ5IDE3LjEyMzRMMzIuODQ0MiAxNy4wOTAxQzMyLjM3MjggMTcuMDE5MSAzMS45MDE0IDE2LjkzNzQgMzEuNDM1IDE2LjgzODdDMzEuMzg4IDE2LjgyODMgMzEuMzQ1OSAxNi44MDIxIDMxLjMxNTcgMTYuNzY0NUMzMS4yODU2IDE2LjcyNjkgMzEuMjY5MSAxNi42ODAxIDMxLjI2OTEgMTYuNjMxOUMzMS4yNjkxIDE2LjU4MzcgMzEuMjg1NiAxNi41MzY5IDMxLjMxNTcgMTYuNDk5M0MzMS4zNDU5IDE2LjQ2MTcgMzEuMzg4IDE2LjQzNTYgMzEuNDM1IDE2LjQyNTFIMzEuNDQzOEMzMS44NDggMTYuMzM5IDMyLjI1NTMgMTYuMjY1NSAzMi42NjM4IDE2LjIwMTRDMzIuOCAxNi4xOCAzMi45MzY2IDE2LjE1OSAzMy4wNzM2IDE2LjEzODVIMzMuMDc3NEMzMy4zMzMyIDE2LjEyMTUgMzMuNTkwMyAxNi4wNzU3IDMzLjg0NDggMTYuMDQ1NUMzNi4wNTk1IDE1LjgxNTEgMzguMjg3NCAxNS43MzY2IDQwLjUxMjggMTUuODEwNEM0MS41OTMzIDE1Ljg0MTkgNDIuNjczMSAxNS45MDUzIDQzLjc0ODUgMTYuMDE0N0M0My45Nzk4IDE2LjAzODYgNDQuMjA5OCAxNi4wNjM3IDQ0LjQzOTkgMTYuMDkyQzQ0LjUyNzkgMTYuMTAyNyA0NC42MTY1IDE2LjExNTMgNDQuNzA1MSAxNi4xMjU5TDQ0Ljg4MzYgMTYuMTUxN0M0NS40MDQgMTYuMjI5MiA0NS45MjE3IDE2LjMyMzMgNDYuNDM2NyAxNi40MzM5QzQ3LjE5OTcgMTYuNTk5OSA0OC4xNzk2IDE2LjY1MzkgNDguNTE5IDE3LjQ4OThDNDguNjI3MSAxNy43NTUxIDQ4LjY3NjEgMTguMDQ5OSA0OC43MzU5IDE4LjMyODNMNDguODExOSAxOC42ODM0QzQ4LjgxMzkgMTguNjg5OCA0OC44MTU0IDE4LjY5NjMgNDguODE2MyAxOC43MDI5QzQ4Ljk5NjEgMTkuNTQwOSA0OS4xNzYgMjAuMzc5IDQ5LjM1NjIgMjEuMjE3QzQ5LjM2OTQgMjEuMjc4OSA0OS4zNjk3IDIxLjM0MjkgNDkuMzU3MSAyMS40MDQ5QzQ5LjM0NDUgMjEuNDY2OSA0OS4zMTkzIDIxLjUyNTcgNDkuMjgyOSAyMS41Nzc2QzQ5LjI0NjYgMjEuNjI5NCA0OS4yIDIxLjY3MzIgNDkuMTQ2IDIxLjcwNjJDNDkuMDkyIDIxLjczOTIgNDkuMDMxNyAyMS43NjA4IDQ4Ljk2OSAyMS43Njk1SDQ4Ljk2NEw0OC44NTQgMjEuNzg0Nkw0OC43NDUzIDIxLjc5OUM0OC40MDA5IDIxLjg0MzkgNDguMDU2IDIxLjg4NTggNDcuNzEwNyAyMS45MjQ3QzQ3LjAzMDcgMjIuMDAyMiA0Ni4zNDk2IDIyLjA2OTMgNDUuNjY3NCAyMi4xMjU5QzQ0LjMxMTkgMjIuMjM4NiA0Mi45NTM2IDIyLjMxMjUgNDEuNTkyNyAyMi4zNDc3QzQwLjg5OTIgMjIuMzY2MiA0MC4yMDU5IDIyLjM3NDggMzkuNTEyOSAyMi4zNzM1QzM2Ljc1NDMgMjIuMzcxMyAzMy45OTgxIDIyLjIxMSAzMS4yNTc4IDIxLjg5MzNDMzAuOTYxMSAyMS44NTgxIDMwLjY2NDUgMjEuODIwNCAzMC4zNjc4IDIxLjc4MjFDMzAuNTk3OCAyMS44MTE2IDMwLjIwMDYgMjEuNzU5NCAzMC4xMjAyIDIxLjc0ODFDMjkuOTMxNiAyMS43MjE3IDI5Ljc0MzEgMjEuNjk0MyAyOS41NTQ1IDIxLjY2NThDMjguOTIxNiAyMS41NzA5IDI4LjI5MjQgMjEuNDU0IDI3LjY2MDcgMjEuMzUxNUMyNi44OTcxIDIxLjIyNTggMjYuMTY2NyAyMS4yODg3IDI1LjQ3NiAyMS42NjU4QzI0LjkwOSAyMS45NzYgMjQuNDUwMSAyMi40NTE4IDI0LjE2MDUgMjMuMDI5N0MyMy44NjI2IDIzLjY0NTYgMjMuNzczOSAyNC4zMTYzIDIzLjY0MDcgMjQuOTc4MUMyMy41MDc0IDI1LjYzOTkgMjMuMyAyNi4zNTIxIDIzLjM3ODYgMjcuMDMxNUMyMy41NDc3IDI4LjQ5NzkgMjQuNTcyOCAyOS42ODk1IDI2LjA0NzMgMjkuOTU2QzI3LjQzNDUgMzAuMjA3NCAyOC44MjkyIDMwLjQxMTEgMzAuMjI3NiAzMC41ODQ2QzM1LjcyMTIgMzEuMjU3NCA0MS4yNzExIDMxLjMzNzkgNDYuNzgxOCAzMC44MjQ3QzQ3LjIzMDUgMzAuNzgyOCA0Ny42Nzg3IDMwLjczNzEgNDguMTI2MiAzMC42ODc2QzQ4LjI2NiAzMC42NzIzIDQ4LjQwNzQgMzAuNjg4NCA0OC41NDAxIDMwLjczNDhDNDguNjcyOSAzMC43ODEyIDQ4Ljc5MzYgMzAuODU2NiA0OC44OTM0IDMwLjk1NTdDNDguOTkzMiAzMS4wNTQ4IDQ5LjA2OTUgMzEuMTc0OSA0OS4xMTY5IDMxLjMwNzNDNDkuMTY0MiAzMS40Mzk3IDQ5LjE4MTQgMzEuNTgxMSA0OS4xNjcgMzEuNzIwOUw0OS4wMjc1IDMzLjA3NzNDNDguNzQ2MyAzNS44MTgxIDQ4LjQ2NTIgMzguNTU4NyA0OC4xODQgNDEuMjk5QzQ3Ljg5MDcgNDQuMTc2OSA0Ny41OTU1IDQ3LjA1NDUgNDcuMjk4NCA0OS45MzE5QzQ3LjIxNDYgNTAuNzQyMiA0Ny4xMzA4IDUxLjU1MjQgNDcuMDQ3IDUyLjM2MjRDNDYuOTY2NiA1My4xNiA0Ni45NTUyIDUzLjk4MjcgNDYuODAzOCA1NC43NzA5QzQ2LjU2NDkgNTYuMDEwMyA0NS43MjU4IDU2Ljc3MTUgNDQuNTAxNSA1Ny4wNDk5QzQzLjM3OTggNTcuMzA1MiA0Mi4yMzM5IDU3LjQzOTIgNDEuMDgzNiA1Ny40NDk3QzM5LjgwODMgNTcuNDU2NiAzOC41MzM2IDU3LjQgMzcuMjU4MyA1Ny40MDY5QzM1Ljg5NyA1Ny40MTQ1IDM0LjIyOTUgNTcuMjg4NyAzMy4xNzg2IDU2LjI3NTZDMzIuMjU1MyA1NS4zODU2IDMyLjEyNzcgNTMuOTkyMSAzMi4wMDIgNTIuNzg3MkMzMS44MzQ0IDUxLjE5MiAzMS42NjgyIDQ5LjU5NzEgMzEuNTAzNiA0OC4wMDIzTDMwLjU3OTYgMzkuMTM0NEwyOS45ODE5IDMzLjM5NjZDMjkuOTcxOCAzMy4zMDE3IDI5Ljk2MTggMzMuMjA4IDI5Ljk1MjQgMzMuMTEyNUMyOS44ODA3IDMyLjQyOCAyOS4zOTYxIDMxLjc1OCAyOC42MzI0IDMxLjc5MjZDMjcuOTc4OCAzMS44MjE1IDI3LjIzNTkgMzIuMzc3MSAyNy4zMTI1IDMzLjExMjVMMjcuNzU1NyAzNy4zNjY0TDI4LjY3MiA0Ni4xNjU3QzI4LjkzMzEgNDguNjY1MiAyOS4xOTM1IDUxLjE2NSAyOS40NTMzIDUzLjY2NTNDMjkuNTAzNiA1NC4xNDQyIDI5LjU1MDcgNTQuNjI0NCAyOS42MDM1IDU1LjEwMzRDMjkuODkwOCA1Ny43MjA1IDMxLjg4OTUgNTkuMTMxIDM0LjM2NDYgNTkuNTI4MkMzNS44MTAyIDU5Ljc2MDcgMzcuMjkxIDU5LjgwODUgMzguNzU4IDU5LjgzMjRDNDAuNjM4NiA1OS44NjI2IDQyLjUzOCA1OS45MzQ4IDQ0LjM4NzcgNTkuNTk0MkM0Ny4xMjg3IDU5LjA5MTQgNDkuMTg1MyA1Ny4yNjExIDQ5LjQ3ODggNTQuNDIyQzQ5LjU2MjYgNTMuNjAyNCA0OS42NDY0IDUyLjc4MjYgNDkuNzMwMiA1MS45NjI2QzUwLjAwODggNDkuMjUwNyA1MC4yODcxIDQ2LjUzODYgNTAuNTY0OSA0My44MjYzTDUxLjQ3MzcgMzQuOTY0MUw1MS44OTA0IDMwLjkwMjZDNTEuOTExMiAzMC43MDEyIDUxLjk5NjIgMzAuNTExOCA1Mi4xMzMgMzAuMzYyNUM1Mi4yNjk3IDMwLjIxMzIgNTIuNDUwOSAzMC4xMTE5IDUyLjY0OTcgMzAuMDczNkM1My40MzM1IDI5LjkyMDggNTQuMTgyNyAyOS42NiA1NC43NDAyIDI5LjA2MzVDNTUuNjI3NyAyOC4xMTM4IDU1LjgwNDMgMjYuODc1NiA1NS40OTA2IDI1LjYyNzRaTTI2LjAwNzEgMjYuNTAzNUMyNi4wMTkgMjYuNDk3OSAyNS45OTcgMjYuNjAwMyAyNS45ODc2IDI2LjY0ODFDMjUuOTg1NyAyNi41NzU4IDI1Ljk4OTUgMjYuNTExNyAyNi4wMDcxIDI2LjUwMzVaTTI2LjA4MzEgMjcuMDkxOEMyNi4wODk0IDI3LjA4NzQgMjYuMTA4MyAyNy4xMTI2IDI2LjEyNzggMjcuMTQyOEMyNi4wOTgyIDI3LjExNTEgMjYuMDc5NCAyNy4wOTQ0IDI2LjA4MjUgMjcuMDkxOEgyNi4wODMxWk0yNi4xNTc5IDI3LjE5MDVDMjYuMTg1IDI3LjIzNjQgMjYuMTk5NCAyNy4yNjUzIDI2LjE1NzkgMjcuMTkwNVYyNy4xOTA1Wk0yNi4zMDgyIDI3LjMxMjVIMjYuMzExOUMyNi4zMTE5IDI3LjMxNjkgMjYuMzE4OCAyNy4zMjEzIDI2LjMyMTQgMjcuMzI1N0MyNi4zMTcyIDI3LjMyMDggMjYuMzEyNiAyNy4zMTY0IDI2LjMwNzUgMjcuMzEyNUgyNi4zMDgyWk01Mi42MTMyIDI3LjEzMDJDNTIuMzMxNyAyNy4zOTc5IDUxLjkwNzQgMjcuNTIyNCA1MS40ODgyIDI3LjU4NDZDNDYuNzg2OCAyOC4yODIzIDQyLjAxNjkgMjguNjM1NSAzNy4yNjQgMjguNDc5NkMzMy44NjI0IDI4LjM2MzMgMzAuNDk2NyAyNy45ODU2IDI3LjEyOSAyNy41MDk4QzI2Ljc5OSAyNy40NjMzIDI2LjQ0MTQgMjcuNDAzIDI2LjIxNDUgMjcuMTU5N0MyNS43ODcxIDI2LjcwMDkgMjUuOTk3IDI1Ljc3NyAyNi4xMDgzIDI1LjIyMjZDMjYuMjEwMSAyNC43MTQ4IDI2LjQwNSAyNC4wMzc4IDI3LjAwOSAyMy45NjU2QzI3Ljk1MTggMjMuODU0OSAyOS4wNDY2IDI0LjI1MjggMjkuOTc5NCAyNC4zOTQyQzMxLjEwMjMgMjQuNTY1NiAzMi4yMjk1IDI0LjcwMjggMzMuMzYwOSAyNC44MDU5QzM4LjE4OTIgMjUuMjQ1OSA0My4wOTg2IDI1LjE3NzQgNDcuOTA1NiAyNC41MzM3QzQ4Ljc4MTcgMjQuNDE2IDQ5LjY1NDggMjQuMjc5MiA1MC41MjQ2IDI0LjEyMzNDNTEuMjk5NiAyMy45ODQ0IDUyLjE1ODggMjMuNzIzNiA1Mi42MjcxIDI0LjUyNjJDNTIuOTQ4MiAyNS4wNzMgNTIuOTkxIDI1LjgwNDYgNTIuOTQxMyAyNi40MjI1QzUyLjkyNiAyNi42OTE3IDUyLjgwODQgMjYuOTQ0OCA1Mi42MTI2IDI3LjEzMDJINTIuNjEzMlpcIiBmaWxsPVwiIzBEMEMyMlwiLz5cclxuPHBhdGggZmlsbC1ydWxlPVwiZXZlbm9kZFwiIGNsaXAtcnVsZT1cImV2ZW5vZGRcIiBkPVwiTTgxLjEzMDIgNDAuMTkyOUM4MC44NTU2IDQwLjcxNjkgODAuNDc4MSA0MS4xNzMyIDc5Ljk5NzggNDEuNTYwNEM3OS41MTc1IDQxLjk0NzkgNzguOTU3MSA0Mi4yNjMzIDc4LjMxNjYgNDIuNTA2MkM3Ny42NzYxIDQyLjc0OTcgNzcuMDMxNSA0Mi45MTMxIDc2LjM4MzUgNDIuOTk2NEM3NS43MzUyIDQzLjA3OTkgNzUuMTA2IDQzLjA3MjcgNzQuNDk2MyA0Mi45NzM1QzczLjg4NjMgNDIuODc0OSA3My4zNjc0IDQyLjY3MzcgNzIuOTQwOCA0Mi4zNjk1TDczLjQyMTQgMzcuMzc3OUM3My44NjMzIDM3LjIyNjEgNzQuNDE5NyAzNy4wNzAzIDc1LjA5MDkgMzYuOTEwN0M3NS43NjE5IDM2Ljc1MTMgNzYuNDUyIDM2LjYzNzEgNzcuMTYxMyAzNi41Njg5Qzc3Ljg3MDUgMzYuNTAwMyA3OC41NDEyIDM2LjUwODQgNzkuMTc0NCAzNi41OTE3Qzc5LjgwNjggMzYuNjc1MyA4MC4zMDY1IDM2Ljg3NjUgODAuNjcyNSAzNy4xOTU4QzgwLjg3MDcgMzcuMzc4IDgxLjAzODcgMzcuNTc1NCA4MS4xNzYgMzcuNzg4M0M4MS4zMTMgMzguMDAxMSA4MS4zOTY5IDM4LjIyMTQgODEuNDI3NiAzOC40NDkzQzgxLjUwMzcgMzkuMDg3NSA4MS40MDQ3IDM5LjY2ODcgODEuMTMwMiA0MC4xOTI5Wk03NC4xNTMgMjkuNTYwMkM3NC40NzM0IDI5LjM2MjcgNzQuODU4NSAyOS4xODc3IDc1LjMwODMgMjkuMDM1NkM3NS43NTgxIDI4Ljg4NDEgNzYuMjE5NSAyOC43Nzc0IDc2LjY5MjMgMjguNzE2N0M3Ny4xNjQ4IDI4LjY1NjIgNzcuNjI2MiAyOC42NDgxIDc4LjA3NjMgMjguNjkzOEM3OC41MjU4IDI4LjczOTUgNzguOTIyOCAyOC44NjQ3IDc5LjI2NTkgMjkuMDY5N0M3OS42MDg5IDI5LjI3NTEgNzkuODY0MyAyOS41NzE0IDgwLjAzMiAyOS45NTg2QzgwLjE5OTcgMzAuMzQ2NCA4MC4yNDU2IDMwLjgzNjUgODAuMTY5MyAzMS40MjlDODAuMTA4MyAzMS45MDAxIDc5LjkyMTEgMzIuMjk5MSA3OS42MDg5IDMyLjYyNTZDNzkuMjk2MyAzMi45NTI2IDc4LjkxNDcgMzMuMjI1OSA3OC40NjUyIDMzLjQ0NjJDNzguMDE1NCAzMy42NjY4IDc3LjUzODggMzMuODQxNSA3Ny4wMzU2IDMzLjk3MDJDNzYuNTMyMSAzNC4wOTk3IDc2LjA0NzcgMzQuMTk0OSA3NS41ODI4IDM0LjI1NTNDNzUuMTE3NiAzNC4zMTYzIDc0LjcxMzcgMzQuMzU0NSA3NC4zNzA2IDM0LjM2OTJDNzQuMDI3MyAzNC4zODQ1IDczLjgwMjEgMzQuMzkyMSA3My42OTU2IDM0LjM5MjFMNzQuMTUzIDI5LjU2MDJaTTgzLjYwMDcgMzYuOTY3NkM4My4zNTY2IDM2LjQzNjEgODMuMDI4NyAzNS45Njg5IDgyLjYxNzIgMzUuNTY1OEM4Mi4yMDU0IDM1LjE2MzMgODEuNzE3IDM0Ljg3MDkgODEuMTUzMSAzNC42ODg1QzgxLjM5NjkgMzQuNDkxIDgxLjYzNzEgMzQuMTc5NSA4MS44NzM3IDMzLjc1MzlDODIuMTA5OSAzMy4zMjg4IDgyLjMxMTkgMzIuODY1IDgyLjQ3OTYgMzIuMzYzNkM4Mi42NDc0IDMxLjg2MTkgODIuNzYyIDMxLjM1NyA4Mi44MjI5IDMwLjg0NzhDODIuODgzNiAzMC4zMzg5IDgyLjg2MDcgMjkuOTAyIDgyLjc1NDQgMjkuNTM3QzgyLjQ5NDcgMjguNjI1NiA4Mi4wODcgMjcuOTExNCA4MS41MzAzIDI3LjM5NDZDODAuOTczNCAyNi44NzgyIDgwLjMyNTcgMjYuNTIxMSA3OS41ODYgMjYuMzIzM0M3OC44NDYyIDI2LjEyNjQgNzguMDMwNCAyNi4wODQyIDc3LjEzODMgMjYuMTk4MUM3Ni4yNDYyIDI2LjMxMiA3NS4zMzQ3IDI2LjUzNjEgNzQuNDA0OSAyNi44NzA0Qzc0LjQwNDkgMjYuNzk0NiA3NC40MTI0IDI2LjcxNDggNzQuNDI3OCAyNi42MzEyQzc0LjQ0MjYgMjYuNTQ4IDc0LjQ1MDQgMjYuNDYwNCA3NC40NTA0IDI2LjM2OUM3NC40NTA0IDI2LjE0MTEgNzQuMzM2MSAyNS45NDM5IDc0LjEwNzQgMjUuNzc2NUM3My44Nzg3IDI1LjYwOTMgNzMuNjE1NSAyNS41MTA3IDczLjMxODMgMjUuNDgwMUM3My4wMjA5IDI1LjQ1IDcyLjczMSAyNS41MTQyIDcyLjQ0ODkgMjUuNjczOEM3Mi4xNjY1IDI1LjgzMzQgNzEuOTcyMSAyNi4xMjY0IDcxLjg2NTYgMjYuNTUxMUM3MS43NDM0IDI3LjkxODkgNzEuNjIxNSAyOS4zMzk4IDcxLjQ5OTYgMzAuODEzNEM3MS4zNzc0IDMyLjI4NzUgNzEuMjQ4IDMzLjc3NjcgNzEuMTEwNyAzNS4yODEyQzcwLjk3MzUgMzYuNzg1NSA3MC44MzYyIDM4LjI3ODQgNzAuNjk4OSAzOS43NTk4QzcwLjU2MTYgNDEuMjQxNCA3MC40MjQ0IDQyLjY2NTkgNzAuMjg3MSA0NC4wMzMzQzcwLjMzMyA0NC40NDM2IDcwLjQ0NzMgNDQuNzYyOSA3MC42MzA0IDQ0Ljk5MDdDNzAuODEzMyA0NS4yMTg5IDcxLjAyNjggNDUuMzU1NiA3MS4yNzA5IDQ1LjQwMUM3MS41MTQ3IDQ1LjQ0NjcgNzEuNzcwNCA0NS40MDQ1IDcyLjAzNzEgNDUuMjc1NUM3Mi4zMDM4IDQ1LjE0NjkgNzIuNTM2NSA0NC45MjIyIDcyLjczNSA0NC42MDMyQzczLjM0NDcgNDQuOTM3NSA3NC4wMzExIDQ1LjE1NDEgNzQuNzkzOCA0NS4yNTNDNzUuNTU2MSA0NS4zNTE2IDc2LjMyOTggNDUuMzUxNiA3Ny4xMTU3IDQ1LjI1M0M3Ny45MDA3IDQ1LjE1NDEgNzguNjc0NyA0NC45NjgyIDc5LjQzNzQgNDQuNjk0M0M4MC4xOTk3IDQ0LjQyMTEgODAuODkzNiA0NC4wNzkgODEuNTE5IDQzLjY2OUM4Mi4xNDQxIDQzLjI1ODYgODIuNjcwMyA0Mi43OTExIDgzLjA5NzUgNDIuMjY3MUM4My41MjQ0IDQxLjc0MjYgODMuODA2NSA0MS4xNzY3IDgzLjk0MzcgNDAuNTY5MUM4NC4wODEgMzkuOTQ2IDg0LjExOSAzOS4zMjMxIDg0LjA1ODEgMzguN0M4My45OTcxIDM4LjA3NzEgODMuODQ0NSAzNy41IDgzLjYwMDcgMzYuOTY3NlpcIiBmaWxsPVwiIzBEMEMyM1wiLz5cclxuPHBhdGggZmlsbC1ydWxlPVwiZXZlbm9kZFwiIGNsaXAtcnVsZT1cImV2ZW5vZGRcIiBkPVwiTTEwNS45MTUgNDkuMDAxN0MxMDUuODMyIDQ5LjUwMzEgMTA1LjcxMyA1MC4wMzExIDEwNS41NjEgNTAuNTg2QzEwNS40MDggNTEuMTQwMyAxMDUuMjI5IDUxLjY0NTggMTA1LjAyMyA1Mi4xMDE4QzEwNC44MTggNTIuNTU3NSAxMDQuNTg5IDUyLjkyNTYgMTA0LjMzNyA1My4yMDdDMTA0LjA4NSA1My40ODggMTAzLjgxNSA1My42MDYgMTAzLjUyNSA1My41NjA2QzEwMy4yOTYgNTMuNTI5NyAxMDMuMTUxIDUzLjM4NTQgMTAzLjA5MSA1My4xMjc0QzEwMy4wMjkgNTIuODY4NiAxMDMuMDI5IDUyLjU0OTcgMTAzLjA5MSA1Mi4xN0MxMDMuMTUxIDUxLjc5MDEgMTAzLjI2OSA1MS4zNjA3IDEwMy40NDUgNTAuODgyMUMxMDMuNjIgNTAuNDAzNSAxMDMuODM0IDQ5LjkyODQgMTA0LjA4NSA0OS40NTc3QzEwNC4zMzcgNDguOTg2NCAxMDQuNjIzIDQ4LjUzNDcgMTA0Ljk0MyA0OC4xMDE1QzEwNS4yNjQgNDcuNjY4NiAxMDUuNTk5IDQ3LjMwNzUgMTA1Ljk1IDQ3LjAxODlDMTA2LjAyNiA0Ny4xMSAxMDYuMDYgNDcuMzM3OCAxMDYuMDUzIDQ3LjcwMjhDMTA2LjA0NSA0OC4wNjc0IDEwNS45OTkgNDguNTAwNiAxMDUuOTE1IDQ5LjAwMTdaTTExMy42NyAzOS4xMDk3QzExMy40NjQgMzguODgxOSAxMTMuMjEzIDM4Ljc1MjkgMTEyLjkxNSAzOC43MjIzQzExMi42MTggMzguNjkxOSAxMTIuMzE3IDM4Ljg1OSAxMTIuMDEyIDM5LjIyMzdDMTExLjgxMyAzOS41ODgzIDExMS41NjIgMzkuOTM3OSAxMTEuMjU3IDQwLjI3MjJDMTEwLjk1MiA0MC42MDY3IDExMC42MzUgNDAuOTEwMyAxMTAuMzA3IDQxLjE4MzlDMTA5Ljk4IDQxLjQ1NzIgMTA5LjY2NyA0MS42OTMxIDEwOS4zNyA0MS44OTAzQzEwOS4wNzIgNDIuMDg4MSAxMDguODQgNDIuMjMyNCAxMDguNjcyIDQyLjMyMzVDMTA4LjYxMSA0MS44Mzc0IDEwOC41NzYgNDEuMzEzMiAxMDguNTY5IDQwLjc1MDdDMTA4LjU2MSA0MC4xODg2IDEwOC41NzMgMzkuNjE5IDEwOC42MDMgMzkuMDQxNUMxMDguNjQ5IDM4LjIyMDkgMTA4Ljc0NCAzNy4zOTMgMTA4Ljg4OSAzNi41NTdDMTA5LjAzNCAzNS43MjEzIDEwOS4yNDQgMzQuOTAwNyAxMDkuNTE4IDM0LjA5NTFDMTA5LjUxOCAzMy42NyAxMDkuNDE5IDMzLjMyNDIgMTA5LjIyMSAzMy4wNTgyQzEwOS4wMjIgMzIuNzkyNCAxMDguNzgyIDMyLjYyNSAxMDguNSAzMi41NTY3QzEwOC4yMTggMzIuNDg4NSAxMDcuOTI5IDMyLjUyNjQgMTA3LjYzMSAzMi42NzA3QzEwNy4zMzQgMzIuODE1MyAxMDcuMDc4IDMzLjA3NzUgMTA2Ljg2NSAzMy40NTY5QzEwNi42ODIgMzMuOTU4NiAxMDYuNDcyIDM0LjUyMDcgMTA2LjIzNiAzNS4xNDM2QzEwNS45OTkgMzUuNzY2NyAxMDUuNzMyIDM2LjQwMTIgMTA1LjQzNSAzNy4wNDY5QzEwNS4xMzggMzcuNjkzMSAxMDQuODA2IDM4LjMxOTcgMTA0LjQ0IDM4LjkyNzNDMTA0LjA3NCAzOS41MzU0IDEwMy42NzQgNDAuMDc1IDEwMy4yMzkgNDAuNTQ1N0MxMDIuODA0IDQxLjAxNjggMTAyLjMzMSA0MS4zODU0IDEwMS44MjEgNDEuNjUxMkMxMDEuMzEgNDEuOTE3MiAxMDAuNzU3IDQyLjAzNDkgMTAwLjE2MiA0Mi4wMDQ1Qzk5Ljg4NzYgNDEuOTI4NSA5OS42ODkzIDQxLjcyMzUgOTkuNTY3NSA0MS4zODg5Qzk5LjQ0NTMgNDEuMDU0OSA5OS4zNzMgNDAuNjM2OCA5OS4zNTA0IDQwLjEzNTRDOTkuMzI3NSAzOS42MzQgOTkuMzUwNCAzOS4wODMxIDk5LjQxODkgMzguNDgyOEM5OS40ODc3IDM3Ljg4MjggOTkuNTc5MSAzNy4yODYzIDk5LjY5MzQgMzYuNjkzOEM5OS44MDc4IDM2LjEwMSA5OS45MzM3IDM1LjUzODkgMTAwLjA3MSAzNS4wMDcxQzEwMC4yMDggMzQuNDc1MyAxMDAuMzM3IDM0LjAyNjggMTAwLjQ2IDMzLjY2MjJDMTAwLjY0MyAzMy4yMjE4IDEwMC42NDMgMzIuODUyOSAxMDAuNDYgMzIuNTU2N0MxMDAuMjc3IDMyLjI2MDQgMTAwLjAyNSAzMi4wNjMxIDk5LjcwNSAzMS45NjRDOTkuMzg0NiAzMS44NjU0IDk5LjA0ODkgMzEuODY5NCA5OC42OTgzIDMxLjk3NTVDOTguMzQ3NCAzMi4wODE5IDk4LjA5NTggMzIuMzE3MyA5Ny45NDM1IDMyLjY4MkM5Ny42ODQgMzMuMzA1NCA5Ny40NDc1IDM0LjAwNCA5Ny4yMzQyIDM0Ljc3OUM5Ny4wMjA2IDM1LjU1MzkgOTYuODQ5MSAzNi4zNTU4IDk2LjcxOTcgMzcuMTgzNkM5Ni41ODk2IDM4LjAxMjEgOTYuNTE3MSAzOC44MzI3IDk2LjUwMiAzOS42NDU2Qzk2LjUwMTEgMzkuNjk4NSA5Ni41MDM3IDM5Ljc0ODggOTYuNTAzNCAzOS44MDE0Qzk2LjE3MDkgNDAuNjg0OCA5NS44NTQgNDEuMzUyNSA5NS41NTMgNDEuNzk5MkM5NS4xNjQxIDQyLjM3NyA5NC43MjUzIDQyLjYyNzcgOTQuMjM3NSA0Mi41NTEzQzk0LjAyMzYgNDIuNDYwMyA5My44ODMyIDQyLjI0NzcgOTMuODE0NyA0MS45MTMyQzkzLjc0NTMgNDEuNTc5MiA5My43MjI3IDQxLjE2ODkgOTMuNzQ1MyA0MC42ODIyQzkzLjc2ODggNDAuMTk2NCA5My44MjYgMzkuNjQ1NiA5My45MTcxIDM5LjAyOTlDOTQuMDA5MSAzOC40MTQ2IDk0LjEyMjkgMzcuNzc2NCA5NC4yNjAxIDM3LjExNTRDOTQuMzk3NyAzNi40NTQxIDk0LjU0MjUgMzUuNzg5OSA5NC42OTQ5IDM1LjEyMUM5NC44NDcyIDM0LjQ1MjUgOTQuOTg0NSAzMy44MjE4IDk1LjEwNyAzMy4yMjkxQzk1LjA5MTYgMzIuNjk3MyA5NC45MzUyIDMyLjI5MSA5NC42Mzc3IDMyLjAwOTdDOTQuMzQwNSAzMS43Mjg5IDkzLjkyNDcgMzEuNjE4NyA5My4zOTEzIDMxLjY3OTFDOTMuMDI1MyAzMS44MzEyIDkyLjc1NDIgMzIuMDI5IDkyLjU3OSAzMi4yNzE5QzkyLjQwMzQgMzIuNTE0OCA5Mi4yNjIzIDMyLjgyNjUgOTIuMTU1OCAzMy4yMDYyQzkyLjA5NDYgMzMuNDA0IDkyLjAwMzIgMzMuNzk5IDkxLjg4MTMgMzQuMzkxOEM5MS43NTkxIDM0Ljk4NCA5MS42MDMgMzUuNjY0NCA5MS40MTIzIDM2LjQzMTVDOTEuMjIxNyAzNy4xOTkyIDkwLjk5NjcgMzguMDAwNSA5MC43Mzc2IDM4LjgzNjJDOTAuNDc4MSAzOS42NzE5IDkwLjE4ODUgNDAuNDI4MyA4OS44Njg0IDQxLjEwNDFDODkuNTQ4IDQxLjc4MDEgODkuMTk3MiA0Mi4zMjM1IDg4LjgxNjEgNDIuNzMzOEM4OC40MzQ4IDQzLjE0MzggODguMDIzIDQzLjMxMTMgODcuNTgwNyA0My4yMzUyQzg3LjMzNjYgNDMuMTg5NSA4Ny4xODA1IDQyLjkzODggODcuMTEyIDQyLjQ4MzFDODcuMDQzMiA0Mi4wMjcxIDg3LjAzMTkgNDEuNDY1MyA4Ny4wNzc1IDQwLjc5NjRDODcuMTIzMyA0MC4xMjc5IDg3LjIxNDggMzkuMzk0NiA4Ny4zNTIgMzguNTk3MUM4Ny40ODkzIDM3Ljc5OTMgODcuNjMgMzcuMDQzNCA4Ny43NzUyIDM2LjMyODlDODcuOTIgMzUuNjE0OSA4OC4wNTM1IDM0Ljk4NCA4OC4xNzU2IDM0LjQzNzJDODguMjk3NSAzMy44OTAxIDg4LjM4MTQgMzMuNTI1NCA4OC40MjcyIDMzLjM0MzNDODguNDI3MiAzMi45MDI2IDg4LjMyNzcgMzIuNTQ5NSA4OC4xMjk4IDMyLjI4MzJDODcuOTMxMyAzMi4wMTc4IDg3LjY5MTMgMzEuODUwMyA4Ny40MDkyIDMxLjc4MThDODcuMTI2OCAzMS43MTM2IDg2LjgzNzIgMzEuNzUxNCA4Ni41NCAzMS44OTU3Qzg2LjI0MjYgMzIuMDQwMyA4NS45ODcyIDMyLjMwMjYgODUuNzczNiAzMi42ODJDODUuNjk3MyAzMy4wOTIzIDg1LjU5OCAzMy41Njc0IDg1LjQ3NjEgMzQuMTA2N0M4NS4zNTM5IDM0LjY0NTkgODUuMjM2MSAzNS4yMDA2IDg1LjEyMTggMzUuNzcwNUM4NS4wMDc0IDM2LjM0MDQgODQuOTAwMyAzNi44OTg4IDg0LjgwMTQgMzcuNDQ1OUM4NC43MDIxIDM3Ljk5MyA4NC42Mjk5IDM4LjQ3MTYgODQuNTg0IDM4Ljg4MTlDODQuNTUzNiAzOS4yMDA4IDg0LjUxOSAzOS41OTIzIDg0LjQ4MTMgNDAuMDU1NkM4NC40NDMgNDAuNTE5NCA4NC40MjM4IDQxLjAwOTIgODQuNDIzOCA0MS41MjU3Qzg0LjQyMzggNDIuMDQyNyA4NC40NjE4IDQyLjU1NTQgODQuNTM4NSA0My4wNjQzQzg0LjYxNDUgNDMuNTczNSA4NC43NTE4IDQ0LjA0MDggODQuOTUgNDQuNDY1OUM4NS4xNDgyIDQ0Ljg5MTUgODUuNDI2NSA0NS4yNDA4IDg1Ljc4NTIgNDUuNTE0NEM4Ni4xNDMzIDQ1Ljc4NzkgODYuNTk3MiA0NS45Mzk3IDg3LjE0NjMgNDUuOTcwNEM4Ny43MTAxIDQ2LjAwMDUgODguMjAyIDQ1Ljk1OTEgODguNjIxNyA0NS44NDQ5Qzg5LjA0MSA0NS43MzEgODkuNDIyMSA0NS41NTIzIDg5Ljc2NTQgNDUuMzA5MUM5MC4xMDg0IDQ1LjA2NjUgOTAuNDIxIDQ0Ljc3NzYgOTAuNzAzMyA0NC40NDNDOTAuOTg1MSA0NC4xMDkxIDkxLjI2MzcgNDMuNzQ0NCA5MS41MzgzIDQzLjM0OTFDOTEuNzk3NCA0My45MjY5IDkyLjEzMjkgNDQuMzc0OCA5Mi41NDQ3IDQ0LjY5NEM5Mi45NTY1IDQ1LjAxMyA5My4zOTEzIDQ1LjIwMzIgOTMuODQ4NiA0NS4yNjM3Qzk0LjMwNiA0NS4zMjQxIDk0Ljc3MTUgNDUuMjYwMiA5NS4yNDQyIDQ1LjA2OTlDOTUuNzE2NyA0NC44ODAzIDk2LjE0MzYgNDQuNTU3MyA5Ni41MjUyIDQ0LjEwMTJDOTYuNzc2MiA0My44MjE2IDk3LjAxMzEgNDMuNTAzOCA5Ny4yMzU0IDQzLjE1MjVDOTcuMzI5NyA0My4zMTcgOTcuNDMwMSA0My40NzU4IDk3LjU0MyA0My42MjI0Qzk3LjkxNjggNDQuMTA5MSA5OC40MjQgNDQuNDQzIDk5LjA2NDUgNDQuNjI1NUM5OS43NTA2IDQ0LjgwOCAxMDAuNDIxIDQ0LjgzODYgMTAxLjA3NyA0NC43MTY5QzEwMS43MzMgNDQuNTk1NCAxMDIuMzU4IDQ0LjM3NDggMTAyLjk1MyA0NC4wNTU5QzEwMy41NDggNDMuNzM2NiAxMDQuMTAxIDQzLjM1MzIgMTA0LjYxMiA0Mi45MDQ3QzEwNS4xMjIgNDIuNDU2NSAxMDUuNTY4IDQxLjk4OTUgMTA1Ljk1IDQxLjUwMjhDMTA1LjkzNCA0MS44NTI0IDEwNS45MjcgNDIuMTgzMiAxMDUuOTI3IDQyLjQ5NDRDMTA1LjkyNyA0Mi44MDYxIDEwNS45MTkgNDMuMTQzOCAxMDUuOTA0IDQzLjUwODhDMTA1LjE0MSA0NC4wNDA4IDEwNC40MjEgNDQuNjc5IDEwMy43NDIgNDUuNDIzM0MxMDMuMDY0IDQ2LjE2NzYgMTAyLjQ2OSA0Ni45NjE2IDEwMS45NTggNDcuODA1MUMxMDEuNDQ3IDQ4LjY0ODMgMTAxLjA0NyA0OS41MDMxIDEwMC43NTcgNTAuMzY5MUMxMDAuNDY3IDUxLjIzNTcgMTAwLjMyNiA1Mi4wNDQ1IDEwMC4zMzQgNTIuNzk2OUMxMDAuMzQxIDUzLjU0OSAxMDAuNTIxIDU0LjIwNiAxMDAuODcxIDU0Ljc2ODFDMTAxLjIyMiA1NS4zMzA2IDEwMS43OTQgNTUuNzMzMSAxMDIuNTg3IDU1Ljk3NjNDMTAzLjQxMSA1Ni4yMzQ4IDEwNC4xMzUgNTYuMjQyIDEwNC43NiA1NS45OTkxQzEwNS4zODYgNTUuNzU1OSAxMDUuOTMxIDU1LjM1MzEgMTA2LjM5NiA1NC43OTFDMTA2Ljg2MSA1NC4yMjg5IDEwNy4yNDIgNTMuNTQ5IDEwNy41NCA1Mi43NTEyQzEwNy44MzcgNTEuOTUzNCAxMDguMDczIDUxLjEyMTUgMTA4LjI0OSA1MC4yNTU1QzEwOC40MjQgNDkuMzg5NCAxMDguNTM1IDQ4LjUzNzkgMTA4LjU4IDQ3LjcwMjhDMTA4LjYyNiA0Ni44NjY4IDEwOC42MjYgNDYuMTIxOSAxMDguNTggNDUuNDY4N0MxMDkuODkyIDQ0LjkyMTkgMTEwLjk2NyA0NC4yMzA1IDExMS44MDYgNDMuMzk0NUMxMTIuNjQ1IDQyLjU1OTQgMTEzLjMzOCA0MS42Nzc4IDExMy44ODcgNDAuNzUwN0MxMTQuMDU1IDQwLjUyMjkgMTE0LjExMiA0MC4yNDkzIDExNC4wNTkgMzkuOTMwNEMxMTQuMDA2IDM5LjYxMTEgMTEzLjg3NiAzOS4zMzc2IDExMy42NyAzOS4xMDk3WlwiIGZpbGw9XCIjMEQwQzIzXCIvPlxyXG48cGF0aCBmaWxsLXJ1bGU9XCJldmVub2RkXCIgY2xpcC1ydWxlPVwiZXZlbm9kZFwiIGQ9XCJNMTQyLjUzIDM3LjY1MTVDMTQyLjU3NSAzNy4zMDIyIDE0Mi42NDQgMzYuOTMzNSAxNDIuNzM1IDM2LjU0NkMxNDIuODI3IDM2LjE1ODUgMTQyLjk0MSAzNS43ODIzIDE0My4wNzkgMzUuNDE3N0MxNDMuMjE2IDM1LjA1MzEgMTQzLjM3NiAzNC43Mzc5IDE0My41NTkgMzQuNDcxOEMxNDMuNzQyIDM0LjIwNjEgMTQzLjkzNyAzNC4wMTYxIDE0NC4xNDIgMzMuOTAxOUMxNDQuMzQ4IDMzLjc4ODMgMTQ0LjU1OCAzMy43OTk1IDE0NC43NzEgMzMuOTM2QzE0NSAzNC4wNzMxIDE0NS4xNDEgMzQuMzYxNyAxNDUuMTk1IDM0LjgwMjFDMTQ1LjI0OCAzNS4yNDMzIDE0NS4xOTUgMzUuNzE0MSAxNDUuMDM0IDM2LjIxNTVDMTQ0Ljg3NCAzNi43MTcyIDE0NC41ODggMzcuMTg3OSAxNDQuMTc3IDM3LjYyODZDMTQzLjc2NSAzOC4wNjk2IDE0My4yMDggMzguMzU3OSAxNDIuNTA3IDM4LjQ5NDdDMTQyLjQ3NiAzOC4yODI0IDE0Mi40ODQgMzguMDAxMSAxNDIuNTMgMzcuNjUxNVpNMTUwLjQ1NiAzOC41ODU3QzE1MC4yMDQgMzguNTEwMyAxNDkuOTY0IDM4LjUwMjUgMTQ5LjczNSAzOC41NjMyQzE0OS41MDYgMzguNjIzOSAxNDkuMzYxIDM4Ljc4MzUgMTQ5LjMwMSAzOS4wNDJDMTQ5LjE3OCAzOS41MjgxIDE0OC45ODQgNDAuMDI1OCAxNDguNzE3IDQwLjUzNDdDMTQ4LjQ1IDQxLjA0MzkgMTQ4LjEyMiA0MS41MjYyIDE0Ny43MzQgNDEuOTgyMkMxNDcuMzQ1IDQyLjQzOCAxNDYuOTA2IDQyLjg0MDggMTQ2LjQxOCA0My4xOTAxQzE0NS45MyA0My41Mzk3IDE0NS40MTkgNDMuNzkwNCAxNDQuODg2IDQzLjk0MjJDMTQ0LjM1MSA0NC4xMDk2IDE0My45MSA0NC4xMjg0IDE0My41NTkgNDMuOTk5MUMxNDMuMjA4IDQzLjg3MDUgMTQyLjkzIDQzLjY0OTggMTQyLjcyNCA0My4zMzg0QzE0Mi41MTggNDMuMDI3IDE0Mi4zNjkgNDIuNjUwOCAxNDIuMjc4IDQyLjIxMDFDMTQyLjE4NiA0MS43Njk0IDE0Mi4xMzMgNDEuMzEzNyAxNDIuMTE4IDQwLjg0MjRDMTQyLjk4NyA0MC45MDM0IDE0My43NjEgNDAuNzQ3OCAxNDQuNDQgNDAuMzc1MUMxNDUuMTE4IDQwLjAwMzIgMTQ1LjY5NCAzOS41MDkgMTQ2LjE2NyAzOC44OTM3QzE0Ni42MzkgMzguMjc4NCAxNDYuOTk4IDM3LjU4NyAxNDcuMjQyIDM2LjgxOTVDMTQ3LjQ4NSAzNi4wNTI0IDE0Ny42MjMgMzUuMjg4NyAxNDcuNjUzIDM0LjUyODhDMTQ3LjY2OSAzMy44MTQ2IDE0Ny41NjIgMzMuMjEwOCAxNDcuMzMzIDMyLjcxNjlDMTQ3LjEwNSAzMi4yMjMzIDE0Ni43OTYgMzEuODM5IDE0Ni40MDcgMzEuNTY1OEMxNDYuMDE4IDMxLjI5MjIgMTQ1LjU3MiAzMS4xMzI2IDE0NS4wNjkgMzEuMDg3MkMxNDQuNTY2IDMxLjA0MTUgMTQ0LjA1NCAzMS4xMSAxNDMuNTM2IDMxLjI5MjJDMTQyLjkxIDMxLjUwNSAxNDIuMzgxIDMxLjg1MDYgMTQxLjk0NiAzMi4zMjk0QzE0MS41MTIgMzIuODA4IDE0MS4xNDkgMzMuMzYyOSAxNDAuODYgMzMuOTkzM0MxNDAuNTcgMzQuNjIzOSAxNDAuMzQxIDM1LjMwMzggMTQwLjE3MyAzNi4wMzNDMTQwLjAwNSAzNi43NjI2IDEzOS44ODMgMzcuNDgwNiAxMzkuODA3IDM4LjE4NzNDMTM5LjczOSAzOC44MjE0IDEzOS43MDIgMzkuNDI3OCAxMzkuNjg5IDQwLjAxM0MxMzkuNjU3IDQwLjA4NzQgMTM5LjYyNSA0MC4xNTg4IDEzOS41OSA0MC4yMzgzQzEzOS4zNTQgNDAuNzc4MiAxMzkuMDc5IDQxLjMwNjIgMTM4Ljc2NiA0MS44MjI2QzEzOC40NTQgNDIuMzM5NCAxMzguMTA3IDQyLjc3MjUgMTM3LjcyNiA0My4xMjE4QzEzNy4zNDQgNDMuNDcxNCAxMzYuOTQ4IDQzLjU5MjkgMTM2LjUzNiA0My40ODY1QzEzNi4yOTIgNDMuNDI2IDEzNi4xNTkgNDMuMTQ0NCAxMzYuMTM2IDQyLjY0MzNDMTM2LjExMyA0Mi4xNDE2IDEzNi4xMzkgNDEuNTE4NyAxMzYuMjE2IDQwLjc3NDFDMTM2LjI5MiA0MC4wMjk4IDEzNi4zOCAzOS4yMjM5IDEzNi40NzkgMzguMzU3OUMxMzYuNTc4IDM3LjQ5MTggMTM2LjYyOCAzNi42NjQgMTM2LjYyOCAzNS44NzM3QzEzNi42MjggMzUuMTg5OCAxMzYuNDk4IDM0LjUzMjkgMTM2LjIzOSAzMy45MDE5QzEzNS45NzkgMzMuMjcxOCAxMzUuNjI1IDMyLjc0NzMgMTM1LjE3NSAzMi4zMjk0QzEzNC43MjUgMzEuOTExMyAxMzQuMjAzIDMxLjYzNCAxMzMuNjA4IDMxLjQ5NzVDMTMzLjAxMyAzMS4zNjA1IDEzMi4zNzMgMzEuNDUxOCAxMzEuNjg3IDMxLjc3MDhDMTMxIDMyLjA5IDEzMC40NTUgMzIuNTM4MiAxMzAuMDUxIDMzLjExNTdDMTI5LjY0NyAzMy42OTM0IDEyOS4yNzcgMzQuMzAwOSAxMjguOTQyIDM0LjkzOTFDMTI4LjgxOSAzNC40NTI4IDEyOC42NDEgMzQuMDAxMSAxMjguNDA0IDMzLjU4M0MxMjguMTY3IDMzLjE2NTEgMTI3Ljg3OCAzMi44MDA1IDEyNy41MzUgMzIuNDg4OEMxMjcuMTkxIDMyLjE3NzYgMTI2LjgwNiAzMS45MzQ0IDEyNi4zOCAzMS43NTk1QzEyNS45NTMgMzEuNTg1MSAxMjUuNTAyIDMxLjQ5NzUgMTI1LjAzIDMxLjQ5NzVDMTI0LjU3MiAzMS40OTc1IDEyNC4xNDkgMzEuNTg1MSAxMjMuNzYgMzEuNzU5NUMxMjMuMzcxIDMxLjkzNDQgMTIzLjAxNyAzMi4xNTgzIDEyMi42OTYgMzIuNDMxOEMxMjIuMzc2IDMyLjcwNTYgMTIyLjA4NyAzMy4wMTMgMTIxLjgyNyAzMy4zNTUxQzEyMS41NjggMzMuNjk2OSAxMjEuMzM5IDM0LjAzNTIgMTIxLjE0MSAzNC4zNjkyQzEyMS4xMSAzMy45NzQyIDEyMS4wNzYgMzMuNjI4NiAxMjEuMDM4IDMzLjMzMkMxMjEgMzMuMDM1OSAxMjAuOTMxIDMyLjc4NTIgMTIwLjgzMiAzMi41ODAxQzEyMC43MzMgMzIuMzc0OCAxMjAuNTkyIDMyLjIxOTMgMTIwLjQwOSAzMi4xMTI5QzEyMC4yMjYgMzIuMDA2NyAxMTkuOTY3IDMxLjk1MzIgMTE5LjYzMiAzMS45NTMyQzExOS40NjQgMzEuOTUzMiAxMTkuMjk2IDMxLjk4NzQgMTE5LjEyOCAzMi4wNTU2QzExOC45NiAzMi4xMjQxIDExOC44MTEgMzIuMjE5MyAxMTguNjgyIDMyLjM0MDdDMTE4LjU1MiAzMi40NjI3IDExOC40NTMgMzIuNjEwNSAxMTguMzg1IDMyLjc4NTJDMTE4LjMxNiAzMi45NTk4IDExOC4yOTcgMzMuMTYxNCAxMTguMzI3IDMzLjM4OTJDMTE4LjM0MiAzMy41NTY2IDExOC4zODUgMzMuNzU3NiAxMTguNDUzIDMzLjk5MzNDMTE4LjUyMiAzNC4yMjg5IDExOC41ODcgMzQuNTM2OSAxMTguNjQ4IDM0LjkxNjNDMTE4LjcwOCAzNS4yOTYyIDExOC43NTggMzUuNzU2IDExOC43OTYgMzYuMjk1M0MxMTguODM0IDM2LjgzNDkgMTE4Ljg0NiAzNy40OTU5IDExOC44MzEgMzguMjc4NEMxMTguODE1IDM5LjA2MTEgMTE4Ljc1OCAzOS45NzYzIDExOC42NTkgNDEuMDI0OEMxMTguNTYgNDIuMDczMyAxMTguNDAzIDQzLjI4OSAxMTguMTkgNDQuNjcxNEMxMTguMTYgNDQuOTkwNyAxMTguMjgyIDQ1LjI0OTIgMTE4LjU1NiA0NS40NDY3QzExOC44MzEgNDUuNjQzOSAxMTkuMTQzIDQ1Ljc1NzggMTE5LjQ5NCA0NS43ODg1QzExOS44NDUgNDUuODE4OCAxMjAuMTc3IDQ1Ljc1NzggMTIwLjQ4OSA0NS42MDYzQzEyMC44MDIgNDUuNDUzOSAxMjAuOTgxIDQ1LjE4ODIgMTIxLjAyNyA0NC44MDg1QzEyMS4wNzIgNDQuMDk0MyAxMjEuMTYgNDMuMzM0NyAxMjEuMjkgNDIuNTI5QzEyMS40MTkgNDEuNzI0IDEyMS41NzkgNDAuOTI2MiAxMjEuNzcgNDAuMTM1OUMxMjEuOTYxIDM5LjM0NiAxMjIuMTc4IDM4LjU5MzggMTIyLjQyMiAzNy44NzkzQzEyMi42NjYgMzcuMTY1MSAxMjIuOTM3IDM2LjUzNDcgMTIzLjIzNCAzNS45ODc2QzEyMy41MzIgMzUuNDQwNSAxMjMuODQgMzUuMDAzOSAxMjQuMTYxIDM0LjY3NzFDMTI0LjQ4MSAzNC4zNTA0IDEyNC44MTYgMzQuMTg3IDEyNS4xNjcgMzQuMTg3QzEyNS41OTQgMzQuMTg3IDEyNS45MjYgMzQuMzgwNSAxMjYuMTYyIDM0Ljc2NzlDMTI2LjM5OCAzNS4xNTU3IDEyNi41NjYgMzUuNjUzNiAxMjYuNjY2IDM2LjI2MDlDMTI2Ljc2NSAzNi44NjkgMTI2LjgxIDM3LjUzNDEgMTI2LjgwMyAzOC4yNTU1QzEyNi43OTUgMzguOTc3MyAxMjYuNzY1IDM5LjY3MjQgMTI2LjcxMSA0MC4zNDFDMTI2LjY1OCA0MS4wMDk4IDEyNi41OTcgNDEuNjA2IDEyNi41MjggNDIuMTMwM0MxMjYuNDYgNDIuNjU0NSAxMjYuNDEgNDMuMDE1NyAxMjYuMzggNDMuMjEyOUMxMjYuMzggNDMuNTYyNSAxMjYuNTEzIDQzLjgzOTUgMTI2Ljc4IDQ0LjA0NDhDMTI3LjA0NiA0NC4yNDk4IDEyNy4zNDQgNDQuMzcxNiAxMjcuNjcyIDQ0LjQwOTVDMTI4IDQ0LjQ0NzYgMTI4LjMwOSA0NC4zODY2IDEyOC41OTggNDQuMjI3QzEyOC44ODggNDQuMDY3NCAxMjkuMDU2IDQzLjc5ODIgMTI5LjEwMiA0My40MTc5QzEyOS4yNTQgNDIuMzI0IDEyOS40NjQgNDEuMjI2NCAxMjkuNzMxIDQwLjEyNDdDMTI5Ljk5NyAzOS4wMjMgMTMwLjMwMyAzOC4wMzU1IDEzMC42NDYgMzcuMTYxNkMxMzAuOTg5IDM2LjI4NzggMTMxLjM3IDM1LjU3MzUgMTMxLjc5IDM1LjAxODlDMTMyLjIwOSAzNC40NjQ2IDEzMi42NTUgMzQuMTg3IDEzMy4xMjggMzQuMTg3QzEzMy4zNzEgMzQuMTg3IDEzMy41NTkgMzQuMzU0NCAxMzMuNjg4IDM0LjY4ODRDMTMzLjgxOCAzNS4wMjI3IDEzMy44ODMgMzUuNDc4NCAxMzMuODgzIDM2LjA1NTlDMTMzLjg4MyAzNi40ODE1IDEzMy44NDggMzYuOTE4NCAxMzMuNzggMzcuMzY2NkMxMzMuNzExIDM3LjgxNDggMTMzLjYzMSAzOC4yNzg0IDEzMy41NCAzOC43NTY5QzEzMy40NDggMzkuMjM1OCAxMzMuMzY4IDM5LjcyNTYgMTMzLjI5OSA0MC4yMjdDMTMzLjIzMSA0MC43Mjg3IDEzMy4xOTYgNDEuMjUyNyAxMzMuMTk2IDQxLjc5OThDMTMzLjE5NiA0Mi4xNzk3IDEzMy4yMzUgNDIuNjIwNCAxMzMuMzExIDQzLjEyMThDMTMzLjM4NyA0My42MjI5IDEzMy41MzIgNDQuMDk4MyAxMzMuNzQ1IDQ0LjU0NjJDMTMzLjk1OSA0NC45OTQ3IDEzNC4yNTIgNDUuMzc0NCAxMzQuNjI2IDQ1LjY4NThDMTM1IDQ1Ljk5NzMgMTM1LjQ3NiA0Ni4xNTMxIDEzNi4wNTYgNDYuMTUzMUMxMzYuOTI1IDQ2LjE1MzEgMTM3LjY5NSA0NS45NjY5IDEzOC4zNjYgNDUuNTk0N0MxMzkuMDM3IDQ1LjIyMjYgMTM5LjYxMyA0NC43MzY1IDE0MC4wOTMgNDQuMTM2MkMxNDAuMTE4IDQ0LjEwNDcgMTQwLjE0MSA0NC4wNzExIDE0MC4xNjUgNDQuMDM5OUMxNDAuMjAyIDQ0LjEyODcgMTQwLjIzNSA0NC4yMjI3IDE0MC4yNzYgNDQuMzA3MUMxNDAuNjA0IDQ0Ljk3NTYgMTQxLjA1IDQ1LjQ5MjEgMTQxLjYxNSA0NS44NTdDMTQyLjE3OCA0Ni4yMjE2IDE0Mi44NDIgNDYuNDIyOSAxNDMuNjA1IDQ2LjQ2MTFDMTQ0LjM2NyA0Ni40OTg3IDE0NS4xOTggNDYuMzU4MSAxNDYuMDk4IDQ2LjAzOTJDMTQ2Ljc2OSA0NS43OTYgMTQ3LjM1MiA0NS40OTIxIDE0Ny44NDggNDUuMTI3NUMxNDguMzQzIDQ0Ljc2MjggMTQ4Ljc4OSA0NC4zMTg0IDE0OS4xODYgNDMuNzk0MUMxNDkuNTgzIDQzLjI2OTkgMTQ5Ljk0NSA0Mi42NjU4IDE1MC4yNzMgNDEuOTgyMkMxNTAuNjAxIDQxLjI5ODEgMTUwLjkzMiA0MC41MTU5IDE1MS4yNjggMzkuNjM0MkMxNTEuMzI5IDM5LjM5MTYgMTUxLjI3MiAzOS4xNzUxIDE1MS4wOTcgMzguOTg0OEMxNTAuOTIxIDM4Ljc5NTEgMTUwLjcwOCAzOC42NjIxIDE1MC40NTYgMzguNTg1N1pcIiBmaWxsPVwiIzBEMEMyM1wiLz5cclxuPHBhdGggZmlsbC1ydWxlPVwiZXZlbm9kZFwiIGNsaXAtcnVsZT1cImV2ZW5vZGRcIiBkPVwiTTE2Mi44ODcgMzYuMDQzNEMxNjIuODEgMzYuNDkxOCAxNjIuNzA3IDM2Ljk4NiAxNjIuNTc4IDM3LjUyNUMxNjIuNDQ4IDM4LjA2NDYgMTYyLjI4NCAzOC42MjMgMTYyLjA4NiAzOS4yMDA0QzE2MS44ODggMzkuNzc3OSAxNjEuNjQ0IDQwLjI5ODQgMTYxLjM1NCA0MC43NjE2QzE2MS4wNjQgNDEuMjI1NCAxNjAuNzMzIDQxLjU5MzUgMTYwLjM1OSA0MS44NjcxQzE1OS45ODUgNDIuMTQwNiAxNTkuNTU1IDQyLjI1NDYgMTU5LjA2NiA0Mi4yMDg5QzE1OC44MjIgNDIuMTc4OCAxNTguNjM1IDQyLjAxMTcgMTU4LjUwNiA0MS43MDc1QzE1OC4zNzYgNDEuNDAzOCAxNTguMzA4IDQxLjAxNjEgMTU4LjMgNDAuNTQ1QzE1OC4yOTIgNDAuMDc0MyAxNTguMzM0IDM5LjU1NzUgMTU4LjQyNiAzOC45OTUxQzE1OC41MTcgMzguNDMzMyAxNTguNjU4IDM3Ljg4MjEgMTU4Ljg0OSAzNy4zNDI2QzE1OS4wNCAzNi44MDM2IDE1OS4yNzIgMzYuMzA1NiAxNTkuNTQ3IDM1Ljg0OTZDMTU5LjgyMSAzNS4zOTM5IDE2MC4xMzggMzUuMDQwNSAxNjAuNDk2IDM0Ljc4OThDMTYwLjg1NCAzNC41MzkxIDE2MS4yNDcgMzQuNDIxNyAxNjEuNjc0IDM0LjQzNjVDMTYyLjEwMSAzNC40NTE4IDE2Mi41NTkgMzQuNjY0MyAxNjMuMDQ3IDM1LjA3NDdDMTYzLjAxNiAzNS4yNzI1IDE2Mi45NjMgMzUuNTk1NCAxNjIuODg3IDM2LjA0MzRaTTE3MS4wMTkgMzcuNzg3QzE3MC43ODIgMzcuNjY1NiAxNzAuNTM4IDM3LjYzOTIgMTcwLjI4NyAzNy43MDc1QzE3MC4wMzUgMzcuNzc1NyAxNjkuODU2IDM4LjAwNzYgMTY5Ljc0OSAzOC40MDI2QzE2OS42ODggMzguODI4MyAxNjkuNTUxIDM5LjMyOTQgMTY5LjMzOCAzOS45MDY5QzE2OS4xMjQgNDAuNDg0MyAxNjguODYxIDQxLjAzMTcgMTY4LjU0OCA0MS41NDc4QzE2OC4yMzYgNDIuMDY0NiAxNjcuODc3IDQyLjQ5NCAxNjcuNDczIDQyLjgzNThDMTY3LjA2OSA0My4xNzc4IDE2Ni42MzggNDMuMzMzNyAxNjYuMTgxIDQzLjMwMjhDMTY1Ljc5OSA0My4yNzI3IDE2NS41MzIgNDMuMDc5IDE2NS4zOCA0Mi43MjE4QzE2NS4yMjcgNDIuMzY0NyAxNjUuMTQ3IDQxLjkxNjggMTY1LjE0IDQxLjM3NjlDMTY1LjEzMiA0MC44MzggMTY1LjE4NiA0MC4yMzAxIDE2NS4zIDM5LjU1MzhDMTY1LjQxNCAzOC44Nzc3IDE2NS41NTIgMzguMjA1NCAxNjUuNzEyIDM3LjUzNjNDMTY1Ljg3MiAzNi44NjggMTY2LjAzNiAzNi4yMjU4IDE2Ni4yMDQgMzUuNjEwNUMxNjYuMzcxIDM0Ljk5NTEgMTY2LjUwOCAzNC40NzQ3IDE2Ni42MTYgMzQuMDQ5M0MxNjYuNzM4IDMzLjY2OTMgMTY2LjY5OSAzMy4zNDY2IDE2Ni41MDEgMzMuMDgwM0MxNjYuMzAzIDMyLjgxNDkgMTY2LjA1NSAzMi42MjQ2IDE2NS43NTggMzIuNTEwN0MxNjUuNDYgMzIuMzk2NyAxNjUuMTU5IDMyLjM2NjQgMTY0Ljg1NCAzMi40MTk2QzE2NC41NDkgMzIuNDcyOCAxNjQuMzUxIDMyLjYzNjIgMTY0LjI1OSAzMi45MDk0QzE2My4zNTkgMzIuMTM0NSAxNjIuNDk0IDMxLjcxNjYgMTYxLjY2MyAzMS42NTU5QzE2MC44MzEgMzEuNTk1MiAxNjAuMDY1IDMxLjc3NzYgMTU5LjM2NCAzMi4yMDNDMTU4LjY2MiAzMi42Mjg0IDE1OC4wNDEgMzMuMjQzNyAxNTcuNSAzNC4wNDkzQzE1Ni45NTggMzQuODU0OSAxNTYuNTIgMzUuNzMyMiAxNTYuMTg0IDM2LjY4MThDMTU1Ljg0OSAzNy42MzE0IDE1NS42MzkgMzguNjAwNCAxNTUuNTU1IDM5LjU4NzlDMTU1LjQ3MSA0MC41NzU3IDE1NS41MzYgNDEuNDc2MSAxNTUuNzUgNDIuMjg5QzE1NS45NjMgNDMuMTAxOCAxNTYuMzQgNDMuNzY2OSAxNTYuODgyIDQ0LjI4M0MxNTcuNDIzIDQ0Ljc5OTggMTU4LjE1OSA0NS4wNTgzIDE1OS4wODkgNDUuMDU4M0MxNTkuNTAxIDQ1LjA1ODMgMTU5Ljg5OCA0NC45NzQ3IDE2MC4yNzkgNDQuODA3NkMxNjAuNjYgNDQuNjQwMSAxNjEuMDExIDQ0LjQ0MjYgMTYxLjMzMSA0NC4yMTQ4QzE2MS42NTEgNDMuOTg2OSAxNjEuOTMzIDQzLjc0NzUgMTYyLjE3OCA0My40OTY4QzE2Mi40MjEgNDMuMjQ2MSAxNjIuNjEyIDQzLjAzNzMgMTYyLjc0OSA0Mi44Njk5QzE2Mi44NTYgNDMuNDE3IDE2My4wMzIgNDMuODgwOCAxNjMuMjc2IDQ0LjI2MDVDMTYzLjUxOSA0NC42NDAxIDE2My43OTggNDQuOTUyMSAxNjQuMTExIDQ1LjE5NDhDMTY0LjQyMyA0NS40Mzc2IDE2NC43NTEgNDUuNjE2NCAxNjUuMDk0IDQ1LjczMDZDMTY1LjQzNyA0NS44NDQ1IDE2NS43NjkgNDUuOTAxNSAxNjYuMDg5IDQ1LjkwMTVDMTY2LjgwNiA0NS45MDE1IDE2Ny40NzcgNDUuNjU4MyAxNjguMTAyIDQ1LjE3MTlDMTY4LjcyNyA0NC42ODYxIDE2OS4yODggNDQuMDg5MyAxNjkuNzg0IDQzLjM4MjlDMTcwLjI3OSA0Mi42NzYyIDE3MC42ODcgNDEuOTMxOSAxNzEuMDA3IDQxLjE0OTFDMTcxLjMyOCA0MC4zNjY2IDE3MS41NDEgMzkuNjcxNSAxNzEuNjQ4IDM5LjA2MzRDMTcxLjc1NSAzOC44MzU1IDE3MS43MzUgMzguNTk2NCAxNzEuNTkxIDM4LjM0NTdDMTcxLjQ0NiAzOC4wOTUgMTcxLjI1NSAzNy45MDkgMTcxLjAxOSAzNy43ODdaXCIgZmlsbD1cIiMwRDBDMjNcIi8+XHJcbjxwYXRoIGZpbGwtcnVsZT1cImV2ZW5vZGRcIiBjbGlwLXJ1bGU9XCJldmVub2RkXCIgZD1cIk0yMTIuMTk0IDUwLjM3MDFDMjEyLjA2NCA1MC44ODY2IDIxMS44NjIgNTEuMzIzOCAyMTEuNTg3IDUxLjY4MDZDMjExLjMxMyA1Mi4wMzc3IDIxMC45NyA1Mi4yMjM5IDIxMC41NTggNTIuMjM5M0MyMTAuMjk5IDUyLjI1NDMgMjEwLjEwMSA1Mi4xMTc1IDIwOS45NjMgNTEuODI4OUMyMDkuODI2IDUxLjU0MDEgMjA5LjczMSA1MS4xNjc5IDIwOS42NzggNTAuNzEyMkMyMDkuNjI0IDUwLjI1NjIgMjA5LjYwMSA0OS43NDcgMjA5LjYwOSA0OS4xODQ5QzIwOS42MTYgNDguNjIyNyAyMDkuNjM5IDQ4LjA2ODEgMjA5LjY3OCA0Ny41MjFDMjA5LjcxNSA0Ni45NzQyIDIwOS43NjEgNDYuNDY0NyAyMDkuODE1IDQ1Ljk5MzlDMjA5Ljg2OCA0NS41MjI2IDIwOS45MSA0NS4xNTg2IDIwOS45NCA0NC45QzIxMC40NTkgNDQuOTYwOCAyMTAuODkgNDUuMTg0NiAyMTEuMjMzIDQ1LjU3MjNDMjExLjU3NiA0NS45NTk4IDIxMS44MzkgNDYuNDE5MyAyMTIuMDIyIDQ2Ljk1MTRDMjEyLjIwNSA0Ny40ODMxIDIxMi4zMTIgNDguMDU2OCAyMTIuMzQzIDQ4LjY3MjJDMjEyLjM3MyA0OS4yODc1IDIxMi4zMjMgNDkuODUzNCAyMTIuMTk0IDUwLjM3MDFaTTIwMy45MTMgNTAuMzcwMUMyMDMuNzgzIDUwLjg4NjYgMjAzLjU4MSA1MS4zMjM4IDIwMy4zMDcgNTEuNjgwNkMyMDMuMDMyIDUyLjAzNzcgMjAyLjY4OSA1Mi4yMjM5IDIwMi4yNzcgNTIuMjM5M0MyMDIuMDE4IDUyLjI1NDMgMjAxLjgyIDUyLjExNzUgMjAxLjY4MyA1MS44Mjg5QzIwMS41NDUgNTEuNTQwMSAyMDEuNDUgNTEuMTY3OSAyMDEuMzk3IDUwLjcxMjJDMjAxLjM0MyA1MC4yNTYyIDIwMS4zMiA0OS43NDcgMjAxLjMyOCA0OS4xODQ5QzIwMS4zMzYgNDguNjIyNyAyMDEuMzU4IDQ4LjA2ODEgMjAxLjM5NyA0Ny41MjFDMjAxLjQzNCA0Ni45NzQyIDIwMS40OCA0Ni40NjQ3IDIwMS41MzQgNDUuOTkzOUMyMDEuNTg3IDQ1LjUyMjYgMjAxLjYyOSA0NS4xNTg2IDIwMS42NiA0NC45QzIwMi4xNzggNDQuOTYwOCAyMDIuNjA5IDQ1LjE4NDYgMjAyLjk1MiA0NS41NzIzQzIwMy4yOTUgNDUuOTU5OCAyMDMuNTU4IDQ2LjQxOTMgMjAzLjc0MSA0Ni45NTE0QzIwMy45MjQgNDcuNDgzMSAyMDQuMDMxIDQ4LjA1NjggMjA0LjA2MiA0OC42NzIyQzIwNC4wOTIgNDkuMjg3NSAyMDQuMDQyIDQ5Ljg1MzQgMjAzLjkxMyA1MC4zNzAxWk0xOTUuNDE1IDM3LjQyNDFDMTk1LjM5OSAzNy43ODg0IDE5NS4zNjUgMzguMTExNCAxOTUuMzEyIDM4LjM5MjVDMTk1LjI1OCAzOC42NzQxIDE5NS4xODYgMzguODUyMiAxOTUuMDk1IDM4LjkyODNDMTk0LjkyNyAzOC44MzY5IDE5NC43MjEgMzguNjAxOCAxOTQuNDc3IDM4LjIyMTZDMTk0LjIzMyAzNy44NDE5IDE5NC4wNDIgMzcuNDEyMiAxOTMuOTA1IDM2LjkzMzZDMTkzLjc2OCAzNi40NTUxIDE5My43MjUgMzUuOTg0MyAxOTMuNzc5IDM1LjUyMDVDMTkzLjgzMiAzNS4wNTczIDE5NC4wNzMgMzQuNjk2NyAxOTQuNSAzNC40Mzc5QzE5NC42NjcgMzQuMzQ2OCAxOTQuODEyIDM0LjM4MDkgMTk0LjkzNCAzNC41NDA1QzE5NS4wNTYgMzQuNzAwMSAxOTUuMTU1IDM0LjkzMTggMTk1LjIzMiAzNS4yMzU3QzE5NS4zMDggMzUuNTM5OSAxOTUuMzYxIDM1Ljg4OTIgMTk1LjM5MiAzNi4yODQyQzE5NS40MjIgMzYuNjc5NSAxOTUuNDMgMzcuMDU5MSAxOTUuNDE1IDM3LjQyNDFaTTE5My4zOSA0MS45NzExQzE5My4xNTQgNDIuMjIxNSAxOTIuODkgNDIuNDM4MSAxOTIuNjAxIDQyLjYyMDZDMTkyLjMxMSA0Mi44MDMgMTkyLjAxNCA0Mi45Mzk4IDE5MS43MDkgNDMuMDMwOUMxOTEuNDA0IDQzLjEyMjMgMTkxLjEyOSA0My4xNDQ4IDE5MC44ODUgNDMuMDk5MUMxOTAuMTk5IDQyLjk2MjcgMTg5LjY3MyA0Mi42NjYgMTg5LjMwNyA0Mi4yMTAzQzE4OC45NDEgNDEuNzU0NSAxODguNzA4IDQxLjIxOSAxODguNjA5IDQwLjYwMzdDMTg4LjUxIDM5Ljk4ODEgMTg4LjUyMSAzOS4zMzA4IDE4OC42NDQgMzguNjMxOUMxODguNzY1IDM3LjkzMyAxODguOTcxIDM3LjI4MzUgMTg5LjI2MSAzNi42ODMyQzE4OS41NTEgMzYuMDgyOSAxODkuOTAyIDM1LjU2NjIgMTkwLjMxMyAzNS4xMzMzQzE5MC43MjUgMzQuNzAwMSAxOTEuMTc1IDM0LjQzMDYgMTkxLjY2MyAzNC4zMjM5QzE5MS40OCAzNS4wOTg5IDE5MS40MTkgMzUuOTAwNyAxOTEuNDggMzYuNzI4NkMxOTEuNTQxIDM3LjU1NjggMTkxLjczOSAzOC4zMzU1IDE5Mi4wNzUgMzkuMDY0OEMxOTIuMjg4IDM5LjUwNiAxOTIuNTQ0IDM5LjkwODIgMTkyLjg0MSA0MC4yNzI5QzE5My4xMzkgNDAuNjM3OCAxOTMuNTAxIDQwLjk0OTIgMTkzLjkyOCA0MS4yMDc1QzE5My44MDYgNDEuNDY2IDE5My42MjYgNDEuNzIwNCAxOTMuMzkgNDEuOTcxMVpNMjE4LjcwMiAzNy42NTE5QzIxOC43NDcgMzcuMzAyNiAyMTguODE2IDM2LjkzMzYgMjE4LjkwOCAzNi41NDYyQzIxOC45OTkgMzYuMTU5IDIxOS4xMTQgMzUuNzgyOCAyMTkuMjUxIDM1LjQxODFDMjE5LjM4OCAzNS4wNTMyIDIxOS41NDggMzQuNzM4IDIxOS43MzEgMzQuNDcyM0MyMTkuOTE0IDM0LjIwNjUgMjIwLjEwOCAzNC4wMTYzIDIyMC4zMTQgMzMuOTAyNEMyMjAuNTIgMzMuNzg4NCAyMjAuNzMgMzMuNzk5NyAyMjAuOTQzIDMzLjkzNjVDMjIxLjE3MiAzNC4wNzM1IDIyMS4zMTMgMzQuMzYyMSAyMjEuMzY3IDM0LjgwMjVDMjIxLjQyIDM1LjI0MzUgMjIxLjM2NyAzNS43MTQyIDIyMS4yMDcgMzYuMjE1OUMyMjEuMDQ2IDM2LjcxNzMgMjIwLjc2MSAzNy4xODg0IDIyMC4zNDkgMzcuNjI4OEMyMTkuOTM3IDM4LjA3IDIxOS4zOCAzOC4zNTgzIDIxOC42NzkgMzguNDk1MUMyMTguNjQ4IDM4LjI4MjYgMjE4LjY1NiAzOC4wMDE1IDIxOC43MDIgMzcuNjUxOVpNMjI3LjkyMSAzNy42NTE5QzIyNy45NjYgMzcuMzAyNiAyMjguMDM1IDM2LjkzMzYgMjI4LjEyNiAzNi41NDYyQzIyOC4yMTggMzYuMTU5IDIyOC4zMzIgMzUuNzgyOCAyMjguNDcgMzUuNDE4MUMyMjguNjA3IDM1LjA1MzIgMjI4Ljc2NyAzNC43MzggMjI4Ljk1IDM0LjQ3MjNDMjI5LjEzMyAzNC4yMDY1IDIyOS4zMjggMzQuMDE2MyAyMjkuNTMzIDMzLjkwMjRDMjI5LjczOSAzMy43ODg0IDIyOS45NDkgMzMuNzk5NyAyMzAuMTYyIDMzLjkzNjVDMjMwLjM5MSAzNC4wNzM1IDIzMC41MzIgMzQuMzYyMSAyMzAuNTg2IDM0LjgwMjVDMjMwLjYzOSAzNS4yNDM1IDIzMC41ODYgMzUuNzE0MiAyMzAuNDI1IDM2LjIxNTlDMjMwLjI2NSAzNi43MTczIDIyOS45NzkgMzcuMTg4NCAyMjkuNTY4IDM3LjYyODhDMjI5LjE1NiAzOC4wNyAyMjguNTk5IDM4LjM1ODMgMjI3Ljg5OCAzOC40OTUxQzIyNy44NjcgMzguMjgyNiAyMjcuODc1IDM4LjAwMTUgMjI3LjkyMSAzNy42NTE5Wk0yMzYuNDg4IDM4Ljk4NTJDMjM2LjMxMiAzOC43OTU1IDIzNi4wOTkgMzguNjYyNSAyMzUuODQ3IDM4LjU4NjJDMjM1LjU5NSAzOC41MTA0IDIzNS4zNTUgMzguNTAyOSAyMzUuMTI2IDM4LjU2MzZDMjM0Ljg5NyAzOC42MjQ0IDIzNC43NTIgMzguNzg0IDIzNC42OTIgMzkuMDQyMkMyMzQuNTcgMzkuNTI4NiAyMzQuMzc1IDQwLjAyNjIgMjM0LjEwOCA0MC41MzQ5QzIzMy44NDEgNDEuMDQ0NCAyMzMuNTE0IDQxLjUyNjcgMjMzLjEyNSA0MS45ODI0QzIzMi43MzYgNDIuNDM4MSAyMzIuMjk3IDQyLjg0MTIgMjMxLjgxIDQzLjE5MDVDMjMxLjMyMSA0My41NDAxIDIzMC44MSA0My43OTA4IDIzMC4yNzcgNDMuOTQyM0MyMjkuNzQzIDQ0LjExMDEgMjI5LjMwMSA0NC4xMjg5IDIyOC45NSA0My45OTk2QzIyOC41OTkgNDMuODcwNiAyMjguMzIxIDQzLjY1MDMgMjI4LjExNSA0My4zMzg5QzIyNy45MDkgNDMuMDI3MSAyMjcuNzYxIDQyLjY1MTIgMjI3LjY2OSA0Mi4yMTAzQzIyNy41NzggNDEuNzY5OSAyMjcuNTI0IDQxLjMxNDIgMjI3LjUwOSA0MC44NDI4QzIyOC4zNzggNDAuOTAzOCAyMjkuMTUyIDQwLjc0ODMgMjI5LjgzMSA0MC4zNzU1QzIzMC41MDkgNDAuMDAzNCAyMzEuMDg1IDM5LjUwOTIgMjMxLjU1OCAzOC44OTM5QzIzMi4wMzEgMzguMjc4OCAyMzIuMzg5IDM3LjU4NzQgMjMyLjYzMyAzNi44MkMyMzIuODc3IDM2LjA1MjYgMjMzLjAxNCAzNS4yODkyIDIzMy4wNDUgMzQuNTI5M0MyMzMuMDYgMzMuODE1IDIzMi45NTMgMzMuMjExIDIzMi43MjQgMzIuNzE3MUMyMzIuNDk2IDMyLjIyMzUgMjMyLjE4NyAzMS44Mzk1IDIzMS43OTggMzEuNTY2MkMyMzEuNDA5IDMxLjI5MjQgMjMwLjk2MyAzMS4xMzMgMjMwLjQ2IDMxLjA4NzRDMjI5Ljk1NyAzMS4wNDE3IDIyOS40NDUgMzEuMTEwNSAyMjguOTI3IDMxLjI5MjRDMjI4LjMwMiAzMS41MDU1IDIyNy43NzIgMzEuODUxIDIyNy4zMzggMzIuMzI5NkMyMjYuOTAzIDMyLjgwODUgMjI2LjU0IDMzLjM2MzQgMjI2LjI1MSAzMy45OTM0QzIyNS45NjEgMzQuNjI0NCAyMjUuNzMyIDM1LjMwMzkgMjI1LjU2NCAzNi4wMzM1QzIyNS4zOTYgMzYuNzYyNyAyMjUuMjc0IDM3LjQ4MSAyMjUuMTk5IDM4LjE4NzRDMjI1LjEyNCAzOC44NzMgMjI1LjA4NCAzOS41MjkyIDIyNS4wNzUgNDAuMTU3MkMyMjUuMDE3IDQwLjI4MjQgMjI0Ljk1NiA0MC40MDgyIDIyNC44ODkgNDAuNTM0OUMyMjQuNjIyIDQxLjA0NDQgMjI0LjI5NSA0MS41MjY3IDIyMy45MDYgNDEuOTgyNEMyMjMuNTE3IDQyLjQzODEgMjIzLjA3OCA0Mi44NDEyIDIyMi41OTEgNDMuMTkwNUMyMjIuMTAyIDQzLjU0MDEgMjIxLjU5MiA0My43OTA4IDIyMS4wNTggNDMuOTQyM0MyMjAuNTI0IDQ0LjExMDEgMjIwLjA4MiA0NC4xMjg5IDIxOS43MzEgNDMuOTk5NkMyMTkuMzggNDMuODcwNiAyMTkuMTAyIDQzLjY1MDMgMjE4Ljg5NiA0My4zMzg5QzIxOC42OTEgNDMuMDI3MSAyMTguNTQyIDQyLjY1MTIgMjE4LjQ1IDQyLjIxMDNDMjE4LjM1OSA0MS43Njk5IDIxOC4zMDUgNDEuMzE0MiAyMTguMjkgNDAuODQyOEMyMTkuMTU5IDQwLjkwMzggMjE5LjkzMyA0MC43NDgzIDIyMC42MTIgNDAuMzc1NUMyMjEuMjkgNDAuMDAzNCAyMjEuODY2IDM5LjUwOTIgMjIyLjMzOSAzOC44OTM5QzIyMi44MTEgMzguMjc4OCAyMjMuMTcgMzcuNTg3NCAyMjMuNDE0IDM2LjgyQzIyMy42NTggMzYuMDUyNiAyMjMuNzk1IDM1LjI4OTIgMjIzLjgyNiAzNC41MjkzQzIyMy44NDEgMzMuODE1IDIyMy43MzQgMzMuMjExIDIyMy41MDYgMzIuNzE3MUMyMjMuMjc3IDMyLjIyMzUgMjIyLjk2OCAzMS44Mzk1IDIyMi41NzkgMzEuNTY2MkMyMjIuMTkgMzEuMjkyNCAyMjEuNzQ0IDMxLjEzMyAyMjEuMjQxIDMxLjA4NzRDMjIwLjczOCAzMS4wNDE3IDIyMC4yMjcgMzEuMTEwNSAyMTkuNzA4IDMxLjI5MjRDMjE5LjA4MyAzMS41MDU1IDIxOC41NTMgMzEuODUxIDIxOC4xMTkgMzIuMzI5NkMyMTcuNjg0IDMyLjgwODUgMjE3LjMyMSAzMy4zNjM0IDIxNy4wMzIgMzMuOTkzNEMyMTYuNzQyIDM0LjYyNDQgMjE2LjUxMyAzNS4zMDM5IDIxNi4zNDYgMzYuMDMzNUMyMTYuMTc4IDM2Ljc2MjcgMjE2LjA1NiAzNy40ODEgMjE1Ljk4IDM4LjE4NzRDMjE1LjkzNiAzOC41ODU5IDIxNS45MDcgMzguOTcyMiAyMTUuODg2IDM5LjM1MTZDMjE1LjczOSAzOS40NzY1IDIxNS41OTUgMzkuNjAyMyAyMTUuNDQyIDM5LjcyNThDMjE0LjkxNiA0MC4xNTE0IDIxNC4zNjMgNDAuNTM0OSAyMTMuNzg0IDQwLjg3NjlDMjEzLjIwNCA0MS4yMTkgMjEyLjYwMSA0MS41MDAxIDIxMS45NzcgNDEuNzIwNEMyMTEuMzUxIDQxLjk0MDggMjEwLjcxIDQyLjA3MzggMjEwLjA1NSA0Mi4xMTkyTDIxMS40NzMgMjYuOTg0N0MyMTEuNTY1IDI2LjY2NTUgMjExLjUxOSAyNi4zODQ3IDIxMS4zMzYgMjYuMTQxNUMyMTEuMTUzIDI1Ljg5ODMgMjEwLjkxNiAyNS43MzEyIDIxMC42MjcgMjUuNjQwMUMyMTAuMzM3IDI1LjU0ODggMjEwLjAyOCAyNS41NTY2IDIwOS43IDI1LjY2MjdDMjA5LjM3MiAyNS43Njk0IDIwOS4xMDIgMjYuMDEyNiAyMDguODg4IDI2LjM5MTlDMjA4Ljc4MSAyNi45Njk3IDIwOC42NzEgMjcuNzU5NyAyMDguNTU3IDI4Ljc2MjVDMjA4LjQ0MiAyOS43NjUzIDIwOC4zMjggMzAuODU5NSAyMDguMjEzIDMyLjA0NDhDMjA4LjA5OSAzMy4yMyAyMDcuOTg1IDM0LjQ1MzIgMjA3Ljg3IDM1LjcxNDJDMjA3Ljc1NiAzNi45NzU5IDIwNy42NTcgMzguMTUzMyAyMDcuNTczIDM5LjI0NzJDMjA3LjU2OSAzOS4yOTU4IDIwNy41NjYgMzkuMzM5OCAyMDcuNTYyIDM5LjM4NzhDMjA3LjQyOSAzOS41MDA1IDIwNy4yOTkgMzkuNjE0MiAyMDcuMTYxIDM5LjcyNThDMjA2LjYzNSA0MC4xNTE0IDIwNi4wODIgNDAuNTM0OSAyMDUuNTAzIDQwLjg3NjlDMjA0LjkyMyA0MS4yMTkgMjA0LjMyMSA0MS41MDAxIDIwMy42OTYgNDEuNzIwNEMyMDMuMDcgNDEuOTQwOCAyMDIuNDI5IDQyLjA3MzggMjAxLjc3NCA0Mi4xMTkyTDIwMy4xOTIgMjYuOTg0N0MyMDMuMjg0IDI2LjY2NTUgMjAzLjIzOCAyNi4zODQ3IDIwMy4wNTUgMjYuMTQxNUMyMDIuODcyIDI1Ljg5ODMgMjAyLjYzNSAyNS43MzEyIDIwMi4zNDYgMjUuNjQwMUMyMDIuMDU2IDI1LjU0ODggMjAxLjc0NyAyNS41NTY2IDIwMS40MTkgMjUuNjYyN0MyMDEuMDkxIDI1Ljc2OTQgMjAwLjgyMSAyNi4wMTI2IDIwMC42MDcgMjYuMzkxOUMyMDAuNTAxIDI2Ljk2OTcgMjAwLjM5IDI3Ljc1OTcgMjAwLjI3NiAyOC43NjI1QzIwMC4xNjEgMjkuNzY1MyAyMDAuMDQ3IDMwLjg1OTUgMTk5LjkzMyAzMi4wNDQ4QzE5OS44MTggMzMuMjMgMTk5LjcwNCAzNC40NTMyIDE5OS41ODkgMzUuNzE0MkMxOTkuNDc1IDM2Ljk3NTkgMTk5LjM3NiAzOC4xNTMzIDE5OS4yOTIgMzkuMjQ3MkMxOTkuMjkgMzkuMjY5MiAxOTkuMjg5IDM5LjI4OTEgMTk5LjI4NyAzOS4zMTExQzE5OS4wNDggMzkuNDIxOSAxOTguNzg2IDM5LjUxOSAxOTguNTAzIDM5LjYwMDZDMTk4LjIxMyAzOS42ODQ0IDE5Ny44ODUgMzkuNzMzOSAxOTcuNTE5IDM5Ljc0ODlDMTk3LjU4IDM5LjQ3NTEgMTk3LjYzIDM5LjE3MTIgMTk3LjY2OCAzOC44MzY5QzE5Ny43MDYgMzguNTAyOSAxOTcuNzM3IDM4LjE1MzMgMTk3Ljc2IDM3Ljc4ODRDMTk3Ljc4MiAzNy40MjQxIDE5Ny43OSAzNy4wNTkxIDE5Ny43ODIgMzYuNjk0NUMxOTcuNzc0IDM2LjMyOTYgMTk3Ljc1NSAzNS45OTU2IDE5Ny43MjUgMzUuNjkxNEMxOTcuNjQ5IDM1LjAzODUgMTk3LjUwOCAzNC40MTkxIDE5Ny4zMDIgMzMuODMzOEMxOTcuMDk2IDMzLjI0OTEgMTk2LjgxOCAzMi43NTkzIDE5Ni40NjcgMzIuMzYzN0MxOTYuMTE2IDMxLjk2ODcgMTk1LjY3OCAzMS43MDI3IDE5NS4xNTEgMzEuNTY2MkMxOTQuNjI2IDMxLjQyOTQgMTk0LjAxMiAzMS40NzQ4IDE5My4zMSAzMS43MDI3QzE5Mi4yNzMgMzEuNTY2MiAxOTEuMzM5IDMxLjY2MTMgMTkwLjUwOCAzMS45ODc4QzE4OS42NzcgMzIuMzE0OSAxODguOTU2IDMyLjc4OTQgMTg4LjM0NiAzMy40MTIyQzE4Ny43MzYgMzQuMDM1NyAxODcuMjM3IDM0Ljc2ODQgMTg2Ljg0OCAzNS42MTE5QzE4Ni40NTkgMzYuNDU1MSAxODYuMiAzNy4zMjE0IDE4Ni4wNyAzOC4yMUMxODYuMDE1IDM4LjU4NjggMTg1Ljk4OCAzOC45NjE4IDE4NS45OCAzOS4zMzZDMTg1Ljc0NCAzOS44MTc3IDE4NS40ODYgNDAuMjM4OCAxODUuMjAxIDQwLjU5MjFDMTg0Ljc5NyA0MS4wOTM1IDE4NC4zNzcgNDEuNTAzOCAxODMuOTQzIDQxLjgyMjhDMTgzLjUwOCA0Mi4xNDIgMTgzLjA3NyA0Mi4zODUyIDE4Mi42NSA0Mi41NTIzQzE4Mi4yMjMgNDIuNzE5OCAxODEuODQyIDQyLjgzMzcgMTgxLjUwNyA0Mi44OTQxQzE4MS4xMSA0Mi45NzAyIDE4MC43MjkgNDIuOTc4IDE4MC4zNjMgNDIuOTE3QzE3OS45OTcgNDIuODU2NSAxNzkuNjYxIDQyLjY4MTYgMTc5LjM1NyA0Mi4zOTI3QzE3OS4xMTIgNDIuMTgwMiAxNzguOTI1IDQxLjgzODEgMTc4Ljc5NiA0MS4zNjcxQzE3OC42NjYgNDAuODk2IDE3OC41OSA0MC4zNjA4IDE3OC41NjcgMzkuNzYwMkMxNzguNTQ0IDM5LjE1OTkgMTc4LjU2NyAzOC41MzMgMTc4LjYzNiAzNy44Nzk4QzE3OC43MDUgMzcuMjI2NiAxNzguODIyIDM2LjYwNzIgMTc4Ljk5IDM2LjAyMjJDMTc5LjE1OCAzNS40MzcyIDE3OS4zNzEgMzQuOTEzIDE3OS42MzEgMzQuNDQ5MkMxNzkuODkgMzMuOTg2MiAxODAuMTk1IDMzLjY1NTQgMTgwLjU0NiAzMy40NTc5QzE4MC43NDQgMzMuNDg4NiAxODAuODY2IDMzLjYwNiAxODAuOTEyIDMzLjgxMUMxODAuOTU4IDM0LjAxNjMgMTgwLjk2OSAzNC4yNTk1IDE4MC45NDYgMzQuNTQwNUMxODAuOTIzIDM0LjgyMTkgMTgwLjg4OSAzNS4xMTA1IDE4MC44NDMgMzUuNDA2NkMxODAuNzk3IDM1LjcwMyAxODAuNzc1IDM1Ljk1MDIgMTgwLjc3NSAzNi4xNDc0QzE4MC44NTEgMzYuNTU3NyAxODAuOTk5IDM2Ljg3NyAxODEuMjIxIDM3LjEwNDhDMTgxLjQ0MSAzNy4zMzI3IDE4MS42OSAzNy40NjYgMTgxLjk2NCAzNy41MDM2QzE4Mi4yMzkgMzcuNTQxNyAxODIuNTA5IDM3LjQ3NzMgMTgyLjc3NiAzNy4zMDk4QzE4My4wNDMgMzcuMTQzIDE4My4yNiAzNi44NzcgMTgzLjQyOCAzNi41MTJDMTgzLjQ0MyAzNi41Mjc0IDE4My40NjYgMzYuNTM0OSAxODMuNDk3IDM2LjUzNDlMMTgzLjgxNyAzMy42NDA0QzE4My45MDkgMzMuMjQ1MSAxODMuODQ3IDMyLjg5NTggMTgzLjYzNCAzMi41OTE5QzE4My40MiAzMi4yODggMTgzLjEzOCAzMi4xMTMgMTgyLjc4OCAzMi4wNjc2QzE4Mi4zNDUgMzEuNDI5NCAxODEuNzQ3IDMxLjA5MTQgMTgwLjk5MiAzMS4wNTMyQzE4MC4yMzcgMzEuMDE1NCAxNzkuNDYzIDMxLjI2MjMgMTc4LjY3IDMxLjc5NDFDMTc4LjE4MiAzMi4xNDQgMTc3Ljc1MSAzMi42MjYgMTc3LjM3OCAzMy4yNDEzQzE3Ny4wMDQgMzMuODU3IDE3Ni42OTkgMzQuNTQwNSAxNzYuNDYzIDM1LjI5MjZDMTc2LjIyNiAzNi4wNDQ4IDE3Ni4wNTggMzYuODM5MSAxNzUuOTU5IDM3LjY3NDhDMTc1Ljg2IDM4LjUxMDQgMTc1Ljg0MSAzOS4zMjM2IDE3NS45MDIgNDAuMTEzM0MxNzUuOTYzIDQwLjkwMzggMTc2LjEwNCA0MS42NDg0IDE3Ni4zMjUgNDIuMzQ3QzE3Ni41NDYgNDMuMDQ2MiAxNzYuODU1IDQzLjYzMTIgMTc3LjI1MiA0NC4xMDJDMTc3LjU4NyA0NC41MTIzIDE3Ny45NjggNDQuODEyNyAxNzguMzk1IDQ1LjAwMjdDMTc4LjgyMiA0NS4xOTI3IDE3OS4yNjggNDUuMzEwMSAxNzkuNzM0IDQ1LjM1NThDMTgwLjE5OSA0NS40MDEyIDE4MC42NiA0NS4zODIxIDE4MS4xMTggNDUuMjk4OEMxODEuNTc1IDQ1LjIxNTUgMTgyLjAxIDQ1LjA5NzggMTgyLjQyMSA0NC45NDU0QzE4Mi45NTUgNDQuNzQ4MiAxODMuNTA1IDQ0LjQ5NzIgMTg0LjA2OSA0NC4xOTMzQzE4NC42MzMgNDMuODg5NyAxODUuMTc0IDQzLjUyNDggMTg1LjY5MyA0My4wOTkxQzE4NS45NjYgNDIuODc1MyAxODYuMjI4IDQyLjYzMTMgMTg2LjQ4MiA0Mi4zNjk2QzE4Ni41OTggNDIuNjU1MyAxODYuNzI3IDQyLjkzMTcgMTg2Ljg4MiA0My4xOTA1QzE4Ny4yOTQgNDMuODc0MSAxODcuODUgNDQuNDI5IDE4OC41NTIgNDQuODU0NEMxODkuMjUzIDQ1LjI3OTcgMTkwLjExNSA0NS40ODQ0IDE5MS4xMzcgNDUuNDY5N0MxOTIuMjM1IDQ1LjQ1NDQgMTkzLjI0OSA0NS4xNzc0IDE5NC4xOCA0NC42Mzc4QzE5NS4xMSA0NC4wOTg4IDE5NS44NzIgNDMuMzA0MiAxOTYuNDY3IDQyLjI1NkMxOTcuMzU4IDQyLjI1NiAxOTguMjM0IDQyLjEwOTYgMTk5LjA5NiA0MS44MTlDMTk5LjA4OSA0MS45MTEgMTk5LjA4MSA0Mi4wMDc5IDE5OS4wNzUgNDIuMDk2NkMxOTkuMDE0IDQyLjkwMTkgMTk4Ljk4MyA0My40NDg3IDE5OC45ODMgNDMuNzM3NkMxOTguOTY4IDQ0LjIzOSAxOTguOTM0IDQ0Ljg1ODEgMTk4Ljg4IDQ1LjU5NDlDMTk4LjgyNyA0Ni4zMzIgMTk4Ljc5MyA0Ny4xMDY5IDE5OC43NzggNDcuOTE5OEMxOTguNzYzIDQ4LjczMjYgMTk4Ljc5MyA0OS41NTMyIDE5OC44NjkgNTAuMzgxN0MxOTguOTQ1IDUxLjIwOTYgMTk5LjEwNSA1MS45NjIgMTk5LjM0OSA1Mi42MzgzQzE5OS41OTMgNTMuMzE0MSAxOTkuOTQgNTMuODg3OCAyMDAuMzkgNTQuMzU5MUMyMDAuODQgNTQuODI5OSAyMDEuNDMxIDU1LjExMTIgMjAyLjE2MyA1NS4yMDIzQzIwMi45NDEgNTUuMzA4NCAyMDMuNjEyIDU1LjE3MTcgMjA0LjE3NiA1NC43OTJDMjA0Ljc0IDU0LjQxMiAyMDUuMTk4IDUzLjg5MTggMjA1LjU0OSA1My4yMzA4QzIwNS44OTkgNTIuNTY5NSAyMDYuMTQ3IDUxLjgwNjEgMjA2LjI5MiA1MC45NDAxQzIwNi40MzcgNTAuMDc0IDIwNi40NzkgNDkuMjAzOSAyMDYuNDE4IDQ4LjMzMDFDMjA2LjM1NyA0Ny40NTYyIDIwNi4xOTYgNDYuNjMyMSAyMDUuOTM3IDQ1Ljg1NzVDMjA1LjY3OCA0NS4wODIyIDIwNS4zMTkgNDQuNDQ0IDIwNC44NjIgNDMuOTQyM0MyMDUuMTM3IDQzLjg2NjkgMjA1LjQ2NSA0My43MjI2IDIwNS44NDYgNDMuNTA5NUMyMDYuMjI3IDQzLjI5NjkgMjA2LjYyIDQzLjA1NzUgMjA3LjAyNCA0Mi43OTE1QzIwNy4xMjMgNDIuNzI2MSAyMDcuMjIxIDQyLjY1NzMgMjA3LjMyIDQyLjU5MDJDMjA3LjI4MyA0My4xMjg2IDIwNy4yNjQgNDMuNTEyNiAyMDcuMjY0IDQzLjczNzZDMjA3LjI0OSA0NC4yMzkgMjA3LjIxNSA0NC44NTgxIDIwNy4xNjEgNDUuNTk0OUMyMDcuMTA4IDQ2LjMzMiAyMDcuMDczIDQ3LjEwNjkgMjA3LjA1OCA0Ny45MTk4QzIwNy4wNDMgNDguNzMyNiAyMDcuMDczIDQ5LjU1MzIgMjA3LjE1IDUwLjM4MTdDMjA3LjIyNiA1MS4yMDk2IDIwNy4zODYgNTEuOTYyIDIwNy42MyA1Mi42MzgzQzIwNy44NzQgNTMuMzE0MSAyMDguMjIxIDUzLjg4NzggMjA4LjY3MSA1NC4zNTkxQzIwOS4xMjEgNTQuODI5OSAyMDkuNzEyIDU1LjExMTIgMjEwLjQ0NCA1NS4yMDIzQzIxMS4yMjEgNTUuMzA4NCAyMTEuODkyIDU1LjE3MTcgMjEyLjQ1NyA1NC43OTJDMjEzLjAyMSA1NC40MTIgMjEzLjQ3OCA1My44OTE4IDIxMy44MyA1My4yMzA4QzIxNC4xOCA1Mi41Njk1IDIxNC40MjggNTEuODA2MSAyMTQuNTczIDUwLjk0MDFDMjE0LjcxOCA1MC4wNzQgMjE0Ljc1OSA0OS4yMDM5IDIxNC42OTkgNDguMzMwMUMyMTQuNjM3IDQ3LjQ1NjIgMjE0LjQ3NyA0Ni42MzIxIDIxNC4yMTggNDUuODU3NUMyMTMuOTU5IDQ1LjA4MjIgMjEzLjYwMSA0NC40NDQgMjEzLjE0MyA0My45NDIzQzIxMy40MTggNDMuODY2OSAyMTMuNzQ1IDQzLjcyMjYgMjE0LjEyNyA0My41MDk1QzIxNC41MDggNDMuMjk2OSAyMTQuOSA0My4wNTc1IDIxNS4zMDUgNDIuNzkxNUMyMTUuNTE1IDQyLjY1MzMgMjE1LjcyNCA0Mi41MTA3IDIxNS45MzIgNDIuMzY0MUMyMTYuMDEgNDMuMTA3MiAyMTYuMTc5IDQzLjc1OSAyMTYuNDQ4IDQ0LjMwNzNDMjE2Ljc3NiA0NC45NzYxIDIxNy4yMjIgNDUuNDkyNSAyMTcuNzg3IDQ1Ljg1NzVDMjE4LjM1MSA0Ni4yMjE4IDIxOS4wMTQgNDYuNDIzNCAyMTkuNzc3IDQ2LjQ2MTJDMjIwLjUzOSA0Ni40OTg4IDIyMS4zNyA0Ni4zNTg2IDIyMi4yNzEgNDYuMDM5M0MyMjIuOTQxIDQ1Ljc5NjUgMjIzLjUyNSA0NS40OTI1IDIyNC4wMiA0NS4xMjc5QzIyNC41MTYgNDQuNzYzIDIyNC45NjIgNDQuMzE4NSAyMjUuMzU4IDQzLjc5NDZDMjI1LjM4MSA0My43NjQyIDIyNS40MDMgNDMuNzMxMyAyMjUuNDI1IDQzLjcwMDZDMjI1LjQ5NiA0My45MTM0IDIyNS41NzQgNDQuMTE3OSAyMjUuNjY3IDQ0LjMwNzNDMjI1Ljk5NSA0NC45NzYxIDIyNi40NDEgNDUuNDkyNSAyMjcuMDA2IDQ1Ljg1NzVDMjI3LjU2OSA0Ni4yMjE4IDIyOC4yMzMgNDYuNDIzNCAyMjguOTk2IDQ2LjQ2MTJDMjI5Ljc1OCA0Ni40OTg4IDIzMC41ODkgNDYuMzU4NiAyMzEuNDg5IDQ2LjAzOTNDMjMyLjE2IDQ1Ljc5NjUgMjMyLjc0NCA0NS40OTI1IDIzMy4yMzkgNDUuMTI3OUMyMzMuNzM1IDQ0Ljc2MyAyMzQuMTgxIDQ0LjMxODUgMjM0LjU3NyA0My43OTQ2QzIzNC45NzQgNDMuMjcgMjM1LjMzNiA0Mi42NjYgMjM1LjY2NCA0MS45ODI0QzIzNS45OTIgNDEuMjk4NSAyMzYuMzIzIDQwLjUxNjQgMjM2LjY1OSAzOS42MzQ3QzIzNi43MiAzOS4zOTE4IDIzNi42NjMgMzkuMTc1MiAyMzYuNDg4IDM4Ljk4NTJaXCIgZmlsbD1cIiMwRDBDMjNcIi8+XHJcbjwvc3ZnPmA7XHJcbiJdLAogICJtYXBwaW5ncyI6ICI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxJQUFBQSxtQkFBMEM7OztBQ0ExQyxzQkFBdUI7QUFFUixTQUFSLE9BQXdCLFNBQWlCO0FBQy9DLE1BQUksdUJBQU8saUJBQWlCLFNBQVM7QUFDdEM7OztBQ0pBLElBQU0sTUFBTTtBQUVaLGdCQUF1QixPQUFPQyxTQUFnQixRQUFnQixXQUFtQixRQUFnQixpQkFBaUI7QUFGbEg7QUFHQyxRQUFNLGlCQUFpQjtBQUFBLElBQ3RCLFFBQVE7QUFBQSxJQUNSLFNBQVM7QUFBQSxNQUNSLGdCQUFnQjtBQUFBLE1BQ2hCLGVBQWUsVUFBVTtBQUFBLElBQzFCO0FBQUEsSUFDQSxNQUFNLEtBQUssVUFBVTtBQUFBLE1BQ3BCLFVBQVUsQ0FBQyxFQUFFLE1BQU0sVUFBVSxTQUFTQSxRQUFPLENBQUM7QUFBQSxNQUM5QztBQUFBLE1BQ0EsYUFBYTtBQUFBLE1BQ2IsWUFBWTtBQUFBLE1BQ1osT0FBTztBQUFBLE1BQ1AsbUJBQW1CO0FBQUEsTUFDbkIsa0JBQWtCO0FBQUEsTUFDbEIsUUFBUTtBQUFBLElBQ1QsQ0FBQztBQUFBLEVBQ0Y7QUFFQSxRQUFNLFdBQVcsTUFBTSxNQUFNLEtBQUssY0FBYztBQUNoRCxRQUFNLFVBQVMsY0FBUyxTQUFULG1CQUFlLFlBQVksSUFBSSxrQkFBa0IsR0FBRztBQUNuRSxNQUFJLFVBQVU7QUFDZCxNQUFJLGlCQUFpQjtBQUNyQixTQUFPLENBQUMsZ0JBQWdCO0FBQ3ZCLFVBQU0sTUFBTSxPQUFNLGlDQUFRO0FBQzFCLFFBQUksMkJBQUs7QUFBTTtBQUNmLFFBQUksRUFBQywyQkFBSztBQUFPO0FBQ2pCLFVBQU0sT0FBTywyQkFBSztBQUNsQixVQUFNLFFBQVEsS0FBSyxNQUFNLElBQUksRUFBRSxPQUFPLENBQUMsU0FBUyxLQUFLLEtBQUssTUFBTSxFQUFFO0FBQ2xFLGVBQVcsUUFBUSxPQUFPO0FBQ3pCLFlBQU0sY0FBYyxLQUFLLFFBQVEsV0FBVyxFQUFFO0FBQzlDLFVBQUksZ0JBQWdCLFVBQVU7QUFDN0IseUJBQWlCO0FBQ2pCO0FBQUEsTUFDRDtBQUNBLFVBQUk7QUFDSCxjQUFNLFNBQVMsS0FBSyxNQUFNLFdBQVc7QUFDckMsY0FBTSxRQUFRLE9BQU8sUUFBUSxDQUFDLEVBQUUsTUFBTTtBQUN0QyxZQUFJLE9BQU87QUFDVixxQkFBVztBQUNYLGdCQUFNO0FBQUEsUUFDUDtBQUFBLE1BQ0QsU0FBUyxPQUFQO0FBQ0QsZ0JBQVEsTUFBTSx1Q0FBdUM7QUFBQSxVQUNwRDtBQUFBLFVBQ0E7QUFBQSxVQUNBO0FBQUEsVUFDQTtBQUFBLFVBQ0E7QUFBQSxRQUNELENBQUM7QUFBQSxNQUNGO0FBQUEsSUFDRDtBQUFBLEVBQ0Q7QUFDQSxTQUFPO0FBQ1I7OztBQ3hEQSxJQUFBQyxtQkFBK0M7QUFXL0MsSUFBTSxtQkFBbUI7QUFDbEIsSUFBTSxtQkFBOEM7QUFBQSxFQUMxRCxRQUFRO0FBQUEsRUFDUixXQUFXO0FBQUEsRUFDWCxlQUFlO0FBQUEsRUFDZix5QkFBeUI7QUFBQSxFQUN6QixPQUFPO0FBQ1I7QUFFQSxJQUFxQix3QkFBckIsY0FBbUQsa0NBQWlCO0FBQUEsRUFHbkUsWUFBWSxLQUFVLFFBQTJCO0FBQ2hELFVBQU0sS0FBSyxNQUFNO0FBQ2pCLFNBQUssU0FBUztBQUFBLEVBQ2Y7QUFBQSxFQUVBLFVBQWdCO0FBQ2YsVUFBTSxFQUFFLFlBQVksSUFBSTtBQUV4QixnQkFBWSxNQUFNO0FBQ2xCLFFBQUkseUJBQVEsV0FBVyxFQUFFLFFBQVEsa0JBQWtCLEVBQUUsV0FBVztBQUVoRSxRQUFJLHlCQUFRLFdBQVcsRUFDckIsUUFBUSxTQUFTLEVBQ2pCLFdBQVcsMkVBQTJFLEVBQ3RGLFFBQVEsNERBQTRELEVBQ3BFO0FBQUEsTUFBUSxDQUFDLFNBQ1QsS0FDRSxlQUFlLGNBQWMsRUFDN0IsU0FBUyxLQUFLLE9BQU8sU0FBUyxNQUFNLEVBQ3BDLFNBQVMsT0FBTyxVQUFVO0FBQzFCLGFBQUssT0FBTyxTQUFTLFNBQVM7QUFDOUIsY0FBTSxLQUFLLE9BQU8sYUFBYTtBQUFBLE1BQ2hDLENBQUM7QUFBQSxJQUNIO0FBRUQsUUFBSSx5QkFBUSxXQUFXLEVBQ3JCLFFBQVEsWUFBWSxFQUNwQixRQUFRLHNEQUFzRCxFQUM5RDtBQUFBLE1BQVEsQ0FBQyxTQUFNO0FBbkRuQjtBQW9ESSxvQkFDRSxlQUFlLGlCQUFpQixTQUFTLENBQUMsRUFDMUMsV0FBUyxVQUFLLE9BQU8sU0FBUyxjQUFyQixtQkFBZ0MsZUFBYyxpQkFBaUIsU0FBUyxDQUFDLEVBQ2xGLFNBQVMsT0FBTyxVQUFVO0FBQzFCLGVBQUssT0FBTyxTQUFTLFlBQVksT0FBTyxTQUFTLEtBQUs7QUFDdEQsZ0JBQU0sS0FBSyxPQUFPLGFBQWE7QUFBQSxRQUNoQyxDQUFDO0FBQUE7QUFBQSxJQUNIO0FBRUQsUUFBSSx5QkFBUSxXQUFXLEVBQ3JCLFFBQVEsVUFBVSxFQUNsQixRQUFRLDJFQUEyRSxFQUNuRjtBQUFBLE1BQVksQ0FBQyxhQUNiLFNBQ0UsV0FBVyxFQUFFLGlCQUFpQixpQkFBaUIsU0FBUyxTQUFTLGVBQWUsZUFBZSxVQUFVLFNBQVMsQ0FBQyxFQUNuSCxTQUFTLEtBQUssT0FBTyxTQUFTLEtBQUssRUFDbkMsU0FBUyxPQUFPLFVBQVU7QUFDMUIsYUFBSyxPQUFPLFNBQVMsUUFBUTtBQUM3QixjQUFNLEtBQUssT0FBTyxhQUFhO0FBQUEsTUFDaEMsQ0FBQztBQUFBLElBQ0g7QUFFRCxRQUFJLHlCQUFRLFdBQVcsRUFDckIsUUFBUSxnQkFBZ0IsRUFDeEIsUUFBUSxrREFBa0QsRUFDMUQ7QUFBQSxNQUFZLENBQUMsU0FDYixLQUNFLGVBQWUsb0JBQW9CLEVBQ25DLFNBQVMsS0FBSyxPQUFPLFNBQVMsYUFBYSxFQUMzQyxTQUFTLE9BQU8sVUFBVTtBQUMxQixhQUFLLE9BQU8sU0FBUyxnQkFBZ0I7QUFDckMsY0FBTSxLQUFLLE9BQU8sYUFBYTtBQUFBLE1BQ2hDLENBQUM7QUFBQSxJQUNIO0FBRUQsUUFBSSx5QkFBUSxXQUFXLEVBQ3JCLFFBQVEsNEJBQTRCLEVBQ3BDLFFBQVEsaUlBQWlJLEVBQ3pJO0FBQUEsTUFBVSxDQUFDLFdBQ1gsT0FBTyxTQUFTLEtBQUssT0FBTyxTQUFTLHVCQUF1QixFQUFFLFNBQVMsT0FBTyxVQUFVO0FBQ3ZGLGFBQUssT0FBTyxTQUFTLDBCQUEwQjtBQUMvQyxjQUFNLEtBQUssT0FBTyxhQUFhO0FBQUEsTUFDaEMsQ0FBQztBQUFBLElBQ0Y7QUFFRCxRQUFJLHlCQUFRLFdBQVcsRUFBRSxRQUFRLFVBQVUsRUFBRSxXQUFXO0FBQ3hELGdCQUFZLFNBQVMsS0FBSztBQUFBLE1BQ3pCLE1BQU07QUFBQSxJQUNQLENBQUM7QUFFRCxRQUFJLHlCQUFRLFdBQVcsRUFBRSxRQUFRLFNBQVMsRUFBRSxXQUFXO0FBQ3ZELFVBQU0sYUFBYSxTQUFTLGNBQWMsR0FBRztBQUM3QyxlQUFXLGNBQWM7QUFDekIsZ0JBQVksWUFBWSxVQUFVO0FBRWxDLFVBQU0sU0FBUyxJQUFJLFVBQVU7QUFFN0IsZ0JBQVksWUFBWSxtQkFBbUIsMENBQTBDLE9BQU8sZ0JBQWdCLGNBQWMsVUFBVSxFQUFFLGVBQWUsQ0FBQztBQUFBLEVBQ3ZKO0FBQ0Q7QUFFQSxJQUFNLHFCQUFxQixDQUFDLE1BQWMsUUFBa0M7QUFDM0UsUUFBTSxJQUFJLFNBQVMsY0FBYyxHQUFHO0FBQ3BDLElBQUUsYUFBYSxRQUFRLElBQUk7QUFDM0IsSUFBRSxZQUFZLEdBQUc7QUFDakIsU0FBTztBQUNSO0FBRUEsSUFBTSxlQUFlO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7OztBSHpHckIsSUFBcUIsb0JBQXJCLGNBQStDLHdCQUFPO0FBQUEsRUFBdEQ7QUFBQTtBQUVDLDRCQUFtQjtBQWtGbkIsMENBQWlDLENBQUMsTUFBWSxXQUFpQztBQUM5RSxZQUFNLFlBQVksT0FBTyxhQUFhO0FBQ3RDLFVBQUksV0FBVztBQUNkLGFBQUssYUFBYTtBQUNsQixhQUFLLFFBQVEsQ0FBQyxTQUFTO0FBQ3RCLGVBQ0UsU0FBUyxjQUFjLEVBQ3ZCLFFBQVEsWUFBWSxFQUNwQixRQUFRLENBQUMsTUFBTTtBQUNmLGdCQUFJLE9BQU8sYUFBYSxHQUFHO0FBQzFCLG9CQUFNLFdBQVcsT0FBTyxhQUFhO0FBQ3JDLG9CQUFNLFlBQVksU0FBUyxNQUFNLEdBQUcsRUFBRTtBQUV0QyxrQkFBSSxZQUFZLElBQUk7QUFDbkIscUJBQUssZ0JBQWdCLFdBQVcsTUFBTTtBQUFBLGNBQ3ZDO0FBQU8sdUJBQU8sNkJBQTZCO0FBQUEsWUFDNUM7QUFBQSxVQUNELENBQUM7QUFBQSxRQUNILENBQUM7QUFBQSxNQUNGO0FBQUEsSUFDRDtBQUFBO0FBQUEsRUFwR0EsTUFBTSxnQkFBZ0IsY0FBc0IsUUFBeUM7QUFDcEYsUUFBSTtBQUNILFlBQU0sYUFBYSxLQUFLLElBQUksVUFBVSxjQUFjO0FBRXBELFVBQUksQ0FBQyxZQUFZO0FBQ2hCLGNBQU0sSUFBSSxNQUFNLHVCQUF1QjtBQUFBLE1BQ3hDO0FBRUEsWUFBTSxRQUFRLFdBQVc7QUFDekIsWUFBTSxhQUFhLEdBQUcsS0FBSyxTQUFTLGlCQUFpQixRQUFRLDJCQUEyQixRQUFRLE9BQU87QUFBQTtBQUFBLEVBQVU7QUFFakgsVUFBSSxDQUFDLENBQUMsS0FBSyxTQUFTLFFBQVE7QUFDM0IsZUFBTyx1QkFBdUI7QUFDOUIsWUFBSSxVQUFVO0FBQ2QsU0FBQyxZQUFZO0FBQ1osY0FBSSxVQUFVO0FBQ2QsMkJBQWlCLGdCQUFnQixPQUFPLFlBQVksS0FBSyxTQUFTLFFBQVEsS0FBSyxTQUFTLFdBQVcsS0FBSyxTQUFTLEtBQUssR0FBRztBQUN4SCxnQkFBSSxDQUFDLEtBQUssU0FBUztBQUF5QixxQkFBTyxpQkFBaUIsWUFBWTtBQUNoRix1QkFBVztBQUFBLFVBQ1o7QUFDQSxjQUFJLEtBQUssU0FBUyx5QkFBeUI7QUFDMUMsaUJBQUssSUFBSSxZQUFZLG1CQUFtQixZQUFZLENBQUMsT0FBTztBQUMzRCxpQkFBRyxTQUFTLElBQUk7QUFBQSxZQUNqQixDQUFDO0FBQUEsVUFDRixPQUFPO0FBQ04sc0JBQVU7QUFBQSxVQUNYO0FBQ0EsaUJBQU8sT0FBTztBQUFBLFFBQ2YsR0FBRztBQUFBLE1BQ0osT0FBTztBQUNOLGNBQU0sSUFBSSxNQUFNLG1EQUFtRDtBQUFBLE1BQ3BFO0FBQUEsSUFDRCxTQUFTLE9BQVA7QUFDRCxhQUFPLEtBQUs7QUFDWjtBQUFBLElBQ0Q7QUFBQSxFQUNEO0FBQUEsRUFFQSxNQUFNLGVBQWU7QUFDcEIsU0FBSyxXQUFXLE9BQU8sT0FBTyxDQUFDLEdBQUcsa0JBQWtCLE1BQU0sS0FBSyxTQUFTLENBQUM7QUFBQSxFQUMxRTtBQUFBLEVBRUEsTUFBTSxlQUFlO0FBQ3BCLFVBQU0sS0FBSyxTQUFTLEtBQUssUUFBUTtBQUFBLEVBQ2xDO0FBQUEsRUFFQSxNQUFNLFNBQVM7QUFDZCxVQUFNLEtBQUssYUFBYTtBQUN4QixZQUFRLElBQUksaUJBQWlCLEtBQUssU0FBUyxpQkFBaUI7QUFFNUQsU0FBSyxjQUFjLEtBQUssSUFBSSxVQUFVLEdBQUcsZUFBZSxLQUFLLDhCQUE4QixDQUFDO0FBRTVGLFNBQUssV0FBVztBQUFBLE1BQ2YsSUFBSTtBQUFBLE1BQ0osTUFBTTtBQUFBLE1BQ04sTUFBTTtBQUFBLE1BQ04sZ0JBQWdCLENBQUMsUUFBUSxRQUFRO0FBQ2hDLGNBQU0sV0FBVyxPQUFPLGFBQWE7QUFDckMsY0FBTSxZQUFZLFNBQVMsTUFBTSxHQUFHLEVBQUU7QUFFdEMsWUFBSSxVQUFVO0FBQ2IsY0FBSSxZQUFZLElBQUk7QUFDbkIsaUJBQUssZ0JBQWdCLFVBQVUsTUFBTTtBQUNyQyxtQkFBTztBQUFBLFVBQ1I7QUFFQSxpQkFBTyw2QkFBNkI7QUFDcEMsaUJBQU87QUFBQSxRQUNSO0FBQUEsTUFDRDtBQUFBLElBQ0QsQ0FBQztBQUdELFNBQUssY0FBYyxJQUFJLHNCQUFzQixLQUFLLEtBQUssSUFBSSxDQUFDO0FBQUEsRUFDN0Q7QUFBQSxFQUVBLE1BQU0sV0FBVztBQUNoQixZQUFRLElBQUksZ0NBQWdDO0FBQUEsRUFDN0M7QUF1QkQ7IiwKICAibmFtZXMiOiBbImltcG9ydF9vYnNpZGlhbiIsICJwcm9tcHQiLCAiaW1wb3J0X29ic2lkaWFuIl0KfQo=
+
+/* nosourcemap */
