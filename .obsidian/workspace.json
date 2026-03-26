@@ -11,12 +11,14 @@
             "id": "ad4c858ae3019f93",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "obsidian/writing/drafts/Dialectics and annotations KV1C1.pdf"
+                "file": "obsidian/briefs/2026-03-20.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Dialectics and annotations KV1C1"
+              "icon": "lucide-file",
+              "title": "2026-03-20"
             }
           }
         ],
@@ -267,16 +269,16 @@
   },
   "active": "ad4c858ae3019f93",
   "lastOpenFiles": [
+    "obsidian/briefs/GC1!_2026-03-20_16-40-05.png.pdf",
+    "obsidian/briefs/GC1!_2026-03-26_11-15-30.pdf",
+    "obsidian/briefs/2026-03-20.md",
+    "obsidian/briefs/2026-03-26.md",
+    "obsidian/writing/drafts/Automation v1.pdf",
+    "obsidian/writing/drafts/Metamorphosis of Commodities.pdf",
+    "obsidian/writing/drafts/Dialectics and annotations KV1C1.pdf",
     "obsidian/writing/drafts/dialectics.md",
     "obsidian/writing/drafts/automation-v1.md",
-    "obsidian/writing/drafts/Dialectics and annotations KV1C1.pdf",
-    "obsidian/writing/drafts/Metamorphosis of Commodities.pdf",
     "obsidian/writing/drafts/the-subsumption-of-circulation-over-exchange-and-the-forgotten-determinants-of-value-metamorphosis.pdf.md",
-    "obsidian/writing/drafts/Automation v1.pdf",
-    "obsidian/briefs/2026-03-26.md",
-    "obsidian/briefs/GC1!_2026-03-26_11-15-30.pdf",
-    "obsidian/briefs/GC1!_2026-03-20_16-40-05.png.pdf",
-    "obsidian/briefs/2026-03-20.md",
     "obsidian/briefs/innescapitalismandgold1981.pdf",
     "obsidian/briefs/GC1!_2026-03-26_11-15-30.png",
     "obsidian/notes/Innes - 1981 - Capitalism and Gold.pdf",
@@ -303,7 +305,6 @@
     "obsidian/writing/quotes/kv1c3p203l3.md",
     "obsidian/writing/quotes/kv1c3p230l23.md",
     "obsidian/writing/drafts/research-plan-draft.md",
-    "obsidian/writing/drafts/draftcapital-and-class.md",
     "obsidian/briefs/GC1!_2026-03-20_16-40-05.png",
     "obsidian/meta/javascript/Gold-Silver-Futures-Historical/Screenshot 2026-02-22 224629.png",
     "obsidian/writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Total reserves.PNG",
