@@ -11,12 +11,14 @@
             "id": "ad4c858ae3019f93",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "obsidian/briefs/GC1!_2026-03-26_11-15-30.pdf"
+                "file": "obsidian/briefs/2026-03-26.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "GC1!_2026-03-26_11-15-30"
+              "icon": "lucide-file",
+              "title": "2026-03-26"
             }
           }
         ],
@@ -267,8 +269,8 @@
   },
   "active": "ad4c858ae3019f93",
   "lastOpenFiles": [
-    "obsidian/briefs/2026-03-26.md",
     "obsidian/briefs/GC1!_2026-03-26_11-15-30.pdf",
+    "obsidian/briefs/2026-03-26.md",
     "obsidian/briefs/GC1!_2026-03-20_16-40-05.png.pdf",
     "obsidian/briefs/2026-03-20.md",
     "obsidian/briefs/innescapitalismandgold1981.pdf",
