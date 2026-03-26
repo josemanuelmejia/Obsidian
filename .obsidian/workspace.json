@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "32d775356185d211",
+        "id": "ee31fee4c0535103",
         "type": "tabs",
         "children": [
           {
-            "id": "11b57bb41a28bace",
+            "id": "ad4c858ae3019f93",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "obsidian/notes/marxkv11976.pdf"
+                "file": "obsidian/briefs/2026-03-26.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "marxkv11976"
+              "icon": "lucide-file",
+              "title": "2026-03-26"
             }
           }
         ],
@@ -265,20 +267,36 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "11b57bb41a28bace",
+  "active": "ad4c858ae3019f93",
   "lastOpenFiles": [
-    "obsidian/notes/the-subsumption-of-circulation-over-exchange-and-the-forgotten-determinants-of-value-metamorphosis.pdf",
+    "obsidian/briefs/2026-03-20.md",
+    "obsidian/briefs/2026-03-26.md",
+    "obsidian/briefs/GC1!_2026-03-26_11-15-30.pdf",
+    "obsidian/briefs/GC1!_2026-03-26_11-15-30.png",
+    "obsidian/briefs/innescapitalismandgold1981.pdf",
+    "obsidian/notes/Innes - 1981 - Capitalism and Gold.pdf",
     "obsidian/notes/marxkv11976.pdf",
+    "obsidian/notes/kv1c3p190l9.md",
+    "obsidian/writing/quotes/kv1c3p192l22.md",
+    "obsidian/writing/quotes/kv1c3p192l20.md",
+    "obsidian/writing/quotes/kv1c3p192l5.md",
+    "obsidian/writing/quotes/kv1c3p191l4.md",
+    "obsidian/writing/quotes/kv1c3p190l16.md",
+    "obsidian/writing/quotes/kv1c3p188l10.md",
+    "obsidian/writing/quotes/kv1c3p189l18.md",
+    "obsidian/writing/quotes/kv1c3p190l6.md",
+    "obsidian/writing/quotes/kv1c3p190l9.md",
+    "obsidian/writing/quotes/kv1c3p190l11.md",
+    "obsidian/notes/marxkv11976 1.pdf",
     "obsidian/notes/innescapitalismgold1981.md",
+    "obsidian/notes/the-subsumption-of-circulation-over-exchange-and-the-forgotten-determinants-of-value-metamorphosis.pdf",
     "obsidian/notes/marxmarxseconomicmanuscript2016.md",
     "obsidian/writing/drafts/the-subsumption-of-circulation-over-exchange-and-the-forgotten-determinants-of-value-metamorphosis.pdf.md",
     "obsidian/notes/remyherreramarxistinterpretationcurrent2014.md",
     "obsidian/briefs/innescapitalismgold1981.md",
     "obsidian/notes/the-subsumption-of-circulation-over-exchange-and-the-forgotten-determinants-of-value-metamorphosis.pdf.md",
     "obsidian/writing/drafts/the subsumption of circulation.pdf",
-    "obsidian/writing/quotes/kv1c3p192l20.md",
     "obsidian/notes/The subsumption of circulation over exchange and the forgotten determinants of value metamorphosis.pdf",
-    "obsidian/writing/quotes/kv1c3p192l5.md",
     "obsidian/writing/quotes/kv1c3p216l2.md",
     "obsidian/writing/quotes/kv1c3p203l3.md",
     "obsidian/writing/quotes/kv1c3p230l23.md",
@@ -287,21 +305,6 @@
     "obsidian/writing/drafts/Notebook Marx Seminar October 2024-JM.pdf",
     "obsidian/writing/drafts/research-plan-draft.md",
     "obsidian/writing/drafts/draftcapital-and-class.md",
-    "obsidian/writing/drafts/unmsm.md",
-    "obsidian/writing/drafts/automation-v1.md",
-    "obsidian/writing/drafts/Automation v1.pdf",
-    "obsidian/brandwatch/world-system-political-risk-event-analysis.md",
-    "obsidian/writing/drafts/total-gold-reserves-usd-1970-2025.md",
-    "obsidian/briefs/2026-03-20.md",
-    "obsidian/writing/drafts/mejia-paper-1-marx-seminar_es-4.md",
-    "obsidian/writing/drafts/kv1c2c3_vf-es.md",
-    "obsidian/writing/drafts/kv1c2c3_vf.md",
-    "obsidian/writing/drafts/kv1c2c3_v3.md",
-    "obsidian/writing/drafts/kv1c2c3_v2-2.md",
-    "obsidian/writing/drafts/kv1c2c3_v2.md",
-    "obsidian/writing/drafts/KV1C2C3.pdf",
-    "obsidian/writing/quotes",
-    "obsidian/writing/~$Quotes JMM.xlsx",
     "obsidian/briefs/GC1!_2026-03-20_16-40-05.png",
     "obsidian/meta/javascript/Gold-Silver-Futures-Historical/Screenshot 2026-02-22 224629.png",
     "obsidian/writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Total reserves.PNG",
@@ -311,7 +314,6 @@
     "obsidian/writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Fig2.PNG",
     "obsidian/writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/eq iv.PNG",
     "obsidian/writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/eq iii.PNG",
-    "obsidian/writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/eq ii.PNG",
     "obsidian/writing/documents/Drafts/Estallido/Estallido.canvas",
     "writing/3.1 documents/Drafts/Estallido/Estallido.canvas",
     "obsidian-main/writing/3.1 documents/Drafts/Estallido/Estallido.canvas",
