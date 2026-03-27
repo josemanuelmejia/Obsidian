@@ -11,14 +11,12 @@
             "id": "ad4c858ae3019f93",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "obsidian/briefs/2026-03-20.md",
-                "mode": "source",
-                "source": false
+                "file": "obsidian/briefs/innescapitalismandgold1981.pdf"
               },
-              "icon": "lucide-file",
-              "title": "2026-03-20"
+              "icon": "lucide-file-text",
+              "title": "innescapitalismandgold1981"
             }
           }
         ],
@@ -262,16 +260,17 @@
       "translate:Open translation view": false,
       "vantage-obsidian:Vantage - Advanced search builder": false,
       "whisper:Open recording controls": false,
-      "obsidian-wordnet-plugin:WordNet Dictionary": false,
       "vault-file-renamer:Vault File Renamer": false,
       "obsidian-kanban:Create new board": false
     }
   },
   "active": "ad4c858ae3019f93",
   "lastOpenFiles": [
+    "obsidian/notes/innescapitalismgold1981.md",
+    "obsidian/brandwatch/world-system-political-risk-event-analysis.md",
+    "obsidian/briefs/2026-03-20.md",
     "obsidian/briefs/2026-03-26.md",
     "obsidian/briefs/GC1!_2026-03-26_11-15-30.pdf",
-    "obsidian/briefs/2026-03-20.md",
     "obsidian/briefs/GC1!_2026-03-20_16-40-05.png.pdf",
     "obsidian/writing/drafts/Automation v1.pdf",
     "obsidian/writing/drafts/Metamorphosis of Commodities.pdf",
@@ -295,7 +294,6 @@
     "obsidian/writing/quotes/kv1c3p190l9.md",
     "obsidian/writing/quotes/kv1c3p190l11.md",
     "obsidian/notes/marxkv11976 1.pdf",
-    "obsidian/notes/innescapitalismgold1981.md",
     "obsidian/notes/the-subsumption-of-circulation-over-exchange-and-the-forgotten-determinants-of-value-metamorphosis.pdf",
     "obsidian/notes/marxmarxseconomicmanuscript2016.md",
     "obsidian/notes/remyherreramarxistinterpretationcurrent2014.md",
