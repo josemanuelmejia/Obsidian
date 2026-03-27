@@ -1,28 +1,17 @@
 {
-  "defaultVoice": "speechSynthesis-Microsoft Sabina - Spanish (Mexico)",
-  "pitch": 0.8,
-  "rate": 0.9,
+  "defaultVoice": "speechSynthesis-",
+  "pitch": 1,
+  "rate": 1,
   "volume": 1,
-  "speakLinks": true,
-  "speakFrontmatter": true,
-  "speakSyntax": true,
-  "speakTitle": false,
-  "speakCodeblocks": true,
-  "speakEmoji": true,
-  "speakComments": true,
-  "languageVoices": [
-    {
-      "language": "es",
-      "voice": "Microsoft Sabina - Spanish (Mexico)",
-      "id": "speechSynthesis-Microsoft Sabina - Spanish (Mexico)"
-    },
-    {
-      "id": "speechSynthesis-Microsoft Zira - English (United States)",
-      "language": "en",
-      "voice": "Microsoft Zira - English (United States)"
-    }
-  ],
-  "stopPlaybackWhenNoteChanges": true,
+  "speakLinks": false,
+  "speakFrontmatter": false,
+  "speakSyntax": false,
+  "speakTitle": true,
+  "speakCodeblocks": false,
+  "speakEmoji": false,
+  "speakComments": false,
+  "languageVoices": [],
+  "stopPlaybackWhenNoteChanges": false,
   "services": {
     "openai": {
       "key": ""

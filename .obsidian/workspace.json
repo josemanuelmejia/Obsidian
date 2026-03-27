@@ -11,14 +11,12 @@
             "id": "715e220ee6719f27",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "obsidian/briefs/2026-03-27.md",
-                "mode": "source",
-                "source": false
+                "file": "obsidian/briefs/innescapitalismandgold1981.pdf"
               },
-              "icon": "lucide-file",
-              "title": "2026-03-27"
+              "icon": "lucide-file-text",
+              "title": "innescapitalismandgold1981"
             }
           }
         ],
@@ -72,7 +70,7 @@
                 "autoReveal": true
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de archivos"
+              "title": "Files"
             }
           },
           {
@@ -238,18 +236,18 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir selector rápido": false,
-      "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo lienzo": false,
-      "daily-notes:Abrir la nota de hoy": false,
-      "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false,
-      "markdown-importer:Abrir el importador de Markdown": false,
-      "random-note:Abrir nota al azar": false,
-      "audio-recorder:Iniciar/Detener la grabación": false,
-      "workspaces:Gestionar disposiciones de espacio de trabajo": false,
-      "publish:Publicar cambios...": false,
-      "bases:Crear nueva base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "random-note:Open random note": false,
+      "audio-recorder:Start/stop recording": false,
+      "workspaces:Manage workspace layouts": false,
+      "publish:Publish changes...": false,
+      "bases:Create new base": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-audio-notes:Quick Audio Note with Transcription": false,
       "obsidian-camera:Obsidian Camera": false,
@@ -268,15 +266,16 @@
   },
   "active": "715e220ee6719f27",
   "lastOpenFiles": [
-    "obsidian/briefs/GC1!_2026-03-27_15-13-42.pdf",
+    "obsidian/briefs/sin-titulo.md",
+    "obsidian/briefs/innescapitalismandgold1981.pdf",
     "obsidian/briefs/2026-03-27.md",
+    "obsidian/briefs/GC1!_2026-03-27_15-13-42.pdf",
     "obsidian/briefs/GC1!_2026-03-20_16-40-05.png.pdf",
     "obsidian/briefs/2026-03-20.md",
     "obsidian/briefs/GC1!_2026-03-27_12-23-01.pdf",
     "obsidian/briefs/GC1!_2026-03-27_11-56-29.pdf",
     "obsidian/briefs/GCJ2026_2026-03-27_11-35-01.pdf",
     "obsidian/briefs/2026-03-26.md",
-    "obsidian/briefs/innescapitalismandgold1981.pdf",
     "obsidian/writing/quotes/kv1c3p190l9.md",
     "obsidian/writing/quotes/kv1c3p190l9.md",
     "obsidian/notes/innescapitalismgold1981.md",
@@ -303,7 +302,6 @@
     "obsidian/briefs/innescapitalismgold1981.md",
     "obsidian/notes/the-subsumption-of-circulation-over-exchange-and-the-forgotten-determinants-of-value-metamorphosis.pdf.md",
     "obsidian/writing/quotes/kv1c3p216l2.md",
-    "obsidian/writing/quotes/kv1c3p203l3.md",
     "obsidian/briefs/GC1!_2026-03-20_16-40-05.png",
     "obsidian/meta/javascript/Gold-Silver-Futures-Historical/Screenshot 2026-02-22 224629.png",
     "obsidian/writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Total reserves.PNG",

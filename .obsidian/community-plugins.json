@@ -29,7 +29,6 @@
   "swiftlatex-render",
   "templater-obsidian",
   "text-extractor",
-  "obsidian-tts",
   "obsidian-timelines",
   "obsidian-transcription",
   "translate",
@@ -41,5 +40,6 @@
   "consistent-attachments-and-links",
   "vault-file-renamer",
   "obsidian-link-converter",
-  "obsidian-pandoc"
+  "obsidian-pandoc",
+  "obsidian-tts"
 ]
