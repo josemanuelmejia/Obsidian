@@ -11,12 +11,14 @@
             "id": "715e220ee6719f27",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "obsidian/briefs/innescapitalismandgold1981.pdf"
+                "file": "obsidian/briefs/2026-03-27.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "innescapitalismandgold1981"
+              "icon": "lucide-file",
+              "title": "2026-03-27"
             }
           }
         ],
@@ -266,9 +268,10 @@
   },
   "active": "715e220ee6719f27",
   "lastOpenFiles": [
-    "obsidian/briefs/sin-titulo.md",
-    "obsidian/briefs/innescapitalismandgold1981.pdf",
+    "obsidian/briefs/GC1!_2026-03-28_10-01-18.pdf",
     "obsidian/briefs/2026-03-27.md",
+    "obsidian/briefs/innescapitalismandgold1981.pdf",
+    "obsidian/briefs/sin-titulo.md",
     "obsidian/briefs/GC1!_2026-03-27_15-13-42.pdf",
     "obsidian/briefs/GC1!_2026-03-20_16-40-05.png.pdf",
     "obsidian/briefs/2026-03-20.md",
@@ -283,7 +286,6 @@
     "obsidian/briefs/GC1!_2026-03-26_11-15-30.pdf",
     "obsidian/writing/drafts/Automation v1.pdf",
     "obsidian/writing/drafts/Metamorphosis of Commodities.pdf",
-    "obsidian/writing/drafts/Dialectics and annotations KV1C1.pdf",
     "obsidian/writing/drafts/dialectics.md",
     "obsidian/writing/drafts/automation-v1.md",
     "obsidian/writing/drafts/the-subsumption-of-circulation-over-exchange-and-the-forgotten-determinants-of-value-metamorphosis.pdf.md",
