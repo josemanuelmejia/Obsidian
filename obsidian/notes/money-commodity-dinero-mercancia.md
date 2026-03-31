@@ -1,5 +1,5 @@
 How the specific equivalent commodity become the universal measure of value?
 Gold serve as the commodity by which all other commodities find equivalence as use-values produced with human abstract labor time, making those commodities qualitatively equal. Gold also is ideally the universal measure of value for all commodities, as it act as the representation of human abstract labor time, making commodities quantitatively comparable.
 
-Cómo es que la mercancía usada específicamente como equivalente se convierte en medida universal del valor?
-El oro sirve como la mercancía por la cual todas las demás mercancías encuentran equivalencia como valores de uso producidos con tiempo de trabajo humano abstracto, haciendo que esas mercancías sean cualitativamente iguales. El oro también es idealmente la medida universal de valor para todas las mercancías, ya que actúa como la representación del tiempo de trabajo humano abstracto, haciendo que las mercancías sean cuantitativamente comparables.
+Cómo es que la mercancía usada específicamente como valor de cambio aparece como si fuera medida universal del valor?
+El oro sirve como la mercancía por la cual todas las demás mercancías se intercambian como valores de uso producidos con tiempo de trabajo humano abstracto, haciendo que todas esas mercancías sean cualitativamente iguales. El oro es también, idealmente, la medida universal de valor para todas las mercancías, ya que actúa como el material de representación del tiempo de trabajo humano abstracto, haciendo que las mercancías sean cuantitativamente comparables.
