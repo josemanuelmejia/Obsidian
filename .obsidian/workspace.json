@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "715e220ee6719f27",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "obsidian/notes/marxkv11976.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "marxkv11976"
-            }
-          },
-          {
             "id": "6f1a6b7efee1d004",
             "type": "leaf",
             "state": {
@@ -34,7 +22,6 @@
             }
           }
         ],
-        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -279,15 +266,15 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "e69ad7ec32513f3f",
+  "active": "6f1a6b7efee1d004",
   "lastOpenFiles": [
+    "obsidian/notes/marxkv11976.pdf",
     "obsidian/briefs/GCM2026_2026-03-31_09-46-08.png",
     "obsidian/briefs/GC1!_2026-03-28_10-01-18.pdf",
     "obsidian/briefs/GCM2026_2026-03-31_09-40-42.png",
     "obsidian/briefs/2026-03-31.md",
     "obsidian/briefs/2026-03-28.md",
     "obsidian/notes/money-commodity-dinero-mercancia.md",
-    "obsidian/notes/marxkv11976.pdf",
     "obsidian/briefs/innescapitalismandgold1981.pdf",
     "obsidian/briefs/2026-03-27.md",
     "obsidian/briefs/volumechart_from_30_Jan_to_30_Mar_1464px_x_800px.pdf",
@@ -326,7 +313,6 @@
     "obsidian/writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Total gold-capital reserves-China-US.png",
     "obsidian/writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Fig3.PNG",
     "obsidian/writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/Fig2.PNG",
-    "obsidian/writing/documents/Drafts/JWSR/Resubmission_aug2024/Final draft/JWSR/eq iv.PNG",
     "obsidian/writing/documents/Drafts/Estallido/Estallido.canvas",
     "writing/3.1 documents/Drafts/Estallido/Estallido.canvas",
     "obsidian-main/writing/3.1 documents/Drafts/Estallido/Estallido.canvas",
