@@ -1,0 +1,22 @@
+Professional Development Panels Survey (Google forms)
+
+Hello Hannah,
+
+I would like to have as a conference speaker to Hank Johnston of the Department of Sociology, San Diego State University on two of his recent publications on frames theory, mobilization and repression in U.S. and China seeking a political regime comparison: 1) Johnston, Hank. 2024. "The MAGA Movement's Big Umbrella". Mobilization, 28(4), 409–433. https://doi.org/10.17813/1086-671X-28-4-409; and 2) Johnston, Hank, and Sheldon Zhang. 2022. “Nonviolent Protest in China: Repertories of Resistance and Repression.” In Protest and Resistance in the Chinese Party State, edited by Hank Johnston and Sheldon Zhang. Lanham: Rowman & Littlefield.
+
+Justification:
+
+The analysis of regime change dynamics and political mobilization frames is advancing theory on the conditions of possibility for a forthcoming interstate contention, as a consequence of the failure of state-centered political systems to hold sublated (aufgehoben) the intrastates unsolvable class struggle developing through civil wars, national liberation struggles, and imperialists colonial interventions; rather than an outcome of the failure of a supra-state organization (U.N. super-imperialism) to guarantee the intrastates conditions for capital reproduction (under a capitalists crisis of reproduction).
+
+As what is build in theory is later created on praxis, the disconnection between theory and reality can be a temporal one; and in that sense, the signs of polarization, frame dislocations, radicalization, upward repression, upward scale-shift, and collective actors constitution for fascism and socialism-anarchist contention at a multilevel polity scale, advance theory on the mechanistic explanations for the rising political protests in China and U.S. regimes, and by implication advance theory about its effects on their last years of shared imperialism (beginning with USSR collapse) and soon opening of their interstate contention as new imperialists wars with the Taiwan crisis.
+
+A macro-comparison for social movements seeking the effects of political mobilization on regime dynamics and interstate contention, is required as an alternative to face the incapacity of supra-state organizations to guarantee the economic and environmental conditions for social reproduction of the nations and peoples living in formal subsumption under state-capitalists political regimes, inside and abroad the imperialists states. 
+
+Thanks for reading my proposal, and I'll be glad to collaborate with other students and faculty involved in social movements research for the adjusting or advancement of it.
+
+Best regards,
+
+José Manuel Mejía V. 
+
+
+El análisis de la dinámica del cambio de régimen y los marcos de movilización política está avanzando en la teoría sobre las condiciones de posibilidad de una próxima contienda interestatal, como consecuencia del fracaso de los sistemas políticos centrados en el Estado para mantener subsumida (aufgehoben) la lucha de clases intraestatal irresoluble que se desarrolla a través de la guerra civil, la liberación nacional y las intervenciones coloniales imperialistas; en lugar de ser el resultado de una organización supraestatal (el superimperialismo de la ONU), no garantizan las condiciones intraestatales para la reproducción del capital (en una crisis de reproducción capitalista). Las tendencias de movilización política y los marcos hacia las luchas de clases están siendo anunciados por los movimientos sociales y la comunicación científica de la política contenciosa con pocos aportes hacia las alternativas políticas. A medida que lo que es la teoría de la construcción se crea más tarde en la praxis, la desconexión entre la teoría y la realidad puede ser temporal, y en ese sentido, los signos de polarización, dislocaciones de marco, radicalización, represión ascendente, cambio de escala ascendente y la constitución de actores colectivos para el fascismo y la contienda socialismo-anarquista a una escala política multinivel, teoría avanzada sobre las explicaciones mecanicistas de las crecientes protestas políticas en China y los regímenes de EE.UU. y sus efectos en sus últimos años de vida. imperialismo compartido (comenzando con el colapso de la URSS) y pronto la apertura de su contienda interestatal como nuevas guerras imperialistas.
